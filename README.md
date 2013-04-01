@@ -2,6 +2,7 @@ Contact Form Wordpress Plugin
 =============================
 
 Contact Form allows you to add a feedback form easilly and simply to a post or a page.
+
 Official plugin page: http://bestwebsoft.com/plugin/contact-form/
 
 Features
