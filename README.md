@@ -1,9 +1,16 @@
-Contact Form Wordpress Plugin
+<a href="http://bestwebsoft.com/plugin/contact-form/" target=_blank>Contact Form Wordpress Plugin</a>
 =============================
 
-Contact Form allows you to add a feedback form easilly and simply to a post or a page.
+The Contact Form plugin allows you to implement a feedback form to a web-page or a post in no time. It is an extremely easy form, that doesn’t require any additional settings, though there are some available options. All you need is just to activate the plugin and insert the shortcode [bestwebsoft_contact_form] into the text. There is also a premium version of the plugin with more useful features available.
 
-Official plugin page: http://bestwebsoft.com/plugin/contact-form/
+<img src="http://bestwebsoft.com/wp-content/uploads/2011/07/contact-form.jpg" />
+
+<a href="http://bestwebsoft.com/plugin/contact-form/#description" target=_blank>Description</a> | 
+<a href="http://bestwebsoft.com/plugin/contact-form/#installation" target=_blank>Installation</a> | 
+<a href="http://bestwebsoft.com/plugin/contact-form/#faq" target=_blank>FAQ</a> | 
+<a href="http://bestwebsoft.com/plugin/contact-form/#screenshots" target=_blank>Screenshots</a> | 
+<a href="http://bestwebsoft.com/plugin/contact-form/#changelog" target=_blank>Changelog</a> | 
+<a href="http://bestwebsoft.com/plugin/contact-form/#download" target=_blank>Download</a>
 
 Features
 -----------------------------
