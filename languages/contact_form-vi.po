@@ -1,0 +1,945 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: contact_form\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-31 18:16+0300\n"
+"PO-Revision-Date: 2014-01-31 18:16+0300\n"
+"Last-Translator: bestwebsoft.com <plugins@bestwebsoft.com>\n"
+"Language-Team: Localization blog | http://bizover.net <contact@bizover.net>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: contact_form.php:33
+#: contact_form.php:659
+msgid "Contact Form Settings"
+msgstr "Cài đặt hình thức liên lạc"
+
+#: contact_form.php:33
+msgid "Contact Form"
+msgstr "Mẫu liên hệ"
+
+#: contact_form.php:80
+#: contact_form.php:977
+#: contact_form.php:1007
+msgid "Name:"
+msgstr "Tên:"
+
+#: contact_form.php:81
+#: contact_form.php:978
+#: contact_form.php:1008
+msgid "Address:"
+msgstr "Địa chỉ:"
+
+#: contact_form.php:82
+#: contact_form.php:979
+#: contact_form.php:1009
+msgid "Email Address:"
+msgstr "Địa chỉ email:"
+
+#: contact_form.php:83
+#: contact_form.php:980
+#: contact_form.php:1010
+msgid "Phone number:"
+msgstr "Số điện thoại:"
+
+#: contact_form.php:84
+#: contact_form.php:981
+#: contact_form.php:1011
+msgid "Subject:"
+msgstr "Tiêu đề:"
+
+#: contact_form.php:85
+#: contact_form.php:982
+#: contact_form.php:1012
+msgid "Message:"
+msgstr "Thông báo:"
+
+#: contact_form.php:86
+#: contact_form.php:983
+#: contact_form.php:1013
+msgid "Attachment:"
+msgstr "File đính kèm:"
+
+#: contact_form.php:87
+msgid "Supported file types: HTML, TXT, CSS, GIF, PNG, JPEG, JPG, TIFF, BMP, AI, EPS, PS, RTF, PDF, DOC, DOCX, XLS, ZIP, RAR, WAV, MP3, PPT. Max file size: 2MB"
+msgstr "Hỗ trợ các loại tập tin: HTML, TXT, CSS, GIF, PNG, JPEG, JPG, TIFF, BMP, AI, EPS, PS, RTF, PDF, DOC, DOCX, XLS, ZIP, RAR, WAV, MP3, vùng tối đa kích thước: 2MB"
+
+#: contact_form.php:88
+#: contact_form.php:985
+#: contact_form.php:1015
+msgid "Send me a copy"
+msgstr "Gửi cho tôi một bản sao"
+
+#: contact_form.php:89
+#: contact_form.php:986
+#: contact_form.php:1016
+msgid "Submit"
+msgstr "Gửi"
+
+#: contact_form.php:90
+msgid "Your name is required."
+msgstr "Tên của bạn là cần thiết."
+
+#: contact_form.php:91
+msgid "Address is required."
+msgstr "Địa chỉ được yêu cầu."
+
+#: contact_form.php:92
+msgid "A valid email address is required."
+msgstr "Một địa chỉ email hợp lệ là bắt buộc."
+
+#: contact_form.php:93
+msgid "Phone number is required."
+msgstr "Số điện thoại được yêu cầu."
+
+#: contact_form.php:94
+msgid "Subject is required."
+msgstr "Chủ đề là bắt buộc."
+
+#: contact_form.php:95
+msgid "Message text is required."
+msgstr "Tin nhắn văn bản được yêu cầu."
+
+#: contact_form.php:96
+msgid "File format is not valid."
+msgstr "Định dạng tập tin là không hợp lệ."
+
+#: contact_form.php:97
+msgid "File upload error."
+msgstr "Lỗi tải lên tệp."
+
+#: contact_form.php:98
+msgid "The file could not be uploaded."
+msgstr "Không thể tải các tập tin."
+
+#: contact_form.php:99
+msgid "This file is too large."
+msgstr "Tập tin này là quá lớn."
+
+#: contact_form.php:100
+msgid "Please fill out the CAPTCHA."
+msgstr "Xin vui lòng điền CAPTCHA."
+
+#: contact_form.php:101
+msgid "Please make corrections below and try again."
+msgstr "Xin vui lòng làm cho chỉnh dưới đây và thử lại."
+
+#: contact_form.php:103
+msgid "Thank you for contacting us."
+msgstr "Cảm ơn bạn đã liên hệ với chúng tôi."
+
+#: contact_form.php:202
+msgid "requires"
+msgstr "yêu cầu"
+
+#: contact_form.php:202
+msgid "or higher, that is why it has been deactivated! Please upgrade WordPress and try again."
+msgstr "hoặc cao hơn, đó là lý do tại sao nó đã bị ngừng hoạt động! Xin vui lòng nâng cấp WordPress và thử lại."
+
+#: contact_form.php:202
+msgid "Back to the WordPress"
+msgstr "Quay lại WordPress"
+
+#: contact_form.php:202
+msgid "Plugins page"
+msgstr "Trang Plugins"
+
+#: contact_form.php:493
+msgid "If the 'Redirect to page' option is selected then the URL field should be in the following format"
+msgstr "Nếu tùy chọn 'Chuyển hướng đến trang' được chọn thì trường URL nên ở định dạng sau"
+
+#: contact_form.php:502
+msgid "Such user does not exist. Settings are not saved."
+msgstr "Người dùng như vậy không tồn tại. Cài đặt không được lưu."
+
+#: contact_form.php:506
+#: contact_form.php:512
+msgid "Please enter a valid email address in the 'FROM' field. Settings are not saved."
+msgstr "Vui lòng nhập một địa chỉ email hợp lệ trong trường 'Từ'. Cài đặt không được lưu."
+
+#: contact_form.php:517
+msgid "Settings saved."
+msgstr "Cài đặt đã lưu."
+
+#: contact_form.php:553
+#: contact_form.php:592
+msgid "Wrong license key"
+msgstr ""
+
+#: contact_form.php:585
+msgid "Something went wrong. Try again later. If the error will appear again, please, contact us <a href=http://support.bestwebsoft.com>BestWebSoft</a>. We are sorry for inconvenience."
+msgstr ""
+
+#: contact_form.php:594
+msgid "This license key is bind to another site"
+msgstr ""
+
+#: contact_form.php:596
+#: contact_form.php:1382
+msgid "Unfortunately, you have exceeded the number of available tries per day. Please, upload the plugin manually."
+msgstr ""
+
+#: contact_form.php:614
+msgid "Failed to open the zip archive. Please, upload the plugin manually"
+msgstr ""
+
+#: contact_form.php:620
+msgid "Your server does not support either ZipArchive or Phar. Please, upload the plugin manually"
+msgstr ""
+
+#: contact_form.php:624
+#: contact_form.php:633
+msgid "Failed to download the zip archive. Please, upload the plugin manually"
+msgstr ""
+
+#: contact_form.php:637
+msgid "Something went wrong. Try again later or upload the plugin manually. We are sorry for inconvienience."
+msgstr ""
+
+#: contact_form.php:652
+#, fuzzy
+msgid "Please, enter Your license key"
+msgstr "Vui lòng nhập tin nhắn của bạn..."
+
+#: contact_form.php:661
+msgid "Notice:"
+msgstr "Thông báo:"
+
+#: contact_form.php:661
+msgid "The plugin's settings have been changed. In order to save them please don't forget to click the 'Save Changes' button."
+msgstr "Cài đặt của plugin đã được thay đổi. Để tiết kiệm họ xin đừng quên để nhấp vào nút 'Lưu thay đổi'."
+
+#: contact_form.php:664
+#: contact_form.php:1990
+#: contact_form.php:2001
+msgid "Settings"
+msgstr "Cài đặt"
+
+#: contact_form.php:665
+msgid "Extra settings"
+msgstr "Cài đặt phụ"
+
+#: contact_form.php:666
+msgid "Go PRO"
+msgstr ""
+
+#: contact_form.php:672
+#: contact_form.php:1341
+msgid "If you would like to add the Contact Form to your website, just copy and paste this shortcode to your post or page or widget:"
+msgstr "Nếu bạn muốn thêm các hình thức liên lạc để trang web của bạn, chỉ cần sao chép và dán này shortcode để đăng bài hay trang hoặc phụ tùng của bạn:"
+
+#: contact_form.php:672
+#: contact_form.php:673
+#: contact_form.php:1000
+#: contact_form.php:1049
+msgid "or"
+msgstr "hoặc"
+
+#: contact_form.php:673
+msgid "If have any problems with the standard shortcode [contact_form], you should use the shortcode"
+msgstr "Nếu có bất kỳ vấn đề với tiêu chuẩn shortcode [contact_form], bạn nên sử dụng shortcode"
+
+#: contact_form.php:674
+msgid "They work the same way."
+msgstr "Họ làm việc cùng một cách."
+
+#: contact_form.php:675
+msgid "If you leave the fields empty, the messages will be sent to the email address specified during registration."
+msgstr "Nếu bạn để các lĩnh vực trống, các tin nhắn sẽ được gửi đến địa chỉ email được chỉ định trong quá trình đăng ký."
+
+#: contact_form.php:679
+msgid "The user's email address:"
+msgstr "Các địa chỉ email của người dùng:"
+
+#: contact_form.php:683
+msgid "Create a username"
+msgstr "Tạo một tên người dùng"
+
+#: contact_form.php:688
+msgid "Enter a username of the person who should get the messages from the contact form."
+msgstr "Nhập tên người dùng của người sẽ nhận được các tin nhắn từ hình thức liên lạc."
+
+#: contact_form.php:692
+msgid "Use this email address:"
+msgstr "Sử dụng địa chỉ email này:"
+
+#: contact_form.php:695
+msgid "Enter the email address you want the messages forwarded to."
+msgstr "Nhập địa chỉ email mà bạn muốn các thư được chuyển tiếp đến."
+
+#: contact_form.php:701
+msgid "Add department selectbox to the contact form:"
+msgstr "Địa chỉ sở selectbox để hình thức liên lạc:"
+
+#: contact_form.php:709
+#: contact_form.php:1236
+msgid "If you upgrade to Pro version all your settings will be saved."
+msgstr "Nếu bạn nâng cấp lên phiên bản Pro, tất cả các thiết lập của bạn sẽ được lưu."
+
+#: contact_form.php:714
+#: contact_form.php:851
+#: contact_form.php:922
+#: contact_form.php:1086
+msgid "This functionality is available in the Pro version of the plugin. For more details, please follow the link"
+msgstr "Chức năng này có sẵn trong phiên bản Pro của plugin. Để biết thêm chi tiết, hãy làm theo các liên kết"
+
+#: contact_form.php:715
+#: contact_form.php:852
+#: contact_form.php:923
+#: contact_form.php:1087
+msgid "Contact Form Pro"
+msgstr "Liên hệ tạo thành Pro"
+
+#: contact_form.php:721
+msgid "Save emails to the database"
+msgstr "Lưu email vào cơ sở dữ liệu"
+
+#: contact_form.php:731
+msgid "Using"
+msgstr ""
+
+#: contact_form.php:731
+#: contact_form.php:900
+#: contact_form.php:903
+#: contact_form.php:907
+msgid "powered by"
+msgstr "Được tài trợ bởi"
+
+#: contact_form.php:734
+#: contact_form.php:738
+msgid "Using Contact Form to DB powered by"
+msgstr "Bằng cách sử dụng mẫu liên hệ để DB được tài trợ bởi"
+
+#: contact_form.php:734
+msgid "Activate Contact Form to DB"
+msgstr "Kích hoạt các hình thức liên lạc để DB"
+
+#: contact_form.php:738
+msgid "Download Contact Form to DB"
+msgstr "Tải về hình thức liên lạc để DB"
+
+#: contact_form.php:743
+msgid "Additional options"
+msgstr "Tùy chọn bổ sung"
+
+#: contact_form.php:745
+msgid "Show"
+msgstr "Hiển thị"
+
+#: contact_form.php:746
+msgid "Hide"
+msgstr "Ẩn"
+
+#: contact_form.php:750
+msgid "What to use?"
+msgstr "Những gì để sử dụng?"
+
+#: contact_form.php:753
+msgid "Wp-mail"
+msgstr "WP-thư"
+
+#: contact_form.php:753
+msgid "You can use the wp_mail function for mailing"
+msgstr "Bạn có thể sử dụng các chức năng wp_mail để gửi thư"
+
+#: contact_form.php:755
+msgid "Mail"
+msgstr "Thư"
+
+#: contact_form.php:755
+msgid "To send mail you can use the php mail function"
+msgstr "Để gửi thư, bạn có thể sử dụng chức năng php thư"
+
+#: contact_form.php:759
+msgid "The text in the 'From' field"
+msgstr "Các văn bản trong trường 'Từ'"
+
+#: contact_form.php:761
+msgid "User name"
+msgstr "Tên người dùng"
+
+#: contact_form.php:762
+msgid "The name of the user who fills the form will be used in the field 'From'."
+msgstr "Tên người dùng đã điền vào các hình thức sẽ được sử dụng trong trường 'Từ'."
+
+#: contact_form.php:765
+msgid "This text will be used in the 'FROM' field"
+msgstr "Văn bản này sẽ được sử dụng trong trường 'Từ'"
+
+#: contact_form.php:769
+msgid "The email address in the 'From' field"
+msgstr "Địa chỉ email vào trường 'Từ'"
+
+#: contact_form.php:771
+msgid "User email"
+msgstr "Người dùng thư điện tử"
+
+#: contact_form.php:772
+msgid "The email address of the user who fills the form will be used in the field 'From'."
+msgstr "Địa chỉ email của người dùng đã điền vào các hình thức sẽ được sử dụng trong trường 'Từ'."
+
+#: contact_form.php:775
+msgid "This email address will be used in the 'From' field."
+msgstr "Địa chỉ email này sẽ được sử dụng trong trường 'Từ'."
+
+#: contact_form.php:779
+msgid "Required symbol"
+msgstr "Biểu tượng yêu cầu"
+
+#: contact_form.php:789
+msgid "Fields"
+msgstr "Lĩnh vực"
+
+#: contact_form.php:790
+msgid "Used"
+msgstr "Sử dụng"
+
+#: contact_form.php:791
+msgid "Required"
+msgstr "Yêu cầu"
+
+#: contact_form.php:792
+msgid "Visible"
+msgstr "Có thể nhìn thấy"
+
+#: contact_form.php:793
+msgid "Disabled for editing"
+msgstr "Khuyết tật để chỉnh sửa"
+
+#: contact_form.php:794
+msgid "Field's default value"
+msgstr "Giá trị mặc định của trường"
+
+#: contact_form.php:799
+#: contact_form.php:1111
+#: contact_form.php:1831
+#: contact_form.php:1861
+msgid "Name"
+msgstr "Tên"
+
+#: contact_form.php:807
+#: contact_form.php:1116
+#: contact_form.php:1835
+#: contact_form.php:1863
+msgid "Address"
+msgstr "Địa chỉ"
+
+#: contact_form.php:815
+msgid "Email Address"
+msgstr "Địa chỉ email"
+
+#: contact_form.php:823
+msgid "Phone number"
+msgstr "Số điện thoại"
+
+#: contact_form.php:831
+#: contact_form.php:1131
+#: contact_form.php:1845
+#: contact_form.php:1867
+msgid "Subject"
+msgstr "Chủ đề"
+
+#: contact_form.php:839
+#: contact_form.php:1135
+#: contact_form.php:1848
+#: contact_form.php:1868
+msgid "Message"
+msgstr "Tin nhắn"
+
+#: contact_form.php:857
+msgid "Attachment block"
+msgstr "Tập tin đính kèm khối"
+
+#: contact_form.php:859
+msgid "Users can attach the following file formats"
+msgstr "Người dùng có thể đính kèm các định dạng tệp sau"
+
+#: contact_form.php:873
+msgid "Add to the form"
+msgstr "Thêm vào các hình thức"
+
+#: contact_form.php:878
+msgid "Tips below the Attachment"
+msgstr "Mẹo bên dưới phần đính kèm"
+
+#: contact_form.php:887
+msgid "'Send me a copy' block"
+msgstr "'Gửi tôi một bản sao' khối"
+
+#: contact_form.php:900
+#: contact_form.php:903
+#: contact_form.php:907
+#: contact_form.php:1145
+msgid "Captcha"
+msgstr "CAPTCHA"
+
+#: contact_form.php:903
+msgid "Activate captcha"
+msgstr "Kích hoạt captcha"
+
+#: contact_form.php:907
+msgid "Download captcha"
+msgstr "Tải về captcha"
+
+#: contact_form.php:915
+msgid "Agreement checkbox"
+msgstr "Thỏa thuận hộp kiểm"
+
+#: contact_form.php:915
+msgid "Required checkbox for submitting the form"
+msgstr "Các hộp kiểm yêu cầu để gửi biểu mẫu"
+
+#: contact_form.php:916
+msgid "Optional checkbox"
+msgstr "Tùy chọn hộp kiểm"
+
+#: contact_form.php:916
+msgid "Optional checkbox, the results of which will be displayed in email"
+msgstr "Tùy chọn hộp kiểm, kết quả trong đó sẽ được hiển thị trong email"
+
+#: contact_form.php:927
+msgid "Delete an attachment file from the server after the email is sent"
+msgstr "Xóa một tập tin đính kèm từ hệ phục vụ sau khi các email được gửi"
+
+#: contact_form.php:933
+msgid "Email in HTML format sending"
+msgstr "Gửi email cho HTML định dạng gửi"
+
+#: contact_form.php:937
+msgid "Display additional info in the email"
+msgstr "Hiển thị thông tin bổ sung trong email"
+
+#: contact_form.php:942
+#: contact_form.php:1798
+#: contact_form.php:1800
+msgid "Sent from (ip address)"
+msgstr "Gửi từ (địa chỉ ip)"
+
+#: contact_form.php:942
+msgid "Example: Sent from (IP address):\t127.0.0.1"
+msgstr "Ví dụ: Gửi từ (địa chỉ IP):\t127.0.0.1"
+
+#: contact_form.php:943
+#: contact_form.php:1804
+#: contact_form.php:1806
+msgid "Date/Time"
+msgstr "Ngày/thời gian"
+
+#: contact_form.php:943
+msgid "Example: Date/Time:\tAugust 19, 2013 8:50 pm"
+msgstr "Ví dụ: Ngày/thời gian:\tngày 19 tháng 8 năm 2013 8:50 pm"
+
+#: contact_form.php:944
+#: contact_form.php:1810
+#: contact_form.php:1812
+msgid "Sent from (referer)"
+msgstr "Gửi từ (referer)"
+
+#: contact_form.php:944
+msgid "Example: Sent from (referer):\thttp://bestwebsoft.com/contacts/contact-us/"
+msgstr "Ví dụ: Gửi từ (referer):\thttp://bestwebsoft.com/contacts/contact-us/"
+
+#: contact_form.php:945
+#: contact_form.php:1816
+#: contact_form.php:1818
+msgid "Using (user agent)"
+msgstr "Sử dụng (người sử dụng đại lý)"
+
+#: contact_form.php:945
+msgid "Example: Using (user agent):\tMozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36"
+msgstr "Ví dụ: Sử dụng (người sử dụng đại lý):\tMozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, như Gecko) Chrome/28.0.1500.95 Safari/537.36"
+
+#: contact_form.php:949
+msgid "Language settings for the field names in the form"
+msgstr "Cài đặt ngôn ngữ cho tên trường trong các hình thức"
+
+#: contact_form.php:958
+msgid "Add a language"
+msgstr "Thêm một ngôn ngữ"
+
+#: contact_form.php:962
+msgid "Change the names of the contact form fields and error messages"
+msgstr "Thay đổi tên của các lĩnh vực hình thức liên lạc và thông báo lỗi"
+
+#: contact_form.php:967
+#: contact_form.php:1040
+msgid "English"
+msgstr "Tiếng Anh"
+
+#: contact_form.php:975
+#: contact_form.php:1005
+msgid "click to expand/hide the list"
+msgstr ""
+
+#: contact_form.php:984
+#: contact_form.php:1014
+msgid "Tips below the Attachment block"
+msgstr "Lời khuyên dưới đây khối tập tin đính kèm"
+
+#: contact_form.php:987
+#: contact_form.php:1017
+msgid "Error message for the Name field"
+msgstr "Thông báo lỗi cho trường tên"
+
+#: contact_form.php:988
+#: contact_form.php:1018
+msgid "Error message for the Address field"
+msgstr "Thông báo lỗi cho trường địa chỉ"
+
+#: contact_form.php:989
+#: contact_form.php:1019
+msgid "Error message for the Email field"
+msgstr "Thông báo lỗi cho trường Email"
+
+#: contact_form.php:990
+#: contact_form.php:1020
+msgid "Error message for the Phone field"
+msgstr "Thông báo lỗi cho lĩnh vực điện thoại"
+
+#: contact_form.php:991
+#: contact_form.php:1021
+msgid "Error message for the Subject field"
+msgstr "Thông báo lỗi cho trường chủ đề"
+
+#: contact_form.php:992
+#: contact_form.php:1022
+msgid "Error message for the Message field"
+msgstr "Thông báo lỗi cho trường tin nhắn"
+
+#: contact_form.php:993
+#: contact_form.php:1023
+msgid "Error message about the file type for the Attachment field"
+msgstr "Thông báo lỗi về các loại tập tin cho trường đính kèm"
+
+#: contact_form.php:994
+#: contact_form.php:1024
+msgid "Error message while uploading a file for the Attachment field to the server"
+msgstr "Thông báo lỗi trong khi tải lên một tập tin cho trường đính kèm vào hệ phục vụ"
+
+#: contact_form.php:995
+#: contact_form.php:1025
+msgid "Error message while moving the file for the Attachment field"
+msgstr "Thông báo lỗi trong khi di chuyển tập tin đối với lĩnh vực tập tin đính kèm"
+
+#: contact_form.php:996
+#: contact_form.php:1026
+msgid "Error message when file size limit for the Attachment field is exceeded"
+msgstr "Thông báo lỗi khi vượt quá giới hạn kích thước tập tin cho trường đính kèm"
+
+#: contact_form.php:997
+#: contact_form.php:1027
+msgid "Error message for the Captcha field"
+msgstr "Thông báo lỗi cho lĩnh vực Captcha"
+
+#: contact_form.php:998
+#: contact_form.php:1028
+msgid "Error message for the whole form"
+msgstr "Thông báo lỗi cho các hình thức toàn bộ"
+
+#: contact_form.php:1000
+#: contact_form.php:1030
+#: contact_form.php:1049
+#: contact_form.php:1055
+msgid "Use shortcode"
+msgstr "Sử dụng shortcode"
+
+#: contact_form.php:1000
+#: contact_form.php:1030
+#: contact_form.php:1049
+#: contact_form.php:1055
+msgid "for this language"
+msgstr "cho ngôn ngữ này"
+
+#: contact_form.php:1037
+msgid "Action after email is sent"
+msgstr "Hành động sau khi email được gửi"
+
+#: contact_form.php:1039
+msgid "Display text"
+msgstr "Hiển thị văn bản"
+
+#: contact_form.php:1048
+#: contact_form.php:1054
+msgid "Text"
+msgstr "Văn bản"
+
+#: contact_form.php:1061
+msgid "Redirect to the page"
+msgstr "Chuyển hướng đến trang"
+
+#: contact_form.php:1062
+msgid "Url"
+msgstr "URL"
+
+#: contact_form.php:1067
+#: contact_form.php:1242
+msgid "Save Changes"
+msgstr "Lưu thay đổi"
+
+#: contact_form.php:1072
+msgid "If you enjoy our plugin, please give it 5 stars on WordPress"
+msgstr "Nếu bạn thích plugin của chúng tôi, xin vui lòng cho nó 5 sao trên WordPress"
+
+#: contact_form.php:1073
+msgid "Rate the plugin"
+msgstr "Tỷ lệ plugin"
+
+#: contact_form.php:1076
+msgid "If there is something wrong about it, please contact us"
+msgstr "Nếu có điều gì sai về nó, xin vui lòng liên hệ với chúng tôi"
+
+#: contact_form.php:1091
+msgid "Errors output"
+msgstr "Đầu ra lỗi"
+
+#: contact_form.php:1094
+msgid "Display error messages"
+msgstr "Hiển thị thông báo lỗi"
+
+#: contact_form.php:1095
+msgid "Color of the input field errors."
+msgstr "Màu sắc của trường nhập lỗi."
+
+#: contact_form.php:1096
+msgid "Display error messages & color of the input field errors"
+msgstr "Hiển thị thông báo lỗi và màu sắc của trường nhập lỗi"
+
+#: contact_form.php:1101
+msgid "Add placeholder to the input blocks"
+msgstr "Thêm giữ chỗ để các khối đầu vào"
+
+#: contact_form.php:1107
+msgid "Add tooltips"
+msgstr "Thêm chú giải công cụ"
+
+#: contact_form.php:1121
+msgid "Email address"
+msgstr "Địa chỉ email"
+
+#: contact_form.php:1126
+msgid "Phone Number"
+msgstr "Số điện thoại"
+
+#: contact_form.php:1140
+msgid "Attachment"
+msgstr "Tập tin đính kèm"
+
+#: contact_form.php:1145
+msgid "(powered by bestwebsoft.com)"
+msgstr "(cung cấp bởi bestwebsoft.com)"
+
+#: contact_form.php:1150
+msgid "Style options"
+msgstr "Tùy chọn phong cách"
+
+#: contact_form.php:1153
+msgid "Text color"
+msgstr "Văn bản màu"
+
+#: contact_form.php:1156
+#: contact_form.php:1161
+#: contact_form.php:1171
+#: contact_form.php:1176
+#: contact_form.php:1181
+#: contact_form.php:1186
+#: contact_form.php:1196
+#: contact_form.php:1201
+#: contact_form.php:1207
+#: contact_form.php:1218
+#: contact_form.php:1223
+#: contact_form.php:1228
+msgid "Default"
+msgstr "Mặc định"
+
+#: contact_form.php:1158
+msgid "Label text color"
+msgstr "Nhãn văn bản màu"
+
+#: contact_form.php:1163
+msgid "Placeholder color"
+msgstr "Giữ chỗ màu"
+
+#: contact_form.php:1168
+msgid "Errors color"
+msgstr "Lỗi màu"
+
+#: contact_form.php:1173
+msgid "Error text color"
+msgstr "Lỗi văn bản màu"
+
+#: contact_form.php:1178
+msgid "Background color of the input field errors"
+msgstr "Màu nền của trường nhập lỗi"
+
+#: contact_form.php:1183
+msgid "Border color of the input field errors"
+msgstr "Biên giới màu sắc của trường nhập lỗi"
+
+#: contact_form.php:1188
+msgid "Placeholder color of the input field errors"
+msgstr "Giữ chỗ màu sắc của trường nhập lỗi"
+
+#: contact_form.php:1193
+msgid "Input fields"
+msgstr "Lĩnh vực đầu vào"
+
+#: contact_form.php:1198
+msgid "Input fields background color"
+msgstr "Lĩnh vực đầu vào nền màu"
+
+#: contact_form.php:1203
+msgid "Text fields color"
+msgstr "Văn bản lĩnh vực màu"
+
+#: contact_form.php:1205
+msgid "Border width in px, numbers only"
+msgstr "Chiều rộng biên giới ở px, chỉ có số điện thoại"
+
+#: contact_form.php:1209
+#: contact_form.php:1230
+msgid "Border color"
+msgstr "Biên giới màu sắc"
+
+#: contact_form.php:1214
+msgid "Submit button"
+msgstr "Gửi nút"
+
+#: contact_form.php:1216
+msgid "Width in px, numbers only"
+msgstr "Chiều rộng trong px, chỉ có số điện thoại"
+
+#: contact_form.php:1220
+msgid "Button color"
+msgstr "Nút màu"
+
+#: contact_form.php:1225
+msgid "Button text color"
+msgstr "Nút màu chữ"
+
+#: contact_form.php:1246
+msgid "Contact Form Pro | Preview"
+msgstr "Liên hệ tạo thành Pro | Xem trước"
+
+#: contact_form.php:1249
+msgid "Show with errors"
+msgstr "Hiển thị lỗi"
+
+#: contact_form.php:1257
+#: contact_form.php:1259
+msgid "Please enter your full name..."
+msgstr "Vui lòng nhập tên đầy đủ của bạn..."
+
+#: contact_form.php:1270
+#: contact_form.php:1272
+msgid "Please enter your address..."
+msgstr "Vui lòng nhập địa chỉ của bạn..."
+
+#: contact_form.php:1281
+#: contact_form.php:1283
+msgid "Please enter your email address..."
+msgstr "Vui lòng nhập địa chỉ email của bạn..."
+
+#: contact_form.php:1292
+#: contact_form.php:1294
+msgid "Please enter your phone number..."
+msgstr "Vui lòng nhập số điện thoại của bạn..."
+
+#: contact_form.php:1303
+#: contact_form.php:1305
+msgid "Please enter subject..."
+msgstr "Vui lòng nhập Chủ đề..."
+
+#: contact_form.php:1313
+#: contact_form.php:1315
+msgid "Please enter your message..."
+msgstr "Vui lòng nhập tin nhắn của bạn..."
+
+#: contact_form.php:1357
+msgid "Congratulations! The PRO version of the plugin is successfully download and activated."
+msgstr ""
+
+#: contact_form.php:1359
+msgid "Please, go to"
+msgstr ""
+
+#: contact_form.php:1359
+#, fuzzy
+msgid "the setting page"
+msgstr "Cài đặt phụ"
+
+#: contact_form.php:1360
+msgid "You will be redirected automatically in 5 seconds."
+msgstr ""
+
+#: contact_form.php:1365
+msgid "You can download and activate"
+msgstr ""
+
+#: contact_form.php:1367
+msgid "version of this plugin by entering Your license key."
+msgstr ""
+
+#: contact_form.php:1369
+msgid "You can find your license key on your personal page Client area, by clicking on the link"
+msgstr ""
+
+#: contact_form.php:1371
+msgid "(your username is the email you specify when purchasing the product)."
+msgstr ""
+
+#: contact_form.php:1379
+#: contact_form.php:1389
+msgid "Go!"
+msgstr ""
+
+#: contact_form.php:1439
+msgid "Sorry, email message could not be delivered."
+msgstr "Xin lỗi, không thể gửi được thư email."
+
+#: contact_form.php:1825
+msgid "Contact from"
+msgstr "Liên hệ với từ"
+
+#: contact_form.php:1838
+#: contact_form.php:1864
+msgid "Email"
+msgstr "Thư điện tử"
+
+#: contact_form.php:1842
+#: contact_form.php:1866
+msgid "Phone"
+msgstr "Điện thoại"
+
+#: contact_form.php:1851
+#: contact_form.php:1869
+msgid "Site"
+msgstr "Trang web"
+
+#: contact_form.php:1932
+msgid "If you can see this MIME, it means that the MIME type is not supported by your email client!"
+msgstr "Nếu bạn có thể thấy MIME này, nó có nghĩa là rằng loại MIME không được hỗ trợ bởi ứng dụng email của bạn!"
+
+#: contact_form.php:2002
+msgid "FAQ"
+msgstr "CÂU HỎI THƯỜNG GẶP"
+
+#: contact_form.php:2003
+msgid "Support"
+msgstr "Hỗ trợ"
+
+#: contact_form.php:2061
+msgid "Are you sure that you want to delete this language data?"
+msgstr "Bạn có chắc rằng bạn muốn xóa dữ liệu ngôn ngữ này không?"
+
+#~ msgid "Contact Form Pro Extra Settings"
+#~ msgstr "Liên hệ với hình thức cài đặt chuyên nghiệp phụ"
+
+#~ msgid "Contact Form Pro | Extra Settings"
+#~ msgstr "Liên hệ tạo thành Pro | Cài đặt phụ"
