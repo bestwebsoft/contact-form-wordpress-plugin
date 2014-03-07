@@ -232,129 +232,67 @@ td.bws_pro_version {
 	font-weight: normal;
 	padding-bottom: 10px;
 }
-/* banner */
-.cntctfrm_message {
-	min-width: 800px;
-	border: 1px solid #1b6394;
-	padding: 5px;
-	margin: 12px 0;
-	background: #2484c6;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	-webkit-border-radius: 3px;
-	position: relative;
-	overflow: hidden
-}
-.cntctfrm_message .cntctfrm_text {
-	color: #FFF;
-	font-size: 15px;
-	line-height: 26px;
-	margin-top: 8px;
-	float: left;
-}
-.cntctfrm_message .cntctfrm_text span {
-	font-size: 12px;
-	opacity: 0.7;
-}
-.cntctfrm_message .cntctfrm_button {
-	float: right;
-	border: 1px solid #14496d; 
-	font-size: 14px;
-	margin: 10px;
-	padding: 12px 0;
-	color: #FFF;
-	text-shadow: 0 1px 3px #2483c5;
-	font-weight: bold;
-	background: #17537e;
-	-moz-border-radius : 3px;
-	border-radius: 3px;
-	-webkit-border-radius: 3px;
-	text-decoration: none;
-	height: 50px;
-	text-align: center;
-	width: 147px;
-	-moz-box-shadow: 0px 1px 1px 0 #3e7aa3 inset;
-	-webkit-box-shadow: 0px 1px 1px 0 #3e7aa3 inset;
-	box-shadow: 0px 1px 1px 0 #3e7aa3 inset;
-}
-.cntctfrm_message .cntctfrm_button:hover,
-.cntctfrm_message .cntctfrm_button:focus {    
-	background: #2b9eed;
-	color: #FFF;
-	border: 1px solid #1d6ca1;
-	-moz-box-shadow: 0px 1px 1px 0 #4bacf0 inset;
-	-webkit-box-shadow: 0px 1px 1px 0 #4bacf0 inset;
-	box-shadow: 0px 1px 1px 0 #4bacf0 inset;
-}
-.cntctfrm_message .cntctfrm_icon {
-	float: left;
-	margin: 14px 18px 15px 1px;
-}
-.cntctfrm_message .cntctfrm_close_icon {
-	float: left;
-	margin: 4px 0 0 4px;
-	cursor: pointer;
-}
-.cntctfrm_message_for_ctfrmtdb {
-	min-width: 800px;
-	border: 1px solid #1b6394;
-	padding: 5px;
-	margin: 12px 0;
-	background: #2484c6;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	-webkit-border-radius: 3px;
-	position: relative;
-	overflow: hidden
-}
-.cntctfrm_message_for_ctfrmtdb .cntctfrm_text {
-	color: #FFF;
-	font-size: 15px;
-	line-height: 26px;
-	margin-top: 9px;
-	float: left;
-}
-.cntctfrm_message_for_ctfrmtdb .cntctfrm_text span {
-	font-size: 12px;
-	opacity: 0.7;
-}
-.cntctfrm_message_for_ctfrmtdb .cntctfrm_button {
-	float: right;
-	border: 1px solid #14496d; 
-	font-size: 13px;
-	margin: 16px 12px;
-	padding: 5px 14px;
-	color: #FFF;
-	background: #17537e;
-	-moz-border-radius : 5px;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	text-decoration: none;
-	height: 36px;
-	text-align: center;
-	text-transform: uppercase;
-}
-.cntctfrm_message_for_ctfrmtdb .cntctfrm_button:hover,
-.cntctfrm_message_for_ctfrmtdb .cntctfrm_button:focus {    
-	background: #2b9eed;
-	color: #FFF;
-	border: 1px solid #1d6ca1;
-	-moz-box-shadow: 0px 1px 1px 0 #4bacf0 inset;
-	-webkit-box-shadow: 0px 1px 1px 0 #4bacf0 inset;
-	box-shadow: 0px 1px 1px 0 #4bacf0 inset;
-}
-.cntctfrm_message_for_ctfrmtdb .cntctfrm_icon {
-	float: left;
-	margin: 10px 19px 12px 23px;
-}
-.cntctfrm_message_for_ctfrmtdb .cntctfrm_for_ctfrmtdb_close_icon {
-	float: right;
-	margin: 4px;
-	cursor: pointer;
-}
 .cntctfrmpr_department_table > img {
 	margin: -21px 17px 0;
 }
 #cntctfrmpr_pro_version > td {
 	width: 900px;
+}
+/* banner */
+.bws_banner_on_plugin_page {
+    border: 1px solid #d4d4d4;
+    background: #FFF;
+    position: relative;
+    overflow: hidden;
+    margin: 12px 0;
+    background: #ECECEC;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+.bws_banner_on_plugin_page .text {
+    color: #000;
+    font-size: 15px;
+    line-height: 26px;
+    margin: 18px 18px 14px;
+    float: left;
+    width: 80%;
+}
+.bws_banner_on_plugin_page .text span {
+    font-size: 12px;
+    opacity: 0.7;
+}
+.bws_banner_on_plugin_page .button {
+    float: left;
+    border: none; 
+    font-size: 14px;
+    margin: 18px 0 18px 16px;
+    padding: 14px 0;
+    color: #FFF;
+    text-shadow: none;
+    font-weight: bold;
+    background: #0074A2;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    text-decoration: none;
+    height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 147px;
+    box-shadow: none;
+}
+.bws_banner_on_plugin_page .button:hover,
+.bws_banner_on_plugin_page .button:focus {    
+    background: #222;
+    color: #FFF;
+}
+.bws_banner_on_plugin_page .icon {
+    float: right;
+    margin: 18px 8px 8px 0;
+}
+.bws_banner_on_plugin_page .close_icon {
+    float: right;
+    margin: 8px;
+    cursor: pointer;
 }
