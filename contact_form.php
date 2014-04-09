@@ -4,7 +4,7 @@ Plugin Name: Contact Form
 Plugin URI:  http://bestwebsoft.com/plugin/
 Description: Plugin for Contact Form.
 Author: BestWebSoft
-Version: 3.74
+Version: 3.75
 Author URI: http://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -29,7 +29,7 @@ License: GPLv2 or later
 if ( ! function_exists( 'cntctfrm_admin_menu' ) ) {
 	function cntctfrm_admin_menu() {
 		global $bstwbsftwppdtplgns_options, $wpmu, $bstwbsftwppdtplgns_added_menu;
-		$bws_menu_version = '1.2.3';
+		$bws_menu_version = '1.2.4';
 		$base = plugin_basename(__FILE__);
 
 		if ( ! isset( $bstwbsftwppdtplgns_options ) ) {
@@ -175,6 +175,10 @@ if ( ! function_exists( 'cntctfrm_settings' ) ) {
 			'cntctfrm_html_email'				=> 1,
 			'cntctfrm_site_name_parameter'		=> 'SERVER_NAME'
 		);
+
+		/* Check contact-form-multi plugin */
+		if ( is_plugin_active( 'contact-form-multi/contact-form-multi.php' ) || is_plugin_active_for_network( 'contact-form-multi/contact-form-multi.php' ) )
+			$contact_form_multi_active = true;
 		
 		/* Install the option defaults */
 		if ( 1 == $wpmu ) {
@@ -185,14 +189,26 @@ if ( ! function_exists( 'cntctfrm_settings' ) ) {
 				add_option( 'cntctfrm_options', $cntctfrm_option_defaults, '', 'yes' );
 		}
 
-		if ( is_plugin_active( 'contact-form-multi/contact-form-multi.php' ) || is_plugin_active_for_network( 'contact-form-multi/contact-form-multi.php' ) ) {
+		/* Get options from the database for default options */
+		if ( isset( $contact_form_multi_active ) ) {
 			if ( 1 == $wpmu ) {
 				if ( ! get_site_option( 'cntctfrmmlt_options' ) )
 					add_site_option( 'cntctfrmmlt_options', $cntctfrm_option_defaults, '', 'yes' );
+
+				$cntctfrmmlt_options = get_site_option( 'cntctfrmmlt_options' );
 			} else {
 				if ( ! get_option( 'cntctfrmmlt_options' ) )
 					add_option( 'cntctfrmmlt_options', $cntctfrm_option_defaults, '', 'yes' );
-			}
+
+				$cntctfrmmlt_options = get_option( 'cntctfrmmlt_options' );
+			}		
+
+			if ( ! isset( $cntctfrmmlt_options['plugin_option_version'] ) || $cntctfrmmlt_options['plugin_option_version'] != $cntctfrm_plugin_info["Version"] ) {
+				$cntctfrmmlt_options = array_merge( $cntctfrm_option_defaults, $cntctfrmmlt_options );
+				$cntctfrmmlt_options['plugin_option_version'] = $cntctfrm_plugin_info["Version"];
+				update_option( 'cntctfrmmlt_options', $cntctfrmmlt_options );				
+			}	
+		
 			/* Get options from the database */
 			if ( 1 == $wpmu ) {
 				if ( get_site_option( 'cntctfrmmlt_options_'. $_SESSION['cntctfrmmlt_id_form'] ) )
@@ -241,14 +257,20 @@ if ( ! function_exists( 'cntctfrm_settings' ) ) {
 
 		if ( ! isset( $cntctfrm_options['plugin_option_version'] ) || $cntctfrm_options['plugin_option_version'] != $cntctfrm_plugin_info["Version"] ) {
 			$cntctfrm_options = array_merge( $cntctfrm_option_defaults, $cntctfrm_options );
+			$cntctfrm_options['plugin_option_version'] = $cntctfrm_plugin_info["Version"];
 
 			if ( isset( $cntctfrm_options['cntctfrm_required_symbol'] ) && '1' == $cntctfrm_options['cntctfrm_required_symbol'] )
 				$cntctfrm_options['cntctfrm_required_symbol'] = '*';
 			elseif ( isset( $cntctfrm_options['cntctfrm_required_symbol'] ) && '0' == $cntctfrm_options['cntctfrm_required_symbol'] )
 				$cntctfrm_options['cntctfrm_required_symbol'] = '';
 
-			$cntctfrm_options['plugin_option_version'] = $cntctfrm_plugin_info["Version"];
-			update_option( 'cntctfrm_options', $cntctfrm_options );
+			if ( isset( $contact_form_multi_active ) ) {
+				if ( get_site_option( 'cntctfrmmlt_options_' . $_SESSION['cntctfrmmlt_id_form'] ) )
+					update_option( 'cntctfrmmlt_options_' . $_SESSION['cntctfrmmlt_id_form'] , $cntctfrm_options,  '', 'yes' );
+				else
+					update_option( 'cntctfrmmlt_options', $cntctfrm_options );
+			} else
+				update_option( 'cntctfrm_options', $cntctfrm_options );
 		}
 
 		/* Create db table of fields list */
@@ -307,6 +329,7 @@ if ( ! function_exists ( 'cntctfrm_version_check' ) ) {
 if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 	function cntctfrm_settings_page() {
 		global $cntctfrm_options, $wpdb, $cntctfrm_option_defaults, $wp_version, $cntctfrm_plugin_info, $wpmu;
+		$error = "";
 
 		if ( ! function_exists( 'get_plugins' ) || ! function_exists( 'is_plugin_active_for_network' ) )
 			require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
@@ -329,8 +352,8 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 		if ( get_option( 'cntctfrmtdbpr_options' ) )
 			$cntctfrmtdbpr_options = get_option( 'cntctfrmtdbpr_options' );
 
-		$userslogin = $wpdb->get_col( "SELECT `user_login` FROM  $wpdb->users ", 0 ); 
-		$error = "";
+	//	$userslogin = $wpdb->get_col( "SELECT `user_login` FROM  $wpdb->users ", 0 ); 
+		$userslogin = get_users( 'blog_id=' . $GLOBALS['blog_id'] );		
 
 		/* Save data for settings page */
 		if ( isset( $_POST['cntctfrm_form_submit'] ) && check_admin_referer( plugin_basename(__FILE__), 'cntctfrm_nonce_name' ) ) {
@@ -791,9 +814,11 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 								<input type="radio" id="cntctfrm_select_email_user" name="cntctfrm_select_email" value="user" <?php if ( $cntctfrm_options['cntctfrm_select_email'] == 'user' ) echo "checked=\"checked\" "; ?>/>
 								<select name="cntctfrm_user_email">
 									<option disabled><?php _e( "Create a username", 'contact_form' ); ?></option>
-									<?php while( list( $key, $value ) = each( $userslogin ) ) { ?>
-										<option value="<?php echo $value; ?>" <?php if ( $cntctfrm_options['cntctfrm_user_email'] == $value ) echo "selected=\"selected\" "; ?>><?php echo $value; ?></option>
-									<?php } ?>
+									<?php foreach ( $userslogin as $key => $value ) {
+										if ( $value->data->user_email != '' ) { ?>
+											<option value="<?php echo $value->data->user_login; ?>" <?php if ( $cntctfrm_options['cntctfrm_user_email'] == $value->data->user_login ) echo "selected=\"selected\" "; ?>><?php echo $value->data->user_login; ?></option>
+										<?php }
+									} ?>
 								</select>
 								<span class="cntctfrm_info"><?php _e( "Enter a username of the person who should get the messages from the contact form.", 'contact_form' ); ?></span>
 							</td>

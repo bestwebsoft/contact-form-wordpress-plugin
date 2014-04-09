@@ -4,7 +4,7 @@ Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10
 Tags: Contact Form, text, contact, form, contacts, contact form, request, contact me, feedback form, feedback, contact button, contact form plugin, contacts form plugin, attachment, send, copy, attachment, send copy
 Requires at least: 3.0
 Tested up to: 3.8.1
-Stable tag: 3.74
+Stable tag: 3.75
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -42,9 +42,11 @@ There is also a premium version of the plugin - <a href="http://bestwebsoft.com/
 There is also a premium version of the plugin <a href="http://bestwebsoft.com/plugin/updater-pro/?k=982fae837f4c6e3b152183537448dbca">Updater Pro</a> with more useful features available. It can make backup of all your files and database before updating. Also it can forbid some plugins or WordPress Core update.
 * <a href="http://wordpress.org/plugins/contact-form-to-db/">Contact Form To DB</a> - This plugin is an exclusive add-on for the Contact Form plugin by BestWebSoft. The plugin provides a unique opportunity to manage messages sent from your site via the contact form. Please pay attention, that this plugin is an add-on ONLY for Contact Form plugin by BestWebSoft, that's why it will not work with any other contact form plugins.
 There is also a premium version of the plugin <a href="http://bestwebsoft.com/plugin/contact-form-to-db-pro/?k=d7d962591b5be0ce6c27af778b1b36ee">Contact Form To DB Pro</a>, allowing to re-send and preiodically delete messages, manage attachments and get detailed support and answers to your questions.
+* <a href="http://wordpress.org/plugins/contact-form-multi/">Contact Form Multi</a> - This plugin makes it possible to create and implement multiple contact forms on your site. It is also possible to set different parameters for different contact forms. Please note that this plugin is an exclusive add-on ONLY for Contact Form plugin by BestWebSoft and it will not work wothout it. Please make sure you've enabled Javascript, otherwise the plugin will not work.
 
 = Translation =
 
+* Afrikaans (af_ZA) (thanks to <a href="mailto:alducornelissen@gmail.com">Aldu</a>)
 * Belarusian (be_BY) (thanks to <a href="mailto:nullbsd@gmail.com">Sakałoŭ Alaksiej</a>)
 * European Portuguese (pt_PT) (thanks to <a href="mailto:cesarbsilva@gmail.com">César Silva</a>, www.clubetelemoveis.com )
 * Brazilian Portuguese (pt_BR) (thanks to <a href="mailto:brenojac@gmail.com">Breno Jacinto</a>, www.iconis.org.br, <a href="mailto:wordpress@djio.com.br">DJIO</a>, www.djio.com.br)
@@ -139,7 +141,7 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 1. the link to the page where the problem occurs
 2. the name of the plugin and its version. If you are using a pro version - your order number.
 3. the version of your WordPress installation
-4. copy and paste into the message your system status report. Please read more here: <a href="https://docs.google.com/document/d/1Wi2X8RdRGXk9kMszQy1xItJrpN0ncXgioH935MaBKtc/edit?pli=1" target="_blank">System_Status.pdf</a>
+4. copy and paste into the message your system status report. Please read more here: <a href="https://docs.google.com/document/d/1Wi2X8RdRGXk9kMszQy1xItJrpN0ncXgioH935MaBKtc/edit?pli=1" target="_blank">Instuction on System Status</a>
 
 == Screenshots ==
 
@@ -151,6 +153,10 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 6. Plugin extra settings in WordPress admin panel with additional fields.
 
 == Changelog ==
+
+= V3.75 - 08.04.2014 =
+* NEW : The Afrikaans language file is added.
+* Bugfix : We fixed the bug of the user's list on multisite.
 
 = V3.74 - 24.03.2014 =
 * NEW : Compatibility with plugin Contact Form Multi.
@@ -483,6 +489,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * Ability to add Contact Form into a post. Ability to adjust displaying of the form via shortcode is added.
 
 == Upgrade Notice ==
+
+= V3.75 =
+The Afrikaans language file is added. We fixed the bug of the user's list on multisite.
 
 = V3.74 =
 Compatibility with plugin Contact Form Multi. 'xlsx' mime-type is added. Added transition to the contact form after submitting.
