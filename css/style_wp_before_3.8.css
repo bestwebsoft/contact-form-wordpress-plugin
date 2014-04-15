@@ -160,16 +160,3 @@
 	padding: 2px 10px;
 	text-align: left;
 }
-/*
-* styles for pro_version settings, banner and tooltip 
-*/
-.cntctfrm_settings_table .bws_pro_version_tooltip {
-	background: #FFF;
-	border: 1px solid #AAA;
-}
-.cntctfrmpr_department_table > img {
-	margin: -21px 17px 0;
-}
-#cntctfrmpr_pro_version > td {
-	width: 900px;
-}

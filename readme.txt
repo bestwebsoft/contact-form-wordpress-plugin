@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10&product_id=13
 Tags: Contact Form, text, contact, form, contacts, contact form, request, contact me, feedback form, feedback, contact button, contact form plugin, contacts form plugin, attachment, send, copy, attachment, send copy
 Requires at least: 3.0
-Tested up to: 3.8.1
-Stable tag: 3.75
+Tested up to: 3.8.2
+Stable tag: 3.76
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -153,6 +153,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 6. Plugin extra settings in WordPress admin panel with additional fields.
 
 == Changelog ==
+
+= V3.76 - 14.04.2014 =
+* Update : We updated all functionality for wordpress 3.8.2.
 
 = V3.75 - 08.04.2014 =
 * NEW : The Afrikaans language file is added.
@@ -489,6 +492,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * Ability to add Contact Form into a post. Ability to adjust displaying of the form via shortcode is added.
 
 == Upgrade Notice ==
+
+= V3.76 =
+We updated all functionality for wordpress 3.8.2.
 
 = V3.75 =
 The Afrikaans language file is added. We fixed the bug of the user's list on multisite.

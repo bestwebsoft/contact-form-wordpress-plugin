@@ -1,7 +1,7 @@
 <?php
 /*
 * Function for displaying BestWebSoft menu
-* Version: 1.2.4
+* Version: 1.2.6
 */
 
 if ( ! function_exists( 'bws_add_menu_render' ) ) {
@@ -836,7 +836,7 @@ if ( ! function_exists( 'bws_add_menu_render' ) ) {
 			<?php } ?>
 		</div>
 	<?php }
-} 
+}
 
 if ( ! function_exists ( 'bws_plugin_init' ) ) {
 	function bws_plugin_init() {
@@ -849,9 +849,9 @@ if ( ! function_exists ( 'bws_admin_head' ) ) {
 	function bws_admin_head() {
 		global $wp_version;
 		if ( $wp_version < 3.8 )
-			wp_enqueue_style( 'pdfprnt-stylesheet', plugins_url( 'css/general_style_wp_before_3.8.css', __FILE__ ) );	
+			wp_enqueue_style( 'bws-admin-stylesheet', plugins_url( 'css/general_style_wp_before_3.8.css', __FILE__ ) );	
 		else
-			wp_enqueue_style( 'pdfprnt-stylesheet', plugins_url( 'css/general_style.css', __FILE__ ) );
+			wp_enqueue_style( 'bws-admin-stylesheet', plugins_url( 'css/general_style.css', __FILE__ ) );
 
 		if ( isset( $_GET['page'] ) && $_GET['page'] == "bws_plugins" ) {
 			wp_enqueue_style( 'bws_menu_style', plugins_url( 'css/style.css', __FILE__ ) );
@@ -864,6 +864,6 @@ if ( ! function_exists ( 'bws_admin_head' ) ) {
 	}
 }
 
-add_action( 'init', 'bws_plugin_init' );
+add_action( 'admin_init', 'bws_plugin_init' );
 add_action( 'admin_enqueue_scripts', 'bws_admin_head' );
 ?>
