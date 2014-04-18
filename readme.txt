@@ -1,10 +1,10 @@
 === Contact Form ===
 Contributors: bestwebsoft
-Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10&product_id=13
+Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=1&product_id=94
 Tags: Contact Form, text, contact, form, contacts, contact form, request, contact me, feedback form, feedback, contact button, contact form plugin, contacts form plugin, attachment, send, copy, attachment, send copy
 Requires at least: 3.0
-Tested up to: 3.8.2
-Stable tag: 3.76
+Tested up to: 3.9
+Stable tag: 3.77
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,7 +15,7 @@ Add Contact Form to your WordPress website.
 The Contact Form plugin allows you to implement a feedback form to a web-page or a post in no time. It is an extremely easy form, that doesn’t require any additional settings, though there are some available options. All you need is just to activate the plugin and insert the shortcode [bestwebsoft_contact_form] into the text.
 There is also a premium version of the plugin with more useful features available.
 
-http://www.youtube.com/watch?v=_axsV-3cqiA&list=UU5L2rnrf7WCd8GaqsZvnJOw
+http://www.youtube.com/watch?v=_axsV-3cqiA
 
 <a href="http://www.youtube.com/watch?v=fgAH8XDXtgA" target="_blank">Video instruction on Installation</a>
 
@@ -43,6 +43,7 @@ There is also a premium version of the plugin <a href="http://bestwebsoft.com/pl
 * <a href="http://wordpress.org/plugins/contact-form-to-db/">Contact Form To DB</a> - This plugin is an exclusive add-on for the Contact Form plugin by BestWebSoft. The plugin provides a unique opportunity to manage messages sent from your site via the contact form. Please pay attention, that this plugin is an add-on ONLY for Contact Form plugin by BestWebSoft, that's why it will not work with any other contact form plugins.
 There is also a premium version of the plugin <a href="http://bestwebsoft.com/plugin/contact-form-to-db-pro/?k=d7d962591b5be0ce6c27af778b1b36ee">Contact Form To DB Pro</a>, allowing to re-send and preiodically delete messages, manage attachments and get detailed support and answers to your questions.
 * <a href="http://wordpress.org/plugins/contact-form-multi/">Contact Form Multi</a> - This plugin makes it possible to create and implement multiple contact forms on your site. It is also possible to set different parameters for different contact forms. Please note that this plugin is an exclusive add-on ONLY for Contact Form plugin by BestWebSoft and it will not work wothout it. Please make sure you've enabled Javascript, otherwise the plugin will not work.
+There is also a premium version of the plugin <a href="http://bestwebsoft.com/plugin/contact-form-multi-pro/?k=34543c152eff369d529e9b4da85985a9">Contact Form Multi Pro</a>, compatible with Contact Form Pro (ability to select different extra settings for each contact form).
 
 = Translation =
 
@@ -65,7 +66,7 @@ There is also a premium version of the plugin <a href="http://bestwebsoft.com/pl
 * Slovak (sk_SK) (thanks to <a href="mailto:book.ing@zoznam.sk">Book Ing</a>)
 * Swedish (sv_SE) (thanks to Martin Tonek, <a href="mailto:joakim@limewoodmedia.com">Joakim Lindskog</a>, <a href="mailto:maarten@vandendriest.com">Maarten van den Driest</a> - www.crossanddot.nl)
 * Turkish (tr) (thanks to Can Atasever, www.candanblog.com)
-* Ukrainian (uk) (thanks to <a href="mailto:xxxxAndyxxxx@gmail.com">Andrew Yaschuk</a>)
+* Ukrainian (uk)
 * Vietnamese (vi) (thanks to <a href="mailto:bizover@gmail.com">Dich Anh Viet</a>, www.bizover.net)
 
 If you create your own language pack or update the existing one, you can send <a href="http://codex.wordpress.org/Translating_WordPress" target="_blank">the text in PO and MO files</a> for <a href="http://support.bestwebsoft.com" target="_blank">BestWebSoft</a> and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO files <a href="http://www.poedit.net/download.php" target="_blank">Poedit</a>.
@@ -153,6 +154,12 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 6. Plugin extra settings in WordPress admin panel with additional fields.
 
 == Changelog ==
+
+= V3.77 - 18.04.2014 =
+* Update : We updated all functionality for wordpress 3.9.
+* Bugfix : We fixed the bug of db table creation.
+* Update : The Ukrainian language file is updated.
+* Update : Screenshots are updated.
 
 = V3.76 - 14.04.2014 =
 * Update : We updated all functionality for wordpress 3.8.2.
@@ -492,6 +499,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * Ability to add Contact Form into a post. Ability to adjust displaying of the form via shortcode is added.
 
 == Upgrade Notice ==
+
+= V3.77 =
+We updated all functionality for wordpress 3.9. We fixed the bug of db table creation. The Ukrainian language file is updated. Screenshots are updated.
 
 = V3.76 =
 We updated all functionality for wordpress 3.8.2.
