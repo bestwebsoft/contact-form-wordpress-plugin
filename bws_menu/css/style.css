@@ -151,3 +151,8 @@ h4.bws_installed:before {
 .bws_product_button.bws_donate_button:hover {
     background: #D69108 !important;
 }
+
+/* theme page after WP 3.9 */
+.toplevel_page_bws_plugins #availablethemes .theme-browser {
+    margin-top: 25px;
+}

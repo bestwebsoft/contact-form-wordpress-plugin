@@ -1,10 +1,10 @@
 === Contact Form ===
 Contributors: bestwebsoft
 Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=1&product_id=94
-Tags: Contact Form, text, contact, form, contacts, contact form, request, contact me, feedback form, feedback, contact button, contact form plugin, contacts form plugin, attachment, send, copy, attachment, send copy
-Requires at least: 3.0
-Tested up to: 3.9
-Stable tag: 3.77
+Tags: attachment, contact, contatc, conact, cnotact, contact button, contact form, contact form plugin, contact me, contacts, contacts form plugin, copy, feedback, feedback form, form, insert the shortcode, post feedback, request, send, send copy, send messages, shortcode, text, web-page feedback
+Requires at least: 3.1
+Tested up to: 3.9.1
+Stable tag: 3.78
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,9 +15,9 @@ Add Contact Form to your WordPress website.
 The Contact Form plugin allows you to implement a feedback form to a web-page or a post in no time. It is an extremely easy form, that doesn’t require any additional settings, though there are some available options. All you need is just to activate the plugin and insert the shortcode [bestwebsoft_contact_form] into the text.
 There is also a premium version of the plugin with more useful features available.
 
-http://www.youtube.com/watch?v=_axsV-3cqiA
+http://www.youtube.com/watch?v=nGwh-oslK-c
 
-<a href="http://www.youtube.com/watch?v=fgAH8XDXtgA" target="_blank">Video instruction on Installation</a>
+<a href="http://www.youtube.com/watch?v=IGHiY0-g40Y" target="_blank">Video instruction on Installation</a>
 
 <a href="http://wordpress.org/plugins/contact-form-plugin/faq/" target="_blank">FAQ</a>
 
@@ -64,6 +64,7 @@ There is also a premium version of the plugin <a href="http://bestwebsoft.com/pl
 * Russian (ru_RU)
 * Serbian (sr_RS) (thanks to Georgijevic Team, www.georgijevic.info)
 * Slovak (sk_SK) (thanks to <a href="mailto:book.ing@zoznam.sk">Book Ing</a>)
+* Spanish (es_ES) (thanks to Javitopo)
 * Swedish (sv_SE) (thanks to Martin Tonek, <a href="mailto:joakim@limewoodmedia.com">Joakim Lindskog</a>, <a href="mailto:maarten@vandendriest.com">Maarten van den Driest</a> - www.crossanddot.nl)
 * Turkish (tr) (thanks to Can Atasever, www.candanblog.com)
 * Ukrainian (uk)
@@ -88,7 +89,7 @@ We can fix some things for free for the users who provide translation of our plu
 
 <a href="https://docs.google.com/document/d/1obcWMPDPIIhUxcclYDwKSwNoFSHvGHyg_VKibjpQWTA/edit?pli=1" target="_blank">View a PDF version of Step-by-step Instruction on Contact Form Installation</a>.
 
-http://www.youtube.com/watch?v=fgAH8XDXtgA
+http://www.youtube.com/watch?v=IGHiY0-g40Y
 
 == Frequently Asked Questions ==
 
@@ -154,6 +155,12 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 6. Plugin extra settings in WordPress admin panel with additional fields.
 
 == Changelog ==
+
+= V3.78 - 20.05.2014 =
+* Update : We updated all functionality for wordpress 3.9.1.
+* Update : The French language file is updated.
+* NEW : The Spanish language file is added.
+* Bugfix : We fixed the bug of loading the user's list ( We have limited the list "The user's email address" on the settings page to the lowest role - author ).
 
 = V3.77 - 18.04.2014 =
 * Update : We updated all functionality for wordpress 3.9.
@@ -499,6 +506,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * Ability to add Contact Form into a post. Ability to adjust displaying of the form via shortcode is added.
 
 == Upgrade Notice ==
+
+= V3.78 =
+We updated all functionality for wordpress 3.9.1. The French language file is updated. The Spanish language file is added. We fixed the bug of loading the user's list ( We have limited the list "The user's email address" on the settings page to the lowest role - author ).
 
 = V3.77 =
 We updated all functionality for wordpress 3.9. We fixed the bug of db table creation. The Ukrainian language file is updated. Screenshots are updated.
