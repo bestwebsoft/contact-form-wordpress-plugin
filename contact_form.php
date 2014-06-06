@@ -4,7 +4,7 @@ Plugin Name: Contact Form
 Plugin URI:  http://bestwebsoft.com/plugin/
 Description: Plugin for Contact Form.
 Author: BestWebSoft
-Version: 3.78
+Version: 3.79
 Author URI: http://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -214,15 +214,43 @@ if ( ! function_exists( 'cntctfrm_settings' ) ) {
 		
 			/* Get options from the database */
 			if ( 1 == $wpmu ) {
-				if ( get_site_option( 'cntctfrmmlt_options_'. $_SESSION['cntctfrmmlt_id_form'] ) )
-					$cntctfrm_options = get_site_option( 'cntctfrmmlt_options_'. $_SESSION['cntctfrmmlt_id_form'] );
-				else
-					$cntctfrm_options = get_site_option( 'cntctfrmmlt_options' );
-			} else {
-				if ( get_option( 'cntctfrmmlt_options_' . $_SESSION['cntctfrmmlt_id_form'] ) )
-					$cntctfrm_options = get_option( 'cntctfrmmlt_options_'. $_SESSION['cntctfrmmlt_id_form'] );
-				else
+				if ( isset( $_SESSION['cntctfrmmlt_id_form'] ) ) {
+					if ( get_site_option( 'cntctfrmmlt_options_'. $_SESSION['cntctfrmmlt_id_form'] ) )
+						$cntctfrm_options = get_site_option( 'cntctfrmmlt_options_'. $_SESSION['cntctfrmmlt_id_form'] );
+					else {
+						if ( isset( $contact_form_multi_pro_active ) )
+							$cntctfrmmlt_options_main = get_site_option( 'cntctfrmmltpr_options_main' );
+						elseif ( isset( $contact_form_multi_active ) )
+							$cntctfrmmlt_options_main = get_site_option( 'cntctfrmmlt_options_main' );
+						
+						if (  1 == $_SESSION['cntctfrmmlt_id_form'] && 1 == count( $cntctfrmmlt_options_main['name_id_form'] ) ) {
+							add_option( 'cntctfrmmlt_options_1' , get_site_option( 'cntctfrm_options' ), '', 'yes' );
+							$cntctfrm_options = get_site_option( 'cntctfrmmlt_options_1' );
+						} else
+							$cntctfrm_options = get_site_option( 'cntctfrmmlt_options' );
+					}
+				} else {
 					$cntctfrm_options = get_option( 'cntctfrmmlt_options' );
+				}
+			} else {
+				if ( isset( $_SESSION['cntctfrmmlt_id_form'] ) ) {
+					if ( get_option( 'cntctfrmmlt_options_' . $_SESSION['cntctfrmmlt_id_form'] ) )
+						$cntctfrm_options = get_option( 'cntctfrmmlt_options_'. $_SESSION['cntctfrmmlt_id_form'] );
+					else {
+						if ( isset( $contact_form_multi_pro_active ) )
+							$cntctfrmmlt_options_main = get_site_option( 'cntctfrmmltpr_options_main' );
+						elseif ( isset( $contact_form_multi_active ) )
+							$cntctfrmmlt_options_main = get_site_option( 'cntctfrmmlt_options_main' );
+
+						if (  1 == $_SESSION['cntctfrmmlt_id_form'] && 1 == count( $cntctfrmmlt_options_main['name_id_form'] ) ) {
+							add_option( 'cntctfrmmlt_options_1' , get_option( 'cntctfrm_options' ), '', 'yes' );
+							$cntctfrm_options = get_option( 'cntctfrmmlt_options_1' );
+						} else
+							$cntctfrm_options = get_option( 'cntctfrmmlt_options' );
+					}
+				} else {
+					$cntctfrm_options = get_option( 'cntctfrmmlt_options' );
+				}
 			}		
 		} else {
 			/* Get options from the database */
@@ -290,34 +318,41 @@ if ( ! function_exists ( 'cntctfrm_db_create' ) ) {
 	function cntctfrm_db_create() {
 		global $wpdb;
 		$wpdb->query("DROP TABLE IF EXISTS " . $wpdb->prefix . "cntctfrm_field" );
-			$sql = "CREATE TABLE IF NOT EXISTS `" . $wpdb->prefix . "cntctfrm_field` (
-				id int NOT NULL AUTO_INCREMENT,							
-				name CHAR(100) NOT NULL,
-				UNIQUE KEY id (id)
-			);";
-			require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
-			dbDelta( $sql );
-			$fields = array( 
-				'name',
-				'email',
-				'subject',
-				'message',
-				'address',
-				'phone',
-				'attachment',
-				'attachment_explanations',
-				'send_copy',
-				'sent_from',
-				'date_time',
-				'coming_from',
-				'user_agent'
-			);
-			foreach ( $fields as $key => $value ) {
-				$db_row = $wpdb->get_row( "SELECT * FROM " . $wpdb->prefix . "cntctfrm_field WHERE `name` = '" . $value . "'", ARRAY_A );
-				if ( !isset( $db_row ) || empty( $db_row ) ) {
-					$wpdb->insert(  $wpdb->prefix . "cntctfrm_field", array( 'name' => $value ), array( '%s' ) );	
-				}
+		$sql = "CREATE TABLE IF NOT EXISTS `" . $wpdb->prefix . "cntctfrm_field` (
+			id int NOT NULL AUTO_INCREMENT,							
+			name CHAR(100) NOT NULL,
+			UNIQUE KEY id (id)
+		);";
+		require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
+		dbDelta( $sql );
+		$fields = array( 
+			'name',
+			'email',
+			'subject',
+			'message',
+			'address',
+			'phone',
+			'attachment',
+			'attachment_explanations',
+			'send_copy',
+			'sent_from',
+			'date_time',
+			'coming_from',
+			'user_agent'
+		);
+		foreach ( $fields as $key => $value ) {
+			$db_row = $wpdb->get_row( "SELECT * FROM " . $wpdb->prefix . "cntctfrm_field WHERE `name` = '" . $value . "'", ARRAY_A );
+			if ( !isset( $db_row ) || empty( $db_row ) ) {
+				$wpdb->insert(  $wpdb->prefix . "cntctfrm_field", array( 'name' => $value ), array( '%s' ) );	
 			}
+		}
+	}
+}
+
+if ( ! function_exists ( 'cntctfrm_activation' ) ) {
+	function cntctfrm_activation() {
+		cntctfrm_settings();
+		cntctfrm_db_create();
 	}
 }
 
@@ -1620,18 +1655,13 @@ if ( ! function_exists( 'cntctfrm_display_form' ) ) {
 		if ( is_plugin_active( 'contact-form-multi/contact-form-multi.php' ) || is_plugin_active_for_network( 'contact-form-multi/contact-form-multi.php' ) ||
 			 is_plugin_active( 'contact-form-multi-pro/contact-form-multi-pro.php' ) || is_plugin_active_for_network( 'contact-form-multi-pro/contact-form-multi-pro.php' ) ) {
 
-			$_SESSION['cntctfrmmlt_mailto'] = '';
 			extract( shortcode_atts( array( 'id' => $cntctfrmmlt_ide ), $atts ) );
 
-			if ( ! isset( $atts['id'] ) ) {
-				$cntctfrm_options = get_option( 'cntctfrmmlt_options' );
-				$_SESSION['cntctfrmmlt_mailto'] = $cntctfrm_options['cntctfrm_user_email'];
-			} else {
+			if ( isset( $atts['id'] ) )
 				$cntctfrm_options = get_option( 'cntctfrmmlt_options_' . $atts['id'] );
-				$_SESSION['cntctfrmmlt_mailto'] = $cntctfrm_options['cntctfrm_user_email'];				
-			}
-			if ( ! $cntctfrm_options )
+			else
 				$cntctfrm_options = get_option( 'cntctfrmmlt_options' );
+
 		} else {
 			$cntctfrm_options = get_option( 'cntctfrm_options' );
 		}
@@ -1908,9 +1938,9 @@ if ( ! function_exists( 'cntctfrm_check_form' ) ) {
 		if ( ! apply_filters( 'cntctfrm_check_form', $_POST ) )
 			$error_message['error_captcha'] = $cntctfrm_options['cntctfrm_captcha_error'][ $language ];
 		if ( isset( $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) && "" != $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) {
-			if( is_multisite() ){
+			if ( is_multisite() ) {
 				if ( defined('UPLOADS') ) {
-					if( ! is_dir( ABSPATH . UPLOADS ) ) {
+					if ( ! is_dir( ABSPATH . UPLOADS ) ) {
 						wp_mkdir_p( ABSPATH . UPLOADS );
 					}
 					$path_of_uploaded_file = ABSPATH . UPLOADS . $_FILES["cntctfrm_contact_attachment"]["name"];
@@ -1985,7 +2015,7 @@ if ( ! function_exists( 'cntctfrm_check_form' ) ) {
 /* Send mail function */
 if( ! function_exists( 'cntctfrm_send_mail' ) ) {
 	function cntctfrm_send_mail() {
-		global $cntctfrm_options, $path_of_uploaded_file, $wp_version, $wpdb, $cntctfrmmlt_maito, $wpdb;
+		global $cntctfrm_options, $path_of_uploaded_file, $wp_version, $wpdb;
 		$to = $headers  = "";
 
 		$name = isset( $_POST['cntctfrm_contact_name'] ) ? $_POST['cntctfrm_contact_name'] : "";
@@ -2006,20 +2036,13 @@ if( ! function_exists( 'cntctfrm_send_mail' ) ) {
 		if ( isset( $_SESSION['cntctfrm_send_mail'] ) && true == $_SESSION['cntctfrm_send_mail'] )
 			return true;
 
-		require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
-		if ( is_plugin_active( 'contact-form-multi/contact-form-multi.php' ) || is_plugin_active_for_network( 'contact-form-multi/contact-form-multi.php' ) ||
-			 is_plugin_active( 'contact-form-multi-pro/contact-form-multi-pro.php' ) || is_plugin_active_for_network( 'contact-form-multi-pro/contact-form-multi-pro.php' ) ) {
-			$cntctfrmmlt_maito = $_SESSION['cntctfrmmlt_mailto'];
-			$to = $wpdb->get_col( "SELECT `user_email` FROM " . $wpdb->prefix . "users WHERE `user_login` = '$cntctfrmmlt_maito'" );
-		} else {		
-			if ( 'user' == $cntctfrm_options['cntctfrm_select_email'] ) {
-				if ( '3.3' > $wp_version && function_exists('get_userdatabylogin') && false !== $user = get_userdatabylogin( $cntctfrm_options['cntctfrm_user_email'] ) ) {
-					$to = $user->user_email;
-				} elseif ( false !== $user = get_user_by( 'login', $cntctfrm_options['cntctfrm_user_email'] ) )
-					$to = $user->user_email;
-			} else {
-				$to = $cntctfrm_options['cntctfrm_custom_email'];
-			}
+		if ( 'user' == $cntctfrm_options['cntctfrm_select_email'] ) {
+			if ( '3.3' > $wp_version && function_exists('get_userdatabylogin') && false !== $user = get_userdatabylogin( $cntctfrm_options['cntctfrm_user_email'] ) ) {
+				$to = $user->user_email;
+			} elseif ( false !== $user = get_user_by( 'login', $cntctfrm_options['cntctfrm_user_email'] ) )
+				$to = $user->user_email;
+		} else {
+			$to = $cntctfrm_options['cntctfrm_custom_email'];
 		}
 
 		if ( "" == $to ) {
@@ -2553,7 +2576,7 @@ if ( ! function_exists ( 'cntctfrm_delete_options' ) ) {
 	}
 }
 
-register_activation_hook( __FILE__, 'cntctfrm_db_create' );
+register_activation_hook( __FILE__, 'cntctfrm_activation' );
 
 add_action( 'admin_menu', 'cntctfrm_admin_menu' );
 		
