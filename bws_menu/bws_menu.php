@@ -1,7 +1,7 @@
 <?php
 /*
 * Function for displaying BestWebSoft menu
-* Version: 1.3.2
+* Version: 1.3.3
 */
 
 if ( ! function_exists( 'bws_add_menu_render' ) ) {
@@ -248,7 +248,7 @@ if ( ! function_exists( 'bws_add_menu_render' ) ) {
 				'description'	=> 'Allows to change wordpress user role capabilities.',
 				'link'			=> 'http://bestwebsoft.com/plugin/user-role/?k=dfe2244835c6fbf601523964b3f34ccc&pn=' . $bws_plugin_info["id"] . '&v=' . $bws_plugin_info["version"] . '&wp_v=' . $wp_version,
 				'download'		=> 'http://bestwebsoft.com/plugin/user-role/?k=dfe2244835c6fbf601523964b3f34ccc&pn=' . $bws_plugin_info["id"] . '&v=' . $bws_plugin_info["version"] . '&wp_v=' . $wp_version . '#download',
-				'wp_install'	=> 'http://bestwebsoft.com/plugin/user-role/?k=dfe2244835c6fbf601523964b3f34ccc&pn=' . $bws_plugin_info["id"] . '&v=' . $bws_plugin_info["version"] . '&wp_v=' . $wp_version . '#download',
+				'wp_install'	=> '/wp-admin/plugin-install.php?tab=search&s=User+Role+BestWebSoft&plugin-search-input=Search+Plugins',
 				'settings'		=> 'admin.php?page=user-role.php',
 				'pro_version'	=> 'user-role-pro/user-role-pro.php'
 			)
@@ -578,8 +578,10 @@ if ( ! function_exists( 'bws_add_menu_render' ) ) {
 									</div>
 									<div class="bws_product_links">								
 										<a href="<?php echo $bws_plugins_pro[ $key_plugin ]["link"]; ?>" target="_blank"><?php _e( "Learn more", 'bestwebsoft' ); ?></a>
-										<span> | </span>
-										<a href="<?php echo $bws_plugins_pro[ $key_plugin ]["settings"]; ?>" target="_blank"><?php _e( "Settings", 'bestwebsoft' ); ?></a>
+										<?php if ( '' != $bws_plugins_pro[ $key_plugin ]["settings"] ) { ?>
+											<span> | </span>
+											<a href="<?php echo $bws_plugins_pro[ $key_plugin ]["settings"]; ?>" target="_blank"><?php _e( "Settings", 'bestwebsoft' ); ?></a>
+										<?php } ?>
 									</div>
 								</div>
 							<?php } elseif ( isset( $bws_plugins[ $key_plugin ] ) ) { ?>
@@ -605,8 +607,10 @@ if ( ! function_exists( 'bws_add_menu_render' ) ) {
 									</div>									
 									<div class="bws_product_links">
 										<a href="<?php echo $bws_plugins[ $key_plugin ]["link"]; ?>" target="_blank"><?php _e( "Learn more", 'bestwebsoft' ); ?></a>
-										<span> | </span>
-										<a href="<?php echo $bws_plugins[ $key_plugin ]["settings"]; ?>" target="_blank"><?php _e( "Settings", 'bestwebsoft' ); ?></a>
+										<?php if ( '' != $bws_plugins[ $key_plugin ]["settings"] ) { ?>
+											<span> | </span>
+											<a href="<?php echo $bws_plugins[ $key_plugin ]["settings"]; ?>" target="_blank"><?php _e( "Settings", 'bestwebsoft' ); ?></a>
+										<?php } ?>
 									</div>
 								</div>
 							<?php }

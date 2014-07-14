@@ -4,7 +4,7 @@ Plugin Name: Contact Form
 Plugin URI:  http://bestwebsoft.com/plugin/
 Description: Plugin for Contact Form.
 Author: BestWebSoft
-Version: 3.79
+Version: 3.80
 Author URI: http://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -174,7 +174,8 @@ if ( ! function_exists( 'cntctfrm_settings' ) ) {
 			'cntctfrm_redirect_url'				=> '',
 			'cntctfrm_delete_attached_file'		=> '0',
 			'cntctfrm_html_email'				=> 1,
-			'cntctfrm_site_name_parameter'		=> 'SERVER_NAME'
+			'cntctfrm_site_name_parameter'		=> 'SERVER_NAME',
+			'cntctfrm_change_label_in_email'	=> 0
 		);
 
 		/* Check contact-form-multi plugin */
@@ -375,7 +376,7 @@ if ( ! function_exists ( 'cntctfrm_version_check' ) ) {
 if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 	function cntctfrm_settings_page() {
 		global $cntctfrm_options, $wpdb, $cntctfrm_option_defaults, $wp_version, $cntctfrm_plugin_info, $wpmu;
-		$error = "";
+		$error = $message = "";
 
 		if ( ! function_exists( 'get_plugins' ) || ! function_exists( 'is_plugin_active_for_network' ) )
 			require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
@@ -434,6 +435,7 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 				$cntctfrm_options_submit['cntctfrm_display_coming_from'] 		= 1;
 				$cntctfrm_options_submit['cntctfrm_display_user_agent']			= 1;
 				$cntctfrm_options_submit['cntctfrm_change_label']				= 0;
+				$cntctfrm_options_submit['cntctfrm_change_label_in_email']		= 0;				
 				$cntctfrm_options_submit['cntctfrm_action_after_send']			= 1;
 				$cntctfrm_options_submit['cntctfrm_delete_attached_file']		= 0;
 				$cntctfrm_options_submit['cntctfrm_html_email']					= 1;
@@ -579,6 +581,7 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 				}
 
 				$cntctfrm_options_submit['cntctfrm_change_label']				= isset( $_POST['cntctfrm_change_label']) ? 1 : 0;
+				$cntctfrm_options_submit['cntctfrm_change_label_in_email']		= isset( $_POST['cntctfrm_change_label_in_email']) ? 1 : 0;				
 
 				if ( 1 == $cntctfrm_options_submit['cntctfrm_change_label'] ) {
 					foreach ( $_POST['cntctfrm_name_label'] as $key => $val ) {
@@ -1007,6 +1010,14 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 								<td></td>
 							</tr>
 							<tr valign="top">
+								<td><?php _e( "Location selectbox", 'contact_form' ); ?></td>
+								<td class="bws_pro_version"><input disabled="disabled" type="checkbox" name="cntctfrmpr_display_selectbox" value="1" /></td>
+								<td class="bws_pro_version"><input disabled="disabled" type="checkbox" name="cntctfrmpr_required_selectbox" value="1" /></td>						
+								<td class="bws_pro_version"></td>
+								<td class="bws_pro_version"></td>
+								<td class="bws_pro_version"><input disabled="disabled" type="file" name="cntctfrmpr_default_location"></td>
+							</tr>
+							<tr valign="top">
 								<td><?php _e( "Address", 'contact_form' ); ?></td>
 								<td><input type="checkbox" id="cntctfrm_display_address_field" name="cntctfrm_display_address_field" value="1" <?php if ( '1' == $cntctfrm_options['cntctfrm_display_address_field'] ) echo "checked=\"checked\" "; ?>/></td>
 								<td><input type="checkbox" id="cntctfrm_required_address_field" name="cntctfrm_required_address_field" value="1" <?php if ( '1' == $cntctfrm_options['cntctfrm_required_address_field'] ) echo "checked=\"checked\" "; ?>/></td>
@@ -1253,6 +1264,12 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 								} ?>
 							</td>
 						</tr>
+						<tr valign="top" class="cntctfrm_additions_block <?php if ( '0' == $cntctfrm_options['cntctfrm_additions_options'] ) echo "cntctfrm_hidden"; ?>">
+							<th scope="row"><?php _e( 'Use the changed names of the contact form fields in the email', 'contact_form' ); ?></th>
+							<td colspan="2">
+								<input type="checkbox" name="cntctfrm_change_label_in_email" value="1" <?php if ( $cntctfrm_options['cntctfrm_change_label_in_email'] == '1' ) echo "checked=\"checked\" "; ?>/>
+							</td>
+						</tr>						
 						<tr valign="top" class="cntctfrm_additions_block <?php if ( '0' == $cntctfrm_options['cntctfrm_additions_options'] ) echo "cntctfrm_hidden"; ?>">
 							<th scope="row"><?php _e( "Action after email is sent", 'contact_form' ); ?></th>
 							<td colspan="2" class="cntctfrm_action_after_send_block">
@@ -1622,7 +1639,7 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 							$bstwbsftwppdtplgns_options['go_pro']['contact-form-pro/contact_form_pro.php']['time'] < ( time() + ( 24 * 60 * 60 ) ) ) { ?>
 							<p>
 								<input disabled="disabled" type="text" name="bws_license_key" value="<?php echo $bws_license_key; ?>" />
-								<input disabled="disabled" type="submit" class="button-primary" value="<?php _e( 'Go!', 'contact_form' ); ?>" />
+								<input disabled="disabled" type="submit" class="button-primary" value="<?php _e( 'Activate', 'contact_form' ); ?>" />
 							</p>
 							<p>
 								<?php _e( "Unfortunately, you have exceeded the number of available tries per day. Please, upload the plugin manually.", 'contact_form' ); ?>
@@ -1632,7 +1649,7 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 								<input type="text" name="bws_license_key" value="<?php echo $bws_license_key; ?>" />
 								<input type="hidden" name="bws_license_plugin" value="contact-form-pro/contact_form_pro.php" />
 								<input type="hidden" name="bws_license_submit" value="submit" />
-								<input type="submit" class="button-primary" value="<?php _e( 'Go!', 'contact_form' ); ?>" />
+								<input type="submit" class="button-primary" value="<?php _e( 'Activate', 'contact_form' ); ?>" />
 								<?php wp_nonce_field( plugin_basename(__FILE__), 'bws_license_nonce_name' ); ?>
 							</p>
 						<?php } ?>
@@ -1679,12 +1696,12 @@ if ( ! function_exists( 'cntctfrm_display_form' ) ) {
 		$message = isset( $_POST['cntctfrm_contact_message'] ) ? htmlspecialchars( stripslashes( $_POST['cntctfrm_contact_message'] ) ) : "";
 		$phone = isset( $_POST['cntctfrm_contact_phone'] ) ? htmlspecialchars( stripslashes( $_POST['cntctfrm_contact_phone'] ) ) : "";
 
-		$name = strip_tags( preg_replace ( '/<[^>]*>/', '', preg_replace ( '/<script.*<\/[^>]*>/', '', $name ) ) );
-		$address = strip_tags( preg_replace ( '/<[^>]*>/', '', preg_replace ( '/<script.*<\/[^>]*>/', '', $address ) ) );
-		$email = strip_tags( preg_replace ( '/<[^>]*>/', '', preg_replace ( '/<script.*<\/[^>]*>/', '', $email ) ) );  
-		$subject = strip_tags( preg_replace ( '/<[^>]*>/', '', preg_replace ( '/<script.*<\/[^>]*>/', '', $subject ) ) );  
-		$message = strip_tags( preg_replace ( '/<[^>]*>/', '', preg_replace ( '/<script.*<\/[^>]*>/', '', $message ) ) ); 
-		$phone = strip_tags( preg_replace ( '/<[^>]*>/', '', preg_replace ( '/<script.*<\/[^>]*>/', '', $phone ) ) );  
+		$name = strip_tags( preg_replace( '/<[^>]*>/', '', preg_replace( '/<script.*<\/[^>]*>/', '', $name ) ) );
+		$address = strip_tags( preg_replace( '/<[^>]*>/', '', preg_replace( '/<script.*<\/[^>]*>/', '', $address ) ) );
+		$email = strip_tags( preg_replace( '/<[^>]*>/', '', preg_replace( '/<script.*<\/[^>]*>/', '', $email ) ) );  
+		$subject = strip_tags( preg_replace( '/<[^>]*>/', '', preg_replace( '/<script.*<\/[^>]*>/', '', $subject ) ) );  
+		$message = strip_tags( preg_replace( '/<[^>]*>/', '', preg_replace( '/<script.*<\/[^>]*>/', '', $message ) ) ); 
+		$phone = strip_tags( preg_replace( '/<[^>]*>/', '', preg_replace( '/<script.*<\/[^>]*>/', '', $phone ) ) );  
 
 		$send_copy = isset( $_POST['cntctfrm_contact_send_copy'] ) ? $_POST['cntctfrm_contact_send_copy'] : "";
 		/* If it is good */
@@ -1864,12 +1881,12 @@ if ( ! function_exists( 'cntctfrm_check_form' ) ) {
 		$message = isset( $_POST['cntctfrm_contact_message'] ) ? htmlspecialchars( stripslashes( $_POST['cntctfrm_contact_message'] ) ) : "";
 		$phone = isset( $_POST['cntctfrm_contact_phone'] ) ? htmlspecialchars( stripslashes( $_POST['cntctfrm_contact_phone'] ) ) : "";
 
-		$name = strip_tags( preg_replace ( '/<[^>]*>/', '', preg_replace ( '/<script.*<\/[^>]*>/', '', $name ) ) ); 
-		$address = strip_tags( preg_replace ( '/<[^>]*>/', '', preg_replace ( '/<script.*<\/[^>]*>/', '', $address ) ) ); 
-		$email = strip_tags( preg_replace ( '/<[^>]*>/', '', preg_replace ( '/<script.*<\/[^>]*>/', '', $email ) ) );  
-		$subject = strip_tags( preg_replace ( '/<[^>]*>/', '', preg_replace ( '/<script.*<\/[^>]*>/', '', $subject ) ) );  
-		$message = strip_tags( preg_replace ( '/<[^>]*>/', '', preg_replace ( '/<script.*<\/[^>]*>/', '', $message ) ) ); 
-		$phone = strip_tags( preg_replace ( '/<[^>]*>/', '', preg_replace ( '/<script.*<\/[^>]*>/', '', $phone ) ) );  
+		$name = strip_tags( preg_replace( '/<[^>]*>/', '', preg_replace( '/<script.*<\/[^>]*>/', '', $name ) ) ); 
+		$address = strip_tags( preg_replace( '/<[^>]*>/', '', preg_replace( '/<script.*<\/[^>]*>/', '', $address ) ) ); 
+		$email = strip_tags( preg_replace( '/<[^>]*>/', '', preg_replace( '/<script.*<\/[^>]*>/', '', $email ) ) );  
+		$subject = strip_tags( preg_replace( '/<[^>]*>/', '', preg_replace( '/<script.*<\/[^>]*>/', '', $subject ) ) );  
+		$message = strip_tags( preg_replace( '/<[^>]*>/', '', preg_replace( '/<script.*<\/[^>]*>/', '', $message ) ) ); 
+		$phone = strip_tags( preg_replace( '/<[^>]*>/', '', preg_replace( '/<script.*<\/[^>]*>/', '', $phone ) ) );  
 
 		if ( 1 == $cntctfrm_options['cntctfrm_required_name_field'] && 1 == $cntctfrm_options['cntctfrm_display_name_field'] )
 			$error_message['error_name'] = $cntctfrm_options['cntctfrm_name_error'][ $language ];
@@ -1943,25 +1960,25 @@ if ( ! function_exists( 'cntctfrm_check_form' ) ) {
 					if ( ! is_dir( ABSPATH . UPLOADS ) ) {
 						wp_mkdir_p( ABSPATH . UPLOADS );
 					}
-					$path_of_uploaded_file = ABSPATH . UPLOADS . $_FILES["cntctfrm_contact_attachment"]["name"];
+					$path_of_uploaded_file = ABSPATH . UPLOADS . 'cntctfrm_' . md5( $_FILES["cntctfrm_contact_attachment"]["name"] . time() . $email ) . '_' . $_FILES["cntctfrm_contact_attachment"]["name"];
 				} else if ( defined( 'BLOGUPLOADDIR' ) ) {
 					if ( ! is_dir( BLOGUPLOADDIR ) ) {
 						wp_mkdir_p( BLOGUPLOADDIR );
 					}
-					$path_of_uploaded_file = BLOGUPLOADDIR . $_FILES["cntctfrm_contact_attachment"]["name"];
+					$path_of_uploaded_file = BLOGUPLOADDIR . 'cntctfrm_' . md5( $_FILES["cntctfrm_contact_attachment"]["name"] . time() . $email ) . '_' . $_FILES["cntctfrm_contact_attachment"]["name"];
 				} else {
 					$uploads = wp_upload_dir();
-					if ( ! isset( $uploads['path'] ) && isset ( $uploads['error'] ) )
+					if ( ! isset( $uploads['path'] ) && isset( $uploads['error'] ) )
 						$error_message['error_attachment'] = $uploads['error'];
 					else
-						$path_of_uploaded_file = $uploads['path'] . "/" . $_FILES["cntctfrm_contact_attachment"]["name"];
+						$path_of_uploaded_file = $uploads['path'] . "/" . 'cntctfrm_' . md5( $_FILES["cntctfrm_contact_attachment"]["name"] . time() . $email ) . '_' . $_FILES["cntctfrm_contact_attachment"]["name"];
 				}
 			} else {
 				$uploads = wp_upload_dir();
 				if ( ! isset( $uploads['path'] ) && isset ( $uploads['error'] ) )
 					$error_message['error_attachment'] = $uploads['error'];
 				else
-					$path_of_uploaded_file = $uploads['path'] . "/" . $_FILES["cntctfrm_contact_attachment"]["name"];
+					$path_of_uploaded_file = $uploads['path'] . "/" . 'cntctfrm_' . md5( $_FILES["cntctfrm_contact_attachment"]["name"] . time() . $email ) . '_' . $_FILES["cntctfrm_contact_attachment"]["name"];
 			}
 			$tmp_path = $_FILES["cntctfrm_contact_attachment"]["tmp_name"];
 			$path_info = pathinfo( $path_of_uploaded_file );
@@ -1972,7 +1989,7 @@ if ( ! function_exists( 'cntctfrm_check_form' ) ) {
 						do_action( 'cntctfrm_get_attachment_data', $path_of_uploaded_file );
 						unset( $error_message['error_attachment'] );
 					} else {
-						$letter_upload_max_size = substr( ini_get('upload_max_filesize'), -1);
+						$letter_upload_max_size = substr( ini_get( 'upload_max_filesize' ), -1 );
 						// $upload_max_size = substr( ini_get('upload_max_filesize'), 0, -1 );
 						$upload_max_size = '1';
 						switch( strtoupper( $letter_upload_max_size ) ) {
@@ -2018,6 +2035,8 @@ if( ! function_exists( 'cntctfrm_send_mail' ) ) {
 		global $cntctfrm_options, $path_of_uploaded_file, $wp_version, $wpdb;
 		$to = $headers  = "";
 
+		$lang = isset( $_POST['cntctfrm_language'] ) ? $_POST['cntctfrm_language'] : 'en';
+
 		$name = isset( $_POST['cntctfrm_contact_name'] ) ? $_POST['cntctfrm_contact_name'] : "";
 		$address = isset( $_POST['cntctfrm_contact_address'] ) ? $_POST['cntctfrm_contact_address'] : "";
 		$email = isset( $_POST['cntctfrm_contact_email'] ) ? stripslashes( $_POST['cntctfrm_contact_email'] ) : "";
@@ -2026,12 +2045,12 @@ if( ! function_exists( 'cntctfrm_send_mail' ) ) {
 		$phone = isset( $_POST['cntctfrm_contact_phone'] ) ? $_POST['cntctfrm_contact_phone'] : "";
 		$user_agent = cntctfrm_clean_input( $_SERVER['HTTP_USER_AGENT'] );
 
-		$name = stripslashes( strip_tags( preg_replace ( '/<[^>]*>/', '', preg_replace ( '/<script.*<\/[^>]*>/', '', $name ) ) ) ); 
-		$address = stripslashes( strip_tags( preg_replace ( '/<[^>]*>/', '', preg_replace ( '/<script.*<\/[^>]*>/', '', $address ) ) ) ); 
-		$email = stripslashes( strip_tags( preg_replace ( '/<[^>]*>/', '', preg_replace ( '/<script.*<\/[^>]*>/', '', $email ) ) ) );  
-		$subject = stripslashes( strip_tags( preg_replace ( '/<[^>]*>/', '', preg_replace ( '/<script.*<\/[^>]*>/', '', $subject ) ) ) );  
-		$message = stripslashes( strip_tags( preg_replace ( '/<[^>]*>/', '', preg_replace ( '/<script.*<\/[^>]*>/', '', $message ) ) ) ); 
-		$phone = stripslashes( strip_tags( preg_replace ( '/<[^>]*>/', '', preg_replace ( '/<script.*<\/[^>]*>/', '', $phone ) ) ) );  
+		$name = stripslashes( strip_tags( preg_replace( '/<[^>]*>/', '', preg_replace( '/<script.*<\/[^>]*>/', '', $name ) ) ) ); 
+		$address = stripslashes( strip_tags( preg_replace( '/<[^>]*>/', '', preg_replace( '/<script.*<\/[^>]*>/', '', $address ) ) ) ); 
+		$email = stripslashes( strip_tags( preg_replace( '/<[^>]*>/', '', preg_replace( '/<script.*<\/[^>]*>/', '', $email ) ) ) );  
+		$subject = stripslashes( strip_tags( preg_replace( '/<[^>]*>/', '', preg_replace( '/<script.*<\/[^>]*>/', '', $subject ) ) ) );  
+		$message = stripslashes( strip_tags( preg_replace( '/<[^>]*>/', '', preg_replace( '/<script.*<\/[^>]*>/', '', $message ) ) ) ); 
+		$phone = stripslashes( strip_tags( preg_replace( '/<[^>]*>/', '', preg_replace( '/<script.*<\/[^>]*>/', '', $phone ) ) ) );  
 
 		if ( isset( $_SESSION['cntctfrm_send_mail'] ) && true == $_SESSION['cntctfrm_send_mail'] )
 			return true;
@@ -2050,9 +2069,7 @@ if( ! function_exists( 'cntctfrm_send_mail' ) ) {
 			$to = get_option("admin_email");
 		}
 		if ( "" != $to ) {
-			$user_info_string = '';
-			$userdomain = '';
-			$form_action_url = '';
+			$user_info_string = $userdomain = $form_action_url = '';
 			$attachments = array();
 
 			if ( 'on' == strtolower( getenv('HTTPS') ) ) {
@@ -2072,15 +2089,15 @@ if( ! function_exists( 'cntctfrm_send_mail' ) ) {
 				}
 				if ( 1 == $cntctfrm_options['cntctfrm_display_sent_from'] ) {
 					if ( 1 == $cntctfrm_options['cntctfrm_html_email'] )
-						$user_info_string .= '<tr><td>' . __('Sent from (ip address)', 'contact_form') . ':</td><td>' . $_SERVER['REMOTE_ADDR'] . " ( " . $userdomain . " )" . '</td></tr>';
+						$user_info_string .= '<tr><td>' . __( 'Sent from (ip address)', 'contact_form' ) . ':</td><td>' . $_SERVER['REMOTE_ADDR'] . " ( " . $userdomain . " )" . '</td></tr>';
 					else
-						$user_info_string .= __('Sent from (ip address)', 'contact_form') . ': ' . $_SERVER['REMOTE_ADDR'] . " ( " . $userdomain . " )" . "\n";					
+						$user_info_string .= __( 'Sent from (ip address)', 'contact_form' ) . ': ' . $_SERVER['REMOTE_ADDR'] . " ( " . $userdomain . " )" . "\n";					
 				}
 				if ( 1 == $cntctfrm_options['cntctfrm_display_date_time'] ) {
 					if ( 1 == $cntctfrm_options['cntctfrm_html_email'] )
 						$user_info_string .= '<tr><td>' . __('Date/Time', 'contact_form') . ':</td><td>' . date_i18n( get_option( 'date_format' ) . ' ' . get_option( 'time_format' ), strtotime( current_time( 'mysql' ) ) ) . '</td></tr>';
 					else
-						$user_info_string .= __('Date/Time', 'contact_form') . ': ' . date_i18n( get_option( 'date_format' ) . ' ' . get_option( 'time_format' ), strtotime( current_time( 'mysql' ) ) ) . "\n";					
+						$user_info_string .= __( 'Date/Time', 'contact_form' ) . ': ' . date_i18n( get_option( 'date_format' ) . ' ' . get_option( 'time_format' ), strtotime( current_time( 'mysql' ) ) ) . "\n";					
 				}
 				if ( 1 == $cntctfrm_options['cntctfrm_display_coming_from'] ) {
 					if ( 1 == $cntctfrm_options['cntctfrm_html_email'] )
@@ -2099,34 +2116,40 @@ if( ! function_exists( 'cntctfrm_send_mail' ) ) {
 			if ( 1 == $cntctfrm_options['cntctfrm_html_email'] ) {
 				$message_text = '<html>
 				<head>
-					<title>' . __( "Contact from", 'contact_form' ) . get_bloginfo('name') . '</title>
+					<title>' . __( "Contact from", 'contact_form' ) . ' ' . get_bloginfo('name') . '</title>
 				</head>
 				<body>
 					<table>';
-				if ( 1 == $cntctfrm_options['cntctfrm_display_name_field'] )
-					$message_text .= '<tr>
-							<td width="160">' . __( "Name", 'contact_form' ) . '</td><td>' . $name . '</td>
-						</tr>';
-				if ( 1 == $cntctfrm_options['cntctfrm_display_address_field'] )
-					$message_text .= '<tr>
-							<td>' . __( "Address", 'contact_form' ) . '</td><td>' . $address . '</td>
-						</tr>';
-				$message_text .= '<tr>	
-							<td>'. __( "Email", 'contact_form' ) .'</td><td>' . $email . '</td>
-						</tr>';
-				if ( 1 == $cntctfrm_options['cntctfrm_display_phone_field'] )
-					$message_text .= '<tr>
-							<td>'. __( "Phone", 'contact_form' ) . '</td><td>' . $phone . '</td>
-						</tr>';
-				$message_text .= '<tr>
-							<td>' . __( "Subject", 'contact_form' ) . '</td><td>' . $subject . '</td>
+				if ( 1 == $cntctfrm_options['cntctfrm_display_name_field'] ) {
+					$message_text .= '<tr><td width="160">';
+					$message_text .= ( 1 == $cntctfrm_options['cntctfrm_change_label_in_email'] ) ? $cntctfrm_options['cntctfrm_name_label'][ $lang ] : __( "Name", 'contact_form' );
+					$message_text .= '</td><td>' . $name . '</td></tr>';
+				}
+
+				if ( 1 == $cntctfrm_options['cntctfrm_display_address_field'] ) {
+					$message_text .= '<tr><td>';
+					$message_text .= ( 1 == $cntctfrm_options['cntctfrm_change_label_in_email'] ) ? $cntctfrm_options['cntctfrm_address_label'][ $lang ] : __( "Address", 'contact_form' );
+					$message_text .= '</td><td>' . $address . '</td></tr>';
+				}
+
+				$message_text .= '<tr><td>';
+				$message_text .= ( 1 == $cntctfrm_options['cntctfrm_change_label_in_email'] ) ? $cntctfrm_options['cntctfrm_email_label'][ $lang ] : __( "Email", 'contact_form' );
+				$message_text .= '</td><td>' . $email . '</td></tr>';
+
+				if ( 1 == $cntctfrm_options['cntctfrm_display_phone_field'] ) {
+					$message_text .= '<tr><td>';
+					$message_text .= ( 1 == $cntctfrm_options['cntctfrm_change_label_in_email'] ) ? $cntctfrm_options['cntctfrm_phone_label'][ $lang ] : __( "Phone", 'contact_form' );
+					$message_text .= '</td><td>' . $phone . '</td></tr>';
+				}
+
+				$message_text .= '<tr><td>';
+				$message_text .= ( 1 == $cntctfrm_options['cntctfrm_change_label_in_email'] ) ? $cntctfrm_options['cntctfrm_subject_label'][ $lang ] : __( "Subject", 'contact_form' );
+				$message_text .= '</td><td>' . $subject . '</td></tr>
+						<tr><td>';
+				$message_text .= ( 1 == $cntctfrm_options['cntctfrm_change_label_in_email'] ) ? $cntctfrm_options['cntctfrm_message_label'][ $lang ] : __( "Message", 'contact_form' );
+				$message_text .= '</td><td>' . $message . '</td>
 						</tr>
-						<tr>
-							<td>' . __( "Message", 'contact_form' ) . '</td><td>' . $message . '</td>
-						</tr>
-						<tr>
-							<td>' . __( "Site", 'contact_form' ) . '</td><td>' . get_bloginfo("url") . '</td>
-						</tr>
+						<tr><td>' . __( "Site", 'contact_form' ) . '</td><td>' . get_bloginfo("url") . '</td></tr>
 						<tr>
 							<td><br /></td><td><br /></td>
 						</tr>';
@@ -2134,15 +2157,24 @@ if( ! function_exists( 'cntctfrm_send_mail' ) ) {
 				$message_text .= $user_info_string . '</table></body></html>';
 			} else {
 				$message_text = '';
-				if ( 1 == $cntctfrm_options['cntctfrm_display_name_field'] )
-					$message_text .= __( "Name", 'contact_form' ) . ': ' . $name . "\n";
-				if ( 1 == $cntctfrm_options['cntctfrm_display_address_field'] )
-					$message_text .= __( "Address", 'contact_form' ) . ': ' . $address . "\n";
-				$message_text .= __( "Email", 'contact_form' ) .': ' . $email . "\n";
-				if ( 1 == $cntctfrm_options['cntctfrm_display_phone_field'] )
-					$message_text .= __( "Phone", 'contact_form' ) . ': ' . $phone . "\n";
-				$message_text .= __( "Subject", 'contact_form' ) . ': ' . $subject . "\n" .
-						__( "Message", 'contact_form' ) . ': ' . $message . "\n" .
+				if ( 1 == $cntctfrm_options['cntctfrm_display_name_field'] ) {
+					$message_text .= ( 1 == $cntctfrm_options['cntctfrm_change_label_in_email'] ) ? $cntctfrm_options['cntctfrm_name_label'][ $lang ] : __( "Name", 'contact_form' );
+					$message_text .= ': ' . $name . "\n";
+				}
+				if ( 1 == $cntctfrm_options['cntctfrm_display_address_field'] ) {
+					$message_text .= ( 1 == $cntctfrm_options['cntctfrm_change_label_in_email'] ) ? $cntctfrm_options['cntctfrm_address_label'][ $lang ] : __( "Address", 'contact_form' );
+					$message_text .= ': ' . $address . "\n";
+				}
+				$message_text .= ( 1 == $cntctfrm_options['cntctfrm_change_label_in_email'] ) ? $cntctfrm_options['cntctfrm_email_label'][ $lang ] : __( "Email", 'contact_form' );
+				$message_text .= ': ' . $email . "\n";
+				if ( 1 == $cntctfrm_options['cntctfrm_display_phone_field'] ) {
+					$message_text .= ( 1 == $cntctfrm_options['cntctfrm_change_label_in_email'] ) ? $cntctfrm_options['cntctfrm_phone_label'][ $lang ] : __( "Phone", 'contact_form' );
+					$message_text .= ': ' . $phone . "\n";
+				}
+				$message_text .= ( 1 == $cntctfrm_options['cntctfrm_change_label_in_email'] ) ? $cntctfrm_options['cntctfrm_subject_label'][ $lang ] : __( "Subject", 'contact_form' );
+				$message_text .= ': ' . $subject . "\n";
+				$message_text .= ( 1 == $cntctfrm_options['cntctfrm_change_label_in_email'] ) ? $cntctfrm_options['cntctfrm_message_label'][ $lang ] : __( "Message", 'contact_form' );
+				$message_text .= ': ' . $message . "\n" .
 						__( "Site", 'contact_form' ) . ': ' . get_bloginfo("url") . "\n"
 						 . "\n";
 				$message_text_for_user = $message_text;
@@ -2165,7 +2197,13 @@ if( ! function_exists( 'cntctfrm_send_mail' ) ) {
 					$headers .= 'From: ' . $email . '';
 
 				if ( 1 == $cntctfrm_options['cntctfrm_attachment'] && isset( $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) && "" != $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) {
-					$attachments = array( $path_of_uploaded_file );					
+					$path_parts = pathinfo( $path_of_uploaded_file );
+					$path_of_uploaded_file_changed = $path_parts['dirname'] . '/' . preg_replace( '/^cntctfrm_[A-Z,a-z,0-9]{32}_/i', '', $path_parts['basename'] );
+
+					if ( ! @copy( $path_of_uploaded_file, $path_of_uploaded_file_changed ) )
+						$path_of_uploaded_file_changed = $path_of_uploaded_file;
+
+					$attachments = array( $path_of_uploaded_file_changed );				
 				}
 
 				if ( isset( $_POST['cntctfrm_contact_send_copy'] ) && 1 == $_POST['cntctfrm_contact_send_copy'] )
@@ -2174,6 +2212,10 @@ if( ! function_exists( 'cntctfrm_send_mail' ) ) {
 				/* Mail it */
 				$mail_result = wp_mail( $to, $subject, $message_text, $headers, $attachments );
 				/* Delete attachment */
+				if ( 1 == $cntctfrm_options['cntctfrm_attachment'] && isset( $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) && "" != $_FILES["cntctfrm_contact_attachment"]["tmp_name"]
+					&& $path_of_uploaded_file_changed != $path_of_uploaded_file ) {
+					@unlink( $path_of_uploaded_file_changed );	
+				}				
 				if ( 1 == $cntctfrm_options['cntctfrm_attachment'] && isset( $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) && "" != $_FILES["cntctfrm_contact_attachment"]["tmp_name"] && '1' == $cntctfrm_options['cntctfrm_delete_attached_file'] ) {
 					@unlink( $path_of_uploaded_file );	
 				}
@@ -2183,7 +2225,6 @@ if( ! function_exists( 'cntctfrm_send_mail' ) ) {
 				$headers  .= 'MIME-Version: 1.0' . "\n";
 
 				if ( 1 == $cntctfrm_options['cntctfrm_attachment'] && isset( $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) && "" != $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) {
-					global $path_of_uploaded_file;
 					$message_block = $message_text;
 
 					if ( 'custom' == $cntctfrm_options['cntctfrm_select_from_field'] )
@@ -2198,15 +2239,15 @@ if( ! function_exists( 'cntctfrm_send_mail' ) ) {
 						$headers .= 'From: ' . $from_field_name . ' <' . stripslashes( $email ) . '>' . "\n";
 
 
-					$bound_text = 	"jimmyP123";
+					$bound_text = "jimmyP123";
 		 
-					$bound = 	"--" . $bound_text . "";
+					$bound = "--" . $bound_text . "";
 
-					$bound_last = 	"--" . $bound_text . "--";
+					$bound_last = "--" . $bound_text . "--";
 
 					$headers .= "Content-Type: multipart/mixed; boundary=\"$bound_text\"";
 
-					$message_text = 	__( "If you can see this MIME, it means that the MIME type is not supported by your email client!", "contact_form" ) . "\n";
+					$message_text = __( "If you can see this MIME, it means that the MIME type is not supported by your email client!", "contact_form" ) . "\n";
 
 					if ( 1 == $cntctfrm_options['cntctfrm_html_email'] )
 						$message_text .= $bound . "\n" . "Content-Type: text/html; charset=\"utf-8\"\n" . "Content-Transfer-Encoding: 7bit\n\n" . $message_block . "\n\n";
@@ -2214,12 +2255,12 @@ if( ! function_exists( 'cntctfrm_send_mail' ) ) {
 						$message_text .= $bound . "\n" . "Content-Type: text/plain; charset=\"utf-8\"\n" . "Content-Transfer-Encoding: 7bit\n\n" . $message_block . "\n\n";
 				 
 						
-					$file = file_get_contents($path_of_uploaded_file);
+					$file = file_get_contents( $path_of_uploaded_file );
 					$message_text .= $bound . "\n";
 
-					$message_text .= "Content-Type: application/octet-stream; name=\"" . basename($path_of_uploaded_file) . "\"\n" .
-					"Content-Description: " . basename($path_of_uploaded_file)."\n" .
-					"Content-Disposition: attachment;\n" . " filename=\"" . basename($path_of_uploaded_file)."\"; size=" . filesize($path_of_uploaded_file) . ";\n" .
+					$message_text .= "Content-Type: application/octet-stream; name=\"" . $_FILES["cntctfrm_contact_attachment"]["name"] . "\"\n" .
+					"Content-Description: " . basename( $path_of_uploaded_file ) . "\n" .
+					"Content-Disposition: attachment;\n" . " filename=\"" . $_FILES["cntctfrm_contact_attachment"]["name"] ."\"; size=" . filesize( $path_of_uploaded_file ) . ";\n" .
 					"Content-Transfer-Encoding: base64\n\n" . chunk_split( base64_encode( $file ) ) . "\n\n";
 						$message_text .= $bound_last;
 				} else {
@@ -2292,7 +2333,7 @@ if ( ! function_exists ( 'cntctfrm_clean_input' ) ) {
 		} else if ( is_array( $string ) ) {
 			reset( $string );
 			while ( list($key, $value ) = each( $string ) ) {
-				$string[ $key ] = cntctfrm_clean_input($value,$preserve_space);
+				$string[ $key ] = cntctfrm_clean_input( $value,$preserve_space );
 			}
 			return $string;
 		} else {
@@ -2339,7 +2380,7 @@ if ( ! function_exists ( 'cntctfrm_email_name_filter' ) ) {
 	function cntctfrm_email_name_filter( $data ) {
 		global $cntctfrm_options;
 		if ( isset( $_POST['cntctfrm_contact_name'] ) && 'custom' != $cntctfrm_options['cntctfrm_select_from_field'] ) {
-			$name = stripslashes( strip_tags( preg_replace ( '/<[^>]*>/', '', preg_replace ( '/<script.*<\/[^>]*>/', '', trim( $_POST['cntctfrm_contact_name'] ) ) ) ) ); 
+			$name = stripslashes( strip_tags( preg_replace( '/<[^>]*>/', '', preg_replace( '/<script.*<\/[^>]*>/', '', trim( $_POST['cntctfrm_contact_name'] ) ) ) ) ); 
 			if ( '' != $name )
 				return $name;
 			else
@@ -2354,7 +2395,7 @@ if ( ! function_exists ( 'cntctfrm_email_name_filter' ) ) {
 
 if ( ! function_exists ( 'cntctfrm_add_language' ) ) {
 	function cntctfrm_add_language() {
-		$lang = strip_tags( preg_replace ( '/<[^>]*>/', '', preg_replace ( '/<script.*<\/[^>]*>/', '', htmlspecialchars( $_REQUEST['lang'] ) ) ) );
+		$lang = strip_tags( preg_replace( '/<[^>]*>/', '', preg_replace( '/<script.*<\/[^>]*>/', '', htmlspecialchars( $_REQUEST['lang'] ) ) ) );
 
 		/* Check contact-form-multi plugin */
 		if ( is_plugin_active( 'contact-form-multi/contact-form-multi.php' ) || is_plugin_active_for_network( 'contact-form-multi/contact-form-multi.php' ) )
