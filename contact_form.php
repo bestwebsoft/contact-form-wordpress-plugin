@@ -4,7 +4,7 @@ Plugin Name: Contact Form
 Plugin URI:  http://bestwebsoft.com/plugin/
 Description: Plugin for Contact Form.
 Author: BestWebSoft
-Version: 3.80
+Version: 3.81
 Author URI: http://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -2182,116 +2182,145 @@ if( ! function_exists( 'cntctfrm_send_mail' ) ) {
 			}
 
 			do_action( 'cntctfrm_get_mail_data', $to, $name, $email, $address, $phone, $subject, $message, $form_action_url, $user_agent, $userdomain );
-	
-			if ( 'wp-mail' == $cntctfrm_options['cntctfrm_mail_method'] ) {
-				/* To send HTML mail, the Content-type header must be set */
-				if ( 1 == $cntctfrm_options['cntctfrm_html_email'] )
-					$headers .= 'Content-type: text/html; charset=utf-8' . "\n";
-				else
-					$headers .= 'Content-type: text/plain; charset=utf-8' . "\n";
 
-				/* Additional headers */
-				if ( 'custom' == $cntctfrm_options['cntctfrm_from_email'] )
-					$headers .= 'From: ' . stripslashes( $cntctfrm_options['cntctfrm_custom_from_email'] ) . '';
-				else
-					$headers .= 'From: ' . $email . '';
+			if ( ! function_exists( 'is_plugin_active' ) )
+				require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 
+			if ( is_plugin_active( 'email-queue/email-queue.php' ) && mlq_if_mail_plugin_is_in_queue( plugin_basename( __FILE__ ) ) ) {
+				/* if email-queue plugin is active and this plugin's "in_queue" status is 'ON' */
 				if ( 1 == $cntctfrm_options['cntctfrm_attachment'] && isset( $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) && "" != $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) {
-					$path_parts = pathinfo( $path_of_uploaded_file );
-					$path_of_uploaded_file_changed = $path_parts['dirname'] . '/' . preg_replace( '/^cntctfrm_[A-Z,a-z,0-9]{32}_/i', '', $path_parts['basename'] );
-
-					if ( ! @copy( $path_of_uploaded_file, $path_of_uploaded_file_changed ) )
-						$path_of_uploaded_file_changed = $path_of_uploaded_file;
-
-					$attachments = array( $path_of_uploaded_file_changed );				
-				}
-
-				if ( isset( $_POST['cntctfrm_contact_send_copy'] ) && 1 == $_POST['cntctfrm_contact_send_copy'] )
-					wp_mail( $email, $subject, $message_text_for_user, $headers, $attachments );
-
-				/* Mail it */
-				$mail_result = wp_mail( $to, $subject, $message_text, $headers, $attachments );
-				/* Delete attachment */
-				if ( 1 == $cntctfrm_options['cntctfrm_attachment'] && isset( $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) && "" != $_FILES["cntctfrm_contact_attachment"]["tmp_name"]
-					&& $path_of_uploaded_file_changed != $path_of_uploaded_file ) {
-					@unlink( $path_of_uploaded_file_changed );	
-				}				
-				if ( 1 == $cntctfrm_options['cntctfrm_attachment'] && isset( $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) && "" != $_FILES["cntctfrm_contact_attachment"]["tmp_name"] && '1' == $cntctfrm_options['cntctfrm_delete_attached_file'] ) {
-					@unlink( $path_of_uploaded_file );	
-				}
-				return $mail_result;
-			} else {
-				// Set headers
-				$headers  .= 'MIME-Version: 1.0' . "\n";
-
-				if ( 1 == $cntctfrm_options['cntctfrm_attachment'] && isset( $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) && "" != $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) {
-					$message_block = $message_text;
-
-					if ( 'custom' == $cntctfrm_options['cntctfrm_select_from_field'] )
-						$from_field_name = stripslashes( $cntctfrm_options['cntctfrm_from_field'] );
-					else
-						$from_field_name = $name;
-
-					/* Additional headers */
-					if ( 'custom' == $cntctfrm_options['cntctfrm_from_email'] )
-						$headers .= 'From: ' . $from_field_name . ' <' . stripslashes( $cntctfrm_options['cntctfrm_custom_from_email'] ) . '>' . "\n";
-					else
-						$headers .= 'From: ' . $from_field_name . ' <' . stripslashes( $email ) . '>' . "\n";
-
-
-					$bound_text = "jimmyP123";
-		 
-					$bound = "--" . $bound_text . "";
-
-					$bound_last = "--" . $bound_text . "--";
-
-					$headers .= "Content-Type: multipart/mixed; boundary=\"$bound_text\"";
-
-					$message_text = __( "If you can see this MIME, it means that the MIME type is not supported by your email client!", "contact_form" ) . "\n";
-
-					if ( 1 == $cntctfrm_options['cntctfrm_html_email'] )
-						$message_text .= $bound . "\n" . "Content-Type: text/html; charset=\"utf-8\"\n" . "Content-Transfer-Encoding: 7bit\n\n" . $message_block . "\n\n";
-					else
-						$message_text .= $bound . "\n" . "Content-Type: text/plain; charset=\"utf-8\"\n" . "Content-Transfer-Encoding: 7bit\n\n" . $message_block . "\n\n";
-				 
-						
-					$file = file_get_contents( $path_of_uploaded_file );
-					$message_text .= $bound . "\n";
-
-					$message_text .= "Content-Type: application/octet-stream; name=\"" . $_FILES["cntctfrm_contact_attachment"]["name"] . "\"\n" .
-					"Content-Description: " . basename( $path_of_uploaded_file ) . "\n" .
-					"Content-Disposition: attachment;\n" . " filename=\"" . $_FILES["cntctfrm_contact_attachment"]["name"] ."\"; size=" . filesize( $path_of_uploaded_file ) . ";\n" .
-					"Content-Transfer-Encoding: base64\n\n" . chunk_split( base64_encode( $file ) ) . "\n\n";
-						$message_text .= $bound_last;
+					$attachment_file = $path_of_uploaded_file;
 				} else {
-					/* To send HTML mail, header must be set */
+					$attachment_file = '';
+				}
+				if ( isset( $_POST['cntctfrm_contact_send_copy'] ) && 1 == $_POST['cntctfrm_contact_send_copy'] ) {
+					do_action( 'cntctfrm_get_mail_data_for_mlq', plugin_basename( __FILE__ ), $email, $subject, $message_text_for_user, $attachment_file );
+				}
+				global $mlq_mail_result;
+				do_action( 'cntctfrm_get_mail_data_for_mlq', plugin_basename( __FILE__ ), $to, $subject, $message_text, $attachment_file );
+				/* return $mail_result = true if email-queue has successfully inserted mail in its DB; in other case - return false */
+				return $mail_result = $mlq_mail_result;
+			} else {
+				if ( 'wp-mail' == $cntctfrm_options['cntctfrm_mail_method'] ) {
+					/* To send HTML mail, the Content-type header must be set */
 					if ( 1 == $cntctfrm_options['cntctfrm_html_email'] )
 						$headers .= 'Content-type: text/html; charset=utf-8' . "\n";
 					else
 						$headers .= 'Content-type: text/plain; charset=utf-8' . "\n";
 
-					if ( 'custom' == $cntctfrm_options['cntctfrm_select_from_field'] )
-						$from_field_name = stripslashes( $cntctfrm_options['cntctfrm_from_field'] );
-					else
-						$from_field_name = $name;
-
 					/* Additional headers */
 					if ( 'custom' == $cntctfrm_options['cntctfrm_from_email'] )
-						$headers .= 'From: ' . $from_field_name . ' <' . stripslashes( $cntctfrm_options['cntctfrm_custom_from_email'] ) . '>' . "\n";
+						$headers .= 'From: ' . stripslashes( $cntctfrm_options['cntctfrm_custom_from_email'] ) . '';
 					else
-						$headers .= 'From: ' . $from_field_name . ' <' . $email . '>' . "\n";
-				}
-				if ( isset( $_POST['cntctfrm_contact_send_copy'] ) && 1 == $_POST['cntctfrm_contact_send_copy'] )
-					@mail( $email, $subject, $message_text_for_user, $headers );
+						$headers .= 'From: ' . $email . '';
 
-				$mail_result = @mail( $to, $subject , $message_text, $headers );
-				/* Delete attachment */
-				if ( 1 == $cntctfrm_options['cntctfrm_attachment'] && isset( $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) && "" != $_FILES["cntctfrm_contact_attachment"]["tmp_name"] && '1' == $cntctfrm_options['cntctfrm_delete_attached_file'] ) {
-					@unlink( $path_of_uploaded_file );	
-				}
-				return $mail_result;
-			}			
+					if ( 1 == $cntctfrm_options['cntctfrm_attachment'] && isset( $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) && "" != $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) {
+						$path_parts = pathinfo( $path_of_uploaded_file );
+						$path_of_uploaded_file_changed = $path_parts['dirname'] . '/' . preg_replace( '/^cntctfrm_[A-Z,a-z,0-9]{32}_/i', '', $path_parts['basename'] );
+
+						if ( ! @copy( $path_of_uploaded_file, $path_of_uploaded_file_changed ) )
+							$path_of_uploaded_file_changed = $path_of_uploaded_file;
+
+						$attachments = array( $path_of_uploaded_file_changed );				
+					}
+
+					if ( isset( $_POST['cntctfrm_contact_send_copy'] ) && 1 == $_POST['cntctfrm_contact_send_copy'] )
+						wp_mail( $email, $subject, $message_text_for_user, $headers, $attachments );
+
+					/* Mail it */
+					$mail_result = wp_mail( $to, $subject, $message_text, $headers, $attachments );
+					/* Delete attachment */
+					if ( 1 == $cntctfrm_options['cntctfrm_attachment'] && isset( $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) && "" != $_FILES["cntctfrm_contact_attachment"]["tmp_name"]
+						&& $path_of_uploaded_file_changed != $path_of_uploaded_file ) {
+						@unlink( $path_of_uploaded_file_changed );	
+					}				
+					if ( 1 == $cntctfrm_options['cntctfrm_attachment'] && isset( $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) && "" != $_FILES["cntctfrm_contact_attachment"]["tmp_name"] && '1' == $cntctfrm_options['cntctfrm_delete_attached_file'] ) {
+						@unlink( $path_of_uploaded_file );	
+					}
+					return $mail_result;
+				} else {
+					// Set headers
+					$headers  .= 'MIME-Version: 1.0' . "\n";
+
+					if ( 1 == $cntctfrm_options['cntctfrm_attachment'] && isset( $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) && "" != $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) {
+						$message_block = $message_text;
+
+						if ( 'custom' == $cntctfrm_options['cntctfrm_select_from_field'] )
+							$from_field_name = stripslashes( $cntctfrm_options['cntctfrm_from_field'] );
+						else
+							$from_field_name = $name;
+
+						/* Additional headers */
+						if ( 'custom' == $cntctfrm_options['cntctfrm_from_email'] )
+							$headers .= 'From: ' . $from_field_name . ' <' . stripslashes( $cntctfrm_options['cntctfrm_custom_from_email'] ) . '>' . "\n";
+						else
+							$headers .= 'From: ' . $from_field_name . ' <' . stripslashes( $email ) . '>' . "\n";
+
+
+						$bound_text = "jimmyP123";
+			 
+						$bound = "--" . $bound_text . "";
+
+						$bound_last = "--" . $bound_text . "--";
+
+						$headers .= "Content-Type: multipart/mixed; boundary=\"$bound_text\"";
+
+						$message_text = __( "If you can see this MIME, it means that the MIME type is not supported by your email client!", "contact_form" ) . "\n";
+
+						if ( 1 == $cntctfrm_options['cntctfrm_html_email'] )
+							$message_text .= $bound . "\n" . "Content-Type: text/html; charset=\"utf-8\"\n" . "Content-Transfer-Encoding: 7bit\n\n" . $message_block . "\n\n";
+						else
+							$message_text .= $bound . "\n" . "Content-Type: text/plain; charset=\"utf-8\"\n" . "Content-Transfer-Encoding: 7bit\n\n" . $message_block . "\n\n";
+					 
+							
+						$file = file_get_contents( $path_of_uploaded_file );
+						$message_text .= $bound . "\n";
+
+						$message_text .= "Content-Type: application/octet-stream; name=\"" . $_FILES["cntctfrm_contact_attachment"]["name"] . "\"\n" .
+						"Content-Description: " . basename( $path_of_uploaded_file ) . "\n" .
+						"Content-Disposition: attachment;\n" . " filename=\"" . $_FILES["cntctfrm_contact_attachment"]["name"] ."\"; size=" . filesize( $path_of_uploaded_file ) . ";\n" .
+						"Content-Transfer-Encoding: base64\n\n" . chunk_split( base64_encode( $file ) ) . "\n\n";
+							$message_text .= $bound_last;
+					} else {
+						/* To send HTML mail, header must be set */
+						if ( 1 == $cntctfrm_options['cntctfrm_html_email'] )
+							$headers .= 'Content-type: text/html; charset=utf-8' . "\n";
+						else
+							$headers .= 'Content-type: text/plain; charset=utf-8' . "\n";
+
+						if ( 'custom' == $cntctfrm_options['cntctfrm_select_from_field'] )
+							$from_field_name = stripslashes( $cntctfrm_options['cntctfrm_from_field'] );
+						else
+							$from_field_name = $name;
+
+						/* Additional headers */
+						if ( 'custom' == $cntctfrm_options['cntctfrm_from_email'] )
+							$headers .= 'From: ' . $from_field_name . ' <' . stripslashes( $cntctfrm_options['cntctfrm_custom_from_email'] ) . '>' . "\n";
+						else
+							$headers .= 'From: ' . $from_field_name . ' <' . $email . '>' . "\n";
+					}
+					if ( isset( $_POST['cntctfrm_contact_send_copy'] ) && 1 == $_POST['cntctfrm_contact_send_copy'] )
+						@mail( $email, $subject, $message_text_for_user, $headers );
+
+					$mail_result = @mail( $to, $subject , $message_text, $headers );
+					/* Delete attachment */
+					if ( 1 == $cntctfrm_options['cntctfrm_attachment'] && isset( $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) && "" != $_FILES["cntctfrm_contact_attachment"]["tmp_name"] && '1' == $cntctfrm_options['cntctfrm_delete_attached_file'] ) {
+						@unlink( $path_of_uploaded_file );	
+					}
+					return $mail_result;
+				}			
+			}
 		}
+		return false;
+	}
+}
+
+/**
+ * Function that is used by email-queue to check for compatibility
+ * @return void 
+ */
+if ( ! function_exists( 'cntctfrm_check_for_compatibility_with_mlq' ) ) {
+	function cntctfrm_check_for_compatibility_with_mlq() {
 		return false;
 	}
 }
