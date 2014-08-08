@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=1&product_id=94
 Tags: attachment, contact, contatc, conact, cnotact, contact button, contact form, contact form plugin, contact me, contacts, contacts form plugin, copy, feedback, feedback form, form, insert the shortcode, post feedback, request, send, send copy, send messages, shortcode, text, web-page feedback
 Requires at least: 3.1
-Tested up to: 3.9.1
-Stable tag: 3.81
+Tested up to: 4.0-beta3
+Stable tag: 3.82
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -156,6 +156,10 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 6. Plugin extra settings in WordPress admin panel with additional fields.
 
 == Changelog ==
+
+= V3.82 - 07.08.2014 =
+* Budfix : Security Exploit was fixed.
+* Update : The French language file is updated.
 
 = V3.81 - 17.07.2014 =
 * Update : We updated all functionality for Email Queue plugin.
@@ -518,6 +522,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * Ability to add Contact Form into a post. Ability to adjust displaying of the form via shortcode is added.
 
 == Upgrade Notice ==
+
+= V3.82 =
+Security Exploit was fixed. The French language file is updated.
 
 = V3.81 =
 We updated all functionality for Email Queue plugin.

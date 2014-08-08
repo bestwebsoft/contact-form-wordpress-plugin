@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: contact_form\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-08 14:56+0300\n"
-"PO-Revision-Date: 2014-07-08 14:56+0300\n"
+"POT-Creation-Date: 2014-08-07 14:53+0300\n"
+"PO-Revision-Date: 2014-08-07 14:53+0300\n"
 "Last-Translator: bestwebsoft.com <plugins@bestwebsoft.com>\n"
 "Language-Team: kplam <kplam@qq.com>\n"
 "Language: zh_CN\n"
@@ -16,8 +16,7 @@ msgstr ""
 "X-Generator: Poedit 1.5.4\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: contact_form.php:74
-#: contact_form.php:845
+#: contact_form.php:74 contact_form.php:846
 msgid "Contact Form Settings"
 msgstr "联系表单设置"
 
@@ -25,61 +24,48 @@ msgstr "联系表单设置"
 msgid "Contact Form"
 msgstr "联系表单"
 
-#: contact_form.php:150
-#: contact_form.php:1200
-#: contact_form.php:1234
+#: contact_form.php:150 contact_form.php:1201 contact_form.php:1235
 msgid "Name:"
 msgstr "姓名："
 
-#: contact_form.php:151
-#: contact_form.php:1201
-#: contact_form.php:1235
+#: contact_form.php:151 contact_form.php:1202 contact_form.php:1236
 msgid "Address:"
 msgstr "地址："
 
-#: contact_form.php:152
-#: contact_form.php:1202
-#: contact_form.php:1236
+#: contact_form.php:152 contact_form.php:1203 contact_form.php:1237
 msgid "Email Address:"
 msgstr "电子邮箱："
 
-#: contact_form.php:153
-#: contact_form.php:1203
-#: contact_form.php:1237
+#: contact_form.php:153 contact_form.php:1204 contact_form.php:1238
 msgid "Phone number:"
 msgstr "电话："
 
-#: contact_form.php:154
-#: contact_form.php:1204
-#: contact_form.php:1238
+#: contact_form.php:154 contact_form.php:1205 contact_form.php:1239
 msgid "Subject:"
 msgstr "主题："
 
-#: contact_form.php:155
-#: contact_form.php:1205
-#: contact_form.php:1239
+#: contact_form.php:155 contact_form.php:1206 contact_form.php:1240
 msgid "Message:"
 msgstr "内容："
 
-#: contact_form.php:156
-#: contact_form.php:1206
-#: contact_form.php:1240
+#: contact_form.php:156 contact_form.php:1207 contact_form.php:1241
 msgid "Attachment:"
 msgstr "附件:"
 
 #: contact_form.php:157
-msgid "Supported file types: HTML, TXT, CSS, GIF, PNG, JPEG, JPG, TIFF, BMP, AI, EPS, PS, RTF, PDF, DOC, DOCX, XLS, ZIP, RAR, WAV, MP3, PPT. Max file size: 2MB"
-msgstr "支持的文件类型: HTML, TXT, CSS, GIF, PNG, JPEG, JPG, TIFF, BMP, AI, EPS, PS, RTF, PDF, DOC, DOCX, XLS, ZIP, RAR, WAV, MP3, PPT. 最大文件限制: 2MB"
+msgid ""
+"Supported file types: HTML, TXT, CSS, GIF, PNG, JPEG, JPG, TIFF, BMP, AI, "
+"EPS, PS, RTF, PDF, DOC, DOCX, XLS, ZIP, RAR, WAV, MP3, PPT. Max file size: "
+"2MB"
+msgstr ""
+"支持的文件类型: HTML, TXT, CSS, GIF, PNG, JPEG, JPG, TIFF, BMP, AI, EPS, PS, "
+"RTF, PDF, DOC, DOCX, XLS, ZIP, RAR, WAV, MP3, PPT. 最大文件限制: 2MB"
 
-#: contact_form.php:158
-#: contact_form.php:1208
-#: contact_form.php:1242
+#: contact_form.php:158 contact_form.php:1209 contact_form.php:1243
 msgid "Send me a copy"
 msgstr "抄送一份给我"
 
-#: contact_form.php:159
-#: contact_form.php:1209
-#: contact_form.php:1243
+#: contact_form.php:159 contact_form.php:1210 contact_form.php:1244
 msgid "Submit"
 msgstr "提交"
 
@@ -140,7 +126,9 @@ msgid "requires"
 msgstr "必填"
 
 #: contact_form.php:369
-msgid "or higher, that is why it has been deactivated! Please upgrade WordPress and try again."
+msgid ""
+"or higher, that is why it has been deactivated! Please upgrade WordPress and "
+"try again."
 msgstr "或更高，这就是为什么它已停用！请升级WordPress和再试一次。"
 
 #: contact_form.php:369
@@ -152,859 +140,822 @@ msgid "Plugins page"
 msgstr "插件页面"
 
 #: contact_form.php:677
-msgid "If the 'Redirect to page' option is selected then the URL field should be in the following format"
+msgid ""
+"If the 'Redirect to page' option is selected then the URL field should be in "
+"the following format"
 msgstr "如果'重定向到页面“选项被选中，那么URL字段应为以下格式。"
 
 #: contact_form.php:686
 msgid "Such user does not exist. Settings are not saved."
 msgstr "用户不存在。设置不被保存。"
 
-#: contact_form.php:690
-#: contact_form.php:696
-msgid "Please enter a valid email address in the 'FROM' field. Settings are not saved."
+#: contact_form.php:691
+#, fuzzy
+msgid ""
+"Please enter a valid email address in the 'Use this email address' field. "
+"Settings are not saved."
 msgstr "请在“发件人”字段输入一个有效的电子邮件地址。设置不被保存。"
 
-#: contact_form.php:721
+#: contact_form.php:697
+msgid ""
+"Please enter a valid email address in the 'FROM' field. Settings are not "
+"saved."
+msgstr "请在“发件人”字段输入一个有效的电子邮件地址。设置不被保存。"
+
+#: contact_form.php:722
 msgid "Settings saved."
 msgstr "设置已保存。"
 
-#: contact_form.php:748
-#: contact_form.php:780
+#: contact_form.php:749 contact_form.php:781
 msgid "Wrong license key"
 msgstr ""
 
-#: contact_form.php:773
-msgid "Something went wrong. Try again later. If the error will appear again, please, contact us <a href=http://support.bestwebsoft.com>BestWebSoft</a>. We are sorry for inconvenience."
+#: contact_form.php:774
+msgid ""
+"Something went wrong. Try again later. If the error will appear again, "
+"please, contact us <a href=http://support.bestwebsoft.com>BestWebSoft</a>. "
+"We are sorry for inconvenience."
 msgstr ""
 
-#: contact_form.php:782
+#: contact_form.php:783
 msgid "This license key is bind to another site"
 msgstr ""
 
-#: contact_form.php:784
-#: contact_form.php:1645
-msgid "Unfortunately, you have exceeded the number of available tries per day. Please, upload the plugin manually."
+#: contact_form.php:785 contact_form.php:1646
+msgid ""
+"Unfortunately, you have exceeded the number of available tries per day. "
+"Please, upload the plugin manually."
 msgstr ""
 
-#: contact_form.php:801
+#: contact_form.php:802
 msgid "Failed to open the zip archive. Please, upload the plugin manually"
 msgstr ""
 
-#: contact_form.php:807
-msgid "Your server does not support either ZipArchive or Phar. Please, upload the plugin manually"
+#: contact_form.php:808
+msgid ""
+"Your server does not support either ZipArchive or Phar. Please, upload the "
+"plugin manually"
 msgstr ""
 
-#: contact_form.php:811
-#: contact_form.php:820
+#: contact_form.php:812 contact_form.php:821
 msgid "Failed to download the zip archive. Please, upload the plugin manually"
 msgstr ""
 
-#: contact_form.php:824
-msgid "Something went wrong. Try again later or upload the plugin manually. We are sorry for inconvienience."
+#: contact_form.php:825
+msgid ""
+"Something went wrong. Try again later or upload the plugin manually. We are "
+"sorry for inconvienience."
 msgstr ""
 
-#: contact_form.php:839
+#: contact_form.php:840
 #, fuzzy
 msgid "Please, enter Your license key"
 msgstr "请输入你的信息"
 
-#: contact_form.php:847
-#: contact_form.php:2306
-#: contact_form.php:2318
+#: contact_form.php:848 contact_form.php:2337 contact_form.php:2349
 msgid "Settings"
 msgstr "设置"
 
-#: contact_form.php:848
+#: contact_form.php:849
 msgid "Extra settings"
 msgstr "额外的设置"
 
-#: contact_form.php:849
-#: contact_form.php:2319
+#: contact_form.php:850 contact_form.php:2350
 msgid "FAQ"
 msgstr "常问问题"
 
-#: contact_form.php:850
+#: contact_form.php:851
 msgid "Go PRO"
 msgstr ""
 
-#: contact_form.php:853
+#: contact_form.php:854
 msgid "Notice:"
 msgstr ""
 
-#: contact_form.php:853
-msgid "The plugin's settings have been changed. In order to save them please don't forget to click the 'Save Changes' button."
+#: contact_form.php:854
+msgid ""
+"The plugin's settings have been changed. In order to save them please don't "
+"forget to click the 'Save Changes' button."
 msgstr ""
 
-#: contact_form.php:859
-msgid "If you want to create multiple contact forms, please install the Contact Form Multi plugin."
+#: contact_form.php:860
+msgid ""
+"If you want to create multiple contact forms, please install the Contact "
+"Form Multi plugin."
 msgstr ""
 
-#: contact_form.php:865
-#: contact_form.php:870
-#: contact_form.php:1604
-msgid "If you would like to add the Contact Form to your website, just copy and paste this shortcode to your post or page or widget:"
-msgstr "如果你想添加联系表单到你的网站，只需复制并粘贴短码到您的文章、页面或部件："
+#: contact_form.php:866 contact_form.php:871 contact_form.php:1605
+msgid ""
+"If you would like to add the Contact Form to your website, just copy and "
+"paste this shortcode to your post or page or widget:"
+msgstr ""
+"如果你想添加联系表单到你的网站，只需复制并粘贴短码到您的文章、页面或部件："
 
-#: contact_form.php:865
-#: contact_form.php:866
-#: contact_form.php:870
-#: contact_form.php:871
-#: contact_form.php:1224
-#: contact_form.php:1226
-#: contact_form.php:1287
-#: contact_form.php:1289
+#: contact_form.php:866 contact_form.php:867 contact_form.php:871
+#: contact_form.php:872 contact_form.php:1225 contact_form.php:1227
+#: contact_form.php:1288 contact_form.php:1290
 msgid "or"
 msgstr "或"
 
-#: contact_form.php:866
-#: contact_form.php:871
-msgid "If have any problems with the standard shortcode [contact_form], you should use the shortcode"
+#: contact_form.php:867 contact_form.php:872
+msgid ""
+"If have any problems with the standard shortcode [contact_form], you should "
+"use the shortcode"
 msgstr "如果用标准短码[contact_form]遇到任何问题，你应该使用短代码"
 
-#: contact_form.php:867
-#: contact_form.php:872
+#: contact_form.php:868 contact_form.php:873
 msgid "They work the same way."
 msgstr "他们的运作方式相同。"
 
-#: contact_form.php:868
-#: contact_form.php:873
-msgid "If you leave the fields empty, the messages will be sent to the email address specified during registration."
+#: contact_form.php:869 contact_form.php:874
+msgid ""
+"If you leave the fields empty, the messages will be sent to the email "
+"address specified during registration."
 msgstr "如果你留下字段为空，消息将在注册过程中被发送到指定的电子邮件地址。"
 
-#: contact_form.php:878
+#: contact_form.php:879
 msgid "The user's email address:"
 msgstr "用户的电子邮件地址："
 
-#: contact_form.php:882
+#: contact_form.php:883
 msgid "Create a username"
 msgstr "新建一个用户名"
 
-#: contact_form.php:889
-msgid "Enter a username of the person who should get the messages from the contact form."
+#: contact_form.php:890
+msgid ""
+"Enter a username of the person who should get the messages from the contact "
+"form."
 msgstr "请输入从联系的表单获得消息的人的名字。"
 
-#: contact_form.php:893
+#: contact_form.php:894
 msgid "Use this email address:"
 msgstr "使用这个邮箱地址："
 
-#: contact_form.php:896
+#: contact_form.php:897
 msgid "Enter the email address you want the messages forwarded to."
 msgstr "输入你要转发消息的电子邮件地址。"
 
-#: contact_form.php:905
+#: contact_form.php:906
 msgid "Add department selectbox to the contact form:"
 msgstr "添加部门选择框到联系表单："
 
-#: contact_form.php:913
-#: contact_form.php:1487
+#: contact_form.php:914 contact_form.php:1488
 msgid "If you upgrade to Pro version all your settings will be saved."
 msgstr ""
 
-#: contact_form.php:920
-#: contact_form.php:1066
-#: contact_form.php:1140
-#: contact_form.php:1494
+#: contact_form.php:921 contact_form.php:1067 contact_form.php:1141
+#: contact_form.php:1495
 msgid "Unlock premium options by upgrading to a PRO version."
 msgstr ""
 
-#: contact_form.php:921
-#: contact_form.php:1067
-#: contact_form.php:1141
-#: contact_form.php:1495
-#: contact_form.php:2574
-#: contact_form.php:2590
+#: contact_form.php:922 contact_form.php:1068 contact_form.php:1142
+#: contact_form.php:1496 contact_form.php:2605 contact_form.php:2621
 msgid "Learn More"
 msgstr ""
 
-#: contact_form.php:924
-#: contact_form.php:1070
-#: contact_form.php:1144
-#: contact_form.php:1498
+#: contact_form.php:925 contact_form.php:1071 contact_form.php:1145
+#: contact_form.php:1499
 msgid "Go"
 msgstr ""
 
-#: contact_form.php:931
+#: contact_form.php:932
 msgid "Save emails to the database"
 msgstr "将邮件保存到数据库"
 
-#: contact_form.php:937
+#: contact_form.php:938
 msgid "Using"
 msgstr ""
 
-#: contact_form.php:937
-#: contact_form.php:1117
-#: contact_form.php:1120
-#: contact_form.php:1124
+#: contact_form.php:938 contact_form.php:1118 contact_form.php:1121
+#: contact_form.php:1125
 msgid "powered by"
 msgstr "powered by"
 
-#: contact_form.php:940
-#: contact_form.php:944
+#: contact_form.php:941 contact_form.php:945
 msgid "Using Contact Form to DB powered by"
 msgstr "使用联系表单到DB powered by"
 
-#: contact_form.php:940
+#: contact_form.php:941
 msgid "Activate Contact Form to DB"
 msgstr "激活联系表单到DB"
 
-#: contact_form.php:944
+#: contact_form.php:945
 msgid "Download Contact Form to DB"
 msgstr "下载联系表单到DB"
 
-#: contact_form.php:949
+#: contact_form.php:950
 msgid "Additional options"
 msgstr "附加选项"
 
-#: contact_form.php:951
+#: contact_form.php:952
 msgid "Show"
 msgstr "显示"
 
-#: contact_form.php:952
+#: contact_form.php:953
 msgid "Hide"
 msgstr "隐藏"
 
-#: contact_form.php:956
+#: contact_form.php:957
 msgid "What to use?"
 msgstr "使用什么呢？"
 
-#: contact_form.php:959
+#: contact_form.php:960
 msgid "Wp-mail"
 msgstr "Wp-mail"
 
-#: contact_form.php:959
+#: contact_form.php:960
 msgid "You can use the wp_mail function for mailing"
 msgstr "您可以使用wp_mail的邮件功能"
 
-#: contact_form.php:961
+#: contact_form.php:962
 msgid "Mail"
 msgstr "邮件"
 
-#: contact_form.php:961
+#: contact_form.php:962
 msgid "To send mail you can use the php mail function"
 msgstr "要发送邮件，可以使用PHP的邮件功能"
 
-#: contact_form.php:965
+#: contact_form.php:966
 msgid "The text in the 'From' field"
 msgstr "“发件人”字段中的文本"
 
-#: contact_form.php:967
+#: contact_form.php:968
 msgid "User name"
 msgstr "用户名"
 
-#: contact_form.php:968
-msgid "The name of the user who fills the form will be used in the field 'From'."
+#: contact_form.php:969
+msgid ""
+"The name of the user who fills the form will be used in the field 'From'."
 msgstr "填充表单的用户的名字将被显示为'发件人'"
 
-#: contact_form.php:971
+#: contact_form.php:972
 msgid "This text will be used in the 'FROM' field"
 msgstr "此文字将用于 'FROM' 栏"
 
-#: contact_form.php:975
+#: contact_form.php:976
 msgid "The email address in the 'From' field"
 msgstr "“发件人”字段中的电子邮件地址"
 
-#: contact_form.php:977
+#: contact_form.php:978
 msgid "User email"
 msgstr "用户的电子邮件"
 
-#: contact_form.php:978
-msgid "The email address of the user who fills the form will be used in the field 'From'."
+#: contact_form.php:979
+msgid ""
+"The email address of the user who fills the form will be used in the field "
+"'From'."
 msgstr "填充表单的用户的电子邮箱地址将被显示为'发件人'"
 
-#: contact_form.php:981
+#: contact_form.php:982
 msgid "This email address will be used in the 'From' field."
 msgstr "此电子邮件地址将被用于在“发件人”字段。"
 
-#: contact_form.php:985
+#: contact_form.php:986
 msgid "Required symbol"
 msgstr "必填符号"
 
-#: contact_form.php:995
+#: contact_form.php:996
 msgid "Fields"
 msgstr ""
 
-#: contact_form.php:996
+#: contact_form.php:997
 msgid "Used"
 msgstr ""
 
-#: contact_form.php:997
+#: contact_form.php:998
 #, fuzzy
 msgid "Required"
 msgstr "必填"
 
-#: contact_form.php:998
+#: contact_form.php:999
 msgid "Visible"
 msgstr ""
 
-#: contact_form.php:999
+#: contact_form.php:1000
 msgid "Disabled for editing"
 msgstr ""
 
-#: contact_form.php:1000
+#: contact_form.php:1001
 msgid "Field's default value"
 msgstr ""
 
-#: contact_form.php:1005
-#: contact_form.php:1362
-#: contact_form.php:2125
-#: contact_form.php:2161
+#: contact_form.php:1006 contact_form.php:1363 contact_form.php:2127
+#: contact_form.php:2163
 msgid "Name"
 msgstr "姓名"
 
-#: contact_form.php:1013
+#: contact_form.php:1014
 msgid "Location selectbox"
 msgstr ""
 
-#: contact_form.php:1021
-#: contact_form.php:1367
-#: contact_form.php:2131
-#: contact_form.php:2165
+#: contact_form.php:1022 contact_form.php:1368 contact_form.php:2133
+#: contact_form.php:2167
 msgid "Address"
 msgstr "地址"
 
-#: contact_form.php:1029
+#: contact_form.php:1030
 msgid "Email Address"
 msgstr "电子邮箱"
 
-#: contact_form.php:1037
+#: contact_form.php:1038
 #, fuzzy
 msgid "Phone number"
 msgstr "电话："
 
-#: contact_form.php:1045
-#: contact_form.php:1382
-#: contact_form.php:2146
-#: contact_form.php:2174
+#: contact_form.php:1046 contact_form.php:1383 contact_form.php:2148
+#: contact_form.php:2176
 msgid "Subject"
 msgstr "主题"
 
-#: contact_form.php:1053
-#: contact_form.php:1386
-#: contact_form.php:2149
-#: contact_form.php:2176
+#: contact_form.php:1054 contact_form.php:1387 contact_form.php:2151
+#: contact_form.php:2178
 msgid "Message"
 msgstr "内容"
 
-#: contact_form.php:1077
+#: contact_form.php:1078
 msgid "Attachment block"
 msgstr "附件区块"
 
-#: contact_form.php:1079
+#: contact_form.php:1080
 msgid "Users can attach the following file formats"
 msgstr "用户可以将以下文件格式"
 
-#: contact_form.php:1092
+#: contact_form.php:1093
 msgid "Add to the form"
 msgstr ""
 
-#: contact_form.php:1097
+#: contact_form.php:1098
 #, fuzzy
 msgid "Tips below the Attachment"
 msgstr "下面的附件块的提示"
 
-#: contact_form.php:1106
+#: contact_form.php:1107
 #, fuzzy
 msgid "'Send me a copy' block"
 msgstr "显示'发送副本给我'区块"
 
-#: contact_form.php:1117
-#: contact_form.php:1120
-#: contact_form.php:1124
-#: contact_form.php:1396
+#: contact_form.php:1118 contact_form.php:1121 contact_form.php:1125
+#: contact_form.php:1397
 msgid "Captcha"
 msgstr "Captcha"
 
-#: contact_form.php:1120
+#: contact_form.php:1121
 msgid "Activate captcha"
 msgstr "激活captcha"
 
-#: contact_form.php:1124
+#: contact_form.php:1125
 msgid "Download captcha"
 msgstr "下载captcha"
 
-#: contact_form.php:1132
+#: contact_form.php:1133
 msgid "Agreement checkbox"
 msgstr ""
 
-#: contact_form.php:1132
+#: contact_form.php:1133
 msgid "Required checkbox for submitting the form"
 msgstr ""
 
-#: contact_form.php:1133
+#: contact_form.php:1134
 msgid "Optional checkbox"
 msgstr ""
 
-#: contact_form.php:1133
+#: contact_form.php:1134
 msgid "Optional checkbox, the results of which will be displayed in email"
 msgstr ""
 
-#: contact_form.php:1150
+#: contact_form.php:1151
 msgid "Delete an attachment file from the server after the email is sent"
 msgstr "发送的电子邮件后从服务器删除附件文件"
 
-#: contact_form.php:1156
+#: contact_form.php:1157
 msgid "Email in HTML format sending"
 msgstr ""
 
-#: contact_form.php:1160
+#: contact_form.php:1161
 msgid "Display additional info in the email"
 msgstr "在电子邮件中显示附加信息"
 
-#: contact_form.php:1165
-#: contact_form.php:2092
-#: contact_form.php:2094
+#: contact_form.php:1166 contact_form.php:2094 contact_form.php:2096
 msgid "Sent from (ip address)"
 msgstr "发送（IP地址）"
 
-#: contact_form.php:1165
+#: contact_form.php:1166
 msgid "Example: Sent from (IP address):\t127.0.0.1"
 msgstr "例如： 发送 (IP地址):\t127.0.0.1"
 
-#: contact_form.php:1166
-#: contact_form.php:2098
-#: contact_form.php:2100
+#: contact_form.php:1167 contact_form.php:2100 contact_form.php:2102
 msgid "Date/Time"
 msgstr "日期/时间"
 
-#: contact_form.php:1166
+#: contact_form.php:1167
 msgid "Example: Date/Time:\tAugust 19, 2013 8:50 pm"
 msgstr "例如：日期/时间:\tAugust 19, 2013 8:50 pm"
 
-#: contact_form.php:1167
-#: contact_form.php:2104
-#: contact_form.php:2106
+#: contact_form.php:1168 contact_form.php:2106 contact_form.php:2108
 msgid "Sent from (referer)"
 msgstr "发送 (请求)"
 
-#: contact_form.php:1167
-msgid "Example: Sent from (referer):\thttp://bestwebsoft.com/contacts/contact-us/"
+#: contact_form.php:1168
+msgid ""
+"Example: Sent from (referer):\thttp://bestwebsoft.com/contacts/contact-us/"
 msgstr "示例：发送 (请求):\thttp://bestwebsoft.com/contacts/contact-us/"
 
-#: contact_form.php:1168
-#: contact_form.php:2110
-#: contact_form.php:2112
+#: contact_form.php:1169 contact_form.php:2112 contact_form.php:2114
 msgid "Using (user agent)"
 msgstr "使用（用户代理）"
 
-#: contact_form.php:1168
-msgid "Example: Using (user agent):\tMozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36"
-msgstr "示例：使用（用户代理）:\tMozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36"
+#: contact_form.php:1169
+msgid ""
+"Example: Using (user agent):\tMozilla/5.0 (Windows NT 6.2; WOW64) "
+"AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36"
+msgstr ""
+"示例：使用（用户代理）:\tMozilla/5.0 (Windows NT 6.2; WOW64) "
+"AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36"
 
-#: contact_form.php:1172
+#: contact_form.php:1173
 msgid "Language settings for the field names in the form"
 msgstr "表单中的字段名语言设置"
 
-#: contact_form.php:1181
+#: contact_form.php:1182
 msgid "Add a language"
 msgstr "添加一种语言"
 
-#: contact_form.php:1185
+#: contact_form.php:1186
 msgid "Change the names of the contact form fields and error messages"
 msgstr "更改联系表单字段和错误消息和名称"
 
-#: contact_form.php:1190
-#: contact_form.php:1277
+#: contact_form.php:1191 contact_form.php:1278
 msgid "English"
 msgstr "英语"
 
-#: contact_form.php:1198
-#: contact_form.php:1232
+#: contact_form.php:1199 contact_form.php:1233
 msgid "click to expand/hide the list"
 msgstr ""
 
-#: contact_form.php:1207
-#: contact_form.php:1241
+#: contact_form.php:1208 contact_form.php:1242
 msgid "Tips below the Attachment block"
 msgstr "下面的附件块的提示"
 
-#: contact_form.php:1210
-#: contact_form.php:1244
+#: contact_form.php:1211 contact_form.php:1245
 msgid "Error message for the Name field"
 msgstr "“姓名”字段中的错误消息"
 
-#: contact_form.php:1211
-#: contact_form.php:1245
+#: contact_form.php:1212 contact_form.php:1246
 msgid "Error message for the Address field"
 msgstr "“地址”字段的错误信息"
 
-#: contact_form.php:1212
-#: contact_form.php:1246
+#: contact_form.php:1213 contact_form.php:1247
 msgid "Error message for the Email field"
 msgstr "“电子邮件”字段的错误消息"
 
-#: contact_form.php:1213
-#: contact_form.php:1247
+#: contact_form.php:1214 contact_form.php:1248
 msgid "Error message for the Phone field"
 msgstr "“电话”字段的错误信息"
 
-#: contact_form.php:1214
-#: contact_form.php:1248
+#: contact_form.php:1215 contact_form.php:1249
 msgid "Error message for the Subject field"
 msgstr "“主题”字段的错误消息"
 
-#: contact_form.php:1215
-#: contact_form.php:1249
+#: contact_form.php:1216 contact_form.php:1250
 msgid "Error message for the Message field"
 msgstr "“消息”字段的错误消息"
 
-#: contact_form.php:1216
-#: contact_form.php:1250
+#: contact_form.php:1217 contact_form.php:1251
 msgid "Error message about the file type for the Attachment field"
 msgstr "附件栏的文件类型错误讯息"
 
-#: contact_form.php:1217
-#: contact_form.php:1251
-msgid "Error message while uploading a file for the Attachment field to the server"
+#: contact_form.php:1218 contact_form.php:1252
+msgid ""
+"Error message while uploading a file for the Attachment field to the server"
 msgstr "从附件栏上传一个文件到服务器的错误信息"
 
-#: contact_form.php:1218
-#: contact_form.php:1252
+#: contact_form.php:1219 contact_form.php:1253
 msgid "Error message while moving the file for the Attachment field"
 msgstr "从附件栏移动文件的错误信息"
 
-#: contact_form.php:1219
-#: contact_form.php:1253
+#: contact_form.php:1220 contact_form.php:1254
 msgid "Error message when file size limit for the Attachment field is exceeded"
 msgstr "超过文件大小限制附件字段时出现错误消息"
 
-#: contact_form.php:1220
-#: contact_form.php:1254
+#: contact_form.php:1221 contact_form.php:1255
 msgid "Error message for the Captcha field"
 msgstr "Captcha字段的错误消息"
 
-#: contact_form.php:1221
-#: contact_form.php:1255
+#: contact_form.php:1222 contact_form.php:1256
 msgid "Error message for the whole form"
 msgstr "整个表单的错误消息"
 
-#: contact_form.php:1224
-#: contact_form.php:1226
-#: contact_form.php:1258
-#: contact_form.php:1260
-#: contact_form.php:1287
-#: contact_form.php:1289
-#: contact_form.php:1297
-#: contact_form.php:1299
+#: contact_form.php:1225 contact_form.php:1227 contact_form.php:1259
+#: contact_form.php:1261 contact_form.php:1288 contact_form.php:1290
+#: contact_form.php:1298 contact_form.php:1300
 msgid "Use shortcode"
 msgstr "使用简码"
 
-#: contact_form.php:1224
-#: contact_form.php:1226
-#: contact_form.php:1258
-#: contact_form.php:1260
-#: contact_form.php:1287
-#: contact_form.php:1289
-#: contact_form.php:1297
-#: contact_form.php:1299
+#: contact_form.php:1225 contact_form.php:1227 contact_form.php:1259
+#: contact_form.php:1261 contact_form.php:1288 contact_form.php:1290
+#: contact_form.php:1298 contact_form.php:1300
 msgid "for this language"
 msgstr "此语言"
 
-#: contact_form.php:1268
+#: contact_form.php:1269
 #, fuzzy
 msgid "Use the changed names of the contact form fields in the email"
 msgstr "更改联系表单字段和错误消息和名称"
 
-#: contact_form.php:1274
+#: contact_form.php:1275
 msgid "Action after email is sent"
 msgstr "发送电子邮件后行动"
 
-#: contact_form.php:1276
+#: contact_form.php:1277
 msgid "Display text"
 msgstr "显示文本"
 
-#: contact_form.php:1285
-#: contact_form.php:1295
+#: contact_form.php:1286 contact_form.php:1296
 msgid "Text"
 msgstr "文本"
 
-#: contact_form.php:1306
+#: contact_form.php:1307
 msgid "Redirect to the page"
 msgstr "重定向到的页面"
 
-#: contact_form.php:1307
+#: contact_form.php:1308
 msgid "Url"
 msgstr "Url"
 
-#: contact_form.php:1311
+#: contact_form.php:1312
 msgid "The $_SERVER variable that is used to build a URL of the form"
 msgstr ""
 
-#: contact_form.php:1315
-msgid "If you are not sure whether to change this setting or not, please do not do that."
+#: contact_form.php:1316
+msgid ""
+"If you are not sure whether to change this setting or not, please do not do "
+"that."
 msgstr ""
 
-#: contact_form.php:1321
-#: contact_form.php:1505
+#: contact_form.php:1322 contact_form.php:1506
 msgid "Save Changes"
 msgstr "保存更改"
 
-#: contact_form.php:1326
+#: contact_form.php:1327
 msgid "If you enjoy our plugin, please give it 5 stars on WordPress"
 msgstr ""
 
-#: contact_form.php:1327
+#: contact_form.php:1328
 #, fuzzy
 msgid "Rate the plugin"
 msgstr "Рекомендовані плагіни"
 
-#: contact_form.php:1330
+#: contact_form.php:1331
 #, fuzzy
 msgid "If there is something wrong about it, please contact us"
-msgstr "Якщо у вас є запитання, звертайтесь на plugin@bestwebsoft.com або заповніть контактну форму на нашому сайті"
+msgstr ""
+"Якщо у вас є запитання, звертайтесь на plugin@bestwebsoft.com або заповніть "
+"контактну форму на нашому сайті"
 
-#: contact_form.php:1342
+#: contact_form.php:1343
 msgid "Errors output"
 msgstr "错误输出"
 
-#: contact_form.php:1345
+#: contact_form.php:1346
 msgid "Display error messages"
 msgstr "显示错误消息"
 
-#: contact_form.php:1346
+#: contact_form.php:1347
 msgid "Color of the input field errors."
 msgstr "输入栏错误的颜色。"
 
-#: contact_form.php:1347
+#: contact_form.php:1348
 msgid "Display error messages & color of the input field errors"
 msgstr "显示输入栏错误的错误消息和颜色"
 
-#: contact_form.php:1352
+#: contact_form.php:1353
 msgid "Add placeholder to the input blocks"
 msgstr "添加占位符输入块"
 
-#: contact_form.php:1358
+#: contact_form.php:1359
 msgid "Add tooltips"
 msgstr "添加工具提示"
 
-#: contact_form.php:1372
+#: contact_form.php:1373
 msgid "Email address"
 msgstr "电子邮箱"
 
-#: contact_form.php:1377
+#: contact_form.php:1378
 msgid "Phone Number"
 msgstr "电话号码"
 
-#: contact_form.php:1391
+#: contact_form.php:1392
 msgid "Attachment"
 msgstr "附件"
 
-#: contact_form.php:1396
+#: contact_form.php:1397
 msgid "(powered by bestwebsoft.com)"
 msgstr "(powered by bestwebsoft.com)"
 
-#: contact_form.php:1401
+#: contact_form.php:1402
 msgid "Style options"
 msgstr "风格选择"
 
-#: contact_form.php:1404
+#: contact_form.php:1405
 msgid "Text color"
 msgstr "文字颜色"
 
-#: contact_form.php:1407
-#: contact_form.php:1412
-#: contact_form.php:1422
-#: contact_form.php:1427
-#: contact_form.php:1432
-#: contact_form.php:1437
-#: contact_form.php:1447
-#: contact_form.php:1452
-#: contact_form.php:1458
-#: contact_form.php:1469
-#: contact_form.php:1474
-#: contact_form.php:1479
+#: contact_form.php:1408 contact_form.php:1413 contact_form.php:1423
+#: contact_form.php:1428 contact_form.php:1433 contact_form.php:1438
+#: contact_form.php:1448 contact_form.php:1453 contact_form.php:1459
+#: contact_form.php:1470 contact_form.php:1475 contact_form.php:1480
 msgid "Default"
 msgstr "默认"
 
-#: contact_form.php:1409
+#: contact_form.php:1410
 msgid "Label text color"
 msgstr "标签文字颜色"
 
-#: contact_form.php:1414
+#: contact_form.php:1415
 msgid "Placeholder color"
 msgstr "占位符的颜色"
 
-#: contact_form.php:1419
+#: contact_form.php:1420
 msgid "Errors color"
 msgstr "错误颜色"
 
-#: contact_form.php:1424
+#: contact_form.php:1425
 msgid "Error text color"
 msgstr "错误文字颜色"
 
-#: contact_form.php:1429
+#: contact_form.php:1430
 msgid "Background color of the input field errors"
 msgstr "输入栏错误的背景颜色"
 
-#: contact_form.php:1434
+#: contact_form.php:1435
 msgid "Border color of the input field errors"
 msgstr "输入栏错误的边框颜色"
 
-#: contact_form.php:1439
+#: contact_form.php:1440
 msgid "Placeholder color of the input field errors"
 msgstr "输入栏错误的占位符颜色"
 
-#: contact_form.php:1444
+#: contact_form.php:1445
 msgid "Input fields"
 msgstr "输入栏"
 
-#: contact_form.php:1449
+#: contact_form.php:1450
 msgid "Input fields background color"
 msgstr "输入栏的背景颜色"
 
-#: contact_form.php:1454
+#: contact_form.php:1455
 msgid "Text fields color"
 msgstr "文本字段颜色"
 
-#: contact_form.php:1456
+#: contact_form.php:1457
 msgid "Border width in px, numbers only"
 msgstr "边框宽度（像素，数字）"
 
-#: contact_form.php:1460
-#: contact_form.php:1481
+#: contact_form.php:1461 contact_form.php:1482
 msgid "Border color"
 msgstr "边框颜色"
 
-#: contact_form.php:1465
+#: contact_form.php:1466
 msgid "Submit button"
 msgstr "“提交”按钮"
 
-#: contact_form.php:1467
+#: contact_form.php:1468
 msgid "Width in px, numbers only"
 msgstr "Width in px, numbers only"
 
-#: contact_form.php:1471
+#: contact_form.php:1472
 msgid "Button color"
 msgstr "按钮的颜色"
 
-#: contact_form.php:1476
+#: contact_form.php:1477
 msgid "Button text color"
 msgstr "按钮的文字颜色"
 
-#: contact_form.php:1509
+#: contact_form.php:1510
 msgid "Contact Form Pro | Preview"
 msgstr "联系表单(Pro) | 预览"
 
-#: contact_form.php:1512
+#: contact_form.php:1513
 msgid "Show with errors"
 msgstr "显示错误"
 
-#: contact_form.php:1520
-#: contact_form.php:1522
+#: contact_form.php:1521 contact_form.php:1523
 msgid "Please enter your full name..."
 msgstr "请输入您的全名..."
 
-#: contact_form.php:1533
-#: contact_form.php:1535
+#: contact_form.php:1534 contact_form.php:1536
 msgid "Please enter your address..."
 msgstr "请输入您的地址..."
 
-#: contact_form.php:1544
-#: contact_form.php:1546
+#: contact_form.php:1545 contact_form.php:1547
 msgid "Please enter your email address..."
 msgstr "请输入你的电子邮件地址..."
 
-#: contact_form.php:1555
-#: contact_form.php:1557
+#: contact_form.php:1556 contact_form.php:1558
 msgid "Please enter your phone number..."
 msgstr "请输入你的手机号码..."
 
-#: contact_form.php:1566
-#: contact_form.php:1568
+#: contact_form.php:1567 contact_form.php:1569
 msgid "Please enter subject..."
 msgstr "请输入主题..."
 
-#: contact_form.php:1576
-#: contact_form.php:1578
+#: contact_form.php:1577 contact_form.php:1579
 msgid "Please enter your message..."
 msgstr "请输入你的信息"
 
-#: contact_form.php:1620
-msgid "Congratulations! The PRO version of the plugin is successfully download and activated."
+#: contact_form.php:1621
+msgid ""
+"Congratulations! The PRO version of the plugin is successfully download and "
+"activated."
 msgstr ""
 
-#: contact_form.php:1622
+#: contact_form.php:1623
 msgid "Please, go to"
 msgstr ""
 
-#: contact_form.php:1622
+#: contact_form.php:1623
 #, fuzzy
 msgid "the setting page"
 msgstr "额外的设置"
 
-#: contact_form.php:1623
+#: contact_form.php:1624
 msgid "You will be redirected automatically in 5 seconds."
 msgstr ""
 
-#: contact_form.php:1628
+#: contact_form.php:1629
 msgid "You can download and activate"
 msgstr ""
 
-#: contact_form.php:1630
+#: contact_form.php:1631
 msgid "version of this plugin by entering Your license key."
 msgstr ""
 
-#: contact_form.php:1632
-msgid "You can find your license key on your personal page Client area, by clicking on the link"
+#: contact_form.php:1633
+msgid ""
+"You can find your license key on your personal page Client area, by clicking "
+"on the link"
 msgstr ""
 
-#: contact_form.php:1634
+#: contact_form.php:1635
 msgid "(your username is the email you specify when purchasing the product)."
 msgstr ""
 
-#: contact_form.php:1642
-#: contact_form.php:1652
+#: contact_form.php:1643 contact_form.php:1653
 #, fuzzy
 msgid "Activate"
 msgstr "激活captcha"
 
-#: contact_form.php:1718
+#: contact_form.php:1719
 msgid "Sorry, email message could not be delivered."
 msgstr "对不起，电子邮件讯息无法传递。"
 
-#: contact_form.php:2119
+#: contact_form.php:2121
 msgid "Contact from"
 msgstr "联系表单"
 
-#: contact_form.php:2136
-#: contact_form.php:2168
+#: contact_form.php:2138 contact_form.php:2170
 msgid "Email"
 msgstr "邮箱"
 
-#: contact_form.php:2141
-#: contact_form.php:2171
+#: contact_form.php:2143 contact_form.php:2173
 msgid "Phone"
 msgstr "电话"
 
-#: contact_form.php:2152
-#: contact_form.php:2178
+#: contact_form.php:2154 contact_form.php:2180
 msgid "Site"
 msgstr "站点"
 
-#: contact_form.php:2250
-msgid "If you can see this MIME, it means that the MIME type is not supported by your email client!"
+#: contact_form.php:2270
+msgid ""
+"If you can see this MIME, it means that the MIME type is not supported by "
+"your email client!"
 msgstr "如果你能看到这个MIME，这意味着你的电子邮件客户端不支持该MIME类型！"
 
-#: contact_form.php:2320
+#: contact_form.php:2351
 msgid "Support"
 msgstr "支持"
 
-#: contact_form.php:2368
+#: contact_form.php:2399
 msgid "Are you sure that you want to delete this language data?"
 msgstr "您确定要删除此语言数据吗"
 
-#: contact_form.php:2577
-msgid "It’s time to upgrade your <strong>Contact Form plugin</strong> to <strong>PRO</strong> version"
+#: contact_form.php:2608
+msgid ""
+"It’s time to upgrade your <strong>Contact Form plugin</strong> to "
+"<strong>PRO</strong> version"
 msgstr ""
 
-#: contact_form.php:2578
+#: contact_form.php:2609
 msgid "Extend standard plugin functionality with new great options."
 msgstr ""
 
-#: contact_form.php:2593
-msgid "<strong>Contact Form to DB</strong> allows to store your messages to the database."
+#: contact_form.php:2624
+msgid ""
+"<strong>Contact Form to DB</strong> allows to store your messages to the "
+"database."
 msgstr ""
 
-#: contact_form.php:2594
+#: contact_form.php:2625
 msgid "Manage messages that have been sent from your website."
 msgstr ""
 
