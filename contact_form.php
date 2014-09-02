@@ -4,7 +4,7 @@ Plugin Name: Contact Form
 Plugin URI:  http://bestwebsoft.com/plugin/
 Description: Plugin for Contact Form.
 Author: BestWebSoft
-Version: 3.82
+Version: 3.83
 Author URI: http://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -408,7 +408,7 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 		/* Save data for settings page */
 		if ( isset( $_POST['cntctfrm_form_submit'] ) && check_admin_referer( plugin_basename(__FILE__), 'cntctfrm_nonce_name' ) ) {
 			$cntctfrm_options_submit['cntctfrm_user_email'] = $_POST['cntctfrm_user_email'];
-			$cntctfrm_options_submit['cntctfrm_custom_email'] = stripslashes( esc_html( $_POST['cntctfrm_custom_email'] ) );
+			$cntctfrm_options_submit['cntctfrm_custom_email'] = trim( stripslashes( esc_html( $_POST['cntctfrm_custom_email'] ) ), " ," );
 			$cntctfrm_options_submit['cntctfrm_select_email'] = $_POST['cntctfrm_select_email'];
 			$cntctfrm_options_submit['cntctfrm_from_email'] = $_POST['cntctfrm_from_email'];
 			$cntctfrm_options_submit['cntctfrm_custom_from_email'] = stripslashes( esc_html( $_POST['cntctfrm_custom_from_email'] ) );
@@ -684,18 +684,25 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 				} else if ( false !== get_user_by( 'login', $cntctfrm_options_submit['cntctfrm_user_email'] ) ) {
 					//
 				} else {
-					$error .= __(  "Such user does not exist. Settings are not saved.", 'contact_form' );
+					$error .= __(  "Such user does not exist.", 'contact_form' );
 				}
 			} else {
-				if ( "" == $cntctfrm_options_submit['cntctfrm_custom_email'] 
-					|| ! is_email( trim( $cntctfrm_options_submit['cntctfrm_custom_email'] ) ) ) {
-					$error .= __( "Please enter a valid email address in the 'Use this email address' field. Settings are not saved.", 'contact_form' );
+				if ( preg_match( '|,|', $cntctfrm_options_submit['cntctfrm_custom_email'] ) ) {
+					$cntctfrm_custom_emails = explode( ',', $cntctfrm_options_submit['cntctfrm_custom_email'] );
+				} else {
+					$cntctfrm_custom_emails[0] = $cntctfrm_options_submit['cntctfrm_custom_email'];
+				}
+				foreach ( $cntctfrm_custom_emails as $cntctfrm_custom_email ) {
+					if ( $cntctfrm_custom_email == "" || ! is_email( trim( $cntctfrm_custom_email ) ) ) {
+						$error .= __( "Please enter a valid email address in the 'Use this email address' field.", 'contact_form' );
+						break;
+					}
 				}
 			}
 			if ( 'custom' == $cntctfrm_options_submit['cntctfrm_from_email'] ) {
 				if ( "" == $cntctfrm_options_submit['cntctfrm_custom_from_email']
 					|| ! is_email( trim( $cntctfrm_options_submit['cntctfrm_custom_from_email'] ) ) ) {
-					$error .= __( "Please enter a valid email address in the 'FROM' field. Settings are not saved.", 'contact_form' );
+					$error .= __( "Please enter a valid email address in the 'FROM' field.", 'contact_form' );
 				}
 			}
 
@@ -721,6 +728,8 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 					update_option( 'cntctfrm_options', $cntctfrm_options, '', 'yes' );
 				}
 				$message = __( "Settings saved.", 'contact_form' );
+			} else {
+				$error .=  ' ' . __( "Settings are not saved.", 'contact_form' );
 			}
 		}
 
@@ -1288,7 +1297,7 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 									<?php if ( ! isset( $contact_form_multi_active ) && ! isset( $contact_form_multi_pro_active ) ) { ?>
 										<span class="cntctfrm_info"><?php _e( "Use shortcode", 'contact_form' ); echo " [bestwebsoft_contact_form lang=en] " . __( "or", 'contact_form' ) . " [bestwebsoft_contact_form] "; _e( "for this language", 'contact_form' ); ?></span>
 									<?php } else { ?>
-										<span class="cntctfrm_info"><?php _e( "Use shortcode", 'contact_form' ); echo " [bestwebsoft_contact_form=en id=".$_SESSION['cntctfrmmlt_id_form']."] " . __( "or", 'contact_form' ) . " [bestwebsoft_contact_form id=".$_SESSION['cntctfrmmlt_id_form']."] "; _e( "for this language", 'contact_form' ); ?></span>
+										<span class="cntctfrm_info"><?php _e( "Use shortcode", 'contact_form' ); echo " [bestwebsoft_contact_form lang=en id=".$_SESSION['cntctfrmmlt_id_form']."] " . __( "or", 'contact_form' ) . " [bestwebsoft_contact_form id=".$_SESSION['cntctfrmmlt_id_form']."] "; _e( "for this language", 'contact_form' ); ?></span>
 									<?php } ?>
 								</div>
 								<?php if ( ! empty( $cntctfrm_options['cntctfrm_language'] ) ) { 
@@ -2396,8 +2405,10 @@ if ( ! function_exists ( 'cntctfrm_admin_head' ) ) {
 				wp_enqueue_script( 'cntctfrm_script', plugins_url( 'js/script_wp_before_3.5.js', __FILE__ ) );
 			else
 				wp_enqueue_script( 'cntctfrm_script', plugins_url( 'js/script.js', __FILE__ ) );
-	
-			echo '<script type="text/javascript">var confirm_text = "' . __( 'Are you sure that you want to delete this language data?', 'contact_form' ) . '"</script>';
+
+			wp_localize_script( 'cntctfrm_script', 'cntctfrm_ajax', array(
+				'cntctfrm_nonce' => wp_create_nonce( plugin_basename( __FILE__ ), 'cntctfrm_ajax_nonce_field' ),
+				'cntctfrm_confirm_text'  => __( 'Are you sure that you want to delete this language data?', 'contact_form' ) ) );
 		}
 	}
 }
@@ -2427,6 +2438,8 @@ if ( ! function_exists ( 'cntctfrm_email_name_filter' ) ) {
 
 if ( ! function_exists ( 'cntctfrm_add_language' ) ) {
 	function cntctfrm_add_language() {
+		check_ajax_referer( plugin_basename( __FILE__ ), 'cntctfrm_ajax_nonce_field' );
+
 		$lang = strip_tags( preg_replace( '/<[^>]*>/', '', preg_replace( '/<script.*<\/[^>]*>/', '', htmlspecialchars( $_REQUEST['lang'] ) ) ) );
 
 		/* Check contact-form-multi plugin */
@@ -2458,6 +2471,7 @@ if ( ! function_exists ( 'cntctfrm_add_language' ) ) {
 
 if ( ! function_exists ( 'cntctfrm_remove_language' ) ) {
 	function cntctfrm_remove_language() {
+		check_ajax_referer( plugin_basename( __FILE__ ), 'cntctfrm_ajax_nonce_field' );
 		/* Check contact-form-multi plugin */
 		if ( is_plugin_active( 'contact-form-multi/contact-form-multi.php' ) || is_plugin_active_for_network( 'contact-form-multi/contact-form-multi.php' ) )
 			$contact_form_multi_active = true;
