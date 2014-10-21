@@ -1,19 +1,8 @@
 (function($) {
 	$(document).ready( function() {
-		$( '#cntctfrm_additions_options' ).change( function() {
-			if ( $( this ).is( ':checked' ) ) {
-				$( '.cntctfrm_additions_block' ).removeClass( 'cntctfrm_hidden' );
-				$( '#cntctfrm_hide_additional_settings' ).css( 'display', 'block' );
-			} else {
-				$( '.cntctfrm_additions_block' ).addClass( 'cntctfrm_hidden' );
-				$( '#cntctfrm_show_additional_settings' ).css( 'display', 'none' );
-				$( '#cntctfrm_hide_additional_settings' ).css( 'display', 'none' );
-			}
-		});
-		if ( $( '#cntctfrm_additions_options' ).is( ':checked' ) ) {
-			$( '#cntctfrm_show_additional_settings' ).css( 'display', 'block' );
-			$( '.cntctfrm_additions_block' ).addClass( 'cntctfrm_hidden' );
-		}
+		$( '.cntctfrm_additions_block' ).addClass( 'cntctfrm_hidden' );
+		$( '#cntctfrm_show_additional_settings' ).show();
+		
 		$( '#cntctfrm_show_additional_settings' ).click( function() {
 			$( this ).css( 'display', 'none' );
 			$( '#cntctfrm_hide_additional_settings' ).css( 'display', 'block' );

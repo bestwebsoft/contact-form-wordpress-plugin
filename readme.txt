@@ -4,7 +4,7 @@ Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=1&
 Tags: attachment, contact, contatc, conact, cnotact, contact button, contact form, contact form plugin, contact me, contacts, contacts form plugin, copy, feedback, feedback form, form, insert the shortcode, post feedback, request, send, send copy, send messages, shortcode, text, web-page feedback
 Requires at least: 3.1
 Tested up to: 4.0
-Stable tag: 3.83
+Stable tag: 3.84
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -23,7 +23,7 @@ http://www.youtube.com/watch?v=nGwh-oslK-c
 
 <a href="http://support.bestwebsoft.com" target="_blank">Support</a>
 
-<a href="http://bestwebsoft.com/plugin/contact-form-pro/?k=4028655c87316c98ae9ac7ca1928067f" target="_blank">Upgrade to Pro Version</a>
+<a href="http://bestwebsoft.com/products/contact-form/?k=4028655c87316c98ae9ac7ca1928067f" target="_blank">Upgrade to Pro Version</a>
 
 = Features =
 
@@ -37,37 +37,31 @@ http://www.youtube.com/watch?v=nGwh-oslK-c
 The author of the Contact Form also recommends the following plugins:
 
 * <a href="http://wordpress.org/plugins/captcha/">Captcha</a> - The Captcha plugin allows you to implement a super security captcha form into web forms. It protects your website from spam by means of math logic, easily understood by human beings. This captcha can be used for login, registration, password recovery, comments forms.
-There is also a premium version of the plugin - <a href="http://bestwebsoft.com/plugin/captcha-pro/?k=45dcf2a5ccd70a7fc8606f8030730ac7">Captcha Pro</a>, allowing compatibility with BuddyPress (Registration form, Comments form, "Create a Group" form) and Contact Form 7.
+There is also a premium version of the plugin - <a href="http://bestwebsoft.com/products/captcha/?k=45dcf2a5ccd70a7fc8606f8030730ac7">Captcha Pro</a>, allowing compatibility with BuddyPress (Registration form, Comments form, "Create a Group" form) and Contact Form 7.
 * <a href="http://wordpress.org/plugins/updater/">Updater</a> - This plugin updates WordPress core and the plugins to the recent versions. You can also use the auto mode or manual mode for updating and set email notifications.
-There is also a premium version of the plugin <a href="http://bestwebsoft.com/plugin/updater-pro/?k=982fae837f4c6e3b152183537448dbca">Updater Pro</a> with more useful features available. It can make backup of all your files and database before updating. Also it can forbid some plugins or WordPress Core update.
+There is also a premium version of the plugin <a href="http://bestwebsoft.com/products/updater/?k=982fae837f4c6e3b152183537448dbca">Updater Pro</a> with more useful features available. It can make backup of all your files and database before updating. Also it can forbid some plugins or WordPress Core update.
 * <a href="http://wordpress.org/plugins/contact-form-to-db/">Contact Form To DB</a> - This plugin is an exclusive add-on for the Contact Form plugin by BestWebSoft. The plugin provides a unique opportunity to manage messages sent from your site via the contact form. Please pay attention, that this plugin is an add-on ONLY for Contact Form plugin by BestWebSoft, that's why it will not work with any other contact form plugins.
-There is also a premium version of the plugin <a href="http://bestwebsoft.com/plugin/contact-form-to-db-pro/?k=d7d962591b5be0ce6c27af778b1b36ee">Contact Form To DB Pro</a>, allowing to re-send and preiodically delete messages, manage attachments and get detailed support and answers to your questions.
+There is also a premium version of the plugin <a href="http://bestwebsoft.com/products/contact-form-to-db/?k=d7d962591b5be0ce6c27af778b1b36ee">Contact Form To DB Pro</a>, allowing to re-send and preiodically delete messages, manage attachments and get detailed support and answers to your questions.
 * <a href="http://wordpress.org/plugins/contact-form-multi/">Contact Form Multi</a> - This plugin makes it possible to create and implement multiple contact forms on your site. It is also possible to set different parameters for different contact forms. Please note that this plugin is an exclusive add-on ONLY for Contact Form plugin by BestWebSoft and it will not work wothout it. Please make sure you've enabled Javascript, otherwise the plugin will not work.
-There is also a premium version of the plugin <a href="http://bestwebsoft.com/plugin/contact-form-multi-pro/?k=34543c152eff369d529e9b4da85985a9">Contact Form Multi Pro</a>, compatible with Contact Form Pro (ability to select different extra settings for each contact form).
+There is also a premium version of the plugin <a href="http://bestwebsoft.com/products/contact-form-multi/?k=34543c152eff369d529e9b4da85985a9">Contact Form Multi Pro</a>, compatible with Contact Form Pro (ability to select different extra settings for each contact form).
 * <a href="http://wordpress.org/plugins/email-queue/">Email Queue</a> - This plugin gives you an opportunity to organize a simple and effective mail queue. You can assign priorities to plugins that send mail. You can manage outgoing messages: trash them or delete completely. You can use searching, filtering and bulk operations with your mail. The plugin works with plugins produced by BestWebSoft team only.
 
 = Translation =
 
 * Afrikaans (af_ZA) (thanks to <a href="mailto:alducornelissen@gmail.com">Aldu</a>)
-* Belarusian (be_BY) (thanks to <a href="mailto:nullbsd@gmail.com">Sakałoŭ Alaksiej</a>)
-* European Portuguese (pt_PT) (thanks to <a href="mailto:cesarbsilva@gmail.com">César Silva</a>, www.clubetelemoveis.com )
 * Brazilian Portuguese (pt_BR) (thanks to <a href="mailto:brenojac@gmail.com">Breno Jacinto</a>, www.iconis.org.br, <a href="mailto:wordpress@djio.com.br">DJIO</a>, www.djio.com.br)
 * Catalan (ca) (thanks to <a href="mailto:kenneth@snollocer.net">Kenneth</a>)
 * Chinese (zh_CN) (thanks to <a href="mailto:kplam@qq.com">kplam</a>)
-* Dutch (nl_NL) (thanks  to <a href="mailto:ronald@hostingu.nl">HostingU, Ronald Verheul</a>, Jan Boeijink, <a href="mailto:info@katchy.nl">Dorine Kat-Stronck</a>)
 * Estonian (et) (thanks to <a href="mailto:feliks@veebimeister.com">Feliks</a>, www.veebimeister.com)
-* Finnish (fi) (thanks to <a href="mailto:mikrotuki@sisuaxles.com">Mikrotuki</a>)
 * French (fr_FR) (thanks to Alain Thomas and Vincent Cibelli and Capronnier Luc)
 * German (de_DE) (thanks to <a href="mailto:private18@web.de">Alex</a>)
-* Hungarian (hu_HU) (thanks to <a href="mailto:karcsi1978@gmail.com">Karoly Kovacs</a>)
-* Italian (it_IT) (thanks to Gianluca Di Carlo, <a href="mailto:marco@blackstudio.it">Marco</a>)
 * Japanese (ja) (thanks to Foken)
+* Norwegian (nb_NO) (thanks to <a href="mailto:bestwebsoftcontact@nordsoft.no">Per Rommetveit</a>)
 * Russian (ru_RU)
-* Serbian (sr_RS) (thanks to Georgijevic Team, www.georgijevic.info)
 * Slovak (sk_SK) (thanks to <a href="mailto:michal.vittek@wp.sk">Michal Vittek</a>, www.wp.sk)
 * Spanish (es_ES) (thanks to Javitopo)
 * Swedish (sv_SE) (thanks to Martin Tonek, <a href="mailto:joakim@limewoodmedia.com">Joakim Lindskog</a>, <a href="mailto:maarten@vandendriest.com">Maarten van den Driest</a> - www.crossanddot.nl)
-* Turkish (tr) (thanks to Can Atasever, www.candanblog.com)
+* Turkish (tr) (thanks to Can Atasever, www.canatasever.com)
 * Ukrainian (uk)
 * Vietnamese (vi) (thanks to <a href="mailto:bizover@gmail.com">Dich Anh Viet</a>, www.bizover.net)
 
@@ -156,6 +150,11 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 6. Plugin extra settings in WordPress admin panel with additional fields.
 
 == Changelog ==
+
+= V3.84 - 21.10.2014 =
+* Update : The Norwegian and Russian language files are updated.
+* Bugfix : We fixed the bug with saving 'The $_SERVER variable that is used to build a URL of the form'.
+* Bugfix : We fixed the bug with network activation.
 
 = V3.83 - 02.09.2014 =
 * Update : The Slovak language file is updated.
@@ -525,6 +524,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * Ability to add Contact Form into a post. Ability to adjust displaying of the form via shortcode is added.
 
 == Upgrade Notice ==
+
+= V3.84 =
+The Norwegian and Russian language files are updated. We fixed the bug with saving 'The $_SERVER variable that is used to build a URL of the form'. We fixed the bug with network activation.
 
 = V3.83 =
 The Slovak language file is updated.

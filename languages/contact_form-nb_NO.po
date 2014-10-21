@@ -1,0 +1,1104 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: contact_form\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-09-02 11:47+0300\n"
+"PO-Revision-Date: 2014-10-15 14:22+0300\n"
+"Last-Translator: BestWebSoft <support@bestwebsoft.com>\n"
+"Language-Team: Per Rommetveit <bestwebsoftcontact@nordsoft.no>\n"
+"Language: nb_NO\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: contact_form.php:74
+#: contact_form.php:856
+msgid "Contact Form Settings"
+msgstr "Instillinger for kontaktskjema"
+
+#: contact_form.php:74
+msgid "Contact Form"
+msgstr "Kontaktskjema"
+
+#: contact_form.php:151
+#: contact_form.php:1211
+#: contact_form.php:1245
+msgid "Name:"
+msgstr "Navn:"
+
+#: contact_form.php:152
+#: contact_form.php:1212
+#: contact_form.php:1246
+msgid "Address:"
+msgstr "Adresse:"
+
+#: contact_form.php:153
+#: contact_form.php:1213
+#: contact_form.php:1247
+msgid "Email Address:"
+msgstr "E-post:"
+
+#: contact_form.php:154
+#: contact_form.php:1214
+#: contact_form.php:1248
+msgid "Phone number:"
+msgstr "Telefon:"
+
+#: contact_form.php:155
+#: contact_form.php:1215
+#: contact_form.php:1249
+msgid "Subject:"
+msgstr "Tema:"
+
+#: contact_form.php:156
+#: contact_form.php:1216
+#: contact_form.php:1250
+msgid "Message:"
+msgstr "Melding:"
+
+#: contact_form.php:157
+#: contact_form.php:1217
+#: contact_form.php:1251
+msgid "Attachment:"
+msgstr "Vedheng:"
+
+#: contact_form.php:158
+msgid "Supported file types: HTML, TXT, CSS, GIF, PNG, JPEG, JPG, TIFF, BMP, AI, EPS, PS, RTF, PDF, DOC, DOCX, XLS, ZIP, RAR, WAV, MP3, PPT. Max file size: 2MB"
+msgstr "Støttede filtyper: HTML, TXT, CSS, GIF, PNG, JPEG, JPG, TIFF, BMP, AI, EPS, PS, RTF, PDF, DOC, DOCX, XLS, ZIP, RAR, WAV, MP3, PPT. Max filstørrelse: 2MB"
+
+#: contact_form.php:159
+#: contact_form.php:1219
+#: contact_form.php:1253
+msgid "Send me a copy"
+msgstr "Send meg en kopi"
+
+#: contact_form.php:160
+#: contact_form.php:1220
+#: contact_form.php:1254
+msgid "Submit"
+msgstr "Send"
+
+#: contact_form.php:161
+msgid "Your name is required."
+msgstr "Navn er obligatorisk."
+
+#: contact_form.php:162
+msgid "Address is required."
+msgstr "Adresse er påkrevet."
+
+#: contact_form.php:163
+msgid "A valid email address is required."
+msgstr "Gyldig e-post adresse er nødvendig."
+
+#: contact_form.php:164
+msgid "Phone number is required."
+msgstr "Telefon er nødvendig."
+
+#: contact_form.php:165
+msgid "Subject is required."
+msgstr "Tema er nødvendig."
+
+#: contact_form.php:166
+msgid "Message text is required."
+msgstr "Meldingsinnhold er nødvendig."
+
+#: contact_form.php:167
+msgid "File format is not valid."
+msgstr "Filformat er ikke gyldig"
+
+#: contact_form.php:168
+msgid "File upload error."
+msgstr "Feil ved opplasting av fil."
+
+#: contact_form.php:169
+msgid "The file could not be uploaded."
+msgstr "Filen kunne ikke lastes opp."
+
+#: contact_form.php:170
+msgid "This file is too large."
+msgstr "Filen er for stor."
+
+#: contact_form.php:171
+msgid "Please fill out the CAPTCHA."
+msgstr "Vennligst fyll ut CAPTCHA."
+
+#: contact_form.php:172
+msgid "Please make corrections below and try again."
+msgstr "Vennligst gjør korrigeringer, og prøv igjen."
+
+#: contact_form.php:174
+msgid "Thank you for contacting us."
+msgstr "Takk for at du kontakter oss."
+
+#: contact_form.php:370
+msgid "requires"
+msgstr "trenger"
+
+#: contact_form.php:370
+msgid "or higher, that is why it has been deactivated! Please upgrade WordPress and try again."
+msgstr "eller høgere, det er grunnen til deaktivering! Vennligst oppgrader WordPress og prøv igjen."
+
+#: contact_form.php:370
+msgid "Back to the WordPress"
+msgstr "Tilbake til WordPress"
+
+#: contact_form.php:370
+msgid "Plugins page"
+msgstr "Side for plugins"
+
+#: contact_form.php:678
+msgid "If the 'Redirect to page' option is selected then the URL field should be in the following format"
+msgstr "Dersom 'Videresend til side' instilling er valgt, så skal URL feltet være i følgende format"
+
+#: contact_form.php:687
+msgid "Such user does not exist."
+msgstr "En slik bruker eksisterer ikke."
+
+#: contact_form.php:697
+msgid "Please enter a valid email address in the 'Use this email address' field."
+msgstr "Vennligst skriv inn en gyldig e-postadresse i 'Bruk denne e-posten' feltet."
+
+#: contact_form.php:705
+msgid "Please enter a valid email address in the 'FROM' field."
+msgstr "Vennligst skriv inn en gyldig e-post i 'FRA' feltet."
+
+#: contact_form.php:730
+msgid "Settings saved."
+msgstr "Instillinger lagret."
+
+#: contact_form.php:732
+msgid "Settings are not saved."
+msgstr "Instillinger er ikke lagret."
+
+#: contact_form.php:759
+#: contact_form.php:791
+msgid "Wrong license key"
+msgstr "Feil lisens nøkkel."
+
+#: contact_form.php:784
+msgid "Something went wrong. Try again later. If the error will appear again, please, contact us <a href=http://support.bestwebsoft.com>BestWebSoft</a>. We are sorry for inconvenience."
+msgstr "Noe gikk galt. Prøv igjen senere. Hvis feilen oppstår igjen, vennligst kontakt <a href=http://support.bestwebsoft.com>BestWebSoft</a>. Vi beklager uleiligheten."
+
+#: contact_form.php:793
+msgid "This license key is bind to another site"
+msgstr "Denne lisensnøkkelen er bundet til en annen site."
+
+#: contact_form.php:795
+#: contact_form.php:1656
+msgid "Unfortunately, you have exceeded the number of available tries per day. Please, upload the plugin manually."
+msgstr "Beklager, du har oversteget antallet forsøk pr. dag. Vennligst last opp plugin manuelt."
+
+#: contact_form.php:812
+msgid "Failed to open the zip archive. Please, upload the plugin manually"
+msgstr "Klarte ikke åpne zip arkiv. Vennligst last opp plugin manuelt"
+
+#: contact_form.php:818
+msgid "Your server does not support either ZipArchive or Phar. Please, upload the plugin manually"
+msgstr "Serveren støtter ikke Zip-arkiv eller Phar. Vennligst last opp plugin manuelt."
+
+#: contact_form.php:822
+#: contact_form.php:831
+msgid "Failed to download the zip archive. Please, upload the plugin manually"
+msgstr "Nedlasting av ziparkiv feilet, vennligst last opp plugin manuelt."
+
+#: contact_form.php:835
+msgid "Something went wrong. Try again later or upload the plugin manually. We are sorry for inconvienience."
+msgstr "Noe gikk galt. Prøv igjen senere eller last opp plugin manuelt. Vi beklager uleiligheten."
+
+#: contact_form.php:850
+msgid "Please, enter Your license key"
+msgstr "Vennligst skriv inn lisensnøkkelen."
+
+#: contact_form.php:858
+#: contact_form.php:2347
+#: contact_form.php:2359
+msgid "Settings"
+msgstr "Instillinger"
+
+#: contact_form.php:859
+msgid "Extra settings"
+msgstr "Ekstrainstillinger"
+
+#: contact_form.php:860
+#: contact_form.php:2360
+msgid "FAQ"
+msgstr "Часті питання"
+
+#: contact_form.php:861
+msgid "Go PRO"
+msgstr "Go PRO"
+
+#: contact_form.php:864
+msgid "Notice:"
+msgstr "Notis:"
+
+#: contact_form.php:864
+msgid "The plugin's settings have been changed. In order to save them please don't forget to click the 'Save Changes' button."
+msgstr "Instillingene til plugin har blitt endret. For å lagre endringer, ikke glem å klikke 'Lagre endringer' knappen."
+
+#: contact_form.php:870
+msgid "If you want to create multiple contact forms, please install the Contact Form Multi plugin."
+msgstr "Dersom du ønsker å opprette flere kontaktskjema, vennligst installer Contact From Multi plugin"
+
+#: contact_form.php:876
+#: contact_form.php:881
+#: contact_form.php:1615
+msgid "If you would like to add the Contact Form to your website, just copy and paste this shortcode to your post or page or widget:"
+msgstr "Om du ønsker å legge til kontakskjema for din webside, kopier denne shortcoden til din post, side eller widget."
+
+#: contact_form.php:876
+#: contact_form.php:877
+#: contact_form.php:881
+#: contact_form.php:882
+#: contact_form.php:1235
+#: contact_form.php:1237
+#: contact_form.php:1298
+#: contact_form.php:1300
+msgid "or"
+msgstr "eller"
+
+#: contact_form.php:877
+#: contact_form.php:882
+msgid "If have any problems with the standard shortcode [contact_form], you should use the shortcode"
+msgstr "Om du har problemer med standard shortcode [contact_form], bør du bruke shortcoden"
+
+#: contact_form.php:878
+#: contact_form.php:883
+msgid "They work the same way."
+msgstr "De fungerer på samme måte."
+
+#: contact_form.php:879
+#: contact_form.php:884
+msgid "If you leave the fields empty, the messages will be sent to the email address specified during registration."
+msgstr "Om du lar feltene være tomme, vil meldingene bli sent til e-post adresse oppgitt ved registreringen."
+
+#: contact_form.php:889
+msgid "The user's email address:"
+msgstr "Brukerens e-post adress:"
+
+#: contact_form.php:893
+msgid "Create a username"
+msgstr "Opprett et brukernavn"
+
+#: contact_form.php:900
+msgid "Enter a username of the person who should get the messages from the contact form."
+msgstr "Oppgi brukernavn til personen som skal få meldingene fra kontaktskjemaet."
+
+#: contact_form.php:904
+msgid "Use this email address:"
+msgstr "Bruk denne e-post adressen:"
+
+#: contact_form.php:907
+msgid "Enter the email address you want the messages forwarded to."
+msgstr "Legg inn e-post adressen du ønsker meldingene videresendt til."
+
+#: contact_form.php:916
+msgid "Add department selectbox to the contact form:"
+msgstr "Legg til avdelingssjekkboks til kontaktskjemaet:"
+
+#: contact_form.php:924
+#: contact_form.php:1498
+msgid "If you upgrade to Pro version all your settings will be saved."
+msgstr "Om du oppgraderer til Pro versjonen, vil alle instillingene dine bli lagret."
+
+#: contact_form.php:931
+#: contact_form.php:1077
+#: contact_form.php:1151
+#: contact_form.php:1505
+msgid "Unlock premium options by upgrading to a PRO version."
+msgstr "Lås opp ekstrafunksjoner ved å oppgradere til en PRO-versjon."
+
+#: contact_form.php:932
+#: contact_form.php:1078
+#: contact_form.php:1152
+#: contact_form.php:1506
+#: contact_form.php:2621
+#: contact_form.php:2637
+msgid "Learn More"
+msgstr "Lær mer"
+
+#: contact_form.php:935
+#: contact_form.php:1081
+#: contact_form.php:1155
+#: contact_form.php:1509
+msgid "Go"
+msgstr "Gå"
+
+#: contact_form.php:942
+msgid "Save emails to the database"
+msgstr "Lagre e-poster til databasen."
+
+#: contact_form.php:948
+msgid "Using"
+msgstr "Bruker"
+
+#: contact_form.php:948
+#: contact_form.php:1128
+#: contact_form.php:1131
+#: contact_form.php:1135
+msgid "powered by"
+msgstr "støttet av"
+
+#: contact_form.php:951
+#: contact_form.php:955
+msgid "Using Contact Form to DB powered by"
+msgstr "Bruker Contact Form to DB støttet av"
+
+#: contact_form.php:951
+msgid "Activate Contact Form to DB"
+msgstr "Aktiver Contact Form to DB"
+
+#: contact_form.php:955
+msgid "Download Contact Form to DB"
+msgstr "Last ned Contact Form to DB"
+
+#: contact_form.php:960
+msgid "Additional options"
+msgstr "Ekstrainstillinger"
+
+#: contact_form.php:962
+msgid "Show"
+msgstr "Vis"
+
+#: contact_form.php:963
+msgid "Hide"
+msgstr "Gjem"
+
+#: contact_form.php:967
+msgid "What to use?"
+msgstr "Hva skal brukes?"
+
+#: contact_form.php:970
+msgid "Wp-mail"
+msgstr "Wp-mail"
+
+#: contact_form.php:970
+msgid "You can use the wp_mail function for mailing"
+msgstr "Du kan bruke wp_mail funksjon for å sende e-post."
+
+#: contact_form.php:972
+msgid "Mail"
+msgstr "E-post"
+
+#: contact_form.php:972
+msgid "To send mail you can use the php mail function"
+msgstr "For å sende e-post kan du bruke php mail funksjon."
+
+#: contact_form.php:976
+msgid "The text in the 'From' field"
+msgstr "Teksten i 'From'-feltet"
+
+#: contact_form.php:978
+msgid "User name"
+msgstr "Brukernavn"
+
+#: contact_form.php:979
+msgid "The name of the user who fills the form will be used in the field 'From'."
+msgstr "Navnet til brukeren som fyller ut skjema vil bli brukt i 'From'-feltet."
+
+#: contact_form.php:982
+msgid "This text will be used in the 'FROM' field"
+msgstr "Denne teksten vil brukes i 'FROM' feltet."
+
+#: contact_form.php:986
+msgid "The email address in the 'From' field"
+msgstr "E-post adresse i 'From'-feltet."
+
+#: contact_form.php:988
+msgid "User email"
+msgstr "Brukers e-post"
+
+#: contact_form.php:989
+msgid "The email address of the user who fills the form will be used in the field 'From'."
+msgstr "E-post adresse til bruker som fyller ut skjema vil bli brukt i 'From'-feltet."
+
+#: contact_form.php:992
+msgid "This email address will be used in the 'From' field."
+msgstr "Denne e-post adressen vil bli brukt i 'From'-feltet."
+
+#: contact_form.php:996
+msgid "Required symbol"
+msgstr "Obligatorisk symbol"
+
+#: contact_form.php:1006
+msgid "Fields"
+msgstr "Felt"
+
+#: contact_form.php:1007
+msgid "Used"
+msgstr "Brukt"
+
+#: contact_form.php:1008
+msgid "Required"
+msgstr "Obligatorisk"
+
+#: contact_form.php:1009
+msgid "Visible"
+msgstr "Synlig"
+
+#: contact_form.php:1010
+msgid "Disabled for editing"
+msgstr "Sperret for redigering"
+
+#: contact_form.php:1011
+msgid "Field's default value"
+msgstr "Feltets standardverdi"
+
+#: contact_form.php:1016
+#: contact_form.php:1373
+#: contact_form.php:2137
+#: contact_form.php:2173
+msgid "Name"
+msgstr "Navn"
+
+#: contact_form.php:1024
+msgid "Location selectbox"
+msgstr "Flervalgsboks for sted"
+
+#: contact_form.php:1032
+#: contact_form.php:1378
+#: contact_form.php:2143
+#: contact_form.php:2177
+msgid "Address"
+msgstr "Adresse"
+
+#: contact_form.php:1040
+msgid "Email Address"
+msgstr "E-post"
+
+#: contact_form.php:1048
+msgid "Phone number"
+msgstr "Telefon"
+
+#: contact_form.php:1056
+#: contact_form.php:1393
+#: contact_form.php:2158
+#: contact_form.php:2186
+msgid "Subject"
+msgstr "Tema"
+
+#: contact_form.php:1064
+#: contact_form.php:1397
+#: contact_form.php:2161
+#: contact_form.php:2188
+msgid "Message"
+msgstr "Melding"
+
+#: contact_form.php:1088
+msgid "Attachment block"
+msgstr "Vedhengsblokk"
+
+#: contact_form.php:1090
+msgid "Users can attach the following file formats"
+msgstr "Brukere kan legge ved følgende filformat"
+
+#: contact_form.php:1103
+msgid "Add to the form"
+msgstr "Legg til skjemaet"
+
+#: contact_form.php:1108
+msgid "Tips below the Attachment"
+msgstr "Tips under vedheng"
+
+#: contact_form.php:1117
+msgid "'Send me a copy' block"
+msgstr "'Send meg en kopi' blokk"
+
+#: contact_form.php:1128
+#: contact_form.php:1131
+#: contact_form.php:1135
+#: contact_form.php:1407
+msgid "Captcha"
+msgstr "Captcha"
+
+#: contact_form.php:1131
+msgid "Activate captcha"
+msgstr "Aktiver captcha"
+
+#: contact_form.php:1135
+msgid "Download captcha"
+msgstr "Last ned captcha"
+
+#: contact_form.php:1143
+msgid "Agreement checkbox"
+msgstr "Sjekkboks for vilkår"
+
+#: contact_form.php:1143
+msgid "Required checkbox for submitting the form"
+msgstr "Obligatoriske sjekkbokser for å sende inn skjemaet"
+
+#: contact_form.php:1144
+msgid "Optional checkbox"
+msgstr "Valgfri sjekkboks"
+
+#: contact_form.php:1144
+msgid "Optional checkbox, the results of which will be displayed in email"
+msgstr "Valgfri sjekkboks, resultatene vil bli vist i e-post"
+
+#: contact_form.php:1161
+msgid "Delete an attachment file from the server after the email is sent"
+msgstr "Slett vedhengsfil fra server etter at e-posten er sendt."
+
+#: contact_form.php:1167
+msgid "Email in HTML format sending"
+msgstr "Send e-post i HTML format"
+
+#: contact_form.php:1171
+msgid "Display additional info in the email"
+msgstr "Vis ekstra informasjon i e-posten"
+
+#: contact_form.php:1176
+#: contact_form.php:2104
+#: contact_form.php:2106
+msgid "Sent from (ip address)"
+msgstr "Sent fra (ip-adresse)"
+
+#: contact_form.php:1176
+msgid "Example: Sent from (IP address):\t127.0.0.1"
+msgstr "Eksempel: Sendt fra (IP adresse):\t127.0.0.1"
+
+#: contact_form.php:1177
+#: contact_form.php:2110
+#: contact_form.php:2112
+msgid "Date/Time"
+msgstr "Dato/Tid"
+
+#: contact_form.php:1177
+msgid "Example: Date/Time:\tAugust 19, 2013 8:50 pm"
+msgstr "Eksempel: Dato/Tid:\tAugust 19, 2013 8:50 pm"
+
+#: contact_form.php:1178
+#: contact_form.php:2116
+#: contact_form.php:2118
+msgid "Sent from (referer)"
+msgstr "Sent fra (referer)"
+
+#: contact_form.php:1178
+msgid "Example: Sent from (referer):\thttp://bestwebsoft.com/contacts/contact-us/"
+msgstr "Eksempel: Sent fra (referer):\thttp://bestwebsoft.com/contacts/contact-us/"
+
+#: contact_form.php:1179
+#: contact_form.php:2122
+#: contact_form.php:2124
+msgid "Using (user agent)"
+msgstr "Bruker (user agent)"
+
+#: contact_form.php:1179
+msgid "Example: Using (user agent):\tMozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36"
+msgstr "Eksempel: Bruker (user agent):\tMozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36"
+
+#: contact_form.php:1183
+msgid "Language settings for the field names in the form"
+msgstr "Språkinstillinger for feltnavn i skjemaet"
+
+#: contact_form.php:1192
+msgid "Add a language"
+msgstr "Legg til et språk"
+
+#: contact_form.php:1196
+msgid "Change the names of the contact form fields and error messages"
+msgstr "Endre navnene på kontaktskjemafeltene og feilmeldingene"
+
+#: contact_form.php:1201
+#: contact_form.php:1288
+msgid "English"
+msgstr "Engelsk"
+
+#: contact_form.php:1209
+#: contact_form.php:1243
+msgid "click to expand/hide the list"
+msgstr "klikk for å ekspandere/gjemme listen"
+
+#: contact_form.php:1218
+#: contact_form.php:1252
+msgid "Tips below the Attachment block"
+msgstr "Tips under Vedhengblokken"
+
+#: contact_form.php:1221
+#: contact_form.php:1255
+msgid "Error message for the Name field"
+msgstr "Feilmelding for navnefeltet"
+
+#: contact_form.php:1222
+#: contact_form.php:1256
+msgid "Error message for the Address field"
+msgstr "Feilmelding for adressefeltet"
+
+#: contact_form.php:1223
+#: contact_form.php:1257
+msgid "Error message for the Email field"
+msgstr "Feilmelding for e-post feltet"
+
+#: contact_form.php:1224
+#: contact_form.php:1258
+msgid "Error message for the Phone field"
+msgstr "Feilmelding for telefon-feltet"
+
+#: contact_form.php:1225
+#: contact_form.php:1259
+msgid "Error message for the Subject field"
+msgstr "Feilmelding for tema-feltet"
+
+#: contact_form.php:1226
+#: contact_form.php:1260
+msgid "Error message for the Message field"
+msgstr "Feilmelding for meldingsfeltet"
+
+#: contact_form.php:1227
+#: contact_form.php:1261
+msgid "Error message about the file type for the Attachment field"
+msgstr "Feilmelding for filtype til vedhengsfeltet"
+
+#: contact_form.php:1228
+#: contact_form.php:1262
+msgid "Error message while uploading a file for the Attachment field to the server"
+msgstr "Feilmelding ved opplasting av fil for vedhengsfeltet til server"
+
+#: contact_form.php:1229
+#: contact_form.php:1263
+msgid "Error message while moving the file for the Attachment field"
+msgstr "Feilmedling ved flytting av fil for vedhengsfeltet."
+
+#: contact_form.php:1230
+#: contact_form.php:1264
+msgid "Error message when file size limit for the Attachment field is exceeded"
+msgstr "Feilmelding når filstørrelsebegrensning for vedhengsfeltet er nådd"
+
+#: contact_form.php:1231
+#: contact_form.php:1265
+msgid "Error message for the Captcha field"
+msgstr "Feilmelding for Captcha-feltet"
+
+#: contact_form.php:1232
+#: contact_form.php:1266
+msgid "Error message for the whole form"
+msgstr "Feilmelding for hele skjemaet"
+
+#: contact_form.php:1235
+#: contact_form.php:1237
+#: contact_form.php:1269
+#: contact_form.php:1271
+#: contact_form.php:1298
+#: contact_form.php:1300
+#: contact_form.php:1308
+#: contact_form.php:1310
+msgid "Use shortcode"
+msgstr "Bruk shortcode"
+
+#: contact_form.php:1235
+#: contact_form.php:1237
+#: contact_form.php:1269
+#: contact_form.php:1271
+#: contact_form.php:1298
+#: contact_form.php:1300
+#: contact_form.php:1308
+#: contact_form.php:1310
+msgid "for this language"
+msgstr "for dette språket"
+
+#: contact_form.php:1279
+msgid "Use the changed names of the contact form fields in the email"
+msgstr "Bruk de endrede navnene i kontaktskjemafeltene i e-posten"
+
+#: contact_form.php:1285
+msgid "Action after email is sent"
+msgstr "Handling etter at e-posten er sendt"
+
+#: contact_form.php:1287
+msgid "Display text"
+msgstr "Vis tekst"
+
+#: contact_form.php:1296
+#: contact_form.php:1306
+msgid "Text"
+msgstr "Tekst"
+
+#: contact_form.php:1317
+msgid "Redirect to the page"
+msgstr "Videresend til siden"
+
+#: contact_form.php:1318
+msgid "Url"
+msgstr "Url"
+
+#: contact_form.php:1322
+msgid "The $_SERVER variable that is used to build a URL of the form"
+msgstr " $_SERVER variabel som brukes til å sette sammen en URL på formen"
+
+#: contact_form.php:1326
+msgid "If you are not sure whether to change this setting or not, please do not do that."
+msgstr "Om du ikke er sikkert på om du bør endre denne instillingen eller ikke, vennligst ikke gjør det."
+
+#: contact_form.php:1332
+#: contact_form.php:1516
+msgid "Save Changes"
+msgstr "Lagre endringer"
+
+#: contact_form.php:1337
+msgid "If you enjoy our plugin, please give it 5 stars on WordPress"
+msgstr "Dersom du liker vår plugin, vennligst gi den 5 stjerner på WordPress"
+
+#: contact_form.php:1338
+msgid "Rate the plugin"
+msgstr "Ranger plugin"
+
+#: contact_form.php:1341
+msgid "If there is something wrong about it, please contact us"
+msgstr "Om det er noe galt med dette, vennligst kontakt oss"
+
+#: contact_form.php:1353
+msgid "Errors output"
+msgstr "Feilmelding utdata"
+
+#: contact_form.php:1356
+msgid "Display error messages"
+msgstr "Vise feilmeldinger"
+
+#: contact_form.php:1357
+msgid "Color of the input field errors."
+msgstr "Farger på feilmeldingene for inputfelt"
+
+#: contact_form.php:1358
+msgid "Display error messages & color of the input field errors"
+msgstr "Vis feilmeldinger og farge på inputfeltfeil"
+
+#: contact_form.php:1363
+msgid "Add placeholder to the input blocks"
+msgstr "Legg til placeholder på inputblokkene"
+
+#: contact_form.php:1369
+msgid "Add tooltips"
+msgstr "Legg til tooltips"
+
+#: contact_form.php:1383
+msgid "Email address"
+msgstr "E-post adresse"
+
+#: contact_form.php:1388
+msgid "Phone Number"
+msgstr "Telefon"
+
+#: contact_form.php:1402
+msgid "Attachment"
+msgstr "Vedheng"
+
+#: contact_form.php:1407
+msgid "(powered by bestwebsoft.com)"
+msgstr "(støttet av bestwebsoft.com)"
+
+#: contact_form.php:1412
+msgid "Style options"
+msgstr "Styleringsopsjoner"
+
+#: contact_form.php:1415
+msgid "Text color"
+msgstr "Tekstfarge"
+
+#: contact_form.php:1418
+#: contact_form.php:1423
+#: contact_form.php:1433
+#: contact_form.php:1438
+#: contact_form.php:1443
+#: contact_form.php:1448
+#: contact_form.php:1458
+#: contact_form.php:1463
+#: contact_form.php:1469
+#: contact_form.php:1480
+#: contact_form.php:1485
+#: contact_form.php:1490
+msgid "Default"
+msgstr "Standard"
+
+#: contact_form.php:1420
+msgid "Label text color"
+msgstr "Tekstfarge på merkelapp"
+
+#: contact_form.php:1425
+msgid "Placeholder color"
+msgstr "Placeholder farge"
+
+#: contact_form.php:1430
+msgid "Errors color"
+msgstr "Feilmeldingsfarge"
+
+#: contact_form.php:1435
+msgid "Error text color"
+msgstr "Tekstfarge på feilmelding"
+
+#: contact_form.php:1440
+msgid "Background color of the input field errors"
+msgstr "Bakgrunnsfarge på inputfeltfeil"
+
+#: contact_form.php:1445
+msgid "Border color of the input field errors"
+msgstr "Rammefarge på inputfeltfeil"
+
+#: contact_form.php:1450
+msgid "Placeholder color of the input field errors"
+msgstr "Placeholderfarge på inputfeltfeil"
+
+#: contact_form.php:1455
+msgid "Input fields"
+msgstr "Inputfelt"
+
+#: contact_form.php:1460
+msgid "Input fields background color"
+msgstr "Bakgrunnsfarge på inputfelter"
+
+#: contact_form.php:1465
+msgid "Text fields color"
+msgstr "Farge på tekstfelter"
+
+#: contact_form.php:1467
+msgid "Border width in px, numbers only"
+msgstr "Rammebredde i pixler, kun tall"
+
+#: contact_form.php:1471
+#: contact_form.php:1492
+msgid "Border color"
+msgstr "Ramme farge"
+
+#: contact_form.php:1476
+msgid "Submit button"
+msgstr "Send knapp"
+
+#: contact_form.php:1478
+msgid "Width in px, numbers only"
+msgstr "Bredde i piksler, kun tall"
+
+#: contact_form.php:1482
+msgid "Button color"
+msgstr "Knappfarge"
+
+#: contact_form.php:1487
+msgid "Button text color"
+msgstr "Farge på knappetekst"
+
+#: contact_form.php:1520
+msgid "Contact Form Pro | Preview"
+msgstr "Contact Form Pro | Forhåndsvisning"
+
+#: contact_form.php:1523
+msgid "Show with errors"
+msgstr "Vis med feilmeldinger"
+
+#: contact_form.php:1531
+#: contact_form.php:1533
+msgid "Please enter your full name..."
+msgstr "Vennligst skriv inn ditt fulle navn..."
+
+#: contact_form.php:1544
+#: contact_form.php:1546
+msgid "Please enter your address..."
+msgstr "Vennligst fyll inn din adresse..."
+
+#: contact_form.php:1555
+#: contact_form.php:1557
+msgid "Please enter your email address..."
+msgstr "Vennligst oppgi e-post addresse..."
+
+#: contact_form.php:1566
+#: contact_form.php:1568
+msgid "Please enter your phone number..."
+msgstr "Vennligst oppgi ditt telefon nummer..."
+
+#: contact_form.php:1577
+#: contact_form.php:1579
+msgid "Please enter subject..."
+msgstr "Vennligst oppgi tema..."
+
+#: contact_form.php:1587
+#: contact_form.php:1589
+msgid "Please enter your message..."
+msgstr "Vennligst skriv inn en melding..."
+
+#: contact_form.php:1631
+msgid "Congratulations! The PRO version of the plugin is successfully download and activated."
+msgstr "Gratulerer! PRO-versjonen av plugin er vellykket nedlastet og aktivert."
+
+#: contact_form.php:1633
+msgid "Please, go to"
+msgstr "Vennligst, gå til"
+
+#: contact_form.php:1633
+msgid "the setting page"
+msgstr "siden for instillinger"
+
+#: contact_form.php:1634
+msgid "You will be redirected automatically in 5 seconds."
+msgstr "Du vil automatisk viderekobles om 5 sekunder."
+
+#: contact_form.php:1639
+msgid "You can download and activate"
+msgstr "du kan laste ned og aktivere"
+
+#: contact_form.php:1641
+msgid "version of this plugin by entering Your license key."
+msgstr "versjon av denne plugin ved å taste inn din lisenskode."
+
+#: contact_form.php:1643
+msgid "You can find your license key on your personal page Client area, by clicking on the link"
+msgstr "Du kan finne din lisenskode på klientområdet, ved å klikke på linken"
+
+#: contact_form.php:1645
+msgid "(your username is the email you specify when purchasing the product)."
+msgstr "(ditt brukernavn er e-posten du spesifiserer når du kjøper produktet)."
+
+#: contact_form.php:1653
+#: contact_form.php:1663
+msgid "Activate"
+msgstr "Aktiver"
+
+#: contact_form.php:1729
+msgid "Sorry, email message could not be delivered."
+msgstr "Beklager, e-postmelding kunne ikke leveres."
+
+#: contact_form.php:2131
+msgid "Contact from"
+msgstr "Kontaktskjema"
+
+#: contact_form.php:2148
+#: contact_form.php:2180
+msgid "Email"
+msgstr "E-post"
+
+#: contact_form.php:2153
+#: contact_form.php:2183
+msgid "Phone"
+msgstr "Telefon"
+
+#: contact_form.php:2164
+#: contact_form.php:2190
+msgid "Site"
+msgstr "side"
+
+#: contact_form.php:2280
+msgid "If you can see this MIME, it means that the MIME type is not supported by your email client!"
+msgstr "Om du kan se denne MIME, betyr det at MIME format ikke er støttet av din e-postklient!"
+
+#: contact_form.php:2361
+msgid "Support"
+msgstr "Support"
+
+#: contact_form.php:2411
+msgid "Are you sure that you want to delete this language data?"
+msgstr "Er du sikker på at du ønsker å slette disse språkdatane?"
+
+#: contact_form.php:2624
+msgid "It’s time to upgrade your <strong>Contact Form plugin</strong> to <strong>PRO</strong> version"
+msgstr "Det er på tide å oppgrader din <strong>Contact Form plugin</strong> til <strong>PRO</strong>-versjon"
+
+#: contact_form.php:2625
+msgid "Extend standard plugin functionality with new great options."
+msgstr "Utvid standard pluginfunksjonalitet med nye spennende muligheter"
+
+#: contact_form.php:2640
+msgid "<strong>Contact Form to DB</strong> allows to store your messages to the database."
+msgstr "<strong>Contact Form to DB</strong> lar deg lagre meldinger i databasen."
+
+#: contact_form.php:2641
+msgid "Manage messages that have been sent from your website."
+msgstr "Administrer meldinger som har blitt sendt fra din webside."
+
+#~ msgid "Go!"
+#~ msgstr "Перейти!"
+
+#~ msgid ""
+#~ "This functionality is available in the Pro version of the plugin. For "
+#~ "more details, please follow the link"
+#~ msgstr ""
+#~ "Ця функціональність доступна у Pro версії плагіну. Для додаткових "
+#~ "подробиць, будь ласка, перейдіть за посиланням"
+
+#~ msgid "Contact Form Pro"
+#~ msgstr "Contact Form Pro"
+
+#~ msgid "Contact Form Pro Extra Settings"
+#~ msgstr "Додаткові установки Contact Form Pro"
+
+#~ msgid "Contact Form Pro | Extra Settings"
+#~ msgstr "Contact Form Pro | Розширені установки"
+
+#~ msgid "Display fields"
+#~ msgstr "Показати поля"
+
+#~ msgid "Display tips below the Attachment block"
+#~ msgstr "Показувати підказки під блоком \"Прикріпити файл\""
+
+#~ msgid "Required fields"
+#~ msgstr "Обов'язкові поля"
+
+#, fuzzy
+#~ msgid "Display the asterisk near required fields"
+#~ msgstr "Відобразити поле для телефону"
+
+#~ msgid "You can attach the following file formats"
+#~ msgstr "Користувачі можуть прикріплювати файли наступних форматів"
+
+#, fuzzy
+#~ msgid "Memory usage"
+#~ msgstr "Повідомлення"
+
+#, fuzzy
+#~ msgid "Site URL"
+#~ msgstr "Сайт"
+
+#, fuzzy
+#~ msgid "Please enter a valid email address."
+#~ msgstr "Використовувати цю email-адресу:"
+
+#~ msgid "Activated plugins"
+#~ msgstr "Активовані плагіни"
+
+#~ msgid "Read more"
+#~ msgstr "Читати далі"
+
+#~ msgid "Installed plugins"
+#~ msgstr "Встановлені плагіни"
+
+#~ msgid "Recommended plugins"
+#~ msgstr "Рекомендовані плагіни"
+
+#~ msgid "Download"
+#~ msgstr "Завантажити"
+
+#~ msgid "Install %s"
+#~ msgstr "Встановлено %s"
+
+#~ msgid "Install now from wordpress.org"
+#~ msgstr "Встановити з wordpress.org"
+
+#, fuzzy
+#~ msgid "Active Plugins"
+#~ msgstr "Активовані плагіни"
+
+#, fuzzy
+#~ msgid "Inactive Plugins"
+#~ msgstr "Активовані плагіни"
+
+#, fuzzy
+#~ msgid "Send to support"
+#~ msgstr "Підтримка"
+
+#~ msgid "Contact Form Options"
+#~ msgstr "Налаштування контактної форми"
+
+#~ msgid "Display Attachment tips"
+#~ msgstr "Показувати підказки для прикріплення файлів"
+
+#~ msgid "Please enter a valid email address. Settings are not saved."
+#~ msgstr "Будь ласка, введіть правильну ел.адресу. Налаштування не збережено."
+
+#~ msgid "E-Mail Address"
+#~ msgstr "E-Mail адреса"
+
+#~ msgid "E-Mail Addresse:"
+#~ msgstr "E-mail адрес:"
+
+#~ msgid "Install Now"
+#~ msgstr "Установить сейчас"
