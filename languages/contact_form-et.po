@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: contact_form\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-09-02 11:44+0300\n"
-"PO-Revision-Date: 2014-09-02 11:44+0300\n"
-"Last-Translator: bestwebsoft.com <plugins@bestwebsoft.com>\n"
+"PO-Revision-Date: 2014-12-24 14:30+0300\n"
+"Last-Translator: BestWebSoft <support@bestwebsoft.com>\n"
 "Language-Team: Feliks <feliks@veebimeister.com>\n"
 "Language: ca_ES\n"
 "MIME-Version: 1.0\n"
@@ -13,7 +13,7 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.6.5\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: contact_form.php:74
@@ -156,68 +156,63 @@ msgid "If the 'Redirect to page' option is selected then the URL field should be
 msgstr "Kui 'Suuna lehele' valik on aktiveeritud, siis URL-i väli peab olema järgnevas formaadis"
 
 #: contact_form.php:687
-#, fuzzy
 msgid "Such user does not exist."
-msgstr "Sellist kasutajat ei eksisteeri. Seaded pole salvestatud."
+msgstr "Sellist kasutajat ei eksisteeri. "
 
 #: contact_form.php:697
-#, fuzzy
 msgid "Please enter a valid email address in the 'Use this email address' field."
-msgstr "Palun sisesta 'Kellelt' väljale korrektne e-maili aadress. Seaded pole salvestatud."
+msgstr "Palun sisesta 'Kellelt' väljale korrektne e-maili aadress. "
 
 #: contact_form.php:705
-#, fuzzy
 msgid "Please enter a valid email address in the 'FROM' field."
-msgstr "Palun sisesta 'Kellelt' väljale korrektne e-maili aadress. Seaded pole salvestatud."
+msgstr "Palun sisesta 'Kellelt' väljale korrektne e-maili aadress. "
 
 #: contact_form.php:730
 msgid "Settings saved."
 msgstr "Seaded salvestatud."
 
 #: contact_form.php:732
-#, fuzzy
 msgid "Settings are not saved."
-msgstr "Seaded salvestatud."
+msgstr "Seaded pole salvestatud."
 
 #: contact_form.php:759
 #: contact_form.php:791
 msgid "Wrong license key"
-msgstr ""
+msgstr "Vale litsentsinumber"
 
 #: contact_form.php:784
 msgid "Something went wrong. Try again later. If the error will appear again, please, contact us <a href=http://support.bestwebsoft.com>BestWebSoft</a>. We are sorry for inconvenience."
-msgstr ""
+msgstr "Midagi läks valesti. Palun proovi hiljem uuesti. Kui see error ilmub uuesti, siis võta meiega ühendust <a href=http://support.bestwebsoft.com>BestWebSoft</a>. Vabandame."
 
 #: contact_form.php:793
 msgid "This license key is bind to another site"
-msgstr ""
+msgstr "See litsents on seotud teise lehega"
 
 #: contact_form.php:795
 #: contact_form.php:1656
 msgid "Unfortunately, you have exceeded the number of available tries per day. Please, upload the plugin manually."
-msgstr ""
+msgstr "Kahjuks ületasid sa päevase limiidi. Palun lae plugin üles manuaalselt."
 
 #: contact_form.php:812
 msgid "Failed to open the zip archive. Please, upload the plugin manually"
-msgstr ""
+msgstr "Ei suutnud avada zip arhiivi. Palun lae plugin üles manuaalselt"
 
 #: contact_form.php:818
 msgid "Your server does not support either ZipArchive or Phar. Please, upload the plugin manually"
-msgstr ""
+msgstr "Sinu server ei toeta kas ZipArchive-i või Phr-i. Palun lae plugin üles manuaalselt"
 
 #: contact_form.php:822
 #: contact_form.php:831
 msgid "Failed to download the zip archive. Please, upload the plugin manually"
-msgstr ""
+msgstr "Ei suutnud alla laadida zip arhiivi. Palun lae plugin üles manuaalselt"
 
 #: contact_form.php:835
 msgid "Something went wrong. Try again later or upload the plugin manually. We are sorry for inconvienience."
-msgstr ""
+msgstr "MIdagi läks valesti. Proovi hiljem uuesti, või lae plugin üles manuaalselt. Vabandame."
 
 #: contact_form.php:850
-#, fuzzy
 msgid "Please, enter Your license key"
-msgstr "Palun sisesta oma sõnum..."
+msgstr "Palun sisesta oma litsentsinumber..."
 
 #: contact_form.php:858
 #: contact_form.php:2347
@@ -236,7 +231,7 @@ msgstr "KKK"
 
 #: contact_form.php:861
 msgid "Go PRO"
-msgstr ""
+msgstr "Telli PRO"
 
 #: contact_form.php:864
 msgid "Notice:"
@@ -248,7 +243,7 @@ msgstr "Plugina seaded on muudetud. Nende salvestamiseks ära unusta klikkimast 
 
 #: contact_form.php:870
 msgid "If you want to create multiple contact forms, please install the Contact Form Multi plugin."
-msgstr ""
+msgstr "Kui soovid sisestada mitut kontaktivormi, siis installi Contact Form Multi plugin."
 
 #: contact_form.php:876
 #: contact_form.php:881
@@ -316,7 +311,7 @@ msgstr "Kui sa lähed üle Pro versioonile, siis kõik seaded salvestatakse."
 #: contact_form.php:1151
 #: contact_form.php:1505
 msgid "Unlock premium options by upgrading to a PRO version."
-msgstr ""
+msgstr "Telli PRO versioon ja ava premium valikud."
 
 #: contact_form.php:932
 #: contact_form.php:1078
@@ -325,14 +320,14 @@ msgstr ""
 #: contact_form.php:2621
 #: contact_form.php:2637
 msgid "Learn More"
-msgstr ""
+msgstr "Uuri lähemalt"
 
 #: contact_form.php:935
 #: contact_form.php:1081
 #: contact_form.php:1155
 #: contact_form.php:1509
 msgid "Go"
-msgstr ""
+msgstr "Mine"
 
 #: contact_form.php:942
 msgid "Save emails to the database"
@@ -340,7 +335,7 @@ msgstr "Salvesta e-mailid andmebaasi"
 
 #: contact_form.php:948
 msgid "Using"
-msgstr ""
+msgstr "Kasutan"
 
 #: contact_form.php:948
 #: contact_form.php:1128
@@ -463,7 +458,7 @@ msgstr "Nimi"
 
 #: contact_form.php:1024
 msgid "Location selectbox"
-msgstr ""
+msgstr "Asukoha valik"
 
 #: contact_form.php:1032
 #: contact_form.php:1378
@@ -617,7 +612,7 @@ msgstr "Inglise"
 #: contact_form.php:1209
 #: contact_form.php:1243
 msgid "click to expand/hide the list"
-msgstr ""
+msgstr "avamiseks/sulgemiseks klikka"
 
 #: contact_form.php:1218
 #: contact_form.php:1252
@@ -707,9 +702,8 @@ msgid "for this language"
 msgstr "selle keele jaoks"
 
 #: contact_form.php:1279
-#, fuzzy
 msgid "Use the changed names of the contact form fields in the email"
-msgstr "Muuda kontakti vormi väljade ja error-sõnumite nimesid"
+msgstr "Kasuta kontaktivormi väljade muudetud nimesid emailis"
 
 #: contact_form.php:1285
 msgid "Action after email is sent"
@@ -734,11 +728,11 @@ msgstr "Url"
 
 #: contact_form.php:1322
 msgid "The $_SERVER variable that is used to build a URL of the form"
-msgstr ""
+msgstr "$_SERVER muutuja mida kasutatakse vormi URL-i loomiseks"
 
 #: contact_form.php:1326
 msgid "If you are not sure whether to change this setting or not, please do not do that."
-msgstr ""
+msgstr "Kui sa pole kindel, mida sa teed, siis ära tee seda."
 
 #: contact_form.php:1332
 #: contact_form.php:1516
@@ -925,42 +919,40 @@ msgstr "Palun sisesta oma sõnum..."
 
 #: contact_form.php:1631
 msgid "Congratulations! The PRO version of the plugin is successfully download and activated."
-msgstr ""
+msgstr "Palju õnne! Plugina PRO versioon on edukalt alla laetud ja aktiveeritud."
 
 #: contact_form.php:1633
 msgid "Please, go to"
-msgstr ""
+msgstr "Palun mine"
 
 #: contact_form.php:1633
-#, fuzzy
 msgid "the setting page"
-msgstr "Ekstra seaded"
+msgstr "seadete leht"
 
 #: contact_form.php:1634
 msgid "You will be redirected automatically in 5 seconds."
-msgstr ""
+msgstr "Sind suunatakse automaatselt edasi 5 sekundi jooksul."
 
 #: contact_form.php:1639
 msgid "You can download and activate"
-msgstr ""
+msgstr "Saad alla laadida ja aktiveerida"
 
 #: contact_form.php:1641
 msgid "version of this plugin by entering Your license key."
-msgstr ""
+msgstr "versiooni sellest pluginast sisestades oma litsentsinumbri."
 
 #: contact_form.php:1643
 msgid "You can find your license key on your personal page Client area, by clicking on the link"
-msgstr ""
+msgstr "Litsentsinumbri leiad oma isiklikult kliendialalt, klikates lingil"
 
 #: contact_form.php:1645
 msgid "(your username is the email you specify when purchasing the product)."
-msgstr ""
+msgstr "(sinu kasutajanimi on emaili aadress mida sa kasutasid toote ostmisel)."
 
 #: contact_form.php:1653
 #: contact_form.php:1663
-#, fuzzy
 msgid "Activate"
-msgstr "Captcha activat"
+msgstr "Aktiveeri"
 
 #: contact_form.php:1729
 msgid "Sorry, email message could not be delivered."
@@ -999,19 +991,19 @@ msgstr "Oled sa kindel, et soovid kustutada selle keele andmeid?"
 
 #: contact_form.php:2624
 msgid "It’s time to upgrade your <strong>Contact Form plugin</strong> to <strong>PRO</strong> version"
-msgstr ""
+msgstr "On aeg sinu <strong>Contact Form plugin</strong> uuendada <strong>PRO</strong> versioonile"
 
 #: contact_form.php:2625
 msgid "Extend standard plugin functionality with new great options."
-msgstr ""
+msgstr "Avarda tavalisi plugina funktsioone uute valikutega."
 
 #: contact_form.php:2640
 msgid "<strong>Contact Form to DB</strong> allows to store your messages to the database."
-msgstr ""
+msgstr "<strong>Contact Form to DB</strong> laseb sul salvestada sõnumeid andmebaasi."
 
 #: contact_form.php:2641
 msgid "Manage messages that have been sent from your website."
-msgstr ""
+msgstr "Toimeta sõnumeid, mis on sulle saadetud sinu veebilehelt."
 
 #~ msgid ""
 #~ "This functionality is available in the Pro version of the plugin. For "

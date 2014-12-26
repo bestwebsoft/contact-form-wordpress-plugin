@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=1&product_id=94
 Tags: attachment, contact, contatc, conact, cnotact, contact button, contact form, contact form plugin, contact me, contacts, contacts form plugin, copy, feedback, feedback form, form, insert the shortcode, post feedback, request, send, send copy, send messages, shortcode, text, web-page feedback
 Requires at least: 3.1
-Tested up to: 4.0
-Stable tag: 3.84
+Tested up to: 4.1
+Stable tag: 3.85
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -53,7 +53,7 @@ There is also a premium version of the plugin <a href="http://bestwebsoft.com/pr
 * Catalan (ca) (thanks to <a href="mailto:kenneth@snollocer.net">Kenneth</a>)
 * Chinese (zh_CN) (thanks to <a href="mailto:kplam@qq.com">kplam</a>)
 * Estonian (et) (thanks to <a href="mailto:feliks@veebimeister.com">Feliks</a>, www.veebimeister.com)
-* French (fr_FR) (thanks to Alain Thomas and Vincent Cibelli and Capronnier Luc)
+* French (fr_FR) (thanks Capronnier Luc)
 * German (de_DE) (thanks to <a href="mailto:private18@web.de">Alex</a>)
 * Japanese (ja) (thanks to Foken)
 * Norwegian (nb_NO) (thanks to <a href="mailto:bestwebsoftcontact@nordsoft.no">Per Rommetveit</a>)
@@ -150,6 +150,13 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 6. Plugin extra settings in WordPress admin panel with additional fields.
 
 == Changelog ==
+
+= V3.85 - 25.12.2014 =
+* NEW : We added functionality for displaying two or more contact forms on a single page.
+* Update : We changed the layout of Contact Form from fixed to responsive.
+* Update : The French language file is updated.
+* Update : The Japanese language file is updated.
+* Update : The Estonian language file is updated.
 
 = V3.84 - 21.10.2014 =
 * Update : The Norwegian and Russian language files are updated.
@@ -524,6 +531,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * Ability to add Contact Form into a post. Ability to adjust displaying of the form via shortcode is added.
 
 == Upgrade Notice ==
+
+= V3.85 =
+We added functionality for displaying two or more contact forms on a single page. We changed the layout of Contact Form from fixed to responsive. The French language file is updated. The Japanese language file is updated. The Estonian language file is updated.
 
 = V3.84 =
 The Norwegian and Russian language files are updated. We fixed the bug with saving 'The $_SERVER variable that is used to build a URL of the form'. We fixed the bug with network activation.
