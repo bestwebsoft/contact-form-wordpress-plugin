@@ -1,18 +1,6 @@
 (function($) {
 	$(document).ready( function() {
-		$( '.cntctfrm_additions_block' ).addClass( 'cntctfrm_hidden' );
-		$( '#cntctfrm_show_additional_settings' ).show();
-
-		$( '#cntctfrm_show_additional_settings' ).click( function() {
-			$( this ).css( 'display', 'none' );
-			$( '#cntctfrm_hide_additional_settings' ).css( 'display', 'block' );
-			$( '.cntctfrm_additions_block' ).removeClass( 'cntctfrm_hidden' );
-		});
-		$( '#cntctfrm_hide_additional_settings' ).click( function() {
-			$( this ).css( 'display', 'none' );
-			$( '#cntctfrm_show_additional_settings' ).css( 'display', 'block' );
-			$( '.cntctfrm_additions_block' ).addClass( 'cntctfrm_hidden' );
-		});
+		// $( '#cntctfrm_show_multi_notice' ).removeAttr('href').css('cursor', 'pointer');
 
 		$( '#cntctfrm_change_label' ).change( function() {
 			if ( $( this ).is( ':checked' ) ) {
@@ -34,6 +22,7 @@
 				type: "POST",
 				data: "action=cntctfrm_add_language&lang=" + $( '#cntctfrm_languages' ).val() + '&cntctfrm_ajax_nonce_field=' + cntctfrm_ajax.cntctfrm_nonce,
 				success: function( result ) {
+					var text = $.parseJSON( result );
 					var lang_val = $( '#cntctfrm_languages' ).val();
 					$( '.cntctfrm_change_label_block .cntctfrm_language_tab, .cntctfrm_action_after_send_block .cntctfrm_language_tab' ).each( function() {
 						$( this ).addClass( 'hidden' );
@@ -44,20 +33,14 @@
 						$( this ).val( '' );
 						$( this ).attr( 'name', $( this ).attr( 'name' ).replace( '[en]', '[' + lang_val + ']' ) );
 					});
-					var text = $( '.cntctfrm_change_label_block .cntctfrm_language_tab' ).last().find( '.cntctfrm_info' ).last().text();
-					text = text.replace( 'lang=en', 'lang=' + lang_val );
-					text = text.replace( ' or [contact_form]', '' );
-					$( '.cntctfrm_change_label_block .cntctfrm_language_tab' ).last().find( '.cntctfrm_info' ).last().text( text );
+					$( '.cntctfrm_change_label_block .cntctfrm_language_tab' ).last().find( '.cntctfrm_info' ).last().html( text );
 					$( '.cntctfrm_action_after_send_block .cntctfrm_language_tab' ).last().find( 'input' ).val( '' ).attr( 'name', $( '.cntctfrm_action_after_send_block .cntctfrm_language_tab' ).last().find( 'input' ).attr( 'name' ).replace( '[en]', '[' + lang_val + ']' ) );
-					text = $( '.cntctfrm_change_label_block .cntctfrm_language_tab' ).last().find( '.cntctfrm_info' ).last().text();
-					text = text.replace( 'lang=en', 'lang=' + lang_val );
-					text = text.replace( ' or [contact_form]', '' );
-					$( '.cntctfrm_action_after_send_block .cntctfrm_language_tab' ).last().find( '.cntctfrm_info' ).last().text( text );
+					$( '.cntctfrm_action_after_send_block .cntctfrm_language_tab' ).last().find( '.cntctfrm_info' ).last().html( text );
 					$( '.cntctfrm_change_label_block .cntctfrm_label_language_tab, .cntctfrm_action_after_send_block .cntctfrm_label_language_tab' ).each( function() {
 						$( this ).removeClass( 'cntctfrm_active' );
 					});
 					$( '.cntctfrm_change_label_block .clear' ).prev().clone().attr( 'id', 'cntctfrm_label_' + lang_val ).addClass( 'cntctfrm_active' ).html( $( '#cntctfrm_languages option:selected' ).text() + ' <span class="cntctfrm_delete" rel="' + lang_val + '">X</span>').insertBefore( '.cntctfrm_change_label_block .clear' );
-					$( '.cntctfrm_action_after_send_block .clear' ).prev().clone().attr( 'id', 'cntctfrm_label_' + lang_val ).addClass( 'cntctfrm_active' ).html( $( '#cntctfrm_languages option:selected' ).text() + ' <span class="cntctfrm_delete" rel="' + lang_val + '">X</span>').insertBefore( '.cntctfrm_action_after_send_block .clear' );
+					$( '.cntctfrm_action_after_send_block .clear' ).prev().clone().attr( 'id', 'cntctfrm_text_' + lang_val ).addClass( 'cntctfrm_active' ).html( $( '#cntctfrm_languages option:selected' ).text() + ' <span class="cntctfrm_delete" rel="' + lang_val + '">X</span>').insertBefore( '.cntctfrm_action_after_send_block .clear' );
 					$( '#cntctfrm_languages option:selected' ).remove();
 				},
 				error: function( request, status, error ) {
@@ -76,7 +59,7 @@
 
 		/* add notice about changing in the settings page */
 		$( '#cntctfrm_settings_form input' ).bind( "change click select", function() {
-			if ( $( this ).attr( 'id' ) != 'cntctfrm_hide_additional_settings' && $( this ).attr( 'id' ) != 'cntctfrm_show_additional_settings' && $( this ).attr( 'type' ) != 'submit' ) {
+			if ( $( this ).attr( 'type' ) != 'submit' ) {
 				$( '.updated.fade' ).css( 'display', 'none' );
 				$( '#cntctfrm_settings_notice' ).css( 'display', 'block' );
 			};
