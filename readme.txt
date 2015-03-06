@@ -4,7 +4,7 @@ Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=1&
 Tags: attachment, contact, contatc, conact, cnotact, contact button, contact form, contact form plugin, contact me, contacts, contacts form plugin, copy, feedback, feedback form, form, insert the shortcode, post feedback, request, send, send copy, send messages, shortcode, text, web-page feedback
 Requires at least: 3.1
 Tested up to: 4.1.1
-Stable tag: 3.87
+Stable tag: 3.88
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -151,6 +151,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 6. Widget settings for using shortcode in the sidebar.
 
 == Changelog ==
+
+= V3.88 - 06.03.2015 =
+* Bugfix : Bugs with syntax error and undefined function were fixed.
 
 = V3.87 - 05.03.2015 =
 * Bugfix : Error with option name when Contact Form Multi plugin is activated was fixed.
@@ -544,6 +547,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * Ability to add Contact Form into a post. Ability to adjust displaying of the form via shortcode is added.
 
 == Upgrade Notice ==
+
+= V3.88 =
+Bugs with syntax error and undefined function were fixed.
 
 = V3.87 =
 Error with option name when Contact Form Multi plugin is activated was fixed. Plugin performance was improved. BWS plugins section was updated. The French language file is updated.

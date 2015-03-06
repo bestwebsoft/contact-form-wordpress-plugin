@@ -4,7 +4,7 @@ Plugin Name: Contact Form
 Plugin URI: http://bestwebsoft.com/products/
 Description: Plugin for Contact Form.
 Author: BestWebSoft
-Version: 3.87
+Version: 3.88
 Author URI: http://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -647,7 +647,7 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 				if ( ! isset( $contact_form_multi_active ) && ! isset( $contact_form_multi_pro_active ) ) { ?>
 					<h2 class="nav-tab-wrapper">
 						<li class="nav-tab  nav-tab-active">NEW_FORM</li>
-						<a id="cntctfrm_show_multi_notice" class="nav-tab" target="_new" href="http://bestwebsoft.com/products/contact-form-multi/" title="<?php _e( "If you want to create multiple contact forms, please install the Contact Form Multi plugin.", 'contact_form' ); ?>">+</a>
+						<a id="cntctfrm_show_multi_notice" class="nav-tab" target="_new" href="http://bestwebsoft.com/products/contact-form-multi/?k=747ca825fb44711e2d24e40697747bc6&pn=77&v=<?php echo $cntctfrm_plugin_info["Version"]; ?>&wp_v=<?php echo $wp_version; ?>" title="<?php _e( "If you want to create multiple contact forms, please install the Contact Form Multi plugin.", 'contact_form' ); ?>">+</a>
 					</h2>
 				<?php }				
 				$form_action = ( ! isset( $_GET['action'] ) ) ? 'admin.php?page=contact_form.php' : 'admin.php?page=contact_form.php&amp;action=' . $_GET['action']; ?>
@@ -2191,7 +2191,7 @@ if ( ! function_exists ( 'cntctfrm_sanitize_string' ) ) {
 if ( ! function_exists ( 'cntctfrm_admin_head' ) ) {
 	function cntctfrm_admin_head() {
 		if ( isset( $_REQUEST['page'] ) && ( 'contact_form.php' == $_REQUEST['page'] ) ) {
-			global $wp_version;
+			global $wp_version, $cntctfrm_plugin_info;
 
 			wp_enqueue_style( 'cntctfrm_stylesheet', plugins_url( 'css/style.css', __FILE__ ) );
 
@@ -2226,7 +2226,7 @@ if ( ! function_exists ( 'cntctfrm_admin_head' ) ) {
 					'buttons'			=> array(
 						array(
 							'type' => 'link',
-							'link' => 'http://bestwebsoft.com/products/contact-form-multi/',
+							'link' => 'http://bestwebsoft.com/products/contact-form-multi/?k=747ca825fb44711e2d24e40697747bc6&pn=77&v=' . $cntctfrm_plugin_info["Version"] . '&wp_v=' . $wp_version,
 							'text' => __( 'Learn more', 'contact_form' ),
 						),
 						'close' => array(
@@ -2375,10 +2375,10 @@ if ( ! function_exists ( 'cntctfrm_plugin_banner' ) ) {
 		if ( 'plugins.php' == $hook_suffix ) {
 			global $cntctfrm_plugin_info, $wp_version, $bstwbsftwppdtplgns_cookie_add, $bstwbsftwppdtplgns_banner_array;
 			bws_plugin_banner( $cntctfrm_plugin_info, 'cntctfrm', 'contact-form', 'f575dc39cba54a9de88df346eed52101', '77', plugins_url( 'images/banner.png', __FILE__ ) ); 
-			
+
 			if ( empty( $bstwbsftwppdtplgns_banner_array ) )
 				bws_get_banner_array();
-			
+
 			if ( ! function_exists( 'is_plugin_active' ) )
 				require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 

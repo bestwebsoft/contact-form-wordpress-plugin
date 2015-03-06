@@ -96,8 +96,11 @@ if ( ! function_exists( 'bws_plugin_banner' ) ) {
 	function bws_plugin_banner( $plugin_info, $this_banner_prefix, $link_slug, $link_key, $link_pn, $banner_url ) {
 		global $wp_version, $bstwbsftwppdtplgns_cookie_add, $bstwbsftwppdtplgns_banner_array;
 		
-		if ( empty( $bstwbsftwppdtplgns_banner_array ) )
+		if ( empty( $bstwbsftwppdtplgns_banner_array ) ) {
+			if ( ! function_exists( 'bws_get_banner_array' ) )
+				require_once( dirname( __FILE__ ) . '/bws_menu.php' );
 			bws_get_banner_array();
+		}
 		
 		if ( ! function_exists( 'is_plugin_active' ) )
 			require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
@@ -663,7 +666,7 @@ if ( ! class_exists( 'BWS_add_admin_tooltip' ) ) {
 						/* add ajax dismiss functionality */
 						close : $.proxy(function () {
 							if ( pointer_options['actions']['onload'] == true ) {
-								$.post(ajaxurl, this);
+								$.post( ajaxurl, this );
 							}
 						}, {
 							pointer: pointer_options['tooltip_id'],
@@ -682,7 +685,7 @@ if ( ! class_exists( 'BWS_add_admin_tooltip' ) ) {
 							},
 						}).pointer('open');
 						/* display buttons that are not type of dismiss */
-						for( var but in pointer_buttons ) {
+						for ( var but in pointer_buttons ) {
 							if ( typeof pointer_buttons[ but ]['type'] != 'undefined' && pointer_buttons[ but ]['type'] != 'dismiss' && typeof pointer_buttons[ but ]['text'] != 'undefined' && pointer_buttons[ but ]['text'] != '' ) {
 								$('#pointer-close').after( '<a class="button-primary" style="margin-right: 5px;" ' +
 								( ( pointer_buttons[ but ]['type'] == 'link' && typeof pointer_buttons[ but ]['link'] != 'undefined' && pointer_buttons[ but ]['link'] != '') ? 'target="_blank" href="' + pointer_buttons[ but ]['link'] + '"' : '' )
@@ -714,7 +717,7 @@ if ( ! class_exists( 'BWS_add_admin_tooltip' ) ) {
 					}
 				})(jQuery);
 			</script>
-		<? }
+		<?php }
 	}
 }
 
