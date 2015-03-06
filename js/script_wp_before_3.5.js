@@ -1,8 +1,8 @@
 (function($) {
 	$(document).ready( function() {
-		/* if ( cntctfrm_delete_multi_link ) {
-			$( '#cntctfrm_show_multi_notice' ).removeAttr('href').css('cursor', 'pointer');
-		}; */
+		if ( cntctfrm_ajax.cntctfrm_delete_multi_link ) {
+			$( '#cntctfrm_show_multi_notice' ).removeAttr('href title').css('cursor', 'pointer');
+		};
 
 		$( '#cntctfrm_change_label' ).change( function() {
 			if ( $( this ).is( ':checked' ) ) {

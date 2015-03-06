@@ -4,7 +4,7 @@ Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=1&
 Tags: attachment, contact, contatc, conact, cnotact, contact button, contact form, contact form plugin, contact me, contacts, contacts form plugin, copy, feedback, feedback form, form, insert the shortcode, post feedback, request, send, send copy, send messages, shortcode, text, web-page feedback
 Requires at least: 3.1
 Tested up to: 4.1.1
-Stable tag: 3.86
+Stable tag: 3.87
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -111,13 +111,9 @@ This means that you made a syntax error.
 Here is an example for the German language files.
 
 1. In order to use another language for WordPress it is necessary to switch the WP version to the required language and in the configuration wp file - `wp-config.php` in the line `define('WPLANG', '');` write `define('WPLANG', 'de_DE');`. If everything is done properly admin panel will be in German.
-
 2. Make sure that there are the files `de_DE.po` and `de_DE.mo` in the plugin (in the languages folder which is in the root of the plugin).
-
 3. If there are no such files you should copy the other files from this folder (for example, for Russian or Italian language) and rename them (you should write `de_DE` instead of `ru_RU` in both files).
-
 4. The files can be edited with the help of the program Poedit - http://www.poedit.net/download.php - please download this program, install it, open the file with this program (required language file) and for each line in English write translation in German.
-
 5. If everything is done properly all lines will be in German in the admin panel and in the front-end.
 
 = How to add the contact form not in English? =
@@ -129,18 +125,21 @@ Here is an example for the German language files.
 = I'm not receiving messages from Contact Form OR The plugin does not send an email - "Sorry, email message could not be delivered." =
 
 Please follow the instructions below:
+
 1. Please check the plugin settings '/wp-admin/admin.php?page=contact_form.php' => 'What to use?' => change the lines from wp-mail to mail and vice versa.
-2. Email messages can be marked as spam on the server. Please choose another email instead of the admin's one ('Use this email:' block) - for example, gmail or similar. If the message is sent, it means that email filtering is set on your server. Please contact your hosting provider. 
-3. Perhaps email sending is not set. You should install an extra plugin called WP-mail-SMTP and configure it. Afterwards you should send a test email from this plugin and you will see if the plugin logs have errors.
+2. Email messages can be marked as spam on the server. Please choose another email instead of the admin's one ('Use this email:' block) - for example, gmail or similar. If the message is sent, it means that email filtering is set on your server. Please contact your hosting provider.
+3. Perhaps email sending is not set. You should install an extra plugin called <a href="https://wordpress.org/plugins/bws-smtp/" target="_blank">SMTP by BestWebSoft</a> and configure it. Afterwards you should open the "Send A Test Email" tab on the plugin settings page, check an option "Display log", send a test email and you will see if the plugin logs have errors.
+
 Note: If the Contact Form sends letters, but you don't receive them, you can install our plugin Contact Form to DB in order not to lose the sent letters for the time the problem is being solved.
 
 = I have some problems with the plugin's work. What Information should I provide to receive proper support? =
 
 Please make sure that the problem hasn't been discussed yet on our forum (<a href="http://support.bestwebsoft.com" target="_blank">http://support.bestwebsoft.com</a>). If no, please provide the following data along with your problem's description:
-1. the link to the page where the problem occurs
-2. the name of the plugin and its version. If you are using a pro version - your order number.
-3. the version of your WordPress installation
-4. copy and paste into the message your system status report. Please read more here: <a href="https://docs.google.com/document/d/1Wi2X8RdRGXk9kMszQy1xItJrpN0ncXgioH935MaBKtc/edit?pli=1" target="_blank">Instuction on System Status</a>
+
+1. The link to the page where the problem occurs.
+2. The name of the plugin and its version. If you are using a pro version - your order number.
+3. The version of your WordPress installation.
+4. Copy and paste into the message your system status report. Please read more here: <a href="https://docs.google.com/document/d/1Wi2X8RdRGXk9kMszQy1xItJrpN0ncXgioH935MaBKtc/edit?pli=1" target="_blank">Instuction on System Status</a>
 
 == Screenshots ==
 
@@ -152,6 +151,12 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 6. Widget settings for using shortcode in the sidebar.
 
 == Changelog ==
+
+= V3.87 - 05.03.2015 =
+* Bugfix : Error with option name when Contact Form Multi plugin is activated was fixed.
+* Update : Plugin performance was improved.
+* Update : BWS plugins section was updated.
+* Update : The French language file is updated.
 
 = V3.86 - 19.02.2015 =
 * Bugfix : Bug with Contact Form impacting 'From name' headers in messages sent by other plugins was fixed.
@@ -539,6 +544,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * Ability to add Contact Form into a post. Ability to adjust displaying of the form via shortcode is added.
 
 == Upgrade Notice ==
+
+= V3.87 =
+Error with option name when Contact Form Multi plugin is activated was fixed. Plugin performance was improved. BWS plugins section was updated. The French language file is updated.
 
 = V3.86 =
 Bug with Contact Form impacting 'From name' headers in messages sent by other plugins was fixed. 'Additional options' block was moved to a new tab, which is now named 'Additional settings'. 'Extra settings' tab name was changed to 'Appearance'. The Greek language file is added.

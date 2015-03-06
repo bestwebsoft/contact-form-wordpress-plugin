@@ -1,6 +1,6 @@
 (function($) {
 	$(document).ready( function() {
-		// $( '#cntctfrm_show_multi_notice' ).removeAttr('href').css('cursor', 'pointer');
+		$( '#cntctfrm_show_multi_notice' ).removeAttr('href title').css('cursor', 'pointer');
 
 		$( '#cntctfrm_change_label' ).change( function() {
 			if ( $( this ).is( ':checked' ) ) {

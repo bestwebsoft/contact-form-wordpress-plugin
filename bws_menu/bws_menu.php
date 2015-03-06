@@ -1,12 +1,15 @@
 <?php
 /*
 * Function for displaying BestWebSoft menu
-* Version: 1.4.5
+* Version: 1.4.8
 */
+
+if ( ! function_exists ( 'bws_admin_enqueue_scripts' ) )
+	require_once( dirname( __FILE__ ) . '/bws_functions.php' );
 
 if ( ! function_exists( 'bws_add_menu_render' ) ) {
 	function bws_add_menu_render() {
-		global $wpdb, $wpmu, $wp_version, $bws_plugin_info;
+		global $wpdb, $wp_version, $bws_plugin_info;
 		$error = $message = $bwsmn_form_email = '';
 		$bws_donate_link = 'https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=1&product_id=94';
 
@@ -207,7 +210,10 @@ if ( ! function_exists( 'bws_add_menu_render' ) ) {
 				'link'			=> 'http://bestwebsoft.com/products/htaccess/?k=2b865fcd56a935d22c5c4f1bba52ed46&pn=' . $bws_plugin_info["id"] . '&v=' . $bws_plugin_info["version"] . '&wp_v=' . $wp_version,
 				'download'		=> 'http://bestwebsoft.com/products/htaccess/download/?k=2b865fcd56a935d22c5c4f1bba52ed46&pn=' . $bws_plugin_info["id"] . '&v=' . $bws_plugin_info["version"] . '&wp_v=' . $wp_version,
 				'wp_install'	=> $admin_url . 'plugin-install.php?tab=search&s=Htaccess+Bestwebsoft&plugin-search-input=Search+Plugins',
-				'settings'		=> 'admin.php?page=htaccess.php'
+				'settings'		=> 'admin.php?page=htaccess.php',
+				'pro_version'	=> 'htaccess-pro/htaccess-pro.php',
+				'purchase' 		=> 'http://bestwebsoft.com/products/htaccess/buy/?k=59e9209a32864be534fda77d5e591c15&pn=' . $bws_plugin_info["id"] . '&v=' . $bws_plugin_info["version"] . '&wp_v=' . $wp_version,
+				'pro_settings' 	=> 'admin.php?page=htaccess-pro.php'
 			),
 			'google-captcha/google-captcha.php' => array(
 				'name'			=> 'Google Captcha (reCAPTCHA) by BestWebSoft',
@@ -370,6 +376,17 @@ if ( ! function_exists( 'bws_add_menu_render' ) ) {
 				'download'		=> 'http://bestwebsoft.com/products/bws-smtp/download/?k=0546419f962704429ad2d9b88567752f&pn=' . $bws_plugin_info["id"] . '&v=' . $bws_plugin_info["version"] . '&wp_v=' . $wp_version,
 				'wp_install'	=> $admin_url . 'plugin-install.php?tab=search&type=term&s=SMTP+BestWebSoft&plugin-search-input=Search+Plugins',
 				'settings'		=> 'admin.php?page=bwssmtp_settings'
+			),
+			'promobar/promobar.php' => array(
+				'name'			=> 'PromoBar',
+				'description'	=> 'This plugin allows placing banners with any data on your website.',
+				'link'			=> 'http://bestwebsoft.com/products/promobar/?k=619eac2232d9cfa382c4e678c3b14766&pn=' . $bws_plugin_info["id"] . '&v=' . $bws_plugin_info["version"] . '&wp_v=' . $wp_version,
+				'download'		=> 'http://bestwebsoft.com/products/promobar/download/?k=619eac2232d9cfa382c4e678c3b14766&pn=' . $bws_plugin_info["id"] . '&v=' . $bws_plugin_info["version"] . '&wp_v=' . $wp_version,
+				'wp_install'	=> $admin_url . 'plugin-install.php?tab=search&type=term&s=PromoBar+BestWebSoft&plugin-search-input=Search+Plugins',
+				'settings'		=> 'admin.php?page=promobar.php',
+				'pro_version'	=> 'promobar-pro/promobar-pro.php',
+				'purchase' 		=> 'http://bestwebsoft.com/products/promobar/buy/?k=a9b09708502f12a1483532ba12fe2103&pn=' . $bws_plugin_info["id"] . '&v=' . $bws_plugin_info["version"] . '&wp_v=' . $wp_version,
+				'pro_settings'	=> 'admin.php?page=promobar-pro.php'
 			)
 		);
 
@@ -894,47 +911,31 @@ if ( ! function_exists( 'bws_add_menu_render' ) ) {
 	<?php }
 }
 
-if ( ! function_exists ( 'bws_plugin_init' ) ) {
-	function bws_plugin_init() {
-		// Internationalization, first(!)
-		load_plugin_textdomain( 'bestwebsoft', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+if ( ! function_exists( 'bws_get_banner_array' ) ) {
+	function bws_get_banner_array() {
+		global $bstwbsftwppdtplgns_banner_array;
+		$bstwbsftwppdtplgns_banner_array = array(
+			array( 'prmbr_hide_banner_on_plugin_page', 'promobar/promobar.php', '1.0.0' ),
+			array( 'gglnltcs_hide_banner_on_plugin_page', 'bws-google-analytics/bws-google-analytics.php', '1.6.2' ),
+			array( 'htccss_hide_banner_on_plugin_page', 'htaccess/htaccess.php', '1.6.3' ),
+			array( 'sbscrbr_hide_banner_on_plugin_page', 'subscriber/subscriber.php', '1.1.8' ),
+			array( 'lmtttmpts_hide_banner_on_plugin_page', 'limit-attempts/limit-attempts.php', '1.0.2' ),
+			array( 'sndr_hide_banner_on_plugin_page', 'sender/sender.php', '0.5' ),
+			array( 'srrl_hide_banner_on_plugin_page', 'user-role/user-role.php', '1.4' ),
+			array( 'pdtr_hide_banner_on_plugin_page', 'updater/updater.php', '1.12' ),
+			array( 'cntctfrmtdb_hide_banner_on_plugin_page', 'contact-form-to-db/contact_form_to_db.php', '1.2' ),
+			array( 'cntctfrmmlt_hide_banner_on_plugin_page', 'contact-form-multi/contact-form-multi.php', '1.0.7' ),
+			array( 'gglmps_hide_banner_on_plugin_page', 'bws-google-maps/bws-google-maps.php', '1.2' ),
+			array( 'fcbkbttn_hide_banner_on_plugin_page', 'facebook-button-plugin/facebook-button-plugin.php', '2.29' ),
+			array( 'twttr_hide_banner_on_plugin_page', 'twitter-plugin/twitter.php', '2.34' ),
+			array( 'pdfprnt_hide_banner_on_plugin_page', 'pdf-print/pdf-print.php', '1.7.1' ),
+			array( 'gglplsn_hide_banner_on_plugin_page', 'google-one/google-plus-one.php', '1.1.4' ),
+			array( 'gglstmp_hide_banner_on_plugin_page', 'google-sitemap-plugin/google-sitemap-plugin.php', '2.8.4' ),
+			array( 'cntctfrmpr_for_ctfrmtdb_hide_banner_on_plugin_page', 'contact-form-pro/contact_form_pro.php', '1.14' ),
+			array( 'cntctfrm_for_ctfrmtdb_hide_banner_on_plugin_page', 'contact-form-plugin/contact_form.php', '3.62' ),
+			array( 'cntctfrm_hide_banner_on_plugin_page', 'contact-form-plugin/contact_form.php', '3.47' ),
+			array( 'cptch_hide_banner_on_plugin_page', 'captcha/captcha.php', '3.8.4' ),
+			array( 'gllr_hide_banner_on_plugin_page', 'gallery-plugin/gallery-plugin.php', '3.9.1' )
+		);
 	}
 }
-
-if ( ! function_exists ( 'bws_admin_enqueue_scripts' ) ) {
-	function bws_admin_enqueue_scripts() {
-		global $wp_version;
-		if ( $wp_version < 3.8 )
-			wp_enqueue_style( 'bws-admin-stylesheet', plugins_url( 'css/general_style_wp_before_3.8.css', __FILE__ ) );
-		else
-			wp_enqueue_style( 'bws-admin-stylesheet', plugins_url( 'css/general_style.css', __FILE__ ) );
-
-		if ( isset( $_GET['page'] ) && $_GET['page'] == "bws_plugins" ) {
-			wp_enqueue_style( 'bws_menu_style', plugins_url( 'css/style.css', __FILE__ ) );
-			wp_enqueue_script( 'bws_menu_script', plugins_url( 'js/bws_menu.js' , __FILE__ ) );
-			if ( $wp_version >= '3.8' )
-				wp_enqueue_script( 'theme-install' );
-			elseif ( $wp_version >= '3.4' )
-				wp_enqueue_script( 'theme' );
-		}
-	}
-}
-
-if ( ! function_exists ( 'bws_admin_head' ) ) {
-	function bws_admin_head() {
-		if ( isset( $_GET['page'] ) && $_GET['page'] == "bws_plugins" ) { ?>
-			<noscript>
-				<style type="text/css">
-					.bws_product_button {
-						display: inline-block;
-					}
-				</style>
-			</noscript>
-		<?php }
-	}
-}
-
-add_action( 'admin_init', 'bws_plugin_init' );
-add_action( 'admin_enqueue_scripts', 'bws_admin_enqueue_scripts' );
-add_action( 'admin_head', 'bws_admin_head' );
-?>

@@ -4,93 +4,56 @@ Plugin Name: Contact Form
 Plugin URI: http://bestwebsoft.com/products/
 Description: Plugin for Contact Form.
 Author: BestWebSoft
-Version: 3.86
+Version: 3.87
 Author URI: http://bestwebsoft.com/
 License: GPLv2 or later
 */
 
 /*  @ Copyright 2015  BestWebSoft  ( http://support.bestwebsoft.com )
 
-    This program is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License, version 2, as
-    published by the Free Software Foundation.
+	This program is free software; you can redistribute it and/or modify
+	it under the terms of the GNU General Public License, version 2, as
+	published by the Free Software Foundation.
 
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU General Public License for more details.
 
-    You should have received a copy of the GNU General Public License
-    along with this program; if not, write to the Free Software
-    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+	You should have received a copy of the GNU General Public License
+	along with this program; if not, write to the Free Software
+	Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-/* Add option page in admin menu */
+/**
+* Add Wordpress page 'bws_plugins' and sub-page of this plugin to admin-panel.
+* @return void
+*/
 if ( ! function_exists( 'cntctfrm_admin_menu' ) ) {
 	function cntctfrm_admin_menu() {
-		global $bstwbsftwppdtplgns_options, $bstwbsftwppdtplgns_added_menu;
-		$bws_menu_info = get_plugin_data( plugin_dir_path( __FILE__ ) . "bws_menu/bws_menu.php" );
-		$bws_menu_version = $bws_menu_info["Version"];
-		$base = plugin_basename(__FILE__);
-
-		if ( ! isset( $bstwbsftwppdtplgns_options ) ) {
-			if ( is_multisite() ) {
-				if ( ! get_site_option( 'bstwbsftwppdtplgns_options' ) )
-					add_site_option( 'bstwbsftwppdtplgns_options', array() );
-				$bstwbsftwppdtplgns_options = get_site_option( 'bstwbsftwppdtplgns_options' );
-			} else {
-				if ( ! get_option( 'bstwbsftwppdtplgns_options' ) )
-					add_option( 'bstwbsftwppdtplgns_options', array() );
-				$bstwbsftwppdtplgns_options = get_option( 'bstwbsftwppdtplgns_options' );
-			}
-		}
-
-		if ( isset( $bstwbsftwppdtplgns_options['bws_menu_version'] ) ) {
-			$bstwbsftwppdtplgns_options['bws_menu']['version'][ $base ] = $bws_menu_version;
-			unset( $bstwbsftwppdtplgns_options['bws_menu_version'] );
-			if ( is_multisite() )
-				update_site_option( 'bstwbsftwppdtplgns_options', $bstwbsftwppdtplgns_options );
-			else
-				update_option( 'bstwbsftwppdtplgns_options', $bstwbsftwppdtplgns_options );
-			require_once( dirname( __FILE__ ) . '/bws_menu/bws_menu.php' );
-		} else if ( ! isset( $bstwbsftwppdtplgns_options['bws_menu']['version'][ $base ] ) || $bstwbsftwppdtplgns_options['bws_menu']['version'][ $base ] < $bws_menu_version ) {
-			$bstwbsftwppdtplgns_options['bws_menu']['version'][ $base ] = $bws_menu_version;
-			if ( is_multisite() )
-				update_site_option( 'bstwbsftwppdtplgns_options', $bstwbsftwppdtplgns_options );
-			else
-				update_option( 'bstwbsftwppdtplgns_options', $bstwbsftwppdtplgns_options );
-			require_once( dirname( __FILE__ ) . '/bws_menu/bws_menu.php' );
-		} else if ( ! isset( $bstwbsftwppdtplgns_added_menu ) ) {
-			$plugin_with_newer_menu = $base;
-			foreach ( $bstwbsftwppdtplgns_options['bws_menu']['version'] as $key => $value ) {
-				if ( $bws_menu_version < $value && is_plugin_active( $base ) ) {
-					$plugin_with_newer_menu = $key;
-				}
-			}
-			$plugin_with_newer_menu = explode( '/', $plugin_with_newer_menu );
-			$wp_content_dir = defined( 'WP_CONTENT_DIR' ) ? basename( WP_CONTENT_DIR ) : 'wp-content';
-			if ( file_exists( ABSPATH . $wp_content_dir . '/plugins/' . $plugin_with_newer_menu[0] . '/bws_menu/bws_menu.php' ) )
-				require_once( ABSPATH . $wp_content_dir . '/plugins/' . $plugin_with_newer_menu[0] . '/bws_menu/bws_menu.php' );
-			else
-				require_once( dirname( __FILE__ ) . '/bws_menu/bws_menu.php' );
-			$bstwbsftwppdtplgns_added_menu = true;
-		}
-
-		add_menu_page( 'BWS Plugins', 'BWS Plugins', 'manage_options', 'bws_plugins', 'bws_add_menu_render', plugins_url( "images/px.png", __FILE__ ), 1001 );
-		add_submenu_page('bws_plugins', __( 'Contact Form Settings', 'contact_form' ), __( 'Contact Form', 'contact_form' ), 'manage_options', "contact_form.php", 'cntctfrm_settings_page' );
+		bws_add_general_menu( plugin_basename( __FILE__ ) );
+		add_submenu_page( 'bws_plugins', __( 'Contact Form Settings', 'contact_form' ), __( 'Contact Form', 'contact_form' ), 'manage_options', 'contact_form.php', 'cntctfrm_settings_page' );
 	}
 }
 
 if ( ! function_exists ( 'cntctfrm_init' ) ) {
 	function cntctfrm_init() {
+		global $bws_plugin_info, $cntctfrm_plugin_info;
 		/* Internationalization, first(!) */
 		if ( ! session_id() )
 			@session_start();
 
 		load_plugin_textdomain( 'contact_form', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 
+		require_once( dirname( __FILE__ ) . '/bws_menu/bws_functions.php' );
+		
+		if ( empty( $cntctfrm_plugin_info ) ) {
+			if ( ! function_exists( 'get_plugin_data' ) )
+				require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+			$cntctfrm_plugin_info = get_plugin_data( __FILE__ );
+		}
 		/* Function check if plugin is compatible with current WP version  */
-		cntctfrm_version_check();
+		bws_wp_version_check( plugin_basename( __FILE__ ), $cntctfrm_plugin_info, "3.1" );
 
 		if ( ! is_admin() )
 			cntctfrm_check_and_send();
@@ -101,8 +64,6 @@ if ( ! function_exists ( 'cntctfrm_admin_init' ) ) {
 	function cntctfrm_admin_init() {
 		global $bws_plugin_info, $cntctfrm_plugin_info;
 		/* Add variable for bws_menu */
-		if ( ! $cntctfrm_plugin_info )
-			$cntctfrm_plugin_info = get_plugin_data( __FILE__ );
 
 		if ( ! isset( $bws_plugin_info ) || empty( $bws_plugin_info ) )
 			$bws_plugin_info = array( 'id' => '77', 'version' => $cntctfrm_plugin_info["Version"] );
@@ -187,7 +148,7 @@ if ( ! function_exists( 'cntctfrm_settings' ) ) {
 			'cntctfrm_delete_attached_file'		=> '0',
 			'cntctfrm_html_email'				=> 1,
 			'cntctfrm_site_name_parameter'		=> 'SERVER_NAME',
-			'cntctfrm_change_label_in_email'	=> 0
+			'cntctfrm_change_label_in_email'	=> 0,
 		);
 
 		/* Check contact-form-multi plugin */
@@ -285,7 +246,11 @@ if ( ! function_exists( 'cntctfrm_settings' ) ) {
 		if ( ! isset( $cntctfrm_options['plugin_db_version'] ) || $cntctfrm_options['plugin_db_version'] != $cntctfrm_db_version ) {
 			cntctfrm_db_create();
 			$cntctfrm_options['plugin_db_version'] = $cntctfrm_db_version;
-			update_option( 'cntctfrm_options', $cntctfrm_options );
+			if ( isset( $contact_form_multi_active ) || isset( $contact_form_multi_pro_active ) ) {
+				update_option( 'cntctfrmmlt_options_' . $_SESSION['cntctfrmmlt_id_form'] , $cntctfrm_options );
+			} else {
+				update_option( 'cntctfrm_options', $cntctfrm_options );
+			}
 		}
 	}
 }
@@ -346,30 +311,12 @@ if ( ! function_exists ( 'cntctfrm_activation' ) ) {
 	}
 }
 
-/* Function check if plugin is compatible with current WP version  */
-if ( ! function_exists ( 'cntctfrm_version_check' ) ) {
-	function cntctfrm_version_check() {
-		global $wp_version, $cntctfrm_plugin_info;
-		$require_wp		=	"3.1"; /* Wordpress at least requires version */
-		$plugin			=	plugin_basename( __FILE__ );
-	 	if ( version_compare( $wp_version, $require_wp, "<" ) ) {
-			include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
-			if ( is_plugin_active( $plugin ) ) {
-				deactivate_plugins( $plugin );
-				$admin_url = ( function_exists( 'get_admin_url' ) ) ? get_admin_url( null, 'plugins.php' ) : esc_url( '/wp-admin/plugins.php' );
-				if ( ! $cntctfrm_plugin_info )
-					$cntctfrm_plugin_info = get_plugin_data( __FILE__, false );
-				wp_die( "<strong>" . $cntctfrm_plugin_info['Name'] . " </strong> " . __( 'requires', 'contact_form' ) . " <strong>WordPress " . $require_wp . "</strong> " . __( 'or higher, that is why it has been deactivated! Please upgrade WordPress and try again.', 'contact_form') . "<br /><br />" . __( 'Back to the WordPress', 'contact_form') . " <a href='" . $admin_url . "'>" . __( 'Plugins page', 'contact_form') . "</a>." );
-			}
-		}
-	}
-}
-
 /* Add settings page in admin area */
 if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 	function cntctfrm_settings_page() {
 		global $cntctfrm_options, $wpdb, $cntctfrm_option_defaults, $wp_version, $cntctfrm_plugin_info;
 		$error = $message = $notice = '';
+		$plugin_basename = plugin_basename( __FILE__ );
 
 		if ( ! function_exists( 'get_plugins' ) || ! function_exists( 'is_plugin_active_for_network' ) )
 			require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
@@ -400,7 +347,7 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 		$userslogin = get_users( 'blog_id=' . $GLOBALS['blog_id'] . '&role=administrator' );
 
 		/* Save data for settings page */
-		if ( isset( $_POST['cntctfrm_form_submit'] ) && check_admin_referer( plugin_basename(__FILE__), 'cntctfrm_nonce_name' ) ) {
+		if ( isset( $_POST['cntctfrm_form_submit'] ) && check_admin_referer( $plugin_basename, 'cntctfrm_nonce_name' ) ) {
 
 			$cntctfrm_options_submit['cntctfrm_user_email'] = $_POST['cntctfrm_user_email'];
 			$cntctfrm_options_submit['cntctfrm_custom_email'] = trim( stripslashes( esc_html( $_POST['cntctfrm_custom_email'] ) ), " ," );
@@ -675,135 +622,9 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 
 		/* GO PRO */
 		if ( isset( $_GET['action'] ) && 'go_pro' == $_GET['action'] ) {
-			global $bstwbsftwppdtplgns_options;
-
-			$bws_license_key = ( isset( $_POST['bws_license_key'] ) ) ? trim( esc_html( $_POST['bws_license_key'] ) ) : "";
-
-			if ( isset( $_POST['bws_license_submit'] ) && check_admin_referer( plugin_basename( __FILE__ ), 'bws_license_nonce_name' ) ) {
-				if ( '' != $bws_license_key ) {
-					if ( strlen( $bws_license_key ) != 18 ) {
-						$error = __( "Wrong license key", 'contact_form' );
-					} else {
-						$bws_license_plugin = stripslashes( esc_html( $_POST['bws_license_plugin'] ) );
-						if ( isset( $bstwbsftwppdtplgns_options['go_pro'][ $bws_license_plugin ]['count'] ) && $bstwbsftwppdtplgns_options['go_pro'][ $bws_license_plugin ]['time'] < ( time() + (24 * 60 * 60) ) ) {
-							$bstwbsftwppdtplgns_options['go_pro'][ $bws_license_plugin ]['count'] = $bstwbsftwppdtplgns_options['go_pro'][ $bws_license_plugin ]['count'] + 1;
-						} else {
-							$bstwbsftwppdtplgns_options['go_pro'][ $bws_license_plugin ]['count'] = 1;
-							$bstwbsftwppdtplgns_options['go_pro'][ $bws_license_plugin ]['time'] = time();
-						}
-
-						/* download Pro */
-						if ( ! array_key_exists( $bws_license_plugin, $all_plugins ) ) {
-							$current = get_site_transient( 'update_plugins' );
-							if ( is_array( $all_plugins ) && !empty( $all_plugins ) && isset( $current ) && is_array( $current->response ) ) {
-								$to_send = array();
-								$to_send["plugins"][ $bws_license_plugin ] = array();
-								$to_send["plugins"][ $bws_license_plugin ]["bws_license_key"] = $bws_license_key;
-								$to_send["plugins"][ $bws_license_plugin ]["bws_illegal_client"] = true;
-								$options = array(
-									'timeout' => ( ( defined('DOING_CRON') && DOING_CRON ) ? 30 : 3 ),
-									'body' => array( 'plugins' => serialize( $to_send ) ),
-									'user-agent' => 'WordPress/' . $wp_version . '; ' . get_bloginfo( 'url' ) );
-								$raw_response = wp_remote_post( 'http://bestwebsoft.com/wp-content/plugins/paid-products/plugins/update-check/1.0/', $options );
-
-								if ( is_wp_error( $raw_response ) || 200 != wp_remote_retrieve_response_code( $raw_response ) ) {
-									$error = __( "Something went wrong. Try again later. If the error will appear again, please, contact us <a href=http://support.bestwebsoft.com>BestWebSoft</a>. We are sorry for inconvenience.", 'contact_form' );
-								} else {
-									$response = maybe_unserialize( wp_remote_retrieve_body( $raw_response ) );
-
-									if ( is_array( $response ) && !empty( $response ) ) {
-										foreach ( $response as $key => $value ) {
-											if ( "wrong_license_key" == $value->package ) {
-												$error = __( "Wrong license key", 'contact_form' );
-											} elseif ( "wrong_domain" == $value->package ) {
-												$error = __( "This license key is bind to another site", 'contact_form' );
-											} elseif ( "you_are_banned" == $value->package ) {
-												$error = __( "Unfortunately, you have exceeded the number of available tries per day. Please, upload the plugin manually.", 'contact_form' );
-											}
-										}
-										if ( '' == $error ) {
-											$bstwbsftwppdtplgns_options[ $bws_license_plugin ] = $bws_license_key;
-
-											$url = 'http://bestwebsoft.com/wp-content/plugins/paid-products/plugins/downloads/?bws_first_download=' . $bws_license_plugin . '&bws_license_key=' . $bws_license_key . '&download_from=5';
-											$uploadDir = wp_upload_dir();
-											$zip_name = explode( '/', $bws_license_plugin );
-											$received_content = file_get_contents( $url );
-											if ( ! $received_content ) {
-												$error = __( "Failed to download the zip archive. Please, upload the plugin manually", 'contact_form' );
-											} else {
-												if ( is_writable( $uploadDir["path"] ) ) {
-													$file_put_contents = $uploadDir["path"] . "/" . $zip_name[0] . ".zip";
-												    if ( file_put_contents( $file_put_contents, $received_content ) ) {
-												    	@chmod( $file_put_contents, octdec( 755 ) );
-												    	if ( class_exists( 'ZipArchive' ) ) {
-															$zip = new ZipArchive();
-															if ( $zip->open( $file_put_contents ) === TRUE ) {
-																$zip->extractTo( WP_PLUGIN_DIR );
-																$zip->close();
-															} else {
-																$error = __( "Failed to open the zip archive. Please, upload the plugin manually", 'contact_form' );
-															}
-														} elseif ( class_exists( 'Phar' ) ) {
-															$phar = new PharData( $file_put_contents );
-															$phar->extractTo( WP_PLUGIN_DIR );
-														} else {
-															$error = __( "Your server does not support either ZipArchive or Phar. Please, upload the plugin manually", 'contact_form' );
-														}
-														@unlink( $file_put_contents );
-													} else {
-														$error = __( "Failed to download the zip archive. Please, upload the plugin manually", 'contact_form' );
-													}
-												} else {
-													$error = __( "UploadDir is not writable. Please, upload the plugin manually", 'contact_form' );
-												}
-											}
-
-											/* activate Pro */
-											if ( file_exists( WP_PLUGIN_DIR . '/' . $zip_name[0] ) ) {
-												if ( is_multisite() && is_plugin_active_for_network( plugin_basename( __FILE__ ) ) ) {
-													/* if multisite and free plugin is network activated */
-													$active_plugins = get_site_option( 'active_sitewide_plugins' );
-													$active_plugins[ $bws_license_plugin ] = time();
-													update_site_option( 'active_sitewide_plugins', $active_plugins );
-												} else {
-													/* activate on a single blog */
-													$active_plugins = get_option( 'active_plugins' );
-													array_push( $active_plugins, $bws_license_plugin );
-													update_option( 'active_plugins', $active_plugins );
-												}
-												$pro_plugin_is_activated = true;
-											} elseif ( '' == $error ) {
-												$error = __( "Failed to download the zip archive. Please, upload the plugin manually", 'contact_form' );
-											}
-										}
-									} else {
-										$error = __( "Something went wrong. Try again later or upload the plugin manually. We are sorry for inconvienience.", 'contact_form' );
-									}
-								}
-							}
-						} else {
-							/* activate Pro */
-							if ( ! is_plugin_active( $bws_license_plugin ) ) { 
-								if ( is_multisite() && is_plugin_active_for_network( plugin_basename( __FILE__ ) ) ) {
-									/* if multisite and free plugin is network activated */
-									$network_wide = true;
-								} else {
-									/* activate on a single blog */
-									$network_wide = false;
-								}
-								activate_plugin( $bws_license_plugin, NULL, $network_wide );
-								$pro_plugin_is_activated = true;
-							}
-						}
-						if ( is_multisite() )
-							update_site_option( 'bstwbsftwppdtplgns_options', $bstwbsftwppdtplgns_options );
-						else
-							update_option( 'bstwbsftwppdtplgns_options', $bstwbsftwppdtplgns_options );
-			 		}
-			 	} else {
-		 			$error = __( "Please, enter Your license key", 'contact_form' );
-		 		}
-		 	}
+			$go_pro_result = bws_go_pro_tab_check( $plugin_basename );
+			if ( ! empty( $go_pro_result['error'] ) )
+				$error = $go_pro_result['error'];
 		} ?>
 		<div class="wrap">
 			<div class="icon32 icon32-bws" id="icon-options-general"></div>
@@ -1343,19 +1164,10 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 					<p class="submit">
 						<input type="submit" class="button-primary" value="<?php _e( 'Save Changes', 'contact_form' ); ?>" />
 					</p>
-					<?php wp_nonce_field( plugin_basename(__FILE__), 'cntctfrm_nonce_name' ); ?>
+					<?php wp_nonce_field( $plugin_basename, 'cntctfrm_nonce_name' ); ?>
 				</form>
-				<div class="bws-plugin-reviews">
-					<div class="bws-plugin-reviews-rate">
-						<?php _e( 'If you enjoy our plugin, please give it 5 stars on WordPress', 'contact_form' ); ?>:
-						<a href="http://wordpress.org/support/view/plugin-reviews/contact-form-plugin" target="_blank" title="Contact Form reviews"><?php _e( 'Rate the plugin', 'contact_form' ); ?></a>
-					</div>
-					<div class="bws-plugin-reviews-support">
-						<?php _e( 'If there is something wrong about it, please contact us', 'contact_form' ); ?>:
-						<a href="http://support.bestwebsoft.com">http://support.bestwebsoft.com</a>
-					</div>
-				</div>
-			<?php } elseif ( 'appearance' == $_GET['action'] ) { ?>
+				<?php bws_plugin_reviews_block( $cntctfrm_plugin_info['Name'], 'contact-form-plugin' );
+			} elseif ( 'appearance' == $_GET['action'] ) { ?>
 				<div id="cntctfrmpr_left_table">
 					<div class="bws_pro_version_bloc">
 						<div class="bws_pro_version_table_bloc">
@@ -1633,52 +1445,9 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 					</div>
 				</div>
 				<div class="clear"></div>
-			<?php } elseif ( 'go_pro' == $_GET['action'] ) { ?>
-				<?php if ( isset( $pro_plugin_is_activated ) && true === $pro_plugin_is_activated ) { ?>
-					<script type="text/javascript">
-						window.setTimeout( function() {
-						    window.location.href = 'admin.php?page=contact_form_pro.php';
-						}, 5000 );
-					</script>
-					<p><?php _e( "Congratulations! The PRO version of the plugin is successfully download and activated.", 'contact_form' ); ?></p>
-					<p>
-						<?php _e( "Please, go to", 'contact_form' ); ?> <a href="admin.php?page=contact_form_pro.php"><?php _e( 'the setting page', 'contact_form' ); ?></a>
-						(<?php _e( "You will be redirected automatically in 5 seconds.", 'contact_form' ); ?>)
-					</p>
-				<?php } else { ?>
-					<form method="post" action="admin.php?page=contact_form.php&amp;action=go_pro">
-						<p>
-							<?php _e( 'You can download and activate', 'contact_form' ); ?>
-							<a href="http://bestwebsoft.com/products/contact-form/?k=697c5e74f39779ce77850e11dbe21962&pn=77&v=<?php echo $cntctfrm_plugin_info["Version"]; ?>&wp_v=<?php echo $wp_version; ?>" target="_blank" title="Contact Form Pro">PRO</a>
-							<?php _e( 'version of this plugin by entering Your license key.', 'contact_form' ); ?><br />
-							<span style="color: #888888;font-size: 10px;">
-								<?php _e( 'You can find your license key on your personal page Client area, by clicking on the link', 'contact_form' ); ?>
-								<a href="http://bestwebsoft.com/wp-login.php">http://bestwebsoft.com/wp-login.php</a>
-								<?php _e( '(your username is the email you specify when purchasing the product).', 'contact_form' ); ?>
-							</span>
-						</p>
-						<?php if ( isset( $bstwbsftwppdtplgns_options['go_pro']['contact-form-pro/contact_form_pro.php']['count'] ) &&
-							'5' < $bstwbsftwppdtplgns_options['go_pro']['contact-form-pro/contact_form_pro.php']['count'] &&
-							$bstwbsftwppdtplgns_options['go_pro']['contact-form-pro/contact_form_pro.php']['time'] < ( time() + ( 24 * 60 * 60 ) ) ) { ?>
-							<p>
-								<input disabled="disabled" type="text" name="bws_license_key" value="<?php echo $bws_license_key; ?>" />
-								<input disabled="disabled" type="submit" class="button-primary" value="<?php _e( 'Activate', 'contact_form' ); ?>" />
-							</p>
-							<p>
-								<?php _e( "Unfortunately, you have exceeded the number of available tries per day. Please, upload the plugin manually.", 'contact_form' ); ?>
-							</p>
-						<?php } else { ?>
-							<p>
-								<input type="text" name="bws_license_key" value="<?php echo $bws_license_key; ?>" />
-								<input type="hidden" name="bws_license_plugin" value="contact-form-pro/contact_form_pro.php" />
-								<input type="hidden" name="bws_license_submit" value="submit" />
-								<input type="submit" class="button-primary" value="<?php _e( 'Activate', 'contact_form' ); ?>" />
-								<?php wp_nonce_field( plugin_basename(__FILE__), 'bws_license_nonce_name' ); ?>
-							</p>
-						<?php } ?>
-					</form>
-				<?php }
-			} ?>
+			<?php } elseif ( 'go_pro' == $_GET['action'] ) {
+				bws_go_pro_tab( $cntctfrm_plugin_info, $plugin_basename, 'contact_form.php', 'contact_form_pro.php', 'contact-form-pro/contact_form_pro.php', 'contact-form', '697c5e74f39779ce77850e11dbe21962', '77', isset( $go_pro_result['pro_plugin_is_activated'] ) );
+			}?>
 		</div>
 	<?php }
 }
@@ -1687,33 +1456,36 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 if ( ! function_exists( 'cntctfrm_display_form' ) ) {
 	function cntctfrm_display_form( $atts = array( 'lang' => 'en' ) ) {
 		global $error_message, $cntctfrm_options, $cntctfrm_result, $cntctfrmmlt_ide, $cntctfrmmlt_active_plugin, $cntctfrm_form_count;
-		
 
 		$cntctfrm_form_count = empty( $cntctfrm_form_count ) ? 1 : ++$cntctfrm_form_count;
 		$cntctfrm_form_countid = ( $cntctfrm_form_count == 1 ? '' : '_' . $cntctfrm_form_count );
 
-		extract( shortcode_atts( array( 'lang' => 'en' ), $atts ) );
 		$content = "";
 
 		/* Get options for the form with a definite identifier */
 		require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 		if ( is_plugin_active( 'contact-form-multi/contact-form-multi.php' ) || is_plugin_active( 'contact-form-multi-pro/contact-form-multi-pro.php' ) ) {
 
-			extract( shortcode_atts( array( 'id' => $cntctfrmmlt_ide ), $atts ) );
-
+			extract( shortcode_atts( array( 'id' => $cntctfrmmlt_ide, 'lang' => 'en' ), $atts ) );
 			if ( isset( $atts['id'] ) )
 				$cntctfrm_options = get_option( 'cntctfrmmlt_options_' . $atts['id'] );
 			else
 				$cntctfrm_options = get_option( 'cntctfrmmlt_options' );
-
 		} else {
 			$cntctfrm_options = get_option( 'cntctfrm_options' );
+			extract( shortcode_atts( array( 'lang' => 'en' ), $atts ) );
+		}
+		/* check lang and replace with en default if need */
+		foreach ( $cntctfrm_options as $key => $value ) {
+			if ( is_array( $value ) && array_key_exists( 'en', $value ) && ( ! array_key_exists( $lang, $value ) || ( isset( $cntctfrm_options[ $key ][ $lang ] ) && $cntctfrm_options[ $key ][ $lang ] == '' ) ) ) {
+				$cntctfrm_options[ $key ][ $lang ] = $cntctfrm_options[ $key ]['en'];
+			}
 		}
 
 		if ( '80' != $_SERVER["SERVER_PORT"] || (  isset( $_SERVER["HTTPS"] ) && '443' != $_SERVER["SERVER_PORT"] && strtolower( $_SERVER["HTTPS"] ) == "on" ) )
-            $page_url = ( isset( $_SERVER["HTTPS"] ) && strtolower( $_SERVER["HTTPS"] ) == "on" ? "https://" : "http://" ) . $_SERVER[ $cntctfrm_options['cntctfrm_site_name_parameter'] ] . ':' . $_SERVER["SERVER_PORT"] . strip_tags( $_SERVER["REQUEST_URI"] ) . '#cntctfrm_contact_form';
+			$page_url = ( isset( $_SERVER["HTTPS"] ) && strtolower( $_SERVER["HTTPS"] ) == "on" ? "https://" : "http://" ) . $_SERVER[ $cntctfrm_options['cntctfrm_site_name_parameter'] ] . ':' . $_SERVER["SERVER_PORT"] . strip_tags( $_SERVER["REQUEST_URI"] ) . '#cntctfrm_contact_form';
 		else
-            $page_url = ( isset( $_SERVER["HTTPS"] ) && strtolower( $_SERVER["HTTPS"] ) == "on" ? "https://" : "http://" ) . $_SERVER[ $cntctfrm_options['cntctfrm_site_name_parameter'] ] . strip_tags( $_SERVER["REQUEST_URI"] ) . '#cntctfrm_contact_form';
+			$page_url = ( isset( $_SERVER["HTTPS"] ) && strtolower( $_SERVER["HTTPS"] ) == "on" ? "https://" : "http://" ) . $_SERVER[ $cntctfrm_options['cntctfrm_site_name_parameter'] ] . strip_tags( $_SERVER["REQUEST_URI"] ) . '#cntctfrm_contact_form';
 
 		/* If contact form submited */
 
@@ -1735,6 +1507,7 @@ if ( ! function_exists( 'cntctfrm_display_form' ) ) {
 
 		$send_copy = ( isset( $_POST['cntctfrm_contact_send_copy'] ) && $cntctfrm_form_count == $cntctfrm_form_submited ) ? $_POST['cntctfrm_contact_send_copy'] : "";
 		/* If it is good */
+
 		if ( true === $cntctfrm_result && $cntctfrm_form_count == $cntctfrm_form_submited ) {
 			$_SESSION['cntctfrm_send_mail'] = true;
 
@@ -1920,6 +1693,15 @@ if ( ! function_exists( 'cntctfrm_check_form' ) ) {
 		$message = strip_tags( preg_replace( '/<[^>]*>/', '', preg_replace( '/<script.*<\/[^>]*>/', '', $message ) ) );
 		$phone = strip_tags( preg_replace( '/<[^>]*>/', '', preg_replace( '/<script.*<\/[^>]*>/', '', $phone ) ) );
 
+		/* check language and replace with en default if need */
+		if ( ! in_array( $language, $cntctfrm_options['cntctfrm_language'] ) ) {
+			foreach ( $cntctfrm_options as $key => $value ) {
+				if ( is_array( $value ) && array_key_exists( 'en', $value ) && ( ! array_key_exists( $language, $value ) || ( isset( $cntctfrm_options[ $key ][ $language ] ) && $cntctfrm_options[ $key ][ $language ] == '' ) ) ) {
+					$cntctfrm_options[ $key ][ $language ] = $cntctfrm_options[ $key ]['en'];
+				}
+			}
+		}
+
 		if ( 1 == $cntctfrm_options['cntctfrm_required_name_field'] && 1 == $cntctfrm_options['cntctfrm_display_name_field'] )
 			$error_message['error_name'] = $cntctfrm_options['cntctfrm_name_error'][ $language ];
 		if ( 1 == $cntctfrm_options['cntctfrm_required_address_field'] && 1 == $cntctfrm_options['cntctfrm_display_address_field'] )
@@ -2036,7 +1818,7 @@ if ( ! function_exists( 'cntctfrm_check_form' ) ) {
 								$upload_max_size *= 1024;
 							case 'K':
 								$upload_max_size *= 1024;
-							    break;
+								break;
 						}
 						if ( isset( $upload_max_size ) && isset( $_FILES["cntctfrm_contact_attachment"]["size"] ) &&
 							 $_FILES["cntctfrm_contact_attachment"]["size"] <= $upload_max_size ) {
@@ -2224,8 +2006,7 @@ if( ! function_exists( 'cntctfrm_send_mail' ) ) {
 			/* 'from' email */
 			$from_email = ( 'custom' == $cntctfrm_options['cntctfrm_from_email'] ) ? stripslashes( $cntctfrm_options['cntctfrm_custom_from_email'] ) : stripslashes( $email );
 
-			if ( ( is_plugin_active( 'email-queue/email-queue.php' ) && function_exists( 'mlq_if_mail_plugin_is_in_queue' ) && mlq_if_mail_plugin_is_in_queue( plugin_basename( __FILE__ ) ) ) || 
-				( is_plugin_active( 'email-queue-pro/email-queue-pro.php' ) && function_exists( 'mlqpr_if_mail_plugin_is_in_queue' ) && mlqpr_if_mail_plugin_is_in_queue( plugin_basename( __FILE__ ) ) ) ) {
+			if ( ( is_plugin_active( 'email-queue/email-queue.php' ) || is_plugin_active( 'email-queue-pro/email-queue-pro.php' ) ) && function_exists( 'mlq_if_mail_plugin_is_in_queue' ) && mlq_if_mail_plugin_is_in_queue( plugin_basename( __FILE__ ) ) ) {
 				/* if email-queue plugin is active and this plugin's "in_queue" status is 'ON' */
 				/* attachment path */
 				$attachment_file = ( 1 == $cntctfrm_options['cntctfrm_attachment'] && isset( $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) && "" != $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) ? $path_of_uploaded_file : '';
@@ -2413,18 +2194,53 @@ if ( ! function_exists ( 'cntctfrm_admin_head' ) ) {
 			global $wp_version;
 
 			wp_enqueue_style( 'cntctfrm_stylesheet', plugins_url( 'css/style.css', __FILE__ ) );
+
 			if ( isset( $_GET['action'] ) && 'appearance' == $_GET['action'] ) {
 				wp_enqueue_style( 'cntctfrm_form_style', plugins_url( 'css/form_style.css', __FILE__ ) );
 			}
-			
-			if ( 3.5 > $wp_version )
-				wp_enqueue_script( 'cntctfrm_script', plugins_url( 'js/script_wp_before_3.5.js', __FILE__ ) );
-			else
-				wp_enqueue_script( 'cntctfrm_script', plugins_url( 'js/script.js', __FILE__ ) );
 
-			wp_localize_script( 'cntctfrm_script', 'cntctfrm_ajax', array(
-				'cntctfrm_nonce' => wp_create_nonce( plugin_basename( __FILE__ ), 'cntctfrm_ajax_nonce_field' ),
-				'cntctfrm_confirm_text'  => __( 'Are you sure that you want to delete this language data?', 'contact_form' ) ) );
+			$script_vars = array(
+				'cntctfrm_nonce' 		=> wp_create_nonce( plugin_basename( __FILE__ ), 'cntctfrm_ajax_nonce_field' ),
+				'cntctfrm_confirm_text'  => __( 'Are you sure that you want to delete this language data?', 'contact_form' ) 
+			);
+
+			if ( 3.5 > $wp_version ) {
+				wp_enqueue_script( 'cntctfrm_script', plugins_url( 'js/script_wp_before_3.5.js', __FILE__ ) );
+				$script_vars['cntctfrm_delete_multi_link'] = ( 3.3 > $wp_version ) ? false : true;
+			} else {
+				wp_enqueue_script( 'cntctfrm_script', plugins_url( 'js/script.js', __FILE__ ) );
+			}
+
+			wp_localize_script( 'cntctfrm_script', 'cntctfrm_ajax', $script_vars );
+
+			if ( ! ( 3.3 > $wp_version ) ) {
+				require_once( dirname( __FILE__ ) . '/bws_menu/bws_functions.php' );
+				$tooltip_args = array(
+					'tooltip_id'	=> 'cntctfrm_install_multi_tooltip',
+					'css_selector' 	=> '#cntctfrm_show_multi_notice',
+					'actions' 		=> array(
+						'click' 	=> true,
+						'onload' 	=> true,
+					), 
+					'content' 			=> '<h3>' . __( 'Add multiple forms', 'contact_form' ) . '</h3>' .'<p>' . __( 'Install Contact Form Multi plugin to create unlimited number of contact forms.', 'contact_form' ) . '</p>',
+					'buttons'			=> array(
+						array(
+							'type' => 'link',
+							'link' => 'http://bestwebsoft.com/products/contact-form-multi/',
+							'text' => __( 'Learn more', 'contact_form' ),
+						),
+						'close' => array(
+							'type' => 'dismiss',
+							'text' => __( 'Close', 'contact_form' ),
+						),
+					),
+					'position' => array( 
+						'edge' 		=> 'top',
+						'align' 	=> 'left',
+					),
+				);
+				bws_add_tooltip_admin( $tooltip_args );
+			}
 		}
 	}
 }
@@ -2557,39 +2373,20 @@ if ( ! function_exists ( 'cntctfrm_plugin_banner' ) ) {
 	function cntctfrm_plugin_banner() {
 		global $hook_suffix;
 		if ( 'plugins.php' == $hook_suffix ) {
-			global $cntctfrm_plugin_info;
-			$banner_array = array(
-				array( 'gglnltcs_hide_banner_on_plugin_page', 'bws-google-analytics/bws-google-analytics.php', '1.6.2' ),
-				array( 'htccss_hide_banner_on_plugin_page', 'htaccess/htaccess.php', '1.6.3' ),
-				array( 'sbscrbr_hide_banner_on_plugin_page', 'subscriber/subscriber.php', '1.1.8' ),
-				array( 'lmtttmpts_hide_banner_on_plugin_page', 'limit-attempts/limit-attempts.php', '1.0.2' ),
-				array( 'sndr_hide_banner_on_plugin_page', 'sender/sender.php', '0.5' ),
-				array( 'srrl_hide_banner_on_plugin_page', 'user-role/user-role.php', '1.4' ),
-				array( 'pdtr_hide_banner_on_plugin_page', 'updater/updater.php', '1.12' ),
-				array( 'cntctfrmtdb_hide_banner_on_plugin_page', 'contact-form-to-db/contact_form_to_db.php', '1.2' ),
-				array( 'cntctfrmmlt_hide_banner_on_plugin_page', 'contact-form-multi/contact-form-multi.php', '1.0.7' ),
-				array( 'gglmps_hide_banner_on_plugin_page', 'bws-google-maps/bws-google-maps.php', '1.2' ),
-				array( 'fcbkbttn_hide_banner_on_plugin_page', 'facebook-button-plugin/facebook-button-plugin.php', '2.29' ),
-				array( 'twttr_hide_banner_on_plugin_page', 'twitter-plugin/twitter.php', '2.34' ),
-				array( 'pdfprnt_hide_banner_on_plugin_page', 'pdf-print/pdf-print.php', '1.7.1' ),
-				array( 'gglplsn_hide_banner_on_plugin_page', 'google-one/google-plus-one.php', '1.1.4' ),
-				array( 'gglstmp_hide_banner_on_plugin_page', 'google-sitemap-plugin/google-sitemap-plugin.php', '2.8.4' ),
-				array( 'cntctfrmpr_for_ctfrmtdb_hide_banner_on_plugin_page', 'contact-form-pro/contact_form_pro.php', '1.14' ),
-				array( 'cntctfrm_for_ctfrmtdb_hide_banner_on_plugin_page', 'contact-form-plugin/contact_form.php', '3.62' ),
-				array( 'cntctfrm_hide_banner_on_plugin_page', 'contact-form-plugin/contact_form.php', '3.47' ),
-				array( 'cptch_hide_banner_on_plugin_page', 'captcha/captcha.php', '3.8.4' ),
-				array( 'gllr_hide_banner_on_plugin_page', 'gallery-plugin/gallery-plugin.php', '3.9.1' )
-			);
-			if ( ! $cntctfrm_plugin_info )
-				$cntctfrm_plugin_info = get_plugin_data( __FILE__ );
+			global $cntctfrm_plugin_info, $wp_version, $bstwbsftwppdtplgns_cookie_add, $bstwbsftwppdtplgns_banner_array;
+			bws_plugin_banner( $cntctfrm_plugin_info, 'cntctfrm', 'contact-form', 'f575dc39cba54a9de88df346eed52101', '77', plugins_url( 'images/banner.png', __FILE__ ) ); 
+			
+			if ( empty( $bstwbsftwppdtplgns_banner_array ) )
+				bws_get_banner_array();
+			
+			if ( ! function_exists( 'is_plugin_active' ) )
+				require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 
 			$all_plugins = get_plugins();
-			$this_banner = 'cntctfrm_hide_banner_on_plugin_page';
-			$this_banner_1 = 'cntctfrm_for_ctfrmtdb_hide_banner_on_plugin_page';
-
-			foreach ( $banner_array as $key => $value ) {
-				if ( $this_banner == $value[0] || $this_banner_1 == $value[0] ) {
-					global $wp_version, $bstwbsftwppdtplgns_cookie_add;
+			$this_banner_prefix = 'cntctfrm_for_ctfrmtdb';
+			$this_banner = 'cntctfrm_for_ctfrmtdb_hide_banner_on_plugin_page';
+			foreach ( $bstwbsftwppdtplgns_banner_array as $key => $value ) {
+				if ( $this_banner == $value[0] ) {
 					if ( ! isset( $bstwbsftwppdtplgns_cookie_add ) ) {
 						echo '<script type="text/javascript" src="' . plugins_url( 'js/c_o_o_k_i_e.js', __FILE__ ) . '"></script>';
 						$bstwbsftwppdtplgns_cookie_add = true;
@@ -2597,50 +2394,25 @@ if ( ! function_exists ( 'cntctfrm_plugin_banner' ) ) {
 					<script type="text/javascript">
 						(function($) {
 							$(document).ready( function() {
-								var hide_message = $.cookie( "cntctfrm_hide_banner_on_plugin_page" );
-								var hide_message_for_ctfrmtdb = $.cookie( "cntctfrm_for_ctfrmtdb_hide_banner_on_plugin_page" );
+								var hide_message = $.cookie( '<?php echo $this_banner_prefix; ?>_hide_banner_on_plugin_page' );
 								if ( hide_message == "true" ) {
-									$( ".cntctfrm_message" ).css( "display", "none" );
-									if ( hide_message_for_ctfrmtdb == "true" ) {
-										$( ".cntctfrm_message_for_ctfrmtdb" ).css( "display", "none" );
-									} else {
-										$( ".cntctfrm_message_for_ctfrmtdb" ).css( "display", "block" );
-									}
+									$( ".<?php echo $this_banner_prefix; ?>_message" ).css( "display", "none" );
 								} else {
-									$( ".cntctfrm_message" ).css( "display", "block" );
-								}
-								$( ".cntctfrm_close_icon" ).click( function() {
-									$( ".cntctfrm_message" ).css( "display", "none" );
-									$.cookie( "cntctfrm_hide_banner_on_plugin_page", "true", { expires: 32 } );
-								});
-								$( ".cntctfrm_for_ctfrmtdb_close_icon" ).click( function() {
-									$( ".cntctfrm_message_for_ctfrmtdb" ).css( "display", "none" );
-									$.cookie( "cntctfrm_for_ctfrmtdb_hide_banner_on_plugin_page", "true", { expires: 32 } );
+									$( ".<?php echo $this_banner_prefix; ?>_message" ).css( "display", "block" );
+								};
+								$( ".<?php echo $this_banner_prefix; ?>_close_icon" ).click( function() {
+									$( ".<?php echo $this_banner_prefix; ?>_message" ).css( "display", "none" );
+									$.cookie( "<?php echo $this_banner_prefix; ?>_hide_banner_on_plugin_page", "true", { expires: 32 } );
 								});
 							});
 						})(jQuery);
 					</script>
-					<div class="updated" style="padding: 0; margin: 0; border: none; background: none;">
-						<div class="cntctfrm_message bws_banner_on_plugin_page" style="display: none;">
-							<img class="cntctfrm_close_icon close_icon" title="" src="<?php echo plugins_url( 'images/close_banner.png', __FILE__ ); ?>" alt=""/>
-							<div class="button_div">
-								<a class="button" target="_blank" href="http://bestwebsoft.com/products/contact-form/?k=f575dc39cba54a9de88df346eed52101&pn=77&v=<?php echo $cntctfrm_plugin_info["Version"]; ?>&wp_v=<?php echo $wp_version; ?>"><?php _e( 'Learn More', 'contact_form' ); ?></a>
-							</div>
-							<div class="text">
-								<?php _e( "It’s time to upgrade your <strong>Contact Form plugin</strong> to <strong>PRO</strong> version", 'contact_form' ); ?>!<br />
-								<span><?php _e( "Extend standard plugin functionality with new great options.", 'contact_form' ); ?></span>
-							</div>
-							<div class="icon">
-								<img class="icon" title="" src="<?php echo plugins_url( 'images/banner.png', __FILE__ ); ?>" alt=""/>
-							</div>
-						</div>
-					</div>
 					<?php if ( ! array_key_exists( 'contact-form-to-db/contact_form_to_db.php', $all_plugins ) && ! array_key_exists( 'contact-form-to-db-pro/contact_form_to_db_pro.php', $all_plugins ) ) { ?>
 						<div class="updated" style="padding: 0; margin: 0; border: none; background: none;">
-							<div class="cntctfrm_message_for_ctfrmtdb bws_banner_on_plugin_page" style="display: none;">
-								<img class="cntctfrm_for_ctfrmtdb_close_icon close_icon" title="" src="<?php echo plugins_url( 'images/close_banner.png', __FILE__ ); ?>" alt=""/>
+							<div class="cntctfrm_for_ctfrmtdb_message bws_banner_on_plugin_page" style="display: none;">
+								<img class="<?php echo $this_banner_prefix; ?>_close_icon close_icon" title="" src="<?php echo plugins_url( 'images/close_banner.png', __FILE__ ); ?>" alt=""/>
 								<div class="button_div">
-									<a class="button" target="_blank" href="http://bestwebsoft.com/products/contact-form-to-db/?k=6ebf0743736411607343ad391dc3b436&pn=77&v=<?php echo $cntctfrm_plugin_info["Version"]; ?>&wp_v=<?php echo $wp_version; ?>"><?php _e( 'Learn More', 'contact_form' ); ?></a>
+									<a class="button" target="_blank" href="http://bestwebsoft.com/products/contact-form-to-db/?k=6ebf0743736411607343ad391dc3b436&pn=77&v=<?php echo $cntctfrm_plugin_info["Version"]; ?>&amp;wp_v=<?php echo $wp_version; ?>"><?php _e( 'Learn More', 'contact_form' ); ?></a>
 								</div>
 								<div class="text">
 									<?php _e( "<strong>Contact Form to DB</strong> allows to store your messages to the database.", 'contact_form' ); ?><br />
