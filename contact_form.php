@@ -4,7 +4,7 @@ Plugin Name: Contact Form
 Plugin URI: http://bestwebsoft.com/products/
 Description: Plugin for Contact Form.
 Author: BestWebSoft
-Version: 3.88
+Version: 3.89
 Author URI: http://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -77,7 +77,7 @@ if ( ! function_exists ( 'cntctfrm_admin_init' ) ) {
 /* Register settings for plugin */
 if ( ! function_exists( 'cntctfrm_settings' ) ) {
 	function cntctfrm_settings() {
-		global $cntctfrm_options, $cntctfrm_option_defaults, $wpdb, $bws_plugin_info, $cntctfrm_plugin_info;
+		global $cntctfrm_options, $cntctfrm_option_defaults, $cntctfrm_plugin_info;
 		$cntctfrm_db_version = "1.0";
 
 		if ( ! $cntctfrm_plugin_info )
@@ -2388,7 +2388,7 @@ if ( ! function_exists ( 'cntctfrm_plugin_banner' ) ) {
 			foreach ( $bstwbsftwppdtplgns_banner_array as $key => $value ) {
 				if ( $this_banner == $value[0] ) {
 					if ( ! isset( $bstwbsftwppdtplgns_cookie_add ) ) {
-						echo '<script type="text/javascript" src="' . plugins_url( 'js/c_o_o_k_i_e.js', __FILE__ ) . '"></script>';
+						echo '<script type="text/javascript" src="' . plugins_url( '/bws_menu/js/c_o_o_k_i_e.js', __FILE__ ) . '"></script>';
 						$bstwbsftwppdtplgns_cookie_add = true;
 					} ?>
 					<script type="text/javascript">

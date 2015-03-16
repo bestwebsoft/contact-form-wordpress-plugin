@@ -1,7 +1,7 @@
 <?php
 /*
 * General functions for BestWebSoft plugins
-* Version: 1.0.1
+* Version: 1.0.2
 */
 if ( ! function_exists ( 'bws_add_general_menu' ) ) {
 	function bws_add_general_menu( $base ) {
@@ -182,7 +182,7 @@ if ( ! function_exists( 'bws_go_pro_tab_check' ) ) {
 					$result['error'] = __( "Wrong license key", 'bestwebsoft' );
 				} else {
 					$bws_license_plugin = stripslashes( esc_html( $_POST['bws_license_plugin'] ) );	
-					if ( isset( $bstwbsftwppdtplgns_options['go_pro'][ $bws_license_plugin ]['count'] ) && $bstwbsftwppdtplgns_options['go_pro'][ $bws_license_plugin ]['time'] < ( time() + (24 * 60 * 60) ) ) {
+					if ( isset( $bstwbsftwppdtplgns_options['go_pro'][ $bws_license_plugin ]['count'] ) && $bstwbsftwppdtplgns_options['go_pro'][ $bws_license_plugin ]['time'] > ( time() - (24 * 60 * 60) ) ) {
 						$bstwbsftwppdtplgns_options['go_pro'][ $bws_license_plugin ]['count'] = $bstwbsftwppdtplgns_options['go_pro'][ $bws_license_plugin ]['count'] + 1;
 					} else {
 						$bstwbsftwppdtplgns_options['go_pro'][ $bws_license_plugin ]['count'] = 1;
@@ -343,7 +343,7 @@ if ( ! function_exists( 'bws_go_pro_tab' ) ) {
 				</p>
 				<?php if ( isset( $bstwbsftwppdtplgns_options['go_pro'][ $bws_license_plugin ]['count'] ) &&
 					'5' < $bstwbsftwppdtplgns_options['go_pro'][ $bws_license_plugin ]['count'] &&
-					$bstwbsftwppdtplgns_options['go_pro'][ $bws_license_plugin ]['time'] < ( time() + ( 24 * 60 * 60 ) ) ) { ?>
+					$bstwbsftwppdtplgns_options['go_pro'][ $bws_license_plugin ]['time'] > ( time() - ( 24 * 60 * 60 ) ) ) { ?>
 					<p>
 						<input disabled="disabled" type="text" name="bws_license_key" value="<?php echo $bws_license_key; ?>" />
 						<input disabled="disabled" type="submit" class="button-primary" value="<?php _e( 'Activate', 'bestwebsoft' ); ?>" />
@@ -591,7 +591,17 @@ if ( ! class_exists( 'BWS_add_admin_tooltip' ) ) {
 					'zindex' 	=> 10000 
 				), 
 			);
-			$tooltip_args = array_replace_recursive( $tooltip_args_default, $tooltip_args );
+			$tooltip_args = array_merge( $tooltip_args_default, $tooltip_args );
+			/* Check that our merged array has default values */
+			foreach ( $tooltip_args_default as $arg_key => $arg_value ) {
+				if ( is_array( $arg_value ) ) {
+					foreach ( $arg_value as $key => $value) {
+						if ( ! isset( $tooltip_args[ $arg_key ][ $key ] ) ) {
+							$tooltip_args[ $arg_key ][ $key ] = $tooltip_args_default[ $arg_key ][ $key ];
+						}
+					}
+				}
+			}
 			/* Check if tooltip is dismissed */
 			if ( true === $tooltip_args['actions']['onload'] ) {
 				if ( in_array( $tooltip_args['tooltip_id'], array_filter( explode( ',', (string) get_user_meta( get_current_user_id(), 'dismissed_wp_pointers', true ) ) ) ) ) {
