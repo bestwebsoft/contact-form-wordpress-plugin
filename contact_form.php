@@ -1,10 +1,10 @@
 <?php
 /*
-Plugin Name: Contact Form
+Plugin Name: Contact Form by BestWebSoft
 Plugin URI: http://bestwebsoft.com/products/
 Description: Plugin for Contact Form.
 Author: BestWebSoft
-Version: 3.89
+Version: 3.90
 Author URI: http://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -235,7 +235,7 @@ if ( ! function_exists( 'cntctfrm_settings' ) ) {
 
 			if ( isset( $contact_form_multi_active ) || isset( $contact_form_multi_pro_active ) ) {
 				if ( get_site_option( 'cntctfrmmlt_options_' . $_SESSION['cntctfrmmlt_id_form'] ) )
-					update_option( 'cntctfrmmlt_options_' . $_SESSION['cntctfrmmlt_id_form'] , $cntctfrm_options,  '', 'yes' );
+					update_option( 'cntctfrmmlt_options_' . $_SESSION['cntctfrmmlt_id_form'] , $cntctfrm_options );
 				else
 					update_option( 'cntctfrmmlt_options', $cntctfrm_options );
 			} else
@@ -587,16 +587,16 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 					$cntctfrmmlt_options_main = get_option( 'cntctfrmmlt_options_main' );
 
 					if ( $cntctfrmmlt_options_main['id_form'] !== $_SESSION['cntctfrmmlt_id_form'] )
-						add_option( 'cntctfrmmlt_options_' . $cntctfrmmlt_options_main['id_form'] , $cntctfrm_options );
+						add_option( 'cntctfrmmlt_options_' . $cntctfrmmlt_options_main['id_form'], $cntctfrm_options );
 					else if ( $cntctfrmmlt_options_main['id_form'] == $_SESSION['cntctfrmmlt_id_form'] )
-						update_option( 'cntctfrmmlt_options_' . $cntctfrmmlt_options_main['id_form'] , $cntctfrm_options,  '', 'yes' );
+						update_option( 'cntctfrmmlt_options_' . $cntctfrmmlt_options_main['id_form'], $cntctfrm_options );
 				} elseif ( isset( $contact_form_multi_pro_active ) ) {
 					$cntctfrmmltpr_options_main = get_option( 'cntctfrmmltpr_options_main' );
 
 					if ( $cntctfrmmltpr_options_main['id_form'] !== $_SESSION['cntctfrmmlt_id_form'] )
-						add_option( 'cntctfrmmlt_options_' . $cntctfrmmltpr_options_main['id_form'] , $cntctfrm_options );
+						add_option( 'cntctfrmmlt_options_' . $cntctfrmmltpr_options_main['id_form'], $cntctfrm_options );
 					else if ( $cntctfrmmltpr_options_main['id_form'] == $_SESSION['cntctfrmmlt_id_form'] )
-						update_option( 'cntctfrmmlt_options_' . $cntctfrmmltpr_options_main['id_form'] , $cntctfrm_options,  '', 'yes' );
+						update_option( 'cntctfrmmlt_options_' . $cntctfrmmltpr_options_main['id_form'], $cntctfrm_options );
 				} else {
 					update_option( 'cntctfrm_options', $cntctfrm_options );
 				}
@@ -1482,10 +1482,15 @@ if ( ! function_exists( 'cntctfrm_display_form' ) ) {
 			}
 		}
 
-		if ( '80' != $_SERVER["SERVER_PORT"] || (  isset( $_SERVER["HTTPS"] ) && '443' != $_SERVER["SERVER_PORT"] && strtolower( $_SERVER["HTTPS"] ) == "on" ) )
-			$page_url = ( isset( $_SERVER["HTTPS"] ) && strtolower( $_SERVER["HTTPS"] ) == "on" ? "https://" : "http://" ) . $_SERVER[ $cntctfrm_options['cntctfrm_site_name_parameter'] ] . ':' . $_SERVER["SERVER_PORT"] . strip_tags( $_SERVER["REQUEST_URI"] ) . '#cntctfrm_contact_form';
-		else
-			$page_url = ( isset( $_SERVER["HTTPS"] ) && strtolower( $_SERVER["HTTPS"] ) == "on" ? "https://" : "http://" ) . $_SERVER[ $cntctfrm_options['cntctfrm_site_name_parameter'] ] . strip_tags( $_SERVER["REQUEST_URI"] ) . '#cntctfrm_contact_form';
+		if ( ( isset( $_SERVER['HTTPS'] ) && strtolower( $_SERVER['HTTPS'] ) == 'on' ) ) {
+			$cntctfrm_protocol = 'https://';
+			$cntctfrm_default_port = 443;
+		} else {
+			$cntctfrm_protocol = 'http://';
+			$cntctfrm_default_port = 80;
+		}
+		$cntctfrm_port = ( $_SERVER['SERVER_PORT'] != $cntctfrm_default_port ) ? ':' . $_SERVER['SERVER_PORT'] : '';
+		$page_url = $cntctfrm_protocol . $_SERVER[ $cntctfrm_options['cntctfrm_site_name_parameter'] ] . $cntctfrm_port . $_SERVER['REQUEST_URI'] . '#cntctfrm_contact_form';
 
 		/* If contact form submited */
 
@@ -1798,7 +1803,7 @@ if ( ! function_exists( 'cntctfrm_check_form' ) ) {
 			$tmp_path = $_FILES["cntctfrm_contact_attachment"]["tmp_name"];
 			$path_info = pathinfo( $path_of_uploaded_file );
 
-			if ( array_key_exists ( $path_info['extension'], $mime_type ) ) {
+			if ( array_key_exists( $path_info['extension'], $mime_type ) ) {
 				if ( is_uploaded_file( $tmp_path ) ) {
 					if ( move_uploaded_file( $tmp_path, $path_of_uploaded_file ) ) {
 						do_action( 'cntctfrm_get_attachment_data', $path_of_uploaded_file );
@@ -2239,7 +2244,7 @@ if ( ! function_exists ( 'cntctfrm_admin_head' ) ) {
 						'align' 	=> 'left',
 					),
 				);
-				bws_add_tooltip_admin( $tooltip_args );
+				bws_add_tooltip_in_admin( $tooltip_args );
 			}
 		}
 	}
@@ -2374,7 +2379,7 @@ if ( ! function_exists ( 'cntctfrm_plugin_banner' ) ) {
 		global $hook_suffix;
 		if ( 'plugins.php' == $hook_suffix ) {
 			global $cntctfrm_plugin_info, $wp_version, $bstwbsftwppdtplgns_cookie_add, $bstwbsftwppdtplgns_banner_array;
-			bws_plugin_banner( $cntctfrm_plugin_info, 'cntctfrm', 'contact-form', 'f575dc39cba54a9de88df346eed52101', '77', plugins_url( 'images/banner.png', __FILE__ ) ); 
+			bws_plugin_banner( $cntctfrm_plugin_info, 'cntctfrm', 'contact-form', 'f575dc39cba54a9de88df346eed52101', '77', 'http://ps.w.org/contact-form-plugin/assets/icon-128x128.png' ); 
 
 			if ( empty( $bstwbsftwppdtplgns_banner_array ) )
 				bws_get_banner_array();
@@ -2410,16 +2415,16 @@ if ( ! function_exists ( 'cntctfrm_plugin_banner' ) ) {
 					<?php if ( ! array_key_exists( 'contact-form-to-db/contact_form_to_db.php', $all_plugins ) && ! array_key_exists( 'contact-form-to-db-pro/contact_form_to_db_pro.php', $all_plugins ) ) { ?>
 						<div class="updated" style="padding: 0; margin: 0; border: none; background: none;">
 							<div class="cntctfrm_for_ctfrmtdb_message bws_banner_on_plugin_page" style="display: none;">
-								<img class="<?php echo $this_banner_prefix; ?>_close_icon close_icon" title="" src="<?php echo plugins_url( 'images/close_banner.png', __FILE__ ); ?>" alt=""/>
-								<div class="button_div">
-									<a class="button" target="_blank" href="http://bestwebsoft.com/products/contact-form-to-db/?k=6ebf0743736411607343ad391dc3b436&pn=77&v=<?php echo $cntctfrm_plugin_info["Version"]; ?>&amp;wp_v=<?php echo $wp_version; ?>"><?php _e( 'Learn More', 'contact_form' ); ?></a>
+								<img class="<?php echo $this_banner_prefix; ?>_close_icon close_icon" title="" src="<?php echo plugins_url( 'bws_menu/images/close_banner.png', __FILE__ ); ?>" alt=""/>
+								<div class="icon">
+									<img title="" src="http://ps.w.org/contact-form-to-db/assets/icon-128x128.png" alt="" />
 								</div>
 								<div class="text">
 									<?php _e( "<strong>Contact Form to DB</strong> allows to store your messages to the database.", 'contact_form' ); ?><br />
 									<span><?php _e( "Manage messages that have been sent from your website.", 'contact_form' ); ?></span>
 								</div>
-								<div class="icon">
-									<img title="" src="<?php echo plugins_url( 'images/banner_for_ctfrmtdb.png', __FILE__ ); ?>" alt=""/>
+								<div class="button_div">
+									<a class="button" target="_blank" href="http://bestwebsoft.com/products/contact-form-to-db/?k=6ebf0743736411607343ad391dc3b436&pn=77&v=<?php echo $cntctfrm_plugin_info["Version"]; ?>&amp;wp_v=<?php echo $wp_version; ?>"><?php _e( 'Learn More', 'contact_form' ); ?></a>
 								</div>
 							</div>
 						</div>
