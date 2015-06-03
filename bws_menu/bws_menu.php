@@ -1,7 +1,7 @@
 <?php
 /*
 * Function for displaying BestWebSoft menu
-* Version: 1.5.9
+* Version: 1.6.2
 */
 
 if ( ! function_exists ( 'bws_admin_enqueue_scripts' ) )
@@ -11,7 +11,7 @@ if ( ! function_exists( 'bws_add_menu_render' ) ) {
 	function bws_add_menu_render() {
 		global $wpdb, $wp_version, $bws_plugin_info;
 		$error = $message = $bwsmn_form_email = '';
-		$bws_donate_link = 'https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=1&product_id=94';
+		$bws_donate_link = 'http://bestwebsoft.com/donate/';
 
 		if ( ! function_exists( 'is_plugin_active_for_network' ) )
 			require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
@@ -72,7 +72,10 @@ if ( ! function_exists( 'bws_add_menu_render' ) ) {
 				'link'			=> 'http://bestwebsoft.com/products/portfolio/?k=1249a890c5b7bba6bda3f528a94f768b&pn=' . $bws_plugin_info["id"] . '&v=' . $bws_plugin_info["version"] . '&wp_v=' . $wp_version,
 				'download'		=> 'http://bestwebsoft.com/products/portfolio/download/?k=1249a890c5b7bba6bda3f528a94f768b&pn=' . $bws_plugin_info["id"] . '&v=' . $bws_plugin_info["version"] . '&wp_v=' . $wp_version,
 				'wp_install'	=> $admin_url . 'plugin-install.php?tab=search&type=term&s=Portfolio+bestwebsoft&plugin-search-input=Search+Plugins',
-				'settings'		=> 'admin.php?page=portfolio.php'
+				'settings'		=> 'admin.php?page=portfolio.php',
+				'pro_version'	=> 'portfolio-pro/portfolio-pro.php',
+				'purchase' 		=> 'http://bestwebsoft.com/products/portfolio/buy/?k=2cc716026197d36538a414b728e49fdd&pn=' . $bws_plugin_info["id"] . '&v=' . $bws_plugin_info["version"] . '&wp_v=' . $wp_version,
+				'pro_settings' 	=> 'admin.php?page=portfolio-pro.php'
 			),
 			'gallery-plugin/gallery-plugin.php' => array(
 				'name'			=> 'Gallery',
@@ -247,7 +250,7 @@ if ( ! function_exists( 'bws_add_menu_render' ) ) {
 			),
 			'contact-form-multi/contact-form-multi.php' => array(
 				'name'			=> 'Contact Form Multi',
-				'description'	=> 'This plugin allows you to subscribe users for newsletters from your website.',
+				'description'	=> 'Add-on to the Contact Form plugin that allows to create and implement multiple contact forms.',
 				'link'			=> 'http://bestwebsoft.com/products/contact-form-multi/?k=83cdd9e72a9f4061122ad28a67293c72&pn=' . $bws_plugin_info["id"] . '&v=' . $bws_plugin_info["version"] . '&wp_v=' . $wp_version,
 				'download'		=> 'http://bestwebsoft.com/products/contact-form-multi/download/?k=83cdd9e72a9f4061122ad28a67293c72&pn=' . $bws_plugin_info["id"] . '&v=' . $bws_plugin_info["version"] . '&wp_v=' . $wp_version,
 				'wp_install'	=> $admin_url . 'plugin-install.php?tab=search&s=Contact+Form+Multi+Bestwebsoft&plugin-search-input=Search+Plugins',
@@ -417,6 +420,14 @@ if ( ! function_exists( 'bws_add_menu_render' ) ) {
 				'download'		=> 'http://bestwebsoft.com/products/social-buttons-pack/download/?k=b6440fad9f54274429e536b0c61b42da&pn=' . $bws_plugin_info["id"] . '&v=' . $bws_plugin_info["version"] . '&wp_v=' . $wp_version,
 				'wp_install'	=> $admin_url . 'plugin-install.php?tab=search&type=term&s=Social+Buttons+Pack+BestWebSoft&plugin-search-input=Search+Plugins',
 				'settings'		=> 'admin.php?page=social-buttons.php'
+			),
+			'pagination/pagination.php' => array(
+				'name'			=> 'Pagination',
+				'description'	=> 'Add pagination block to your WordPress website.',
+				'link'			=> 'http://bestwebsoft.com/products/pagination/?k=22adb940256f149559ba8fedcd728ac8&pn=' . $bws_plugin_info["id"] . '&v=' . $bws_plugin_info["version"] . '&wp_v=' . $wp_version,
+				'download'		=> 'http://bestwebsoft.com/products/pagination/download/?k=22adb940256f149559ba8fedcd728ac8&pn=' . $bws_plugin_info["id"] . '&v=' . $bws_plugin_info["version"] . '&wp_v=' . $wp_version,
+				'wp_install'	=> $admin_url . 'plugin-install.php?tab=search&type=term&s=Pagination+BestWebSoft&plugin-search-input=Search+Plugins',
+				'settings'		=> 'admin.php?page=pagination.php'
 			)
 		);
 
@@ -945,6 +956,7 @@ if ( ! function_exists( 'bws_get_banner_array' ) ) {
 	function bws_get_banner_array() {
 		global $bstwbsftwppdtplgns_banner_array;
 		$bstwbsftwppdtplgns_banner_array = array(
+			array( 'prtflpr_hide_banner_on_plugin_page', 'portfolio/portfolio.php', '2.33' ),
 			array( 'rlt_hide_banner_on_plugin_page', 'realty/realty.php', '1.0.0' ),
 			array( 'prmbr_hide_banner_on_plugin_page', 'promobar/promobar.php', '1.0.0' ),
 			array( 'gglnltcs_hide_banner_on_plugin_page', 'bws-google-analytics/bws-google-analytics.php', '1.6.2' ),

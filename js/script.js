@@ -4,16 +4,16 @@
 
 		$( '#cntctfrm_change_label' ).change( function() {
 			if ( $( this ).is( ':checked' ) ) {
-				$( '.cntctfrm_change_label_block' ).removeClass( 'cntctfrm_hidden' );
+				$( '.cntctfrm_change_label_block' ).show();
 			} else {
-				$( '.cntctfrm_change_label_block' ).addClass( 'cntctfrm_hidden' );
+				$( '.cntctfrm_change_label_block' ).hide();
 			}
 		});
 		$( '#cntctfrm_display_add_info' ).change( function() {
 			if ( $( this ).is( ':checked' ) ) {
-				$( '.cntctfrm_display_add_info_block' ).removeClass( 'cntctfrm_hidden' );
+				$( '.cntctfrm_display_add_info_block' ).show();
 			} else {
-				$( '.cntctfrm_display_add_info_block' ).addClass( 'cntctfrm_hidden' );
+				$( '.cntctfrm_display_add_info_block' ).hide();
 			}
 		});
 		$( '#cntctfrm_add_language_button' ).click( function() {
@@ -50,12 +50,6 @@
 		});
 		$( '.cntctfrm_language_tab_block' ).css( 'display', 'none' );
 		$( '.cntctfrm_language_tab_block_mini' ).css( 'display', 'block' );
-		$( '.cntctfrm_help_box' ).mouseover( function() {
-			$( this ).children().css( 'display', 'block' );
-		});
-		$( '.cntctfrm_help_box' ).mouseout( function() {
-			$( this ).children().css( 'display', 'none' );
-		});
 
 		/* add notice about changing in the settings page */
 		$( '#cntctfrm_settings_form input' ).bind( "change click select", function() {
@@ -70,7 +64,7 @@
 			$( '#cntctfrm_settings_notice' ).css( 'display', 'block' );
 		});
 	});
-	$(document).on( "click", ".cntctfrm_language_tab_block_mini", function() {
+	$(document).on( "click touchstart", ".cntctfrm_language_tab_block_mini", function() {
 		if ( $( '.cntctfrm_language_tab_block' ).css( 'display' ) == 'none' ) {
 			$( '.cntctfrm_language_tab_block' ).css( 'display', 'block' );
 			$( '.cntctfrm_language_tab_block_mini' ).css( 'background-position', '1px -3px' );
