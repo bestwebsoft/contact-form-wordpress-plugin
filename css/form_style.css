@@ -5,6 +5,9 @@
 	text-align: left !important;
 	line-height: normal !important;
 }
+.rtl .cntctfrm_contact_form * {
+	text-align: right !important;
+}
 .cntctfrm_contact_form p,
 .widget .cntctfrm_contact_form p {
 	margin: 0 !important;

@@ -4,7 +4,7 @@ Plugin Name: Contact Form by BestWebSoft
 Plugin URI: http://bestwebsoft.com/products/
 Description: Plugin for Contact Form.
 Author: BestWebSoft
-Version: 3.91
+Version: 3.92
 Author URI: http://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -69,7 +69,7 @@ if ( ! function_exists ( 'cntctfrm_admin_init' ) ) {
 			$bws_plugin_info = array( 'id' => '77', 'version' => $cntctfrm_plugin_info["Version"] );
 
 		/* Call register settings function */
-		if ( isset( $_REQUEST['page'] ) && ( 'contact_form.php' == $_REQUEST['page'] ) )
+		if ( isset( $_REQUEST['page'] ) && 'contact_form.php' == $_REQUEST['page'] )
 			cntctfrm_settings();
 	}
 }
@@ -705,7 +705,7 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 								</td>
 							</tr>
 							<tr valign="top">
-								<th scope="row"><?php _e( "Use this email address:", 'contact_form' ); ?> </th>
+								<th scope="row"><?php _e( "Use this email address:", 'contact_form' ); ?></th>
 								<td colspan="2">
 									<input type="radio" id="cntctfrm_select_email_custom" name="cntctfrm_select_email" value="custom" <?php if ( 'custom' == $cntctfrm_options['cntctfrm_select_email'] ) echo 'checked="checked" '; ?>/> 
 									<input type="text" name="cntctfrm_custom_email" value="<?php echo $cntctfrm_options['cntctfrm_custom_email']; ?>" onfocus="document.getElementById('cntctfrm_select_email_custom').checked = true;" maxlength="250" />
@@ -721,7 +721,7 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 										<th scope="row"><?php _e( "Add department selectbox to the contact form:", 'contact_form' ); ?></th>
 										<td colspan="2">
 											<input type="radio" id="cntctfrmpr_select_email_department" name="cntctfrmpr_select_email" value="departments" disabled="disabled" />
-											<div class="cntctfrmpr_department_table"><img src="<?php echo plugins_url( 'images/pro_screen_1.png', __FILE__ ); ?>" alt="" /></div>
+											<div class="cntctfrmpr_department_table"><img style="width:100%;" src="<?php echo plugins_url( 'images/pro_screen_1.png', __FILE__ ); ?>" alt="" /></div>
 										</td>
 									</tr>
 									<tr valign="top">
@@ -752,11 +752,11 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 											<span class="bws_info"> (<?php _e( 'Using', 'contact_form' ); ?> <a href="admin.php?page=cntctfrmtdb_manager">Contact Form to DB by BestWebSoft</a>)</span>
 										<?php } else { ?>
 											<input disabled="disabled" type="checkbox" name="cntctfrm_save_email_to_db" value="1" <?php if ( ( isset( $cntctfrmtdb_options ) && 1 == $cntctfrmtdb_options["cntctfrmtdb_save_messages_to_db"] ) || ( isset( $cntctfrmtdbpr_options ) && 1 == $cntctfrmtdbpr_options["save_messages_to_db"] ) ) echo 'checked="checked"'; ?> />
-											<span class="bws_info">(<?php _e( 'Using Contact Form to DB by BestWebSoft', 'contact_form' ); ?>) <a href="<?php echo bloginfo("url"); ?>/wp-admin/plugins.php"><?php _e( 'Activate Contact Form to DB', 'contact_form' ); ?></a></span>
+											<span class="bws_info">(<?php _e( 'Using Contact Form to DB by BestWebSoft', 'contact_form' ); ?>) <a href="<?php echo bloginfo("url"); ?>/wp-admin/plugins.php"><?php _e( 'Activate', 'contact_form' ); ?> Contact Form to DB</a></span>
 										<?php }
 									} else { ?>
 										<input disabled="disabled" type="checkbox" name="cntctfrm_save_email_to_db" value="1" />
-										<span class="bws_info">(<?php _e( 'Using Contact Form to DB by BestWebSoft', 'contact_form' ); ?>) <a href="http://bestwebsoft.com/products/contact-form-to-db/?k=19d806f45d866e70545de83169b274f2&pn=77&v=<?php echo $cntctfrm_plugin_info["Version"]; ?>&wp_v=<?php echo $wp_version; ?>"><?php _e( 'Download Contact Form to DB', 'contact_form' ); ?></a></span>
+										<span class="bws_info">(<?php _e( 'Using Contact Form to DB by BestWebSoft', 'contact_form' ); ?>) <a href="http://bestwebsoft.com/products/contact-form-to-db/?k=19d806f45d866e70545de83169b274f2&pn=77&v=<?php echo $cntctfrm_plugin_info["Version"]; ?>&wp_v=<?php echo $wp_version; ?>"><?php _e( 'Download', 'contact_form' ); ?> Contact Form to DB</a></span>
 									<?php } ?>
 								</td>
 							</tr>
@@ -768,10 +768,18 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 							<tr>
 								<th scope="row"><?php _e( 'What to use?', 'contact_form' ); ?></th>
 								<td colspan="2">
-									<label><input type='radio' name='cntctfrm_mail_method' value='wp-mail' <?php if ( 'wp-mail' == $cntctfrm_options['cntctfrm_mail_method'] ) echo 'checked="checked" '; ?>/>
-									<?php _e( 'Wp-mail', 'contact_form' ); ?></label> <span class="cntctfrm_info">(<?php _e( 'You can use the wp_mail function for mailing', 'contact_form' ); ?>)</span><br />
-									<label><input type='radio' name='cntctfrm_mail_method' value='mail' <?php if ( 'mail' == $cntctfrm_options['cntctfrm_mail_method'] ) echo 'checked="checked" '; ?>/>
-									<?php _e( 'Mail', 'contact_form' ); ?> </label> <span class="cntctfrm_info">(<?php _e( 'To send mail you can use the php mail function', 'contact_form' ); ?>)</span><br />
+									<fieldset>
+										<label>
+											<input type='radio' name='cntctfrm_mail_method' value='wp-mail' <?php if ( 'wp-mail' == $cntctfrm_options['cntctfrm_mail_method'] ) echo 'checked="checked" '; ?>/>
+											<?php _e( 'Wp-mail', 'contact_form' ); ?> 
+										</label>
+										<label><span class="cntctfrm_info">(<?php _e( 'You can use the wp_mail function for mailing', 'contact_form' ); ?>)</span></label><br />
+										<label>
+											<input type='radio' name='cntctfrm_mail_method' value='mail' <?php if ( 'mail' == $cntctfrm_options['cntctfrm_mail_method'] ) echo 'checked="checked" '; ?>/>
+											<?php _e( 'Mail', 'contact_form' ); ?> 
+										</label>
+										<label><span class="cntctfrm_info">(<?php _e( 'To send mail you can use the php mail function', 'contact_form' ); ?>)</span></label>
+									</fieldset>
 								</td>
 							</tr>
 							<tr valign="top">
@@ -960,26 +968,27 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 											Captcha by BestWebSoft</label> <span class="bws_info"><a href="http://bestwebsoft.com/products/captcha/?k=19ac1e9b23bea947cfc4a9b8e3326c03&pn=77&v=<?php echo $cntctfrm_plugin_info["Version"]; ?>&wp_v=<?php echo $wp_version; ?>"><?php _e( 'Download captcha', 'contact_form' ); ?></a></span>
 										<?php } ?>
 									</div>
-								</td>
-							</tr>
-							<tr valign="top">
-								<th scope="row"></th>
-								<td colspan="3" class="bws_pro_version">
-									<label><input disabled="disabled" type="checkbox" value="1" name="cntctfrmpr_display_privacy_check"> <?php _e( 'Agreement checkbox', 'contact_form' ); ?></label> <span class="bws_info">(<?php _e( 'Required checkbox for submitting the form', 'contact_form' ); ?>)</span><br />
-									<label><input disabled="disabled" type="checkbox" value="1" name="cntctfrmpr_display_optional_check"> <?php _e( 'Optional checkbox', 'contact_form' ); ?></label> <span class="bws_info">(<?php _e( 'Optional checkbox, the results of which will be displayed in email', 'contact_form' ); ?>)</span><br />
-								</td>
-							</tr>
-							<tr valign="top">
-								<th></th>
-								<td colspan="3" class="bws_pro_version_tooltip">
-									<div class="bws_info">
-										<?php _e( 'Unlock premium options by upgrading to a PRO version.', 'contact_form' ); ?>
-										<a href="http://bestwebsoft.com/products/contact-form/?k=697c5e74f39779ce77850e11dbe21962&pn=77&v=<?php echo $cntctfrm_plugin_info["Version"]; ?>&wp_v=<?php echo $wp_version; ?>" target="_blank" title="Contact Form Pro"><?php _e( 'Learn More', 'contact_form' ); ?></a>
+									<div class="bws_pro_version_bloc">
+										<div class="bws_pro_version_table_bloc">
+											<div class="bws_table_bg"></div>
+											<div class="bws_pro_version">
+												<fieldset>
+													<label><input disabled="disabled" type="checkbox" value="1" name="cntctfrmpr_display_privacy_check"> <?php _e( 'Agreement checkbox', 'contact_form' ); ?> <span class="bws_info">(<?php _e( 'Required checkbox for submitting the form', 'contact_form' ); ?>)</span></label><br />
+													<label><input disabled="disabled" type="checkbox" value="1" name="cntctfrmpr_display_optional_check"> <?php _e( 'Optional checkbox', 'contact_form' ); ?> <span class="bws_info">(<?php _e( 'Optional checkbox, the results of which will be displayed in email', 'contact_form' ); ?>)</span></label>
+												</fieldset>
+											</div>
+										</div>
+										<div class="bws_pro_version_tooltip">
+											<div class="bws_info">
+												<?php _e( 'Unlock premium options by upgrading to a PRO version.', 'contact_form' ); ?>
+												<a href="http://bestwebsoft.com/products/contact-form/?k=697c5e74f39779ce77850e11dbe21962&pn=77&v=<?php echo $cntctfrm_plugin_info["Version"]; ?>&wp_v=<?php echo $wp_version; ?>" target="_blank" title="Contact Form Pro"><?php _e( 'Learn More', 'contact_form' ); ?></a>
+											</div>
+											<a class="bws_button" href="http://bestwebsoft.com/products/contact-form/buy/?k=697c5e74f39779ce77850e11dbe21962&pn=77&v=<?php echo $cntctfrm_plugin_info["Version"]; ?>&wp_v=<?php echo $wp_version; ?>" target="_blank" title="Contact Form Pro">
+												<?php _e( 'Go', 'contact_form' ); ?> <strong>PRO</strong>
+											</a>
+											<div class="clear"></div>
+										</div>
 									</div>
-									<a class="bws_button" href="http://bestwebsoft.com/products/contact-form/buy/?k=697c5e74f39779ce77850e11dbe21962&pn=77&v=<?php echo $cntctfrm_plugin_info["Version"]; ?>&wp_v=<?php echo $wp_version; ?>" target="_blank" title="Contact Form Pro">
-										<?php _e( 'Go', 'contact_form' ); ?> <strong>PRO</strong>
-									</a>
-									<div class="clear"></div>
 								</td>
 							</tr>
 							<tr valign="top">
@@ -997,11 +1006,13 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 								<td style="width:15px;" class="cntctfrm_td_top_align">
 									<input type="checkbox" id="cntctfrm_display_add_info" name="cntctfrm_display_add_info" value="1" <?php if ( '1' == $cntctfrm_options['cntctfrm_display_add_info'] ) echo 'checked="checked" '; ?>/>
 								</td>
-								<td style="max-width:150px;" class="cntctfrm_display_add_info_block" <?php if ( '0' == $cntctfrm_options['cntctfrm_display_add_info'] ) echo 'style="display:none"'; ?>>
-									<label><input type="checkbox" id="cntctfrm_display_sent_from" name="cntctfrm_display_sent_from" value="1" <?php if ( '1' == $cntctfrm_options['cntctfrm_display_sent_from'] ) echo 'checked="checked" '; ?>/> <?php _e( "Sent from (ip address)", 'contact_form' ); ?></label> <span class="bws_info"><?php _e( "Example: Sent from (IP address):	127.0.0.1", 'contact_form' ); ?></span><br />
-									<label><input type="checkbox" id="cntctfrm_display_date_time" name="cntctfrm_display_date_time" value="1" <?php if ( '1' == $cntctfrm_options['cntctfrm_display_date_time'] ) echo 'checked="checked" '; ?>/> <?php _e( "Date/Time", 'contact_form' ); ?></label> <span class="bws_info"><?php _e( "Example: Date/Time:	August 19, 2013 8:50 pm", 'contact_form' ); ?></span><br />
-									<label><input type="checkbox" id="cntctfrm_display_coming_from" name="cntctfrm_display_coming_from" value="1" <?php if ( '1' == $cntctfrm_options['cntctfrm_display_coming_from'] ) echo 'checked="checked" '; ?>/> <?php _e( "Sent from (referer)", 'contact_form' ); ?></label> <span class="bws_info"><?php _e( "Example: Sent from (referer):	http://bestwebsoft.com/contacts/contact-us/", 'contact_form' ); ?></span><br />
-									<label><input type="checkbox" id="cntctfrm_display_user_agent" name="cntctfrm_display_user_agent" value="1" <?php if ( '1' == $cntctfrm_options['cntctfrm_display_user_agent'] ) echo 'checked="checked" '; ?>/> <?php _e( "Using (user agent)", 'contact_form' ); ?></label> <span class="bws_info"><?php _e( "Example: Using (user agent):	Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36", 'contact_form' ); ?></span><br />
+								<td class="cntctfrm_display_add_info_block" <?php if ( '0' == $cntctfrm_options['cntctfrm_display_add_info'] ) echo 'style="display:none"'; ?>>
+									<fieldset>
+										<label><input type="checkbox" id="cntctfrm_display_sent_from" name="cntctfrm_display_sent_from" value="1" <?php if ( '1' == $cntctfrm_options['cntctfrm_display_sent_from'] ) echo 'checked="checked" '; ?>/> <?php _e( "Sent from (ip address)", 'contact_form' ); ?></label> <label class="bws_info"><?php _e( "Example: Sent from (IP address):	127.0.0.1", 'contact_form' ); ?></label><br />
+										<label><input type="checkbox" id="cntctfrm_display_date_time" name="cntctfrm_display_date_time" value="1" <?php if ( '1' == $cntctfrm_options['cntctfrm_display_date_time'] ) echo 'checked="checked" '; ?>/> <?php _e( "Date/Time", 'contact_form' ); ?></label> <label class="bws_info"><?php _e( "Example: Date/Time:	August 19, 2013 8:50 pm", 'contact_form' ); ?></label><br />
+										<label><input type="checkbox" id="cntctfrm_display_coming_from" name="cntctfrm_display_coming_from" value="1" <?php if ( '1' == $cntctfrm_options['cntctfrm_display_coming_from'] ) echo 'checked="checked" '; ?>/> <?php _e( "Sent from (referer)", 'contact_form' ); ?></label> <label class="bws_info"><?php _e( "Example: Sent from (referer):	http://bestwebsoft.com/contacts/contact-us/", 'contact_form' ); ?></label><br />
+										<label><input type="checkbox" id="cntctfrm_display_user_agent" name="cntctfrm_display_user_agent" value="1" <?php if ( '1' == $cntctfrm_options['cntctfrm_display_user_agent'] ) echo 'checked="checked" '; ?>/> <?php _e( "Using (user agent)", 'contact_form' ); ?></label> <label class="bws_info"><?php _e( "Example: Using (user agent):	Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36", 'contact_form' ); ?></label>
+									</fieldset>
 								</td>
 							</tr>
 							<tr valign="top">
@@ -1128,7 +1139,7 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 									<?php if ( ! empty( $cntctfrm_options['cntctfrm_language'] ) ) {
 										foreach ( $cntctfrm_options['cntctfrm_language'] as $val ) { ?>
 											<div class="cntctfrm_language_tab hidden cntctfrm_tab_<?php echo $val; ?>" style=" padding: 5px 10px 5px 5px;">
-												<input type="text" maxlength="250" name="cntctfrm_thank_text[<?php echo $val; ?>]" value="<?php if ( isset( $cntctfrm_options['cntctfrm_thank_text'][ $val ] ) ) echo $cntctfrm_options['cntctfrm_thank_text'][ $val ]; ?>" /> <span class="cntctfrm_info"><?php _e( "Text", 'contact_form' ); ?></span><br />
+												<label><input type="text" maxlength="250" name="cntctfrm_thank_text[<?php echo $val; ?>]" value="<?php if ( isset( $cntctfrm_options['cntctfrm_thank_text'][ $val ] ) ) echo $cntctfrm_options['cntctfrm_thank_text'][ $val ]; ?>" /> <span class="cntctfrm_info"><?php _e( "Text", 'contact_form' ); ?></span></label><br />
 												<?php if ( ! isset( $contact_form_multi_active ) && ! isset( $contact_form_multi_pro_active ) ) { ?>
 													<span class="cntctfrm_info"><?php _e( "Use shortcode", 'contact_form' ); ?> <span class="cntctfrm_shortcode">[bestwebsoft_contact_form lang=<?php echo $val; ?>]</span> <?php _e( "for this language", 'contact_form' ); ?></span>
 												<?php } else { ?>
@@ -1140,15 +1151,17 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 									<div id="cntctfrm_before"></div>
 									<br />
 									<input type="radio" id="cntctfrm_action_after_send_url" name="cntctfrm_action_after_send" value="0" <?php if ( '0' == $cntctfrm_options['cntctfrm_action_after_send'] ) echo 'checked="checked" '; ?>/> <?php _e( "Redirect to the page", 'contact_form' ); ?><br />
-									<input type="text" maxlength="250" name="cntctfrm_redirect_url" value="<?php echo $cntctfrm_options['cntctfrm_redirect_url']; ?>" onfocus="document.getElementById('cntctfrm_action_after_send_url').checked = true;" /> <span class="cntctfrm_info"><?php _e( "Url", 'contact_form' ); ?></span>
+									<label><input type="text" maxlength="250" name="cntctfrm_redirect_url" value="<?php echo $cntctfrm_options['cntctfrm_redirect_url']; ?>" onfocus="document.getElementById('cntctfrm_action_after_send_url').checked = true;" /> <span class="cntctfrm_info"><?php _e( "Url", 'contact_form' ); ?></span></label>
 								</td>
 							</tr>
 							<tr valign="top">
 								<th scope="row"><?php _e( 'The $_SERVER variable that is used to build a URL of the form', 'contact_form' ); ?></th>
 								<td colspan="2">
-									<label><input type="radio" name="cntctfrm_site_name_parameter" value="SERVER_NAME" <?php if ( 'SERVER_NAME' == $cntctfrm_options['cntctfrm_site_name_parameter'] ) echo 'checked="checked" '; ?>/> SERVER_NAME</label><br />
-									<label><input type="radio" name="cntctfrm_site_name_parameter" value="HTTP_HOST" <?php if ( 'HTTP_HOST' == $cntctfrm_options['cntctfrm_site_name_parameter'] ) echo 'checked="checked" '; ?>/> HTTP_HOST</label><br />
-									<span class="cntctfrm_info"><?php _e( "If you are not sure whether to change this setting or not, please do not do that.", 'contact_form' ); ?></span>
+									<fieldset>
+										<label><input type="radio" name="cntctfrm_site_name_parameter" value="SERVER_NAME" <?php if ( 'SERVER_NAME' == $cntctfrm_options['cntctfrm_site_name_parameter'] ) echo 'checked="checked" '; ?>/> SERVER_NAME</label><br />
+										<label><input type="radio" name="cntctfrm_site_name_parameter" value="HTTP_HOST" <?php if ( 'HTTP_HOST' == $cntctfrm_options['cntctfrm_site_name_parameter'] ) echo 'checked="checked" '; ?>/> HTTP_HOST</label><br />
+										<span class="cntctfrm_info"><?php _e( "If you are not sure whether to change this setting or not, please do not do that.", 'contact_form' ); ?></span>
+									</fieldset>
 								</td>
 							</tr>
 						</table>
@@ -1512,15 +1525,12 @@ if ( ! function_exists( 'cntctfrm_display_form' ) ) {
 			}
 		}
 
-		if ( ( isset( $_SERVER['HTTPS'] ) && strtolower( $_SERVER['HTTPS'] ) == 'on' ) ) {
-			$cntctfrm_protocol = 'https://';
-			$cntctfrm_default_port = 443;
+		if ( is_ssl() ) {
+			$page_url = 'https://' . $_SERVER[ $cntctfrm_options['cntctfrm_site_name_parameter'] ] . $_SERVER['REQUEST_URI'] . '#cntctfrm_contact_form';
 		} else {
-			$cntctfrm_protocol = 'http://';
-			$cntctfrm_default_port = 80;
+			$cntctfrm_port = ( $_SERVER['SERVER_PORT'] != 80 ) ? ':' . $_SERVER['SERVER_PORT'] : '';
+			$page_url = 'http://' . $_SERVER[ $cntctfrm_options['cntctfrm_site_name_parameter'] ] . $cntctfrm_port . $_SERVER['REQUEST_URI'] . '#cntctfrm_contact_form';
 		}
-		$cntctfrm_port = ( $_SERVER['SERVER_PORT'] != $cntctfrm_default_port ) ? ':' . $_SERVER['SERVER_PORT'] : '';
-		$page_url = $cntctfrm_protocol . $_SERVER[ $cntctfrm_options['cntctfrm_site_name_parameter'] ] . $cntctfrm_port . $_SERVER['REQUEST_URI'] . '#cntctfrm_contact_form';
 
 		/* If contact form submited */
 
@@ -2413,9 +2423,11 @@ if ( ! function_exists ( 'cntctfrm_remove_language' ) ) {
 if ( ! function_exists ( 'cntctfrm_plugin_banner' ) ) {
 	function cntctfrm_plugin_banner() {
 		global $hook_suffix;
-		if ( 'plugins.php' == $hook_suffix ) {
+		if ( 'plugins.php' == $hook_suffix || ( isset( $_REQUEST['page'] ) && 'contact_form.php' == $_REQUEST['page'] ) ) {
 			global $cntctfrm_plugin_info, $wp_version, $bstwbsftwppdtplgns_cookie_add, $bstwbsftwppdtplgns_banner_array;
-			bws_plugin_banner( $cntctfrm_plugin_info, 'cntctfrm', 'contact-form', 'f575dc39cba54a9de88df346eed52101', '77', '//ps.w.org/contact-form-plugin/assets/icon-128x128.png' ); 
+
+			if ( 'plugins.php' == $hook_suffix )
+				bws_plugin_banner( $cntctfrm_plugin_info, 'cntctfrm', 'contact-form', 'f575dc39cba54a9de88df346eed52101', '77', '//ps.w.org/contact-form-plugin/assets/icon-128x128.png' ); 
 
 			if ( empty( $bstwbsftwppdtplgns_banner_array ) )
 				bws_get_banner_array();
@@ -2456,7 +2468,7 @@ if ( ! function_exists ( 'cntctfrm_plugin_banner' ) ) {
 									<img title="" src="//ps.w.org/contact-form-to-db/assets/icon-128x128.png" alt="" />
 								</div>
 								<div class="text">
-									<?php _e( "<strong>Contact Form to DB</strong> allows to store your messages to the database.", 'contact_form' ); ?><br />
+									<strong>Contact Form to DB</strong> <?php _e( "allows to store your messages to the database.", 'contact_form' ); ?><br />
 									<span><?php _e( "Manage messages that have been sent from your website.", 'contact_form' ); ?></span>
 								</div>
 								<div class="button_div">

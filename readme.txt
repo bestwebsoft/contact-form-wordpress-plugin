@@ -4,7 +4,7 @@ Donate link: http://bestwebsoft.com/donate/
 Tags: attachment, contact, contatc, conact, cnotact, contact button, contact form, contact form plugin, contact me, contacts, contacts form plugin, copy, feedback, feedback form, form, insert the shortcode, post feedback, request, send, send copy, send messages, shortcode, text, web-page feedback
 Requires at least: 3.1
 Tested up to: 4.2.2
-Stable tag: 3.91
+Stable tag: 3.92
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -151,6 +151,10 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 6. Widget settings for using shortcode in the sidebar.
 
 == Changelog ==
+
+= V3.92 - 03.07.2015 =
+* Update : We fixed the url after the form is submitted.
+* Update : We fixed display form for rtl.
 
 = V3.91 - 03.06.2015 =
 * Update : We fixed error of a visual display of the settings page.
@@ -558,6 +562,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * Ability to add Contact Form into a post. Ability to adjust displaying of the form via shortcode is added.
 
 == Upgrade Notice ==
+
+= V3.92 =
+We fixed the url after the form is submitted. We fixed display form for rtl.
 
 = V3.91 =
 We fixed error of a visual display of the settings page. We fixed 'Send me a copy' email with the attachment.
