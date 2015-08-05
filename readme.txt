@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: http://bestwebsoft.com/donate/
 Tags: attachment, contact, contatc, conact, cnotact, contact button, contact form, contact form plugin, contact me, contacts, contacts form plugin, copy, feedback, feedback form, form, insert the shortcode, post feedback, request, send, send copy, send messages, shortcode, text, web-page feedback
 Requires at least: 3.1
-Tested up to: 4.2.2
-Stable tag: 3.92
+Tested up to: 4.2.4
+Stable tag: 3.93
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -106,16 +106,6 @@ You should put the shortcode [bestwebsoft_contact_form] into your page or post.
 
 This means that you made a syntax error.
 
-= How to use some other language files with the Contact Form? = 
-
-Here is an example for the German language files.
-
-1. In order to use another language for WordPress it is necessary to switch the WP version to the required language and in the configuration wp file - `wp-config.php` in the line `define('WPLANG', '');` write `define('WPLANG', 'de_DE');`. If everything is done properly admin panel will be in German.
-2. Make sure that there are the files `de_DE.po` and `de_DE.mo` in the plugin (in the languages folder which is in the root of the plugin).
-3. If there are no such files you should copy the other files from this folder (for example, for Russian or Italian language) and rename them (you should write `de_DE` instead of `ru_RU` in both files).
-4. The files can be edited with the help of the program Poedit - http://www.poedit.net/download.php - please download this program, install it, open the file with this program (required language file) and for each line in English write translation in German.
-5. If everything is done properly all lines will be in German in the admin panel and in the front-end.
-
 = How to add the contact form not in English? =
 
 1. Add a language in the block "Language settings for the field names in the form" on the plugin settings page.
@@ -139,7 +129,7 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 1. The link to the page where the problem occurs.
 2. The name of the plugin and its version. If you are using a pro version - your order number.
 3. The version of your WordPress installation.
-4. Copy and paste into the message your system status report. Please read more here: <a href="https://docs.google.com/document/d/1Wi2X8RdRGXk9kMszQy1xItJrpN0ncXgioH935MaBKtc/edit?pli=1" target="_blank">Instuction on System Status</a>
+4. Copy and paste into the message your system status report. Please read more here: <a href="https://docs.google.com/document/d/1Wi2X8RdRGXk9kMszQy1xItJrpN0ncXgioH935MaBKtc/edit?pli=1" target="_blank">Instruction on System Status</a>
 
 == Screenshots ==
 
@@ -151,6 +141,11 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 6. Widget settings for using shortcode in the sidebar.
 
 == Changelog ==
+
+= V3.93 - 05.08.2015 =
+* New : Ability to restore settings to defaults. 
+* Bugfix : We fixed syntax error.
+* Update : We updated all functionality for wordpress 4.2.4.
 
 = V3.92 - 03.07.2015 =
 * Update : We fixed the url after the form is submitted.
@@ -562,6 +557,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * Ability to add Contact Form into a post. Ability to adjust displaying of the form via shortcode is added.
 
 == Upgrade Notice ==
+
+= V3.93 =
+Ability to restore settings to defaults. We fixed syntax error. We updated all functionality for wordpress 4.2.4.
 
 = V3.92 =
 We fixed the url after the form is submitted. We fixed display form for rtl.
