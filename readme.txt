@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: http://bestwebsoft.com/donate/
 Tags: attachment, contact, contatc, conact, cnotact, contact button, contact form, contact form plugin, contact me, contacts, contacts form plugin, copy, feedback, feedback form, form, insert the shortcode, post feedback, request, send, send copy, send messages, shortcode, text, web-page feedback
 Requires at least: 3.1
-Tested up to: 4.2.4
-Stable tag: 3.93
+Tested up to: 4.3
+Stable tag: 3.94
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -141,6 +141,10 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 6. Widget settings for using shortcode in the sidebar.
 
 == Changelog ==
+
+= V3.94 - 15.09.2015 =
+* Update : We updated all functionality for wordpress 4.3.
+* Update : Text Domain was changed.
 
 = V3.93 - 05.08.2015 =
 * New : Ability to restore settings to defaults. 
@@ -557,6 +561,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * Ability to add Contact Form into a post. Ability to adjust displaying of the form via shortcode is added.
 
 == Upgrade Notice ==
+
+= V3.94 =
+We updated all functionality for wordpress 4.3. Text Domain was changed.
 
 = V3.93 =
 Ability to restore settings to defaults. We fixed syntax error. We updated all functionality for wordpress 4.2.4.
