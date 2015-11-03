@@ -1,10 +1,10 @@
 === Contact Form by BestWebSoft ===
 Contributors: bestwebsoft
 Donate link: http://bestwebsoft.com/donate/
-Tags: attachment, contact, contatc, conact, cnotact, contact button, contact form, contact form plugin, contact me, contacts, contacts form plugin, copy, feedback, feedback form, form, insert the shortcode, post feedback, request, send, send copy, send messages, shortcode, text, web-page feedback
-Requires at least: 3.1
-Tested up to: 4.3
-Stable tag: 3.94
+Tags: Attachment, add contact form, add contact form add-on, add several contact forms, address form, best contact form, best cf, best contact form add-on, cnotact, conact, contact, contact button, contact form, contact form addon, contact form add-on, contact form parameters, contact form plugin, contact me, contacts, contacts form plugin, contcat, copy, request, send, send copy, several contact forms, contact us form, contactform, custom form, easy contact form, email, email form, file upload, form addons, form register, form registration, free feedback form, free form, free contact form, feedback, feedback form, form, free, forms plugin, forms, insert the shortcode, kontak form, online form, multi, multiple contact forms, multilingual, post feedback, request, send, simple contact form, send copy, send messages, shortcode, web-page feedback, web form, wordpress contact form, wp form, wordpress plugin, wp plugins
+Requires at least: 3.8
+Tested up to: 4.3.1
+Stable tag: 3.95
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -17,35 +17,47 @@ There is also a premium version of the plugin with more useful features availabl
 
 http://www.youtube.com/watch?v=nGwh-oslK-c
 
-<a href="http://www.youtube.com/watch?v=IGHiY0-g40Y" target="_blank">Video instruction on Installation</a>
+<a href="http://www.youtube.com/watch?v=IGHiY0-g40Y" target="_blank">Contact Form by BestWebSoft Video instruction on Installation</a>
 
-<a href="http://wordpress.org/plugins/contact-form-plugin/faq/" target="_blank">FAQ</a>
+<a href="http://wordpress.org/plugins/contact-form-plugin/faq/" target="_blank">Contact Form by BestWebSoft FAQ</a>
 
-<a href="http://support.bestwebsoft.com" target="_blank">Support</a>
+<a href="http://support.bestwebsoft.com" target="_blank">Contact Form by BestWebSoft Support</a>
 
-<a href="http://bestwebsoft.com/products/contact-form/?k=4028655c87316c98ae9ac7ca1928067f" target="_blank">Upgrade to Pro Version</a>
+<a href="http://bestwebsoft.com/products/contact-form/?k=4028655c87316c98ae9ac7ca1928067f" target="_blank">Upgrade to Contact Form Pro by BestWebSoft</a>
 
 = Features =
 
-* Actions: You can choose where to send the messages - this can be any user and any email address.
-* Actions: You can add a field for file attachment.
-* Actions: You can add a field for sending a copy of the message to the user who fills out the contact form. A copy will be sent to the email address specified while filling out the contact form.
-* Label: Ability to change a label when the fields are displayed.
+* Easy to use, even for beginners
+* Fully responsive contact form looks perfect on all screen sizes and mobile devices.
+* Add or remove additional fields easily and label any contact form fields you want.
+* Make any of the standard form fields required or not.
+* Specify your default and/or additional email addresses to receive email notifications.
+* Choose additional information about sender you would like to see.
+* Translate your contact form to any language with a simple language customizer.
+* Enable the file attachement option to get important files from senders via contact form.
+* Receive a copy of the email sent via the contact form.
+* Re-order contact form fields using drag & drop interface.
+* Divide your contact form fields into columns.
+* Create unlimited number of forms (requires <a href="http://bestwebsoft.com/products/contact-form-multi/?k=34543c152eff369d529e9b4da85985a9">Contact Form Multi by BestWebSoft</a> plugin).
+* High quality protection: use captcha to prevent spam attacks (requires <a href="http://bestwebsoft.com/products/captcha/?k=45dcf2a5ccd70a7fc8606f8030730ac7">Captcha by BestWebSoft</a> or <a href="http://bestwebsoft.com/products/google-captcha/?k=159789f556e3a9c58df8f25384903ba5">Google Captcha (reCAPTCHA) by BestWebSoft</a> plugin)
+* Save, browse, delete or download messages that have been sent from the site via the Contact Form (requires <a href="http://bestwebsoft.com/products/contact-form-to-db/?k=d7d962591b5be0ce6c27af778b1b36ee">Contact Form to DB by BestWebSoft</a> plugin)
 
 = Recommended Plugins =
 
 The author of the Contact Form also recommends the following plugins:
 
 * <a href="http://wordpress.org/plugins/bws-smtp/">SMTP by BestWebSoft</a> - SMTP by BestWebSoft plugin allows you to configure the sending email messages using mail gateways and email services such as Gmail, Yahoo, Hotmail and many others. This plugin offers an easy and problem-free solution to sending test emails, so that you will not have to struggle with bothersome settings configuration process.
-* <a href="http://wordpress.org/plugins/captcha/">Captcha</a> - The Captcha plugin allows you to implement a super security captcha form into web forms. It protects your website from spam by means of math logic, easily understood by human beings. This captcha can be used for login, registration, password recovery, comments forms.
-There is also a premium version of the plugin - <a href="http://bestwebsoft.com/products/captcha/?k=45dcf2a5ccd70a7fc8606f8030730ac7">Captcha Pro</a>, allowing compatibility with BuddyPress (Registration form, Comments form, "Create a Group" form) and Contact Form 7.
-* <a href="http://wordpress.org/plugins/contact-form-to-db/">Contact Form To DB</a> - This plugin is an exclusive add-on for the Contact Form plugin by BestWebSoft. The plugin provides a unique opportunity to manage messages sent from your site via the contact form. Please pay attention, that this plugin is an add-on ONLY for Contact Form plugin by BestWebSoft, that's why it will not work with any other contact form plugins.
-There is also a premium version of the plugin <a href="http://bestwebsoft.com/products/contact-form-to-db/?k=d7d962591b5be0ce6c27af778b1b36ee">Contact Form To DB Pro</a>, allowing to re-send and preiodically delete messages, manage attachments and get detailed support and answers to your questions.
-* <a href="http://wordpress.org/plugins/contact-form-multi/">Contact Form Multi</a> - This plugin makes it possible to create and implement multiple contact forms on your site. It is also possible to set different parameters for different contact forms. Please note that this plugin is an exclusive add-on ONLY for Contact Form plugin by BestWebSoft and it will not work wothout it. Please make sure you've enabled Javascript, otherwise the plugin will not work.
-There is also a premium version of the plugin <a href="http://bestwebsoft.com/products/contact-form-multi/?k=34543c152eff369d529e9b4da85985a9">Contact Form Multi Pro</a>, compatible with Contact Form Pro (ability to select different extra settings for each contact form).
-* <a href="http://wordpress.org/plugins/email-queue/">Email Queue</a> - This plugin gives you an opportunity to organize a simple and effective mail queue. You can assign priorities to plugins that send mail. You can manage outgoing messages: trash them or delete completely. You can use searching, filtering and bulk operations with your mail. The plugin works with plugins produced by BestWebSoft team only.
-* <a href="http://wordpress.org/plugins/updater/">Updater</a> - This plugin updates WordPress core and the plugins to the recent versions. You can also use the auto mode or manual mode for updating and set email notifications.
-There is also a premium version of the plugin <a href="http://bestwebsoft.com/products/updater/?k=982fae837f4c6e3b152183537448dbca">Updater Pro</a> with more useful features available. It can make backup of all your files and database before updating. Also it can forbid some plugins or WordPress Core update.
+* <a href="http://wordpress.org/plugins/captcha/">Captcha by BestWebSoft</a> - The Captcha plugin allows you to implement a super security captcha form into web forms. It protects your website from spam by means of math logic, easily understood by human beings. This captcha can be used for login, registration, password recovery, comments forms.
+There is also a premium version of the plugin - <a href="http://bestwebsoft.com/products/captcha/?k=45dcf2a5ccd70a7fc8606f8030730ac7">Captcha Pro by BestWebSoft</a>, allowing compatibility with BuddyPress (Registration form, Comments form, "Create a Group" form) and Contact Form 7.
+* <a href="https://wordpress.org/plugins/google-captcha/">Google Captcha (reCAPTCHA) by BestWebSoft</a> - Google Captcha (reCAPTCHA) plugin allows you to implement a super security Captcha into web forms. Google Captcha (reCAPTCHA) is a free CAPTCHA service that helps to digitize books, newspapers older radio shows. This plugin can be used for login, registration, password recovery, comments forms.
+There is also a premium version of the plugin - <a href="http://bestwebsoft.com/products/google-captcha/?k=159789f556e3a9c58df8f25384903ba5">Google Captcha (reCAPTCHA) by BestWebSoft</a>, allowing compatibility with Contact Form 7, select manually Google Captcha (reCAPTCHA) language, select Google Captcha (reCAPTCHA) size (normal or compact).
+* <a href="http://wordpress.org/plugins/contact-form-to-db/">Contact Form to DB by BestWebSoft</a> - This plugin is an exclusive add-on for the Contact Form plugin by BestWebSoft. The plugin provides a unique opportunity to manage messages sent from your site via the contact form. Please pay attention, that this plugin is an add-on ONLY for Contact Form plugin by BestWebSoft, that's why it will not work with any other contact form plugins.
+There is also a premium version of the plugin <a href="http://bestwebsoft.com/products/contact-form-to-db/?k=d7d962591b5be0ce6c27af778b1b36ee">Contact Form to DB Pro by BestWebSoft</a>, allowing to re-send and preiodically delete messages, manage attachments and get detailed support and answers to your questions.
+* <a href="http://wordpress.org/plugins/contact-form-multi/">Contact Form Multi by BestWebSoft</a> - This plugin makes it possible to create and implement multiple contact forms on your site. It is also possible to set different parameters for different contact forms. Please note that this plugin is an exclusive add-on ONLY for Contact Form plugin by BestWebSoft and it will not work wothout it. Please make sure you've enabled Javascript, otherwise the plugin will not work.
+There is also a premium version of the plugin <a href="http://bestwebsoft.com/products/contact-form-multi/?k=34543c152eff369d529e9b4da85985a9">Contact Form Multi Pro by BestWebSoft</a>, compatible with Contact Form Pro (ability to select different extra settings for each contact form).
+* <a href="http://wordpress.org/plugins/email-queue/">Email Queue by BestWebSoft</a> - This plugin gives you an opportunity to organize a simple and effective mail queue. You can assign priorities to plugins that send mail. You can manage outgoing messages: trash them or delete completely. You can use searching, filtering and bulk operations with your mail. The plugin works with plugins produced by BestWebSoft team only.
+* <a href="http://wordpress.org/plugins/updater/">Updater by BestWebSoft</a> - This plugin updates WordPress core and the plugins to the recent versions. You can also use the auto mode or manual mode for updating and set email notifications.
+There is also a premium version of the plugin <a href="http://bestwebsoft.com/products/updater/?k=982fae837f4c6e3b152183537448dbca">Updater Pro by BestWebSoft</a> with more useful features available. It can make backup of all your files and database before updating. Also it can forbid some plugins or WordPress Core update.
 
 = Translation =
 
@@ -58,6 +70,7 @@ There is also a premium version of the plugin <a href="http://bestwebsoft.com/pr
 * German (de_DE) (thanks to <a href="mailto:private18@web.de">Alex</a>)
 * Greek (el) (thanks to Dimitris Karantonis, www.soft4real.com/en-UK)
 * Japanese (ja) (thanks to Foken)
+* Dutch (nl_NL) (thanks to <a href="mailto:olivier@oil5networks.com">Olivier Smet</a>)
 * Norwegian (nb_NO) (thanks to <a href="mailto:bestwebsoftcontact@nordsoft.no">Per Rommetveit</a>)
 * Russian (ru_RU)
 * Slovak (sk_SK) (thanks to <a href="mailto:michal.vittek@wp.sk">Michal Vittek</a>, www.wp.sk)
@@ -122,6 +135,10 @@ Please follow the instructions below:
 
 Note: If the Contact Form sends letters, but you don't receive them, you can install our plugin Contact Form to DB in order not to lose the sent letters for the time the problem is being solved.
 
+= Why the contact form is displayed in one column, if I've chosen two columns displaying on the plugin settings page? =
+
+This happens when there is not enough the minimum width of the parent block where the contact form is located.
+
 = I have some problems with the plugin's work. What Information should I provide to receive proper support? =
 
 Please make sure that the problem hasn't been discussed yet on our forum (<a href="http://support.bestwebsoft.com" target="_blank">http://support.bestwebsoft.com</a>). If no, please provide the following data along with your problem's description:
@@ -136,11 +153,27 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 1. Plugin settings in WordPress admin panel.
 2. Plugin additional settings.
 3. Plugin appearance settings.
-4. Contact Form display.
-5. Contact Form display with additional fields.
-6. Widget settings for using shortcode in the sidebar.
+3. Widget settings for using shortcode in the sidebar.
+5. Contact Form display.
+6. Contact Form display with additional fields.
+7. Contact Form display in 2 columns.
+8. Add or remove additional fields easily and label any contact form fields you want.
+9. Choose additional information about sender you would like to see.
+10. Enable the file attachement option to get important files from senders via contact form.
+11. Make any of the standard form fields required or not.
+12. Translate your contact form to any language with a simple language customizer.
+13. Receive a copy of the email sent via the contact form.
 
 == Changelog ==
+
+= V3.95 - 02.11.2015 =
+* NEW : An ability to sort contact form fields was added.
+* NEW : An ability to displaying contact form in 2 columns.
+* NEW : A button for contact form shortcode inserting to the content was added.
+* NEW : The Dutch language file is added.
+* Update : The method of the URL obtaining in the attribute "action" of the contact form has been changed.
+* Update : The French language file is updated.
+* Bugfix : Vulnerabilities with `$path_of_upload_file` and `$form_action` was fixed.
 
 = V3.94 - 15.09.2015 =
 * Update : We updated all functionality for wordpress 4.3.
@@ -561,6 +594,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * Ability to add Contact Form into a post. Ability to adjust displaying of the form via shortcode is added.
 
 == Upgrade Notice ==
+
+= V3.95 =
+An ability to sort contact form fields was added. An ability to displaying contact form in 2 columns. A button for contact form shortcode inserting to the content was added. The Dutch language file is added. The method of the URL obtaining in the attribute "action" of the contact form has been changed. The French language file is updated. Vulnerabilities with `$path_of_upload_file` and `$form_action` was fixed.
 
 = V3.94 =
 We updated all functionality for wordpress 4.3. Text Domain was changed.

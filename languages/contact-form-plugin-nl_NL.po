@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Contact Form\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-02 17:11+0300\n"
-"PO-Revision-Date: 2015-11-02 17:11+0300\n"
-"Last-Translator: Luc Capronnier <lcapronnier@yahoo.com>\n"
-"Language-Team: Luc Capronnier <lcapronnier@yahoo.com>\n"
-"Language: fr_FR\n"
+"POT-Creation-Date: 2015-11-02 17:10+0300\n"
+"PO-Revision-Date: 2015-11-02 17:10+0300\n"
+"Last-Translator: bestwebsoft.com <plugins@bestwebsoft.com>\n"
+"Language-Team: Olivier Smet <olivier@oli5networks.com>\n"
+"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -14,45 +14,45 @@ msgstr ""
 "esc_attr_e\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"Plural-Forms: nplurals=2;plural=n>2;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 1.5.4\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: contact_form.php:37 contact_form.php:821
 msgid "Contact Form Settings"
-msgstr "Options du formulaire de Contact"
+msgstr "Contact Formulier Instellingen"
 
 #: contact_form.php:37
 msgid "Contact Form"
-msgstr "Formulaire de contact"
+msgstr "Contact Formulier"
 
 #: contact_form.php:165 contact_form.php:1277 contact_form.php:1311
 msgid "Name:"
-msgstr "Nom&nbsp;:"
+msgstr "Naam:"
 
 #: contact_form.php:166 contact_form.php:1278 contact_form.php:1312
 msgid "Address:"
-msgstr "Adresse&nbsp;:"
+msgstr "Adres:"
 
 #: contact_form.php:167 contact_form.php:1279 contact_form.php:1313
 msgid "Email Address:"
-msgstr "Adresse e-mail&nbsp;:"
+msgstr "e-mailadres:"
 
 #: contact_form.php:168 contact_form.php:1280 contact_form.php:1314
 msgid "Phone number:"
-msgstr "Téléphone&nbsp;:"
+msgstr "Telefoonnummer:"
 
 #: contact_form.php:169 contact_form.php:1281 contact_form.php:1315
 msgid "Subject:"
-msgstr "Sujet&nbsp;:"
+msgstr "Onderwerp:"
 
 #: contact_form.php:170 contact_form.php:1282 contact_form.php:1316
 msgid "Message:"
-msgstr "Message&nbsp;:"
+msgstr "Bericht:"
 
 #: contact_form.php:171 contact_form.php:1283 contact_form.php:1317
 msgid "Attachment:"
-msgstr "Pièce jointe&nbsp;:"
+msgstr "Bijlage:"
 
 #: contact_form.php:172
 msgid ""
@@ -60,113 +60,113 @@ msgid ""
 "EPS, PS, CSV, RTF, PDF, DOC, DOCX, XLS, XLSX, ZIP, RAR, WAV, MP3, PPT. Max "
 "file size: 2MB"
 msgstr ""
-"Types de fichiers autorisés:  HTML, TXT, CSS, GIF, PNG, JPEG, JPG, TIFF, "
+"Ondersteunde bestandsformaten: HTML, TXT, CSS, GIF, PNG, JPEG, JPG, TIFF, "
 "BMP, AI, EPS, PS, CSV, RTF, PDF, DOC, DOCX, XLS, XLSX, ZIP, RAR, WAV, MP3, "
-"PPT. Taille maximum 2MB"
+"PPT. Maximale bestandsgrootte: 2MB"
 
 #: contact_form.php:173 contact_form.php:1285 contact_form.php:1319
 msgid "Send me a copy"
-msgstr "M'envoyer une copie"
+msgstr "Stuur mij een kopie"
 
 #: contact_form.php:174 contact_form.php:1286 contact_form.php:1320
 msgid "Submit"
-msgstr "Envoyer"
+msgstr "Verstuur"
 
 #: contact_form.php:175
 msgid "Your name is required."
-msgstr "Un nom est obligatoire."
+msgstr "Je naam is vereist."
 
 #: contact_form.php:176
 msgid "Address is required."
-msgstr "Une adresse est obligatoire."
+msgstr "Je adres is vereist."
 
 #: contact_form.php:177
 msgid "A valid email address is required."
-msgstr "Une adresse e-mail valide est obligatoire."
+msgstr "Een geldig e-mailadres is vereist."
 
 #: contact_form.php:178
 msgid "Phone number is required."
-msgstr "Le numéro de téléphone est obligatoire."
+msgstr "Je telefoonnummer is vereist."
 
 #: contact_form.php:179
 msgid "Subject is required."
-msgstr "Le sujet est obligatoire."
+msgstr "Het onderwerp is vereist."
 
 #: contact_form.php:180
 msgid "Message text is required."
-msgstr "Un message est obligatoire."
+msgstr "Het bericht is vereist."
 
 #: contact_form.php:181
 msgid "File format is not valid."
-msgstr "Le type de pièce jointe n'est pas valide."
+msgstr "Het bestandsformaat van je bijlage is niet geldig."
 
 #: contact_form.php:182
 msgid "File upload error."
-msgstr "Erreur de chargement du fichier."
+msgstr "Bestand upload fout."
 
 #: contact_form.php:183
 msgid "The file could not be uploaded."
-msgstr "Le fichier n'a pas pu être envoyé."
+msgstr "Het bestand kon niet worden geüpload."
 
 #: contact_form.php:184
 msgid "This file is too large."
-msgstr "Le fichier est trop volumineux."
+msgstr "Het bestand is te groot."
 
 #: contact_form.php:185
 msgid "Please fill out the CAPTCHA."
-msgstr "Merci de compléter le CAPTCHA."
+msgstr "Vul alsjeblieft de CAPTCHA in."
 
 #: contact_form.php:186
 msgid "Please make corrections below and try again."
-msgstr "Merci de faire les corrections suivantes et de réessayer."
+msgstr "Maak hieronder alsjeblieft correcties en probeer het dan opnieuw."
 
 #: contact_form.php:188
 msgid "Thank you for contacting us."
-msgstr "Merci de nous avoir contacté."
+msgstr "Bedankt voor het opnemen van contact met ons."
 
 #: contact_form.php:529 contact_form.php:795
 msgid "Settings saved."
-msgstr "Options enregistrées."
+msgstr "Instellingen opgeslagen."
 
 #: contact_form.php:735
 msgid ""
 "Email 'FROM' field option was changed, which may cause email messages being "
 "moved to the spam folder or email delivery failures."
 msgstr ""
-"L'option pour le champ 'From' des courriels a été modifiée, cela peut "
-"entrainer un classement des messages dans les dossiers spam ou bien une "
-"erreur d'acheminement peut survenir."
+"De 'VAN' e-mailveld optie is aangepast. Dit kan ervoor zorgen dat e-"
+"mailberichten naar de spam map worden verplaats of dat de e-mailberichten "
+"niet kunnen worden afgeleverd."
 
 #: contact_form.php:745
 msgid ""
 "If the 'Redirect to page' option is selected then the URL field should be in "
 "the following format"
 msgstr ""
-"Si l'ioption 'Rediriger vers la page' est positionnée, alors le champ Url "
-"doit être rempli avec le format suivant"
+"Als de 'Stuur door naar pagina' optie is geselecteerd, moet het URL veld in "
+"het volgende format zijn"
 
 #: contact_form.php:754
 msgid "Such user does not exist."
-msgstr "Cet utilisateur est inconnu."
+msgstr "Deze gebruiker bestaat niet."
 
 #: contact_form.php:764
 msgid ""
 "Please enter a valid email address in the 'Use this email address' field."
 msgstr ""
-"Merci de saisir une adresse e-mail valide pour le champ 'Utiliser cette "
-"adresse e-mail'."
+"Vul alsjeblieft een geldig e-mailadres in, in het 'Gebruik dit e-mailadres' "
+"veld."
 
 #: contact_form.php:772
 msgid "Please enter a valid email address in the 'FROM' field."
-msgstr "Merci de saisir une adresse e-mail valide pour le champ 'FROM'."
+msgstr "Vul alsjeblieft een geldig e-mailadres in, in het 'VAN' veld."
 
 #: contact_form.php:797
 msgid "Settings are not saved."
-msgstr "Paramètres non enregistrées."
+msgstr "De instellingen zijn niet opgeslagen."
 
 #: contact_form.php:816
 msgid "All plugin settings were restored."
-msgstr "Remettre les valeurs par défaut des paramètres de l'extension."
+msgstr "Alle plugin instellingen zijn hersteld."
 
 #: contact_form.php:823
 msgid "How to Use Step-by-step Instruction"
@@ -174,19 +174,19 @@ msgstr ""
 
 #: contact_form.php:826 contact_form.php:2665 contact_form.php:2679
 msgid "Settings"
-msgstr "Réglages"
+msgstr "Instellingen"
 
 #: contact_form.php:827
 msgid "Additional settings"
-msgstr "Options supplémentaires"
+msgstr "Aanvullende instellingen"
 
 #: contact_form.php:828
 msgid "Appearance"
-msgstr "Aspect"
+msgstr "Weergave"
 
 #: contact_form.php:829
 msgid "Go PRO"
-msgstr "Choisir la version PRO"
+msgstr "Gebruik PRO"
 
 #: contact_form.php:835
 #, fuzzy
@@ -194,8 +194,7 @@ msgid ""
 "Please enable JavaScript to add language in the contact form, change the "
 "names of the contact form fields and error messages."
 msgstr ""
-"Modifier le texte pour les champs du formulaire de contact et les messages "
-"d'erreur"
+"De namen voor de velden en foutmeldingen van het contactformulier aanpassen"
 
 #: contact_form.php:835 contact_form.php:1443 contact_form.php:1459
 msgid "Form layout"
@@ -204,11 +203,11 @@ msgstr ""
 #: contact_form.php:835 contact_form.php:1443 contact_form.php:1471
 #, fuzzy
 msgid "Submit position"
-msgstr "Bouton Envoyer"
+msgstr "Verzend knop"
 
 #: contact_form.php:846
 msgid "Notice:"
-msgstr "Avertissement&nbsp;:"
+msgstr "Let op:"
 
 #: contact_form.php:856 contact_form.php:1449
 msgid "NEW_FORM"
@@ -219,8 +218,8 @@ msgid ""
 "If you want to create multiple contact forms, please install the Contact "
 "Form Multi plugin."
 msgstr ""
-"Si vous voulez créer plusieurs formulaire de contact, merci d'installer "
-"l'extension 'Contact Form Multi'"
+"Als je meerdere contact formulieren wil maken, installeer dan alsjeblieft de "
+"'Contact Form Multi plugin'."
 
 #: contact_form.php:863
 #, fuzzy, php-format
@@ -228,8 +227,8 @@ msgid ""
 "If you would like to add a Contact Form to your page or post, please use %s "
 "button"
 msgstr ""
-"Si vous souhaiter ajouter un formulaire de contact à votre site web, copiez "
-"juste ce code dans un article ou sur une page ou un widget:"
+"Als je het contactformulier aan je website wil toevoegen, kopieer en plak "
+"deze code dan in je post of pagina:"
 
 #: contact_form.php:869
 #, php-format
@@ -245,443 +244,443 @@ msgid ""
 "If you leave the fields empty, the messages will be sent to the email "
 "address specified during registration."
 msgstr ""
-"Si les champs ci-dessous ne sont pas renseignés le message sera envoyé à "
-"l'adresse spécifiée lors de l'enregistrement."
+"Als je de velden leeg laat, zullen alle berichten worden verstuurd naar het "
+"e-mailadres dat is opgegeven tijdens de registratie."
 
 #: contact_form.php:881
 msgid "The user's email address:"
-msgstr "Utiliser l'e-mail du compte WordPress&nbsp;:"
+msgstr "Het e-mailadres van de gebruiker:"
 
 #: contact_form.php:885
 msgid "Select a username"
-msgstr "Choisir un nom d'utilisateur"
+msgstr "Selecteer een gebruikersnaam"
 
 #: contact_form.php:898
 msgid ""
 "Enter a username of the person who should get the messages from the contact "
 "form."
 msgstr ""
-"Choisir le nom d'utilisateur qui recevra les messages envoyés depuis le "
-"formulaire de contact."
+"Vul de gebruikersnaam in van de persoon die de berichten van het "
+"contactformulier zou moeten ontvangen."
 
 #: contact_form.php:902
 msgid "Use this email address:"
-msgstr "Utiliser cette adresse e-mail&nbsp;:"
+msgstr "Gebruik dit e-mailadres:"
 
 #: contact_form.php:906
 msgid "Enter the email address you want the messages forwarded to."
-msgstr "Choisir l'adresse e-mail qui sera utilisée pour recevoir les messages."
+msgstr "Vul het e-mailadres in waar je de berichten naar wil laten doorsturen."
 
 #: contact_form.php:913 contact_form.php:1199 contact_form.php:1391
 #: contact_form.php:1486 contact_form.php:2756
 msgid "Close"
-msgstr "Fermer"
+msgstr "Sluiten"
 
 #: contact_form.php:917
 msgid "Add department selectbox to the contact form:"
-msgstr ""
-"Ajouter la liste déroulante pour le département dans le formulaire de "
-"contact&nbsp;:"
+msgstr "Voeg het departement keuzeveld aan het contactformulier toe:"
 
 #: contact_form.php:925 contact_form.php:1208 contact_form.php:1410
 #: contact_form.php:1644
 msgid "If you upgrade to Pro version all your settings will be saved."
 msgstr ""
-"Si vous passez à la version Pro, tous ces paramètres seront enregistrés."
+"Als je naar de Pro versie upgrade worden al je instellingen opgeslagen."
 
 #: contact_form.php:932 contact_form.php:1134 contact_form.php:1213
 #: contact_form.php:1417 contact_form.php:1651
 #, fuzzy
 msgid "Unlock premium options by upgrading to Pro version"
-msgstr "Déploquer les options premium en migrant vers la version PRO."
+msgstr "Maak gebruik van premium opties door te upgraden naar de PRO versie."
 
 #: contact_form.php:935 contact_form.php:1137 contact_form.php:1216
 #: contact_form.php:1420 contact_form.php:1654 contact_form.php:2955
 msgid "Learn More"
-msgstr "Lire la suite"
+msgstr "Meer Informatie"
 
 #: contact_form.php:943
 msgid "Save emails to the database"
-msgstr "Enregistrer les e-mails dans la base de données"
+msgstr "E-mailberichten opslaan in de database"
 
 #: contact_form.php:948
 msgid "Using"
-msgstr "Utilisant"
+msgstr "Gebruikt"
 
 #: contact_form.php:951 contact_form.php:955
 msgid "Using Contact Form to DB by BestWebSoft"
-msgstr "en utilisant l'extension Contact Form to DB de BestWebSoft"
+msgstr "Gebruikt Contact Form to DB door BestWebSoft"
 
 #: contact_form.php:951
 msgid "Activate"
-msgstr "Activé"
+msgstr "Activeren"
 
 #: contact_form.php:955
 msgid "Download"
-msgstr "Téléchargement"
+msgstr "Downloaden"
 
 #: contact_form.php:965
 msgid "What to use?"
-msgstr "Quelle méthode d'envoie ?"
+msgstr "Wat te gebruiken?"
 
 #: contact_form.php:970
 msgid "Wp-mail"
-msgstr "Wp-mail"
+msgstr "wp-mail"
 
 #: contact_form.php:972
 msgid "You can use the wp_mail function for mailing"
-msgstr ""
-"Pour envoyer le courriel, vous pouvez utiliser la fonction wp_mail de "
-"WordPress "
+msgstr "Je kan de wp_mail functie gebruiken voor e-mailen"
 
 #: contact_form.php:975
 msgid "Mail"
-msgstr "E-mail"
+msgstr "E-Mail"
 
 #: contact_form.php:977
 msgid "To send mail you can use the php mail function"
-msgstr "Pour envoyer le courriel, vous pouvez utiliser la fonction mail de php"
+msgstr "Om e-mail te versturen kun je de php mail functie gebruiken"
 
 #: contact_form.php:982
 msgid "'FROM' field"
-msgstr "Champ 'From'"
+msgstr "'VAN' veld"
 
 #: contact_form.php:984 contact_form.php:1050 contact_form.php:1510
 #: contact_form.php:2451 contact_form.php:2487
 msgid "Name"
-msgstr "Nom"
+msgstr "Naam"
 
 #: contact_form.php:991
 msgid "User name"
-msgstr "Nom de l'utlisateur"
+msgstr "Gebruikersnaam"
 
 #: contact_form.php:993
 msgid ""
 "The name of the user who fills the form will be used in the field 'From'."
 msgstr ""
-"Dans le champ 'FROM' du courriel, il sera utilisé l'adresse e-mail de "
-"l'utlisateur qui rempli le formulaire."
+"De naam van de gebruiker die het formulier invult zal worden gebruikt in het "
+"'Van' veld."
 
 #: contact_form.php:999 contact_form.php:2462 contact_form.php:2494
 msgid "Email"
-msgstr "E-mail"
+msgstr "E-mailadres"
 
 #: contact_form.php:1006
 msgid "User email"
-msgstr "E-mail de l'utlisateur"
+msgstr "E-mailadres van de gebruiker"
 
 #: contact_form.php:1008
 msgid ""
 "The email address of the user who fills the form will be used in the field "
 "'From'."
 msgstr ""
-"Dans le champ 'FROM' du courriel, il sera utilisé l'adresse e-mail de "
-"l'utlisateur qui rempli le formulaire."
+"De naam van de gebruiker die het formulier invult zal worden gebruikt in het "
+"'Van' veld."
 
 #: contact_form.php:1012
 msgid ""
 "If this option is changed, email messages may be moved to the spam folder or "
 "email delivery failures may occur."
 msgstr ""
-"Si cette option est modifiée, les courriels pourront se retrouver classer "
-"dans le dossier spam ou bien une erreur d'acheminement peut survenir."
+"Het aanpassen van deze optie kan ervoor zorgen dat e-mailberichten naar de "
+"spam map worden verplaats of dat de e-mailberichten niet kunnen worden "
+"afgeleverd."
 
 #: contact_form.php:1018
 msgid "Required symbol"
-msgstr "Symbol obligatoire"
+msgstr "Vereist symbool"
 
 #: contact_form.php:1028
 msgid "Fields"
-msgstr "Champs"
+msgstr "Velden"
 
 #: contact_form.php:1029
 msgid "Used"
-msgstr "Utilisé"
+msgstr "Gebruikt"
 
 #: contact_form.php:1030
 msgid "Required"
-msgstr "Obligatoire"
+msgstr "Vereist"
 
 #: contact_form.php:1032
 msgid "Visible"
-msgstr "Visible"
+msgstr "Zichtbaar"
 
 #: contact_form.php:1033
 msgid "Disabled for editing"
-msgstr "Non actif pour l'édition"
+msgstr "Uitgesloten van bewerken"
 
 #: contact_form.php:1034
 msgid "Field's default value"
-msgstr "Valeur par défaut du champ"
+msgstr "Standaard waarde van het veld"
 
 #: contact_form.php:1041
 msgid "Department selectbox"
-msgstr "Liste déroulante des localisations"
+msgstr "Departement keuzeveld"
 
 #: contact_form.php:1058
 msgid "Use User's name as a default value if the user is logged in."
 msgstr ""
-"Utiliser le nom de l'utilisateur comme valeur par défaut si un utilisateur "
-"est connecté."
+"Gebruik de naam van de gebruiker als standaard waarde wanneer de gebruik is "
+"ingelogd."
 
 #: contact_form.php:1059 contact_form.php:1093
 msgid ""
 "'Visible' and 'Disabled for editing' options will be applied only to logged-"
 "in users."
 msgstr ""
-"'Visible' et 'Inactif' pour modifier les options ne seront appliqués qu'aux "
-"utilisateurs connectés."
+"De opties 'Zichtbaar' en 'Uitgesloten van bewerken' zullen alleen worden "
+"toegepast op ingelogde gebruikers."
 
 #: contact_form.php:1065
 msgid "Location selectbox"
-msgstr "Liste déroulante des localisations"
+msgstr "Locatie keuzeveld"
 
 #: contact_form.php:1074 contact_form.php:1515 contact_form.php:2457
 #: contact_form.php:2491
 msgid "Address"
-msgstr "Adresse"
+msgstr "Adres"
 
 #: contact_form.php:1084
 msgid "Email Address"
-msgstr "Adresse e-mail"
+msgstr "E-mailadres"
 
 #: contact_form.php:1092
 msgid "Use User's email as a default value if the user is logged in."
 msgstr ""
-"Utiliser l'adresse e-mail de l'utilisateur comme valeur par défaut si un "
-"utilisateur est connecté."
+"Gebruik het e-mailadres van de gebruiker als standaard waarde wanneer de "
+"gebruiker is ingelogd."
 
 #: contact_form.php:1098
 msgid "Phone number"
-msgstr "Téléphone"
+msgstr "Telefoonnummer"
 
 #: contact_form.php:1108 contact_form.php:1530 contact_form.php:2472
 #: contact_form.php:2500
 msgid "Subject"
-msgstr "Sujet"
+msgstr "Onderwerp"
 
 #: contact_form.php:1118 contact_form.php:1534 contact_form.php:2475
 #: contact_form.php:2502
 msgid "Message"
-msgstr "Message"
+msgstr "Bericht"
 
 #: contact_form.php:1145
 msgid "Attachment block"
-msgstr "Bloc pièce jointe"
+msgstr "Bijlagen blok"
 
 #: contact_form.php:1147
 msgid "Users can attach the following file formats"
-msgstr "Les utilisateurs peuvent joindre des documents des types suivants"
+msgstr "Gebruikers kunnen de volgende bestandsformaten bijvoegen"
 
 #: contact_form.php:1162
 msgid "Add to the form"
-msgstr "Ajouter au formulaire"
+msgstr "Aan het formulier toevoegen"
 
 #: contact_form.php:1167
 msgid "Tips below the Attachment"
-msgstr "Afficher les explications en-dessous du bloc des pièces jointes"
+msgstr "Tips onder de bijlagen weergeven"
 
 #: contact_form.php:1176
 msgid "'Send me a copy' block"
-msgstr "Afficher le bloc \"M'envoyer une copie\""
+msgstr "'Stuur mij een kopie' blok"
 
 #: contact_form.php:1189
 msgid "Activate captcha"
-msgstr "Activé le captcha"
+msgstr "CAPTCHA activeren"
 
 #: contact_form.php:1193
 msgid "Download captcha"
-msgstr "Télécharger le captcha"
+msgstr "CAPTCHA downloaden"
 
 #: contact_form.php:1203
 msgid "Agreement checkbox"
-msgstr "Case à cocher pour valider le formulaire"
+msgstr "Akkoord gaan vinkje"
 
 #: contact_form.php:1203
 msgid "Required checkbox for submitting the form"
-msgstr "Boite à cocher obligatoire pour la validation du formulaire."
+msgstr "Vereist vinkje voor het verzenden van het formulier"
 
 #: contact_form.php:1204
 msgid "Optional checkbox"
-msgstr "Boite à cocher optionnelle"
+msgstr "Optioneel vinkje"
 
 #: contact_form.php:1204
 msgid "Optional checkbox, the results of which will be displayed in email"
-msgstr "Boite à cocher optionnelle, le résultat sera affiché dans le courriel"
+msgstr ""
+"Optioneel vinkje, waarvan de resultaten in de e-mail zullen worden "
+"weergegeven"
 
 #: contact_form.php:1225
 msgid "Delete an attachment file from the server after the email is sent"
-msgstr "Supprimer le fichier joint sur le serveur après l'envoie du courriel"
+msgstr "Verwijder een bijlage van de server nadat de e-mail is verzonden"
 
 #: contact_form.php:1231
 msgid "Email in HTML format sending"
-msgstr "Courriel au format HTML"
+msgstr "E-mail in HTML formaat verzenden"
 
 #: contact_form.php:1235
 msgid "Display additional info in the email"
-msgstr "Afficher les informations complémentaires dans le courriel"
+msgstr "Additionele informatie in de e-mail weergeven"
 
 #: contact_form.php:1241 contact_form.php:2418 contact_form.php:2420
 msgid "Sent from (ip address)"
-msgstr "Envoyé de (adresse IP)"
+msgstr "Verstuurd van (IP-adres)"
 
 #: contact_form.php:1241
 msgid "Example: Sent from (IP address):\t127.0.0.1"
-msgstr "Exemple: Envoyé de  (addresse IP)&nbsp;:\t127.0.0.1"
+msgstr "Voorbeeld: Verstuur van (IP-adres):\t127.0.0.1"
 
 #: contact_form.php:1242 contact_form.php:2424 contact_form.php:2426
 msgid "Date/Time"
-msgstr "Date/Heure"
+msgstr "Dag/Tijd"
 
 #: contact_form.php:1242
 msgid "Example: Date/Time:\tAugust 19, 2013 8:50 pm"
-msgstr "Exemple: Date/Heure&nbsp;:\tAoût 19, 2013 8:50pm"
+msgstr "Voorbeeld: Dag/Tijd:\tAugustus 19, 2013 8:50 pm"
 
 #: contact_form.php:1243 contact_form.php:2430 contact_form.php:2432
 msgid "Sent from (referer)"
-msgstr "Envoyer de (référence)"
+msgstr "Verzonden van (verwijzing)"
 
 #: contact_form.php:1243
 msgid ""
 "Example: Sent from (referer):\thttp://bestwebsoft.com/contacts/contact-us/"
 msgstr ""
-"Exemple&nbsp;: Envoyer de (referer) :\thttp://bestwebsoft.com/contacts/"
+"Voorbeeld: Verzonden van (verwijzing):\thttp://bestwebsoft.com/contacts/"
 "contact-us/"
 
 #: contact_form.php:1244 contact_form.php:2436 contact_form.php:2438
 msgid "Using (user agent)"
-msgstr "Depuis (navigateur)"
+msgstr "Met behulp van (user agent)"
 
 #: contact_form.php:1244
 msgid ""
 "Example: Using (user agent):\tMozilla/5.0 (Windows NT 6.2; WOW64) "
 "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36"
 msgstr ""
-"Exemple&nbsp;: En utilisant (user agent) :\tMozilla/5.0 (Windows NT 6.2; "
-"WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 "
-"Safari/537.36"
+"Voorbeeld: Met behulp van (user agent):\tMozilla/5.0 (Windows NT 6.2; WOW64) "
+"AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36"
 
 #: contact_form.php:1249
 msgid "Language settings for the field names in the form"
-msgstr "Définition des langues pour les titres des champs"
+msgstr "Taal instellingen voor de veldnamen in het formulier"
 
 #: contact_form.php:1258
 msgid "Add a language"
-msgstr "Ajouter une langue"
+msgstr "Een taal toevoegen"
 
 #: contact_form.php:1262
 msgid "Change the names of the contact form fields and error messages"
 msgstr ""
-"Modifier le texte pour les champs du formulaire de contact et les messages "
-"d'erreur"
+"De namen voor de velden en foutmeldingen van het contactformulier aanpassen"
 
 #: contact_form.php:1267 contact_form.php:1354
 msgid "English"
-msgstr "Anglais"
+msgstr "Engels"
 
 #: contact_form.php:1275 contact_form.php:1309
 msgid "click to expand/hide the list"
-msgstr "cliquer pour voir/cacher la liste"
+msgstr "klik om de lijst weer te geven/te verbergen"
 
 #: contact_form.php:1284 contact_form.php:1318
 msgid "Tips below the Attachment block"
-msgstr "Afficher les explications en-dessous du bloc des pièces jointes"
+msgstr "Tips onder het bijlagen blok weergeven"
 
 #: contact_form.php:1287 contact_form.php:1321
 msgid "Error message for the Name field"
-msgstr "Message d'erreur pour le champ nom"
+msgstr "Foutmelding voor het Naam veld"
 
 #: contact_form.php:1288 contact_form.php:1322
 msgid "Error message for the Address field"
-msgstr "Message d'erreur pour le champ Adresse"
+msgstr "Foutmelding voor het Adres veld"
 
 #: contact_form.php:1289 contact_form.php:1323
 msgid "Error message for the Email field"
-msgstr "Message d'erreur pour le champ e-mail"
+msgstr "Foutmelding voor het E-mailadres veld"
 
 #: contact_form.php:1290 contact_form.php:1324
 msgid "Error message for the Phone field"
-msgstr "Message d'erreur pour le champ téléphone"
+msgstr "Foutmelding voor het Telefoonnummer veld"
 
 #: contact_form.php:1291 contact_form.php:1325
 msgid "Error message for the Subject field"
-msgstr "Message d'erreur pour le champ sujet"
+msgstr "Foutmelding voor het Onderwerp veld"
 
 #: contact_form.php:1292 contact_form.php:1326
 msgid "Error message for the Message field"
-msgstr "Message d'erreur pour le champ message"
+msgstr "Foutmelding voor het Bericht veld"
 
 #: contact_form.php:1293 contact_form.php:1327
 msgid "Error message about the file type for the Attachment field"
-msgstr "Message d'erreur pour le champ fichier joint (type du fichier)"
+msgstr "Foutmelding over het bestandsformaat voor het bijlagen veld"
 
 #: contact_form.php:1294 contact_form.php:1328
 msgid ""
 "Error message while uploading a file for the Attachment field to the server"
 msgstr ""
-"Message d'erreur pour le champ fichier joint (problème d'envoie vers le "
-"serveur)"
+"Foutmelding tijdens het uploaden van een bestand naar de server voor het "
+"bijlagen veld"
 
 #: contact_form.php:1295 contact_form.php:1329
 msgid "Error message while moving the file for the Attachment field"
-msgstr "Message d'erreur pour le champ fichier joint (déplacement du fichier)"
+msgstr ""
+"Foutmelding tijdens het verplaatsen van een bestand voor het bijlagen veld"
 
 #: contact_form.php:1296 contact_form.php:1330
 msgid "Error message when file size limit for the Attachment field is exceeded"
 msgstr ""
-"Message d'erreur pour le champ fichier joint (taille limite du fichier "
-"atteinte)"
+"Foutmelding wanner de maximale bestandsgrootte voor het bijlagen veld wordt "
+"overschreden"
 
 #: contact_form.php:1297 contact_form.php:1331
 msgid "Error message for the Captcha field"
-msgstr "Message d'erreur pour le captcha"
+msgstr "Foutmelding voor het CAPTCHA veld"
 
 #: contact_form.php:1298 contact_form.php:1332
 msgid "Error message for the whole form"
-msgstr "Message d'erreur demandant à compléter les champs manquants"
+msgstr "Foutmelding voor het volledige formulier"
 
 #: contact_form.php:1301 contact_form.php:1303 contact_form.php:1335
 #: contact_form.php:1337 contact_form.php:1364 contact_form.php:1366
 #: contact_form.php:1374 contact_form.php:1376 contact_form.php:2811
 #: contact_form.php:2813
 msgid "Use shortcode"
-msgstr "Utiliser le code court"
+msgstr "Gebruik code"
 
 #: contact_form.php:1301 contact_form.php:1303 contact_form.php:1364
 #: contact_form.php:1366
 msgid "or"
-msgstr "ou"
+msgstr "of"
 
 #: contact_form.php:1301 contact_form.php:1303 contact_form.php:1335
 #: contact_form.php:1337 contact_form.php:1364 contact_form.php:1366
 #: contact_form.php:1374 contact_form.php:1376 contact_form.php:2811
 #: contact_form.php:2813
 msgid "for this language"
-msgstr "pour cette langue"
+msgstr "voor deze taal"
 
 #: contact_form.php:1345
 msgid "Use the changed names of the contact form fields in the email"
-msgstr "Utiliser les noms des champs modifiés dans les courriels"
+msgstr ""
+"Gebruik de onaangepaste namen van de velden van het contactformulier in de e-"
+"mail"
 
 #: contact_form.php:1351
 msgid "Action after email is sent"
-msgstr "Action après l'envoie du courriel"
+msgstr "Actie nadat de e-mail is verzonden"
 
 #: contact_form.php:1353
 msgid "Display text"
-msgstr "Afficher le texte"
+msgstr "Tekst weergeven"
 
 #: contact_form.php:1362 contact_form.php:1372
 msgid "Text"
-msgstr "Texte"
+msgstr "Tekst"
 
 #: contact_form.php:1383
 msgid "Redirect to the page"
-msgstr "Rediriger vers la page"
+msgstr "Doorsturen naar pagina"
 
 #: contact_form.php:1384
 msgid "Url"
-msgstr "Url"
+msgstr "URL"
 
 #: contact_form.php:1395
 msgid "Add field 'Reply-To' to the email header"
@@ -693,7 +692,7 @@ msgstr ""
 
 #: contact_form.php:1401
 msgid "Auto Response"
-msgstr "Réponse automatique"
+msgstr "Automatisch Antwoord"
 
 #: contact_form.php:1405
 #, php-format
@@ -702,13 +701,13 @@ msgid ""
 "display data from the Message field, as well as %%SITENAME%% to display blog "
 "name."
 msgstr ""
-"Vous pouvez utiliser %%NAME%% pour afficher des données du champ email et "
-"%%MESSAGE%% pour afficher des données du champ message, de même %%SITENAME%% "
-"pour afficher le nom du site."
+"Je kan %%NAME%% gebruiken om data weer te geven van het e-mail veld, "
+"%%MESSAGE%% om data weer te geven uit het bericht veld en %%SITENAME%% om de "
+"naam van het blog weer te geven."
 
 #: contact_form.php:1430 contact_form.php:1870
 msgid "Save Changes"
-msgstr "Enregistrer les modifications"
+msgstr "Instellingen Opslaan"
 
 #: contact_form.php:1443
 #, php-format
@@ -734,125 +733,123 @@ msgstr ""
 
 #: contact_form.php:1490
 msgid "Errors output"
-msgstr "Affichage des erreurs"
+msgstr "Foutmeldingen uitvoer"
 
 #: contact_form.php:1493
 msgid "Display error messages"
-msgstr "Aficher les messages d'erreur"
+msgstr "Foutmeldingen weergeven"
 
 #: contact_form.php:1494
 msgid "Color of the input field errors."
-msgstr "Mettre en couleur les champs ayant des erreurs"
+msgstr "Kleur van de velden met foutmeldingen"
 
 #: contact_form.php:1495
 msgid "Display error messages & color of the input field errors"
-msgstr ""
-"Afficher les messages d'erreur et mettre en couleur les champs ayant des "
-"erreurs"
+msgstr "Foutmeldingen & kleur van de velden met foutmeldingen weergeven"
 
 #: contact_form.php:1500
 msgid "Add placeholder to the input blocks"
-msgstr "Ajouter la localisation dans le bloc de saisie"
+msgstr "Tijdelijke aanduiding aan de velden toevoegen"
 
 #: contact_form.php:1506
 msgid "Add tooltips"
-msgstr "Ajouter les conseils"
+msgstr "Tooltips toevoegen"
 
 #: contact_form.php:1520
 msgid "Email address"
-msgstr "Adresse e-mail"
+msgstr "E-mailadres"
 
 #: contact_form.php:1525
 msgid "Phone Number"
-msgstr "Téléphone"
+msgstr "Telefoonnummer"
 
 #: contact_form.php:1539
 msgid "Attachment"
-msgstr "Pièce jointe"
+msgstr "Bijlage"
 
 #: contact_form.php:1551
 msgid "Style options"
-msgstr "Options de style"
+msgstr "Stijl opties"
 
 #: contact_form.php:1555
 msgid "Text color"
-msgstr "Couleur du texte"
+msgstr "Tekstkleur"
 
 #: contact_form.php:1558 contact_form.php:1563 contact_form.php:1573
 #: contact_form.php:1578 contact_form.php:1583 contact_form.php:1588
 #: contact_form.php:1598 contact_form.php:1603 contact_form.php:1612
 #: contact_form.php:1626 contact_form.php:1631 contact_form.php:1636
 msgid "Default"
-msgstr "Défaut"
+msgstr "Standaard"
 
 #: contact_form.php:1560
 msgid "Label text color"
-msgstr "Couleur des textes des intitulés"
+msgstr "Label tekstkleur"
 
 #: contact_form.php:1565
 msgid "Placeholder color"
-msgstr "Couleur pour la localisation"
+msgstr "Kleur van tijdelijke aanduiding"
 
 #: contact_form.php:1570
 msgid "Errors color"
-msgstr "Couleur pour les erreurs"
+msgstr "Kleur van foutmeldingen"
 
 #: contact_form.php:1575
 msgid "Error text color"
-msgstr "Couleur pour le texte des erreurs"
+msgstr "Tekstkleur van foutmeldingen"
 
 #: contact_form.php:1580
 msgid "Background color of the input field errors"
-msgstr "Couleur de fond pour les erreurs de saisie dans les champs"
+msgstr "Achtergrondkleur van veldfoutmeldingen"
 
 #: contact_form.php:1585
 msgid "Border color of the input field errors"
-msgstr "Couleur de la bordure pour les erreurs de saisie dans les champs"
+msgstr "Randkleur van veldfoutmeldingen"
 
 #: contact_form.php:1590
 msgid "Placeholder color of the input field errors"
-msgstr "Couleur pour la localisation lors d'une erreur de saisie du champ"
+msgstr "Kleur van tijdelijke aanduidingen in een veld met foutmeldingen"
 
 #: contact_form.php:1595
 msgid "Input fields"
-msgstr "Champs de saisie"
+msgstr "Velden"
 
 #: contact_form.php:1600
 msgid "Input fields background color"
-msgstr "Couleur de fond pour les champs de saisie"
+msgstr "Achtergrondkleur van velden"
 
 #: contact_form.php:1605
 msgid "Text fields color"
-msgstr "Couleur pour les textes des champs de saisie"
+msgstr "Kleur van velden met tekst"
 
 #: contact_form.php:1609
 msgid "Border width in px, numbers only"
-msgstr "Largeur des bordures en px, nombre seulement"
+msgstr "Border breedte in px, slechts getallen"
 
 #: contact_form.php:1614 contact_form.php:1638
 msgid "Border color"
-msgstr "Couleur des bordures"
+msgstr "Border kleur"
 
 #: contact_form.php:1619
 msgid "Submit button"
-msgstr "Bouton Envoyer"
+msgstr "Verzend knop"
 
 #: contact_form.php:1623
 msgid "Width in px, numbers only"
-msgstr "Largeur en px, nombre seulement"
+msgstr "Breedte in px, slechts getallen"
 
 #: contact_form.php:1628
 msgid "Button color"
-msgstr "Couleur du bouton"
+msgstr "Kleur van knop"
 
 #: contact_form.php:1633
 msgid "Button text color"
-msgstr "Couleur du texte du bouton"
+msgstr "Tekstkleur van knop"
 
 #: contact_form.php:1665
 #, fuzzy
 msgid "Contact Form | Preview"
-msgstr "Formulaire Pro de Contact | Prévisualisation"
+msgstr "Contact Formulier Pro | Voorbeeld"
 
 #: contact_form.php:1666
 msgid "Drag the necessary field to sort fields."
@@ -863,776 +860,744 @@ msgid ""
 "If you would like to add the Contact Form to your website, just copy and "
 "paste this shortcode to your post or page or widget:"
 msgstr ""
-"Si vous souhaiter ajouter un formulaire de contact à votre site web, copiez "
-"juste ce code dans un article ou sur une page ou un widget&nbsp;:"
+"Als je het Contact Formulier aan je website wil toevoegen, kopieer en plak "
+"deze code dan naar je bericht, pagina of widget:"
 
 #: contact_form.php:1957
 msgid "Sorry, email message could not be delivered."
-msgstr "Désolé, votre courriel n'a pas pu être envoyé."
+msgstr "Sorry, het e-mailbericht kon niet worden afgeleverd."
 
 #: contact_form.php:2445
 msgid "Contact from"
-msgstr "Contact de"
+msgstr "Contact van"
 
 #: contact_form.php:2467 contact_form.php:2497
 msgid "Phone"
-msgstr "Téléphone"
+msgstr "Telefoon"
 
 #: contact_form.php:2478 contact_form.php:2504
 msgid "Site"
-msgstr "Site"
+msgstr "Website"
 
 #: contact_form.php:2597
 msgid ""
 "If you can see this MIME, it means that the MIME type is not supported by "
 "your email client!"
 msgstr ""
-"Si vous voyez ce MIME c'est que votre navigateur n'accepte pas ce type de "
-"MIME !"
+"Als je deze MIME kan zien, betekent dat dat het MIME type niet wordt "
+"ondersteund door je e-mailprogramma!"
 
 #: contact_form.php:2680
 msgid "FAQ"
-msgstr "FAQ"
+msgstr "Veelgestelde vragen"
 
 #: contact_form.php:2681
 msgid "Support"
-msgstr "Support"
+msgstr "Ondersteuning"
 
 #: contact_form.php:2730
 msgid "Are you sure that you want to delete this language data?"
-msgstr "Etes vous sûr de vouloir supprimer cette langue ?"
+msgstr "Weet je zeker dat je deze taal data wil verwijderen?"
 
 #: contact_form.php:2747
 msgid "Add multiple forms"
-msgstr "Ajouter plusieurs formulaires"
+msgstr "Meerdere formulieren toevoegen"
 
 #: contact_form.php:2747
 msgid ""
 "Install Contact Form Multi plugin to create unlimited number of contact "
 "forms."
 msgstr ""
-"Installer l'extension 'Contact Form Multi' pour créer un nombre infini de "
-"formulaires de contact."
+"Installeer de Contact Form Multi plugin om een ongelimiteerd aantal "
+"contactformulieren te maken"
 
 #: contact_form.php:2752
 msgid "Learn more"
-msgstr "Lire la suite"
+msgstr "Meer informatie"
 
 #: contact_form.php:2951
 msgid "allows to store your messages to the database."
-msgstr "permet d'enregistrer les messages dans la base de données."
+msgstr "staat toe om je berichten in de database op te slaan"
 
 #: contact_form.php:2952
 msgid "Manage messages that have been sent from your website."
-msgstr "Gérer les messages qui ont été envoyés depuis votre site."
+msgstr "Beheer berichten die van je website zijn verstuurd."
 
 #: contact_form.php:3012
 #, fuzzy
 msgid "Contact form"
-msgstr "Contact de"
+msgstr "Contact van"
 
 #: contact_form.php:3025 contact_form.php:3036
 #, fuzzy
 msgid "Language"
-msgstr "Ajouter une langue"
+msgstr "Een taal toevoegen"
 
 #~ msgid ""
 #~ "If you would like to add Contact Form to your website, just copy and "
 #~ "paste this shortcode to your post or page or widget:"
 #~ msgstr ""
-#~ "Si vous souhaiter ajouter un formulaire de contact à votre site web, "
-#~ "copiez juste ce code dans un article ou sur une page ou un widget&nbsp;:"
+#~ "Als je het Contact Formulier aan je website wil toevoegen, kopieer en "
+#~ "plak deze code dan naar je bericht, pagina of widget:"
 
 #~ msgid ""
 #~ "If you have any problems with the standard shortcode [contact_form], you "
 #~ "should use the shortcode"
 #~ msgstr ""
-#~ "Si vous avez un soucis avec le code court standard [contact_form], vous "
-#~ "pouvez utilisez le code court "
+#~ "Als je problemen hebt met de standaard code [contact_form], gebruik dan "
+#~ "de code"
 
 #~ msgid "They work the same way."
-#~ msgstr "Ils fonctionnent de la même manière."
+#~ msgstr "Ze werken op dezelfde manier."
 
 #~ msgid ""
 #~ "If have any problems with the standard shortcode [contact_form], you "
 #~ "should use the shortcode"
 #~ msgstr ""
-#~ "Si vous avez un soucis avec le code court standard [contact_form], vous "
-#~ "pouvez utilisez le code court "
+#~ "Als je problemen hebt met de standaard code [contact_form], gebruik dan "
+#~ "de code"
 
 #~ msgid "The $_SERVER variable that is used to build a URL of the form"
 #~ msgstr ""
-#~ "La variable $_SERVER qui est utilisée pour construire l'URL du formulaire"
+#~ "Het  $_SERVER variabele dat wordt gebruikt om de URL van het formulier te "
+#~ "maken"
 
 #~ msgid ""
 #~ "If you are not sure whether to change this setting or not, please do not "
 #~ "do that."
 #~ msgstr ""
-#~ "Si vous n'êtes pas sûr de ce que vous faites, merci de ne pas toucher ce "
-#~ "paramètre."
+#~ "Als je niet zeker weet of je deze instelling moet aanpassen of niet, doe "
+#~ "dat dan alsjeblieft niet."
 
 #~ msgid ""
 #~ "The plugin's settings have been changed. In order to save them please "
 #~ "don't forget to click the 'Save Changes' button."
 #~ msgstr ""
-#~ "Les paramètres de l'extension ont été changés. Afin de pouvoir les "
-#~ "enregistrer, merci de cliquer sur le bouton 'Enregistrer les "
-#~ "modifications'."
+#~ "De instellingen van de plugin zijn aangepast. Vergeet niet te klikken op "
+#~ "de 'Veranderingen Opslaan' knop, om ze op te slaan."
 
 #~ msgid "Unlock premium options by upgrading to PRO version."
-#~ msgstr "Déploquer les options premium en migrant vers la version PRO."
+#~ msgstr ""
+#~ "Maak gebruik van premium opties door te upgraden naar de PRO versie."
 
 #~ msgid "Go"
-#~ msgstr "Passez"
+#~ msgstr "Gaan"
 
 #~ msgid "Show with errors"
-#~ msgstr "Afficher avec les erreurs"
+#~ msgstr "Weergeven met foutmeldingen"
 
 #~ msgid "Please enter your full name..."
-#~ msgstr "Merci de saisir votre nom..."
+#~ msgstr "Vul alsjeblieft je volledige naam in ..."
 
 #~ msgid "Please enter your address..."
-#~ msgstr "Merci de saisir votre adresse..."
+#~ msgstr "Vul alsjeblieft je adres in ..."
 
 #~ msgid "Please enter your email address..."
-#~ msgstr "Merci de saisir votre adresse e-mail..."
+#~ msgstr "Vul alsjeblieft je e-mailadres in ..."
 
 #~ msgid "Please enter your phone number..."
-#~ msgstr "Merci de saisir votre numéro de téléphone..."
+#~ msgstr "Vul alsjeblieft je telefoonnummer in ..."
 
 #~ msgid "Please enter subject..."
-#~ msgstr "Merci de saisir le sujet..."
+#~ msgstr "Vul alsjeblieft het onderwerp in ..."
 
 #~ msgid "Please enter your message..."
-#~ msgstr "Merci de saisir votre message..."
+#~ msgstr "Vul alsjeblieft je bericht in ..."
+
+#~ msgid "powered by"
+#~ msgstr "Mogelijk gemaakt door"
+
+#~ msgid "Activate Contact Form to DB"
+#~ msgstr "Contactformulier naar database inschakelen"
+
+#~ msgid "Download Contact Form to DB"
+#~ msgstr "Download contactformulier naar database"
+
+#~ msgid "Captcha"
+#~ msgstr "CAPTCHA"
+
+#~ msgid "(powered by bestwebsoft.com)"
+#~ msgstr "(mogelijk gemaakt door bestwebsoft.com)"
 
 #~ msgid "requires"
-#~ msgstr "obligatoire"
+#~ msgstr "vereist"
 
 #~ msgid ""
 #~ "or higher, that is why it has been deactivated! Please upgrade WordPress "
 #~ "and try again."
 #~ msgstr ""
-#~ "ou supérieure, c'est pourquoi il a été désactivé! Merci de faire la mise "
-#~ "à jour de WordPress puis de ré-essayer."
+#~ "of hoger, waardoor het is gedeactiveerd! Upgrade WordPress alsjeblieft en "
+#~ "probeer het dan opnieuw."
 
 #~ msgid "Back to the WordPress"
-#~ msgstr "Retourner à WordPress"
+#~ msgstr "Terug naar WordPress"
 
 #~ msgid "Plugins page"
-#~ msgstr "Page des extensions"
+#~ msgstr "Plugins pagina"
 
 #~ msgid "It’s time to upgrade your"
-#~ msgstr "C'est le moment de mettre à jour votre "
+#~ msgstr "Upgraden is vereist voor jouw"
 
 #~ msgid "to"
-#~ msgstr "à"
+#~ msgstr "naar"
 
 #~ msgid "version!"
-#~ msgstr "version"
+#~ msgstr "versie!"
 
 #~ msgid "Extend standard plugin functionality with new great options."
 #~ msgstr ""
-#~ "Etend les fonctionalités de base de l'extension avec de nouvelles options."
+#~ "Breidt de standaard functionaliteit van de plugin uit met geweldige "
+#~ "nieuwe opties."
 
 #~ msgid "If you enjoy our plugin, please give it 5 stars on WordPress"
 #~ msgstr ""
-#~ "Si notre extension vous satisfait, merci de la notée avec 5 étoiles dans "
-#~ "Wordpress"
+#~ "Als je van onze plugin geniet, geef ons dan alsjeblieft 5 sterren op "
+#~ "WordPress"
 
 #~ msgid "Rate the plugin"
-#~ msgstr "Noter l'extension"
+#~ msgstr "De plugin waarderen"
 
 #~ msgid "If there is something wrong about it, please contact us"
-#~ msgstr ""
-#~ "Si quelque chose ne fonctionne pas correctement, merci de nous contacter"
+#~ msgstr "Als er ergens iets niet klopt, neem dan contact met ons op"
 
 #~ msgid "Wrong license key"
-#~ msgstr "Clé de licence incorrecte"
+#~ msgstr "Verkeerde licentie sleutel"
 
 #~ msgid ""
 #~ "Something went wrong. Please try again later. If the error appears again, "
 #~ "please contact us"
 #~ msgstr ""
-#~ "Il est survenu une erreur. Essayer de nouveau. Si l'erreur se produit de "
-#~ "nouveau, merci de contacter <a href=http://support.bestwebsoft."
-#~ "com>BestWebSoft</a>. Nous sommes désolés pour le désagrément."
+#~ "Er is iets misgegaan. Probeer het later alsjeblieft opnieuw. Als deze "
+#~ "foutmelding opnieuw verschijnt, neem dan contact met ons op"
 
 #~ msgid "We are sorry for inconvenience."
-#~ msgstr "Nous sommes désolés pour le désagrément."
+#~ msgstr "We verontschuldigen ons voor het ongemak."
 
 #~ msgid "This license key is bind to another site"
-#~ msgstr "La clé de licence correspond à un autre site."
+#~ msgstr "Deze licentie sleutel hoort bij een andere site"
 
 #~ msgid ""
 #~ "Unfortunately, you have exceeded the number of available tries per day. "
 #~ "Please, upload the plugin manually."
 #~ msgstr ""
-#~ "Désoler mais vous avez dépassé le nombre d'essai de la journée. Merci de "
-#~ "télécharger l'extension manuellement."
+#~ "Helaas! Je hebt het nummer beschikbare pogingen per dag overschreden. "
+#~ "Upload de plugin alsjeblieft handmatig."
 
 #~ msgid ""
 #~ "Unfortunately, Your license has expired. To continue getting top-priority "
 #~ "support and plugin updates you should extend it in your"
 #~ msgstr ""
-#~ "Désoler, votre licence est terminée. Pour continuer à disposer du support "
-#~ "rapide et des mises à jour de l'extension vous devez la renouveller dans "
-#~ "votre"
+#~ "Helaas! Je licentie is verlopen. Om topprioriteit ondersteuning en plugin "
+#~ "updates te blijven ontvangen, moet je hem verlengen in je"
 
 #~ msgid ""
 #~ "Unfortunately, the PRO licence was already installed to this domain. The "
 #~ "PRO Trial license can be installed only once."
 #~ msgstr ""
-#~ "Une licence a déjà été installée sur ce domaine. La licence d'évaluation "
-#~ "ne peut-être installée qu'une seule fois."
+#~ "Helaas! De PRO Uitprobeer licentie was eerder al geïnstalleerd op dit "
+#~ "domein. De PRO Uitprobeer licentie kan slechts eenmalig worden "
+#~ "geïnstalleerd."
 
 #~ msgid ""
 #~ "Failed to download the zip archive. Please, upload the plugin manually"
 #~ msgstr ""
-#~ "Erreur de téléchargement de l'archive ZIP. Merci de télécharger "
-#~ "l'extension manuellement."
+#~ "Het is niet gelukt het zip archief te downloaden. Upload de plugin "
+#~ "alsjeblieft handmatig"
 
 #~ msgid "Failed to open the zip archive. Please, upload the plugin manually"
 #~ msgstr ""
-#~ "Erreur d'ouverture de l'archive zip. Merci de télécharger l'extension "
-#~ "manuellement."
+#~ "Het is niet gelukt het zip archief te openen. Upload de plugin "
+#~ "alsjeblieft handmatig"
 
 #~ msgid ""
 #~ "Your server does not support either ZipArchive or Phar. Please, upload "
 #~ "the plugin manually"
 #~ msgstr ""
-#~ "Votre server n'a pas le support du format des archives ZIP ou Phar. Merci "
-#~ "de télécharger l'extension manuellement."
+#~ "Je server ondersteunt noch ZipArchive noch Phar. Upload de plugin "
+#~ "alsjeblieft handmatig"
 
 #~ msgid "UploadDir is not writable. Please, upload the plugin manually"
 #~ msgstr ""
-#~ "Erreur d'ouverture de l'archive zip. Merci de télécharger l'extension "
-#~ "manuellement."
+#~ "de UploadDir is niet schrijfbaar. Upload de plugin alsjeblieft handmatig"
 
 #~ msgid ""
 #~ "Something went wrong. Try again later or upload the plugin manually. We "
 #~ "are sorry for inconvenience."
 #~ msgstr ""
-#~ "Il est survenu une erreur. Essayer de nouveau ou bien télécharger "
-#~ "l'extension manuellement.Nous sommes désolés pour le désagrément."
+#~ "Er is iets misgegaan. Probeer het later opnieuw of upload de plugin "
+#~ "handmatig. We verontschuldigen ons voor het ongemak."
 
 #~ msgid "Please, enter Your license key"
-#~ msgstr "Merci de saisir votre clé de liecence"
+#~ msgstr "Vul alsjeblieft je licentie sleutel in"
 
 #~ msgid ""
 #~ "Congratulations! The PRO version of the plugin is successfully download "
 #~ "and activated."
 #~ msgstr ""
-#~ "Félicitations! La version PRO de cette extension a été téléchargée et "
-#~ "activée avec succès."
+#~ "Gefeliciteerd! De PRO versie van de plugin is succesvol gedownload en "
+#~ "geactiveerd."
 
 #~ msgid "Please, go to"
-#~ msgstr "Merci d'allez à"
+#~ msgstr "Ga alsjeblieft naar"
 
 #~ msgid "the setting page"
-#~ msgstr "Options supplémentaires"
+#~ msgstr "de instellingen pagina"
 
 #~ msgid "You will be redirected automatically in 5 seconds."
-#~ msgstr "Vous allez être redirigé automatiquement dans 5 secondes"
+#~ msgstr "Je wordt automatisch doorgestuurd in 5 seconden."
 
 #~ msgid "You can download and activate"
-#~ msgstr "Vous pouvez la télécharger et l'activer"
+#~ msgstr "Je kunt downloaden en activeren"
 
 #~ msgid "version of this plugin by entering Your license key."
-#~ msgstr "version de cette extension en donnant votre clé de licence."
+#~ msgstr "versie van deze plugin door je licentie sleutel in te vullen."
 
 #~ msgid ""
 #~ "You can find your license key on your personal page Client area, by "
 #~ "clicking on the link"
 #~ msgstr ""
-#~ "Vous pouvez trouver votre clé de licence sur votre page personnelle dans "
-#~ "la zone cliente en cliquant sur le lien"
+#~ "Je kunt je licentie sleutel vinden op je persoonlijk pagina - Client "
+#~ "area, door te klikken op de link"
 
 #~ msgid ""
 #~ "(your username is the email you specify when purchasing the product)."
 #~ msgstr ""
-#~ "(votre nom d'utilisateur est l'adresse e-mail que vous avez donné lors de "
-#~ "l'achat de l'extension)."
+#~ "(je gebruikersnaam is het e-mail adres dat je hebt opgegeven toen je het "
+#~ "product kocht)."
 
 #~ msgid "Start Your Free %s-Day Trial Now"
-#~ msgstr "Débuter votre licence d'évaluation gratuite de %s jours"
+#~ msgstr "Start je gratis %s-daagse uitprobeerperiode nu"
 
 #~ msgid ""
 #~ "In order to continue using the plugin it is necessary to buy a %s license."
 #~ msgstr ""
-#~ "Afin de pouvoir continuer à utiliser cette extension il est nécessaire "
-#~ "d'acheter une licence %s."
+#~ "Om de plugin te blijven gebruiken is het nodig om een %s licentie te "
+#~ "kopen."
 
 #~ msgid "After that you can activate it by entering your license key."
-#~ msgstr ""
-#~ " Après vous pouvez activer cette extension en donnant votre clé de "
-#~ "licence."
+#~ msgstr "Daarna kun je hem activeren door je licentie sleutel in te vullen."
 
 #~ msgid ""
 #~ "Unfortunately, you have exceeded the number of available tries per day."
 #~ msgstr ""
-#~ "Désoler mais vous avez dépassé le nombre d'essai de la journée. Merci de "
-#~ "télécharger l'extension manuellement."
+#~ "Helaas! Je hebt het nummer beschikbare pogingen per dag overschreden."
 
 #~ msgid ""
 #~ "Congratulations! The PRO license of the plugin is successfully activated."
 #~ msgstr ""
-#~ "Félicitations! La version PRO de cette extension a été téléchargée et "
-#~ "activée avec succès."
+#~ "Gefeliciteerd! De PRO licentie van de plugin is succesvol geactiveerd."
 
 #~ msgid "Wrong license key."
-#~ msgstr "Clé de licence incorrecte"
+#~ msgstr "Verkeerde licentie sleutel."
 
 #~ msgid "This license key is bind to another site."
-#~ msgstr "La clé de licence correspond à un autre site."
+#~ msgstr "Deze licentie sleutel hoort bij een andere site."
 
 #~ msgid ""
 #~ "This license key is valid, but Your license has expired. If you want to "
 #~ "update our plugin in future, you should extend the license."
 #~ msgstr ""
-#~ "La clé de licence est valide mais votre durée de validité est passée. "
-#~ "Pour continuer à disposer du support rapide et des mises à jour de "
-#~ "l'extension vous devez la renouveller."
+#~ "De licentie sleutel is geld, maar je licentie is verlopen. Als je onze "
+#~ "plugin in de toekomst wil updaten, moet je de licentie verlengen."
 
 #~ msgid "Unfortunately, you have exceeded the number of available tries."
-#~ msgstr ""
-#~ "Désoler mais vous avez dépassé le nombre d'essai de la journée. Merci de "
-#~ "télécharger l'extension manuellement."
+#~ msgstr "Helaas! Je hebt het nummer beschikbare pogingen overschreden."
 
 #~ msgid ""
 #~ "Unfortunately, the PRO Trial licence was already installed to this "
 #~ "domain. The PRO Trial license can be installed only once."
 #~ msgstr ""
-#~ "Malheuresement la licence PRO a déjà été installée sur ce domaine. La "
-#~ "licence PRO d'évaluation peut être installée une seule fois."
+#~ "Helaas! De PRO Uitprobeer licentie was eerder al geïnstalleerd op dit "
+#~ "domein. De PRO Uitprobeer licentie kan slechts eenmalig worden "
+#~ "geïnstalleerd."
 
 #~ msgid "The PRO Trial license key is valid."
-#~ msgstr "La clé de licence d'évaluation est valide."
+#~ msgstr "De PRO Uitprobeer licentie sleutel is geldig."
 
 #~ msgid "The license key is valid."
-#~ msgstr "La clé de licence est valide."
+#~ msgstr "De licentie sleutel is geldig."
 
 #~ msgid "Your license will expire on"
-#~ msgstr "Votre licence se termine le"
+#~ msgstr "Je licentie zal verlopen op"
 
 #~ msgid "Please, enter your license key"
-#~ msgstr "Merci de saisir votre clé de licence"
+#~ msgstr "Vul alsjeblieft je licentie sleutel in"
 
 #~ msgid ""
 #~ "If needed you can check if the license key is correct or reenter it in "
 #~ "the field below. You can find your license key on your personal page - "
 #~ "Client area - on our website"
 #~ msgstr ""
-#~ "Si nécessaire vous pouvez vérifier que la clé de licence est correcte ou "
-#~ "la saisir de nouveau dans le champ ci-dessous. Vous pouvez trouver votre "
-#~ "clé de licence sur votre page personnelle (zone client) sur notre site "
-#~ "web."
+#~ "Wanneer nodig kun je controleren of de licentie sleutel correct is of hem "
+#~ "in het onderstaande veld opnieuw invullen. Je kunt je licentie sleutel "
+#~ "vinden op je persoonlijke pagina - Client area - op onze website"
 
 #~ msgid ""
 #~ "(your username is the email you specify when purchasing the product). If "
 #~ "necessary, please submit \"Lost your password?\" request."
 #~ msgstr ""
-#~ "(votre nom d'utilisateur est l'adresse e-mail que vous avez donné lors de "
-#~ "l'achat de l'extension). Si nécessaire, utilisez la fonction de demande "
-#~ "de mot de passe perdu."
+#~ "(je gebruikersnaam is het e-mail adres dat je hebt opgegeven toen je het "
+#~ "product kocht). Wanneer nodig, stuur alsjeblieft een \"Lost your password?"
+#~ "\" aanvraag."
 
 #~ msgid "Check license key"
-#~ msgstr "Vérifier la clé de licence"
-
-#~ msgid "WARNING: Illegal use notification"
-#~ msgstr "AVERTISSEMENT&nbsp;: Notification d'utilisation abusive"
+#~ msgstr "Controleer de licentie sleutel"
 
 #~ msgid ""
-#~ "You can use one license of the Pro plugin for one domain only. Please "
-#~ "check and edit your license or domain if necessary using you personal "
-#~ "Client Area. We strongly recommend you to solve the problem within 24 "
-#~ "hours, otherwise the Pro plugin will be deactivated."
+#~ "WARNING: We have noticed illegal use of our plugin by you. We strongly "
+#~ "recommend you to solve the problem within 24 hours, otherwise the plugin "
+#~ "will be deactivated. Please go to your personal"
 #~ msgstr ""
-#~ "Vous ne pouvez utilisez qu'une licence de la version Pro de l'extension "
-#~ "pour un seul domaine. Merci de vérifier et de modifier votre licence ou "
-#~ "votre domaine si nécessaire en utilisant votre zone client. Nous vous "
-#~ "recommandons de résoudre ce problème dans les 24 heures, sinon "
-#~ "l'extension sera rendue inactive."
-
-#~ msgid ""
-#~ "Notice: Your PRO Trial license has expired. To continue using the plugin "
-#~ "you should buy a PRO license"
-#~ msgstr ""
-#~ "Information&nbsp;: Votre licence d'évaluation est terminée. Pour "
-#~ "continuer à disposer du support rapide et des mises à jour de l'extension "
-#~ "vous devez la renouveller."
-
-#~ msgid ""
-#~ "Your license has expired. To continue getting top-priority support and "
-#~ "plugin updates you should extend it."
-#~ msgstr ""
-#~ "Votre licence est terminée. Pour continuer à disposer du support rapide "
-#~ "et des mises à jour de l'extension vous devez la renouveller."
-
-#~ msgid "Notice: You are using the PRO Trial license of %s plugin."
-#~ msgstr ""
-#~ "Avertissement&nbsp;: vous utilisez la version d'évaluation de l'extension "
-#~ "%s."
-
-#~ msgid "Notice: You are using the PRO Trial license of plugin."
-#~ msgstr ""
-#~ "Avertissement&nbsp;: vous utilisez la version d'évaluation de l'extension."
-
-#~ msgid "The PRO Trial license will expire on"
-#~ msgstr "Votre licence se termine le"
-
-#~ msgid "You license for"
-#~ msgstr "Votre licence pour"
-
-#~ msgid "expires on"
-#~ msgstr "se termine le"
-
-#~ msgid "and you won't be granted TOP-PRIORITY SUPPORT or UPDATES."
-#~ msgstr "et vous ne diposerez plus du support rapide et des mises à jour."
-
-#~ msgid "Restore all plugin settings to defaults"
-#~ msgstr "Remettre les valeurs par défaut des paramètres de l'extension"
-
-#~ msgid "Restore settings"
-#~ msgstr "Remettre les paramètres"
-
-#~ msgid "Are you sure you want to restore all settings by default?"
-#~ msgstr "Etes vous sûr de vouloir remettre toutes les valeurs par défaut ?"
-
-#~ msgid "Yes, restore all settings"
-#~ msgstr "Oui, remettre les valeurs par défaut"
-
-#~ msgid "No, go back to the settings page"
-#~ msgstr "Non, retourner à la page des paramètres"
-
-#~ msgid "Not set"
-#~ msgstr "Not set"
-
-#~ msgid "On"
-#~ msgstr "On"
-
-#~ msgid "Off"
-#~ msgstr "Off"
-
-#~ msgid "N/A"
-#~ msgstr "N/A"
-
-#~ msgid " Mb"
-#~ msgstr " Mb"
-
-#~ msgid "Yes"
-#~ msgstr "Yes"
-
-#~ msgid "No"
-#~ msgstr "No"
-
-#~ msgid "Operating System"
-#~ msgstr "Operating System"
-
-#~ msgid "Server"
-#~ msgstr "Server"
-
-#~ msgid "Memory usage"
-#~ msgstr "Memory usage"
-
-#~ msgid "MYSQL Version"
-#~ msgstr "MYSQL Version"
-
-#~ msgid "SQL Mode"
-#~ msgstr "SQL Mode"
-
-#~ msgid "PHP Version"
-#~ msgstr "PHP Version"
-
-#~ msgid "PHP Safe Mode"
-#~ msgstr "PHP Safe Mode"
-
-#~ msgid "PHP Allow URL fopen"
-#~ msgstr "PHP Allow URL fopen"
-
-#~ msgid "PHP Memory Limit"
-#~ msgstr "PHP Memory Limit"
-
-#~ msgid "PHP Max Upload Size"
-#~ msgstr "PHP Max Upload Size"
-
-#~ msgid "PHP Max Post Size"
-#~ msgstr "PHP Max Post Size"
-
-#~ msgid "PHP Max Script Execute Time"
-#~ msgstr "PHP Max Script Execute Time"
-
-#~ msgid "PHP Exif support"
-#~ msgstr "PHP Exif support"
-
-#~ msgid "PHP IPTC support"
-#~ msgstr "PHP IPTC support"
-
-#~ msgid "PHP XML support"
-#~ msgstr "PHP XML support"
-
-#~ msgid "Site URL"
-#~ msgstr "Site URL"
-
-#~ msgid "Home URL"
-#~ msgstr "Home URL"
-
-#~ msgid "WordPress Version"
-#~ msgstr "WordPress Version"
-
-#~ msgid "WordPress DB Version"
-#~ msgstr "WordPress DB Version"
-
-#~ msgid "Multisite"
-#~ msgstr "Multisite"
-
-#~ msgid "Active Theme"
-#~ msgstr "Active Theme"
-
-#~ msgid "Please enter a valid email address."
-#~ msgstr "Merci de saisir une adresse e-mail valide."
-
-#~ msgid "Email with system info is sent to "
-#~ msgstr "Le courriel avec les informations système est envoyé à"
-
-#~ msgid "Need help?"
-#~ msgstr "Besoin d'aide ?"
-
-#~ msgid "Client area"
-#~ msgstr "Espace client"
-
-#~ msgid "System status"
-#~ msgstr "System status"
-
-#~ msgid "Plugins"
-#~ msgstr "Extensions"
-
-#~ msgid "Themes"
-#~ msgstr "Thèmes"
-
-#~ msgid "All"
-#~ msgstr "Tous"
-
-#~ msgid "Installed"
-#~ msgstr "Installé"
-
-#~ msgid "Recommended"
-#~ msgstr "Recommandés"
-
-#~ msgid "Installed plugins"
-#~ msgstr "Extension installée"
-
-#~ msgid "Activate this plugin"
-#~ msgstr "Activer cette extension"
-
-#~ msgid "DONATE"
-#~ msgstr "Faire un don"
-
-#~ msgid "Recommended plugins"
-#~ msgstr "Extensions recommandées"
-
-#~ msgid "Install now"
-#~ msgstr "Installer maintenant"
-
-#~ msgid "Try again"
-#~ msgstr "Essayer de nouveau"
-
-#~ msgid "Preview &#8220;%s&#8221;"
-#~ msgstr "Pré-visualiser &#8220;%s&#8221;"
-
-#~ msgid "Install %s"
-#~ msgstr "%s installé"
-
-#~ msgid "Install Now"
-#~ msgstr "Installer maintenant"
-
-#~ msgid "Update to version %s"
-#~ msgstr "Mettre à jour pour la version %s"
-
-#~ msgid "Update"
-#~ msgstr "Mettre à jour"
-
-#~ msgid "This theme is already installed and is up to date"
-#~ msgstr "Le thème est déjà en place et est à jour."
-
-#~ msgid "Preview %s"
-#~ msgstr "Pré-visualiser %s"
-
-#~ msgid "Preview"
-#~ msgstr "Pré-visualiser"
-
-#~ msgid "By %s"
-#~ msgstr "Par %s"
-
-#~ msgid "Details"
-#~ msgstr "Détails"
-
-#~ msgid "Already Installed"
-#~ msgstr "Déjà installé"
-
-#~ msgid "Environment"
-#~ msgstr "Environment"
-
-#~ msgid "Active Plugins"
-#~ msgstr "Extensions actives"
-
-#~ msgid "Inactive Plugins"
-#~ msgstr "Extensions inactives"
-
-#~ msgid "Send to support"
-#~ msgstr "Envoyé au support"
-
-#~ msgid "Send to custom email &#187;"
-#~ msgstr "Envoyer un e-mail spécifique &#187;"
-
-#~ msgid "powered by"
-#~ msgstr "fournis par"
-
-#~ msgid "Activate Contact Form to DB"
-#~ msgstr "Activer le formulaire de contact avec base de données"
-
-#~ msgid "Download Contact Form to DB"
-#~ msgstr "Télécharger le formulaire de contact avec base de données"
-
-#~ msgid "Captcha"
-#~ msgstr "Captcha"
-
-#~ msgid "(powered by bestwebsoft.com)"
-#~ msgstr "(fourni par bestwebsoft.com)"
+#~ "WAARSCHUWING: We hebben illegaal gebruik van onze plugin door jou "
+#~ "opgemerkt. We adviseren je ten strengste het probleem binnen 24 uur op te "
+#~ "lossen, anders zal de plugin worden gedeactiveerd. Gaan alsjeblieft naar "
+#~ "je persoonlijke"
 
 #~ msgid ""
 #~ "(your username is the email you specify when purchasing the product), "
 #~ "where you can make the necessary changes."
 #~ msgstr ""
-#~ "(votre nom d'utilisateur est l'adresse e-mail que vous avez donné lors de "
-#~ "l'achat de l'extension), où vous pourrez faire les modifications "
-#~ "nécessaires."
+#~ "(je gebruikersnaam is het e-mail adres dat je hebt opgegeven toen je het "
+#~ "product kocht), waar je de nodige aanpassingen kan maken."
+
+#~ msgid ""
+#~ "Notice: Your PRO Trial license has expired. To continue using the plugin "
+#~ "you should buy a PRO license"
+#~ msgstr ""
+#~ "Let op: Je PRO Uitprobeer licentie is verlopen. Om de plugin te blijven "
+#~ "gebruiken moet je een PRO licentie aanschaffen"
+
+#~ msgid ""
+#~ "Your license has expired. To continue getting top-priority support and "
+#~ "plugin updates you should extend it."
+#~ msgstr ""
+#~ "Je licentie is verlopen. Om topprioriteit ondersteuning en plugin updates "
+#~ "te blijven ontvangen, moet je hem verlengen."
+
+#~ msgid "Notice: You are using the PRO Trial license of %s plugin."
+#~ msgstr "Let op: Je gebruikt de Pro Uitprobeer licentie van de %s plugin."
+
+#~ msgid "Notice: You are using the PRO Trial license of plugin."
+#~ msgstr "Let op: Je gebruikt de Pro Uitprobeer licentie van de plugin."
+
+#~ msgid "The PRO Trial license will expire on"
+#~ msgstr "De PRO Uitprobeer licentie zal verlopen op"
+
+#~ msgid "You license for"
+#~ msgstr "Je licentie voor"
+
+#~ msgid "expires on"
+#~ msgstr "verloopt op"
+
+#~ msgid "and you won't be granted TOP-PRIORITY SUPPORT or UPDATES."
+#~ msgstr ""
+#~ "en topprioriteit ondersteuning en updates worden niet aan je gegeven."
+
+#~ msgid "Not set"
+#~ msgstr "Niet ingesteld"
+
+#~ msgid "On"
+#~ msgstr "Aan"
+
+#~ msgid "Off"
+#~ msgstr "Uit"
+
+#~ msgid "N/A"
+#~ msgstr "n.v.t."
+
+#~ msgid " Mb"
+#~ msgstr " Mb"
+
+#~ msgid "Yes"
+#~ msgstr "Ja"
+
+#~ msgid "No"
+#~ msgstr "Nee"
+
+#~ msgid "Operating System"
+#~ msgstr "Besturingssysteem"
+
+#~ msgid "Server"
+#~ msgstr "Server"
+
+#~ msgid "Memory usage"
+#~ msgstr "Geheugen gebruik"
+
+#~ msgid "MYSQL Version"
+#~ msgstr "MYSQL Versie"
+
+#~ msgid "SQL Mode"
+#~ msgstr "SQL Modus"
+
+#~ msgid "PHP Version"
+#~ msgstr "PHP Versie"
+
+#~ msgid "PHP Safe Mode"
+#~ msgstr "PHP Veilige Modus"
+
+#~ msgid "PHP Allow URL fopen"
+#~ msgstr "PHP URL fopen toestaan"
+
+#~ msgid "PHP Memory Limit"
+#~ msgstr "PHP Geheugen Limitatie"
+
+#~ msgid "PHP Max Upload Size"
+#~ msgstr "PHP Max Upload Grootte"
+
+#~ msgid "PHP Max Post Size"
+#~ msgstr "PHP Max Post Grootte"
+
+#~ msgid "PHP Max Script Execute Time"
+#~ msgstr "PHP Max Script Uitvoer Tijd"
+
+#~ msgid "PHP Exif support"
+#~ msgstr "PHP Exif ondersteuning"
+
+#~ msgid "PHP IPTC support"
+#~ msgstr "PHP IPTC ondersteuning"
+
+#~ msgid "PHP XML support"
+#~ msgstr "PHP XML ondersteuning"
+
+#~ msgid "Site URL"
+#~ msgstr "Website URL"
+
+#~ msgid "Home URL"
+#~ msgstr "Home URL"
+
+#~ msgid "WordPress Version"
+#~ msgstr "WordPress Versie"
+
+#~ msgid "WordPress DB Version"
+#~ msgstr "WordPress Database Versie"
+
+#~ msgid "Multisite"
+#~ msgstr "Multisite"
+
+#~ msgid "Active Theme"
+#~ msgstr "Activeer Thema"
+
+#~ msgid "Please enter a valid email address."
+#~ msgstr "Vul alsjeblieft een geldig e-mailadres in."
+
+#~ msgid "Email with system info is sent to "
+#~ msgstr "E-mail met systeem informatie is verstuurd naar "
+
+#~ msgid "Need help?"
+#~ msgstr "Hulp nodig?"
+
+#~ msgid "Client area"
+#~ msgstr "Klantenomgeving"
+
+#~ msgid "System status"
+#~ msgstr "Systeem status"
+
+#~ msgid "Plugins"
+#~ msgstr "Plugins"
+
+#~ msgid "Themes"
+#~ msgstr "Thema's"
+
+#~ msgid "All"
+#~ msgstr "Alle"
+
+#~ msgid "Installed"
+#~ msgstr "Geïnstalleerd"
+
+#~ msgid "Recommended"
+#~ msgstr "Aanbevolen"
+
+#~ msgid "Installed plugins"
+#~ msgstr "Geïnstalleerde plugins"
+
+#~ msgid "Activate this plugin"
+#~ msgstr "Activeer deze plugin"
+
+#~ msgid "DONATE"
+#~ msgstr "DONEER"
+
+#~ msgid "Recommended plugins"
+#~ msgstr "Aanbevolen plugins"
+
+#~ msgid "Install now"
+#~ msgstr "Installeer nu"
+
+#~ msgid "Try again"
+#~ msgstr "Probeer opnieuw"
+
+#~ msgid "Preview &#8220;%s&#8221;"
+#~ msgstr "Voorbeeld #8220;%s&#8221;"
+
+#~ msgid "Install %s"
+#~ msgstr "Installeer %s"
+
+#~ msgid "Install Now"
+#~ msgstr "Installeer Nu"
+
+#~ msgid "Update to version %s"
+#~ msgstr "Update naar versie %s"
+
+#~ msgid "Update"
+#~ msgstr "Update"
+
+#~ msgid "This theme is already installed and is up to date"
+#~ msgstr "Dit thema is reeds geïnstalleerd en up to date"
+
+#~ msgid "Preview %s"
+#~ msgstr "Voorbeeld %s"
+
+#~ msgid "Preview"
+#~ msgstr "Voorbeeld"
+
+#~ msgid "By %s"
+#~ msgstr "Door %s"
+
+#~ msgid "Details"
+#~ msgstr "Details"
+
+#~ msgid "Already Installed"
+#~ msgstr "Reeds Geïnstalleerd"
+
+#~ msgid "Environment"
+#~ msgstr "Omgeving"
+
+#~ msgid "Active Plugins"
+#~ msgstr "Actieve Plugins"
+
+#~ msgid "Inactive Plugins"
+#~ msgstr "Inactieve Plugins"
+
+#~ msgid "Send to support"
+#~ msgstr "Verstuurd naar ondersteuning"
+
+#~ msgid "Send to custom email &#187;"
+#~ msgstr "Verstuurd naar aangepaste e-mail &#187;"
+
+#~ msgid "Extra settings"
+#~ msgstr "Extra instellingen"
 
 #~ msgid "Show"
-#~ msgstr "Montrer"
+#~ msgstr "Toon"
 
 #~ msgid "Hide"
-#~ msgstr "Cacher"
+#~ msgstr "Verberg"
 
 #~ msgid "The text in the 'From' field"
-#~ msgstr "Modifier le texte pour le champ 'FROM' du courriel"
+#~ msgstr "De tekst in het 'Van' veld"
 
 #~ msgid "This text will be used in the 'FROM' field"
-#~ msgstr "Dans le champ 'FROM', cette adresse e-mail sera utilisée."
+#~ msgstr "Deze tekst zal worden gebruikt in het 'VAN' veld"
 
 #~ msgid "The email address in the 'From' field"
-#~ msgstr "Sélectionner l'adresse e-mail pour le champ 'FROM' du courriel"
+#~ msgstr "Het e-mailadres in het 'Van' veld"
 
 #~ msgid "This email address will be used in the 'From' field."
-#~ msgstr "Dans le champ 'FROM', cette adresse e-mail sera utilisée."
+#~ msgstr "Dit e-mailadres zal worden gebruikt in het 'Van' veld."
 
 #~ msgid ""
 #~ "It’s time to upgrade your <strong>Contact Form plugin</strong> to "
 #~ "<strong>PRO</strong> version"
 #~ msgstr ""
-#~ "Le moment est venu de mettre à jour votre <strong>extension Contact Form</"
-#~ "strong> vers la version <strong>PRO</strong>"
+#~ "Het is tijd om jouw <strong>Contact Formulier plugin</strong> te upgraden "
+#~ "naar de <strong>PRO</strong> versie"
 
 #~ msgid "Go!"
-#~ msgstr "Allez!"
+#~ msgstr "Gaan!"
 
 #~ msgid ""
 #~ "This functionality is available in the Pro version of the plugin. For "
 #~ "more details, please follow the link"
 #~ msgstr ""
-#~ "Cette fonctionalité est disponible dans le version Pro de cette "
-#~ "extension. Pour plus de détails, merci de suivre ce lien"
+#~ "Deze functionaliteit is beschikbaar in de Pro versie van de plugin. Voor "
+#~ "meer details, volg deze link"
 
 #~ msgid "Contact Form Pro"
-#~ msgstr "Formulaire Pro de Contact"
+#~ msgstr "Contact Formulier Pro"
 
 #~ msgid "Switch to new interface"
-#~ msgstr "Basculer vers la nouvelle interface"
+#~ msgstr "Naar de nieuwe interface schakelen"
 
 #~ msgid "Pro plugins"
-#~ msgstr "Extensions Pro"
+#~ msgstr "Pro plugins"
 
 #~ msgid "Activated plugins"
-#~ msgstr "Extensions activées"
+#~ msgstr "Geactiveerde plugins"
 
 #~ msgid "Read more"
-#~ msgstr "Lire la suite"
+#~ msgstr "Lees meer"
 
 #~ msgid "Purchase"
-#~ msgstr "Achetez"
+#~ msgstr "Kopen"
 
 #~ msgid "Free plugins"
-#~ msgstr "Extensions gratuites"
+#~ msgstr "Gratis plugins"
 
 #~ msgid "Install now from wordpress.org"
-#~ msgstr "Installer maintenant depuis wordpress.org"
+#~ msgstr "Nu installeren vanaf wordpress.org"
 
 #~ msgid "Free themes"
-#~ msgstr "Thèmes gratuits"
+#~ msgstr "Gratis thema's"
 
 #~ msgid "Activated theme"
-#~ msgstr "Theme actif"
+#~ msgstr "Geactiveerd thema"
 
 #~ msgid "Customize &#8220;%s&#8221;"
-#~ msgstr "Personnaliser &#8220;%s&#8221;"
+#~ msgstr "Aanpassen &#8220;%s&#8221;"
 
 #~ msgid "Customize"
-#~ msgstr "Personnaliser"
+#~ msgstr "Aanpassen"
 
 #~ msgid "Installed themes"
-#~ msgstr "Thèmes installés"
+#~ msgstr "Geïnstalleerde thema's"
 
 #~ msgid "Recommended themes"
-#~ msgstr "Thèmes recommandés"
+#~ msgstr "Aanbevolen thema's"
 
 #~ msgid "If you have any questions, please contact us via"
-#~ msgstr "Si vous avez des questions, merci de contacter via "
+#~ msgstr "Als je vragen hebt, neem dan met ons contact op via"
 
 #~ msgid "Switch to old interface"
-#~ msgstr "Basculer vers l'ancienne interface"
+#~ msgstr "Naar de oude interface schakelen"
 
 #~ msgid "Contact Form Pro Extra Settings"
-#~ msgstr ""
-#~ "Options supplémentaires de la version Pro pour le formulaire de Contact"
+#~ msgstr "Contact Formulier Pro Extra Instellingen"
 
 #~ msgid "Contact Form Pro | Extra Settings"
-#~ msgstr "Formulaire Pro de Contact | Options supplémentaires"
+#~ msgstr "Contact Formulier Pro | Extra Instellingen"
 
 #~ msgid "Display fields"
-#~ msgstr "Afficher le texte"
+#~ msgstr "Velden weergeven"
 
 #~ msgid "Display tips below the Attachment block"
-#~ msgstr "Afficher les explications après le bloc des pièces jointes"
+#~ msgstr "Tips onder het bijlagen blok weergeven"
 
 #~ msgid "Required fields"
-#~ msgstr "Champs obligatoires"
+#~ msgstr "Vereiste velden"
 
 #~ msgid "Display the asterisk near required fields"
-#~ msgstr "Afficher une étoile à côté des champs obligatoires"
+#~ msgstr "Het sterretje naast vereiste velden weergeven"
 
 #~ msgid "You can attach the following file formats"
-#~ msgstr "Vous pouvez joindre des fichiers aux formats suivants"
+#~ msgstr "Je kan de volgende bestandsformaten bijvoegen"
 
 #~ msgid "Display Attachment tips"
-#~ msgstr "Afficher les explications sur les pièces jointes"
+#~ msgstr "Bijlage tips weergeven"
 
 #~ msgid "Please enter a valid email address. Settings are not saved."
 #~ msgstr ""
-#~ "Merci de saisir une adresse e-mail valide. Les modifications ne sont pas "
-#~ "sauvegardées."
+#~ "Vul alsjeblieft een geldig e-mailadres in. De instellingen zijn niet "
+#~ "opgeslagen."
 
 #~ msgid "E-Mail Address"
-#~ msgstr "Adresse e-mail"
+#~ msgstr "E-mailadres:"
 
-#, fuzzy
 #~ msgid "Thank you for contact."
-#~ msgstr "Merci de nous avoir contacté."
+#~ msgstr "Bedankt voor het opnemen van contact met ons."
 
-#, fuzzy
 #~ msgid "Set a name of user wo will get messages from a contact form."
 #~ msgstr ""
-#~ "Choisir le nom d'utilisateur qui recevra les messages envoyés depuis le "
-#~ "formulaire de contact."
+#~ "Stel een naam in voor de gebruiker die berichten zal ontvangen van het "
+#~ "contactformulier."
 
 #~ msgid "E-Mail Addresse:"
-#~ msgstr "Indirizzo e-mail:"
+#~ msgstr "E-miladres:"

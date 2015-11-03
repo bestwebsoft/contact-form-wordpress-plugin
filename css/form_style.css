@@ -35,6 +35,9 @@
 .cntctfrm_checkbox {
    max-width: 320px;
 }
+.cntctfrm_input.cntctfrm_input_submit {
+	max-width: 100%;
+}
 .cntctfrm_input_captcha {
 	margin: 20px 0;
 }
@@ -53,9 +56,6 @@
 .cntctfrm_contact_attachment_extensions {
 	font-size: 10px !important;
 }
-.cntctfrm_input_submit {
-	padding: 10px 0 0;
-}
 .cntctfrm_contact_form input.cntctfrm_contact_submit {
 	cursor: pointer !important;
 	text-align: center !important;
@@ -69,7 +69,8 @@
 	padding: 5px 0 0;
 }
 .cntctfrm_input,
-.cntctfrm_select {
+.cntctfrm_select,
+.cntctfrm_checkbox {
 	position: relative;
 }
 .cntctfrm_error_text {
@@ -81,4 +82,38 @@
 }
 .cntctfrm_contact_form div {
 	clear: both;
+}
+.cntctfrm_one_column {
+	max-width: 320px;
+	width: 100%;
+}
+.cntctfrm_two_columns {
+	max-width: 650px;
+	width: 100%;
+}
+.cntctfrm_column {
+	position: relative;
+	min-height: 1px;
+	max-width: 320px;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	clear: none !important;
+}
+.cntctfrm_ltr .cntctfrm_column {
+	float: left;
+}
+.cntctfrm_rtl .cntctfrm_column {
+	float: right;
+}
+.cntctfrm_ltr.cntctfrm_two_columns #cntctfrm_first_column,
+.cntctfrm_ltr.cntctfrm_two_columns #cntctfrm_submit_first_column {
+	margin: 0 10px 0 0;
+}
+.cntctfrm_rtl.cntctfrm_two_columns #cntctfrm_first_column,
+.cntctfrm_rtl.cntctfrm_two_columns #cntctfrm_submit_first_column {
+	margin: 0 0 0 10px;
+}
+.cntctfrmpr_field_wrap {
+	margin: 0 0 5px;
 }
