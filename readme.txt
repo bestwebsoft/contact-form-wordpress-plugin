@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: http://bestwebsoft.com/donate/
 Tags: Attachment, add contact form, add contact form add-on, add several contact forms, address form, best contact form, best cf, best contact form add-on, cnotact, conact, contact, contact button, contact form, contact form addon, contact form add-on, contact form parameters, contact form plugin, contact me, contacts, contacts form plugin, contcat, copy, request, send, send copy, several contact forms, contact us form, contactform, custom form, easy contact form, email, email form, file upload, form addons, form register, form registration, free feedback form, free form, free contact form, feedback, feedback form, form, free, forms plugin, forms, insert the shortcode, kontak form, online form, multi, multiple contact forms, multilingual, post feedback, request, send, simple contact form, send copy, send messages, shortcode, web-page feedback, web form, wordpress contact form, wp form, wordpress plugin, wp plugins
 Requires at least: 3.8
-Tested up to: 4.3.1
-Stable tag: 3.95
+Tested up to: 4.4-RC1
+Stable tag: 3.96
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -163,8 +163,16 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 11. Make any of the standard form fields required or not.
 12. Translate your contact form to any language with a simple language customizer.
 13. Receive a copy of the email sent via the contact form.
+14. Divide your contact form fields into columns and change 'Submit' button position.
+15. Re-order contact form fields using drag & drop interface.
 
 == Changelog ==
+
+= V3.96 - 04.12.2015 =
+* Bugfix : The bug with sorting on mobile devices was fixed.
+* Bugfix : XSS vulnerability was removed.
+* Bugfix : The bug with plugin menu duplicating was fixed.
+* Update : The French language file is updated.
 
 = V3.95 - 02.11.2015 =
 * NEW : An ability to sort contact form fields was added.
@@ -594,6 +602,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * Ability to add Contact Form into a post. Ability to adjust displaying of the form via shortcode is added.
 
 == Upgrade Notice ==
+
+= V3.96 =
+The bug with sorting on mobile devices was fixed. XSS vulnerability was removed. The bug with plugin menu duplicating was fixed. The French language file is updated.
 
 = V3.95 =
 An ability to sort contact form fields was added. An ability to displaying contact form in 2 columns. A button for contact form shortcode inserting to the content was added. The Dutch language file is added. The method of the URL obtaining in the attribute "action" of the contact form has been changed. The French language file is updated. Vulnerabilities with `$path_of_upload_file` and `$form_action` was fixed.

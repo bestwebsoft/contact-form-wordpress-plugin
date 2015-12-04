@@ -103,7 +103,6 @@
 	border-right: 1px solid #DFDFDF;
 	min-height: 25px;
 	padding: 2px 10px;
-	text-align: left;
 }
 .cntctfrm_settings_table td.bws_pro_version_tooltip {
 	text-align: center;
@@ -112,6 +111,9 @@
 .cntctfrm_settings_table input[type="file"] {
 	width: 100%;
 }
+.cntctfrm_mobile_title {
+	display: none;
+}
 @media screen and (max-width: 600px) {
 	.cntctfrm_settings_table {
 		width: 100%;
@@ -119,6 +121,17 @@
 	.cntctfrm_settings_table th,
 	.cntctfrm_settings_table td {
 		display: block;
+	}
+	.cntctfrm_settings_table thead,
+	.cntctfrm_settings_table td:empty {
+		display: none;
+	}
+	.cntctfrm_settings_table tr td:first-child {
+		font-weight: bold;
+		font-size: 14px;
+	}
+	.cntctfrm_mobile_title {
+		display: inline;
 	}
 }
 td.cntctfrm_td_top_align {
@@ -189,12 +202,6 @@ td.cntctfrm_td_top_align {
 	background: #e4e4e4;
 	visibility: visible !important;
 }
-.cntctfrm_how_to_use {
-	float: right;
-}
-.rtl .cntctfrm_how_to_use {
-	float: left;
-}
 .cntctfrm_drag_wrap {
 	position: absolute;
 	width: 100%;
@@ -202,4 +209,18 @@ td.cntctfrm_td_top_align {
 	top: 0;
 	left: 0;
 	background: transparent;
+}
+.cntctfrm_how_to_use {
+	float: right;
+}
+.rtl .cntctfrm_how_to_use {
+	float: left;
+}
+@media screen and (max-width: 1220px) {
+	.cntctfrm_how_to_use {
+		float: none;
+	}
+	.cntctfrm_how_to_use > h2 {
+		clear: both;
+	}
 }

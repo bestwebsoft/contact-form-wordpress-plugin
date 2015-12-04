@@ -6,7 +6,7 @@ Description: Plugin for Contact Form.
 Author: BestWebSoft
 Text Domain: contact-form-plugin
 Domain Path: /languages
-Version: 3.95
+Version: 3.96
 Author URI: http://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -33,7 +33,7 @@ License: GPLv2 or later
 */
 if ( ! function_exists( 'cntctfrm_admin_menu' ) ) {
 	function cntctfrm_admin_menu() {
-		bws_add_general_menu( plugin_basename( __FILE__ ) );
+		bws_general_menu();
 		$cntctfrm_settings = add_submenu_page( 'bws_plugins', __( 'Contact Form Settings', 'contact-form-plugin' ), __( 'Contact Form', 'contact-form-plugin' ), 'manage_options', 'contact_form.php', 'cntctfrm_settings_page' );
 		add_action( 'load-' . $cntctfrm_settings, 'cntctfrm_add_tabs' );
 	}
@@ -488,7 +488,7 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 				}				
 			}
 
-			$cntctfrm_layout = ( isset( $_POST['cntctfrm_layout'] ) ) ? (int) $_POST[ 'cntctfrm_layout' ] : 1;
+			$cntctfrm_layout = ( isset( $_POST['cntctfrm_layout'] ) ) ? (int) $_POST['cntctfrm_layout'] : 1;
 
 			$cntctfrm_submit_position = ( isset( $_POST['cntctfrm_submit_position'] ) ) ? stripslashes( esc_html( $_POST['cntctfrm_submit_position'] ) ) : 'left';
 
@@ -822,11 +822,9 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 			$cntctfrm_options = $cntctfrm_option_defaults;
 			update_option( 'cntctfrm_options', $cntctfrm_options );
 			$message = __( 'All plugin settings were restored.', 'contact-form-plugin' );
-		} /* end */
-		?>
+		} /* end */ ?>
 		<div class="wrap">
-			<div class="icon32 icon32-bws" id="icon-options-general"></div>
-			<h2><?php _e( "Contact Form Settings", 'contact-form-plugin' ); ?></h2>
+			<h1><?php _e( "Contact Form Settings", 'contact-form-plugin' ); ?></h1>
 			<ul class="subsubsub cntctfrm_how_to_use">
 				<li><a href="https://docs.google.com/document/d/1qZYPJhkSdVyyM6XO5WfiBcTS2Sa9_9UMn4vS2g48JRY/" target="_blank"><?php _e( 'How to Use Step-by-step Instruction', 'contact-form-plugin' ); ?></a></li>
 			</ul>
@@ -846,27 +844,25 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 				</noscript>
 			<?php } ?>		
 			<div class="updated fade" <?php if ( $message == "" || "" != $error ) echo "style=\"display:none\""; ?>><p><strong><?php echo $message; ?></strong></p></div>
+			<div class="error" <?php if ( "" == $error ) echo 'style="display:none"'; ?>><p><strong><?php echo $error; ?></strong></p></div>
 			<?php bws_show_settings_notice();
 			if ( ! empty( $hide_result['message'] ) ) { ?>
 				<div class="updated fade"><p><strong><?php echo $hide_result['message']; ?></strong></p></div>
 			<?php }
 			if ( ! empty( $notice ) ) { ?>
 				<div class="error"><p><strong><?php _e( 'Notice:', 'contact-form-plugin' ); ?></strong> <?php echo $notice; ?></p></div>			
-			<?php } ?>
-			<div class="error" <?php if ( "" == $error ) echo 'style="display:none"'; ?>><p><strong><?php echo $error; ?></strong></p></div>
-			<?php if ( ! isset( $_GET['action'] ) || 'additional' == $_GET['action'] ) {
+			<?php }
+			if ( ( ! isset( $_GET['action'] ) || 'go_pro' != $_GET['action'] ) && ! isset( $contact_form_multi_active ) && ! isset( $contact_form_multi_pro_active ) ) { ?>
+				<h3 class="nav-tab-wrapper">
+					<span class="nav-tab nav-tab-active"><?php _e( 'NEW_FORM', 'contact-form-plugin' )?></span>
+					<a id="cntctfrm_show_multi_notice" class="nav-tab" target="_new" href="http://bestwebsoft.com/products/contact-form-multi/?k=747ca825fb44711e2d24e40697747bc6&pn=77&v=<?php echo $cntctfrm_plugin_info["Version"]; ?>&wp_v=<?php echo $wp_version; ?>" title="<?php _e( "If you want to create multiple contact forms, please install the Contact Form Multi plugin.", 'contact-form-plugin' ); ?>">+</a>
+				</h3>
+			<?php }
+			if ( ! isset( $_GET['action'] ) || 'additional' == $_GET['action'] ) {
 				if ( isset( $_REQUEST['bws_restore_default'] ) && check_admin_referer( $plugin_basename, 'bws_settings_nonce_name' ) ) {
 					bws_form_restore_default_confirm( $plugin_basename );
-				} else {
-					/* main 'settings' or 'additional' settings page */
-					if ( ! isset( $contact_form_multi_active ) && ! isset( $contact_form_multi_pro_active ) ) { ?>
-						<h2 class="nav-tab-wrapper">
-							<li class="nav-tab  nav-tab-active"><?php _e( 'NEW_FORM', 'contact-form-plugin' )?></li>
-							<a id="cntctfrm_show_multi_notice" class="nav-tab" target="_new" href="http://bestwebsoft.com/products/contact-form-multi/?k=747ca825fb44711e2d24e40697747bc6&pn=77&v=<?php echo $cntctfrm_plugin_info["Version"]; ?>&wp_v=<?php echo $wp_version; ?>" title="<?php _e( "If you want to create multiple contact forms, please install the Contact Form Multi plugin.", 'contact-form-plugin' ); ?>">+</a>
-						</h2>
-					<?php }
-					$form_action = ( ! isset( $_GET['action'] ) ) ? 'admin.php?page=contact_form.php' : 'admin.php?page=contact_form.php&amp;action=' . $_GET['action']; ?>
-					<form id="cntctfrm_settings_form" class="bws_form" method="post" action="<?php echo esc_url( $form_action ); ?>">
+				} else { ?>
+					<form id="cntctfrm_settings_form" class="bws_form" method="post" action="">
 						<div style="margin: 20px 0;">
 							<?php printf( __( "If you would like to add a Contact Form to your page or post, please use %s button", 'contact-form-plugin' ), 
 								'<span class="bws_code"><img style="vertical-align: sub;" src="' . plugins_url( 'bws_menu/images/shortcode-icon.png', __FILE__ ) . '" alt=""/></span>'
@@ -1048,7 +1044,10 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 										<tr valign="top" >
 											<td><?php _e( "Department selectbox", 'contact-form-plugin' ); ?></td>
 											<td class="bws_pro_version"></td>
-											<td class="bws_pro_version"><input disabled="disabled" type="checkbox" name="cntctfrm_required_department_field" value="1"/></td>
+											<td class="bws_pro_version">
+												<label><input disabled="disabled" type="checkbox" name="cntctfrm_required_department_field" value="1" />
+												<span class="cntctfrm_mobile_title"><?php _e( "Required", 'contact-form-plugin' ); ?></span></label>
+											</td>
 											<td class="bws_pro_version"></td>
 											<td class="bws_pro_version"></td>
 											<td class="bws_pro_version"></td>
@@ -1056,11 +1055,23 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 										<?php } ?>
 									<tr valign="top">
 										<td><?php _e( "Name", 'contact-form-plugin' ); ?></td>
-										<td><input type="checkbox" name="cntctfrm_display_name_field" value="1" <?php if ( '1' == $cntctfrm_options['cntctfrm_display_name_field'] ) echo 'checked="checked" '; ?>/></td>
-										<td><input type="checkbox" id="cntctfrm_required_name_field" name="cntctfrm_required_name_field" value="1" <?php if ( '1' == $cntctfrm_options['cntctfrm_required_name_field'] ) echo 'checked="checked" '; ?>/></td>
+										<td>
+											<label><input type="checkbox" name="cntctfrm_display_name_field" value="1" <?php if ( '1' == $cntctfrm_options['cntctfrm_display_name_field'] ) echo 'checked="checked" '; ?>/> 
+											<span class="cntctfrm_mobile_title"><?php _e( "Used", 'contact-form-plugin' ); ?></span></label>
+										</td>
+										<td>
+											<label><input type="checkbox" id="cntctfrm_required_name_field" name="cntctfrm_required_name_field" value="1" <?php if ( '1' == $cntctfrm_options['cntctfrm_required_name_field'] ) echo 'checked="checked" '; ?> />
+											<span class="cntctfrm_mobile_title"><?php _e( "Required", 'contact-form-plugin' ); ?></span></label>
+										</td>
 										<?php if ( ! $bws_hide_premium_options_check ) { ?>
-											<td class="bws_pro_version"><input disabled="disabled" type="checkbox" name="cntctfrmpr_visible_name" value="1" checked="checked" /></td>
-											<td class="bws_pro_version"><input disabled="disabled" type="checkbox" name="cntctfrmpr_disabled_name" value="1" /></td>
+											<td class="bws_pro_version">
+												<label><input disabled="disabled" type="checkbox" name="cntctfrmpr_visible_name" value="1" checked="checked" /> 
+												<span class="cntctfrm_mobile_title"><?php _e( "Visible", 'contact-form-plugin' ); ?></span></label>
+											</td>
+											<td class="bws_pro_version">
+												<label><input disabled="disabled" type="checkbox" name="cntctfrmpr_disabled_name" value="1" /> 
+												<span class="cntctfrm_mobile_title"><?php _e( "Disabled for editing", 'contact-form-plugin' ); ?></span></label>
+											</td>
 											<td class="bws_pro_version">
 												<input disabled="disabled" type="checkbox" name="cntctfrmpr_default_name" value="1" />
 												<?php _e( "Use User's name as a default value if the user is logged in.", 'contact-form-plugin' ); ?><br />
@@ -1071,17 +1082,34 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 									<?php if ( ! $bws_hide_premium_options_check ) { ?>
 										<tr valign="top">
 											<td><?php _e( "Location selectbox", 'contact-form-plugin' ); ?></td>
-											<td class="bws_pro_version"><input disabled="disabled" type="checkbox" name="cntctfrmpr_display_selectbox" value="1" /></td>
-											<td class="bws_pro_version"><input disabled="disabled" type="checkbox" name="cntctfrmpr_required_selectbox" value="1" /></td>
+											<td class="bws_pro_version">
+												<label><input disabled="disabled" type="checkbox" name="cntctfrmpr_display_selectbox" value="1" /> 
+												<span class="cntctfrm_mobile_title"><?php _e( "Used", 'contact-form-plugin' ); ?></span></label>
+											</td>
+											<td class="bws_pro_version">
+												<label><input disabled="disabled" type="checkbox" name="cntctfrmpr_required_selectbox" value="1" />
+												<span class="cntctfrm_mobile_title"><?php _e( "Required", 'contact-form-plugin' ); ?></span></label>
+											</td>
 											<td class="bws_pro_version"></td>
 											<td class="bws_pro_version"></td>
-											<td class="bws_pro_version"><input disabled="disabled" type="file" name="cntctfrmpr_default_location"></td>
+											<td class="bws_pro_version">
+												<label>
+													<span class="cntctfrmpr_mobile_title"><?php _e( "Field's default value", 'contact-form-plugin' ); ?></span> 
+													<input disabled="disabled" type="file" name="cntctfrmpr_default_location" />
+												</label>
+											</td>
 										</tr>
 									<?php } ?>
 									<tr valign="top">
 										<td><?php _e( "Address", 'contact-form-plugin' ); ?></td>
-										<td><input type="checkbox" id="cntctfrm_display_address_field" name="cntctfrm_display_address_field" value="1" <?php if ( '1' == $cntctfrm_options['cntctfrm_display_address_field'] ) echo 'checked="checked" '; ?>/></td>
-										<td><input type="checkbox" id="cntctfrm_required_address_field" name="cntctfrm_required_address_field" value="1" <?php if ( '1' == $cntctfrm_options['cntctfrm_required_address_field'] ) echo 'checked="checked" '; ?>/></td>
+										<td>
+											<label><input type="checkbox" id="cntctfrm_display_address_field" name="cntctfrm_display_address_field" value="1" <?php if ( '1' == $cntctfrm_options['cntctfrm_display_address_field'] ) echo 'checked="checked" '; ?>/> 
+											<span class="cntctfrm_mobile_title"><?php _e( "Used", 'contact-form-plugin' ); ?></span></label>
+										</td>
+										<td>
+											<label><input type="checkbox" id="cntctfrm_required_address_field" name="cntctfrm_required_address_field" value="1" <?php if ( '1' == $cntctfrm_options['cntctfrm_required_address_field'] ) echo 'checked="checked" '; ?>/>
+											<span class="cntctfrm_mobile_title"><?php _e( "Required", 'contact-form-plugin' ); ?></span></label>
+										</td>
 										<?php if ( ! $bws_hide_premium_options_check ) { ?>
 											<td></td>
 											<td></td>
@@ -1091,10 +1119,19 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 									<tr valign="top">
 										<td><?php _e( "Email Address", 'contact-form-plugin' ); ?></td>
 										<td></td>
-										<td><input type="checkbox" id="cntctfrm_required_email_field" name="cntctfrm_required_email_field" value="1" <?php if ( '1' == $cntctfrm_options['cntctfrm_required_email_field'] ) echo 'checked="checked" '; ?>/></td>
+										<td>
+											<label><input type="checkbox" id="cntctfrm_required_email_field" name="cntctfrm_required_email_field" value="1" <?php if ( '1' == $cntctfrm_options['cntctfrm_required_email_field'] ) echo 'checked="checked" '; ?>/>
+											<span class="cntctfrm_mobile_title"><?php _e( "Required", 'contact-form-plugin' ); ?></span></label>
+										</td>
 										<?php if ( ! $bws_hide_premium_options_check ) { ?>
-											<td class="bws_pro_version"><input disabled="disabled" type="checkbox" name="cntctfrmpr_visible_email" value="1" checked="checked" /></td>
-											<td class="bws_pro_version"><input disabled="disabled" type="checkbox" name="cntctfrmpr_disabled_email" value="1" /></td>
+											<td class="bws_pro_version">
+												<label><input disabled="disabled" type="checkbox" name="cntctfrmpr_visible_email" value="1" checked="checked" /> 
+												<span class="cntctfrm_mobile_title"><?php _e( "Visible", 'contact-form-plugin' ); ?></span></label>
+											</td>
+											<td class="bws_pro_version">
+												<label><input disabled="disabled" type="checkbox" name="cntctfrmpr_disabled_email" value="1" /> 
+												<span class="cntctfrm_mobile_title"><?php _e( "Disabled for editing", 'contact-form-plugin' ); ?></span></label>
+											</td>
 											<td class="bws_pro_version">
 												<input disabled="disabled" type="checkbox" name="cntctfrmpr_default_email" value="1" />
 													<?php _e( "Use User's email as a default value if the user is logged in.", 'contact-form-plugin' ); ?><br />
@@ -1104,8 +1141,14 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 									</tr>
 									<tr valign="top">
 										<td><?php _e( "Phone number", 'contact-form-plugin' ); ?></td>
-										<td><input type="checkbox" id="cntctfrm_display_phone_field" name="cntctfrm_display_phone_field" value="1" <?php if ( '1' == $cntctfrm_options['cntctfrm_display_phone_field'] ) echo 'checked="checked" '; ?>/></td>
-										<td><input type="checkbox" id="cntctfrm_required_phone_field" name="cntctfrm_required_phone_field" value="1" <?php if ( '1' == $cntctfrm_options['cntctfrm_required_phone_field'] ) echo 'checked="checked" '; ?>/></td>
+										<td>
+											<label><input type="checkbox" id="cntctfrm_display_phone_field" name="cntctfrm_display_phone_field" value="1" <?php if ( '1' == $cntctfrm_options['cntctfrm_display_phone_field'] ) echo 'checked="checked" '; ?>/> 
+											<span class="cntctfrm_mobile_title"><?php _e( "Used", 'contact-form-plugin' ); ?></span></label>
+										</td>
+										<td>
+											<label><input type="checkbox" id="cntctfrm_required_phone_field" name="cntctfrm_required_phone_field" value="1" <?php if ( '1' == $cntctfrm_options['cntctfrm_required_phone_field'] ) echo 'checked="checked" '; ?>/>
+											<span class="cntctfrm_mobile_title"><?php _e( "Required", 'contact-form-plugin' ); ?></span></label>
+										</td>
 										<?php if ( ! $bws_hide_premium_options_check ) { ?>
 											<td></td>
 											<td></td>
@@ -1115,21 +1158,49 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 									<tr valign="top">
 										<td><?php _e( "Subject", 'contact-form-plugin' ); ?></td>
 										<td></td>
-										<td><input type="checkbox" id="cntctfrm_required_subject_field" name="cntctfrm_required_subject_field" value="1" <?php if ( '1' == $cntctfrm_options['cntctfrm_required_subject_field'] ) echo 'checked="checked" '; ?>/></td>
+										<td>
+											<label><input type="checkbox" id="cntctfrm_required_subject_field" name="cntctfrm_required_subject_field" value="1" <?php if ( '1' == $cntctfrm_options['cntctfrm_required_subject_field'] ) echo 'checked="checked" '; ?>/>
+											<span class="cntctfrm_mobile_title"><?php _e( "Required", 'contact-form-plugin' ); ?></span></label>
+										</td>
 										<?php if ( ! $bws_hide_premium_options_check ) { ?>
-											<td class="bws_pro_version"><input class="subject" disabled="disabled" type="checkbox" name="cntctfrmpr_visible_subject" value="1" checked="checked" /></td>
-											<td class="bws_pro_version"><input class="subject" disabled="disabled" type="checkbox" name="cntctfrmpr_disabled_subject" value="1" /></td>
-											<td class="bws_pro_version"><input class="subject" disabled="disabled" type="text" name="cntctfrmpr_default_subject" value="" /></td>
+											<td class="bws_pro_version">
+												<label><input class="subject" disabled="disabled" type="checkbox" name="cntctfrmpr_visible_subject" value="1" checked="checked" /> 
+												<span class="cntctfrm_mobile_title"><?php _e( "Visible", 'contact-form-plugin' ); ?></span></label>
+											</td>
+											<td class="bws_pro_version">
+												<label><input class="subject" disabled="disabled" type="checkbox" name="cntctfrmpr_disabled_subject" value="1" /> 
+												<span class="cntctfrm_mobile_title"><?php _e( "Disabled for editing", 'contact-form-plugin' ); ?></span></label>
+											</td>
+											<td class="bws_pro_version"> 
+												<label>
+													<span class="cntctfrmpr_mobile_title"><?php _e( "Field's default value", 'contact-form-plugin' ); ?></span> 
+													<input class="subject" disabled="disabled" type="text" name="cntctfrmpr_default_subject" value="" /> 
+												</label>
+											</td>
 										<?php } ?>
 									</tr>
 									<tr valign="top">
 										<td><?php _e( "Message", 'contact-form-plugin' ); ?></td>
 										<td></td>
-										<td><input type="checkbox" id="cntctfrm_required_message_field" name="cntctfrm_required_message_field" value="1" <?php if ( '1' == $cntctfrm_options['cntctfrm_required_message_field'] ) echo 'checked="checked" '; ?>/></td>
+										<td>
+											<label><input type="checkbox" id="cntctfrm_required_message_field" name="cntctfrm_required_message_field" value="1" <?php if ( '1' == $cntctfrm_options['cntctfrm_required_message_field'] ) echo 'checked="checked" '; ?>/>
+											<span class="cntctfrm_mobile_title"><?php _e( "Required", 'contact-form-plugin' ); ?></span></label>
+										</td>
 										<?php if ( ! $bws_hide_premium_options_check ) { ?>
-											<td class="bws_pro_version"><input class="message" disabled="disabled" type="checkbox" name="cntctfrmpr_visible_message" value="1" checked="checked" /></td>
-											<td class="bws_pro_version"><input class="message" disabled="disabled" disabled="disabled" type="checkbox" name="cntctfrmpr_disabled_message" value="1" /></td>
-											<td class="bws_pro_version"><input class="message" disabled="disabled" type="text" name="cntctfrmpr_default_message" value="" /></td>
+											<td class="bws_pro_version">
+												<label><input class="message" disabled="disabled" type="checkbox" name="cntctfrmpr_visible_message" value="1" checked="checked" /> 
+												<span class="cntctfrm_mobile_title"><?php _e( "Visible", 'contact-form-plugin' ); ?></span></label>
+											</td>
+											<td class="bws_pro_version">
+												<label><input class="message" disabled="disabled" disabled="disabled" type="checkbox" name="cntctfrmpr_disabled_message" value="1" /> 
+												<span class="cntctfrm_mobile_title"><?php _e( "Disabled for editing", 'contact-form-plugin' ); ?></span></label>
+											</td>
+											<td class="bws_pro_version">
+												<label>
+													<span class="cntctfrmpr_mobile_title"><?php _e( "Field's default value", 'contact-form-plugin' ); ?></span> 
+													<input class="message" disabled="disabled" type="text" name="cntctfrmpr_default_message" value="" />
+												</label>
+											</td>
 										<?php } ?>
 									</tr>
 									<?php if ( ! $bws_hide_premium_options_check ) { ?>
@@ -1155,7 +1226,10 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 												<div class="bws_hidden_help_text" style="min-width: 200px;"><?php echo __( "Users can attach the following file formats", 'contact-form-plugin' ) . ": html, txt, css, gif, png, jpeg, jpg, tiff, bmp, ai, eps, ps, csv, rtf, pdf, doc, docx, xls, xlsx, zip, rar, wav, mp3, ppt, aar, sce"; ?></div>
 											</div>
 										</td>
-										<td><input type="checkbox" id="cntctfrm_attachment" name="cntctfrm_attachment" value="1" <?php if ( '1' == $cntctfrm_options['cntctfrm_attachment'] ) echo 'checked="checked" '; ?>/></td>
+										<td>
+											<label><input type="checkbox" id="cntctfrm_attachment" name="cntctfrm_attachment" value="1" <?php if ( '1' == $cntctfrm_options['cntctfrm_attachment'] ) echo 'checked="checked" '; ?>/> 
+											<span class="cntctfrm_mobile_title"><?php _e( "Used", 'contact-form-plugin' ); ?></span></label>
+										</td>
 										<td></td>
 										<?php if ( ! $bws_hide_premium_options_check ) { ?>
 											<td></td>
@@ -1168,7 +1242,7 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 							<table class="form-table" style="width:auto;">
 								<tr valign="top">
 									<th scope="row"><?php _e( "Add to the form", 'contact-form-plugin' ); ?></th>
-									<td colspan="3">
+									<td colspan="3"><fieldset>
 										<div>
 											<label>
 												<input type="checkbox" id="cntctfrm_attachment_explanations" name="cntctfrm_attachment_explanations" value="1" <?php if ( '1' == $cntctfrm_options['cntctfrm_attachment_explanations'] && '1' == $cntctfrm_options['cntctfrm_attachment'] ) echo 'checked="checked" '; ?>/>
@@ -1227,7 +1301,7 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 												</div>
 											</div>
 										<?php } ?>
-									</td>
+									</fieldset></td>
 								</tr>
 								<tr valign="top">
 									<th scope="row"><?php _e( "Delete an attachment file from the server after the email is sent", 'contact-form-plugin' ); ?> </th>
@@ -1306,9 +1380,9 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 												<input type="text" maxlength="250" name="cntctfrm_form_error[en]" value="<?php echo $cntctfrm_options['cntctfrm_form_error']['en']; ?>" /> <span class="bws_info"><?php _e( "Error message for the whole form", 'contact-form-plugin' ); ?></span><br />
 											</div>
 											<?php if ( ! isset( $contact_form_multi_active ) && ! isset( $contact_form_multi_pro_active ) ) { ?>
-												<span class="bws_info" style="margin-left: 5px;"><?php _e( "Use shortcode", 'contact-form-plugin' ); ?> <span class="cntctfrm_shortcode">[bestwebsoft_contact_form lang=en]</span> <?php _e( "or", 'contact-form-plugin' ) ?> <span class="cntctfrm_shortcode">[bestwebsoft_contact_form]</span> <?php _e( "for this language", 'contact-form-plugin' ); ?></span>
+												<span class="bws_info cntctfrm_shortcode_for_language" style="margin-left: 5px;"><?php _e( "Use shortcode", 'contact-form-plugin' ); ?> <span class="cntctfrm_shortcode">[bestwebsoft_contact_form lang=en]</span> <?php _e( "or", 'contact-form-plugin' ) ?> <span class="cntctfrm_shortcode">[bestwebsoft_contact_form]</span> <?php _e( "for this language", 'contact-form-plugin' ); ?></span>
 											<?php } else { ?>
-												<span class="bws_info" style="margin-left: 5px;"><?php _e( "Use shortcode", 'contact-form-plugin' ); ?> <span class="cntctfrm_shortcode">[bestwebsoft_contact_form lang=en id=<?php echo $_SESSION['cntctfrmmlt_id_form']; ?>]</span> <?php _e( "or", 'contact-form-plugin' ); ?> <span class="cntctfrm_shortcode">[bestwebsoft_contact_form id=<?php echo $_SESSION['cntctfrmmlt_id_form']; ?>]</span> <?php _e( "for this language", 'contact-form-plugin' ); ?></span>
+												<span class="bws_info cntctfrm_shortcode_for_language" style="margin-left: 5px;"><?php _e( "Use shortcode", 'contact-form-plugin' ); ?> <span class="cntctfrm_shortcode">[bestwebsoft_contact_form lang=en id=<?php echo $_SESSION['cntctfrmmlt_id_form']; ?>]</span> <?php _e( "or", 'contact-form-plugin' ); ?> <span class="cntctfrm_shortcode">[bestwebsoft_contact_form id=<?php echo $_SESSION['cntctfrmmlt_id_form']; ?>]</span> <?php _e( "for this language", 'contact-form-plugin' ); ?></span>
 											<?php } ?>
 										</div>
 										<?php if ( ! empty( $cntctfrm_options['cntctfrm_language'] ) ) {
@@ -1340,9 +1414,9 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 														<input type="text" maxlength="250" name="cntctfrm_form_error[<?php echo $val; ?>]" value="<?php if ( isset( $cntctfrm_options['cntctfrm_form_error'][ $val ] ) ) echo $cntctfrm_options['cntctfrm_form_error'][ $val ]; ?>" /> <span class="bws_info"><?php _e( "Error message for the whole form", 'contact-form-plugin' ); ?></span><br />
 													</div>
 													<?php if ( ! isset( $contact_form_multi_active ) && ! isset( $contact_form_multi_pro_active ) ) { ?>
-														<span class="bws_info" style="margin-left: 5px;"><?php _e( "Use shortcode", 'contact-form-plugin' ); ?> <span class="cntctfrm_shortcode">[bestwebsoft_contact_form lang=<?php echo $val; ?>]</span> <?php _e( "for this language", 'contact-form-plugin' ); ?></span>
+														<span class="bws_info cntctfrm_shortcode_for_language" style="margin-left: 5px;"><?php _e( "Use shortcode", 'contact-form-plugin' ); ?> <span class="cntctfrm_shortcode">[bestwebsoft_contact_form lang=<?php echo $val; ?>]</span> <?php _e( "for this language", 'contact-form-plugin' ); ?></span>
 													<?php } else { ?>
-														<span class="bws_info" style="margin-left: 5px;"><?php _e( "Use shortcode", 'contact-form-plugin' ); ?> <span class="cntctfrm_shortcode">[bestwebsoft_contact_form lang=<?php $val . ' id=' . $_SESSION['cntctfrmmlt_id_form']; ?>]</span> <?php _e( "for this language", 'contact-form-plugin' ); ?></span>
+														<span class="bws_info cntctfrm_shortcode_for_language" style="margin-left: 5px;"><?php _e( "Use shortcode", 'contact-form-plugin' ); ?> <span class="cntctfrm_shortcode">[bestwebsoft_contact_form lang=<?php $val . ' id=' . $_SESSION['cntctfrmmlt_id_form']; ?>]</span> <?php _e( "for this language", 'contact-form-plugin' ); ?></span>
 													<?php } ?>
 												</div>
 											<?php }
@@ -1369,9 +1443,9 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 										<div class="cntctfrm_language_tab cntctfrm_tab_en" style=" padding: 5px 10px 5px 5px;">
 											<input type="text" maxlength="250" name="cntctfrm_thank_text[en]" value="<?php echo $cntctfrm_options['cntctfrm_thank_text']['en']; ?>" /> <span class="bws_info"><?php _e( "Text", 'contact-form-plugin' ); ?></span><br />
 											<?php if ( ! isset( $contact_form_multi_active ) && ! isset( $contact_form_multi_pro_active ) ) { ?>
-												<span class="bws_info"><?php _e( "Use shortcode", 'contact-form-plugin' ); ?> <span class="cntctfrm_shortcode">[bestwebsoft_contact_form lang=en]</span> <?php _e( "or", 'contact-form-plugin' ); ?> <span class="cntctfrm_shortcode">[bestwebsoft_contact_form]</span> <?php _e( "for this language", 'contact-form-plugin' ); ?></span>
+												<span class="bws_info cntctfrm_shortcode_for_language"><?php _e( "Use shortcode", 'contact-form-plugin' ); ?> <span class="cntctfrm_shortcode">[bestwebsoft_contact_form lang=en]</span> <?php _e( "or", 'contact-form-plugin' ); ?> <span class="cntctfrm_shortcode">[bestwebsoft_contact_form]</span> <?php _e( "for this language", 'contact-form-plugin' ); ?></span>
 											<?php } else { ?>
-												<span class="bws_info"><?php _e( "Use shortcode", 'contact-form-plugin' ); ?> <span class="cntctfrm_shortcode">[bestwebsoft_contact_form lang=en id=<?php echo $_SESSION['cntctfrmmlt_id_form']; ?>]</span> <?php _e( "or", 'contact-form-plugin' ); ?> <span class="cntctfrm_shortcode">[bestwebsoft_contact_form id=<?php echo $_SESSION['cntctfrmmlt_id_form']; ?>]</span> <?php _e( "for this language", 'contact-form-plugin' ); ?></span>
+												<span class="bws_info cntctfrm_shortcode_for_language"><?php _e( "Use shortcode", 'contact-form-plugin' ); ?> <span class="cntctfrm_shortcode">[bestwebsoft_contact_form lang=en id=<?php echo $_SESSION['cntctfrmmlt_id_form']; ?>]</span> <?php _e( "or", 'contact-form-plugin' ); ?> <span class="cntctfrm_shortcode">[bestwebsoft_contact_form id=<?php echo $_SESSION['cntctfrmmlt_id_form']; ?>]</span> <?php _e( "for this language", 'contact-form-plugin' ); ?></span>
 											<?php } ?>
 										</div>
 										<?php if ( ! empty( $cntctfrm_options['cntctfrm_language'] ) ) {
@@ -1379,9 +1453,9 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 												<div class="cntctfrm_language_tab hidden cntctfrm_tab_<?php echo $val; ?>" style=" padding: 5px 10px 5px 5px;">
 													<label><input type="text" maxlength="250" name="cntctfrm_thank_text[<?php echo $val; ?>]" value="<?php if ( isset( $cntctfrm_options['cntctfrm_thank_text'][ $val ] ) ) echo $cntctfrm_options['cntctfrm_thank_text'][ $val ]; ?>" /> <span class="bws_info"><?php _e( "Text", 'contact-form-plugin' ); ?></span></label><br />
 													<?php if ( ! isset( $contact_form_multi_active ) && ! isset( $contact_form_multi_pro_active ) ) { ?>
-														<span class="bws_info"><?php _e( "Use shortcode", 'contact-form-plugin' ); ?> <span class="cntctfrm_shortcode">[bestwebsoft_contact_form lang=<?php echo $val; ?>]</span> <?php _e( "for this language", 'contact-form-plugin' ); ?></span>
+														<span class="bws_info cntctfrm_shortcode_for_language"><?php _e( "Use shortcode", 'contact-form-plugin' ); ?> <span class="cntctfrm_shortcode">[bestwebsoft_contact_form lang=<?php echo $val; ?>]</span> <?php _e( "for this language", 'contact-form-plugin' ); ?></span>
 													<?php } else { ?>
-														<span class="bws_info"><?php _e( "Use shortcode", 'contact-form-plugin' ); ?> <span class="cntctfrm_shortcode">[bestwebsoft_contact_form lang=<?php echo $val . ' id=' . $_SESSION['cntctfrmmlt_id_form']; ?>]</span> <?php _e( "for this language", 'contact-form-plugin' ); ?></span>
+														<span class="bws_info cntctfrm_shortcode_for_language"><?php _e( "Use shortcode", 'contact-form-plugin' ); ?> <span class="cntctfrm_shortcode">[bestwebsoft_contact_form lang=<?php echo $val . ' id=' . $_SESSION['cntctfrmmlt_id_form']; ?>]</span> <?php _e( "for this language", 'contact-form-plugin' ); ?></span>
 													<?php } ?>
 												</div>
 											<?php }
@@ -1452,14 +1526,7 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 							</p>
 						</div>
 					</noscript>
-					<?php if ( ! isset( $contact_form_multi_active ) && ! isset( $contact_form_multi_pro_active ) ) { ?>
-						<h2 class="nav-tab-wrapper">
-							<li class="nav-tab  nav-tab-active"><?php _e( 'NEW_FORM', 'contact-form-plugin' )?></li>
-							<a id="cntctfrm_show_multi_notice" class="nav-tab" target="_new" href="http://bestwebsoft.com/products/contact-form-multi/?k=747ca825fb44711e2d24e40697747bc6&pn=77&v=<?php echo $cntctfrm_plugin_info["Version"]; ?>&wp_v=<?php echo $wp_version; ?>" title="<?php _e( "If you want to create multiple contact forms, please install the Contact Form Multi plugin.", 'contact-form-plugin' ); ?>">+</a>
-						</h2>
-					<?php } ?>
-					<div class="clear"></div>
-					<form id="cntctfrm_settings_form" class="bws_form" method="post" action="admin.php?page=contact_form.php&action=appearance">
+					<form id="cntctfrm_settings_form" class="bws_form" method="post" action="">
 						<div id="cntctfrm_appearance_wrap" class="cntctfrm_appearance_<?php echo is_rtl() ? 'rtl' : 'ltr'; ?>">
 							<div id="<?php echo is_rtl() ? 'cntctfrm_right_table' : 'cntctfrm_left_table'; ?>">
 								<table class="form-table" style="width:auto;">
@@ -1800,26 +1867,22 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 																 ( is_plugin_active( 'google-captcha/google-captcha.php' ) && ( isset( $gglcptch_options ) && 1 == $gglcptch_options['contact_form'] ) ) ||
 																 ( is_plugin_active( 'google-captcha-pro/google-captcha-pro.php' ) && ( isset( $gglcptchpr_options ) && 1 == $gglcptchpr_options['contact_form'] ) ) ) { 
 
-																	$cntctfrm_captcha_label = $cntctfrm_captcha_required_symbol = '';											
+																	$cntctfrm_captcha_label = $cntctfrm_captcha_required_symbol = '';	
 																	if ( is_plugin_active( 'captcha/captcha.php' ) && ( isset( $cptch_options ) && 1 == $cptch_options['cptch_contact_form'] ) ) {
 																		$cntctfrm_captcha_label = $cptch_options['cptch_label_form'];
 																		$cntctfrm_captcha_required_symbol = sprintf( ' <span class="required">%s</span>', ( isset( $cptch_options['cptch_required_symbol'] ) ) ? $cptch_options['cptch_required_symbol'] : '' );
-																	}
-																	if ( is_plugin_active( 'captcha-plus/captcha-plus.php' ) && ( isset( $cptchpls_options ) && 1 == $cptchpls_options['cptchpls_contact_form'] ) ) {
-																		$cntctfrm_captcha_label = $cptchpls_options['cptch_label_form'];
-																		$cntctfrm_captcha_required_symbol = sprintf( ' <span class="required">%s</span>', ( isset( $cptchpls_options['cptch_required_symbol'] ) ) ? $cptchpls_options['cptch_required_symbol'] : '' );
-																	}	
-																	if ( is_plugin_active( 'captcha-pro/captcha_pro.php' ) && ( isset( $cptchpr_options ) && 1 == $cptchpr_options['cptchpr_contact_form'] ) ) {
-																		$cntctfrm_captcha_label = $cptchpr_options['cptch_label_form'];
-																		$cntctfrm_captcha_required_symbol = sprintf( ' <span class="required">%s</span>', ( isset( $cptchpr_options['cptch_required_symbol'] ) ) ? $cptchpr_options['cptch_required_symbol'] : '' );
+																	} elseif ( is_plugin_active( 'captcha-plus/captcha-plus.php' ) && ( isset( $cptchpls_options ) && 1 == $cptchpls_options['cptchpls_contact_form'] ) ) {
+																		$cntctfrm_captcha_label = $cptchpls_options['cptchpls_label_form'];
+																		$cntctfrm_captcha_required_symbol = sprintf( ' <span class="required">%s</span>', ( isset( $cptchpls_options['cptchpls_required_symbol'] ) ) ? $cptchpls_options['cptchpls_required_symbol'] : '' );
+																	} elseif ( is_plugin_active( 'captcha-pro/captcha_pro.php' ) && ( isset( $cptchpr_options ) && 1 == $cptchpr_options['cptchpr_contact_form'] ) ) {
+																		$cntctfrm_captcha_label = $cptchpr_options['cptchpr_label_form'];
+																		$cntctfrm_captcha_required_symbol = sprintf( ' <span class="required">%s</span>', ( isset( $cptchpr_options['cptchpr_required_symbol'] ) ) ? $cptchpr_options['cptchpr_required_symbol'] : '' );
 																	}
 																	if ( ! empty( $cntctfrm_captcha_label ) ) {
 																		$cntctfrm_display_captcha_label = sprintf( '%1$s%2$s', $cntctfrm_captcha_label, $cntctfrm_captcha_required_symbol );
 																	} else {
 																		$cntctfrm_display_captcha_label = '';
-																	}
-
-																 ?>
+																	} ?>
 																	<li class="cntctfrm_field_wrap">
 																		<div class="cntctfrm_label cntctfrm_label_captcha">
 																			<label><?php echo $cntctfrm_display_captcha_label; ?></label>
@@ -1933,7 +1996,7 @@ if ( ! function_exists( 'cntctfrm_display_form' ) ) {
 			}
 		}
 
-		$page_url = add_query_arg( array() ) . '#cntctfrm_contact_form';
+		$page_url = esc_url( add_query_arg( array() ) . '#cntctfrm_contact_form' );
 
 		/* If contact form submited */
 
@@ -2743,6 +2806,9 @@ if ( ! function_exists ( 'cntctfrm_admin_head' ) ) {
 				'cntctfrm_confirm_text'  => __( 'Are you sure that you want to delete this language data?', 'contact-form-plugin' ) 
 			);
 
+			if ( wp_is_mobile() )
+				wp_enqueue_script( 'jquery-touch-punch' );
+
 			wp_enqueue_script( 'cntctfrm_script', plugins_url( 'js/script.js', __FILE__ ), array( 'jquery', 'jquery-ui-sortable' ) );
 			wp_localize_script( 'cntctfrm_script', 'cntctfrm_ajax', $script_vars );
 
@@ -2771,7 +2837,7 @@ if ( ! function_exists ( 'cntctfrm_admin_head' ) ) {
 					),
 					'position' => array( 
 						'edge' 		=> 'top',
-						'align' 	=> 'left',
+						'align' 	=> is_rtl() ? 'right' : 'left',
 					),
 				);
 				bws_add_tooltip_in_admin( $tooltip_args );
@@ -3095,13 +3161,11 @@ if ( ! function_exists ( 'cntctfrm_shortcode_button_content' ) ) {
 if ( ! function_exists( 'cntctfrm_add_tabs' ) ) {
 	function cntctfrm_add_tabs() {
 		$screen = get_current_screen();
-		if ( isset( $_GET['page'] ) && $_GET['page'] == 'contact_form.php' ) {
-			$args = array(
-				'id' 			=> 'cntctfrm',
-				'section' 		=> '200538909'
-			);
-			bws_help_tab( $screen, $args );
-		}
+		$args = array(
+			'id' 			=> 'cntctfrm',
+			'section' 		=> '200538909'
+		);
+		bws_help_tab( $screen, $args );
 	}
 }
 

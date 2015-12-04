@@ -8,6 +8,9 @@
 .rtl .cntctfrm_contact_form * {
 	text-align: right !important;
 }
+.cntctfrm_contact_form .cntctfrm_contact_submit {
+	text-align: center !important;
+}
 .cntctfrm_contact_form p,
 .widget .cntctfrm_contact_form p {
 	margin: 0 !important;

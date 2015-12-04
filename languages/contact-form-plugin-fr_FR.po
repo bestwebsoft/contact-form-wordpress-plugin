@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Contact Form\n"
+"Project-Id-Version: contact-form-plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-02 17:11+0300\n"
-"PO-Revision-Date: 2015-11-02 17:11+0300\n"
+"POT-Creation-Date: 2015-11-26 17:58+0300\n"
+"PO-Revision-Date: 2015-11-26 17:58+0300\n"
 "Last-Translator: Luc Capronnier <lcapronnier@yahoo.com>\n"
 "Language-Team: Luc Capronnier <lcapronnier@yahoo.com>\n"
 "Language: fr_FR\n"
@@ -18,39 +18,39 @@ msgstr ""
 "X-Generator: Poedit 1.5.4\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: contact_form.php:37 contact_form.php:821
+#: contact_form.php:37 contact_form.php:827
 msgid "Contact Form Settings"
-msgstr "Options du formulaire de Contact"
+msgstr "Options du formulaire de contact"
 
 #: contact_form.php:37
 msgid "Contact Form"
 msgstr "Formulaire de contact"
 
-#: contact_form.php:165 contact_form.php:1277 contact_form.php:1311
+#: contact_form.php:165 contact_form.php:1281 contact_form.php:1315
 msgid "Name:"
 msgstr "Nom&nbsp;:"
 
-#: contact_form.php:166 contact_form.php:1278 contact_form.php:1312
+#: contact_form.php:166 contact_form.php:1282 contact_form.php:1316
 msgid "Address:"
 msgstr "Adresse&nbsp;:"
 
-#: contact_form.php:167 contact_form.php:1279 contact_form.php:1313
+#: contact_form.php:167 contact_form.php:1283 contact_form.php:1317
 msgid "Email Address:"
 msgstr "Adresse e-mail&nbsp;:"
 
-#: contact_form.php:168 contact_form.php:1280 contact_form.php:1314
+#: contact_form.php:168 contact_form.php:1284 contact_form.php:1318
 msgid "Phone number:"
 msgstr "Téléphone&nbsp;:"
 
-#: contact_form.php:169 contact_form.php:1281 contact_form.php:1315
+#: contact_form.php:169 contact_form.php:1285 contact_form.php:1319
 msgid "Subject:"
 msgstr "Sujet&nbsp;:"
 
-#: contact_form.php:170 contact_form.php:1282 contact_form.php:1316
+#: contact_form.php:170 contact_form.php:1286 contact_form.php:1320
 msgid "Message:"
 msgstr "Message&nbsp;:"
 
-#: contact_form.php:171 contact_form.php:1283 contact_form.php:1317
+#: contact_form.php:171 contact_form.php:1287 contact_form.php:1321
 msgid "Attachment:"
 msgstr "Pièce jointe&nbsp;:"
 
@@ -60,15 +60,15 @@ msgid ""
 "EPS, PS, CSV, RTF, PDF, DOC, DOCX, XLS, XLSX, ZIP, RAR, WAV, MP3, PPT. Max "
 "file size: 2MB"
 msgstr ""
-"Types de fichiers autorisés:  HTML, TXT, CSS, GIF, PNG, JPEG, JPG, TIFF, "
-"BMP, AI, EPS, PS, CSV, RTF, PDF, DOC, DOCX, XLS, XLSX, ZIP, RAR, WAV, MP3, "
-"PPT. Taille maximum 2MB"
+"Types de fichiers autorisés&nbsp;:  HTML, TXT, CSS, GIF, PNG, JPEG, JPG, "
+"TIFF, BMP, AI, EPS, PS, CSV, RTF, PDF, DOC, DOCX, XLS, XLSX, ZIP, RAR, WAV, "
+"MP3, PPT. Taille maximum 2MB"
 
-#: contact_form.php:173 contact_form.php:1285 contact_form.php:1319
+#: contact_form.php:173 contact_form.php:1289 contact_form.php:1323
 msgid "Send me a copy"
 msgstr "M'envoyer une copie"
 
-#: contact_form.php:174 contact_form.php:1286 contact_form.php:1320
+#: contact_form.php:174 contact_form.php:1290 contact_form.php:1324
 msgid "Submit"
 msgstr "Envoyer"
 
@@ -124,97 +124,95 @@ msgstr "Merci de faire les corrections suivantes et de réessayer."
 msgid "Thank you for contacting us."
 msgstr "Merci de nous avoir contacté."
 
-#: contact_form.php:529 contact_form.php:795
+#: contact_form.php:533 contact_form.php:803
 msgid "Settings saved."
 msgstr "Options enregistrées."
 
-#: contact_form.php:735
+#: contact_form.php:743
 msgid ""
 "Email 'FROM' field option was changed, which may cause email messages being "
 "moved to the spam folder or email delivery failures."
 msgstr ""
 "L'option pour le champ 'From' des courriels a été modifiée, cela peut "
-"entrainer un classement des messages dans les dossiers spam ou bien une "
+"entraîner un classement des messages dans les dossiers spam ou bien une "
 "erreur d'acheminement peut survenir."
 
-#: contact_form.php:745
+#: contact_form.php:753
 msgid ""
 "If the 'Redirect to page' option is selected then the URL field should be in "
 "the following format"
 msgstr ""
-"Si l'ioption 'Rediriger vers la page' est positionnée, alors le champ Url "
+"Si l’option 'Rediriger vers la page' est positionnée, alors le champ Url "
 "doit être rempli avec le format suivant"
 
-#: contact_form.php:754
+#: contact_form.php:762
 msgid "Such user does not exist."
 msgstr "Cet utilisateur est inconnu."
 
-#: contact_form.php:764
+#: contact_form.php:772
 msgid ""
 "Please enter a valid email address in the 'Use this email address' field."
 msgstr ""
 "Merci de saisir une adresse e-mail valide pour le champ 'Utiliser cette "
 "adresse e-mail'."
 
-#: contact_form.php:772
+#: contact_form.php:780
 msgid "Please enter a valid email address in the 'FROM' field."
 msgstr "Merci de saisir une adresse e-mail valide pour le champ 'FROM'."
 
-#: contact_form.php:797
+#: contact_form.php:805
 msgid "Settings are not saved."
 msgstr "Paramètres non enregistrées."
 
-#: contact_form.php:816
+#: contact_form.php:824
 msgid "All plugin settings were restored."
 msgstr "Remettre les valeurs par défaut des paramètres de l'extension."
 
-#: contact_form.php:823
+#: contact_form.php:829
 msgid "How to Use Step-by-step Instruction"
-msgstr ""
+msgstr "Mode d'emploi pas à pas"
 
-#: contact_form.php:826 contact_form.php:2665 contact_form.php:2679
+#: contact_form.php:832 contact_form.php:2667 contact_form.php:2681
 msgid "Settings"
 msgstr "Réglages"
 
-#: contact_form.php:827
+#: contact_form.php:833
 msgid "Additional settings"
 msgstr "Options supplémentaires"
 
-#: contact_form.php:828
+#: contact_form.php:834
 msgid "Appearance"
 msgstr "Aspect"
 
-#: contact_form.php:829
+#: contact_form.php:835
 msgid "Go PRO"
 msgstr "Choisir la version PRO"
 
-#: contact_form.php:835
-#, fuzzy
+#: contact_form.php:841
 msgid ""
 "Please enable JavaScript to add language in the contact form, change the "
 "names of the contact form fields and error messages."
 msgstr ""
-"Modifier le texte pour les champs du formulaire de contact et les messages "
-"d'erreur"
+"Merci d'activer le java-script pour ajouter une nouvelle langue au "
+"formulaire de contact, changer les noms des champs et les messages d'erreur."
 
-#: contact_form.php:835 contact_form.php:1443 contact_form.php:1459
+#: contact_form.php:841 contact_form.php:1447 contact_form.php:1456
 msgid "Form layout"
-msgstr ""
+msgstr "Structure du formulaire"
 
-#: contact_form.php:835 contact_form.php:1443 contact_form.php:1471
-#, fuzzy
+#: contact_form.php:841 contact_form.php:1447 contact_form.php:1468
 msgid "Submit position"
-msgstr "Bouton Envoyer"
+msgstr "Position du bouton soumettre"
 
-#: contact_form.php:846
+#: contact_form.php:853
 msgid "Notice:"
 msgstr "Avertissement&nbsp;:"
 
-#: contact_form.php:856 contact_form.php:1449
+#: contact_form.php:857
 msgid "NEW_FORM"
-msgstr ""
+msgstr "Nouveau Formulaire"
 
-#: contact_form.php:857 contact_form.php:1450
+#: contact_form.php:858
 msgid ""
 "If you want to create multiple contact forms, please install the Contact "
 "Form Multi plugin."
@@ -222,16 +220,16 @@ msgstr ""
 "Si vous voulez créer plusieurs formulaire de contact, merci d'installer "
 "l'extension 'Contact Form Multi'"
 
-#: contact_form.php:863
-#, fuzzy, php-format
+#: contact_form.php:867
+#, php-format
 msgid ""
 "If you would like to add a Contact Form to your page or post, please use %s "
 "button"
 msgstr ""
-"Si vous souhaiter ajouter un formulaire de contact à votre site web, copiez "
-"juste ce code dans un article ou sur une page ou un widget:"
+"Si vous souhaitez ajouter un formulaire de contact à votre page ou votre "
+"article, merci d’utiliser le bouton %s"
 
-#: contact_form.php:869
+#: contact_form.php:873
 #, php-format
 msgid ""
 "You can add the Contact Form to your page or post by clicking on %s button "
@@ -239,8 +237,12 @@ msgid ""
 "displayed, please use the shortcode %s or %s where * stands for Contact Form "
 "language."
 msgstr ""
+"Vous pouvez ajouter le formulaire de contact sur une page ou un article en "
+"utilisant le bouton %s dans l'éditeur de contenu en mode visuel. Si le "
+"bouton n'est pas affiché, merci d'utiliser le code court %s ou %s où * est à "
+"remplacer par la langue du formulaire de contact."
 
-#: contact_form.php:878
+#: contact_form.php:882
 msgid ""
 "If you leave the fields empty, the messages will be sent to the email "
 "address specified during registration."
@@ -248,15 +250,15 @@ msgstr ""
 "Si les champs ci-dessous ne sont pas renseignés le message sera envoyé à "
 "l'adresse spécifiée lors de l'enregistrement."
 
-#: contact_form.php:881
+#: contact_form.php:885
 msgid "The user's email address:"
 msgstr "Utiliser l'e-mail du compte WordPress&nbsp;:"
 
-#: contact_form.php:885
+#: contact_form.php:889
 msgid "Select a username"
 msgstr "Choisir un nom d'utilisateur"
 
-#: contact_form.php:898
+#: contact_form.php:902
 msgid ""
 "Enter a username of the person who should get the messages from the contact "
 "form."
@@ -264,121 +266,120 @@ msgstr ""
 "Choisir le nom d'utilisateur qui recevra les messages envoyés depuis le "
 "formulaire de contact."
 
-#: contact_form.php:902
+#: contact_form.php:906
 msgid "Use this email address:"
 msgstr "Utiliser cette adresse e-mail&nbsp;:"
 
-#: contact_form.php:906
+#: contact_form.php:910
 msgid "Enter the email address you want the messages forwarded to."
 msgstr "Choisir l'adresse e-mail qui sera utilisée pour recevoir les messages."
 
-#: contact_form.php:913 contact_form.php:1199 contact_form.php:1391
-#: contact_form.php:1486 contact_form.php:2756
+#: contact_form.php:917 contact_form.php:1203 contact_form.php:1395
+#: contact_form.php:1483 contact_form.php:2758
 msgid "Close"
 msgstr "Fermer"
 
-#: contact_form.php:917
+#: contact_form.php:921
 msgid "Add department selectbox to the contact form:"
 msgstr ""
 "Ajouter la liste déroulante pour le département dans le formulaire de "
 "contact&nbsp;:"
 
-#: contact_form.php:925 contact_form.php:1208 contact_form.php:1410
-#: contact_form.php:1644
+#: contact_form.php:929 contact_form.php:1212 contact_form.php:1414
+#: contact_form.php:1641
 msgid "If you upgrade to Pro version all your settings will be saved."
 msgstr ""
 "Si vous passez à la version Pro, tous ces paramètres seront enregistrés."
 
-#: contact_form.php:932 contact_form.php:1134 contact_form.php:1213
-#: contact_form.php:1417 contact_form.php:1651
-#, fuzzy
+#: contact_form.php:936 contact_form.php:1138 contact_form.php:1217
+#: contact_form.php:1421 contact_form.php:1648
 msgid "Unlock premium options by upgrading to Pro version"
-msgstr "Déploquer les options premium en migrant vers la version PRO."
+msgstr "Débloquer les options premium en migrant vers la version PRO."
 
-#: contact_form.php:935 contact_form.php:1137 contact_form.php:1216
-#: contact_form.php:1420 contact_form.php:1654 contact_form.php:2955
+#: contact_form.php:939 contact_form.php:1141 contact_form.php:1220
+#: contact_form.php:1424 contact_form.php:1651 contact_form.php:2957
 msgid "Learn More"
 msgstr "Lire la suite"
 
-#: contact_form.php:943
+#: contact_form.php:947
 msgid "Save emails to the database"
 msgstr "Enregistrer les e-mails dans la base de données"
 
-#: contact_form.php:948
+#: contact_form.php:952
 msgid "Using"
 msgstr "Utilisant"
 
-#: contact_form.php:951 contact_form.php:955
+#: contact_form.php:955 contact_form.php:959
 msgid "Using Contact Form to DB by BestWebSoft"
 msgstr "en utilisant l'extension Contact Form to DB de BestWebSoft"
 
-#: contact_form.php:951
+#: contact_form.php:955
 msgid "Activate"
 msgstr "Activé"
 
-#: contact_form.php:955
+#: contact_form.php:959
 msgid "Download"
 msgstr "Téléchargement"
 
-#: contact_form.php:965
+#: contact_form.php:969
 msgid "What to use?"
-msgstr "Quelle méthode d'envoie ?"
+msgstr "Quelle méthode d’envoi ?"
 
-#: contact_form.php:970
+#: contact_form.php:974
 msgid "Wp-mail"
 msgstr "Wp-mail"
 
-#: contact_form.php:972
+#: contact_form.php:976
 msgid "You can use the wp_mail function for mailing"
 msgstr ""
 "Pour envoyer le courriel, vous pouvez utiliser la fonction wp_mail de "
 "WordPress "
 
-#: contact_form.php:975
+#: contact_form.php:979
 msgid "Mail"
 msgstr "E-mail"
 
-#: contact_form.php:977
+#: contact_form.php:981
 msgid "To send mail you can use the php mail function"
 msgstr "Pour envoyer le courriel, vous pouvez utiliser la fonction mail de php"
 
-#: contact_form.php:982
+#: contact_form.php:986
 msgid "'FROM' field"
 msgstr "Champ 'From'"
 
-#: contact_form.php:984 contact_form.php:1050 contact_form.php:1510
-#: contact_form.php:2451 contact_form.php:2487
+#: contact_form.php:988 contact_form.php:1054 contact_form.php:1507
+#: contact_form.php:2453 contact_form.php:2489
 msgid "Name"
 msgstr "Nom"
 
-#: contact_form.php:991
+#: contact_form.php:995
 msgid "User name"
-msgstr "Nom de l'utlisateur"
+msgstr "Nom de l’utilisateur"
 
-#: contact_form.php:993
+#: contact_form.php:997
 msgid ""
 "The name of the user who fills the form will be used in the field 'From'."
 msgstr ""
 "Dans le champ 'FROM' du courriel, il sera utilisé l'adresse e-mail de "
-"l'utlisateur qui rempli le formulaire."
+"l’utilisateur qui rempli le formulaire."
 
-#: contact_form.php:999 contact_form.php:2462 contact_form.php:2494
+#: contact_form.php:1003 contact_form.php:2464 contact_form.php:2496
 msgid "Email"
 msgstr "E-mail"
 
-#: contact_form.php:1006
+#: contact_form.php:1010
 msgid "User email"
-msgstr "E-mail de l'utlisateur"
+msgstr "E-mail de l’utilisateur"
 
-#: contact_form.php:1008
+#: contact_form.php:1012
 msgid ""
 "The email address of the user who fills the form will be used in the field "
 "'From'."
 msgstr ""
 "Dans le champ 'FROM' du courriel, il sera utilisé l'adresse e-mail de "
-"l'utlisateur qui rempli le formulaire."
+"l’utilisateur qui rempli le formulaire."
 
-#: contact_form.php:1012
+#: contact_form.php:1016
 msgid ""
 "If this option is changed, email messages may be moved to the spam folder or "
 "email delivery failures may occur."
@@ -386,45 +387,45 @@ msgstr ""
 "Si cette option est modifiée, les courriels pourront se retrouver classer "
 "dans le dossier spam ou bien une erreur d'acheminement peut survenir."
 
-#: contact_form.php:1018
+#: contact_form.php:1022
 msgid "Required symbol"
-msgstr "Symbol obligatoire"
+msgstr "Symbole obligatoire"
 
-#: contact_form.php:1028
+#: contact_form.php:1032
 msgid "Fields"
 msgstr "Champs"
 
-#: contact_form.php:1029
+#: contact_form.php:1033
 msgid "Used"
 msgstr "Utilisé"
 
-#: contact_form.php:1030
+#: contact_form.php:1034
 msgid "Required"
 msgstr "Obligatoire"
 
-#: contact_form.php:1032
+#: contact_form.php:1036
 msgid "Visible"
 msgstr "Visible"
 
-#: contact_form.php:1033
+#: contact_form.php:1037
 msgid "Disabled for editing"
 msgstr "Non actif pour l'édition"
 
-#: contact_form.php:1034
+#: contact_form.php:1038
 msgid "Field's default value"
 msgstr "Valeur par défaut du champ"
 
-#: contact_form.php:1041
+#: contact_form.php:1045
 msgid "Department selectbox"
 msgstr "Liste déroulante des localisations"
 
-#: contact_form.php:1058
+#: contact_form.php:1062
 msgid "Use User's name as a default value if the user is logged in."
 msgstr ""
 "Utiliser le nom de l'utilisateur comme valeur par défaut si un utilisateur "
 "est connecté."
 
-#: contact_form.php:1059 contact_form.php:1093
+#: contact_form.php:1063 contact_form.php:1097
 msgid ""
 "'Visible' and 'Disabled for editing' options will be applied only to logged-"
 "in users."
@@ -432,127 +433,127 @@ msgstr ""
 "'Visible' et 'Inactif' pour modifier les options ne seront appliqués qu'aux "
 "utilisateurs connectés."
 
-#: contact_form.php:1065
+#: contact_form.php:1069
 msgid "Location selectbox"
 msgstr "Liste déroulante des localisations"
 
-#: contact_form.php:1074 contact_form.php:1515 contact_form.php:2457
-#: contact_form.php:2491
+#: contact_form.php:1078 contact_form.php:1512 contact_form.php:2459
+#: contact_form.php:2493
 msgid "Address"
 msgstr "Adresse"
 
-#: contact_form.php:1084
+#: contact_form.php:1088
 msgid "Email Address"
 msgstr "Adresse e-mail"
 
-#: contact_form.php:1092
+#: contact_form.php:1096
 msgid "Use User's email as a default value if the user is logged in."
 msgstr ""
 "Utiliser l'adresse e-mail de l'utilisateur comme valeur par défaut si un "
 "utilisateur est connecté."
 
-#: contact_form.php:1098
+#: contact_form.php:1102
 msgid "Phone number"
 msgstr "Téléphone"
 
-#: contact_form.php:1108 contact_form.php:1530 contact_form.php:2472
-#: contact_form.php:2500
+#: contact_form.php:1112 contact_form.php:1527 contact_form.php:2474
+#: contact_form.php:2502
 msgid "Subject"
 msgstr "Sujet"
 
-#: contact_form.php:1118 contact_form.php:1534 contact_form.php:2475
-#: contact_form.php:2502
+#: contact_form.php:1122 contact_form.php:1531 contact_form.php:2477
+#: contact_form.php:2504
 msgid "Message"
 msgstr "Message"
 
-#: contact_form.php:1145
+#: contact_form.php:1149
 msgid "Attachment block"
 msgstr "Bloc pièce jointe"
 
-#: contact_form.php:1147
+#: contact_form.php:1151
 msgid "Users can attach the following file formats"
 msgstr "Les utilisateurs peuvent joindre des documents des types suivants"
 
-#: contact_form.php:1162
+#: contact_form.php:1166
 msgid "Add to the form"
 msgstr "Ajouter au formulaire"
 
-#: contact_form.php:1167
+#: contact_form.php:1171
 msgid "Tips below the Attachment"
 msgstr "Afficher les explications en-dessous du bloc des pièces jointes"
 
-#: contact_form.php:1176
+#: contact_form.php:1180
 msgid "'Send me a copy' block"
 msgstr "Afficher le bloc \"M'envoyer une copie\""
 
-#: contact_form.php:1189
+#: contact_form.php:1193
 msgid "Activate captcha"
 msgstr "Activé le captcha"
 
-#: contact_form.php:1193
+#: contact_form.php:1197
 msgid "Download captcha"
 msgstr "Télécharger le captcha"
 
-#: contact_form.php:1203
+#: contact_form.php:1207
 msgid "Agreement checkbox"
 msgstr "Case à cocher pour valider le formulaire"
 
-#: contact_form.php:1203
+#: contact_form.php:1207
 msgid "Required checkbox for submitting the form"
 msgstr "Boite à cocher obligatoire pour la validation du formulaire."
 
-#: contact_form.php:1204
+#: contact_form.php:1208
 msgid "Optional checkbox"
 msgstr "Boite à cocher optionnelle"
 
-#: contact_form.php:1204
+#: contact_form.php:1208
 msgid "Optional checkbox, the results of which will be displayed in email"
 msgstr "Boite à cocher optionnelle, le résultat sera affiché dans le courriel"
 
-#: contact_form.php:1225
+#: contact_form.php:1229
 msgid "Delete an attachment file from the server after the email is sent"
 msgstr "Supprimer le fichier joint sur le serveur après l'envoie du courriel"
 
-#: contact_form.php:1231
+#: contact_form.php:1235
 msgid "Email in HTML format sending"
 msgstr "Courriel au format HTML"
 
-#: contact_form.php:1235
+#: contact_form.php:1239
 msgid "Display additional info in the email"
 msgstr "Afficher les informations complémentaires dans le courriel"
 
-#: contact_form.php:1241 contact_form.php:2418 contact_form.php:2420
+#: contact_form.php:1245 contact_form.php:2420 contact_form.php:2422
 msgid "Sent from (ip address)"
 msgstr "Envoyé de (adresse IP)"
 
-#: contact_form.php:1241
+#: contact_form.php:1245
 msgid "Example: Sent from (IP address):\t127.0.0.1"
-msgstr "Exemple: Envoyé de  (addresse IP)&nbsp;:\t127.0.0.1"
+msgstr "Exemple: Envoyé de  (adresse IP)&nbsp;:\t127.0.0.1"
 
-#: contact_form.php:1242 contact_form.php:2424 contact_form.php:2426
+#: contact_form.php:1246 contact_form.php:2426 contact_form.php:2428
 msgid "Date/Time"
 msgstr "Date/Heure"
 
-#: contact_form.php:1242
+#: contact_form.php:1246
 msgid "Example: Date/Time:\tAugust 19, 2013 8:50 pm"
 msgstr "Exemple: Date/Heure&nbsp;:\tAoût 19, 2013 8:50pm"
 
-#: contact_form.php:1243 contact_form.php:2430 contact_form.php:2432
+#: contact_form.php:1247 contact_form.php:2432 contact_form.php:2434
 msgid "Sent from (referer)"
 msgstr "Envoyer de (référence)"
 
-#: contact_form.php:1243
+#: contact_form.php:1247
 msgid ""
 "Example: Sent from (referer):\thttp://bestwebsoft.com/contacts/contact-us/"
 msgstr ""
 "Exemple&nbsp;: Envoyer de (referer) :\thttp://bestwebsoft.com/contacts/"
 "contact-us/"
 
-#: contact_form.php:1244 contact_form.php:2436 contact_form.php:2438
+#: contact_form.php:1248 contact_form.php:2438 contact_form.php:2440
 msgid "Using (user agent)"
 msgstr "Depuis (navigateur)"
 
-#: contact_form.php:1244
+#: contact_form.php:1248
 msgid ""
 "Example: Using (user agent):\tMozilla/5.0 (Windows NT 6.2; WOW64) "
 "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36"
@@ -561,141 +562,143 @@ msgstr ""
 "WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 "
 "Safari/537.36"
 
-#: contact_form.php:1249
+#: contact_form.php:1253
 msgid "Language settings for the field names in the form"
 msgstr "Définition des langues pour les titres des champs"
 
-#: contact_form.php:1258
+#: contact_form.php:1262
 msgid "Add a language"
 msgstr "Ajouter une langue"
 
-#: contact_form.php:1262
+#: contact_form.php:1266
 msgid "Change the names of the contact form fields and error messages"
 msgstr ""
 "Modifier le texte pour les champs du formulaire de contact et les messages "
 "d'erreur"
 
-#: contact_form.php:1267 contact_form.php:1354
+#: contact_form.php:1271 contact_form.php:1358
 msgid "English"
 msgstr "Anglais"
 
-#: contact_form.php:1275 contact_form.php:1309
+#: contact_form.php:1279 contact_form.php:1313
 msgid "click to expand/hide the list"
 msgstr "cliquer pour voir/cacher la liste"
 
-#: contact_form.php:1284 contact_form.php:1318
+#: contact_form.php:1288 contact_form.php:1322
 msgid "Tips below the Attachment block"
 msgstr "Afficher les explications en-dessous du bloc des pièces jointes"
 
-#: contact_form.php:1287 contact_form.php:1321
+#: contact_form.php:1291 contact_form.php:1325
 msgid "Error message for the Name field"
 msgstr "Message d'erreur pour le champ nom"
 
-#: contact_form.php:1288 contact_form.php:1322
+#: contact_form.php:1292 contact_form.php:1326
 msgid "Error message for the Address field"
 msgstr "Message d'erreur pour le champ Adresse"
 
-#: contact_form.php:1289 contact_form.php:1323
+#: contact_form.php:1293 contact_form.php:1327
 msgid "Error message for the Email field"
 msgstr "Message d'erreur pour le champ e-mail"
 
-#: contact_form.php:1290 contact_form.php:1324
+#: contact_form.php:1294 contact_form.php:1328
 msgid "Error message for the Phone field"
 msgstr "Message d'erreur pour le champ téléphone"
 
-#: contact_form.php:1291 contact_form.php:1325
+#: contact_form.php:1295 contact_form.php:1329
 msgid "Error message for the Subject field"
 msgstr "Message d'erreur pour le champ sujet"
 
-#: contact_form.php:1292 contact_form.php:1326
+#: contact_form.php:1296 contact_form.php:1330
 msgid "Error message for the Message field"
 msgstr "Message d'erreur pour le champ message"
 
-#: contact_form.php:1293 contact_form.php:1327
+#: contact_form.php:1297 contact_form.php:1331
 msgid "Error message about the file type for the Attachment field"
 msgstr "Message d'erreur pour le champ fichier joint (type du fichier)"
 
-#: contact_form.php:1294 contact_form.php:1328
+#: contact_form.php:1298 contact_form.php:1332
 msgid ""
 "Error message while uploading a file for the Attachment field to the server"
 msgstr ""
-"Message d'erreur pour le champ fichier joint (problème d'envoie vers le "
+"Message d'erreur pour le champ fichier joint (problème d'envoi vers le "
 "serveur)"
 
-#: contact_form.php:1295 contact_form.php:1329
+#: contact_form.php:1299 contact_form.php:1333
 msgid "Error message while moving the file for the Attachment field"
 msgstr "Message d'erreur pour le champ fichier joint (déplacement du fichier)"
 
-#: contact_form.php:1296 contact_form.php:1330
+#: contact_form.php:1300 contact_form.php:1334
 msgid "Error message when file size limit for the Attachment field is exceeded"
 msgstr ""
 "Message d'erreur pour le champ fichier joint (taille limite du fichier "
 "atteinte)"
 
-#: contact_form.php:1297 contact_form.php:1331
+#: contact_form.php:1301 contact_form.php:1335
 msgid "Error message for the Captcha field"
 msgstr "Message d'erreur pour le captcha"
 
-#: contact_form.php:1298 contact_form.php:1332
+#: contact_form.php:1302 contact_form.php:1336
 msgid "Error message for the whole form"
 msgstr "Message d'erreur demandant à compléter les champs manquants"
 
-#: contact_form.php:1301 contact_form.php:1303 contact_form.php:1335
-#: contact_form.php:1337 contact_form.php:1364 contact_form.php:1366
-#: contact_form.php:1374 contact_form.php:1376 contact_form.php:2811
-#: contact_form.php:2813
+#: contact_form.php:1305 contact_form.php:1307 contact_form.php:1339
+#: contact_form.php:1341 contact_form.php:1368 contact_form.php:1370
+#: contact_form.php:1378 contact_form.php:1380 contact_form.php:2813
+#: contact_form.php:2815
 msgid "Use shortcode"
 msgstr "Utiliser le code court"
 
-#: contact_form.php:1301 contact_form.php:1303 contact_form.php:1364
-#: contact_form.php:1366
+#: contact_form.php:1305 contact_form.php:1307 contact_form.php:1368
+#: contact_form.php:1370
 msgid "or"
 msgstr "ou"
 
-#: contact_form.php:1301 contact_form.php:1303 contact_form.php:1335
-#: contact_form.php:1337 contact_form.php:1364 contact_form.php:1366
-#: contact_form.php:1374 contact_form.php:1376 contact_form.php:2811
-#: contact_form.php:2813
+#: contact_form.php:1305 contact_form.php:1307 contact_form.php:1339
+#: contact_form.php:1341 contact_form.php:1368 contact_form.php:1370
+#: contact_form.php:1378 contact_form.php:1380 contact_form.php:2813
+#: contact_form.php:2815
 msgid "for this language"
 msgstr "pour cette langue"
 
-#: contact_form.php:1345
+#: contact_form.php:1349
 msgid "Use the changed names of the contact form fields in the email"
 msgstr "Utiliser les noms des champs modifiés dans les courriels"
 
-#: contact_form.php:1351
+#: contact_form.php:1355
 msgid "Action after email is sent"
 msgstr "Action après l'envoie du courriel"
 
-#: contact_form.php:1353
+#: contact_form.php:1357
 msgid "Display text"
 msgstr "Afficher le texte"
 
-#: contact_form.php:1362 contact_form.php:1372
+#: contact_form.php:1366 contact_form.php:1376
 msgid "Text"
 msgstr "Texte"
 
-#: contact_form.php:1383
+#: contact_form.php:1387
 msgid "Redirect to the page"
 msgstr "Rediriger vers la page"
 
-#: contact_form.php:1384
+#: contact_form.php:1388
 msgid "Url"
 msgstr "Url"
 
-#: contact_form.php:1395
+#: contact_form.php:1399
 msgid "Add field 'Reply-To' to the email header"
-msgstr ""
-
-#: contact_form.php:1397
-msgid "Field 'Reply-To' will be initialized by user email"
-msgstr ""
+msgstr "Ajouter le champ 'Répondre à/Reply-To' dans l'entête du courriel"
 
 #: contact_form.php:1401
+msgid "Field 'Reply-To' will be initialized by user email"
+msgstr ""
+"Le champ 'Répondre à/Reply-To'  sera rempli avec l'adresse e-mail de "
+"l'utilisateur"
+
+#: contact_form.php:1405
 msgid "Auto Response"
 msgstr "Réponse automatique"
 
-#: contact_form.php:1405
+#: contact_form.php:1409
 #, php-format
 msgid ""
 "You can use %%NAME%% to display data from the email field and %%MESSAGE%% to "
@@ -706,159 +709,160 @@ msgstr ""
 "%%MESSAGE%% pour afficher des données du champ message, de même %%SITENAME%% "
 "pour afficher le nom du site."
 
-#: contact_form.php:1430 contact_form.php:1870
+#: contact_form.php:1434 contact_form.php:1871
 msgid "Save Changes"
 msgstr "Enregistrer les modifications"
 
-#: contact_form.php:1443
+#: contact_form.php:1447
 #, php-format
 msgid ""
 "Please enable JavaScript to change '%s', '%s' options and for fields sorting."
 msgstr ""
+"Merci d'activer le java-script pour modifier les options  '%s', '%s'  ainsi "
+"que pour trier les champs."
+
+#: contact_form.php:1460
+msgid "One column"
+msgstr "Une colonne"
 
 #: contact_form.php:1463
-msgid "One column"
-msgstr ""
-
-#: contact_form.php:1466
 msgid "Two columns"
-msgstr ""
+msgstr "Deux colonnes"
+
+#: contact_form.php:1472
+msgid "Left"
+msgstr "Gauche"
 
 #: contact_form.php:1475
-msgid "Left"
-msgstr ""
-
-#: contact_form.php:1478
 msgid "Right"
-msgstr ""
+msgstr "Droite"
 
-#: contact_form.php:1490
+#: contact_form.php:1487
 msgid "Errors output"
 msgstr "Affichage des erreurs"
 
-#: contact_form.php:1493
+#: contact_form.php:1490
 msgid "Display error messages"
-msgstr "Aficher les messages d'erreur"
+msgstr "Afficher les messages d'erreur"
 
-#: contact_form.php:1494
+#: contact_form.php:1491
 msgid "Color of the input field errors."
 msgstr "Mettre en couleur les champs ayant des erreurs"
 
-#: contact_form.php:1495
+#: contact_form.php:1492
 msgid "Display error messages & color of the input field errors"
 msgstr ""
 "Afficher les messages d'erreur et mettre en couleur les champs ayant des "
 "erreurs"
 
-#: contact_form.php:1500
+#: contact_form.php:1497
 msgid "Add placeholder to the input blocks"
 msgstr "Ajouter la localisation dans le bloc de saisie"
 
-#: contact_form.php:1506
+#: contact_form.php:1503
 msgid "Add tooltips"
 msgstr "Ajouter les conseils"
 
-#: contact_form.php:1520
+#: contact_form.php:1517
 msgid "Email address"
 msgstr "Adresse e-mail"
 
-#: contact_form.php:1525
+#: contact_form.php:1522
 msgid "Phone Number"
 msgstr "Téléphone"
 
-#: contact_form.php:1539
+#: contact_form.php:1536
 msgid "Attachment"
 msgstr "Pièce jointe"
 
-#: contact_form.php:1551
+#: contact_form.php:1548
 msgid "Style options"
 msgstr "Options de style"
 
-#: contact_form.php:1555
+#: contact_form.php:1552
 msgid "Text color"
 msgstr "Couleur du texte"
 
-#: contact_form.php:1558 contact_form.php:1563 contact_form.php:1573
-#: contact_form.php:1578 contact_form.php:1583 contact_form.php:1588
-#: contact_form.php:1598 contact_form.php:1603 contact_form.php:1612
-#: contact_form.php:1626 contact_form.php:1631 contact_form.php:1636
+#: contact_form.php:1555 contact_form.php:1560 contact_form.php:1570
+#: contact_form.php:1575 contact_form.php:1580 contact_form.php:1585
+#: contact_form.php:1595 contact_form.php:1600 contact_form.php:1609
+#: contact_form.php:1623 contact_form.php:1628 contact_form.php:1633
 msgid "Default"
 msgstr "Défaut"
 
-#: contact_form.php:1560
+#: contact_form.php:1557
 msgid "Label text color"
 msgstr "Couleur des textes des intitulés"
 
-#: contact_form.php:1565
+#: contact_form.php:1562
 msgid "Placeholder color"
 msgstr "Couleur pour la localisation"
 
-#: contact_form.php:1570
+#: contact_form.php:1567
 msgid "Errors color"
 msgstr "Couleur pour les erreurs"
 
-#: contact_form.php:1575
+#: contact_form.php:1572
 msgid "Error text color"
 msgstr "Couleur pour le texte des erreurs"
 
-#: contact_form.php:1580
+#: contact_form.php:1577
 msgid "Background color of the input field errors"
 msgstr "Couleur de fond pour les erreurs de saisie dans les champs"
 
-#: contact_form.php:1585
+#: contact_form.php:1582
 msgid "Border color of the input field errors"
 msgstr "Couleur de la bordure pour les erreurs de saisie dans les champs"
 
-#: contact_form.php:1590
+#: contact_form.php:1587
 msgid "Placeholder color of the input field errors"
 msgstr "Couleur pour la localisation lors d'une erreur de saisie du champ"
 
-#: contact_form.php:1595
+#: contact_form.php:1592
 msgid "Input fields"
 msgstr "Champs de saisie"
 
-#: contact_form.php:1600
+#: contact_form.php:1597
 msgid "Input fields background color"
 msgstr "Couleur de fond pour les champs de saisie"
 
-#: contact_form.php:1605
+#: contact_form.php:1602
 msgid "Text fields color"
 msgstr "Couleur pour les textes des champs de saisie"
 
-#: contact_form.php:1609
+#: contact_form.php:1606
 msgid "Border width in px, numbers only"
 msgstr "Largeur des bordures en px, nombre seulement"
 
-#: contact_form.php:1614 contact_form.php:1638
+#: contact_form.php:1611 contact_form.php:1635
 msgid "Border color"
 msgstr "Couleur des bordures"
 
-#: contact_form.php:1619
+#: contact_form.php:1616
 msgid "Submit button"
 msgstr "Bouton Envoyer"
 
-#: contact_form.php:1623
+#: contact_form.php:1620
 msgid "Width in px, numbers only"
 msgstr "Largeur en px, nombre seulement"
 
-#: contact_form.php:1628
+#: contact_form.php:1625
 msgid "Button color"
 msgstr "Couleur du bouton"
 
-#: contact_form.php:1633
+#: contact_form.php:1630
 msgid "Button text color"
 msgstr "Couleur du texte du bouton"
 
-#: contact_form.php:1665
-#, fuzzy
+#: contact_form.php:1662
 msgid "Contact Form | Preview"
-msgstr "Formulaire Pro de Contact | Prévisualisation"
+msgstr "Formulaire de Contact | Prévisualisation"
 
-#: contact_form.php:1666
+#: contact_form.php:1663
 msgid "Drag the necessary field to sort fields."
-msgstr ""
+msgstr "Déposer les champs nécessaires dans la liste des tris."
 
-#: contact_form.php:1857
+#: contact_form.php:1858
 msgid ""
 "If you would like to add the Contact Form to your website, just copy and "
 "paste this shortcode to your post or page or widget:"
@@ -866,23 +870,23 @@ msgstr ""
 "Si vous souhaiter ajouter un formulaire de contact à votre site web, copiez "
 "juste ce code dans un article ou sur une page ou un widget&nbsp;:"
 
-#: contact_form.php:1957
+#: contact_form.php:1958
 msgid "Sorry, email message could not be delivered."
 msgstr "Désolé, votre courriel n'a pas pu être envoyé."
 
-#: contact_form.php:2445
+#: contact_form.php:2447
 msgid "Contact from"
 msgstr "Contact de"
 
-#: contact_form.php:2467 contact_form.php:2497
+#: contact_form.php:2469 contact_form.php:2499
 msgid "Phone"
 msgstr "Téléphone"
 
-#: contact_form.php:2478 contact_form.php:2504
+#: contact_form.php:2480 contact_form.php:2506
 msgid "Site"
 msgstr "Site"
 
-#: contact_form.php:2597
+#: contact_form.php:2599
 msgid ""
 "If you can see this MIME, it means that the MIME type is not supported by "
 "your email client!"
@@ -890,23 +894,23 @@ msgstr ""
 "Si vous voyez ce MIME c'est que votre navigateur n'accepte pas ce type de "
 "MIME !"
 
-#: contact_form.php:2680
+#: contact_form.php:2682
 msgid "FAQ"
 msgstr "FAQ"
 
-#: contact_form.php:2681
+#: contact_form.php:2683
 msgid "Support"
 msgstr "Support"
 
-#: contact_form.php:2730
+#: contact_form.php:2732
 msgid "Are you sure that you want to delete this language data?"
-msgstr "Etes vous sûr de vouloir supprimer cette langue ?"
+msgstr "Êtes vous sûr de vouloir supprimer cette langue ?"
 
-#: contact_form.php:2747
+#: contact_form.php:2749
 msgid "Add multiple forms"
 msgstr "Ajouter plusieurs formulaires"
 
-#: contact_form.php:2747
+#: contact_form.php:2749
 msgid ""
 "Install Contact Form Multi plugin to create unlimited number of contact "
 "forms."
@@ -914,396 +918,25 @@ msgstr ""
 "Installer l'extension 'Contact Form Multi' pour créer un nombre infini de "
 "formulaires de contact."
 
-#: contact_form.php:2752
+#: contact_form.php:2754
 msgid "Learn more"
 msgstr "Lire la suite"
 
-#: contact_form.php:2951
+#: contact_form.php:2953
 msgid "allows to store your messages to the database."
 msgstr "permet d'enregistrer les messages dans la base de données."
 
-#: contact_form.php:2952
+#: contact_form.php:2954
 msgid "Manage messages that have been sent from your website."
 msgstr "Gérer les messages qui ont été envoyés depuis votre site."
 
-#: contact_form.php:3012
-#, fuzzy
+#: contact_form.php:3014
 msgid "Contact form"
-msgstr "Contact de"
+msgstr "Formulaire de contact"
 
-#: contact_form.php:3025 contact_form.php:3036
-#, fuzzy
+#: contact_form.php:3027 contact_form.php:3038
 msgid "Language"
-msgstr "Ajouter une langue"
-
-#~ msgid ""
-#~ "If you would like to add Contact Form to your website, just copy and "
-#~ "paste this shortcode to your post or page or widget:"
-#~ msgstr ""
-#~ "Si vous souhaiter ajouter un formulaire de contact à votre site web, "
-#~ "copiez juste ce code dans un article ou sur une page ou un widget&nbsp;:"
-
-#~ msgid ""
-#~ "If you have any problems with the standard shortcode [contact_form], you "
-#~ "should use the shortcode"
-#~ msgstr ""
-#~ "Si vous avez un soucis avec le code court standard [contact_form], vous "
-#~ "pouvez utilisez le code court "
-
-#~ msgid "They work the same way."
-#~ msgstr "Ils fonctionnent de la même manière."
-
-#~ msgid ""
-#~ "If have any problems with the standard shortcode [contact_form], you "
-#~ "should use the shortcode"
-#~ msgstr ""
-#~ "Si vous avez un soucis avec le code court standard [contact_form], vous "
-#~ "pouvez utilisez le code court "
-
-#~ msgid "The $_SERVER variable that is used to build a URL of the form"
-#~ msgstr ""
-#~ "La variable $_SERVER qui est utilisée pour construire l'URL du formulaire"
-
-#~ msgid ""
-#~ "If you are not sure whether to change this setting or not, please do not "
-#~ "do that."
-#~ msgstr ""
-#~ "Si vous n'êtes pas sûr de ce que vous faites, merci de ne pas toucher ce "
-#~ "paramètre."
-
-#~ msgid ""
-#~ "The plugin's settings have been changed. In order to save them please "
-#~ "don't forget to click the 'Save Changes' button."
-#~ msgstr ""
-#~ "Les paramètres de l'extension ont été changés. Afin de pouvoir les "
-#~ "enregistrer, merci de cliquer sur le bouton 'Enregistrer les "
-#~ "modifications'."
-
-#~ msgid "Unlock premium options by upgrading to PRO version."
-#~ msgstr "Déploquer les options premium en migrant vers la version PRO."
-
-#~ msgid "Go"
-#~ msgstr "Passez"
-
-#~ msgid "Show with errors"
-#~ msgstr "Afficher avec les erreurs"
-
-#~ msgid "Please enter your full name..."
-#~ msgstr "Merci de saisir votre nom..."
-
-#~ msgid "Please enter your address..."
-#~ msgstr "Merci de saisir votre adresse..."
-
-#~ msgid "Please enter your email address..."
-#~ msgstr "Merci de saisir votre adresse e-mail..."
-
-#~ msgid "Please enter your phone number..."
-#~ msgstr "Merci de saisir votre numéro de téléphone..."
-
-#~ msgid "Please enter subject..."
-#~ msgstr "Merci de saisir le sujet..."
-
-#~ msgid "Please enter your message..."
-#~ msgstr "Merci de saisir votre message..."
-
-#~ msgid "requires"
-#~ msgstr "obligatoire"
-
-#~ msgid ""
-#~ "or higher, that is why it has been deactivated! Please upgrade WordPress "
-#~ "and try again."
-#~ msgstr ""
-#~ "ou supérieure, c'est pourquoi il a été désactivé! Merci de faire la mise "
-#~ "à jour de WordPress puis de ré-essayer."
-
-#~ msgid "Back to the WordPress"
-#~ msgstr "Retourner à WordPress"
-
-#~ msgid "Plugins page"
-#~ msgstr "Page des extensions"
-
-#~ msgid "It’s time to upgrade your"
-#~ msgstr "C'est le moment de mettre à jour votre "
-
-#~ msgid "to"
-#~ msgstr "à"
-
-#~ msgid "version!"
-#~ msgstr "version"
-
-#~ msgid "Extend standard plugin functionality with new great options."
-#~ msgstr ""
-#~ "Etend les fonctionalités de base de l'extension avec de nouvelles options."
-
-#~ msgid "If you enjoy our plugin, please give it 5 stars on WordPress"
-#~ msgstr ""
-#~ "Si notre extension vous satisfait, merci de la notée avec 5 étoiles dans "
-#~ "Wordpress"
-
-#~ msgid "Rate the plugin"
-#~ msgstr "Noter l'extension"
-
-#~ msgid "If there is something wrong about it, please contact us"
-#~ msgstr ""
-#~ "Si quelque chose ne fonctionne pas correctement, merci de nous contacter"
-
-#~ msgid "Wrong license key"
-#~ msgstr "Clé de licence incorrecte"
-
-#~ msgid ""
-#~ "Something went wrong. Please try again later. If the error appears again, "
-#~ "please contact us"
-#~ msgstr ""
-#~ "Il est survenu une erreur. Essayer de nouveau. Si l'erreur se produit de "
-#~ "nouveau, merci de contacter <a href=http://support.bestwebsoft."
-#~ "com>BestWebSoft</a>. Nous sommes désolés pour le désagrément."
-
-#~ msgid "We are sorry for inconvenience."
-#~ msgstr "Nous sommes désolés pour le désagrément."
-
-#~ msgid "This license key is bind to another site"
-#~ msgstr "La clé de licence correspond à un autre site."
-
-#~ msgid ""
-#~ "Unfortunately, you have exceeded the number of available tries per day. "
-#~ "Please, upload the plugin manually."
-#~ msgstr ""
-#~ "Désoler mais vous avez dépassé le nombre d'essai de la journée. Merci de "
-#~ "télécharger l'extension manuellement."
-
-#~ msgid ""
-#~ "Unfortunately, Your license has expired. To continue getting top-priority "
-#~ "support and plugin updates you should extend it in your"
-#~ msgstr ""
-#~ "Désoler, votre licence est terminée. Pour continuer à disposer du support "
-#~ "rapide et des mises à jour de l'extension vous devez la renouveller dans "
-#~ "votre"
-
-#~ msgid ""
-#~ "Unfortunately, the PRO licence was already installed to this domain. The "
-#~ "PRO Trial license can be installed only once."
-#~ msgstr ""
-#~ "Une licence a déjà été installée sur ce domaine. La licence d'évaluation "
-#~ "ne peut-être installée qu'une seule fois."
-
-#~ msgid ""
-#~ "Failed to download the zip archive. Please, upload the plugin manually"
-#~ msgstr ""
-#~ "Erreur de téléchargement de l'archive ZIP. Merci de télécharger "
-#~ "l'extension manuellement."
-
-#~ msgid "Failed to open the zip archive. Please, upload the plugin manually"
-#~ msgstr ""
-#~ "Erreur d'ouverture de l'archive zip. Merci de télécharger l'extension "
-#~ "manuellement."
-
-#~ msgid ""
-#~ "Your server does not support either ZipArchive or Phar. Please, upload "
-#~ "the plugin manually"
-#~ msgstr ""
-#~ "Votre server n'a pas le support du format des archives ZIP ou Phar. Merci "
-#~ "de télécharger l'extension manuellement."
-
-#~ msgid "UploadDir is not writable. Please, upload the plugin manually"
-#~ msgstr ""
-#~ "Erreur d'ouverture de l'archive zip. Merci de télécharger l'extension "
-#~ "manuellement."
-
-#~ msgid ""
-#~ "Something went wrong. Try again later or upload the plugin manually. We "
-#~ "are sorry for inconvenience."
-#~ msgstr ""
-#~ "Il est survenu une erreur. Essayer de nouveau ou bien télécharger "
-#~ "l'extension manuellement.Nous sommes désolés pour le désagrément."
-
-#~ msgid "Please, enter Your license key"
-#~ msgstr "Merci de saisir votre clé de liecence"
-
-#~ msgid ""
-#~ "Congratulations! The PRO version of the plugin is successfully download "
-#~ "and activated."
-#~ msgstr ""
-#~ "Félicitations! La version PRO de cette extension a été téléchargée et "
-#~ "activée avec succès."
-
-#~ msgid "Please, go to"
-#~ msgstr "Merci d'allez à"
-
-#~ msgid "the setting page"
-#~ msgstr "Options supplémentaires"
-
-#~ msgid "You will be redirected automatically in 5 seconds."
-#~ msgstr "Vous allez être redirigé automatiquement dans 5 secondes"
-
-#~ msgid "You can download and activate"
-#~ msgstr "Vous pouvez la télécharger et l'activer"
-
-#~ msgid "version of this plugin by entering Your license key."
-#~ msgstr "version de cette extension en donnant votre clé de licence."
-
-#~ msgid ""
-#~ "You can find your license key on your personal page Client area, by "
-#~ "clicking on the link"
-#~ msgstr ""
-#~ "Vous pouvez trouver votre clé de licence sur votre page personnelle dans "
-#~ "la zone cliente en cliquant sur le lien"
-
-#~ msgid ""
-#~ "(your username is the email you specify when purchasing the product)."
-#~ msgstr ""
-#~ "(votre nom d'utilisateur est l'adresse e-mail que vous avez donné lors de "
-#~ "l'achat de l'extension)."
-
-#~ msgid "Start Your Free %s-Day Trial Now"
-#~ msgstr "Débuter votre licence d'évaluation gratuite de %s jours"
-
-#~ msgid ""
-#~ "In order to continue using the plugin it is necessary to buy a %s license."
-#~ msgstr ""
-#~ "Afin de pouvoir continuer à utiliser cette extension il est nécessaire "
-#~ "d'acheter une licence %s."
-
-#~ msgid "After that you can activate it by entering your license key."
-#~ msgstr ""
-#~ " Après vous pouvez activer cette extension en donnant votre clé de "
-#~ "licence."
-
-#~ msgid ""
-#~ "Unfortunately, you have exceeded the number of available tries per day."
-#~ msgstr ""
-#~ "Désoler mais vous avez dépassé le nombre d'essai de la journée. Merci de "
-#~ "télécharger l'extension manuellement."
-
-#~ msgid ""
-#~ "Congratulations! The PRO license of the plugin is successfully activated."
-#~ msgstr ""
-#~ "Félicitations! La version PRO de cette extension a été téléchargée et "
-#~ "activée avec succès."
-
-#~ msgid "Wrong license key."
-#~ msgstr "Clé de licence incorrecte"
-
-#~ msgid "This license key is bind to another site."
-#~ msgstr "La clé de licence correspond à un autre site."
-
-#~ msgid ""
-#~ "This license key is valid, but Your license has expired. If you want to "
-#~ "update our plugin in future, you should extend the license."
-#~ msgstr ""
-#~ "La clé de licence est valide mais votre durée de validité est passée. "
-#~ "Pour continuer à disposer du support rapide et des mises à jour de "
-#~ "l'extension vous devez la renouveller."
-
-#~ msgid "Unfortunately, you have exceeded the number of available tries."
-#~ msgstr ""
-#~ "Désoler mais vous avez dépassé le nombre d'essai de la journée. Merci de "
-#~ "télécharger l'extension manuellement."
-
-#~ msgid ""
-#~ "Unfortunately, the PRO Trial licence was already installed to this "
-#~ "domain. The PRO Trial license can be installed only once."
-#~ msgstr ""
-#~ "Malheuresement la licence PRO a déjà été installée sur ce domaine. La "
-#~ "licence PRO d'évaluation peut être installée une seule fois."
-
-#~ msgid "The PRO Trial license key is valid."
-#~ msgstr "La clé de licence d'évaluation est valide."
-
-#~ msgid "The license key is valid."
-#~ msgstr "La clé de licence est valide."
-
-#~ msgid "Your license will expire on"
-#~ msgstr "Votre licence se termine le"
-
-#~ msgid "Please, enter your license key"
-#~ msgstr "Merci de saisir votre clé de licence"
-
-#~ msgid ""
-#~ "If needed you can check if the license key is correct or reenter it in "
-#~ "the field below. You can find your license key on your personal page - "
-#~ "Client area - on our website"
-#~ msgstr ""
-#~ "Si nécessaire vous pouvez vérifier que la clé de licence est correcte ou "
-#~ "la saisir de nouveau dans le champ ci-dessous. Vous pouvez trouver votre "
-#~ "clé de licence sur votre page personnelle (zone client) sur notre site "
-#~ "web."
-
-#~ msgid ""
-#~ "(your username is the email you specify when purchasing the product). If "
-#~ "necessary, please submit \"Lost your password?\" request."
-#~ msgstr ""
-#~ "(votre nom d'utilisateur est l'adresse e-mail que vous avez donné lors de "
-#~ "l'achat de l'extension). Si nécessaire, utilisez la fonction de demande "
-#~ "de mot de passe perdu."
-
-#~ msgid "Check license key"
-#~ msgstr "Vérifier la clé de licence"
-
-#~ msgid "WARNING: Illegal use notification"
-#~ msgstr "AVERTISSEMENT&nbsp;: Notification d'utilisation abusive"
-
-#~ msgid ""
-#~ "You can use one license of the Pro plugin for one domain only. Please "
-#~ "check and edit your license or domain if necessary using you personal "
-#~ "Client Area. We strongly recommend you to solve the problem within 24 "
-#~ "hours, otherwise the Pro plugin will be deactivated."
-#~ msgstr ""
-#~ "Vous ne pouvez utilisez qu'une licence de la version Pro de l'extension "
-#~ "pour un seul domaine. Merci de vérifier et de modifier votre licence ou "
-#~ "votre domaine si nécessaire en utilisant votre zone client. Nous vous "
-#~ "recommandons de résoudre ce problème dans les 24 heures, sinon "
-#~ "l'extension sera rendue inactive."
-
-#~ msgid ""
-#~ "Notice: Your PRO Trial license has expired. To continue using the plugin "
-#~ "you should buy a PRO license"
-#~ msgstr ""
-#~ "Information&nbsp;: Votre licence d'évaluation est terminée. Pour "
-#~ "continuer à disposer du support rapide et des mises à jour de l'extension "
-#~ "vous devez la renouveller."
-
-#~ msgid ""
-#~ "Your license has expired. To continue getting top-priority support and "
-#~ "plugin updates you should extend it."
-#~ msgstr ""
-#~ "Votre licence est terminée. Pour continuer à disposer du support rapide "
-#~ "et des mises à jour de l'extension vous devez la renouveller."
-
-#~ msgid "Notice: You are using the PRO Trial license of %s plugin."
-#~ msgstr ""
-#~ "Avertissement&nbsp;: vous utilisez la version d'évaluation de l'extension "
-#~ "%s."
-
-#~ msgid "Notice: You are using the PRO Trial license of plugin."
-#~ msgstr ""
-#~ "Avertissement&nbsp;: vous utilisez la version d'évaluation de l'extension."
-
-#~ msgid "The PRO Trial license will expire on"
-#~ msgstr "Votre licence se termine le"
-
-#~ msgid "You license for"
-#~ msgstr "Votre licence pour"
-
-#~ msgid "expires on"
-#~ msgstr "se termine le"
-
-#~ msgid "and you won't be granted TOP-PRIORITY SUPPORT or UPDATES."
-#~ msgstr "et vous ne diposerez plus du support rapide et des mises à jour."
-
-#~ msgid "Restore all plugin settings to defaults"
-#~ msgstr "Remettre les valeurs par défaut des paramètres de l'extension"
-
-#~ msgid "Restore settings"
-#~ msgstr "Remettre les paramètres"
-
-#~ msgid "Are you sure you want to restore all settings by default?"
-#~ msgstr "Etes vous sûr de vouloir remettre toutes les valeurs par défaut ?"
-
-#~ msgid "Yes, restore all settings"
-#~ msgstr "Oui, remettre les valeurs par défaut"
-
-#~ msgid "No, go back to the settings page"
-#~ msgstr "Non, retourner à la page des paramètres"
+msgstr "Langue"
 
 #~ msgid "Not set"
 #~ msgstr "Not set"
@@ -1425,6 +1058,9 @@ msgstr "Ajouter une langue"
 #~ msgid "Activate this plugin"
 #~ msgstr "Activer cette extension"
 
+#~ msgid "Go"
+#~ msgstr "Passez"
+
 #~ msgid "DONATE"
 #~ msgstr "Faire un don"
 
@@ -1471,7 +1107,7 @@ msgstr "Ajouter une langue"
 #~ msgstr "Déjà installé"
 
 #~ msgid "Environment"
-#~ msgstr "Environment"
+#~ msgstr "Environnent"
 
 #~ msgid "Active Plugins"
 #~ msgstr "Extensions actives"
@@ -1484,6 +1120,446 @@ msgstr "Ajouter une langue"
 
 #~ msgid "Send to custom email &#187;"
 #~ msgstr "Envoyer un e-mail spécifique &#187;"
+
+#~ msgid "requires"
+#~ msgstr "obligatoire"
+
+#~ msgid ""
+#~ "or higher, that is why it has been deactivated! Please upgrade WordPress "
+#~ "and try again."
+#~ msgstr ""
+#~ "ou supérieure, c'est pourquoi il a été désactivé! Merci de faire la mise "
+#~ "à jour de WordPress puis de ré-essayer."
+
+#~ msgid "Back to the WordPress"
+#~ msgstr "Retourner à WordPress"
+
+#~ msgid "Plugins page"
+#~ msgstr "Page des extensions"
+
+#~ msgid ""
+#~ "or higher! We do not guarantee that our plugin will work correctly. "
+#~ "Please upgrade to WordPress latest version."
+#~ msgstr ""
+#~ "ou plus! Nous ne garantissons pas que notre extension fonctionne "
+#~ "correctement. Merci de mettre à jour votre version de WordPress."
+
+#~ msgid "It’s time to upgrade your"
+#~ msgstr "C'est le moment de mettre à jour votre "
+
+#~ msgid "to"
+#~ msgstr "à"
+
+#~ msgid "version!"
+#~ msgstr "version"
+
+#~ msgid "Extend standard plugin functionality with new great options."
+#~ msgstr ""
+#~ "Étend les fonctionnalités de base de l'extension avec de nouvelles "
+#~ "options."
+
+#~ msgid "If you enjoy our plugin, please give it 5 stars on WordPress"
+#~ msgstr ""
+#~ "Si notre extension vous satisfait, merci de la notée avec 5 étoiles dans "
+#~ "Wordpress"
+
+#~ msgid "Rate the plugin"
+#~ msgstr "Noter l'extension"
+
+#~ msgid "If there is something wrong about it, please contact us"
+#~ msgstr ""
+#~ "Si quelque chose ne fonctionne pas correctement, merci de nous contacter"
+
+#~ msgid "Check premium options on the plugin settings page!"
+#~ msgstr "Vérifier les options premium dans les paramètres de l'extension!"
+
+#~ msgid "Wrong license key"
+#~ msgstr "Clé de licence incorrecte"
+
+#~ msgid ""
+#~ "Something went wrong. Please try again later. If the error appears again, "
+#~ "please contact us"
+#~ msgstr ""
+#~ "Il est survenu une erreur. Essayer de nouveau. Si l'erreur se produit de "
+#~ "nouveau, merci de contacter <a href=http://support.bestwebsoft."
+#~ "com>BestWebSoft</a>. Nous sommes désolés pour le désagrément."
+
+#~ msgid "We are sorry for inconvenience."
+#~ msgstr "Nous sommes désolés pour le désagrément."
+
+#~ msgid "This license key is bind to another site"
+#~ msgstr "La clé de licence correspond à un autre site."
+
+#~ msgid ""
+#~ "Unfortunately, you have exceeded the number of available tries per day. "
+#~ "Please, upload the plugin manually."
+#~ msgstr ""
+#~ "Désoler mais vous avez dépassé le nombre d'essai de la journée. Merci de "
+#~ "télécharger l'extension manuellement."
+
+#~ msgid ""
+#~ "Unfortunately, Your license has expired. To continue getting top-priority "
+#~ "support and plugin updates you should extend it in your"
+#~ msgstr ""
+#~ "Désoler, votre licence est terminée. Pour continuer à disposer du support "
+#~ "rapide et des mises à jour de l'extension vous devez la renouveler dans "
+#~ "votre"
+
+#~ msgid ""
+#~ "Unfortunately, the Pro licence was already installed to this domain. The "
+#~ "Pro Trial license can be installed only once."
+#~ msgstr ""
+#~ "Une licence a déjà été installée sur ce domaine. La licence d'évaluation "
+#~ "ne peut-être installée qu'une seule fois."
+
+#~ msgid ""
+#~ "Failed to download the zip archive. Please, upload the plugin manually"
+#~ msgstr ""
+#~ "Erreur de téléchargement de l'archive ZIP. Merci de télécharger "
+#~ "l'extension manuellement."
+
+#~ msgid "Failed to open the zip archive. Please, upload the plugin manually"
+#~ msgstr ""
+#~ "Erreur d'ouverture de l'archive zip. Merci de télécharger l'extension "
+#~ "manuellement."
+
+#~ msgid ""
+#~ "Your server does not support either ZipArchive or Phar. Please, upload "
+#~ "the plugin manually"
+#~ msgstr ""
+#~ "Votre serveur n'a pas le support du format des archives ZIP ou Phar. "
+#~ "Merci de télécharger l'extension manuellement."
+
+#~ msgid "UploadDir is not writable. Please, upload the plugin manually"
+#~ msgstr ""
+#~ "Erreur d'ouverture de l'archive zip. Merci de télécharger l'extension "
+#~ "manuellement."
+
+#~ msgid ""
+#~ "Something went wrong. Try again later or upload the plugin manually. We "
+#~ "are sorry for inconvenience."
+#~ msgstr ""
+#~ "Il est survenu une erreur. Essayer de nouveau ou bien télécharger "
+#~ "l'extension manuellement.Nous sommes désolés pour le désagrément."
+
+#~ msgid "Please, enter Your license key"
+#~ msgstr "Merci de saisir votre clé de licence"
+
+#~ msgid ""
+#~ "Congratulations! The Pro version of the plugin is successfully download "
+#~ "and activated."
+#~ msgstr ""
+#~ "Félicitations! La version PRO de cette extension a été téléchargée et "
+#~ "activée avec succès."
+
+#~ msgid "Please, go to"
+#~ msgstr "Merci d’aller à"
+
+#~ msgid "the setting page"
+#~ msgstr "Options supplémentaires"
+
+#~ msgid "You will be redirected automatically in 5 seconds."
+#~ msgstr "Vous allez être redirigé automatiquement dans 5 secondes"
+
+#~ msgid "Show Pro features"
+#~ msgstr "Voir les fonctionnalités PRO"
+
+#~ msgid "You can download and activate"
+#~ msgstr "Vous pouvez la télécharger et l'activer"
+
+#~ msgid "version of this plugin by entering Your license key."
+#~ msgstr "version de cette extension en donnant votre clé de licence."
+
+#~ msgid ""
+#~ "You can find your license key on your personal page Client area, by "
+#~ "clicking on the link"
+#~ msgstr ""
+#~ "Vous pouvez trouver votre clé de licence sur votre page personnelle dans "
+#~ "la zone cliente en cliquant sur le lien"
+
+#~ msgid ""
+#~ "(your username is the email you specify when purchasing the product)."
+#~ msgstr ""
+#~ "(votre nom d'utilisateur est l'adresse e-mail que vous avez donné lors de "
+#~ "l'achat de l'extension)."
+
+#~ msgid "Start Your Free %s-Day Trial Now"
+#~ msgstr "Débuter votre licence d'évaluation gratuite de %s jours"
+
+#~ msgid ""
+#~ "In order to continue using the plugin it is necessary to buy a %s license."
+#~ msgstr ""
+#~ "Afin de pouvoir continuer à utiliser cette extension il est nécessaire "
+#~ "d'acheter une licence %s."
+
+#~ msgid "After that you can activate it by entering your license key."
+#~ msgstr ""
+#~ " Après vous pouvez activer cette extension en donnant votre clé de "
+#~ "licence."
+
+#~ msgid ""
+#~ "Unfortunately, you have exceeded the number of available tries per day."
+#~ msgstr ""
+#~ "Désoler mais vous avez dépassé le nombre d'essai de la journée. Merci de "
+#~ "télécharger l'extension manuellement."
+
+#~ msgid ""
+#~ "Congratulations! The Pro license of the plugin is successfully activated."
+#~ msgstr ""
+#~ "Félicitations! La version PRO de cette extension a été téléchargée et "
+#~ "activée avec succès."
+
+#~ msgid "Wrong license key."
+#~ msgstr "Clé de licence incorrecte"
+
+#~ msgid "This license key is bind to another site."
+#~ msgstr "La clé de licence correspond à un autre site."
+
+#~ msgid ""
+#~ "This license key is valid, but Your license has expired. If you want to "
+#~ "update our plugin in future, you should extend the license."
+#~ msgstr ""
+#~ "La clé de licence est valide mais votre durée de validité est passée. "
+#~ "Pour continuer à disposer du support rapide et des mises à jour de "
+#~ "l'extension vous devez la renouveller."
+
+#~ msgid "Unfortunately, you have exceeded the number of available tries."
+#~ msgstr ""
+#~ "Désoler mais vous avez dépassé le nombre d'essai de la journée. Merci de "
+#~ "télécharger l'extension manuellement."
+
+#~ msgid ""
+#~ "Unfortunately, the Pro Trial licence was already installed to this "
+#~ "domain. The Pro Trial license can be installed only once."
+#~ msgstr ""
+#~ "Malheureusement la licence PRO a déjà été installée sur ce domaine. La "
+#~ "licence PRO d'évaluation peut être installée une seule fois."
+
+#~ msgid "The Pro Trial license key is valid."
+#~ msgstr "La clé de licence d'évaluation est valide."
+
+#~ msgid "The license key is valid."
+#~ msgstr "La clé de licence est valide."
+
+#~ msgid "Your license will expire on"
+#~ msgstr "Votre licence se termine le"
+
+#~ msgid "Please, enter your license key"
+#~ msgstr "Merci de saisir votre clé de licence"
+
+#~ msgid ""
+#~ "If needed you can check if the license key is correct or reenter it in "
+#~ "the field below. You can find your license key on your personal page - "
+#~ "Client area - on our website"
+#~ msgstr ""
+#~ "Si nécessaire vous pouvez vérifier que la clé de licence est correcte ou "
+#~ "la saisir de nouveau dans le champ ci-dessous. Vous pouvez trouver votre "
+#~ "clé de licence sur votre page personnelle (zone client) sur notre site "
+#~ "web."
+
+#~ msgid ""
+#~ "(your username is the email you specify when purchasing the product). If "
+#~ "necessary, please submit \"Lost your password?\" request."
+#~ msgstr ""
+#~ "(votre nom d'utilisateur est l'adresse e-mail que vous avez donné lors de "
+#~ "l'achat de l'extension). Si nécessaire, utilisez la fonction de demande "
+#~ "de mot de passe perdu."
+
+#~ msgid "Check license key"
+#~ msgstr "Vérifier la clé de licence"
+
+#~ msgid "WARNING: Illegal use notification"
+#~ msgstr "AVERTISSEMENT&nbsp;: Notification d'utilisation abusive"
+
+#~ msgid ""
+#~ "You can use one license of the Pro plugin for one domain only. Please "
+#~ "check and edit your license or domain if necessary using you personal "
+#~ "Client Area. We strongly recommend you to solve the problem within 24 "
+#~ "hours, otherwise the Pro plugin will be deactivated."
+#~ msgstr ""
+#~ "Vous ne pouvez utilisez qu'une licence de la version Pro de l'extension "
+#~ "pour un seul domaine. Merci de vérifier et de modifier votre licence ou "
+#~ "votre domaine si nécessaire en utilisant votre zone client. Nous vous "
+#~ "recommandons de résoudre ce problème dans les 24 heures, sinon "
+#~ "l'extension sera rendue inactive."
+
+#~ msgid ""
+#~ "Notice: Your Pro Trial license has expired. To continue using the plugin "
+#~ "you should buy a Pro license"
+#~ msgstr ""
+#~ "Information&nbsp;: Votre licence d'évaluation est terminée. Pour "
+#~ "continuer à disposer des fonctions premium vous devez acheter une licence."
+
+#~ msgid ""
+#~ "Your license has expired. To continue getting top-priority support and "
+#~ "plugin updates you should extend it."
+#~ msgstr ""
+#~ "Votre licence est terminée. Pour continuer à disposer du support rapide "
+#~ "et des mises à jour de l'extension vous devez la renouveler."
+
+#~ msgid "Notice: You are using the Pro Trial license of %s plugin."
+#~ msgstr ""
+#~ "Avertissement&nbsp;: vous utilisez la version d'évaluation de l'extension "
+#~ "%s."
+
+#~ msgid "Notice: You are using the Pro Trial license of plugin."
+#~ msgstr ""
+#~ "Avertissement&nbsp;: vous utilisez la version d'évaluation de l'extension."
+
+#~ msgid "The Pro Trial license will expire on"
+#~ msgstr "Votre licence se termine le"
+
+#~ msgid "You license for"
+#~ msgstr "Votre licence pour"
+
+#~ msgid "expires on"
+#~ msgstr "se termine le"
+
+#~ msgid "and you won't be granted TOP-PRIORITY SUPPORT or UPDATES."
+#~ msgstr "et vous ne disposerez plus du support rapide et des mises à jour."
+
+#~ msgid "Thank you for installing"
+#~ msgstr "Merci d'avoir installé"
+
+#~ msgid "Let's get started"
+#~ msgstr "C'est parti"
+
+#~ msgid "Configure Settings"
+#~ msgstr "Options du formulaire de Contact"
+
+#~ msgid "Add New"
+#~ msgstr "Ajouter un nouveau"
+
+#~ msgid "Close notice"
+#~ msgstr "Fermer l'avertissement"
+
+#~ msgid "Notice"
+#~ msgstr "Avertissement"
+
+#~ msgid "The plugin's settings have been changed."
+#~ msgstr "Les paramètres de l'extension ont été modifiés."
+
+#~ msgid ""
+#~ "You can always look at premium options by clicking on the \"Show Pro "
+#~ "features\" in the \"Go PRO\" tab"
+#~ msgstr ""
+#~ "Vous pouvez toujours consulter les options premium en cliquant sur \"Voir "
+#~ "les fonctionnalités PRO\" dans l'onglet \"Passer PRO\""
+
+#~ msgid "Add BWS Plugins Shortcode"
+#~ msgstr "Ajouter un code court de l'extension BWS"
+
+#~ msgid "Add shortcode"
+#~ msgstr "Ajouter le code court"
+
+#~ msgid "Add BestWebSoft plugins' shortcodes using this button."
+#~ msgstr "Ajouter le code court de l'extension BWS avec ce bouton."
+
+#~ msgid "Restore all plugin settings to defaults"
+#~ msgstr "Remettre les valeurs par défaut des paramètres de l'extension"
+
+#~ msgid "Restore settings"
+#~ msgstr "Remettre les paramètres"
+
+#~ msgid "Are you sure you want to restore all settings by default?"
+#~ msgstr "Êtes vous sûr de vouloir remettre toutes les valeurs par défaut ?"
+
+#~ msgid "Yes, restore all settings"
+#~ msgstr "Oui, remettre les valeurs par défaut"
+
+#~ msgid "No, go back to the settings page"
+#~ msgstr "Non, retourner à la page des paramètres"
+
+#~ msgid "Plugin"
+#~ msgstr "Extension"
+
+#~ msgid "Shortcode settings"
+#~ msgstr "Paramètres du code court"
+
+#~ msgid "The shortcode will be inserted"
+#~ msgstr "Le code court va être inséré"
+
+#~ msgid "Insert"
+#~ msgstr "Insérer"
+
+#~ msgid "Visit Help Center"
+#~ msgstr "Visiter le site du support"
+
+#~ msgid "For more information:"
+#~ msgstr "Pour plus d'informations:"
+
+#~ msgid "Documentation"
+#~ msgstr "Documentation"
+
+#~ msgid "Video Instructions"
+#~ msgstr "Mode d'emploi en vidéo"
+
+#~ msgid "Submit a Request"
+#~ msgstr "Envoyer une requête"
+
+#~ msgid ""
+#~ "The plugin's settings have been changed. In order to save them please "
+#~ "don't forget to click the 'Save Changes' button."
+#~ msgstr ""
+#~ "Les paramètres de l'extension ont été changés. Afin de pouvoir les "
+#~ "enregistrer, merci de cliquer sur le bouton 'Enregistrer les "
+#~ "modifications'."
+
+#~ msgid ""
+#~ "If you would like to add Contact Form to your website, just copy and "
+#~ "paste this shortcode to your post or page or widget:"
+#~ msgstr ""
+#~ "Si vous souhaiter ajouter un formulaire de contact à votre site web, "
+#~ "copiez juste ce code dans un article ou sur une page ou un widget&nbsp;:"
+
+#~ msgid ""
+#~ "If you have any problems with the standard shortcode [contact_form], you "
+#~ "should use the shortcode"
+#~ msgstr ""
+#~ "Si vous avez un soucis avec le code court standard [contact_form], vous "
+#~ "pouvez utilisez le code court "
+
+#~ msgid "They work the same way."
+#~ msgstr "Ils fonctionnent de la même manière."
+
+#~ msgid ""
+#~ "If have any problems with the standard shortcode [contact_form], you "
+#~ "should use the shortcode"
+#~ msgstr ""
+#~ "Si vous avez un soucis avec le code court standard [contact_form], vous "
+#~ "pouvez utilisez le code court "
+
+#~ msgid "The $_SERVER variable that is used to build a URL of the form"
+#~ msgstr ""
+#~ "La variable $_SERVER qui est utilisée pour construire l'URL du formulaire"
+
+#~ msgid ""
+#~ "If you are not sure whether to change this setting or not, please do not "
+#~ "do that."
+#~ msgstr ""
+#~ "Si vous n'êtes pas sûr de ce que vous faites, merci de ne pas toucher ce "
+#~ "paramètre."
+
+#~ msgid "Show with errors"
+#~ msgstr "Afficher avec les erreurs"
+
+#~ msgid "Please enter your full name..."
+#~ msgstr "Merci de saisir votre nom..."
+
+#~ msgid "Please enter your address..."
+#~ msgstr "Merci de saisir votre adresse..."
+
+#~ msgid "Please enter your email address..."
+#~ msgstr "Merci de saisir votre adresse e-mail..."
+
+#~ msgid "Please enter your phone number..."
+#~ msgstr "Merci de saisir votre numéro de téléphone..."
+
+#~ msgid "Please enter subject..."
+#~ msgstr "Merci de saisir le sujet..."
+
+#~ msgid "Please enter your message..."
+#~ msgstr "Merci de saisir votre message..."
 
 #~ msgid "powered by"
 #~ msgstr "fournis par"
