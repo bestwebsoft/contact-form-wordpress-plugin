@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: http://bestwebsoft.com/donate/
 Tags: Attachment, add contact form, add contact form add-on, add several contact forms, address form, best contact form, best cf, best contact form add-on, cnotact, conact, contact, contact button, contact form, contact form addon, contact form add-on, contact form parameters, contact form plugin, contact me, contacts, contacts form plugin, contcat, copy, request, send, send copy, several contact forms, contact us form, contactform, custom form, easy contact form, email, email form, file upload, form addons, form register, form registration, free feedback form, free form, free contact form, feedback, feedback form, form, free, forms plugin, forms, insert the shortcode, kontak form, online form, multi, multiple contact forms, multilingual, post feedback, request, send, simple contact form, send copy, send messages, shortcode, web-page feedback, web form, wordpress contact form, wp form, wordpress plugin, wp plugins
 Requires at least: 3.8
-Tested up to: 4.4-RC1
-Stable tag: 3.96
+Tested up to: 4.4.1
+Stable tag: 3.97
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -65,12 +65,13 @@ There is also a premium version of the plugin <a href="http://bestwebsoft.com/pr
 * Brazilian Portuguese (pt_BR) (thanks to <a href="mailto:brenojac@gmail.com">Breno Jacinto</a>, www.iconis.org.br, <a href="mailto:wordpress@djio.com.br">DJIO</a>, www.djio.com.br)
 * Catalan (ca) (thanks to <a href="mailto:kenneth@snollocer.net">Kenneth</a>)
 * Chinese (zh_CN) (thanks to <a href="mailto:kplam@qq.com">kplam</a>)
+* Czech (cs_CZ) (thanks to <a href="mailto:info@pamadessoft.cz">PaMaDeSSoft</a>, www.pamadessoft.cz)
 * Estonian (et) (thanks to <a href="mailto:feliks@veebimeister.com">Feliks</a>, www.veebimeister.com)
 * French (fr_FR) (thanks Capronnier Luc)
 * German (de_DE) (thanks to <a href="mailto:private18@web.de">Alex</a>)
 * Greek (el) (thanks to Dimitris Karantonis, www.soft4real.com/en-UK)
 * Japanese (ja) (thanks to Foken)
-* Dutch (nl_NL) (thanks to <a href="mailto:olivier@oil5networks.com">Olivier Smet</a>)
+* Dutch (nl_NL) (thanks to <a href="mailto:olivier.smet@dynata.nl">Olivier Smet</a>)
 * Norwegian (nb_NO) (thanks to <a href="mailto:bestwebsoftcontact@nordsoft.no">Per Rommetveit</a>)
 * Russian (ru_RU)
 * Slovak (sk_SK) (thanks to <a href="mailto:michal.vittek@wp.sk">Michal Vittek</a>, www.wp.sk)
@@ -167,6 +168,11 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 15. Re-order contact form fields using drag & drop interface.
 
 == Changelog ==
+
+= V3.97 - 08.01.2016 =
+* Update : The styles for reCaptcha were updated.
+* NEW : The Czech language file is added.
+* Update : The French language file is updated.
 
 = V3.96 - 04.12.2015 =
 * Bugfix : The bug with sorting on mobile devices was fixed.
@@ -602,6 +608,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * Ability to add Contact Form into a post. Ability to adjust displaying of the form via shortcode is added.
 
 == Upgrade Notice ==
+
+= V3.97 =
+The styles for reCaptcha were updated. The Czech language file is added. The French language file is updated.
 
 = V3.96 =
 The bug with sorting on mobile devices was fixed. XSS vulnerability was removed. The bug with plugin menu duplicating was fixed. The French language file is updated.

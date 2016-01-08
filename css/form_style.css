@@ -26,8 +26,12 @@
 	display: none;
 }
 .cntctfrm_input_captcha .cptch_block ~ .gglcptch,
-.cntctfrm_input_captcha .cptchpr_block ~ .gglcptch {
-	padding: 20px 0 0;
+.cntctfrm_input_captcha .cptchpls_block ~ .gglcptch,
+.cntctfrm_input_captcha .cptchpr_block ~ .gglcptch,
+.cntctfrm_input_captcha .cptch_block ~ .gglcptchpr,
+.cntctfrm_input_captcha .cptchpls_block ~ .gglcptchpr,
+.cntctfrm_input_captcha .cptchpr_block ~ .gglcptchpr {
+    padding: 20px 0 0;
 }
 .cntctfrm_contact_form .gglcptch #recaptcha_widget_div {
 	width: 320px !important;

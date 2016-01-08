@@ -6,12 +6,12 @@ Description: Plugin for Contact Form.
 Author: BestWebSoft
 Text Domain: contact-form-plugin
 Domain Path: /languages
-Version: 3.96
+Version: 3.97
 Author URI: http://bestwebsoft.com/
 License: GPLv2 or later
 */
 
-/*  @ Copyright 2015  BestWebSoft  ( http://support.bestwebsoft.com )
+/*  @ Copyright 2016  BestWebSoft  ( http://support.bestwebsoft.com )
 
 	This program is free software; you can redistribute it and/or modify
 	it under the terms of the GNU General Public License, version 2, as
@@ -169,7 +169,7 @@ if ( ! function_exists( 'cntctfrm_settings' ) ) {
 			'cntctfrm_subject_label' 			=> array( 'en' => __( "Subject:", 'contact-form-plugin' ) ),
 			'cntctfrm_message_label' 			=> array( 'en' => __( "Message:", 'contact-form-plugin' ) ),
 			'cntctfrm_attachment_label'			=> array( 'en' => __( "Attachment:", 'contact-form-plugin' ) ),
-			'cntctfrm_attachment_tooltip'		=> array( 'en' => __( "Supported file types: HTML, TXT, CSS, GIF, PNG, JPEG, JPG, TIFF, BMP, AI, EPS, PS, CSV, RTF, PDF, DOC, DOCX, XLS, XLSX, ZIP, RAR, WAV, MP3, PPT. Max file size: 2MB", 'contact-form-plugin' ) ),
+			'cntctfrm_attachment_tooltip'		=> array( 'en' => __( "Supported file types: HTML, TXT, CSS, GIF, PNG, JPEG, JPG, TIFF, BMP, AI, EPS, PS, CSV, RTF, PDF, DOC, DOCX, XLS, XLSX, ZIP, RAR, WAV, MP3, PPT.", 'contact-form-plugin' ) ),
 			'cntctfrm_send_copy_label'			=> array( 'en' => __( "Send me a copy", 'contact-form-plugin' ) ),
 			'cntctfrm_submit_label'				=> array( 'en' => __( "Submit", 'contact-form-plugin' ) ),
 			'cntctfrm_name_error' 				=> array( 'en' => __( "Your name is required.", 'contact-form-plugin' ) ),
