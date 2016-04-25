@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: http://bestwebsoft.com/donate/
 Tags: Attachment, add contact form, add contact form add-on, add several contact forms, address form, best contact form, best cf, best contact form add-on, cnotact, conact, contact, contact button, contact form, contact form addon, contact form add-on, contact form parameters, contact form plugin, contact me, contacts, contacts form plugin, contcat, copy, request, send, send copy, several contact forms, contact us form, contactform, custom form, easy contact form, email, email form, file upload, form addons, form register, form registration, free feedback form, free form, free contact form, feedback, feedback form, form, free, forms plugin, forms, insert the shortcode, kontak form, online form, multi, multiple contact forms, multilingual, post feedback, request, send, simple contact form, send copy, send messages, shortcode, web-page feedback, web form, wordpress contact form, wp form, wordpress plugin, wp plugins
 Requires at least: 3.8
-Tested up to: 4.4.1
-Stable tag: 3.97
+Tested up to: 4.5
+Stable tag: 3.98
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -41,6 +41,9 @@ http://www.youtube.com/watch?v=nGwh-oslK-c
 * Create unlimited number of forms (requires <a href="http://bestwebsoft.com/products/contact-form-multi/?k=34543c152eff369d529e9b4da85985a9">Contact Form Multi by BestWebSoft</a> plugin).
 * High quality protection: use captcha to prevent spam attacks (requires <a href="http://bestwebsoft.com/products/captcha/?k=45dcf2a5ccd70a7fc8606f8030730ac7">Captcha by BestWebSoft</a> or <a href="http://bestwebsoft.com/products/google-captcha/?k=159789f556e3a9c58df8f25384903ba5">Google Captcha (reCAPTCHA) by BestWebSoft</a> plugin)
 * Save, browse, delete or download messages that have been sent from the site via the Contact Form (requires <a href="http://bestwebsoft.com/products/contact-form-to-db/?k=d7d962591b5be0ce6c27af778b1b36ee">Contact Form to DB by BestWebSoft</a> plugin)
+* Add users who send you emails via contact form to your subscription using Subscriber by BestWebSoft (requires <a href="http://bestwebsoft.com/products/subscriber/?k=2ce0827916414c9c8576110f13560030">Subscriber by BestWebSoft</a> plugin)
+
+If you have a feature, suggestion or idea you'd like to see in the plugin, we'd love to hear about it! <a href="http://support.bestwebsoft.com/hc/en-us/requests/new" target="_blank">Suggest a Feature</a>
 
 = Recommended Plugins =
 
@@ -66,6 +69,7 @@ There is also a premium version of the plugin <a href="http://bestwebsoft.com/pr
 * Catalan (ca) (thanks to <a href="mailto:kenneth@snollocer.net">Kenneth</a>)
 * Chinese (zh_CN) (thanks to <a href="mailto:kplam@qq.com">kplam</a>)
 * Czech (cs_CZ) (thanks to <a href="mailto:info@pamadessoft.cz">PaMaDeSSoft</a>, www.pamadessoft.cz)
+* Danish (da_DK) (thanks to <a href="mailto:support@teknisk-support.com ">Kasper Jensen</a>, www.teknisk-support.com)
 * Estonian (et) (thanks to <a href="mailto:feliks@veebimeister.com">Feliks</a>, www.veebimeister.com)
 * French (fr_FR) (thanks Capronnier Luc)
 * German (de_DE) (thanks to <a href="mailto:private18@web.de">Alex</a>)
@@ -85,7 +89,7 @@ If you create your own language pack or update the existing one, you can send <a
 
 = Technical support =
 
-Dear users, our plugins are available for free download. If you have any questions or recommendations regarding the functionality of our plugins (existing options, new options, current issues), please feel free to contact us. Please note that we accept requests in English only. All messages in another languages won't be accepted.
+Dear users, our plugins are available for free download. If you have any questions or recommendations regarding the functionality of our plugins (existing options, new options, current issues), please feel free to contact us. Please note that we accept requests in English only. All messages in other languages won't be accepted.
 
 If you notice any bugs in the plugins, you can notify us about it and we'll investigate and fix the issue then. Your request should contain URL of the website, issues description and WordPress admin panel credentials.
 Moreover we can customize the plugin according to your requirements. It's a paid service (as a rule it costs $40, but the price can vary depending on the amount of the necessary changes and their complexity). Please note that we could also include this or that feature (developed for you) in the next release and share with the other users then. 
@@ -154,7 +158,7 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 1. Plugin settings in WordPress admin panel.
 2. Plugin additional settings.
 3. Plugin appearance settings.
-3. Widget settings for using shortcode in the sidebar.
+4. Widget settings for using shortcode in the sidebar.
 5. Contact Form display.
 6. Contact Form display with additional fields.
 7. Contact Form display in 2 columns.
@@ -168,6 +172,10 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 15. Re-order contact form fields using drag & drop interface.
 
 == Changelog ==
+
+= V3.98 - 25.04.2016 =
+* NEW : Compatibility with plugin Subscriber.
+* NEW : The Danish language file is added.
 
 = V3.97 - 08.01.2016 =
 * Update : The styles for reCaptcha were updated.
@@ -608,6 +616,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * Ability to add Contact Form into a post. Ability to adjust displaying of the form via shortcode is added.
 
 == Upgrade Notice ==
+
+= V3.98 =
+Compatibility with plugin Subscriber. The Danish language file is added.
 
 = V3.97 =
 The styles for reCaptcha were updated. The Czech language file is added. The French language file is updated.

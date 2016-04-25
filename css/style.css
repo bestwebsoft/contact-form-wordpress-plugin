@@ -216,6 +216,21 @@ td.cntctfrm_td_top_align {
 .rtl .cntctfrm_how_to_use {
 	float: left;
 }
+.cntctfrm_auto_response_message {
+	position: relative; 
+	margin-left: 20px; 
+	z-index: -1;
+}
+@media screen and (max-width: 785px) {
+	.cntctfrm_auto_response_message {
+		margin-left: 0px; 
+	}
+}
+@media screen and (max-width: 420px) {
+	.subsubsub.cntctfrm_how_to_use li {
+		white-space: normal;
+	}
+}
 @media screen and (max-width: 1220px) {
 	.cntctfrm_how_to_use {
 		float: none;

@@ -9,6 +9,23 @@
 				$( '.cntctfrm_change_label_block' ).hide();
 			}
 		});
+
+		$( 'input[name="cntctfrm_custom_email"]' ).focus( function() {
+			$( '#cntctfrm_select_email_custom' ).attr( 'checked', 'checked' );
+		});
+
+		$( 'input[name="cntctfrm_from_field"]' ).focus( function() {
+			$( '#cntctfrm_select_from_custom_field' ).attr( 'checked', 'checked' );
+		});
+
+		$( 'input[name="cntctfrm_custom_from_email"]' ).focus( function() {
+			$( '#cntctfrm_from_custom_email' ).attr( 'checked', 'checked' );
+		});
+
+		$( 'input[name="cntctfrm_redirect_url"]' ).focus( function() {
+			$( '#cntctfrm_action_after_send_url' ).attr( 'checked', 'checked' );
+		});
+		
 		$( '#cntctfrm_display_add_info' ).change( function() {
 			if ( $( this ).is( ':checked' ) ) {
 				$( '.cntctfrm_display_add_info_block' ).show();
@@ -27,14 +44,14 @@
 					$( '.cntctfrm_change_label_block .cntctfrm_language_tab, .cntctfrm_action_after_send_block .cntctfrm_language_tab' ).each( function() {
 						$( this ).addClass( 'hidden' );
 					});
-					$( '.cntctfrm_change_label_block .cntctfrm_language_tab' ).first().clone().appendTo( '.cntctfrm_change_label_block' ).removeClass( 'hidden' ).removeClass( 'cntctfrm_tab_en' ).addClass( 'cntctfrm_tab_' + lang_val );
-					$( '.cntctfrm_action_after_send_block .cntctfrm_language_tab' ).first().clone().insertBefore( '#cntctfrm_before' ).removeClass( 'hidden' ).removeClass( 'cntctfrm_tab_en' ).addClass( 'cntctfrm_tab_' + lang_val );
+					$( '.cntctfrm_change_label_block .cntctfrm_language_tab' ).first().clone().appendTo( '.cntctfrm_change_label_block' ).removeClass( 'hidden' ).removeClass( 'cntctfrm_tab_default' ).addClass( 'cntctfrm_tab_' + lang_val );
+					$( '.cntctfrm_action_after_send_block .cntctfrm_language_tab' ).first().clone().insertBefore( '#cntctfrm_before' ).removeClass( 'hidden' ).removeClass( 'cntctfrm_tab_default' ).addClass( 'cntctfrm_tab_' + lang_val );
 					$( '.cntctfrm_change_label_block .cntctfrm_language_tab' ).last().find( 'input' ).each( function() {
 						$( this ).val( '' );
-						$( this ).attr( 'name', $( this ).attr( 'name' ).replace( '[en]', '[' + lang_val + ']' ) );
+						$( this ).attr( 'name', $( this ).attr( 'name' ).replace( '[default]', '[' + lang_val + ']' ) );
 					});
 					$( '.cntctfrm_change_label_block .cntctfrm_language_tab' ).last().find( '.cntctfrm_shortcode_for_language' ).last().html( text );
-					$( '.cntctfrm_action_after_send_block .cntctfrm_language_tab' ).last().find( 'input' ).val( '' ).attr( 'name', $( '.cntctfrm_action_after_send_block .cntctfrm_language_tab' ).last().find( 'input' ).attr( 'name' ).replace( '[en]', '[' + lang_val + ']' ) );
+					$( '.cntctfrm_action_after_send_block .cntctfrm_language_tab' ).last().find( 'input' ).val( '' ).attr( 'name', $( '.cntctfrm_action_after_send_block .cntctfrm_language_tab' ).last().find( 'input' ).attr( 'name' ).replace( '[default]', '[' + lang_val + ']' ) );
 					$( '.cntctfrm_action_after_send_block .cntctfrm_language_tab' ).last().find( '.cntctfrm_shortcode_for_language' ).last().html( text );
 					$( '.cntctfrm_change_label_block .cntctfrm_label_language_tab, .cntctfrm_action_after_send_block .cntctfrm_label_language_tab' ).each( function() {
 						$( this ).removeClass( 'cntctfrm_active' );
@@ -120,7 +137,7 @@
 				var fields_first_column = fields_second_column = '';
 
 				$( '#cntctfrm_first_column .cntctfrm_field_wrap' ).each( function() {
-					fields_first_column += $( this ).find( 'input, select, textarea' ).attr( 'name' ) + ',';
+					fields_first_column += $( this ).find( 'input, select, textarea' ).filter( ':first' ).attr( 'name' ) + ',';
 				});
 				fields_first_column = fields_first_column.substring( 0, fields_first_column.length - 1 );
 
