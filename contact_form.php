@@ -6,7 +6,7 @@ Description: Plugin for Contact Form.
 Author: BestWebSoft
 Text Domain: contact-form-plugin
 Domain Path: /languages
-Version: 3.98
+Version: 3.99
 Author URI: http://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -118,7 +118,7 @@ if ( ! function_exists ( 'cntctfrm_plugins_loaded' ) ) {
 
 /* Register settings for plugin */
 if ( ! function_exists( 'cntctfrm_settings' ) ) {
-	function cntctfrm_settings() {
+	function cntctfrm_settings( $form_id = false ) {
 		global $cntctfrm_options, $cntctfrm_option_defaults, $cntctfrm_plugin_info;
 		$cntctfrm_db_version = "1.0";
 
@@ -290,16 +290,17 @@ if ( ! function_exists( 'cntctfrm_settings' ) ) {
 			}
 
 			/* Get options from the database */
-			if ( isset( $_SESSION['cntctfrmmlt_id_form'] ) ) {
-				if ( get_option( 'cntctfrmmlt_options_' . $_SESSION['cntctfrmmlt_id_form'] ) ) {
-					$cntctfrm_options = get_option( 'cntctfrmmlt_options_'. $_SESSION['cntctfrmmlt_id_form'] );
+			if ( isset( $_SESSION['cntctfrmmlt_id_form'] ) || $form_id ) {
+				$id = ( $form_id ) ? $form_id : $_SESSION['cntctfrmmlt_id_form'];
+				if ( get_option( 'cntctfrmmlt_options_' . $id ) ) {
+					$cntctfrm_options = get_option( 'cntctfrmmlt_options_'. $id );
 				} else {
 					if ( isset( $contact_form_multi_pro_active ) )
 						$cntctfrmmlt_options_main = get_option( 'cntctfrmmltpr_options_main' );
 					elseif ( isset( $contact_form_multi_active ) )
 						$cntctfrmmlt_options_main = get_option( 'cntctfrmmlt_options_main' );
 
-					if (  1 == $_SESSION['cntctfrmmlt_id_form'] && 1 == count( $cntctfrmmlt_options_main['name_id_form'] ) ) {
+					if (  1 == $id && 1 == count( $cntctfrmmlt_options_main['name_id_form'] ) ) {
 						add_option( 'cntctfrmmlt_options_1' , get_option( 'cntctfrm_options' ) );
 						$cntctfrm_options = get_option( 'cntctfrmmlt_options_1' );
 					} else {
@@ -403,8 +404,13 @@ if ( ! function_exists( 'cntctfrm_settings' ) ) {
 			$cntctfrm_options['hide_premium_options'] = array();
 
 			if ( isset( $contact_form_multi_active ) || isset( $contact_form_multi_pro_active ) ) {
-				if ( isset( $_SESSION['cntctfrmmlt_id_form'] ) && get_option( 'cntctfrmmlt_options_' . $_SESSION['cntctfrmmlt_id_form'] ) ) {
-					update_option( 'cntctfrmmlt_options_' . $_SESSION['cntctfrmmlt_id_form'] , $cntctfrm_options );
+				if ( isset( $_SESSION['cntctfrmmlt_id_form'] ) || $form_id ) {
+					$id = ( $form_id ) ? $form_id : $_SESSION['cntctfrmmlt_id_form'];
+					if ( get_option( 'cntctfrmmlt_options_' . $id ) ) {
+						update_option( 'cntctfrmmlt_options_' . $id , $cntctfrm_options );
+					} else {
+						update_option( 'cntctfrmmlt_options', $cntctfrm_options );
+					}
 				} else {
 					update_option( 'cntctfrmmlt_options', $cntctfrm_options );
 				}
@@ -418,8 +424,13 @@ if ( ! function_exists( 'cntctfrm_settings' ) ) {
 			cntctfrm_db_create();
 			$cntctfrm_options['plugin_db_version'] = $cntctfrm_db_version;
 			if ( isset( $contact_form_multi_active ) || isset( $contact_form_multi_pro_active ) ) {
-				if ( isset( $_SESSION['cntctfrmmlt_id_form'] ) && get_option( 'cntctfrmmlt_options_' . $_SESSION['cntctfrmmlt_id_form'] ) ) {
-					update_option( 'cntctfrmmlt_options_' . $_SESSION['cntctfrmmlt_id_form'] , $cntctfrm_options );
+				if ( isset( $_SESSION['cntctfrmmlt_id_form'] ) || $form_id ) {
+					$id = ( $form_id ) ? $form_id : $_SESSION['cntctfrmmlt_id_form'];
+					if ( get_option( 'cntctfrmmlt_options_' . $id ) ) {
+						update_option( 'cntctfrmmlt_options_' . $id , $cntctfrm_options );
+					} else {
+						update_option( 'cntctfrmmlt_options', $cntctfrm_options );
+					}
 				} else {
 					update_option( 'cntctfrmmlt_options', $cntctfrm_options ); 
 				}
@@ -2219,31 +2230,26 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 if ( ! function_exists( 'cntctfrm_display_form' ) ) {
 	function cntctfrm_display_form( $atts = array( 'lang' => 'default' ) ) {
 		global $cntctfrm_error_message, $cntctfrm_options, $cntctfrm_result, $cntctfrmmlt_ide, $cntctfrmmlt_active_plugin, $cntctfrm_form_count;
-
 		$cntctfrm_form_count = empty( $cntctfrm_form_count ) ? 1 : ++$cntctfrm_form_count;
 		$cntctfrm_form_countid = ( $cntctfrm_form_count == 1 ? '' : '_' . $cntctfrm_form_count );
-
 		$content = "";
-
 		/* Get options for the form with a definite identifier */
 		require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 		if ( is_plugin_active( 'contact-form-multi/contact-form-multi.php' ) || is_plugin_active( 'contact-form-multi-pro/contact-form-multi-pro.php' ) ) {
-
-			if ( ! get_option( 'cntctfrmmlt_options' ) ) {
-				cntctfrm_settings();
-			}
-
 			extract( shortcode_atts( array( 'id' => $cntctfrmmlt_ide, 'lang' => 'default' ), $atts ) );
 			if ( isset( $atts['id'] ) ) {
+				cntctfrm_settings( $atts['id'] );
 				$cntctfrm_options = get_option( 'cntctfrmmlt_options_' . $atts['id'] );
 				/* if no options with the specified id */
 				if ( ! $cntctfrm_options ) {
 					$cntctfrm_options = get_option( 'cntctfrmmlt_options' );
 				}
 			} else {
+				cntctfrm_settings();
 				$cntctfrm_options = get_option( 'cntctfrmmlt_options' );
 			}
 		} else {
+			cntctfrm_settings();
 			$cntctfrm_options = get_option( 'cntctfrm_options' );
 			extract( shortcode_atts( array( 'lang' => 'default' ), $atts ) );
 		}
