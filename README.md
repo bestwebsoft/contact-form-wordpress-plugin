@@ -4,7 +4,7 @@
 The Contact Form plugin allows you to implement a feedback form to a web-page or a post in no time. It is an extremely easy form, that doesn&#8217;t require any additional settings, though there are some available options. All you need is just to activate the plugin and insert the shortcode [bestwebsoft_contact_form] into the text.
 There is also a premium version of the plugin with more useful features available.
 
-<img src="http://bestwebsoft.com/wp-content/uploads/2014/09/xcontact-form-banner-website.jpg" />
+<img src="http://bestwebsoft.com/wp-content/uploads/2014/09/contact-form-banner-website.jpg" />
 
 <a href="http://bestwebsoft.com/products/contact-form/description/" target=_blank>Description</a> | 
 <a href="http://bestwebsoft.com/products/contact-form/installation/" target=_blank>Installation</a> | 
