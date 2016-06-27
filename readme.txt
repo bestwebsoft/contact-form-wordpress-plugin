@@ -1,10 +1,10 @@
 === Contact Form by BestWebSoft ===
 Contributors: bestwebsoft
 Donate link: http://bestwebsoft.com/donate/
-Tags: Attachment, add contact form, add contact form add-on, add several contact forms, address form, best contact form, best cf, best contact form add-on, cnotact, conact, contact, contact button, contact form, contact form addon, contact form add-on, contact form parameters, contact form plugin, contact me, contacts, contacts form plugin, contcat, copy, request, send, send copy, several contact forms, contact us form, contactform, custom form, easy contact form, email, email form, file upload, form addons, form register, form registration, free feedback form, free form, free contact form, feedback, feedback form, form, free, forms plugin, forms, insert the shortcode, kontak form, online form, multi, multiple contact forms, multilingual, post feedback, request, send, simple contact form, send copy, send messages, shortcode, web-page feedback, web form, wordpress contact form, wp form, wordpress plugin, wp plugins
+Tags: contact, contact form, feedback form, contact us form, contact button, email form, contac, form, web-page feedback, cf, cf plugin, contact form plugin
 Requires at least: 3.8
-Tested up to: 4.5.1
-Stable tag: 3.99
+Tested up to: 4.5.3
+Stable tag: 4.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -85,7 +85,7 @@ There is also a premium version of the plugin <a href="http://bestwebsoft.com/pr
 * Ukrainian (uk)
 * Vietnamese (vi) (thanks to <a href="mailto:bizover@gmail.com">Dich Anh Viet</a>, www.bizover.net)
 
-If you create your own language pack or update the existing one, you can send <a href="http://codex.wordpress.org/Translating_WordPress" target="_blank">the text in PO and MO files</a> for <a href="http://support.bestwebsoft.com" target="_blank">BestWebSoft</a> and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO files <a href="http://www.poedit.net/download.php" target="_blank">Poedit</a>.
+Some of these translations are not complete. We are constantly adding new features which should be translated. If you create your own language pack or update the existing one, you can send <a href="http://codex.wordpress.org/Translating_WordPress" target="_blank">the text in PO and MO files</a> for <a href="http://support.bestwebsoft.com/hc/en-us/requests/new" target="_blank">BestWebSoft</a> and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO files <a href="http://www.poedit.net/download.php" target="_blank">Poedit</a>.
 
 = Technical support =
 
@@ -155,13 +155,13 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 
 == Screenshots ==
 
-1. Plugin settings in WordPress admin panel.
-2. Plugin additional settings.
-3. Plugin appearance settings.
-4. Widget settings for using shortcode in the sidebar.
-5. Contact Form display.
-6. Contact Form display with additional fields.
-7. Contact Form display in 2 columns.
+1. Contact Form display.
+2. Contact Form display with additional fields.
+3. Contact Form display in 2 columns.
+4. Plugin settings in WordPress admin panel.
+5. Plugin additional settings.
+6. Plugin appearance settings.
+7. Widget settings for using shortcode in the sidebar.
 8. Add or remove additional fields easily and label any contact form fields you want.
 9. Choose additional information about sender you would like to see.
 10. Enable the file attachement option to get important files from senders via contact form.
@@ -172,6 +172,11 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 15. Re-order contact form fields using drag & drop interface.
 
 == Changelog ==
+
+= V4.0.0 - 27.06.2016 =
+* NEW : The ability to add custom styles to frontend of your site has been added.
+* Update : The Spanish language file is updated.
+* Update : The French language file is updated.
 
 = V3.99 - 27.04.2016 =
 * Bugfix : The bug with adding options to the database was fixed.
@@ -619,6 +624,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * Ability to add Contact Form into a post. Ability to adjust displaying of the form via shortcode is added.
 
 == Upgrade Notice ==
+
+= V4.0.0 =
+The ability to add custom styles to frontend of your site has been added. The Spanish language file is updated. The French language file is updated.
 
 = V3.99 =
 The bug with adding options to the database was fixed.
