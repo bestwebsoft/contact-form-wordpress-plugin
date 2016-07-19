@@ -25,7 +25,7 @@
 		$( 'input[name="cntctfrm_redirect_url"]' ).focus( function() {
 			$( '#cntctfrm_action_after_send_url' ).attr( 'checked', 'checked' );
 		});
-		
+
 		$( '#cntctfrm_display_add_info' ).change( function() {
 			if ( $( this ).is( ':checked' ) ) {
 				$( '.cntctfrm_display_add_info_block' ).show();
@@ -33,7 +33,9 @@
 				$( '.cntctfrm_display_add_info_block' ).hide();
 			}
 		});
-		$( '#cntctfrm_add_language_button' ).click( function() {
+		$( '#cntctfrm_add_language_button' ).click( function( event ) {
+			event = event || window.event;
+			event.preventDefault();
 			$.ajax({
 				url: '../wp-admin/admin-ajax.php',/* update_url, */
 				type: "POST",
@@ -111,7 +113,7 @@
 					},
 					'rtl' : {
 						'left'  : '#cntctfrm_submit_second_column',
-						'right' : '#cntctfrm_submit_first_column'						
+						'right' : '#cntctfrm_submit_first_column'
 					}
 				},
 				html = $( submit[ direction ][ prev_position ] ).html();

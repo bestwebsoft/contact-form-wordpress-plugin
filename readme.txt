@@ -4,11 +4,11 @@ Donate link: http://bestwebsoft.com/donate/
 Tags: contact, contact form, feedback form, contact us form, contact button, email form, contac, form, web-page feedback, cf, cf plugin, contact form plugin
 Requires at least: 3.8
 Tested up to: 4.5.3
-Stable tag: 4.0.0
+Stable tag: 4.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Add Contact Form to your WordPress website.
+Allow customers to reach you using secure contact form plugin any website must have.
 
 == Description ==
 
@@ -92,14 +92,14 @@ Some of these translations are not complete. We are constantly adding new featur
 Dear users, our plugins are available for free download. If you have any questions or recommendations regarding the functionality of our plugins (existing options, new options, current issues), please feel free to contact us. Please note that we accept requests in English only. All messages in other languages won't be accepted.
 
 If you notice any bugs in the plugins, you can notify us about it and we'll investigate and fix the issue then. Your request should contain URL of the website, issues description and WordPress admin panel credentials.
-Moreover we can customize the plugin according to your requirements. It's a paid service (as a rule it costs $40, but the price can vary depending on the amount of the necessary changes and their complexity). Please note that we could also include this or that feature (developed for you) in the next release and share with the other users then. 
+Moreover we can customize the plugin according to your requirements. It's a paid service (as a rule it costs $40, but the price can vary depending on the amount of the necessary changes and their complexity). Please note that we could also include this or that feature (developed for you) in the next release and share with the other users then.
 We can fix some things for free for the users who provide translation of our plugin into their native language (this should be a new translation of a certain plugin, you can check available translations on the official plugin page).
 
 == Installation ==
 
 1. Upload the `Contact Form` folder to the `/wp-content/plugins/` directory.
 2. Activate the plugin using the 'Plugins' menu in your WordPress admin panel.
-3. You can adjust the necessary settings using your WordPress admin panel in "BWS Plugins" > "Contact Form".
+3. You can adjust the necessary settings using your WordPress admin panel in "BWS Panel" > "Contact Form".
 4. Create a page or a post and insert the shortcode [bestwebsoft_contact_form] into the text.
 
 <a href="https://docs.google.com/document/d/1obcWMPDPIIhUxcclYDwKSwNoFSHvGHyg_VKibjpQWTA/edit?pli=1" target="_blank">View a PDF version of Step-by-step Instruction on Contact Form Installation</a>.
@@ -128,7 +128,7 @@ This means that you made a syntax error.
 
 1. Add a language in the block "Language settings for the field names in the form" on the plugin settings page.
 2. Mark the check box (if it's not marked yet) in the block  "Change the names of the contact form fields and error messages", choose the necessary tab,click the twistie to expand the list of the fields and fill in the fields. Choose the necessary tab in the block "Action after email is sent" as well and fill in the field. Save the changes.
-3. You will see the shortcode under the tab with the necessary language. Please paste that shortcode to the page or post. 
+3. You will see the shortcode under the tab with the necessary language. Please paste that shortcode to the page or post.
 
 = I'm not receiving messages from Contact Form OR The plugin does not send an email - "Sorry, email message could not be delivered." =
 
@@ -173,6 +173,10 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 
 == Changelog ==
 
+= V4.0.1 - 19.07.2016 =
+* Update : An ability to enable/disable Captcha, Google Captcha, Subscribe checkbox and an ability to save email to the database for each multi forms (if Contact Form Multi is activated).
+* Update : Color picker script was replaced.
+
 = V4.0.0 - 27.06.2016 =
 * NEW : The ability to add custom styles to frontend of your site has been added.
 * Update : The Spanish language file is updated.
@@ -210,7 +214,7 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * Update : Text Domain was changed.
 
 = V3.93 - 05.08.2015 =
-* New : Ability to restore settings to defaults. 
+* New : Ability to restore settings to defaults.
 * Bugfix : We fixed syntax error.
 * Update : We updated all functionality for wordpress 4.2.4.
 
@@ -235,7 +239,7 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 = V3.87 - 05.03.2015 =
 * Bugfix : Error with option name when Contact Form Multi plugin is activated was fixed.
 * Update : Plugin performance was improved.
-* Update : BWS plugins section was updated.
+* Update : BWS Panel section was updated.
 * Update : The French language file is updated.
 
 = V3.86 - 19.02.2015 =
@@ -312,7 +316,7 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * NEW : The Turkish and Vietnamese language file are added.
 
 = V3.70 - 16.01.2014 =
-* Update : BWS plugins section was updated.
+* Update : BWS Panel section was updated.
 
 = V3.69 - 26.12.2013 =
 * Update : The French language file is updated.
@@ -324,7 +328,7 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 
 = V3.67 - 05.12.2013 =
 * NEW : Ability to send email in plain format.
-* NEW : A notice when changing settings on the plugin's settings page was added. 
+* NEW : A notice when changing settings on the plugin's settings page was added.
 * Update : The Ukrainian language file is updated.
 * Update : Screenshots are updated.
 
@@ -334,7 +338,7 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 
 = V3.65 - 22.11.2013 =
 * Bugfix : We fixed the bug related to use html-special chars.
-* Update : BWS plugins section is updated.
+* Update : BWS Panel section is updated.
 
 = V3.64 - 15.11.2013 =
 * NEW : Ability to change tips below the Attachment block.
@@ -377,15 +381,15 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * NEW : Compatibility with Captcha Pro.
 
 = V3.54 - 30.08.2013 =
-* Update : Function for displaying BWS plugins section placed in a separate file and has own language files.
-* Update : Compatibility test with 20 most popular WordPress plugins. 
+* Update : Function for displaying BWS Panel section placed in a separate file and has own language files.
+* Update : Compatibility test with 20 most popular WordPress plugins.
 
 = V3.53 - 20.08.2013 =
 * Bugfix : We fixed the bug related to 'docx' mime type.
 * Update : We changed plugin settings page displaying.
 * NEW : Added an ability to delete an attachment file from the server after the email is sent.
 * NEW : The Slovak language file is added.
-* Update : The French language file is updated. 
+* Update : The French language file is updated.
 
 = V3.52 - 13.08.2013 =
 * Update : The Japanese language file is updated.
@@ -420,8 +424,8 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * NEW : Added html blocks.
 
 = V3.45 - 27.05.2013 =
-* Bugfix : The error related to use function 'get_userdatabylogin' instead 'get_user_by('login')' is fixed. 
-* Update : BWS plugins section is updated.
+* Bugfix : The error related to use function 'get_userdatabylogin' instead 'get_user_by('login')' is fixed.
+* Update : BWS Panel section is updated.
 * Update : We updated the Italian, the French and the Brazilian Portuguese language files in the plugin.
 
 = V3.44 - 16.05.2013 =
@@ -504,7 +508,7 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 
 = V3.22 - 24.07.2012 =
 * NEW : Japanese language file is added to the plugin.
-* Bugfix : Cross Site Request Forgery bug was fixed. 
+* Bugfix : Cross Site Request Forgery bug was fixed.
 
 = V3.21 - 10.07.2012 =
 * NEW : Hebrew language file is added to the plugin.
@@ -528,7 +532,7 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * NEW : Added ability to send mail using the functional: wordpress wp_mail function or php mail function.
 
 = V3.16 - 26.03.2012 =
-* Bugfix : The form output code is validated. 
+* Bugfix : The form output code is validated.
 
 = V3.15 - 22.03.2012 =
 * New : The feature to setup the displaying of the additional information fields in the email was implemented (Sent from (ip address), Date/Time, Coming from (referer), Using (user agent)).
@@ -583,7 +587,7 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * Changed : Display of the files types names that user can attach to an mail.
 
 = V3.01 - 28.12.2011 =
-* NEW : 'Attachment' and 'Send me a copy' blocks were added to the contact form. 
+* NEW : 'Attachment' and 'Send me a copy' blocks were added to the contact form.
 * NEW : Language files are added to the plugin.
 
 = V2.08 - 12.11.2011 =
@@ -596,7 +600,7 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * The bug of complex email validation when filling in the contact form is fixed.
 
 = V2.05 - 23.08.2011 =
-* BWS Plugin's menu section was fixed and right now it is consisted of 3 parts: activated, installed and recommended plugins. 
+* BWS Plugin's menu section was fixed and right now it is consisted of 3 parts: activated, installed and recommended plugins.
  The bug of positioning in admin menu is fixed. Translation omissions are corrected. Now there is a link where it is possible to see the site where email comes from.
 
 = V2.04 - 14.07.2011 =
@@ -606,7 +610,7 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * The bug of using custom email is fixed in this version. Please upgrade the plugin immediately. Thank you
 
 = V2.02 =
-* The bug with the link to the settings page is fixed in this version. Please upgrade the plugin immediately. 
+* The bug with the link to the settings page is fixed in this version. Please upgrade the plugin immediately.
 
 = V2.01 =
 * Usability at the settings page of the plugin was improved.
@@ -624,6 +628,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * Ability to add Contact Form into a post. Ability to adjust displaying of the form via shortcode is added.
 
 == Upgrade Notice ==
+
+= V4.0.1 =
+* Functionality improved.
 
 = V4.0.0 =
 The ability to add custom styles to frontend of your site has been added. The Spanish language file is updated. The French language file is updated.
@@ -665,7 +672,7 @@ Bug with undefined function on plugin's settings page was fixed.
 Bugs with syntax error and undefined function were fixed.
 
 = V3.87 =
-Error with option name when Contact Form Multi plugin is activated was fixed. Plugin performance was improved. BWS plugins section was updated. The French language file is updated.
+Error with option name when Contact Form Multi plugin is activated was fixed. Plugin performance was improved. BWS Panel section was updated. The French language file is updated.
 
 = V3.86 =
 Bug with Contact Form impacting 'From name' headers in messages sent by other plugins was fixed. 'Additional options' block was moved to a new tab, which is now named 'Additional settings'. 'Extra settings' tab name was changed to 'Appearance'. The Greek language file is added.
@@ -717,7 +724,7 @@ The Estonian and German language file are added. Setting of choice for the form'
 We updated all functionality for wordpress 3.8.1. The Turkish and Vietnamese language file are added.
 
 = V3.70 =
-BWS plugins section was updated.
+BWS Panel section was updated.
 
 = V3.69 =
 The French language file is updated. The Chinese language file is added.
@@ -732,7 +739,7 @@ Ability to send email in plain format. A notice when changing settings on the pl
 Ability to not use name field. We added mime types for .aar and .sce files.
 
 = V3.65 =
-We fixed the bug related to use html-special chars. BWS plugins section is updated.
+We fixed the bug related to use html-special chars. BWS Panel section is updated.
 
 = V3.64 =
 Ability to change tips below the Attachment block. Ability to change required symbol (asterisk).
@@ -765,7 +772,7 @@ We fixed the bug related to manage languages on the plugin settings page. The Uk
 Compatibility with Captcha Pro.
 
 = V3.54 =
-Function for displaying BWS plugins section placed in a separate file and has own language files. Compatibility test with 20 most popular WordPress plugins. 
+Function for displaying BWS Panel section placed in a separate file and has own language files. Compatibility test with 20 most popular WordPress plugins.
 
 = V3.53 =
 We fixed the bug related to 'docx' mime type. We changed plugin settings page displaying. Added an ability to delete an attachment file from the server after the email is sent. The Slovak language file is added. The French language file is updated.
@@ -792,7 +799,7 @@ The setting of displaying Captcha is added. The French language file is updated.
 The Finnish language file is added to the plugin. We fixed the bug of display additional info in the email when email has an attachment. Added html blocks.
 
 = V3.45 =
-The error related to use function 'get_userdatabylogin' instead 'get_user_by('login')' is fixed. BWS plugins section is updated. We updated the Italian, the French and the Brazilian Portuguese language files in the plugin.
+The error related to use function 'get_userdatabylogin' instead 'get_user_by('login')' is fixed. BWS Panel section is updated. We updated the Italian, the French and the Brazilian Portuguese language files in the plugin.
 
 = V3.44 =
 Added email adress as additiional form field. We fixed the bug of adding an attachment.
@@ -861,7 +868,7 @@ Czech and Romanian language files are added to the plugin.
 Cross Site Request Forgery bug was fixed.
 
 = V3.22 =
-Japanese language file is added to the plugin. Cross Site Request Forgery bug was fixed. 
+Japanese language file is added to the plugin. Cross Site Request Forgery bug was fixed.
 
 = V3.21 =
 Hebrew language file is added to the plugin. We updated French language file. We updated all functionality for wordpress 3.4.1. In the email in the field  Date/Time used correct time zone - instead of UTC we use local settings which are setup on the page  Settings -> General.
@@ -879,7 +886,7 @@ Arabic and Hindi language files is added. Added ability to display or hide expla
 Danish and Greek language files is added. Added ability to send mail using the functional: wordpress wp_mail function or php mail function.
 
 = V3.16 =
-The form output code is validated. 
+The form output code is validated.
 
 = V3.15 =
 The feature to setup the displaying of the additional information fields in the email was implemented (Sent from (ip address), Date/Time, Coming from (referer), Using (user agent)). The bug of attribute action on element form was fixed.
@@ -941,7 +948,7 @@ BWS Plugin's menu section was fixed and right now it is consisted of 3 parts: ac
 = V2.04 =
 BWS Plugin's menu section was fixed and right now it is consisted of 2 parts: installed and recommended plugins. Icons displaying is fixed.
 
-= V2.03 = 
+= V2.03 =
 The bug of using custom email is fixed in this version. Please upgrade the plugin immediately. Thank you
 
 = V2.02 =
