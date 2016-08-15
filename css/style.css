@@ -81,9 +81,6 @@
 .cntctfrm_language_tab_block_mini:hover {
 	opacity: 0.7;
 }
-input[name="cntctfrm_display_google_captcha"] {
-	margin-right: 8px;
-}
 .cntctfrm_language_tab_block {
 	padding: 5px 10px 5px 5px;
 }

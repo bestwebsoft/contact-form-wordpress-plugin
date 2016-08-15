@@ -1,8 +1,7 @@
 <a href="http://bestwebsoft.com/products/contact-form/" target=_blank>Contact Form WordPress Plugin</a>
 ========================
 
-The Contact Form plugin allows you to implement a feedback form to a web-page or a post in no time. It is an extremely easy form, that doesn&#8217;t require any additional settings, though there are some available options. All you need is just to activate the plugin and insert the shortcode [bestwebsoft_contact_form] into the text.
-There is also a premium version of the plugin with more useful features available.
+Contact form plugin for Wordpress website is the best solution to receive messages from customers right to your email address(-es). Download, activate and paste [bestwebsoft_contact_form] shortcode on any page, post or widget to display the form. Customize the form styles and contents easily with the pre-build options. Allow your customers to reach you in seconds!
 
 <img src="http://bestwebsoft.com/wp-content/uploads/2014/09/contact-form-banner-website.jpg" />
 
@@ -16,21 +15,28 @@ There is also a premium version of the plugin with more useful features availabl
 
 Features
 -----------------------------
-* Easy to use, even for beginners
-* Fully responsive contact form looks perfect on all screen sizes and mobile devices.
-* Add or remove additional fields easily and label any contact form fields you want.
-* Make any of the standard form fields required or not.
-* Specify your default and/or additional email addresses to receive email notifications.
-* Choose additional information about sender you would like to see.
-* Translate your contact form to any language with a simple language customizer.
-* Enable the file attachement option to get important files from senders via contact form.
-* Receive a copy of the email sent via the contact form.
-* Re-order contact form fields using drag &#38; drop interface.
-* Divide your contact form fields into columns.
-* Create unlimited number of forms (requires Contact Form Multi by BestWebSoft plugin).
-* High quality protection: use captcha to prevent spam attacks (requires Captcha by BestWebSoft or Google Captcha (reCAPTCHA) by BestWebSoft plugin)
-* Save, browse, delete or download messages that have been sent from the site via the Contact Form (requires Contact Form to DB by BestWebSoft plugin)
-* Add users who send you emails via contact form to your subscription using Subscriber by BestWebSoft (requires Subscriber by BestWebSoft plugin)
+* Paste shortcode on any page, post or widget to display the form
+* Data validation before the submission
+* Send a copy of the submitted message to the email
+* Receive submissions to the default admin or custom email addresses
+* Add additional data about the sender to the email notification
+* Responsive Layout
+* Editable field labels
+* Required fields
+* File attachments
+* Enable additional pre-build fields
+* Enable two column layout
+* Re-order form fields using drag &#38; drop interface
+* Translate your form to any language with a simple language customizer
+* Protect contact form from spam with Captcha or Google reCaptcha
+* Add unlimited contact forms using Contact Form Multi
+* Save and manage messages using Contact Form to DB
+* Add users who send the submission to the Subscriber newsletter subscription list
+* Add custom code via plugin settings page
+* Compatible with latest WordPress version
+* Incredibly simple settings for fast setup without modifying code
+* Detailed step-by-step documentations and videos
+* Multilingual (20+ languages) and RTL ready
 
 
 Translation
