@@ -7,6 +7,8 @@ Simple contact form plugin any WordPress website must have.
 
 <p>Contact form plugin for Wordpress website is the best solution to receive messages from customers right to your email address(-es). Download, activate and paste [bestwebsoft_contact_form] shortcode on any page, post or widget to display the form. Customize the form styles and contents easily with the pre-build options. Allow your customers to reach you in seconds!</p>
 
+<p><a href="http://bestwebsoft.com/demo-for-contact-form-pro/">View Demo</a></p>
+
 
 <div class='video'></div>
 
@@ -74,7 +76,7 @@ Simple contact form plugin any WordPress website must have.
 <li><a href="https://docs.google.com/document/d/1obcWMPDPIIhUxcclYDwKSwNoFSHvGHyg_VKibjpQWTA/">[Doc] Installation</a></li>
 <li><a href="https://docs.google.com/document/d/1T9ca4R7s5wFU9AtRfMTxADiM9HV16W9a3bpZqz4BT-k/">[Doc] Purchase, Installation &#38; Configuration</a></li>
 <li><a href="https://www.youtube.com/watch?v=k1wq00ajACo">[Video] Purchase, Installation, Configuration Tutorial</a></li>
-<li><a href="https://www.youtube.com/watch?v=VdsM7L-tmBA">[Video] Instruction on Installation</a></li>
+<li><a href="https://www.youtube.com/watch?v=JwG2c4PcO8o">[Video] Installation Instruction</a></li>
 </ul>
 
 <h4>Help &#38; Support</h4>

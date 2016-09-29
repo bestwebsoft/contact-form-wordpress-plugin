@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: http://bestwebsoft.com/donate/
 Tags: contact, contact form, feedback form, contact us form, contact button, email form, contac, form, web-page feedback, cf, cf plugin, contact form plugin
 Requires at least: 3.8
-Tested up to: 4.6
-Stable tag: 4.0.2
+Tested up to: 4.6.1
+Stable tag: 4.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,7 +14,9 @@ Simple contact form plugin any WordPress website must have.
 
 Contact form plugin for Wordpress website is the best solution to receive messages from customers right to your email address(-es). Download, activate and paste [bestwebsoft_contact_form] shortcode on any page, post or widget to display the form. Customize the form styles and contents easily with the pre-build options. Allow your customers to reach you in seconds!
 
-http://www.youtube.com/watch?v=nGwh-oslK-c
+[View Demo](http://bestwebsoft.com/demo-for-contact-form-pro/)
+
+http://www.youtube.com/watch?v=F_piQa0hmkU
 
 = Free Features =
 
@@ -69,7 +71,7 @@ If you have a feature suggestion or idea you'd like to see in the plugin, we'd l
 * [[Doc] Installation](https://docs.google.com/document/d/1obcWMPDPIIhUxcclYDwKSwNoFSHvGHyg_VKibjpQWTA/)
 * [[Doc] Purchase, Installation & Configuration](https://docs.google.com/document/d/1T9ca4R7s5wFU9AtRfMTxADiM9HV16W9a3bpZqz4BT-k/)
 * [[Video] Purchase, Installation, Configuration Tutorial](https://www.youtube.com/watch?v=k1wq00ajACo)
-* [[Video] Instruction on Installation](https://www.youtube.com/watch?v=VdsM7L-tmBA)
+* [[Video] Installation Instruction](https://www.youtube.com/watch?v=JwG2c4PcO8o)
 
 = Help & Support =
 
@@ -127,7 +129,7 @@ Donations play an important role in supporting open-source projects. We greatly 
 
 [View a PDF version of Step-by-step Instruction on Contact Form Installation](https://docs.google.com/document/d/1obcWMPDPIIhUxcclYDwKSwNoFSHvGHyg_VKibjpQWTA/).
 
-http://www.youtube.com/watch?v=VdsM7L-tmBA
+http://www.youtube.com/watch?v=JwG2c4PcO8o
 
 == Frequently Asked Questions ==
 
@@ -195,6 +197,10 @@ Please make sure that the problem hasn't been discussed yet on our forum (<http:
 15. Re-order contact form fields using drag & drop interface.
 
 == Changelog ==
+
+= V4.0.3 - 29.09.2016 =
+* Update : The shortcode [contact_form] has been deprecated.
+* Update : The French language file is updated.
 
 = V4.0.2 - 15.08.2016 =
 * Bugfix : XSS vulnerability was removed.
@@ -655,6 +661,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<http:
 * Ability to add Contact Form into a post. Ability to adjust displaying of the form via shortcode is added.
 
 == Upgrade Notice ==
+
+= V4.0.3 =
+* Functionality improved.
 
 = V4.0.2 =
 * Bugs fixed.

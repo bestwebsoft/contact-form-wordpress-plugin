@@ -6,7 +6,7 @@ Description: Simple contact form plugin any WordPress website must have.
 Author: BestWebSoft
 Text Domain: contact-form-plugin
 Domain Path: /languages
-Version: 4.0.2
+Version: 4.0.3
 Author URI: http://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -28,7 +28,7 @@ License: GPLv2 or later
 */
 
 /**
- * @todo remove file after 01.03.2017
+ * @todo remove file after 01.04.2017
  */
 require_once( dirname( __FILE__ ) . '/includes/deprecated.php' );
 
@@ -336,7 +336,7 @@ if ( ! function_exists( 'cntctfrm_get_option_defaults' ) ) {
 													'cntctfrm_captcha'
 												),
 												'second_column' => array()
-											)		
+											)
 		);
 
 		return $option_defaults;
@@ -3581,6 +3581,12 @@ if ( ! function_exists ( 'cntctfrm_plugin_banner' ) ) {
 				bws_plugin_suggest_feature_banner( $cntctfrm_plugin_info, 'cntctfrm_options', 'contact-form-plugin' );
 			}
 
+			/**
+			 * @since 4.0.3
+			 * @todo delete after 01.04.2017
+			 */
+			echo cntctfrm_display_deprecated_shortcode_message();
+
 			if ( empty( $bstwbsftwppdtplgns_banner_array ) )
 				bws_get_banner_array();
 
@@ -3809,7 +3815,6 @@ add_action( 'admin_enqueue_scripts', 'cntctfrm_admin_head' );
 add_action( 'wp_enqueue_scripts', 'cntctfrm_wp_enqueue_style' );
 add_action( 'wp_footer', 'cntctfrm_wp_footer' );
 
-add_shortcode( 'contact_form', 'cntctfrm_display_form' );
 add_shortcode( 'bws_contact_form', 'cntctfrm_display_form' );
 add_shortcode( 'bestwebsoft_contact_form', 'cntctfrm_display_form' );
 add_filter( 'widget_text', 'do_shortcode' );

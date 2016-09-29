@@ -134,3 +134,76 @@ if ( ! function_exists( 'cntctfrm_options_update' ) ) {
 		return $cntctfrm_options;
 	}
 }
+
+/**
+ * Display message about deprecated shortcode
+ * @since 4.0.3
+ * @todo delete after 01.04.2017
+ */
+if ( ! function_exists( 'cntctfrm_display_deprecated_shortcode_message' ) ) {
+	function cntctfrm_display_deprecated_shortcode_message() {
+		global $cntctfrm_plugin_info;
+
+		/* get options to avoid conflict with CF Multi */
+		$options = get_option( 'cntctfrm_options' );
+
+		if ( empty( $options['deprecated_shortcode'] ) )
+			return '';
+
+		if ( isset( $_GET['cntctfrm_nonce'] ) &&  wp_verify_nonce( $_GET['cntctfrm_nonce'], 'cntctfrm_clean_deprecated' ) ) {
+			unset( $options['deprecated_shortcode'] );
+			update_option( 'cntctfrm_options', $options );
+			return '';
+		}
+
+		$url = add_query_arg(
+			array(
+				'cntctfrm_clean_deprecated' => '1',
+				'cntctfrm_nonce'            => wp_create_nonce( 'cntctfrm_clean_deprecated' )
+			),
+			( is_ssl() ? 'https://' : 'http://' ) . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']
+		);
+		$close_link = "<a href=\"{$url}\" class=\"close_icon notice-dismiss\"></a>";
+
+		$message = sprintf( __( "Deprecated shortcode %1s from the %2s plugin is used on your site. Please replace it with %3s. If you close this message it'll appear again after deprecated shortcode reuse.", 'contact-form-pro' ), '<strong>[contact_form]</strong>', $cntctfrm_plugin_info['Name'], '<strong>[bestwebsoft_contact_form]</strong>' );
+
+		return
+			"<style type=\"text/css\">
+				.cntctfrm_deprecated_error {
+					position: relative;
+				}
+				div.error.cntctfrm_deprecated_error p {
+					margin-left: 15px;
+					margin-right: 15px;
+				}
+				.cntctfrm_deprecated_error a {
+					text-decoration: none;
+				}
+			</style>
+			<div class=\"cntctfrm_deprecated_error error\"><p>{$message}</p>{$close_link}</div>";
+	}
+}
+
+/**
+ * Adds information about deprecated shortcode to plugin settings during its call
+ * @since 4.0.3
+ * @todo delete after 01.04.2017
+ */
+if ( ! function_exists( 'cntctfrm_detect_deprecated' ) ) {
+	function cntctfrm_detect_deprecated( $atts = array( 'lang' => 'default' ) ) {
+		/* get options to avoid conflict with CF Multi */
+		$options = get_option( 'cntctfrm_options' );
+		if ( empty( $options['deprecated_shortcode'] ) ) {
+			$options['deprecated_shortcode'] = 1;
+			update_option( 'cntctfrm_options', $options );
+		}
+
+		return cntctfrm_display_form( $atts );
+	}
+}
+
+/** 
+ * @deprecated sinse 4.0.3
+ * @todo delete after 01.04.2017
+ */
+add_shortcode( 'contact_form', 'cntctfrm_detect_deprecated' );
