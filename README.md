@@ -1,9 +1,7 @@
-<a href="http://bestwebsoft.com/products/contact-form/" target=_blank>Contact Form WordPress Plugin</a>
+<a href="http://bestwebsoft.com/products/wordpress/plugins/contact-form/" target=_blank>Contact Form WordPress Plugin</a>
 ========================
 
 Simple contact form plugin any WordPress website must have.
-
-<img src="http://bestwebsoft.com/wp-content/uploads/2014/09/contact-form-banner-website.jpg" />
 
 <p>Contact form plugin for Wordpress website is the best solution to receive messages from customers right to your email address(-es). Download, activate and paste [bestwebsoft_contact_form] shortcode on any page, post or widget to display the form. Customize the form styles and contents easily with the pre-build options. Allow your customers to reach you in seconds!</p>
 
