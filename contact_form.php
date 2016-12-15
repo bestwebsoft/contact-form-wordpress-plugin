@@ -1,12 +1,12 @@
 <?php
 /*
 Plugin Name: Contact Form by BestWebSoft
-Plugin URI: http://bestwebsoft.com/products/contact-form/
+Plugin URI: http://bestwebsoft.com/products/wordpress/plugins/contact-form/
 Description: Simple contact form plugin any WordPress website must have.
 Author: BestWebSoft
 Text Domain: contact-form-plugin
 Domain Path: /languages
-Version: 4.0.3
+Version: 4.0.4
 Author URI: http://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -1042,7 +1042,7 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 			if ( ( ! isset( $_GET['action'] ) || ( 'go_pro' != $_GET['action'] && 'custom_code' != $_GET['action'] ) ) && ! $contact_form_multi_active ) { ?>
 				<h3 class="nav-tab-wrapper">
 					<span class="nav-tab nav-tab-active"><?php _e( 'NEW_FORM', 'contact-form-plugin' )?></span>
-					<a id="cntctfrm_show_multi_notice" class="nav-tab" target="_new" href="http://bestwebsoft.com/products/contact-form-multi/?k=747ca825fb44711e2d24e40697747bc6&amp;pn=77&amp;v=<?php echo $cntctfrm_plugin_info["Version"]; ?>&amp;wp_v=<?php echo $wp_version; ?>" title="<?php _e( "If you want to create multiple contact forms, please install the Contact Form Multi plugin.", 'contact-form-plugin' ); ?>">+</a>
+					<a id="cntctfrm_show_multi_notice" class="nav-tab" target="_new" href="http://bestwebsoft.com/products/wordpress/plugins/contact-form-multi/?k=747ca825fb44711e2d24e40697747bc6&amp;pn=77&amp;v=<?php echo $cntctfrm_plugin_info["Version"]; ?>&amp;wp_v=<?php echo $wp_version; ?>" title="<?php _e( "If you want to create multiple contact forms, please install the Contact Form Multi plugin.", 'contact-form-plugin' ); ?>">+</a>
 				</h3>
 			<?php }
 			if ( ! isset( $_GET['action'] ) || 'additional' == $_GET['action'] ) {
@@ -1122,7 +1122,7 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 										<div class="bws_info">
 											<?php _e( 'Unlock premium options by upgrading to Pro version', 'contact-form-plugin' ); ?>
 										</div>
-										<a class="bws_button" href="http://bestwebsoft.com/products/contact-form/?k=697c5e74f39779ce77850e11dbe21962&amp;pn=77&amp;v=<?php echo $cntctfrm_plugin_info["Version"]; ?>&amp;wp_v=<?php echo $wp_version; ?>" target="_blank" title="Contact Form Pro">
+										<a class="bws_button" href="http://bestwebsoft.com/products/wordpress/plugins/contact-form/?k=697c5e74f39779ce77850e11dbe21962&amp;pn=77&amp;v=<?php echo $cntctfrm_plugin_info["Version"]; ?>&amp;wp_v=<?php echo $wp_version; ?>" target="_blank" title="Contact Form Pro">
 											<?php _e( 'Learn More', 'contact-form-plugin' ); ?>
 										</a>
 										<div class="clear"></div>
@@ -1165,7 +1165,7 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 										} else { ?>
 											<label><input disabled="disabled" type="checkbox" name="cntctfrm_save_email_to_db" value="1" />
 												<span class="bws_info">(<?php _e( 'Using', 'contact-form-plugin' ); ?> Contact Form to DB by BestWebSoft)
-													<?php printf( '<a href="http://bestwebsoft.com/products/contact-form-to-db/?k=19d806f45d866e70545de83169b274f2&amp;pn=77&amp;v=%s&amp;wp_v=%s"> %s Contact Form to DB</a>', $cntctfrm_plugin_info["Version"], $wp_version, __( 'Download', 'contact-form-plugin' ) ); ?>
+													<?php printf( '<a href="http://bestwebsoft.com/products/wordpress/plugins/contact-form-to-db/?k=19d806f45d866e70545de83169b274f2&amp;pn=77&amp;v=%s&amp;wp_v=%s"> %s Contact Form to DB</a>', $cntctfrm_plugin_info["Version"], $wp_version, __( 'Download', 'contact-form-plugin' ) ); ?>
 												</span>
 											</label>
 										<?php } ?>
@@ -1413,7 +1413,7 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 												<div class="bws_info">
 													<?php _e( 'Unlock premium options by upgrading to Pro version', 'contact-form-plugin' ); ?>
 												</div>
-												<a class="bws_button" href="http://bestwebsoft.com/products/contact-form/?k=697c5e74f39779ce77850e11dbe21962&amp;pn=77&amp;v=<?php echo $cntctfrm_plugin_info["Version"]; ?>&amp;wp_v=<?php echo $wp_version; ?>" target="_blank" title="Contact Form Pro">
+												<a class="bws_button" href="http://bestwebsoft.com/products/wordpress/plugins/contact-form/?k=697c5e74f39779ce77850e11dbe21962&amp;pn=77&amp;v=<?php echo $cntctfrm_plugin_info["Version"]; ?>&amp;wp_v=<?php echo $wp_version; ?>" target="_blank" title="Contact Form Pro">
 													<?php _e( 'Learn More', 'contact-form-plugin' ); ?>
 												</a>
 												<div class="clear"></div>
@@ -1489,7 +1489,7 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 											} else { ?>
 												<label><input disabled="disabled" type="checkbox" name="cntctfrm_display_subscriber" value="1" />	Subscriber by BestWebSoft</label>
 												<span class="bws_info">
-													<?php printf( '<a href="http://bestwebsoft.com/products/subscriber/?k=a9dfd3fa8513784c36622993b350b19e&amp;pn=77&amp;v=%s&amp;wp_v=%s">%s Subscriber</a>', $cntctfrm_plugin_info["Version"], $wp_version, __( 'Download', 'contact-form-plugin' ) ); ?>
+													<?php printf( '<a href="http://bestwebsoft.com/products/wordpress/plugins/subscriber/?k=a9dfd3fa8513784c36622993b350b19e&amp;pn=77&amp;v=%s&amp;wp_v=%s">%s Subscriber</a>', $cntctfrm_plugin_info["Version"], $wp_version, __( 'Download', 'contact-form-plugin' ) ); ?>
 												</span>
 											<?php } ?>
 										</div>
@@ -1523,7 +1523,7 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 											} else { ?>
 												<label><input disabled="disabled" type="checkbox" name="cntctfrm_display_captcha" value="1" /> Captcha by BestWebSoft</label>
 												<span class="bws_info">
-													<?php printf( '<a href="http://bestwebsoft.com/products/captcha/?k=19ac1e9b23bea947cfc4a9b8e3326c03&amp;pn=77&amp;v=%s&amp;wp_v=%s">%s Captcha</a>', $cntctfrm_plugin_info["Version"], $wp_version, __( 'Download', 'contact-form-plugin' ) ) ?>
+													<?php printf( '<a href="http://bestwebsoft.com/products/wordpress/plugins/captcha/?k=19ac1e9b23bea947cfc4a9b8e3326c03&amp;pn=77&amp;v=%s&amp;wp_v=%s">%s Captcha</a>', $cntctfrm_plugin_info["Version"], $wp_version, __( 'Download', 'contact-form-plugin' ) ) ?>
 												</span>
 											<?php } ?>
 										</div>
@@ -1556,7 +1556,7 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 												<?php }
 											} else { ?>
 												<label><input disabled="disabled" type="checkbox" name="cntctfrm_display_google_captcha" value="1" /> Google Captcha (reCaptcha) by BestWebSoft</label> <span class="bws_info">
-													<?php printf( '<a href="http://bestwebsoft.com/products/google-captcha/?k=7d74e61dd1cea23d0e9bf2fa88b5b117&amp;pn=77&amp;v=%s&amp;wp_v=%s">%s Google Captcha</a>', $cntctfrm_plugin_info["Version"], $wp_version, __( 'Download', 'contact-form-plugin' ) ) ?>
+													<?php printf( '<a href="http://bestwebsoft.com/products/wordpress/plugins/google-captcha/?k=7d74e61dd1cea23d0e9bf2fa88b5b117&amp;pn=77&amp;v=%s&amp;wp_v=%s">%s Google Captcha</a>', $cntctfrm_plugin_info["Version"], $wp_version, __( 'Download', 'contact-form-plugin' ) ) ?>
 													</span>
 											<?php } ?>
 										</div>
@@ -1579,7 +1579,7 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 													<div class="bws_info">
 														<?php _e( 'Unlock premium options by upgrading to Pro version', 'contact-form-plugin' ); ?>
 													</div>
-													<a class="bws_button" href="http://bestwebsoft.com/products/contact-form/?k=697c5e74f39779ce77850e11dbe21962&amp;pn=77&amp;v=<?php echo $cntctfrm_plugin_info["Version"]; ?>&amp;wp_v=<?php echo $wp_version; ?>" target="_blank" title="Contact Form Pro">
+													<a class="bws_button" href="http://bestwebsoft.com/products/wordpress/plugins/contact-form/?k=697c5e74f39779ce77850e11dbe21962&amp;pn=77&amp;v=<?php echo $cntctfrm_plugin_info["Version"]; ?>&amp;wp_v=<?php echo $wp_version; ?>" target="_blank" title="Contact Form Pro">
 														<?php _e( 'Learn More', 'contact-form-plugin' ); ?>
 													</a>
 													<div class="clear"></div>
@@ -1801,7 +1801,7 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 										<div class="bws_info">
 											<?php _e( 'Unlock premium options by upgrading to Pro version', 'contact-form-plugin' ); ?>
 										</div>
-										<a class="bws_button" href="http://bestwebsoft.com/products/contact-form/?k=697c5e74f39779ce77850e11dbe21962&amp;pn=77&amp;v=<?php echo $cntctfrm_plugin_info["Version"]; ?>&amp;wp_v=<?php echo $wp_version; ?>" target="_blank" title="Contact Form Pro">
+										<a class="bws_button" href="http://bestwebsoft.com/products/wordpress/plugins/contact-form/?k=697c5e74f39779ce77850e11dbe21962&amp;pn=77&amp;v=<?php echo $cntctfrm_plugin_info["Version"]; ?>&amp;wp_v=<?php echo $wp_version; ?>" target="_blank" title="Contact Form Pro">
 											<?php _e( 'Learn More', 'contact-form-plugin' ); ?>
 										</a>
 										<div class="clear"></div>
@@ -2076,7 +2076,7 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 											<div class="bws_info">
 												<?php _e( 'Unlock premium options by upgrading to Pro version', 'contact-form-plugin' ); ?>
 											</div>
-											<a class="bws_button" href="http://bestwebsoft.com/products/contact-form/?k=697c5e74f39779ce77850e11dbe21962&amp;pn=77&amp;v=<?php echo $cntctfrm_plugin_info["Version"]; ?>&amp;wp_v=<?php echo $wp_version; ?>" target="_blank" title="Contact Form Pro">
+											<a class="bws_button" href="http://bestwebsoft.com/products/wordpress/plugins/contact-form/?k=697c5e74f39779ce77850e11dbe21962&amp;pn=77&amp;v=<?php echo $cntctfrm_plugin_info["Version"]; ?>&amp;wp_v=<?php echo $wp_version; ?>" target="_blank" title="Contact Form Pro">
 												<?php _e( 'Learn More', 'contact-form-plugin' ); ?>
 											</a>
 											<div class="clear"></div>
@@ -3394,7 +3394,7 @@ if ( ! function_exists ( 'cntctfrm_admin_head' ) ) {
 				'buttons'			=> array(
 					array(
 						'type' => 'link',
-						'link' => 'http://bestwebsoft.com/products/contact-form-multi/?k=747ca825fb44711e2d24e40697747bc6&pn=77&v=' . $cntctfrm_plugin_info["Version"] . '&wp_v=' . $wp_version,
+						'link' => 'http://bestwebsoft.com/products/wordpress/plugins/contact-form-multi/?k=747ca825fb44711e2d24e40697747bc6&pn=77&v=' . $cntctfrm_plugin_info["Version"] . '&wp_v=' . $wp_version,
 						'text' => __( 'Learn more', 'contact-form-plugin' ),
 					),
 					'close' => array(
@@ -3630,7 +3630,7 @@ if ( ! function_exists ( 'cntctfrm_plugin_banner' ) ) {
 									<span><?php _e( "Manage messages that have been sent from your website.", 'contact-form-plugin' ); ?></span>
 								</div>
 								<div class="button_div">
-									<a class="button" target="_blank" href="http://bestwebsoft.com/products/contact-form-to-db/?k=6ebf0743736411607343ad391dc3b436&amp;pn=77&amp;v=<?php echo $cntctfrm_plugin_info["Version"]; ?>&amp;wp_v=<?php echo $wp_version; ?>"><?php _e( 'Learn More', 'contact-form-plugin' ); ?></a>
+									<a class="button" target="_blank" href="http://bestwebsoft.com/products/wordpress/plugins/contact-form-to-db/?k=6ebf0743736411607343ad391dc3b436&amp;pn=77&amp;v=<?php echo $cntctfrm_plugin_info["Version"]; ?>&amp;wp_v=<?php echo $wp_version; ?>"><?php _e( 'Learn More', 'contact-form-plugin' ); ?></a>
 								</div>
 							</div>
 						</div>

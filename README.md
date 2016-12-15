@@ -3,7 +3,9 @@
 
 Simple contact form plugin any WordPress website must have.
 
-<p>Contact form plugin for Wordpress website is the best solution to receive messages from customers right to your email address(-es). Download, activate and paste [bestwebsoft_contact_form] shortcode on any page, post or widget to display the form. Customize the form styles and contents easily with the pre-build options. Allow your customers to reach you in seconds!</p>
+<p>Contact form plugin for Wordpress website is the best solution to receive messages from customers right to your email address(-es). Download, activate and paste [bestwebsoft_contact_form] shortcode on any page, post or widget to display the form. Customize the form styles and contents easily with the pre-build options.</p>
+
+<p>Allow your customers to reach you in seconds!</p>
 
 <p><a href="http://bestwebsoft.com/demo-for-contact-form-pro/">View Demo</a></p>
 
@@ -27,15 +29,15 @@ Simple contact form plugin any WordPress website must have.
 <li>Enable two column layout</li>
 <li>Re-order form fields using drag &#38; drop interface</li>
 <li>Translate your form to any language with a simple language customizer</li>
-<li>Protect contact form from spam with <a href="http://bestwebsoft.com/products/captcha/?k=45dcf2a5ccd70a7fc8606f8030730ac7">Captcha</a> or <a href="http://bestwebsoft.com/products/google-captcha/?k=159789f556e3a9c58df8f25384903ba5">Google reCaptcha</a></li>
-<li>Add unlimited contact forms using <a href="http://bestwebsoft.com/products/contact-form-multi/?k=34543c152eff369d529e9b4da85985a9">Contact Form Multi</a></li>
-<li>Save and manage messages using <a href="http://bestwebsoft.com/products/contact-form-to-db/?k=d7d962591b5be0ce6c27af778b1b36ee">Contact Form to DB</a></li>
-<li>Add users who send the submission to the <a href="http://bestwebsoft.com/products/subscriber/?k=2ce0827916414c9c8576110f13560030">Subscriber</a> newsletter subscription list</li>
+<li>Protect contact form from spam with <a href="http://bestwebsoft.com/products/wordpress/plugins/captcha/?k=45dcf2a5ccd70a7fc8606f8030730ac7">Captcha</a> or <a href="http://bestwebsoft.com/products/wordpress/plugins/google-captcha/?k=159789f556e3a9c58df8f25384903ba5">Google reCaptcha</a></li>
+<li>Add unlimited contact forms using <a href="http://bestwebsoft.com/products/wordpress/plugins/contact-form-multi/?k=34543c152eff369d529e9b4da85985a9">Contact Form Multi</a></li>
+<li>Save and manage messages using <a href="http://bestwebsoft.com/products/wordpress/plugins/contact-form-to-db/?k=d7d962591b5be0ce6c27af778b1b36ee">Contact Form to DB</a></li>
+<li>Add users who send the submission to the <a href="http://bestwebsoft.com/products/wordpress/plugins/subscriber/?k=2ce0827916414c9c8576110f13560030">Subscriber</a> newsletter subscription list</li>
 <li>Add custom code via plugin settings page</li>
 <li>Compatible with latest WordPress version</li>
 <li>Incredibly simple settings for fast setup without modifying code</li>
 <li>Detailed step-by-step documentations and videos</li>
-<li>Multilingual (20+ languages) and RTL ready</li>
+<li>Multilingual and RTL ready</li>
 </ul>
 
 <blockquote>
@@ -62,7 +64,7 @@ Simple contact form plugin any WordPress website must have.
   <li>Get answer to your support question within one business day (<a href="http://bestwebsoft.com/support-policy/">Support Policy</a>)</li>
   </ul>
   
-  <p><a href="http://bestwebsoft.com/products/contact-form/?k=4028655c87316c98ae9ac7ca1928067f">Upgrade to Pro Now</a></p>
+  <p><a href="http://bestwebsoft.com/products/wordpress/plugins/contact-form/?k=4028655c87316c98ae9ac7ca1928067f">Upgrade to Pro Now</a></p>
 </blockquote>
 
 <p>If you have a feature suggestion or idea you'd like to see in the plugin, we'd love to hear about it! <a href="http://support.bestwebsoft.com/hc/en-us/requests/new">Suggest a Feature</a></p>
@@ -113,13 +115,13 @@ Simple contact form plugin any WordPress website must have.
 <p>The author of the Contact Form also recommends the following plugins:</p>
 
 <ul>
-<li><a href="http://bestwebsoft.com/products/smtp/">SMTP</a> &#8211; Configure SMTP server to receive email messages from WordPress to Gmail, Yahoo, Hotmail and other services.</li>
-<li><a href="http://bestwebsoft.com/products/captcha/?k=45dcf2a5ccd70a7fc8606f8030730ac7">Captcha</a> &#8211; #1 super security anti-spam captcha plugin for WordPress forms.</li>
-<li><a href="http://bestwebsoft.com/products/google-captcha/?k=159789f556e3a9c58df8f25384903ba5">Google Captcha (Re-captcha)</a> &#8211; Protect WordPress website forms from spam entries with Google Captcha (reCaptcha).</li>
-<li><a href="http://bestwebsoft.com/products/limit-attempts/?k=129e34c19fc68ae4a15b4fc1b4983081">Limit Attempts</a> &#8211; Protect WordPress website against brute force attacks. Limit rate of login attempts.</li>
-<li><a href="http://bestwebsoft.com/products/contact-form-multi/?k=34543c152eff369d529e9b4da85985a9">Contact Form Multi</a> &#8211; Add unlimited number of contact forms to WordPress website.</li>
-<li><a href="http://bestwebsoft.com/products/contact-form-to-db/?k=d7d962591b5be0ce6c27af778b1b36ee">Contact Form to DB</a> &#8211; Save and manage contact form messages. Never lose important data.</li>
-<li><a href="http://bestwebsoft.com/products/updater/?k=982fae837f4c6e3b152183537448dbca">Updater</a> &#8211; Automatically check and update WordPress website core with all installed plugins and themes to the latest versions.</li>
+<li><a href="http://bestwebsoft.com/products/wordpress/plugins/smtp/">SMTP</a> &#8211; Configure SMTP server to receive email messages from WordPress to Gmail, Yahoo, Hotmail and other services.</li>
+<li><a href="http://bestwebsoft.com/products/wordpress/plugins/captcha/?k=45dcf2a5ccd70a7fc8606f8030730ac7">Captcha</a> &#8211; #1 super security anti-spam captcha plugin for WordPress forms.</li>
+<li><a href="http://bestwebsoft.com/products/wordpress/plugins/google-captcha/?k=159789f556e3a9c58df8f25384903ba5">Google Captcha (Re-captcha)</a> &#8211; Protect WordPress website forms from spam entries with Google Captcha (reCaptcha).</li>
+<li><a href="http://bestwebsoft.com/products/wordpress/plugins/limit-attempts/?k=129e34c19fc68ae4a15b4fc1b4983081">Limit Attempts</a> &#8211; Protect WordPress website against brute force attacks. Limit rate of login attempts.</li>
+<li><a href="http://bestwebsoft.com/products/wordpress/plugins/contact-form-multi/?k=34543c152eff369d529e9b4da85985a9">Contact Form Multi</a> &#8211; Add unlimited number of contact forms to WordPress website.</li>
+<li><a href="http://bestwebsoft.com/products/wordpress/plugins/contact-form-to-db/?k=d7d962591b5be0ce6c27af778b1b36ee">Contact Form to DB</a> &#8211; Save and manage contact form messages. Never lose important data.</li>
+<li><a href="http://bestwebsoft.com/products/wordpress/plugins/updater/?k=982fae837f4c6e3b152183537448dbca">Updater</a> &#8211; Automatically check and update WordPress website core with all installed plugins and themes to the latest versions.</li>
 </ul>
 
 <h4>Donate</h4>
