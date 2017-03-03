@@ -15,10 +15,12 @@
 		});
 
 		$( 'input[name="cntctfrm_from_field"]' ).focus( function() {
+			$( this ).trigger( 'change' );
 			$( '#cntctfrm_select_from_custom_field' ).attr( 'checked', 'checked' );
 		});
 
 		$( 'input[name="cntctfrm_custom_from_email"]' ).focus( function() {
+			$( this ).trigger( 'change' );
 			$( '#cntctfrm_from_custom_email' ).attr( 'checked', 'checked' );
 		});
 

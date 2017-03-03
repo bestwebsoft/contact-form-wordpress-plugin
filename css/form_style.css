@@ -30,7 +30,13 @@
 .cntctfrm_input_captcha .cptchpr_block ~ .gglcptch,
 .cntctfrm_input_captcha .cptch_block ~ .gglcptchpr,
 .cntctfrm_input_captcha .cptchpls_block ~ .gglcptchpr,
-.cntctfrm_input_captcha .cptchpr_block ~ .gglcptchpr {
+.cntctfrm_input_captcha .cptchpr_block ~ .gglcptchpr,
+.cntctfrm_input_captcha .cptch_wrap ~ .gglcptch,
+.cntctfrm_input_captcha .cptchpls_wrap ~ .gglcptch,
+.cntctfrm_input_captcha .cptchpr_wrap ~ .gglcptch,
+.cntctfrm_input_captcha .cptch_wrap ~ .gglcptchpr,
+.cntctfrm_input_captcha .cptchpls_wrap ~ .gglcptchpr,
+.cntctfrm_input_captcha .cptchpr_wrap ~ .gglcptchpr {
     padding: 20px 0 0;
 }
 .cntctfrm_contact_form .gglcptch #recaptcha_widget_div {

@@ -32,7 +32,7 @@ if ( ! function_exists( 'cntctfrm_options_update' ) ) {
 
 			if ( ! isset( $cntctfrm_options['display_captcha'] ) ) {
 				if ( array_key_exists( 'captcha', $cntctfrm_related_plugins ) )
-					$cntctfrm_options['display_captcha'] = $cntctfrm_related_plugins['captcha']['options'][ $cntctfrm_related_plugins['captcha']['display_option'] ];
+					$cntctfrm_options['display_captcha'] = $cntctfrm_related_plugins['captcha']['enabled'];
 				else
 					$cntctfrm_options['display_captcha'] = false;
 			}
@@ -129,7 +129,7 @@ if ( ! function_exists( 'cntctfrm_options_update' ) ) {
 			$cntctfrm_options['cntctfrm_attachment_size_error']		= array( 'default' => $cntctfrm_option_defaults['cntctfrm_attachment_size_error']['default'] );
 			$cntctfrm_options['cntctfrm_captcha_error']				= array( 'default' => $cntctfrm_option_defaults['cntctfrm_captcha_error']['default'] );
 			$cntctfrm_options['cntctfrm_form_error']				= array( 'default' => $cntctfrm_option_defaults['cntctfrm_form_error']['default'] );
-		}		
+		}
 
 		return $cntctfrm_options;
 	}
@@ -202,7 +202,7 @@ if ( ! function_exists( 'cntctfrm_detect_deprecated' ) ) {
 	}
 }
 
-/** 
+/**
  * @deprecated sinse 4.0.3
  * @todo delete after 01.04.2017
  */

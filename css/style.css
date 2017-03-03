@@ -1,6 +1,16 @@
 /*
 * styles for settings page
 */
+.cntctfrm_clear {
+	clear: both;
+}
+#cntctfrm_nav_container {
+	border-bottom: 1px solid #ccc;
+}
+#cntctfrm_nav {
+	float:left;
+	border: none !important;
+}
 #cntctfrm_contact_attachment {
 	margin-bottom:0;
 }
@@ -125,6 +135,7 @@
 	border-right: 1px solid #DFDFDF;
 	min-height: 25px;
 	padding: 2px 10px;
+	word-wrap: break-word;
 }
 .cntctfrm_settings_table td.bws_pro_version_tooltip {
 	text-align: center;
@@ -136,7 +147,20 @@
 .cntctfrm_mobile_title {
 	display: none;
 }
+#cntctfrm_table_from_name td,
+#cntctfrm_table_from_email td {
+	padding: 5px 0 0;
+	display: table-cell !important;
+}
+#cntctfrm_table_from_name td.cntctfrm_radio_from_name,
+#cntctfrm_table_from_email td.cntctfrm_radio_from_email {
+	text-align: center;
+	width: 25px;
+}
 @media screen and (max-width: 600px) {
+	#cntctfrm_nav_container {
+		border: none;
+	}
 	.cntctfrm_settings_table {
 		width: 100%;
 	}
@@ -248,44 +272,34 @@ td.cntctfrm_td_top_align {
 		margin-left: 0px;
 	}
 }
-@media screen and (max-width: 420px) {
-	.subsubsub.cntctfrm_how_to_use li {
-		white-space: normal;
-	}
-}
 @media only screen and ( max-width: 782px ) {
-	.cntctfrm_td_name,
-	.cntctfrm_td_email,
-	.cntctfrm_td_name label:first-of-type,
-	.cntctfrm_td_email label:first-of-type {
-		width: 100% !important;
-	}
-
-	.cntctfrm_info {
-		display: inline-block;
-	}
-
-	#cntctfrm_select_from_custom_field,
-	#cntctfrm_from_custom_email,
-	#cntctfrm_select_email_user,
-	#cntctfrm_select_email_custom {
-		margin-top: 9px;
-	}
-	input[name="cntctfrm_from_field"],
-	input[name="cntctfrm_custom_from_email"],
-	select[name="cntctfrm_user_email"],
-	input[name="cntctfrm_custom_email"] {
-		float: right;
-		width: calc(100% - 31px) !important;
-		width: -moz-calc(100% - 31px) !important;
-		width: -webkit-calc(100% - 31px) !important;
-	}
-}
-@media screen and (max-width: 1220px) {
 	.cntctfrm_how_to_use {
 		float: none;
 	}
 	.cntctfrm_how_to_use > h2 {
 		clear: both;
 	}
+
+	#cntctfrm_table_from_name,
+	#cntctfrm_table_from_email,
+	.cntctfrm_td_name,
+	.cntctfrm_td_email {
+		width: 100%;
+	}
+
+	.cntctfrm_info {
+		display: inline-block;
+	}
+}
+@media screen and (max-width: 814px) {
+	.cntctfrm_settings_table thead th{
+		max-width: 50px;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}
+.cntctfrm_pro_version_table_block.bws_pro_version_tooltip {
+	border-left: none;
+	border-top: none;
+	border-color: #DFDFDF;
 }

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Contact Form\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-29 16:04+0300\n"
-"PO-Revision-Date: 2016-09-29 16:04+0300\n"
+"POT-Creation-Date: 2017-02-27 16:22+0300\n"
+"PO-Revision-Date: 2017-02-27 16:22+0300\n"
 "Last-Translator: plugin@bestwebsoft.com <plugin@bestwebsoft.com>\n"
 "Language-Team: Aldu <alducornelissen@gmail.com>\n"
 "Language: af\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: contact_form.php:42 contact_form.php:1022
+#: contact_form.php:42 contact_form.php:1066
 msgid "Contact Form Settings"
 msgstr "Kontak Form Verstellings"
 
@@ -25,42 +25,42 @@ msgstr "Kontak Form Verstellings"
 msgid "Contact Form"
 msgstr "Kontak Form"
 
-#: contact_form.php:295 contact_form.php:1199 contact_form.php:1258
-#: contact_form.php:1649 contact_form.php:1687 contact_form.php:1936
-#: contact_form.php:3069 contact_form.php:3115
+#: contact_form.php:295 contact_form.php:1246 contact_form.php:1336
+#: contact_form.php:1727 contact_form.php:1765 contact_form.php:2011
+#: contact_form.php:3138 contact_form.php:3184
 msgid "Name"
 msgstr "Naam"
 
-#: contact_form.php:296 contact_form.php:1305 contact_form.php:1650
-#: contact_form.php:1688 contact_form.php:1941 contact_form.php:3076
-#: contact_form.php:3121
+#: contact_form.php:296 contact_form.php:1383 contact_form.php:1728
+#: contact_form.php:1766 contact_form.php:2016 contact_form.php:3145
+#: contact_form.php:3190
 msgid "Address"
 msgstr "Adres: "
 
-#: contact_form.php:297 contact_form.php:1321 contact_form.php:1651
-#: contact_form.php:1689
+#: contact_form.php:297 contact_form.php:1399 contact_form.php:1729
+#: contact_form.php:1767
 msgid "Email Address"
 msgstr "Epos Adres:"
 
-#: contact_form.php:298 contact_form.php:1344 contact_form.php:1652
-#: contact_form.php:1690
+#: contact_form.php:298 contact_form.php:1422 contact_form.php:1730
+#: contact_form.php:1768
 msgid "Phone number"
 msgstr "Telefoon nommer:"
 
-#: contact_form.php:299 contact_form.php:1360 contact_form.php:1653
-#: contact_form.php:1691 contact_form.php:1956 contact_form.php:3087
-#: contact_form.php:3130
+#: contact_form.php:299 contact_form.php:1438 contact_form.php:1731
+#: contact_form.php:1769 contact_form.php:2031 contact_form.php:3156
+#: contact_form.php:3199
 msgid "Subject"
 msgstr "Onderwerp"
 
-#: contact_form.php:300 contact_form.php:1384 contact_form.php:1654
-#: contact_form.php:1692 contact_form.php:1960 contact_form.php:3092
-#: contact_form.php:3134
+#: contact_form.php:300 contact_form.php:1462 contact_form.php:1732
+#: contact_form.php:1770 contact_form.php:2035 contact_form.php:3161
+#: contact_form.php:3203
 msgid "Message"
 msgstr "Boodskap"
 
-#: contact_form.php:301 contact_form.php:1655 contact_form.php:1693
-#: contact_form.php:1965
+#: contact_form.php:301 contact_form.php:1733 contact_form.php:1771
+#: contact_form.php:2040
 msgid "Attachment"
 msgstr "Aanhegsel:"
 
@@ -72,11 +72,11 @@ msgstr ""
 "Ondersteunde datalêer tipes: HTML, TXT, CSS, GIF, PNG, JPEG, JPG, TIFF, BMP, "
 "AI, EPS, PS, CSV, RTF, PDF, DOC, DOCX, XLS, XLSX, ZIP, RAR, WAV, MP3, PPT."
 
-#: contact_form.php:303 contact_form.php:1657 contact_form.php:1695
+#: contact_form.php:303 contact_form.php:1735 contact_form.php:1773
 msgid "Send me a copy"
 msgstr "Stuur vir my 'n kopie"
 
-#: contact_form.php:304 contact_form.php:1658 contact_form.php:1696
+#: contact_form.php:304 contact_form.php:1736 contact_form.php:1774
 msgid "Submit"
 msgstr "Dien in"
 
@@ -132,17 +132,17 @@ msgstr "Korregeer asseblief die foute hierdoner en probeer weer."
 msgid "Thank you for contacting us."
 msgstr "Dankie dat jy ons gekontak het."
 
-#: contact_form.php:719 contact_form.php:979
+#: contact_form.php:761 contact_form.php:1023
 msgid "Settings saved."
 msgstr "Verstellings is gestoor."
 
-#: contact_form.php:924
+#: contact_form.php:968
 msgid ""
 "Email 'FROM' field option was changed, which may cause email messages being "
 "moved to the spam folder or email delivery failures."
 msgstr ""
 
-#: contact_form.php:934
+#: contact_form.php:978
 msgid ""
 "If the 'Redirect to page' option is selected then the URL field should be in "
 "the following format"
@@ -150,12 +150,12 @@ msgstr ""
 "As die 'Redirect to page' opsie geselekteer is moet die URL veld in die "
 "volgende formaat wees"
 
-#: contact_form.php:941
+#: contact_form.php:985
 #, fuzzy
 msgid "Such user does not exist."
 msgstr "Hierdie gebruiker bestaan nie. Die instellings is nie gestoor nie."
 
-#: contact_form.php:951
+#: contact_form.php:995
 #, fuzzy
 msgid ""
 "Please enter a valid email address in the 'Use this email address' field."
@@ -163,63 +163,63 @@ msgstr ""
 "Vul asseblief 'n geldige epos adres in die 'FROM/VAN' veld. Die verstellings "
 "is nie gestoor nie."
 
-#: contact_form.php:959
+#: contact_form.php:1003
 #, fuzzy
 msgid "Please enter a valid email address in the 'FROM' field."
 msgstr ""
 "Vul asseblief 'n geldige epos adres in die 'FROM/VAN' veld. Die verstellings "
 "is nie gestoor nie."
 
-#: contact_form.php:981
+#: contact_form.php:1025
 #, fuzzy
 msgid "Settings are not saved."
 msgstr "Verstellings is gestoor."
 
-#: contact_form.php:1019
+#: contact_form.php:1063
 msgid "All plugin settings were restored."
 msgstr ""
 
-#: contact_form.php:1024
+#: contact_form.php:1069
 msgid "How to Use Step-by-step Instruction"
 msgstr ""
 
-#: contact_form.php:1027 contact_form.php:3307 contact_form.php:3321
+#: contact_form.php:1072 contact_form.php:3376 contact_form.php:3390
 msgid "Settings"
 msgstr "Verstellings"
 
-#: contact_form.php:1028
+#: contact_form.php:1073
 #, fuzzy
 msgid "Additional settings"
 msgstr "Addisionele opsies"
 
-#: contact_form.php:1029
+#: contact_form.php:1074
 msgid "Appearance"
 msgstr ""
 
-#: contact_form.php:1030
+#: contact_form.php:1075
 msgid "Custom code"
 msgstr ""
 
-#: contact_form.php:1031
+#: contact_form.php:1076
 msgid "Go PRO"
 msgstr "Gaan PRO"
 
-#: contact_form.php:1040
+#: contact_form.php:1087
 #, fuzzy
 msgid "Notice"
 msgstr "Kennisgewing:"
 
-#: contact_form.php:1044
+#: contact_form.php:1091
 msgid "NEW_FORM"
 msgstr ""
 
-#: contact_form.php:1045
+#: contact_form.php:1092
 msgid ""
 "If you want to create multiple contact forms, please install the Contact "
 "Form Multi plugin."
 msgstr ""
 
-#: contact_form.php:1054
+#: contact_form.php:1101
 #, fuzzy, php-format
 msgid ""
 "If you would like to add a Contact Form to your page or post, please use %s "
@@ -228,7 +228,7 @@ msgstr ""
 "As u die Kontak Vorm by u webstuiste wil bylas, kopieër en plak net die "
 "kortkode na u post, bladsy of widget:"
 
-#: contact_form.php:1060
+#: contact_form.php:1107
 #, php-format
 msgid ""
 "You can add the Contact Form to your page or post by clicking on %s button "
@@ -237,7 +237,7 @@ msgid ""
 "language."
 msgstr ""
 
-#: contact_form.php:1069
+#: contact_form.php:1116
 msgid ""
 "If you leave the fields empty, the messages will be sent to the email "
 "address specified during registration."
@@ -245,17 +245,17 @@ msgstr ""
 "As u die velde leeg laat, sal die boodskappe gestuur word na die epos adres "
 "wat gespesifiseer was gedurende registrasie"
 
-#: contact_form.php:1072
+#: contact_form.php:1119
 #, fuzzy
 msgid "The user's email address"
 msgstr "Die gebruiker se epos adres:"
 
-#: contact_form.php:1076
+#: contact_form.php:1123
 #, fuzzy
 msgid "Select a username"
 msgstr "Skep 'n gebruikersnaam"
 
-#: contact_form.php:1089
+#: contact_form.php:1136
 #, fuzzy
 msgid ""
 "Select a username of the person who should get the messages from the contact "
@@ -264,116 +264,111 @@ msgstr ""
 "Sleutel 'n gebruikersnaam in vir die persoon wat die boodskappe moet kry van "
 "die kontak vorm."
 
-#: contact_form.php:1093
+#: contact_form.php:1140
 #, fuzzy
 msgid "Use this email address"
 msgstr "Gebruik hierdie epos adres:"
 
-#: contact_form.php:1097
+#: contact_form.php:1144
 #, fuzzy
 msgid "Enter the email address for receiving messages"
 msgstr "Sleutel in die epos adres in waar u die boodskappe aangestuur wil he."
 
-#: contact_form.php:1104 contact_form.php:1566 contact_form.php:1776
-#: contact_form.php:1864 contact_form.php:3402
+#: contact_form.php:1151 contact_form.php:1647 contact_form.php:1854
+#: contact_form.php:1939 contact_form.php:3471
 msgid "Close"
 msgstr ""
 
-#: contact_form.php:1108
+#: contact_form.php:1155
 #, fuzzy
 msgid "Add department selectbox to the contact form"
 msgstr "Voeg 'n departementele keuse-boks by die kontak vorm:"
 
-#: contact_form.php:1116 contact_form.php:1575 contact_form.php:1795
-#: contact_form.php:2070
+#: contact_form.php:1163 contact_form.php:1656 contact_form.php:1873
+#: contact_form.php:2145
 msgid "If you upgrade to Pro version all your settings will be saved."
 msgstr "As u opgradeer na die Pro weergawe sal die verstellings gestoor word."
 
-#: contact_form.php:1123 contact_form.php:1414 contact_form.php:1580
-#: contact_form.php:1802 contact_form.php:2077
-msgid "Unlock premium options by upgrading to Pro version"
+#: contact_form.php:1170 contact_form.php:1492 contact_form.php:1661
+#: contact_form.php:1880 contact_form.php:2152
+msgid "Upgrade to Pro"
 msgstr ""
 
-#: contact_form.php:1126 contact_form.php:1417 contact_form.php:1583
-#: contact_form.php:1805 contact_form.php:2080 contact_form.php:3633
-msgid "Learn More"
-msgstr ""
-
-#: contact_form.php:1134
+#: contact_form.php:1178
 msgid "Save emails to the database"
 msgstr "Stoor eposse na die databasis."
 
-#: contact_form.php:1146 contact_form.php:1160 contact_form.php:1167
+#: contact_form.php:1190 contact_form.php:1204 contact_form.php:1211
 msgid "Using"
 msgstr "In Gebruik"
 
-#: contact_form.php:1152 contact_form.php:1477 contact_form.php:1510
-#: contact_form.php:1544
+#: contact_form.php:1196 contact_form.php:1548 contact_form.php:1590
+#: contact_form.php:1625
 msgid "Please activate the appropriate option on"
 msgstr ""
 
-#: contact_form.php:1155 contact_form.php:1480 contact_form.php:1513
-#: contact_form.php:1547
+#: contact_form.php:1199 contact_form.php:1551 contact_form.php:1593
+#: contact_form.php:1628
 #, fuzzy
 msgid "settings page"
 msgstr "Die verstelling bladsy"
 
-#: contact_form.php:1161 contact_form.php:1486 contact_form.php:1520
-#: contact_form.php:1554
+#: contact_form.php:1205 contact_form.php:1558 contact_form.php:1601
+#: contact_form.php:1635
 msgid "Activate"
 msgstr "Aktiveer"
 
-#: contact_form.php:1168 contact_form.php:1492 contact_form.php:1526
-#: contact_form.php:1559
+#: contact_form.php:1212 contact_form.php:1567 contact_form.php:1607
+#: contact_form.php:1640
 msgid "Download"
 msgstr "Download"
 
-#: contact_form.php:1180
+#: contact_form.php:1224
 msgid "Sending method"
 msgstr ""
 
-#: contact_form.php:1185
+#: contact_form.php:1229
 msgid "Wp-mail"
 msgstr "Wp-mail"
 
-#: contact_form.php:1187
+#: contact_form.php:1231
 #, fuzzy
 msgid "You can use the Wordpress wp_mail function for mailing"
 msgstr "U kan die wp_mail funksie gebruik vir eposse"
 
-#: contact_form.php:1190
+#: contact_form.php:1234
 msgid "Mail"
 msgstr "Mail"
 
-#: contact_form.php:1192
+#: contact_form.php:1236
 #, fuzzy
 msgid "You can use the PHP mail function for mailing"
 msgstr "U kan die wp_mail funksie gebruik vir eposse"
 
-#: contact_form.php:1197
+#: contact_form.php:1241
 msgid "'FROM' field"
 msgstr ""
 
-#: contact_form.php:1202
+#: contact_form.php:1257
 msgid "User name"
 msgstr "Gebruikersnaam"
 
-#: contact_form.php:1204
+#: contact_form.php:1259
 msgid ""
 "The name of the user who fills the form will be used in the field 'From'."
 msgstr ""
 "Die naam van die gebruiker wie die vorm invul sal gebruik word vir die 'From/"
 "Van' veld."
 
-#: contact_form.php:1209 contact_form.php:3082 contact_form.php:3126
+#: contact_form.php:1270 contact_form.php:3151 contact_form.php:3195
 msgid "Email"
 msgstr "Epos"
 
-#: contact_form.php:1212
+#: contact_form.php:1281
 msgid "User email"
 msgstr "Gebruiker epos"
 
-#: contact_form.php:1214
+#: contact_form.php:1283
 msgid ""
 "The email address of the user who fills the form will be used in the field "
 "'From'."
@@ -381,149 +376,154 @@ msgstr ""
 "Die epos adres van die gebruiker wie die vorm invul sal gebruik word in die "
 "'From/van' veld."
 
-#: contact_form.php:1217
+#: contact_form.php:1292
 msgid ""
 "If this option is changed, email messages may be moved to the spam folder or "
 "email delivery failures may occur."
 msgstr ""
 
-#: contact_form.php:1223
+#: contact_form.php:1301
 msgid "Required symbol"
 msgstr "Benodigde simbool"
 
-#: contact_form.php:1233
+#: contact_form.php:1311
 msgid "Fields"
 msgstr "Velde"
 
-#: contact_form.php:1234 contact_form.php:1261 contact_form.php:1288
-#: contact_form.php:1308 contact_form.php:1347 contact_form.php:1432
+#: contact_form.php:1312 contact_form.php:1339 contact_form.php:1366
+#: contact_form.php:1386 contact_form.php:1425 contact_form.php:1507
 msgid "Used"
 msgstr "Gebruik"
 
-#: contact_form.php:1235 contact_form.php:1250 contact_form.php:1265
-#: contact_form.php:1292 contact_form.php:1312 contact_form.php:1325
-#: contact_form.php:1351 contact_form.php:1364 contact_form.php:1388
+#: contact_form.php:1313 contact_form.php:1328 contact_form.php:1343
+#: contact_form.php:1370 contact_form.php:1390 contact_form.php:1403
+#: contact_form.php:1429 contact_form.php:1442 contact_form.php:1466
 msgid "Required"
 msgstr "Benodig"
 
-#: contact_form.php:1237 contact_form.php:1270 contact_form.php:1330
-#: contact_form.php:1369 contact_form.php:1393
+#: contact_form.php:1315 contact_form.php:1348 contact_form.php:1408
+#: contact_form.php:1447 contact_form.php:1471
 msgid "Visible"
 msgstr "Sigbaar"
 
-#: contact_form.php:1238 contact_form.php:1274 contact_form.php:1334
-#: contact_form.php:1373 contact_form.php:1397
+#: contact_form.php:1316 contact_form.php:1352 contact_form.php:1412
+#: contact_form.php:1451 contact_form.php:1475
 msgid "Disabled for editing"
 msgstr "Gedeaktiveer vir wysiging"
 
-#: contact_form.php:1239 contact_form.php:1298 contact_form.php:1377
-#: contact_form.php:1401
+#: contact_form.php:1317 contact_form.php:1376 contact_form.php:1455
+#: contact_form.php:1479
 msgid "Field's default value"
 msgstr "Veld se verstekwaarde"
 
-#: contact_form.php:1246
+#: contact_form.php:1324
 msgid "Department selectbox"
 msgstr ""
 
-#: contact_form.php:1278
+#: contact_form.php:1356
 msgid "Use User's name as a default value if the user is logged in."
 msgstr ""
 
-#: contact_form.php:1279 contact_form.php:1339
+#: contact_form.php:1357 contact_form.php:1417
 msgid ""
 "'Visible' and 'Disabled for editing' options will be applied only to logged-"
 "in users."
 msgstr ""
 
-#: contact_form.php:1285
+#: contact_form.php:1363
 msgid "Location selectbox"
 msgstr ""
 
-#: contact_form.php:1338
+#: contact_form.php:1416
 msgid "Use User's email as a default value if the user is logged in."
 msgstr ""
 
-#: contact_form.php:1425
+#: contact_form.php:1500
 msgid "Attachment block"
 msgstr "Aanhegsel blok"
 
-#: contact_form.php:1427
+#: contact_form.php:1502
 msgid "Users can attach the following file formats"
 msgstr "Gebruikers kan die volgende dataleêr formate aanheg"
 
-#: contact_form.php:1445
+#: contact_form.php:1520
 msgid "Add to the form"
 msgstr "Voeg by die vorm by"
 
-#: contact_form.php:1450
+#: contact_form.php:1525
 msgid "Tips below the Attachment"
 msgstr "Wenke onder die Aanhegsel"
 
-#: contact_form.php:1459
+#: contact_form.php:1532
 msgid "'Send me a copy' block"
 msgstr "'Stuur vir my 'n kopie' blok"
 
-#: contact_form.php:1570
+#: contact_form.php:1560
+msgid "Activate for network"
+msgstr ""
+
+#: contact_form.php:1651
 msgid "Agreement checkbox"
 msgstr "Ooreenstemming checkbox"
 
-#: contact_form.php:1570
+#: contact_form.php:1651
 msgid "Required checkbox for submitting the form"
 msgstr "Benodigde checkbox om die vorm in te dien"
 
-#: contact_form.php:1571
+#: contact_form.php:1652
 msgid "Optional checkbox"
 msgstr "Opsie checkbox"
 
-#: contact_form.php:1571
+#: contact_form.php:1652
 msgid "Optional checkbox, the results of which will be displayed in email"
 msgstr "Opsionele checkbox, die resultate waarvan in die epos sal verskyn"
 
-#: contact_form.php:1592
+#: contact_form.php:1670
 msgid "Delete an attachment file from the server after the email is sent"
 msgstr "Verwyder 'n aanhegsel dataleêr van die server na epos gestuur is"
 
-#: contact_form.php:1598
+#: contact_form.php:1676
 msgid "Email in HTML format sending"
 msgstr "E-Mail in HTML Format"
 
-#: contact_form.php:1602
+#: contact_form.php:1680
 msgid "Display additional info in the email"
 msgstr "Toon addisionele inligting in die epos"
 
-#: contact_form.php:1608
+#: contact_form.php:1686
 #, fuzzy
 msgid "Sent from (IP address)"
 msgstr "Gestuur van (IP-Adres)"
 
-#: contact_form.php:1608
+#: contact_form.php:1686
 msgid "Example: Sent from (IP address):\t127.0.0.1"
 msgstr "Voorbeeld: Gestuur van (IP-Adres):\t127.0.0.1"
 
-#: contact_form.php:1609 contact_form.php:3031 contact_form.php:3033
+#: contact_form.php:1687 contact_form.php:3100 contact_form.php:3102
 msgid "Date/Time"
 msgstr "Datum/Tyd"
 
-#: contact_form.php:1609
+#: contact_form.php:1687
 msgid "Example: Date/Time:\tAugust 19, 2013 8:50 pm"
 msgstr "Voorbeeld: Datum/Tyd:\tAugustus 19, 2013 8:50 pm"
 
-#: contact_form.php:1610 contact_form.php:3037 contact_form.php:3039
+#: contact_form.php:1688 contact_form.php:3106 contact_form.php:3108
 msgid "Sent from (referer)"
 msgstr "Gestuur van (referer)"
 
-#: contact_form.php:1610
+#: contact_form.php:1688
+#, fuzzy
 msgid ""
-"Example: Sent from (referer):\thttp://bestwebsoft.com/contacts/contact-us/"
+"Example: Sent from (referer):\thttps://bestwebsoft.com/contacts/contact-us/"
 msgstr ""
 "Voorbeeld: Gestuur van (referer):\thttp://bestwebsoft.com/kontakte/kontak-"
 "ons/"
 
-#: contact_form.php:1611 contact_form.php:3043 contact_form.php:3045
+#: contact_form.php:1689 contact_form.php:3112 contact_form.php:3114
 msgid "Using (user agent)"
 msgstr "Gebruik (user agent)"
 
-#: contact_form.php:1611
+#: contact_form.php:1689
 msgid ""
 "Example: Using (user agent):\tMozilla/5.0 (Windows NT 6.2; WOW64) "
 "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36"
@@ -531,137 +531,137 @@ msgstr ""
 "Voorbeeld: Gebruik (user agent):\tMozilla/5.0 (Windows NT 6.2; WOW64) "
 "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36"
 
-#: contact_form.php:1616
+#: contact_form.php:1694
 msgid "Language settings for the field names in the form"
 msgstr "Taal verstellings vir die naamvelde in die vorm"
 
-#: contact_form.php:1625
+#: contact_form.php:1703
 msgid "Add a language"
 msgstr "Voeg 'n taal by"
 
-#: contact_form.php:1629
+#: contact_form.php:1707
 msgid "Change the names of the contact form fields and error messages"
 msgstr "Verander die name van die kontak vorm velde en foutboodskappe"
 
-#: contact_form.php:1634 contact_form.php:1730 contact_form.php:1984
-#: contact_form.php:1989 contact_form.php:1999 contact_form.php:2004
-#: contact_form.php:2009 contact_form.php:2014 contact_form.php:2024
-#: contact_form.php:2029 contact_form.php:2038 contact_form.php:2052
-#: contact_form.php:2057 contact_form.php:2062
+#: contact_form.php:1712 contact_form.php:1808 contact_form.php:2059
+#: contact_form.php:2064 contact_form.php:2074 contact_form.php:2079
+#: contact_form.php:2084 contact_form.php:2089 contact_form.php:2099
+#: contact_form.php:2104 contact_form.php:2113 contact_form.php:2127
+#: contact_form.php:2132 contact_form.php:2137
 msgid "Default"
 msgstr "Verstek"
 
-#: contact_form.php:1647 contact_form.php:1685
+#: contact_form.php:1725 contact_form.php:1763
 msgid "click to expand/hide the list"
 msgstr "Kliek om uit te brei/lys te versteek"
 
-#: contact_form.php:1656 contact_form.php:1694
+#: contact_form.php:1734 contact_form.php:1772
 msgid "Tips below the Attachment block"
 msgstr "Wenke onder toe Aanhegsel blok"
 
-#: contact_form.php:1659 contact_form.php:1697
+#: contact_form.php:1737 contact_form.php:1775
 msgid "Error message for the Name field"
 msgstr "FFoutboodskap vir die Naamveld"
 
-#: contact_form.php:1660 contact_form.php:1698
+#: contact_form.php:1738 contact_form.php:1776
 msgid "Error message for the Address field"
 msgstr "Foutboodskap vir die Adres veld"
 
-#: contact_form.php:1661 contact_form.php:1699
+#: contact_form.php:1739 contact_form.php:1777
 msgid "Error message for the Email field"
 msgstr "Foutboodskap vir die Epos veld"
 
-#: contact_form.php:1662 contact_form.php:1700
+#: contact_form.php:1740 contact_form.php:1778
 msgid "Error message for the Phone field"
 msgstr "Foutboodskap vir die Telefoon Nommer veld"
 
-#: contact_form.php:1663 contact_form.php:1701
+#: contact_form.php:1741 contact_form.php:1779
 msgid "Error message for the Subject field"
 msgstr "Foutboodskap vir die Onderwerp veld"
 
-#: contact_form.php:1664 contact_form.php:1702
+#: contact_form.php:1742 contact_form.php:1780
 msgid "Error message for the Message field"
 msgstr "Foutboodskap vir die Boodskap veld"
 
-#: contact_form.php:1665 contact_form.php:1703
+#: contact_form.php:1743 contact_form.php:1781
 msgid "Error message about the file type for the Attachment field"
 msgstr "Foutboodskap oor die dataleêr tipe vir die Aanhegsel veld"
 
-#: contact_form.php:1666 contact_form.php:1704
+#: contact_form.php:1744 contact_form.php:1782
 msgid ""
 "Error message while uploading a file for the Attachment field to the server"
 msgstr ""
 "Foutboodskap tydens dataleêr oplaai vir die Aanhegsel veld na die server"
 
-#: contact_form.php:1667 contact_form.php:1705
+#: contact_form.php:1745 contact_form.php:1783
 msgid "Error message while moving the file for the Attachment field"
 msgstr "Foutboodskap tydens die skuif van dataleêr vir die Aanhegsel veld"
 
-#: contact_form.php:1668 contact_form.php:1706
+#: contact_form.php:1746 contact_form.php:1784
 msgid "Error message when file size limit for the Attachment field is exceeded"
 msgstr ""
 "Foutboodskap wanneer die dataleêr limiet vir die Aanhegsel veld oorskry is"
 
-#: contact_form.php:1669 contact_form.php:1707
+#: contact_form.php:1747 contact_form.php:1785
 msgid "Error message for the Captcha field"
 msgstr "Foutboodskap vir die Captcha veld"
 
-#: contact_form.php:1670 contact_form.php:1708
+#: contact_form.php:1748 contact_form.php:1786
 msgid "Error message for the whole form"
 msgstr "Foutboodskap vir die hele vorm"
 
-#: contact_form.php:1673 contact_form.php:1675 contact_form.php:1711
-#: contact_form.php:1713 contact_form.php:1745 contact_form.php:1747
-#: contact_form.php:1759 contact_form.php:1761 contact_form.php:3469
-#: contact_form.php:3471
+#: contact_form.php:1751 contact_form.php:1753 contact_form.php:1789
+#: contact_form.php:1791 contact_form.php:1823 contact_form.php:1825
+#: contact_form.php:1837 contact_form.php:1839 contact_form.php:3538
+#: contact_form.php:3540
 msgid "Use shortcode"
 msgstr "Gebruik kortkode"
 
-#: contact_form.php:1673 contact_form.php:1675 contact_form.php:1711
-#: contact_form.php:1713 contact_form.php:1745 contact_form.php:1747
-#: contact_form.php:1759 contact_form.php:1761 contact_form.php:3469
-#: contact_form.php:3471
+#: contact_form.php:1751 contact_form.php:1753 contact_form.php:1789
+#: contact_form.php:1791 contact_form.php:1823 contact_form.php:1825
+#: contact_form.php:1837 contact_form.php:1839 contact_form.php:3538
+#: contact_form.php:3540
 msgid "for this language"
 msgstr "vir hierdie taal"
 
-#: contact_form.php:1721
+#: contact_form.php:1799
 #, fuzzy
 msgid "Use the changed names of the contact form fields in the email"
 msgstr "Verander die name van die kontak vorm velde en foutboodskappe"
 
-#: contact_form.php:1727
+#: contact_form.php:1805
 msgid "Action after email is sent"
 msgstr "Aksie na epos gestuur is"
 
-#: contact_form.php:1729
+#: contact_form.php:1807
 msgid "Display text"
 msgstr "Toon teks"
 
-#: contact_form.php:1743 contact_form.php:1757
+#: contact_form.php:1821 contact_form.php:1835
 msgid "Text"
 msgstr "teks"
 
-#: contact_form.php:1768
+#: contact_form.php:1846
 msgid "Redirect to the page"
 msgstr "Herlei na die bladsy"
 
-#: contact_form.php:1769
+#: contact_form.php:1847
 msgid "Url"
 msgstr "Url"
 
-#: contact_form.php:1780
+#: contact_form.php:1858
 msgid "Add field 'Reply-To' to the email header"
 msgstr ""
 
-#: contact_form.php:1782
+#: contact_form.php:1860
 msgid "Field 'Reply-To' will be initialized by user email"
 msgstr ""
 
-#: contact_form.php:1786
+#: contact_form.php:1864
 msgid "Auto Response"
 msgstr ""
 
-#: contact_form.php:1790
+#: contact_form.php:1868
 #, php-format
 msgid ""
 "You can use %%NAME%% to display data from the email field and %%MESSAGE%% to "
@@ -669,182 +669,182 @@ msgid ""
 "name."
 msgstr ""
 
-#: contact_form.php:1815 contact_form.php:2321
+#: contact_form.php:1890 contact_form.php:2389
 msgid "Save Changes"
 msgstr "Stoor veranderinge"
 
-#: contact_form.php:1828
+#: contact_form.php:1903
 #, php-format
 msgid ""
 "Please enable JavaScript to change '%s', '%s' options and for fields sorting."
 msgstr ""
 
-#: contact_form.php:1828 contact_form.php:1837
+#: contact_form.php:1903 contact_form.php:1912
 msgid "Form layout"
 msgstr ""
 
-#: contact_form.php:1828 contact_form.php:1849
+#: contact_form.php:1903 contact_form.php:1924
 #, fuzzy
 msgid "Submit position"
 msgstr "Indien knoppie"
 
-#: contact_form.php:1841
+#: contact_form.php:1916
 msgid "One column"
 msgstr ""
 
-#: contact_form.php:1844
+#: contact_form.php:1919
 msgid "Two columns"
 msgstr ""
 
-#: contact_form.php:1853 contact_form.php:1872 contact_form.php:1890
-#: contact_form.php:1905
+#: contact_form.php:1928 contact_form.php:1947 contact_form.php:1965
+#: contact_form.php:1980
 msgid "Left"
 msgstr ""
 
-#: contact_form.php:1856 contact_form.php:1878 contact_form.php:1893
-#: contact_form.php:1911
+#: contact_form.php:1931 contact_form.php:1953 contact_form.php:1968
+#: contact_form.php:1986
 msgid "Right"
 msgstr ""
 
-#: contact_form.php:1868
+#: contact_form.php:1943
 msgid "Form align"
 msgstr ""
 
-#: contact_form.php:1875 contact_form.php:1908
+#: contact_form.php:1950 contact_form.php:1983
 msgid "Center"
 msgstr ""
 
-#: contact_form.php:1883
+#: contact_form.php:1958
 #, fuzzy
 msgid "Labels position"
 msgstr "Indien knoppie"
 
-#: contact_form.php:1887
+#: contact_form.php:1962
 msgid "Top"
 msgstr ""
 
-#: contact_form.php:1896
+#: contact_form.php:1971
 msgid "Bottom"
 msgstr ""
 
-#: contact_form.php:1901
+#: contact_form.php:1976
 msgid "Labels align"
 msgstr ""
 
-#: contact_form.php:1916
+#: contact_form.php:1991
 msgid "Errors output"
 msgstr "Foutboodskap uitset"
 
-#: contact_form.php:1919
+#: contact_form.php:1994
 msgid "Display error messages"
 msgstr "Toon foutboodskappe"
 
-#: contact_form.php:1920
+#: contact_form.php:1995
 msgid "Color of the input field errors."
 msgstr "Kleur van die inset veld foutboodskappe"
 
-#: contact_form.php:1921
+#: contact_form.php:1996
 msgid "Display error messages & color of the input field errors"
 msgstr "Toon foutboodskappe & kleur van die inset veld foutboodskappe"
 
-#: contact_form.php:1926
+#: contact_form.php:2001
 msgid "Add placeholder to the input blocks"
 msgstr "Voeg 'n plekhouer by die inset blokke"
 
-#: contact_form.php:1932
+#: contact_form.php:2007
 msgid "Add tooltips"
 msgstr "Voeg tool-wenke"
 
-#: contact_form.php:1946
+#: contact_form.php:2021
 msgid "Email address"
 msgstr "Epos Adres:"
 
-#: contact_form.php:1951 contact_form.php:3098 contact_form.php:3139
+#: contact_form.php:2026 contact_form.php:3167 contact_form.php:3208
 msgid "Phone Number"
 msgstr "Telefoon Nommer:"
 
-#: contact_form.php:1977
+#: contact_form.php:2052
 msgid "Style options"
 msgstr "Styl opsies"
 
-#: contact_form.php:1981
+#: contact_form.php:2056
 msgid "Text color"
 msgstr "Teks kleur"
 
-#: contact_form.php:1986
+#: contact_form.php:2061
 msgid "Label text color"
 msgstr "Etiket teks kleur"
 
-#: contact_form.php:1991
+#: contact_form.php:2066
 msgid "Placeholder color"
 msgstr "Plekhouer kleur"
 
-#: contact_form.php:1996
+#: contact_form.php:2071
 msgid "Errors color"
 msgstr "Foutboodskap kleur"
 
-#: contact_form.php:2001
+#: contact_form.php:2076
 msgid "Error text color"
 msgstr "Foutboodskap teks kleur"
 
-#: contact_form.php:2006
+#: contact_form.php:2081
 msgid "Background color of the input field errors"
 msgstr "Agtergrond kleur van die inset veld foutboodskappe"
 
-#: contact_form.php:2011
+#: contact_form.php:2086
 msgid "Border color of the input field errors"
 msgstr "Rand-kleur van die inset veld foutboodskappe"
 
-#: contact_form.php:2016
+#: contact_form.php:2091
 msgid "Placeholder color of the input field errors"
 msgstr "Plekhouer kleur van die inset veld foutboodskappe"
 
-#: contact_form.php:2021
+#: contact_form.php:2096
 msgid "Input fields"
 msgstr "Inset velde"
 
-#: contact_form.php:2026
+#: contact_form.php:2101
 msgid "Input fields background color"
 msgstr "Inset velde agtergrond kleur"
 
-#: contact_form.php:2031
+#: contact_form.php:2106
 msgid "Text fields color"
 msgstr "Teks velde kleur"
 
-#: contact_form.php:2035
+#: contact_form.php:2110
 msgid "Border width in px, numbers only"
 msgstr "Rand wydte in px, nommers alleenlik"
 
-#: contact_form.php:2040 contact_form.php:2064
+#: contact_form.php:2115 contact_form.php:2139
 msgid "Border color"
 msgstr "Rand kleur"
 
-#: contact_form.php:2045
+#: contact_form.php:2120
 msgid "Submit button"
 msgstr "Indien knoppie"
 
-#: contact_form.php:2049
+#: contact_form.php:2124
 msgid "Width in px, numbers only"
 msgstr "Wydte in px, nommers alleenlik"
 
-#: contact_form.php:2054
+#: contact_form.php:2129
 msgid "Button color"
 msgstr "Knoppie Kleur"
 
-#: contact_form.php:2059
+#: contact_form.php:2134
 msgid "Button text color"
 msgstr "Knoppie teks kleur"
 
-#: contact_form.php:2091
+#: contact_form.php:2163
 #, fuzzy
 msgid "Contact Form | Preview"
 msgstr "Kontak Vorm Pro | Voorskou"
 
-#: contact_form.php:2092
+#: contact_form.php:2164
 msgid "Drag the necessary field to sort fields."
 msgstr ""
 
-#: contact_form.php:2308
+#: contact_form.php:2376
 #, fuzzy
 msgid ""
 "If you would like to add the Contact Form to your website, just copy and "
@@ -853,23 +853,23 @@ msgstr ""
 "As u die Kontak Vorm by u webstuiste wil bylas, kopieër en plak net die "
 "kortkode na u post, bladsy of widget:"
 
-#: contact_form.php:2436
+#: contact_form.php:2504
 msgid "Sorry, email message could not be delivered."
 msgstr "Verskoning, die epos kon nie gestuur word nie."
 
-#: contact_form.php:3025 contact_form.php:3027
+#: contact_form.php:3094 contact_form.php:3096
 msgid "Sent from (ip address)"
 msgstr "Gestuur van (IP-Adres)"
 
-#: contact_form.php:3055
+#: contact_form.php:3124
 msgid "Contact from"
 msgstr "Kontak Vorm"
 
-#: contact_form.php:3060 contact_form.php:3109
+#: contact_form.php:3129 contact_form.php:3178
 msgid "Site"
 msgstr "Webtuiste"
 
-#: contact_form.php:3239
+#: contact_form.php:3308
 msgid ""
 "If you can see this MIME, it means that the MIME type is not supported by "
 "your email client!"
@@ -877,52 +877,56 @@ msgstr ""
 "As u die MIME kan sie, beteken dit dat die MIME tipe nie ondersteun word "
 "deur u epos klient nie!"
 
-#: contact_form.php:3322
+#: contact_form.php:3391
 msgid "FAQ"
 msgstr "Gereeld Gestelde Vrae (FAQ)"
 
-#: contact_form.php:3323
+#: contact_form.php:3392
 msgid "Support"
 msgstr "Steun"
 
-#: contact_form.php:3372
+#: contact_form.php:3441
 msgid "Are you sure that you want to delete this language data?"
 msgstr "Is u seker dat u die taal data wil verwyder?"
 
-#: contact_form.php:3393
+#: contact_form.php:3462
 #, fuzzy
 msgid "Add multiple forms"
 msgstr "Voeg by die vorm by"
 
-#: contact_form.php:3393
+#: contact_form.php:3462
 msgid ""
 "Install Contact Form Multi plugin to create unlimited number of contact "
 "forms."
 msgstr ""
 
-#: contact_form.php:3398
+#: contact_form.php:3467
 msgid "Learn more"
 msgstr ""
 
-#: contact_form.php:3624
+#: contact_form.php:3693
 msgid "Close notice"
 msgstr ""
 
-#: contact_form.php:3629
+#: contact_form.php:3698
 #, fuzzy
 msgid "allows to store your messages to the database."
 msgstr "Stoor eposse na die databasis."
 
-#: contact_form.php:3630
+#: contact_form.php:3699
 msgid "Manage messages that have been sent from your website."
 msgstr ""
 
-#: contact_form.php:3693
+#: contact_form.php:3702
+msgid "Learn More"
+msgstr ""
+
+#: contact_form.php:3762
 #, fuzzy
 msgid "Contact form"
 msgstr "Kontak Vorm"
 
-#: contact_form.php:3706 contact_form.php:3716
+#: contact_form.php:3775 contact_form.php:3785
 #, fuzzy
 msgid "Language"
 msgstr "Voeg 'n taal by"
