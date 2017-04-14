@@ -20,10 +20,24 @@ Simple contact form plugin any WordPress website must have.
 <li>Data validation before the submission</li>
 <li>Send a copy of the submitted message to the email</li>
 <li>Receive submissions to the default admin or custom email addresses</li>
-<li>Add additional data about the sender to the email notification</li>
+<li>Add additional data about the sender to the email notification:
+
+<ul>
+<li>Sent from (IP address) </li>
+<li>Date/Time </li>
+<li>Sent from (referer)</li>
+<li>Using (user agent)</li>
+</ul></li>
 <li>Responsive Layout</li>
 <li>Editable field labels</li>
 <li>Required fields</li>
+<li>Select used/required for the following fields:
+
+<ul>
+<li>Name</li>
+<li>Address</li>
+<li>Phone number</li>
+</ul></li>
 <li>File attachments</li>
 <li>Enable additional pre-build fields</li>
 <li>Enable two column layout</li>
@@ -51,7 +65,14 @@ Simple contact form plugin any WordPress website must have.
   <li>Automatically populate name and email input fields for logged-in users</li>
   <li>Add "Reply to" email address in the message head</li>
   <li>Set default text for subject and message input fields</li>
-  <li>Hide and disable fields</li>
+  <li>Show, hide or disable fields:
+  
+  <ul>
+  <li>Name</li>
+  <li>Email Address</li>
+  <li>Subject</li>
+  <li>Message</li>
+  </ul></li>
   <li>Enable auto response option with editable message</li>
   <li>Customizable form
   
@@ -108,7 +129,7 @@ Simple contact form plugin any WordPress website must have.
 <li>Vietnamese (vi) (thanks to <a href="mailto:bizover@gmail.com">Dich Anh Viet</a>, <a href="http://www.bizover.net" rel="nofollow">http://www.bizover.net</a>)</li>
 </ul>
 
-<p>Some of these translations are not complete. We are constantly adding new features which should be translated. If you would like to create your own language pack or update the existing one, you can send <a href="http://codex.wordpress.org/Translating_WordPress">the text of PO and MO files</a> to <a href="https://support.bestwebsoft.com/hc/en-us/requests/new">BestWebSoft</a> and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO <a href="http://www.poedit.net/download.php">files Poedit</a>.</p>
+<p>Some of these translations are not complete. We are constantly adding new features which should be translated. If you would like to create your own language pack or update the existing one, you can send <a href="https://codex.wordpress.org/Translating_WordPress">the text of PO and MO files</a> to <a href="https://support.bestwebsoft.com/hc/en-us/requests/new">BestWebSoft</a> and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO <a href="https://www.poedit.net/download.php">files Poedit</a>.</p>
 
 <h4>Recommended Plugins</h4>
 
@@ -123,9 +144,3 @@ Simple contact form plugin any WordPress website must have.
 <li><a href="https://bestwebsoft.com/products/wordpress/plugins/contact-form-to-db/?k=d7d962591b5be0ce6c27af778b1b36ee">Contact Form to DB</a> &#8211; Save and manage contact form messages. Never lose important data.</li>
 <li><a href="https://bestwebsoft.com/products/wordpress/plugins/updater/?k=982fae837f4c6e3b152183537448dbca">Updater</a> &#8211; Automatically check and update WordPress website core with all installed plugins and themes to the latest versions.</li>
 </ul>
-
-<h4>Donate</h4>
-
-<p>Donations play an important role in supporting open-source projects. We greatly appreciate any donation you can make to help us continue further development of free products.</p>
-
-<p><a href="https://bestwebsoft.com/donate/">Donate Now</a></p>

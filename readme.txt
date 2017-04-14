@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: contact, contact form, feedback form, contact us form, contact button, email form, contac, form, web-page feedback, cf, cf plugin, contact form plugin
 Requires at least: 3.8
-Tested up to: 4.7.2
-Stable tag: 4.0.5
+Tested up to: 4.7.3
+Stable tag: 4.0.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -18,7 +18,7 @@ Allow your customers to reach you in seconds!
 
 [View Demo](https://bestwebsoft.com/demo-for-contact-form-pro/)
 
-http://www.youtube.com/watch?v=F_piQa0hmkU
+https://www.youtube.com/watch?v=F_piQa0hmkU
 
 = Free Features =
 
@@ -26,10 +26,18 @@ http://www.youtube.com/watch?v=F_piQa0hmkU
 * Data validation before the submission
 * Send a copy of the submitted message to the email
 * Receive submissions to the default admin or custom email addresses
-* Add additional data about the sender to the email notification
+* Add additional data about the sender to the email notification:
+	* Sent from (IP address) 
+	* Date/Time 
+	* Sent from (referer)
+	* Using (user agent)
 * Responsive Layout
 * Editable field labels
 * Required fields
+* Select used/required for the following fields:
+	* Name
+	* Address
+	* Phone number
 * File attachments
 * Enable additional pre-build fields
 * Enable two column layout
@@ -54,7 +62,11 @@ http://www.youtube.com/watch?v=F_piQa0hmkU
 > * Automatically populate name and email input fields for logged-in users
 > * Add "Reply to" email address in the message head
 > * Set default text for subject and message input fields
-> * Hide and disable fields
+> * Show, hide or disable fields:
+> 	* Name
+> 	* Email Address
+> 	* Subject
+> 	* Message
 > * Enable auto response option with editable message
 > * Customizable form
 > 	* Styles (no programming knowledge required)
@@ -102,7 +114,7 @@ Visit our Help Center if you have any questions, our friendly Support Team is ha
 * Ukrainian (uk)
 * Vietnamese (vi) (thanks to [Dich Anh Viet](mailto:bizover@gmail.com), www.bizover.net)
 
-Some of these translations are not complete. We are constantly adding new features which should be translated. If you would like to create your own language pack or update the existing one, you can send [the text of PO and MO files](http://codex.wordpress.org/Translating_WordPress) to [BestWebSoft](https://support.bestwebsoft.com/hc/en-us/requests/new) and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO [files Poedit](http://www.poedit.net/download.php).
+Some of these translations are not complete. We are constantly adding new features which should be translated. If you would like to create your own language pack or update the existing one, you can send [the text of PO and MO files](https://codex.wordpress.org/Translating_WordPress) to [BestWebSoft](https://support.bestwebsoft.com/hc/en-us/requests/new) and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO [files Poedit](https://www.poedit.net/download.php).
 
 = Recommended Plugins =
 
@@ -116,12 +128,6 @@ The author of the Contact Form also recommends the following plugins:
 * [Contact Form to DB](https://bestwebsoft.com/products/wordpress/plugins/contact-form-to-db/?k=d7d962591b5be0ce6c27af778b1b36ee) – Save and manage contact form messages. Never lose important data.
 * [Updater](https://bestwebsoft.com/products/wordpress/plugins/updater/?k=982fae837f4c6e3b152183537448dbca) – Automatically check and update WordPress website core with all installed plugins and themes to the latest versions.
 
-= Donate =
-
-Donations play an important role in supporting open-source projects. We greatly appreciate any donation you can make to help us continue further development of free products.
-
-[Donate Now](https://bestwebsoft.com/donate/)
-
 == Installation ==
 
 1. Upload the `Contact Form` folder to the `/wp-content/plugins/` directory.
@@ -129,9 +135,9 @@ Donations play an important role in supporting open-source projects. We greatly 
 3. You can adjust the necessary settings using your WordPress admin panel in "BWS Panel" > "Contact Form".
 4. Create a page or a post and insert the shortcode [bestwebsoft_contact_form] into the text.
 
-[View a PDF version of Step-by-step Instruction on Contact Form Installation](https://docs.google.com/document/d/1obcWMPDPIIhUxcclYDwKSwNoFSHvGHyg_VKibjpQWTA/).
+[View a PDF version of Step-by-step Instruction on Contact Form Installation](https://docs.google.com/document/d/1-hvn6WRvWnOqj5v5pLUk7Awyu87lq5B_dO-Tv-MC9JQ/).
 
-http://www.youtube.com/watch?v=JwG2c4PcO8o
+https://www.youtube.com/watch?v=JwG2c4PcO8o
 
 == Frequently Asked Questions ==
 
@@ -199,6 +205,10 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 15. Re-order contact form fields using drag & drop interface.
 
 == Changelog ==
+
+= V4.0.6 - 14.04.2017 =
+* Bugfix : Multiple Cross-Site Scripting (XSS) vulnerability was fixed.
+* Update : The French language file is updated.
 
 = V4.0.5 - 03.03.2017 =
 * Bugfix : The bug with selecting language via BWS Shortcode button was fixed.
@@ -672,6 +682,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * Ability to add Contact Form into a post. Ability to adjust displaying of the form via shortcode is added.
 
 == Upgrade Notice ==
+
+= V4.0.6 =
+* Bugs fixed.
 
 = V4.0.5 =
 * Bugs fixed.
