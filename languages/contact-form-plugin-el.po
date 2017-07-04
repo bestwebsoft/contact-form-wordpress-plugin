@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Contact Form\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-27 16:23+0300\n"
-"PO-Revision-Date: 2017-02-27 16:23+0300\n"
+"POT-Creation-Date: 2017-05-23 15:15+0300\n"
+"PO-Revision-Date: 2017-05-23 15:15+0300\n"
 "Last-Translator: plugin@bestwebsoft.com <plugin@bestwebsoft.com>\n"
 "Language-Team: Dimitris Karantonis <dkarantonis@gmail.com>\n"
 "Language: el\n"
@@ -21,63 +21,63 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 
 # @ contact_form
-#: contact_form.php:42 contact_form.php:1066
+#: contact_form.php:37 contact_form.php:1064
 msgid "Contact Form Settings"
 msgstr "Ρυθμίσεις φόρμας επικοινωνίας"
 
 # @ contact_form
-#: contact_form.php:42
+#: contact_form.php:37
 msgid "Contact Form"
 msgstr "Φόρμα Επικοινωνίας"
 
 # @ contact_form
-#: contact_form.php:295 contact_form.php:1246 contact_form.php:1336
-#: contact_form.php:1727 contact_form.php:1765 contact_form.php:2011
-#: contact_form.php:3138 contact_form.php:3184
+#: contact_form.php:280 contact_form.php:1244 contact_form.php:1334
+#: contact_form.php:1725 contact_form.php:1763 contact_form.php:2029
+#: contact_form.php:3181 contact_form.php:3227
 msgid "Name"
 msgstr "Όνομα"
 
 # @ contact_form
-#: contact_form.php:296 contact_form.php:1383 contact_form.php:1728
-#: contact_form.php:1766 contact_form.php:2016 contact_form.php:3145
-#: contact_form.php:3190
+#: contact_form.php:281 contact_form.php:1381 contact_form.php:1726
+#: contact_form.php:1764 contact_form.php:2034 contact_form.php:3188
+#: contact_form.php:3233
 msgid "Address"
 msgstr "Διεύθυνση"
 
 # @ contact_form
-#: contact_form.php:297 contact_form.php:1399 contact_form.php:1729
-#: contact_form.php:1767
+#: contact_form.php:282 contact_form.php:1397 contact_form.php:1727
+#: contact_form.php:1765
 msgid "Email Address"
 msgstr "Διεύθυνση Email"
 
 # @ contact_form
-#: contact_form.php:298 contact_form.php:1422 contact_form.php:1730
-#: contact_form.php:1768
+#: contact_form.php:283 contact_form.php:1420 contact_form.php:1728
+#: contact_form.php:1766
 msgid "Phone number"
 msgstr "Αριθμός τηλεφώνου"
 
 # @ contact_form
-#: contact_form.php:299 contact_form.php:1438 contact_form.php:1731
-#: contact_form.php:1769 contact_form.php:2031 contact_form.php:3156
-#: contact_form.php:3199
+#: contact_form.php:284 contact_form.php:1436 contact_form.php:1729
+#: contact_form.php:1767 contact_form.php:2049 contact_form.php:3199
+#: contact_form.php:3242
 msgid "Subject"
 msgstr "Θέμα"
 
 # @ contact_form
-#: contact_form.php:300 contact_form.php:1462 contact_form.php:1732
-#: contact_form.php:1770 contact_form.php:2035 contact_form.php:3161
-#: contact_form.php:3203
+#: contact_form.php:285 contact_form.php:1460 contact_form.php:1730
+#: contact_form.php:1768 contact_form.php:2053 contact_form.php:3204
+#: contact_form.php:3246
 msgid "Message"
 msgstr "Μήνυμα"
 
 # @ contact_form
-#: contact_form.php:301 contact_form.php:1733 contact_form.php:1771
-#: contact_form.php:2040
+#: contact_form.php:286 contact_form.php:1731 contact_form.php:1769
+#: contact_form.php:2058
 msgid "Attachment"
 msgstr "Συννημένο αρχείο"
 
 # @ contact_form
-#: contact_form.php:302
+#: contact_form.php:287
 msgid ""
 "Supported file types: HTML, TXT, CSS, GIF, PNG, JPEG, JPG, TIFF, BMP, AI, "
 "EPS, PS, CSV, RTF, PDF, DOC, DOCX, XLS, XLSX, ZIP, RAR, WAV, MP3, PPT."
@@ -87,94 +87,94 @@ msgstr ""
 "PPT."
 
 # @ contact_form
-#: contact_form.php:303 contact_form.php:1735 contact_form.php:1773
+#: contact_form.php:288 contact_form.php:1733 contact_form.php:1771
 msgid "Send me a copy"
 msgstr "Αποστολή αντιγράφου"
 
 # @ contact_form
-#: contact_form.php:304 contact_form.php:1736 contact_form.php:1774
+#: contact_form.php:289 contact_form.php:1734 contact_form.php:1772
 msgid "Submit"
 msgstr "Αποστολή"
 
 # @ contact_form
-#: contact_form.php:305
+#: contact_form.php:290
 msgid "Your name is required."
 msgstr "Το όνομα σας είναι απαραίτητο."
 
 # @ contact_form
-#: contact_form.php:306
+#: contact_form.php:291
 msgid "Address is required."
 msgstr "Η διεύθυνσή σας είναι απαραίτητη."
 
 # @ contact_form
-#: contact_form.php:307
+#: contact_form.php:292
 msgid "A valid email address is required."
 msgstr "Απαιτείται μία έγκυρη διεύθυνση email."
 
 # @ contact_form
-#: contact_form.php:308
+#: contact_form.php:293
 msgid "Phone number is required."
 msgstr "Ο αριθμός τηλεφώνου είναι απαραίτητος."
 
 # @ contact_form
-#: contact_form.php:309
+#: contact_form.php:294
 msgid "Subject is required."
 msgstr "Το θέμα είναι απαραίτητο."
 
 # @ contact_form
-#: contact_form.php:310
+#: contact_form.php:295
 msgid "Message text is required."
 msgstr "Το μήνυμα κειμένου είναι απαραίτητο."
 
 # @ contact_form
-#: contact_form.php:311
+#: contact_form.php:296
 msgid "File format is not valid."
 msgstr "Ο τύπος του αρχείου δεν είναι έγκυρος."
 
 # @ contact_form
-#: contact_form.php:312
+#: contact_form.php:297
 msgid "File upload error."
 msgstr "Πρόβλημα κατά το ανέβασμα του αρχείου."
 
 # @ contact_form
-#: contact_form.php:313
+#: contact_form.php:298
 msgid "The file could not be uploaded."
 msgstr "Το αρχείο δεν μπορούσε να ανέβει."
 
 # @ contact_form
-#: contact_form.php:314
+#: contact_form.php:299
 msgid "This file is too large."
 msgstr "Το μέγεθος αρχείου είναι πολύ μεγάλο."
 
 # @ contact_form
-#: contact_form.php:315
+#: contact_form.php:300
 msgid "Please fill out the CAPTCHA."
 msgstr "Παρακαλούμε, συμπληρώστε το πεδίο CAPTCHA."
 
 # @ contact_form
-#: contact_form.php:316
+#: contact_form.php:301
 msgid "Please make corrections below and try again."
 msgstr ""
 "Παρακαλούμε, προχωρήστε στις παρακακάτω διορθώσεις και προσπαθήστε ξανά."
 
 # @ contact_form
-#: contact_form.php:318
+#: contact_form.php:303
 msgid "Thank you for contacting us."
 msgstr "Σας ευχαριστούμε για την επικοινωνία."
 
 # @ contact_form
-#: contact_form.php:761 contact_form.php:1023
+#: contact_form.php:759 contact_form.php:1021
 msgid "Settings saved."
 msgstr "Οι ρυθμίσεις αποθηκεύτηκαν."
 
-#: contact_form.php:968
+#: contact_form.php:966
 msgid ""
 "Email 'FROM' field option was changed, which may cause email messages being "
 "moved to the spam folder or email delivery failures."
 msgstr ""
 
 # @ contact_form
-#: contact_form.php:978
+#: contact_form.php:976
 msgid ""
 "If the 'Redirect to page' option is selected then the URL field should be in "
 "the following format"
@@ -183,12 +183,12 @@ msgstr ""
 "πεδίο URL θα πρέπει να έχει την ακόλουθη μορφή"
 
 # @ contact_form
-#: contact_form.php:985
+#: contact_form.php:983
 msgid "Such user does not exist."
 msgstr "Τέτοιος χρήστης δεν υπάρχει."
 
 # @ contact_form
-#: contact_form.php:995
+#: contact_form.php:993
 msgid ""
 "Please enter a valid email address in the 'Use this email address' field."
 msgstr ""
@@ -196,59 +196,59 @@ msgstr ""
 "αυτήν τη διεύθυνση email'."
 
 # @ contact_form
-#: contact_form.php:1003
+#: contact_form.php:1001
 msgid "Please enter a valid email address in the 'FROM' field."
 msgstr "Παρακαλούμε, εισάγετε μια έγκυρη διεύθυνση email στο πεδίο «ΑΠΟ»."
 
 # @ contact_form
-#: contact_form.php:1025
+#: contact_form.php:1023
 msgid "Settings are not saved."
 msgstr "Οι ρυθμίσεις δεν αποθηκεύτηκαν."
 
-#: contact_form.php:1063
+#: contact_form.php:1061
 msgid "All plugin settings were restored."
 msgstr ""
 
-#: contact_form.php:1069
+#: contact_form.php:1067
 msgid "How to Use Step-by-step Instruction"
 msgstr ""
 
 # @ contact_form
-#: contact_form.php:1072 contact_form.php:3376 contact_form.php:3390
+#: contact_form.php:1070 contact_form.php:3419 contact_form.php:3433
 msgid "Settings"
 msgstr "Ρυθμίσεις"
 
 # @ contact_form
-#: contact_form.php:1073
+#: contact_form.php:1071
 #, fuzzy
 msgid "Additional settings"
 msgstr "Πρόσθετες επιλογές"
 
-#: contact_form.php:1074
+#: contact_form.php:1072
 msgid "Appearance"
 msgstr ""
 
-#: contact_form.php:1075
+#: contact_form.php:1073
 msgid "Custom code"
 msgstr ""
 
 # @ contact_form
-#: contact_form.php:1076
+#: contact_form.php:1074
 msgid "Go PRO"
 msgstr "Αναβάθμιση σε  PRO"
 
 # @ contact_form
-#: contact_form.php:1087
+#: contact_form.php:1085
 #, fuzzy
 msgid "Notice"
 msgstr "Σημείωση:"
 
-#: contact_form.php:1091
+#: contact_form.php:1089
 msgid "NEW_FORM"
 msgstr ""
 
 # @ contact_form
-#: contact_form.php:1092
+#: contact_form.php:1090
 msgid ""
 "If you want to create multiple contact forms, please install the Contact "
 "Form Multi plugin."
@@ -257,7 +257,7 @@ msgstr ""
 "εγκαταστήσετε την επέκταση φόρμα επικοινωνίας Multi."
 
 # @ contact_form
-#: contact_form.php:1101
+#: contact_form.php:1099
 #, fuzzy, php-format
 msgid ""
 "If you would like to add a Contact Form to your page or post, please use %s "
@@ -267,7 +267,7 @@ msgstr ""
 "αντιγράψετε και επικολλήσετε αυτό το σύντομο κωδικό στο άρθρο, στη σελίδα ή "
 "στο widget σας:"
 
-#: contact_form.php:1107
+#: contact_form.php:1105
 #, php-format
 msgid ""
 "You can add the Contact Form to your page or post by clicking on %s button "
@@ -277,7 +277,7 @@ msgid ""
 msgstr ""
 
 # @ contact_form
-#: contact_form.php:1116
+#: contact_form.php:1114
 msgid ""
 "If you leave the fields empty, the messages will be sent to the email "
 "address specified during registration."
@@ -286,19 +286,19 @@ msgstr ""
 "καθορίσατε κατά την εγγραφή σας."
 
 # @ contact_form
-#: contact_form.php:1119
+#: contact_form.php:1117
 #, fuzzy
 msgid "The user's email address"
 msgstr "Η διεύθυνση email του χρήστη:"
 
 # @ contact_form
-#: contact_form.php:1123
+#: contact_form.php:1121
 #, fuzzy
 msgid "Select a username"
 msgstr "Δημιουργήστε ένα όνομα χρήστη"
 
 # @ contact_form
-#: contact_form.php:1136
+#: contact_form.php:1134
 #, fuzzy
 msgid ""
 "Select a username of the person who should get the messages from the contact "
@@ -308,115 +308,115 @@ msgstr ""
 "επικοινωνίας."
 
 # @ contact_form
-#: contact_form.php:1140
+#: contact_form.php:1138
 #, fuzzy
 msgid "Use this email address"
 msgstr "Χρησιμοποιήστε αυτήν τη διεύθυνση email: "
 
 # @ contact_form
-#: contact_form.php:1144
+#: contact_form.php:1142
 #, fuzzy
 msgid "Enter the email address for receiving messages"
 msgstr "Εισάγετε τη διεύθυνση email που θέλετε τα μηνύματα να προωθούνται."
 
-#: contact_form.php:1151 contact_form.php:1647 contact_form.php:1854
-#: contact_form.php:1939 contact_form.php:3471
+#: contact_form.php:1149 contact_form.php:1645 contact_form.php:1852
+#: contact_form.php:1957 contact_form.php:3514
 msgid "Close"
 msgstr ""
 
 # @ contact_form
-#: contact_form.php:1155
+#: contact_form.php:1153
 #, fuzzy
 msgid "Add department selectbox to the contact form"
 msgstr "Προσθέστε τμήμα selectbox στην φόρμα επικοινωνίας:"
 
 # @ contact_form
-#: contact_form.php:1163 contact_form.php:1656 contact_form.php:1873
-#: contact_form.php:2145
+#: contact_form.php:1161 contact_form.php:1654 contact_form.php:1871
+#: contact_form.php:2163
 msgid "If you upgrade to Pro version all your settings will be saved."
 msgstr ""
 "Εάν κάνετε αναβάθμιση σε έκδοση Pro όλες οι ρυθμίσεις σας θα αποθηκευτούν."
 
-#: contact_form.php:1170 contact_form.php:1492 contact_form.php:1661
-#: contact_form.php:1880 contact_form.php:2152
+#: contact_form.php:1168 contact_form.php:1490 contact_form.php:1659
+#: contact_form.php:1878 contact_form.php:2170
 msgid "Upgrade to Pro"
 msgstr ""
 
 # @ contact_form
-#: contact_form.php:1178
+#: contact_form.php:1176
 msgid "Save emails to the database"
 msgstr "Αποθηκεύστε τα μηνύματα ηλεκτρονικού ταχυδρομείου στη βάση δεδομένων"
 
 # @ contact_form
-#: contact_form.php:1190 contact_form.php:1204 contact_form.php:1211
+#: contact_form.php:1188 contact_form.php:1202 contact_form.php:1209
 msgid "Using"
 msgstr "Χρήση"
 
-#: contact_form.php:1196 contact_form.php:1548 contact_form.php:1590
-#: contact_form.php:1625
+#: contact_form.php:1194 contact_form.php:1546 contact_form.php:1588
+#: contact_form.php:1623
 msgid "Please activate the appropriate option on"
 msgstr ""
 
 # @ contact_form
-#: contact_form.php:1199 contact_form.php:1551 contact_form.php:1593
-#: contact_form.php:1628
+#: contact_form.php:1197 contact_form.php:1549 contact_form.php:1591
+#: contact_form.php:1626
 #, fuzzy
 msgid "settings page"
 msgstr "Οι ρυθμίσεις αποθηκεύτηκαν."
 
 # @ contact_form
-#: contact_form.php:1205 contact_form.php:1558 contact_form.php:1601
-#: contact_form.php:1635
+#: contact_form.php:1203 contact_form.php:1556 contact_form.php:1599
+#: contact_form.php:1633
 #, fuzzy
 msgid "Activate"
 msgstr "Ενεργοποίηση captcha"
 
 # @ contact_form
-#: contact_form.php:1212 contact_form.php:1567 contact_form.php:1607
-#: contact_form.php:1640
+#: contact_form.php:1210 contact_form.php:1565 contact_form.php:1605
+#: contact_form.php:1638
 #, fuzzy
 msgid "Download"
 msgstr "Κατέβασμα captcha"
 
-#: contact_form.php:1224
+#: contact_form.php:1222
 msgid "Sending method"
 msgstr ""
 
 # @ contact_form
-#: contact_form.php:1229
+#: contact_form.php:1227
 msgid "Wp-mail"
 msgstr "Wp-mail"
 
 # @ contact_form
-#: contact_form.php:1231
+#: contact_form.php:1229
 #, fuzzy
 msgid "You can use the Wordpress wp_mail function for mailing"
 msgstr ""
 "Μπορείτε να χρησιμοποιήσετε τη λειτουργία wp_mail για την αποστολή emails"
 
 # @ contact_form
-#: contact_form.php:1234
+#: contact_form.php:1232
 msgid "Mail"
 msgstr "Tαχυδρομείο"
 
 # @ contact_form
-#: contact_form.php:1236
+#: contact_form.php:1234
 #, fuzzy
 msgid "You can use the PHP mail function for mailing"
 msgstr ""
 "Μπορείτε να χρησιμοποιήσετε τη λειτουργία wp_mail για την αποστολή emails"
 
-#: contact_form.php:1241
+#: contact_form.php:1239
 msgid "'FROM' field"
 msgstr ""
 
 # @ contact_form
-#: contact_form.php:1257
+#: contact_form.php:1255
 msgid "User name"
 msgstr "Όνομα χρήστη"
 
 # @ contact_form
-#: contact_form.php:1259
+#: contact_form.php:1257
 msgid ""
 "The name of the user who fills the form will be used in the field 'From'."
 msgstr ""
@@ -424,17 +424,17 @@ msgstr ""
 "'Από'."
 
 # @ contact_form
-#: contact_form.php:1270 contact_form.php:3151 contact_form.php:3195
+#: contact_form.php:1268 contact_form.php:3194 contact_form.php:3238
 msgid "Email"
 msgstr "Email"
 
 # @ contact_form
-#: contact_form.php:1281
+#: contact_form.php:1279
 msgid "User email"
 msgstr "Email χρήστη"
 
 # @ contact_form
-#: contact_form.php:1283
+#: contact_form.php:1281
 msgid ""
 "The email address of the user who fills the form will be used in the field "
 "'From'."
@@ -442,171 +442,171 @@ msgstr ""
 "Η διεύθυνση email του χρήστη που συμπληρώνει τη φόρμα θα χρησιμοποιηθεί στο "
 "πεδίο 'Από'."
 
-#: contact_form.php:1292
+#: contact_form.php:1290
 msgid ""
 "If this option is changed, email messages may be moved to the spam folder or "
 "email delivery failures may occur."
 msgstr ""
 
 # @ contact_form
-#: contact_form.php:1301
+#: contact_form.php:1299
 msgid "Required symbol"
 msgstr "Απαιτούμενο σύμβολο"
 
 # @ contact_form
-#: contact_form.php:1311
+#: contact_form.php:1309
 msgid "Fields"
 msgstr "Πεδία"
 
 # @ contact_form
-#: contact_form.php:1312 contact_form.php:1339 contact_form.php:1366
-#: contact_form.php:1386 contact_form.php:1425 contact_form.php:1507
+#: contact_form.php:1310 contact_form.php:1337 contact_form.php:1364
+#: contact_form.php:1384 contact_form.php:1423 contact_form.php:1505
 msgid "Used"
 msgstr "Χρησιμοποιείται"
 
 # @ contact_form
-#: contact_form.php:1313 contact_form.php:1328 contact_form.php:1343
-#: contact_form.php:1370 contact_form.php:1390 contact_form.php:1403
-#: contact_form.php:1429 contact_form.php:1442 contact_form.php:1466
+#: contact_form.php:1311 contact_form.php:1326 contact_form.php:1341
+#: contact_form.php:1368 contact_form.php:1388 contact_form.php:1401
+#: contact_form.php:1427 contact_form.php:1440 contact_form.php:1464
 msgid "Required"
 msgstr "Απαιτούμενο"
 
 # @ contact_form
-#: contact_form.php:1315 contact_form.php:1348 contact_form.php:1408
-#: contact_form.php:1447 contact_form.php:1471
+#: contact_form.php:1313 contact_form.php:1346 contact_form.php:1406
+#: contact_form.php:1445 contact_form.php:1469
 msgid "Visible"
 msgstr "Ορατό"
 
 # @ contact_form
-#: contact_form.php:1316 contact_form.php:1352 contact_form.php:1412
-#: contact_form.php:1451 contact_form.php:1475
+#: contact_form.php:1314 contact_form.php:1350 contact_form.php:1410
+#: contact_form.php:1449 contact_form.php:1473
 msgid "Disabled for editing"
 msgstr "Δεν επιτρέπεται η επεξεργασία"
 
 # @ contact_form
-#: contact_form.php:1317 contact_form.php:1376 contact_form.php:1455
-#: contact_form.php:1479
+#: contact_form.php:1315 contact_form.php:1374 contact_form.php:1453
+#: contact_form.php:1477
 msgid "Field's default value"
 msgstr "Προκαθορισμένη τιμή πεδίου"
 
 # @ contact_form
-#: contact_form.php:1324
+#: contact_form.php:1322
 #, fuzzy
 msgid "Department selectbox"
 msgstr "Τοποθεσία selectbox"
 
-#: contact_form.php:1356
+#: contact_form.php:1354
 msgid "Use User's name as a default value if the user is logged in."
 msgstr ""
 
-#: contact_form.php:1357 contact_form.php:1417
+#: contact_form.php:1355 contact_form.php:1415
 msgid ""
 "'Visible' and 'Disabled for editing' options will be applied only to logged-"
 "in users."
 msgstr ""
 
 # @ contact_form
-#: contact_form.php:1363
+#: contact_form.php:1361
 msgid "Location selectbox"
 msgstr "Τοποθεσία selectbox"
 
-#: contact_form.php:1416
+#: contact_form.php:1414
 msgid "Use User's email as a default value if the user is logged in."
 msgstr ""
 
 # @ contact_form
-#: contact_form.php:1500
+#: contact_form.php:1498
 msgid "Attachment block"
 msgstr "Συνημμένο μπλοκ"
 
 # @ contact_form
-#: contact_form.php:1502
+#: contact_form.php:1500
 msgid "Users can attach the following file formats"
 msgstr "Οι χρήστες μπορούν να επισυνάψουν τις ακόλουθες μορφές αρχείων"
 
 # @ contact_form
-#: contact_form.php:1520
+#: contact_form.php:1518
 msgid "Add to the form"
 msgstr "Προσθήκη στη φόρμα"
 
 # @ contact_form
-#: contact_form.php:1525
+#: contact_form.php:1523
 msgid "Tips below the Attachment"
 msgstr "Συμβουλές κάτω από το συνημμένο"
 
 # @ contact_form
-#: contact_form.php:1532
+#: contact_form.php:1530
 msgid "'Send me a copy' block"
 msgstr "Μπλοκ 'Στείλε μου ένα αντίγραφο'"
 
-#: contact_form.php:1560
+#: contact_form.php:1558
 msgid "Activate for network"
 msgstr ""
 
 # @ contact_form
-#: contact_form.php:1651
+#: contact_form.php:1649
 msgid "Agreement checkbox"
 msgstr "Checkbox συμφωνίας"
 
 # @ contact_form
-#: contact_form.php:1651
+#: contact_form.php:1649
 msgid "Required checkbox for submitting the form"
 msgstr "Απαιτούμενο checkbox για την υποβολή της φόρμας"
 
 # @ contact_form
-#: contact_form.php:1652
+#: contact_form.php:1650
 msgid "Optional checkbox"
 msgstr "Προαιρετικό checkbox"
 
 # @ contact_form
-#: contact_form.php:1652
+#: contact_form.php:1650
 msgid "Optional checkbox, the results of which will be displayed in email"
 msgstr "Optional checkbox, τα αποτελέσματα του οποίου θα εμφανίζεται στο email"
 
 # @ contact_form
-#: contact_form.php:1670
+#: contact_form.php:1668
 msgid "Delete an attachment file from the server after the email is sent"
 msgstr ""
 "Διαγραφή συνημμένου αρχείου από τον διακομιστή μετά την αποστολή του email"
 
 # @ contact_form
-#: contact_form.php:1676
+#: contact_form.php:1674
 msgid "Email in HTML format sending"
 msgstr "Αποστολή email σε μορφή HTML "
 
 # @ contact_form
-#: contact_form.php:1680
+#: contact_form.php:1678
 msgid "Display additional info in the email"
 msgstr "Εμφάνιση περισσότερων πληροφοριών στο email"
 
 # @ contact_form
-#: contact_form.php:1686
+#: contact_form.php:1684
 #, fuzzy
 msgid "Sent from (IP address)"
 msgstr "Εστάλη από (διεύθυνση IP)"
 
 # @ contact_form
-#: contact_form.php:1686
+#: contact_form.php:1684
 msgid "Example: Sent from (IP address):\t127.0.0.1"
 msgstr "Παράδειγμα: Εστάλη από (διεύθυνση IP):\t127.0.0.1"
 
 # @ contact_form
-#: contact_form.php:1687 contact_form.php:3100 contact_form.php:3102
+#: contact_form.php:1685 contact_form.php:3143 contact_form.php:3145
 msgid "Date/Time"
 msgstr "Ημερομηνία/Ώρα"
 
 # @ contact_form
-#: contact_form.php:1687
+#: contact_form.php:1685
 msgid "Example: Date/Time:\tAugust 19, 2013 8:50 pm"
 msgstr "Παράδειγμα: Ημερομηνία/Ώρα:\tΑύγυστος 19, 2013 8:50 μμ"
 
 # @ contact_form
-#: contact_form.php:1688 contact_form.php:3106 contact_form.php:3108
+#: contact_form.php:1686 contact_form.php:3149 contact_form.php:3151
 msgid "Sent from (referer)"
 msgstr "Εστάλη από (παραπέμπτης)"
 
 # @ contact_form
-#: contact_form.php:1688
+#: contact_form.php:1686
 #, fuzzy
 msgid ""
 "Example: Sent from (referer):\thttps://bestwebsoft.com/contacts/contact-us/"
@@ -615,12 +615,12 @@ msgstr ""
 "contact-us/"
 
 # @ contact_form
-#: contact_form.php:1689 contact_form.php:3112 contact_form.php:3114
+#: contact_form.php:1687 contact_form.php:3155 contact_form.php:3157
 msgid "Using (user agent)"
 msgstr "Χρήση (μέσο χρήστη)"
 
 # @ contact_form
-#: contact_form.php:1689
+#: contact_form.php:1687
 msgid ""
 "Example: Using (user agent):\tMozilla/5.0 (Windows NT 6.2; WOW64) "
 "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36"
@@ -629,78 +629,78 @@ msgstr ""
 "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36"
 
 # @ contact_form
-#: contact_form.php:1694
+#: contact_form.php:1692
 msgid "Language settings for the field names in the form"
 msgstr "Ρυθμίσεις γλώσσας για τα ονόματα πεδίων στη φόρμα"
 
 # @ contact_form
-#: contact_form.php:1703
+#: contact_form.php:1701
 msgid "Add a language"
 msgstr "Προσθήκη γλώσσας"
 
 # @ contact_form
-#: contact_form.php:1707
+#: contact_form.php:1705
 msgid "Change the names of the contact form fields and error messages"
 msgstr ""
 "Αλλάξτε τα ονόματα των πεδίων και των μηνύματα σφαλμάτων στη φόρμας "
 "επικοινωνίας "
 
 # @ contact_form
-#: contact_form.php:1712 contact_form.php:1808 contact_form.php:2059
-#: contact_form.php:2064 contact_form.php:2074 contact_form.php:2079
-#: contact_form.php:2084 contact_form.php:2089 contact_form.php:2099
-#: contact_form.php:2104 contact_form.php:2113 contact_form.php:2127
-#: contact_form.php:2132 contact_form.php:2137
+#: contact_form.php:1710 contact_form.php:1806 contact_form.php:1938
+#: contact_form.php:2077 contact_form.php:2082 contact_form.php:2092
+#: contact_form.php:2097 contact_form.php:2102 contact_form.php:2107
+#: contact_form.php:2117 contact_form.php:2122 contact_form.php:2131
+#: contact_form.php:2145 contact_form.php:2150 contact_form.php:2155
 msgid "Default"
 msgstr "Προκαθορισμένο"
 
 # @ contact_form
-#: contact_form.php:1725 contact_form.php:1763
+#: contact_form.php:1723 contact_form.php:1761
 msgid "click to expand/hide the list"
 msgstr "κάντε κλικ για να επεκτείνετε/αποκρύψετε τη λίστα"
 
 # @ contact_form
-#: contact_form.php:1734 contact_form.php:1772
+#: contact_form.php:1732 contact_form.php:1770
 msgid "Tips below the Attachment block"
 msgstr "Συμβουλές κάτω από το Συνημμένο μπλοκ"
 
 # @ contact_form
-#: contact_form.php:1737 contact_form.php:1775
+#: contact_form.php:1735 contact_form.php:1773
 msgid "Error message for the Name field"
 msgstr "Μήνυμα σφάλματος στο πεδίο 'Όνομα'"
 
 # @ contact_form
-#: contact_form.php:1738 contact_form.php:1776
+#: contact_form.php:1736 contact_form.php:1774
 msgid "Error message for the Address field"
 msgstr "Μήνυμα σφάλματος στο πεδίο 'Διεύθυνση'"
 
 # @ contact_form
-#: contact_form.php:1739 contact_form.php:1777
+#: contact_form.php:1737 contact_form.php:1775
 msgid "Error message for the Email field"
 msgstr "Μήνυμα σφάλματος στο πεδίο 'Email'"
 
 # @ contact_form
-#: contact_form.php:1740 contact_form.php:1778
+#: contact_form.php:1738 contact_form.php:1776
 msgid "Error message for the Phone field"
 msgstr "Μήνυμα σφάλματος στο πεδίο 'Αριθμός τηλεφώνου'"
 
 # @ contact_form
-#: contact_form.php:1741 contact_form.php:1779
+#: contact_form.php:1739 contact_form.php:1777
 msgid "Error message for the Subject field"
 msgstr "Μήνυμα σφάλματος στο πεδίο 'Θέμα'"
 
 # @ contact_form
-#: contact_form.php:1742 contact_form.php:1780
+#: contact_form.php:1740 contact_form.php:1778
 msgid "Error message for the Message field"
 msgstr "Μήνυμα σφάλματος στο πεδίο 'Μήνυμα'"
 
 # @ contact_form
-#: contact_form.php:1743 contact_form.php:1781
+#: contact_form.php:1741 contact_form.php:1779
 msgid "Error message about the file type for the Attachment field"
 msgstr "Μήνυμα σφάλματος σχετικά με τον τύπο αρχείου για το πεδίο 'Συνημμένο'"
 
 # @ contact_form
-#: contact_form.php:1744 contact_form.php:1782
+#: contact_form.php:1742 contact_form.php:1780
 msgid ""
 "Error message while uploading a file for the Attachment field to the server"
 msgstr ""
@@ -708,91 +708,91 @@ msgstr ""
 "διακομιστή"
 
 # @ contact_form
-#: contact_form.php:1745 contact_form.php:1783
+#: contact_form.php:1743 contact_form.php:1781
 msgid "Error message while moving the file for the Attachment field"
 msgstr ""
 "Μήνυμα σφάλματος κατά τη μετακίνηση του αρχείου για το πεδίο 'Συνημμένο'"
 
 # @ contact_form
-#: contact_form.php:1746 contact_form.php:1784
+#: contact_form.php:1744 contact_form.php:1782
 msgid "Error message when file size limit for the Attachment field is exceeded"
 msgstr ""
 "Μήνυμα σφάλματος όταν το όριο μεγέθους αρχείου για το πεδίο 'Συνημμένο' έχει "
 "ξεπεραστεί"
 
 # @ contact_form
-#: contact_form.php:1747 contact_form.php:1785
+#: contact_form.php:1745 contact_form.php:1783
 msgid "Error message for the Captcha field"
 msgstr "Μήνυμα σφάλματος για το πεδίο 'Captcha'"
 
 # @ contact_form
-#: contact_form.php:1748 contact_form.php:1786
+#: contact_form.php:1746 contact_form.php:1784
 msgid "Error message for the whole form"
 msgstr "Μήνυμα σφάλματος συνολικά για τη φόρμα"
 
 # @ contact_form
-#: contact_form.php:1751 contact_form.php:1753 contact_form.php:1789
-#: contact_form.php:1791 contact_form.php:1823 contact_form.php:1825
-#: contact_form.php:1837 contact_form.php:1839 contact_form.php:3538
-#: contact_form.php:3540
+#: contact_form.php:1749 contact_form.php:1751 contact_form.php:1787
+#: contact_form.php:1789 contact_form.php:1821 contact_form.php:1823
+#: contact_form.php:1835 contact_form.php:1837 contact_form.php:3602
+#: contact_form.php:3604
 msgid "Use shortcode"
 msgstr "Χρήση σύντομου κωδικού"
 
 # @ contact_form
-#: contact_form.php:1751 contact_form.php:1753 contact_form.php:1789
-#: contact_form.php:1791 contact_form.php:1823 contact_form.php:1825
-#: contact_form.php:1837 contact_form.php:1839 contact_form.php:3538
-#: contact_form.php:3540
+#: contact_form.php:1749 contact_form.php:1751 contact_form.php:1787
+#: contact_form.php:1789 contact_form.php:1821 contact_form.php:1823
+#: contact_form.php:1835 contact_form.php:1837 contact_form.php:3602
+#: contact_form.php:3604
 msgid "for this language"
 msgstr "για τη συγκεκριμένη γλώσσα"
 
 # @ contact_form
-#: contact_form.php:1799
+#: contact_form.php:1797
 msgid "Use the changed names of the contact form fields in the email"
 msgstr ""
 "Χρησιμοποιήστε τα τροποποιημένα ονόματα των πεδίων της φόρμας επικοινωνίας "
 "στο email"
 
 # @ contact_form
-#: contact_form.php:1805
+#: contact_form.php:1803
 msgid "Action after email is sent"
 msgstr "Ενέργεια μετά την αποστολή του email"
 
 # @ contact_form
-#: contact_form.php:1807
+#: contact_form.php:1805
 msgid "Display text"
 msgstr "Εμφάνιση κειμένου"
 
 # @ contact_form
-#: contact_form.php:1821 contact_form.php:1835
+#: contact_form.php:1819 contact_form.php:1833
 msgid "Text"
 msgstr "Κείμενο"
 
 # @ contact_form
-#: contact_form.php:1846
+#: contact_form.php:1844
 msgid "Redirect to the page"
 msgstr "Ανακατεύθυνση στη σελίδα"
 
 # @ contact_form
-#: contact_form.php:1847
+#: contact_form.php:1845
 msgid "Url"
 msgstr "Url"
 
-#: contact_form.php:1858
+#: contact_form.php:1856
 msgid "Add field 'Reply-To' to the email header"
 msgstr ""
 
-#: contact_form.php:1860
+#: contact_form.php:1858
 msgid "Field 'Reply-To' will be initialized by user email"
 msgstr ""
 
 # @ contact_form
-#: contact_form.php:1864
+#: contact_form.php:1862
 msgid "Auto Response"
 msgstr "Αυτόματη Απάντηση"
 
 # @ contact_form
-#: contact_form.php:1868
+#: contact_form.php:1866
 #, php-format
 msgid ""
 "You can use %%NAME%% to display data from the email field and %%MESSAGE%% to "
@@ -805,213 +805,225 @@ msgstr ""
 "ιστολογίου."
 
 # @ default
-#: contact_form.php:1890 contact_form.php:2389
+#: contact_form.php:1888 contact_form.php:2419
 msgid "Save Changes"
 msgstr "Αποθήκευση αλλαγών"
 
-#: contact_form.php:1903
+#: contact_form.php:1901
 #, php-format
 msgid ""
 "Please enable JavaScript to change '%s', '%s' options and for fields sorting."
 msgstr ""
 
-#: contact_form.php:1903 contact_form.php:1912
+#: contact_form.php:1901 contact_form.php:1910
 msgid "Form layout"
 msgstr ""
 
 # @ contact_form
-#: contact_form.php:1903 contact_form.php:1924
+#: contact_form.php:1901 contact_form.php:1922
 #, fuzzy
 msgid "Submit position"
 msgstr "Κομβίο Υποβολής"
 
-#: contact_form.php:1916
+#: contact_form.php:1914
 msgid "One column"
 msgstr ""
 
-#: contact_form.php:1919
+#: contact_form.php:1917
 msgid "Two columns"
 msgstr ""
 
-#: contact_form.php:1928 contact_form.php:1947 contact_form.php:1965
-#: contact_form.php:1980
+#: contact_form.php:1926 contact_form.php:1965 contact_form.php:1983
+#: contact_form.php:1998
 msgid "Left"
 msgstr ""
 
-#: contact_form.php:1931 contact_form.php:1953 contact_form.php:1968
-#: contact_form.php:1986
+#: contact_form.php:1929 contact_form.php:1971 contact_form.php:1986
+#: contact_form.php:2004
 msgid "Right"
 msgstr ""
 
-#: contact_form.php:1943
+#: contact_form.php:1934
+msgid "Width"
+msgstr ""
+
+#: contact_form.php:1941
+msgid "Custom"
+msgstr ""
+
+#: contact_form.php:1948
+msgid "px"
+msgstr ""
+
+#: contact_form.php:1961
 msgid "Form align"
 msgstr ""
 
-#: contact_form.php:1950 contact_form.php:1983
+#: contact_form.php:1968 contact_form.php:2001
 msgid "Center"
 msgstr ""
 
 # @ contact_form
-#: contact_form.php:1958
+#: contact_form.php:1976
 #, fuzzy
 msgid "Labels position"
 msgstr "Κομβίο Υποβολής"
 
-#: contact_form.php:1962
+#: contact_form.php:1980
 msgid "Top"
 msgstr ""
 
-#: contact_form.php:1971
+#: contact_form.php:1989
 msgid "Bottom"
 msgstr ""
 
-#: contact_form.php:1976
+#: contact_form.php:1994
 msgid "Labels align"
 msgstr ""
 
 # @ contact_form
-#: contact_form.php:1991
+#: contact_form.php:2009
 msgid "Errors output"
 msgstr "Έξοδος σφαλμάτων"
 
 # @ contact_form
-#: contact_form.php:1994
+#: contact_form.php:2012
 msgid "Display error messages"
 msgstr "Εμφάνιση μηνυμάτων σφαλμάτων"
 
 # @ contact_form
-#: contact_form.php:1995
+#: contact_form.php:2013
 msgid "Color of the input field errors."
 msgstr "Χρώμα των σφαλμάτων στα πεδία εισαγωγής."
 
 # @ contact_form
-#: contact_form.php:1996
+#: contact_form.php:2014
 msgid "Display error messages & color of the input field errors"
 msgstr ""
 "Εμφάνιση μηνυμάτων σφαλμάτων & χρώμα των σφαλμάτων στα πεδία εισαγωγής."
 
 # @ contact_form
-#: contact_form.php:2001
+#: contact_form.php:2019
 msgid "Add placeholder to the input blocks"
 msgstr "Προσθήκη placeholder στα μπλοκς εισαγωγής"
 
 # @ contact_form
-#: contact_form.php:2007
+#: contact_form.php:2025
 msgid "Add tooltips"
 msgstr "Προσθήκη επεξηγήσεων"
 
 # @ contact_form
-#: contact_form.php:2021
+#: contact_form.php:2039
 msgid "Email address"
 msgstr "Email"
 
 # @ contact_form
-#: contact_form.php:2026 contact_form.php:3167 contact_form.php:3208
+#: contact_form.php:2044 contact_form.php:3210 contact_form.php:3251
 msgid "Phone Number"
 msgstr "Αριθμός τηλεφώνου"
 
 # @ contact_form
-#: contact_form.php:2052
+#: contact_form.php:2070
 msgid "Style options"
 msgstr "Ρυμθίσεις εμφάνισης"
 
 # @ contact_form
-#: contact_form.php:2056
+#: contact_form.php:2074
 msgid "Text color"
 msgstr "Χρώμα κειμένου"
 
 # @ contact_form
-#: contact_form.php:2061
+#: contact_form.php:2079
 msgid "Label text color"
 msgstr "Χρώμα κειμένου ετικέτας"
 
 # @ contact_form
-#: contact_form.php:2066
+#: contact_form.php:2084
 msgid "Placeholder color"
 msgstr "Χρώμα placeholder"
 
 # @ contact_form
-#: contact_form.php:2071
+#: contact_form.php:2089
 msgid "Errors color"
 msgstr "Χρώμα σφαλμάτων"
 
 # @ contact_form
-#: contact_form.php:2076
+#: contact_form.php:2094
 msgid "Error text color"
 msgstr "Χρώμα κειμένου σφάλματος"
 
 # @ contact_form
-#: contact_form.php:2081
+#: contact_form.php:2099
 msgid "Background color of the input field errors"
 msgstr "Χρώμα φόντου στα πεδία εισαγωγής σφαλμάτων"
 
 # @ contact_form
-#: contact_form.php:2086
+#: contact_form.php:2104
 msgid "Border color of the input field errors"
 msgstr "Χρώμα περιγράμματος στα πεδία εισαγωγής σφαλμάτων"
 
 # @ contact_form
-#: contact_form.php:2091
+#: contact_form.php:2109
 msgid "Placeholder color of the input field errors"
 msgstr "Χρώμα placeholder στα πεδία εισαγωγής σφαλμάτων"
 
 # @ contact_form
-#: contact_form.php:2096
+#: contact_form.php:2114
 msgid "Input fields"
 msgstr "Πεδία εισαγωγής"
 
 # @ contact_form
-#: contact_form.php:2101
+#: contact_form.php:2119
 msgid "Input fields background color"
 msgstr "Χρώμα φόντου στα πεδία εισαγωγής"
 
 # @ contact_form
-#: contact_form.php:2106
+#: contact_form.php:2124
 msgid "Text fields color"
 msgstr "Χρώμα πεδίων κειμένου"
 
 # @ contact_form
-#: contact_form.php:2110
+#: contact_form.php:2128
 msgid "Border width in px, numbers only"
 msgstr "Πλάτος περιγράμματος σε px, μόνο αριθμοί"
 
 # @ contact_form
-#: contact_form.php:2115 contact_form.php:2139
+#: contact_form.php:2133 contact_form.php:2157
 msgid "Border color"
 msgstr "Χρώμα περιγράμματος"
 
 # @ contact_form
-#: contact_form.php:2120
+#: contact_form.php:2138
 msgid "Submit button"
 msgstr "Κομβίο Υποβολής"
 
 # @ contact_form
-#: contact_form.php:2124
+#: contact_form.php:2142
 msgid "Width in px, numbers only"
 msgstr "Πλάτος σε px, μόνο αριθμοί"
 
 # @ contact_form
-#: contact_form.php:2129
+#: contact_form.php:2147
 msgid "Button color"
 msgstr "Χρώμα κομβίου"
 
 # @ contact_form
-#: contact_form.php:2134
+#: contact_form.php:2152
 msgid "Button text color"
 msgstr "Χρώμα κειμένου κομβίου"
 
 # @ contact_form
-#: contact_form.php:2163
+#: contact_form.php:2181
 #, fuzzy
 msgid "Contact Form | Preview"
 msgstr "Contact Form Pro | Προεπισκόπηση"
 
-#: contact_form.php:2164
+#: contact_form.php:2182
 msgid "Drag the necessary field to sort fields."
 msgstr ""
 
 # @ contact_form
-#: contact_form.php:2376
+#: contact_form.php:2408
 #, fuzzy
 msgid ""
 "If you would like to add the Contact Form to your website, just copy and "
@@ -1022,28 +1034,28 @@ msgstr ""
 "στο widget σας:"
 
 # @ contact_form
-#: contact_form.php:2504
+#: contact_form.php:2536
 msgid "Sorry, email message could not be delivered."
 msgstr ""
 "Λυπούμαστε, το μήνυμα ηλεκτρονικού ταχυδρομείου δεν μπόρεσε να παραδοθεί."
 
 # @ contact_form
-#: contact_form.php:3094 contact_form.php:3096
+#: contact_form.php:3137 contact_form.php:3139
 msgid "Sent from (ip address)"
 msgstr "Εστάλη από (διεύθυνση IP)"
 
 # @ contact_form
-#: contact_form.php:3124
+#: contact_form.php:3167
 msgid "Contact from"
 msgstr "Φόρμμα επικοινωνίας"
 
 # @ contact_form
-#: contact_form.php:3129 contact_form.php:3178
+#: contact_form.php:3172 contact_form.php:3221
 msgid "Site"
 msgstr "Ιστοσελίδα"
 
 # @ contact_form
-#: contact_form.php:3308
+#: contact_form.php:3351
 msgid ""
 "If you can see this MIME, it means that the MIME type is not supported by "
 "your email client!"
@@ -1052,44 +1064,44 @@ msgstr ""
 "υποστηρίζεται από τον email client σας!"
 
 # @ contact_form
-#: contact_form.php:3391
+#: contact_form.php:3434
 msgid "FAQ"
 msgstr "Συχνές Ερωτήσεις"
 
 # @ contact_form
-#: contact_form.php:3392
+#: contact_form.php:3435
 msgid "Support"
 msgstr "Υποστήριξη"
 
 # @ contact_form
-#: contact_form.php:3441
+#: contact_form.php:3484
 msgid "Are you sure that you want to delete this language data?"
 msgstr "Είστε σίγουροι ότι θέλετε να διαγράψετε τα δεδομένα αυτής της γλώσσας;"
 
 # @ contact_form
-#: contact_form.php:3462
+#: contact_form.php:3505
 #, fuzzy
 msgid "Add multiple forms"
 msgstr "Προσθήκη στη φόρμα"
 
-#: contact_form.php:3462
+#: contact_form.php:3505
 msgid ""
 "Install Contact Form Multi plugin to create unlimited number of contact "
 "forms."
 msgstr ""
 
 # @ contact_form
-#: contact_form.php:3467
+#: contact_form.php:3510
 #, fuzzy
 msgid "Learn more"
 msgstr "Μάθετε περισσότερα"
 
-#: contact_form.php:3693
+#: contact_form.php:3751
 msgid "Close notice"
 msgstr ""
 
 # @ contact_form
-#: contact_form.php:3698
+#: contact_form.php:3756
 #, fuzzy
 msgid "allows to store your messages to the database."
 msgstr ""
@@ -1097,34 +1109,26 @@ msgstr ""
 "στη βάση δεδομένων."
 
 # @ contact_form
-#: contact_form.php:3699
+#: contact_form.php:3757
 msgid "Manage messages that have been sent from your website."
 msgstr "Διαχειριστείτε τα μηνύματα που έχουν σταλεί από την ιστοσελίδα σας."
 
 # @ contact_form
-#: contact_form.php:3702
+#: contact_form.php:3760
 msgid "Learn More"
 msgstr "Μάθετε περισσότερα"
 
 # @ contact_form
-#: contact_form.php:3762
+#: contact_form.php:3820
 #, fuzzy
 msgid "Contact form"
 msgstr "Φόρμμα επικοινωνίας"
 
 # @ contact_form
-#: contact_form.php:3775 contact_form.php:3785
+#: contact_form.php:3833 contact_form.php:3843
 #, fuzzy
 msgid "Language"
 msgstr "Προσθήκη γλώσσας"
-
-#: includes/deprecated.php:168
-#, php-format
-msgid ""
-"Deprecated shortcode %1s from the %2s plugin is used on your site. Please "
-"replace it with %3s. If you close this message it'll appear again after "
-"deprecated shortcode reuse."
-msgstr ""
 
 # @ contact_form
 #, fuzzy

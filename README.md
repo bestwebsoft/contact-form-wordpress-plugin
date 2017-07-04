@@ -1,146 +1,123 @@
 <a href="https://bestwebsoft.com/products/wordpress/plugins/contact-form/" target=_blank>Contact Form WordPress Plugin</a>
 ========================
 
-Simple contact form plugin any WordPress website must have.
-
-<p>Contact form plugin for Wordpress website is the best solution to receive messages from customers right to your email address(-es). Download, activate and paste [bestwebsoft_contact_form] shortcode on any page, post or widget to display the form. Customize the form styles and contents easily with the pre-build options.</p>
-
+<p>Contact form plugin for WordPress website is the best solution to receive messages from customers right to your email address(-es). Download, activate and paste [bestwebsoft_contact_form] shortcode on any page, post or widget to display the form. Customize the form styles and contents easily with the pre-build options.</p>
 <p>Allow your customers to reach you in seconds!</p>
-
-<p><a href="https://bestwebsoft.com/demo-for-contact-form-pro/">View Demo</a></p>
-
-
-<div class='video'></div>
-
-
+<p><a href="https://bestwebsoft.com/demo-for-contact-form-pro/" rel="nofollow">View Demo</a></p>
+<p><span class="embed-youtube" style="text-align:center; display: block;"></span></p>
 <h4>Free Features</h4>
-
 <ul>
 <li>Paste shortcode on any page, post or widget to display the form</li>
 <li>Data validation before the submission</li>
 <li>Send a copy of the submitted message to the email</li>
 <li>Receive submissions to the default admin or custom email addresses</li>
 <li>Add additional data about the sender to the email notification:
-
 <ul>
 <li>Sent from (IP address) </li>
 <li>Date/Time </li>
 <li>Sent from (referer)</li>
 <li>Using (user agent)</li>
-</ul></li>
+</ul>
+</li>
 <li>Responsive Layout</li>
 <li>Editable field labels</li>
 <li>Required fields</li>
 <li>Select used/required for the following fields:
-
 <ul>
 <li>Name</li>
 <li>Address</li>
 <li>Phone number</li>
-</ul></li>
+</ul>
+</li>
 <li>File attachments</li>
 <li>Enable additional pre-build fields</li>
 <li>Enable two column layout</li>
-<li>Re-order form fields using drag &#38; drop interface</li>
+<li>Change the width for contact form</li>
+<li>Re-order form fields using drag &amp; drop interface</li>
 <li>Translate your form to any language with a simple language customizer</li>
-<li>Protect contact form from spam with <a href="https://bestwebsoft.com/products/wordpress/plugins/captcha/?k=45dcf2a5ccd70a7fc8606f8030730ac7">Captcha</a> or <a href="https://bestwebsoft.com/products/wordpress/plugins/google-captcha/?k=159789f556e3a9c58df8f25384903ba5">Google reCaptcha</a></li>
-<li>Add unlimited contact forms using <a href="https://bestwebsoft.com/products/wordpress/plugins/contact-form-multi/?k=34543c152eff369d529e9b4da85985a9">Contact Form Multi</a></li>
-<li>Save and manage messages using <a href="https://bestwebsoft.com/products/wordpress/plugins/contact-form-to-db/?k=d7d962591b5be0ce6c27af778b1b36ee">Contact Form to DB</a></li>
-<li>Add users who send the submission to the <a href="https://bestwebsoft.com/products/wordpress/plugins/subscriber/?k=2ce0827916414c9c8576110f13560030">Subscriber</a> newsletter subscription list</li>
+<li>Protect contact form from spam with <a href="https://bestwebsoft.com/products/wordpress/plugins/captcha/?k=45dcf2a5ccd70a7fc8606f8030730ac7" rel="nofollow">Captcha</a> or <a href="https://bestwebsoft.com/products/wordpress/plugins/google-captcha/?k=159789f556e3a9c58df8f25384903ba5" rel="nofollow">Google reCaptcha</a></li>
+<li>Add unlimited contact forms using <a href="https://bestwebsoft.com/products/wordpress/plugins/contact-form-multi/?k=34543c152eff369d529e9b4da85985a9" rel="nofollow">Contact Form Multi</a></li>
+<li>Save and manage messages using <a href="https://bestwebsoft.com/products/wordpress/plugins/contact-form-to-db/?k=d7d962591b5be0ce6c27af778b1b36ee" rel="nofollow">Contact Form to DB</a></li>
+<li>Add users who send the submission to the <a href="https://bestwebsoft.com/products/wordpress/plugins/subscriber/?k=2ce0827916414c9c8576110f13560030" rel="nofollow">Subscriber</a> newsletter subscription list</li>
 <li>Add custom code via plugin settings page</li>
 <li>Compatible with latest WordPress version</li>
 <li>Incredibly simple settings for fast setup without modifying code</li>
 <li>Detailed step-by-step documentations and videos</li>
 <li>Multilingual and RTL ready</li>
 </ul>
-
 <blockquote>
-  <p><strong>Pro Features</strong></p>
-  
-  <p>All features from Free version included plus:</p>
-  
-  <ul>
-  <li>Add department selectbox and sort messages by inquiry type</li>
-  <li>Add required and optional checkboxes (i.e. Terms and Conditions)</li>
-  <li>Automatically populate name and email input fields for logged-in users</li>
-  <li>Add "Reply to" email address in the message head</li>
-  <li>Set default text for subject and message input fields</li>
-  <li>Show, hide or disable fields:
-  
-  <ul>
-  <li>Name</li>
-  <li>Email Address</li>
-  <li>Subject</li>
-  <li>Message</li>
-  </ul></li>
-  <li>Enable auto response option with editable message</li>
-  <li>Customizable form
-  
-  <ul>
-  <li>Styles (no programming knowledge required)</li>
-  <li>Alignment, labels alignment and position</li>
-  </ul></li>
-  <li>Editable tooltips</li>
-  <li>Editable placeholders</li>
-  <li>Get answer to your support question within one business day (<a href="https://bestwebsoft.com/support-policy/">Support Policy</a>)</li>
-  </ul>
-  
-  <p><a href="https://bestwebsoft.com/products/wordpress/plugins/contact-form/?k=4028655c87316c98ae9ac7ca1928067f">Upgrade to Pro Now</a></p>
+<p><strong>Pro Features</strong></p>
+<p>All features from Free version included plus:</p>
+<ul>
+<li>Add department selectbox and sort messages by inquiry type</li>
+<li>Add required and optional checkboxes (i.e. Terms and Conditions)</li>
+<li>Automatically populate name and email input fields for logged-in users</li>
+<li>Add &#8220;Reply to&#8221; email address in the message head</li>
+<li>Set default text for subject and message input fields</li>
+<li>Show, hide or disable fields:
+<ul>
+<li>Name</li>
+<li>Email Address</li>
+<li>Subject</li>
+<li>Message</li>
+</ul>
+</li>
+<li>Enable auto response option with editable message</li>
+<li>Customizable form
+<ul>
+<li>Styles (no programming knowledge required)</li>
+<li>Alignment, labels alignment and position</li>
+</ul>
+</li>
+<li>Editable tooltips</li>
+<li>Editable placeholders</li>
+<li>Get answer to your support question within one business day (<a href="https://bestwebsoft.com/support-policy/" rel="nofollow">Support Policy</a>)</li>
+</ul>
+<p><a href="https://bestwebsoft.com/products/wordpress/plugins/contact-form/?k=4028655c87316c98ae9ac7ca1928067f" rel="nofollow">Upgrade to Pro Now</a></p>
 </blockquote>
-
-<p>If you have a feature suggestion or idea you'd like to see in the plugin, we'd love to hear about it! <a href="https://support.bestwebsoft.com/hc/en-us/requests/new">Suggest a Feature</a></p>
-
-<h4>Documentation &#38; Videos</h4>
-
+<p>If you have a feature suggestion or idea you&#8217;d like to see in the plugin, we&#8217;d love to hear about it! <a href="https://support.bestwebsoft.com/hc/en-us/requests/new" rel="nofollow">Suggest a Feature</a></p>
+<h4>Documentation &amp; Videos</h4>
 <ul>
-<li><a href="https://docs.google.com/document/d/1qZYPJhkSdVyyM6XO5WfiBcTS2Sa9_9UMn4vS2g48JRY/">[Doc] How to Use</a></li>
-<li><a href="https://docs.google.com/document/d/1-hvn6WRvWnOqj5v5pLUk7Awyu87lq5B_dO-Tv-MC9JQ/">[Doc] Installation</a></li>
-<li><a href="https://docs.google.com/document/d/1EUdBVvnm7IHZ6y0DNyldZypUQKpB8UVPToSc_LdOYQI/">[Doc] Purchase</a></li>
-<li><a href="https://www.youtube.com/watch?v=k1wq00ajACo">[Video] Purchase, Installation, Configuration Tutorial</a></li>
-<li><a href="https://www.youtube.com/watch?v=JwG2c4PcO8o">[Video] Installation Instruction</a></li>
+<li><a href="https://docs.google.com/document/d/1qZYPJhkSdVyyM6XO5WfiBcTS2Sa9_9UMn4vS2g48JRY/" rel="nofollow">[Doc] How to Use</a></li>
+<li><a href="https://docs.google.com/document/d/1-hvn6WRvWnOqj5v5pLUk7Awyu87lq5B_dO-Tv-MC9JQ/" rel="nofollow">[Doc] Installation</a></li>
+<li><a href="https://docs.google.com/document/d/1EUdBVvnm7IHZ6y0DNyldZypUQKpB8UVPToSc_LdOYQI/" rel="nofollow">[Doc] Purchase</a></li>
+<li><a href="https://www.youtube.com/watch?v=k1wq00ajACo" rel="nofollow">[Video] Purchase, Installation, Configuration Tutorial</a></li>
+<li><a href="https://www.youtube.com/watch?v=JwG2c4PcO8o" rel="nofollow">[Video] Installation Instruction</a></li>
 </ul>
-
-<h4>Help &#38; Support</h4>
-
-<p>Visit our Help Center if you have any questions, our friendly Support Team is happy to help &#8212; <a href="https://support.bestwebsoft.com/">https://support.bestwebsoft.com/</a></p>
-
+<h4>Help &amp; Support</h4>
+<p>Visit our Help Center if you have any questions, our friendly Support Team is happy to help — <a href="https://support.bestwebsoft.com/" rel="nofollow">https://support.bestwebsoft.com/</a></p>
 <h4>Translation</h4>
-
 <ul>
-<li>Afrikaans (af_ZA) (thanks to <a href="mailto:alducornelissen@gmail.com">Aldu</a>)</li>
-<li>Brazilian Portuguese (pt_BR) (thanks to <a href="mailto:brenojac@gmail.com">Breno Jacinto</a>, <a href="http://www.iconis.org.br" rel="nofollow">http://www.iconis.org.br</a>, <a href="mailto:wordpress@djio.com.br">DJIO</a>, <a href="http://www.djio.com.br" rel="nofollow">http://www.djio.com.br</a>)</li>
-<li>Catalan (ca) (thanks to <a href="mailto:kenneth@snollocer.net">Kenneth</a>)</li>
-<li>Chinese (zh_CN) (thanks to <a href="mailto:kplam@qq.com">kplam</a>)</li>
-<li>Czech (cs_CZ) (thanks to <a href="mailto:info@pamadessoft.cz">PaMaDeSSoft</a>, <a href="http://www.pamadessoft.cz" rel="nofollow">http://www.pamadessoft.cz</a>)</li>
-<li>Danish (da_DK) (thanks to <a href="mailto:support@teknisk-support.com">Kasper Jensen</a>, <a href="http://www.teknisk-support.com" rel="nofollow">http://www.teknisk-support.com</a>)</li>
-<li>Estonian (et) (thanks to <a href="mailto:feliks@veebimeister.com">Feliks</a>, <a href="http://www.veebimeister.com" rel="nofollow">http://www.veebimeister.com</a>)</li>
+<li>Afrikaans (af_ZA) (thanks to <a href="mailto:&#x61;&#108;&#100;&#x75;&#x63;&#111;r&#x6e;&#101;&#108;&#x69;&#x73;&#115;&#101;&#x6e;&#x40;&#103;&#x6d;&#x61;&#105;&#108;&#x2e;&#x63;&#111;m" rel="nofollow">Aldu</a>)</li>
+<li>Brazilian Portuguese (pt_BR) (thanks to <a href="mailto:&#098;&#114;&#x65;&#110;&#111;&#x6a;&#097;&#099;&#x40;&#x67;&#109;&#x61;&#x69;&#108;&#x2e;&#x63;&#111;&#x6d;" rel="nofollow">Breno Jacinto</a>, www.iconis.org.br, <a href="mailto:&#119;&#111;&#x72;&#x64;&#x70;&#114;&#101;&#x73;&#x73;&#x40;&#100;&#106;&#x69;&#x6f;&#x2e;&#099;&#111;&#x6d;&#x2e;&#x62;&#114;" rel="nofollow">DJIO</a>, www.djio.com.br)</li>
+<li>Catalan (ca) (thanks to <a href="mailto:&#x6b;&#x65;&#x6e;&#110;&#101;&#x74;&#x68;&#x40;&#115;&#110;&#x6f;&#x6c;&#x6c;&#111;&#099;&#x65;&#x72;&#x2e;&#110;&#101;&#x74;" rel="nofollow">Kenneth</a>)</li>
+<li>Chinese (zh_CN) (thanks to <a href="mailto:&#107;&#x70;&#x6c;&#097;&#109;&#064;&#x71;&#113;&#046;c&#x6f;&#x6d;" rel="nofollow">kplam</a>)</li>
+<li>Czech (cs_CZ) (thanks to <a href="mailto:&#105;&#110;&#102;&#111;&#064;&#x70;&#x61;&#x6d;&#x61;&#x64;&#x65;&#115;&#115;&#111;&#102;&#116;.&#x63;&#x7a;" rel="nofollow">PaMaDeSSoft</a>, www.pamadessoft.cz)</li>
+<li>Danish (da_DK) (thanks to <a href="mailto:&#115;&#117;&#x70;&#112;&#111;&#x72;&#116;&#064;&#x74;&#x65;&#107;&#x6e;&#x69;&#115;&#x6b;&#x2d;&#115;&#x75;&#x70;&#112;o&#x72;&#116;.&#x63;&#111;&#109;" rel="nofollow">Kasper Jensen</a>, www.teknisk-support.com)</li>
+<li>Estonian (et) (thanks to <a href="mailto:&#102;&#x65;&#108;i&#x6b;&#115;&#x40;&#x76;&#101;&#x65;&#098;&#105;&#x6d;&#101;i&#x73;&#116;&#x65;&#x72;&#046;&#x63;&#x6f;&#109;" rel="nofollow">Feliks</a>, www.veebimeister.com)</li>
 <li>French (fr_FR) (thanks Capronnier Luc)</li>
-<li>German (de_DE) (thanks to <a href="mailto:private18@web.de">Alex</a>)</li>
-<li>Greek (el) (thanks to Dimitris Karantonis, <a href="http://www.soft4real.com/en-UK" rel="nofollow">http://www.soft4real.com/en-UK</a>)</li>
+<li>German (de_DE) (thanks to <a href="mailto:&#x70;&#x72;&#105;&#118;a&#x74;&#x65;&#x31;&#056;&#064;&#119;&#x65;&#x62;&#x2e;&#100;&#101;" rel="nofollow">Alex</a>)</li>
+<li>Greek (el) (thanks to Dimitris Karantonis, www.soft4real.com/en-UK)</li>
 <li>Japanese (ja) (thanks to Foken)</li>
-<li>Dutch (nl_NL) (thanks to <a href="mailto:olivier.smet@dynata.nl">Olivier Smet</a>)</li>
-<li>Norwegian (nb_NO) (thanks to <a href="mailto:bestwebsoftcontact@nordsoft.no">Per Rommetveit</a>)</li>
+<li>Dutch (nl_NL) (thanks to <a href="mailto:&#111;&#108;&#x69;&#x76;&#x69;&#x65;&#x72;&#046;&#115;&#109;&#101;&#116;&#x40;&#x64;&#x79;&#x6e;&#x61;&#116;&#097;&#046;&#110;&#108;" rel="nofollow">Olivier Smet</a>)</li>
+<li>Norwegian (nb_NO) (thanks to <a href="mailto:&#x62;&#x65;&#115;&#116;&#x77;&#x65;&#098;&#115;&#x6f;&#x66;&#116;c&#x6f;&#110;&#116;a&#x63;&#116;&#064;&#x6e;&#x6f;&#114;&#100;&#x73;&#x6f;&#102;&#116;&#x2e;&#x6e;&#111;" rel="nofollow">Per Rommetveit</a>)</li>
 <li>Russian (ru_RU)</li>
-<li>Slovak (sk_SK) (thanks to <a href="mailto:michal.vittek@wp.sk">Michal Vittek</a>, <a href="http://www.wp.sk" rel="nofollow">http://www.wp.sk</a>)</li>
+<li>Slovak (sk_SK) (thanks to <a href="mailto:m&#105;&#x63;&#x68;&#097;&#108;&#x2e;&#x76;&#105;&#116;&#x74;&#x65;&#107;&#064;&#x77;&#x70;&#046;&#115;&#x6b;" rel="nofollow">Michal Vittek</a>, www.wp.sk)</li>
 <li>Spanish (es_ES) (thanks to Javitopo)</li>
-<li>Swedish (sv_SE) (thanks to Martin Tonek, <a href="mailto:joakim@limewoodmedia.com">Joakim Lindskog</a>, <a href="mailto:maarten@vandendriest.com">Maarten van den Driest</a> - <a href="http://www.crossanddot.nl" rel="nofollow">http://www.crossanddot.nl</a>)</li>
-<li>Turkish (tr) (thanks to Can Atasever, <a href="http://www.canatasever.com" rel="nofollow">http://www.canatasever.com</a>)</li>
+<li>Swedish (sv_SE) (thanks to Martin Tonek, <a href="mailto:&#x6a;&#x6f;&#x61;&#x6b;&#x69;&#x6d;&#x40;&#x6c;&#x69;&#x6d;&#x65;&#x77;&#x6f;&#x6f;&#x64;&#109;&#101;&#100;&#105;&#097;&#046;&#099;&#111;&#109;" rel="nofollow">Joakim Lindskog</a>, <a href="mailto:&#x6d;&#x61;&#x61;&#114;&#116;&#101;n&#x40;&#x76;&#x61;&#110;&#100;&#101;n&#x64;&#x72;&#x69;&#101;&#115;&#116;.&#x63;&#x6f;&#x6d;" rel="nofollow">Maarten van den Driest</a> &#8211; www.crossanddot.nl)</li>
+<li>Turkish (tr) (thanks to Can Atasever, www.canatasever.com)</li>
 <li>Ukrainian (uk)</li>
-<li>Vietnamese (vi) (thanks to <a href="mailto:bizover@gmail.com">Dich Anh Viet</a>, <a href="http://www.bizover.net" rel="nofollow">http://www.bizover.net</a>)</li>
+<li>Vietnamese (vi) (thanks to <a href="mailto:&#x62;&#x69;&#x7a;&#111;&#118;&#x65;&#x72;&#x40;&#103;&#109;&#x61;&#x69;&#x6c;&#046;&#099;&#x6f;&#x6d;" rel="nofollow">Dich Anh Viet</a>, www.bizover.net)</li>
 </ul>
-
-<p>Some of these translations are not complete. We are constantly adding new features which should be translated. If you would like to create your own language pack or update the existing one, you can send <a href="https://codex.wordpress.org/Translating_WordPress">the text of PO and MO files</a> to <a href="https://support.bestwebsoft.com/hc/en-us/requests/new">BestWebSoft</a> and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO <a href="https://www.poedit.net/download.php">files Poedit</a>.</p>
-
+<p>Some of these translations are not complete. We are constantly adding new features which should be translated. If you would like to create your own language pack or update the existing one, you can send <a href="https://codex.wordpress.org/Translating_WordPress" rel="nofollow">the text of PO and MO files</a> to <a href="https://support.bestwebsoft.com/hc/en-us/requests/new" rel="nofollow">BestWebSoft</a> and we&#8217;ll add it to the plugin. You can download the latest version of the program for work with PO and MO <a href="https://www.poedit.net/download.php" rel="nofollow">files Poedit</a>.</p>
 <h4>Recommended Plugins</h4>
-
 <p>The author of the Contact Form also recommends the following plugins:</p>
-
 <ul>
-<li><a href="https://bestwebsoft.com/products/wordpress/plugins/smtp/">SMTP</a> &#8211; Configure SMTP server to receive email messages from WordPress to Gmail, Yahoo, Hotmail and other services.</li>
-<li><a href="https://bestwebsoft.com/products/wordpress/plugins/captcha/?k=45dcf2a5ccd70a7fc8606f8030730ac7">Captcha</a> &#8211; #1 super security anti-spam captcha plugin for WordPress forms.</li>
-<li><a href="https://bestwebsoft.com/products/wordpress/plugins/google-captcha/?k=159789f556e3a9c58df8f25384903ba5">Google Captcha (Re-captcha)</a> &#8211; Protect WordPress website forms from spam entries with Google Captcha (reCaptcha).</li>
-<li><a href="https://bestwebsoft.com/products/wordpress/plugins/limit-attempts/?k=129e34c19fc68ae4a15b4fc1b4983081">Limit Attempts</a> &#8211; Protect WordPress website against brute force attacks. Limit rate of login attempts.</li>
-<li><a href="https://bestwebsoft.com/products/wordpress/plugins/contact-form-multi/?k=34543c152eff369d529e9b4da85985a9">Contact Form Multi</a> &#8211; Add unlimited number of contact forms to WordPress website.</li>
-<li><a href="https://bestwebsoft.com/products/wordpress/plugins/contact-form-to-db/?k=d7d962591b5be0ce6c27af778b1b36ee">Contact Form to DB</a> &#8211; Save and manage contact form messages. Never lose important data.</li>
-<li><a href="https://bestwebsoft.com/products/wordpress/plugins/updater/?k=982fae837f4c6e3b152183537448dbca">Updater</a> &#8211; Automatically check and update WordPress website core with all installed plugins and themes to the latest versions.</li>
+<li><a href="https://bestwebsoft.com/products/wordpress/plugins/smtp/" rel="nofollow">SMTP</a> – Configure SMTP server to receive email messages from WordPress to Gmail, Yahoo, Hotmail and other services.</li>
+<li><a href="https://bestwebsoft.com/products/wordpress/plugins/captcha/?k=45dcf2a5ccd70a7fc8606f8030730ac7" rel="nofollow">Captcha</a> – #1 super security anti-spam captcha plugin for WordPress forms.</li>
+<li><a href="https://bestwebsoft.com/products/wordpress/plugins/google-captcha/?k=159789f556e3a9c58df8f25384903ba5" rel="nofollow">Google Captcha (Re-captcha)</a> –  Protect WordPress website forms from spam entries with Google reCaptcha.</li>
+<li><a href="https://bestwebsoft.com/products/wordpress/plugins/limit-attempts/?k=129e34c19fc68ae4a15b4fc1b4983081" rel="nofollow">Limit Attempts</a> – Protect WordPress website against brute force attacks. Limit rate of login attempts.</li>
+<li><a href="https://bestwebsoft.com/products/wordpress/plugins/contact-form-multi/?k=34543c152eff369d529e9b4da85985a9" rel="nofollow">Contact Form Multi</a> – Add unlimited number of contact forms to WordPress website.</li>
+<li><a href="https://bestwebsoft.com/products/wordpress/plugins/contact-form-to-db/?k=d7d962591b5be0ce6c27af778b1b36ee" rel="nofollow">Contact Form to DB</a> – Save and manage contact form messages. Never lose important data.</li>
+<li><a href="https://bestwebsoft.com/products/wordpress/plugins/updater/?k=982fae837f4c6e3b152183537448dbca" rel="nofollow">Updater</a> – Automatically check and update WordPress website core with all installed plugins and themes to the latest versions.</li>
 </ul>

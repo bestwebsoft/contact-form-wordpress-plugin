@@ -24,6 +24,10 @@
 			$( '#cntctfrm_from_custom_email' ).attr( 'checked', 'checked' );
 		});
 
+		$( 'input[name^="cntctfrm_thank_text"]' ).focus( function() {
+			$( '#cntctfrm_action_after_send' ).attr( 'checked', 'checked' );
+		});
+
 		$( 'input[name="cntctfrm_redirect_url"]' ).focus( function() {
 			$( '#cntctfrm_action_after_send_url' ).attr( 'checked', 'checked' );
 		});
@@ -77,6 +81,35 @@
 		});
 
 		/* change form layout in the settings page appearance tab */
+		$( 'input[name="cntctfrm_width_type"]' ).change( function() {
+			cntctfrm_change_width();
+		});
+
+		function cntctfrm_change_width() {
+			var $form = $( '#cntctfrm_contact_form' ),
+				width = $( 'input[name="cntctfrm_width_type"]' ).filter( ':checked' ).val();
+
+			if ( 'custom' != width ) {
+				$form.attr( 'class', function() {
+					return this.className = this.className.replace( 'cntctfrm_width_custom', 'cntctfrm_width_default' );
+				});
+				$( '.cntctfrm_width_params' ).hide();
+			} else {
+				$form.attr( 'class', function() {
+					return this.className = this.className.replace( 'cntctfrm_width_default', 'cntctfrm_width_custom' );
+				});
+				$( '.cntctfrm_width_params' ).show();
+			}
+		}
+
+		$( 'input[name="cntctfrm_width_type"]' ).change( function() {
+			if ( 'custom' != $( this ).filter( ':checked' ).val() ) {
+				$( '.cntctfrm_width_params' ).hide();
+			} else {
+				$( '.cntctfrm_width_params' ).show();
+			}
+		}).trigger( 'change' );
+
 		$( 'input[name="cntctfrm_layout"]' ).change( function() {
 			var form_layout = $( this ).val();
 			if ( form_layout == 1 ) {
