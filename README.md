@@ -3,7 +3,7 @@
 
 <p>Contact form plugin for WordPress website is the best solution to receive messages from customers right to your email address(-es). Download, activate and paste [bestwebsoft_contact_form] shortcode on any page, post or widget to display the form. Customize the form styles and contents easily with the pre-build options.</p>
 <p>Allow your customers to reach you in seconds!</p>
-<p><a href="https://bestwebsoft.com/demo-for-contact-form-pro/" rel="nofollow">View Demo</a></p>
+<p><a href="https://bestwebsoft.com/demo-for-contact-form-pro/?ref=readme" rel="nofollow">View Demo</a></p>
 <p><span class="embed-youtube" style="text-align:center; display: block;"></span></p>
 <h4>Free Features</h4>
 <ul>
@@ -13,8 +13,8 @@
 <li>Receive submissions to the default admin or custom email addresses</li>
 <li>Add additional data about the sender to the email notification:
 <ul>
-<li>Sent from (IP address) </li>
-<li>Date/Time </li>
+<li>Sent from (IP address)</li>
+<li>Date/Time</li>
 <li>Sent from (referer)</li>
 <li>Using (user agent)</li>
 </ul>
@@ -94,12 +94,13 @@
 <li>Chinese (zh_CN) (thanks to <a href="mailto:&#107;&#x70;&#x6c;&#097;&#109;&#064;&#x71;&#113;&#046;c&#x6f;&#x6d;" rel="nofollow">kplam</a>)</li>
 <li>Czech (cs_CZ) (thanks to <a href="mailto:&#105;&#110;&#102;&#111;&#064;&#x70;&#x61;&#x6d;&#x61;&#x64;&#x65;&#115;&#115;&#111;&#102;&#116;.&#x63;&#x7a;" rel="nofollow">PaMaDeSSoft</a>, www.pamadessoft.cz)</li>
 <li>Danish (da_DK) (thanks to <a href="mailto:&#115;&#117;&#x70;&#112;&#111;&#x72;&#116;&#064;&#x74;&#x65;&#107;&#x6e;&#x69;&#115;&#x6b;&#x2d;&#115;&#x75;&#x70;&#112;o&#x72;&#116;.&#x63;&#111;&#109;" rel="nofollow">Kasper Jensen</a>, www.teknisk-support.com)</li>
+<li>Dutch (nl_NL) (thanks to <a href="mailto:&#111;&#108;&#x69;&#x76;&#x69;&#x65;&#x72;&#046;&#115;&#109;&#101;&#116;&#x40;&#x64;&#x79;&#x6e;&#x61;&#116;&#097;&#046;&#110;&#108;" rel="nofollow">Olivier Smet</a>)</li>
 <li>Estonian (et) (thanks to <a href="mailto:&#102;&#x65;&#108;i&#x6b;&#115;&#x40;&#x76;&#101;&#x65;&#098;&#105;&#x6d;&#101;i&#x73;&#116;&#x65;&#x72;&#046;&#x63;&#x6f;&#109;" rel="nofollow">Feliks</a>, www.veebimeister.com)</li>
 <li>French (fr_FR) (thanks Capronnier Luc)</li>
 <li>German (de_DE) (thanks to <a href="mailto:&#x70;&#x72;&#105;&#118;a&#x74;&#x65;&#x31;&#056;&#064;&#119;&#x65;&#x62;&#x2e;&#100;&#101;" rel="nofollow">Alex</a>)</li>
 <li>Greek (el) (thanks to Dimitris Karantonis, www.soft4real.com/en-UK)</li>
+<li>Indonesian (id_ID) (thanks to <a href="mailto:j&#x6f;&#114;&#x64;&#x61;&#110;&#x2e;&#115;i&#x6c;&#097;&#x65;&#x6e;&#064;&#x63;&#104;&#097;&#x6d;&#101;l&#x65;&#111;&#x6e;&#106;&#111;&#x68;&#110;.&#x63;&#111;&#x6d;" rel="nofollow">Jordan Silaen</a>, www.chameleonjohn.com)</li>
 <li>Japanese (ja) (thanks to Foken)</li>
-<li>Dutch (nl_NL) (thanks to <a href="mailto:&#111;&#108;&#x69;&#x76;&#x69;&#x65;&#x72;&#046;&#115;&#109;&#101;&#116;&#x40;&#x64;&#x79;&#x6e;&#x61;&#116;&#097;&#046;&#110;&#108;" rel="nofollow">Olivier Smet</a>)</li>
 <li>Norwegian (nb_NO) (thanks to <a href="mailto:&#x62;&#x65;&#115;&#116;&#x77;&#x65;&#098;&#115;&#x6f;&#x66;&#116;c&#x6f;&#110;&#116;a&#x63;&#116;&#064;&#x6e;&#x6f;&#114;&#100;&#x73;&#x6f;&#102;&#116;&#x2e;&#x6e;&#111;" rel="nofollow">Per Rommetveit</a>)</li>
 <li>Russian (ru_RU)</li>
 <li>Slovak (sk_SK) (thanks to <a href="mailto:m&#105;&#x63;&#x68;&#097;&#108;&#x2e;&#x76;&#105;&#116;&#x74;&#x65;&#107;&#064;&#x77;&#x70;&#046;&#115;&#x6b;" rel="nofollow">Michal Vittek</a>, www.wp.sk)</li>
@@ -115,7 +116,7 @@
 <ul>
 <li><a href="https://bestwebsoft.com/products/wordpress/plugins/smtp/" rel="nofollow">SMTP</a> – Configure SMTP server to receive email messages from WordPress to Gmail, Yahoo, Hotmail and other services.</li>
 <li><a href="https://bestwebsoft.com/products/wordpress/plugins/captcha/?k=45dcf2a5ccd70a7fc8606f8030730ac7" rel="nofollow">Captcha</a> – #1 super security anti-spam captcha plugin for WordPress forms.</li>
-<li><a href="https://bestwebsoft.com/products/wordpress/plugins/google-captcha/?k=159789f556e3a9c58df8f25384903ba5" rel="nofollow">Google Captcha (Re-captcha)</a> –  Protect WordPress website forms from spam entries with Google reCaptcha.</li>
+<li><a href="https://bestwebsoft.com/products/wordpress/plugins/google-captcha/?k=159789f556e3a9c58df8f25384903ba5" rel="nofollow">Google Captcha (reCAPTCHA)</a> –  Protect WordPress website forms from spam entries with Google reCAPTCHA.</li>
 <li><a href="https://bestwebsoft.com/products/wordpress/plugins/limit-attempts/?k=129e34c19fc68ae4a15b4fc1b4983081" rel="nofollow">Limit Attempts</a> – Protect WordPress website against brute force attacks. Limit rate of login attempts.</li>
 <li><a href="https://bestwebsoft.com/products/wordpress/plugins/contact-form-multi/?k=34543c152eff369d529e9b4da85985a9" rel="nofollow">Contact Form Multi</a> – Add unlimited number of contact forms to WordPress website.</li>
 <li><a href="https://bestwebsoft.com/products/wordpress/plugins/contact-form-to-db/?k=d7d962591b5be0ce6c27af778b1b36ee" rel="nofollow">Contact Form to DB</a> – Save and manage contact form messages. Never lose important data.</li>

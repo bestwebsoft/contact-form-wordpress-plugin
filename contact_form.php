@@ -6,7 +6,7 @@ Description: Simple contact form plugin any WordPress website must have.
 Author: BestWebSoft
 Text Domain: contact-form-plugin
 Domain Path: /languages
-Version: 4.0.7
+Version: 4.0.8
 Author URI: https://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -57,8 +57,7 @@ if ( ! function_exists ( 'cntctfrm_init' ) ) {
 		/* Function check if plugin is compatible with current WP version  */
 		bws_wp_min_version_check( plugin_basename( __FILE__ ), $cntctfrm_plugin_info, '3.9' );
 
-		if ( ! is_admin() )
-			cntctfrm_check_and_send();
+		cntctfrm_check_and_send();
 	}
 }
 
@@ -141,6 +140,8 @@ if ( ! function_exists( 'cntctfrm_settings' ) ) {
 				add_option( 'cntctfrmmlt_options', $option_defaults );
 			}
 
+			$id_first_form = cntctfrm_get_first_form_id();
+
 			$cntctfrmmlt_options = get_option( 'cntctfrmmlt_options' );
 
 			if ( ! isset( $cntctfrmmlt_options['plugin_option_version'] ) || $cntctfrmmlt_options['plugin_option_version'] != $cntctfrm_plugin_info["Version"] ) {
@@ -164,8 +165,8 @@ if ( ! function_exists( 'cntctfrm_settings' ) ) {
 			}
 
 			/* Get options from the database */
-			if ( isset( $_SESSION['cntctfrmmlt_id_form'] ) || $form_id ) {
-				$id = ( $form_id ) ? $form_id : $_SESSION['cntctfrmmlt_id_form'];
+			if ( $id_first_form || $form_id ) {
+				$id = ( $form_id ) ? $form_id : $id_first_form;
 				if ( $cntctfrm_options = get_option( 'cntctfrmmlt_options_' . $id ) ) {
 					/* */
 				} else {
@@ -205,14 +206,44 @@ if ( ! function_exists( 'cntctfrm_settings' ) ) {
 					}
 				}
 			}
-			
+
 			$cntctfrm_options['plugin_option_version'] = $cntctfrm_plugin_info["Version"];
 			/* show pro features */
 			$cntctfrm_options['hide_premium_options'] = array();
 
 			if ( $contact_form_multi_active ) {
-				if ( isset( $_SESSION['cntctfrmmlt_id_form'] ) || $form_id ) {
-					$id = ( $form_id ) ? $form_id : $_SESSION['cntctfrmmlt_id_form'];
+				$id_first_form = cntctfrm_get_first_form_id();
+				if ( $id_first_form || $form_id ) {
+					$id = ( $form_id ) ? $form_id : $id_first_form;
+					if ( get_option( 'cntctfrmmlt_options_' . $id ) ) {
+						update_option( 'cntctfrmmlt_options_' . $id , $cntctfrm_options );
+					} else {
+						update_option( 'cntctfrmmlt_options', $cntctfrm_options );
+					}
+				} else {
+					update_option( 'cntctfrmmlt_options', $cntctfrm_options );
+				}
+			} else {
+				update_option( 'cntctfrm_options', $cntctfrm_options );
+			}
+
+			if ( is_multisite() ) {
+				switch_to_blog( 1 );
+				register_uninstall_hook( __FILE__, 'cntctfrm_delete_options' );
+				restore_current_blog();
+			} else {
+				register_uninstall_hook( __FILE__, 'cntctfrm_delete_options' );
+			}
+		}
+
+		/* Create db table of fields list */
+		if ( ! isset( $cntctfrm_options['plugin_db_version'] ) || $cntctfrm_options['plugin_db_version'] != $db_version ) {
+			cntctfrm_db_create();
+			$cntctfrm_options['plugin_db_version'] = $db_version;
+			if ( $contact_form_multi_active ) {
+				$id_first_form = cntctfrm_get_first_form_id();
+				if ( $id_first_form || $form_id ) {
+					$id = ( $form_id ) ? $form_id : $id_first_form;
 					if ( get_option( 'cntctfrmmlt_options_' . $id ) ) {
 						update_option( 'cntctfrmmlt_options_' . $id , $cntctfrm_options );
 					} else {
@@ -225,25 +256,17 @@ if ( ! function_exists( 'cntctfrm_settings' ) ) {
 				update_option( 'cntctfrm_options', $cntctfrm_options );
 			}
 		}
+	}
+}
 
-		/* Create db table of fields list */
-		if ( ! isset( $cntctfrm_options['plugin_db_version'] ) || $cntctfrm_options['plugin_db_version'] != $db_version ) {
-			cntctfrm_db_create();
-			$cntctfrm_options['plugin_db_version'] = $db_version;
-			if ( $contact_form_multi_active ) {
-				if ( isset( $_SESSION['cntctfrmmlt_id_form'] ) || $form_id ) {
-					$id = ( $form_id ) ? $form_id : $_SESSION['cntctfrmmlt_id_form'];
-					if ( get_option( 'cntctfrmmlt_options_' . $id ) ) {
-						update_option( 'cntctfrmmlt_options_' . $id , $cntctfrm_options );
-					} else {
-						update_option( 'cntctfrmmlt_options', $cntctfrm_options );
-					}
-				} else {
-					update_option( 'cntctfrmmlt_options', $cntctfrm_options );
-				}
-			} else {
-				update_option( 'cntctfrm_options', $cntctfrm_options );
-			}
+if ( ! function_exists( 'cntctfrm_get_first_form_id' ) ) {
+	function cntctfrm_get_first_form_id() {
+		$multi_options_main = get_option( 'cntctfrmmlt_options_main' );
+		$first_form_id = key( $multi_options_main['name_id_form'] );
+		if ( empty( $multi_options_main ) || empty( $multi_options_main['name_id_form'] ) ) {
+			return false;
+		} else {
+			return $first_form_id;
 		}
 	}
 }
@@ -265,69 +288,69 @@ if ( ! function_exists( 'cntctfrm_get_option_defaults' ) ) {
 		$from_email = 'wordpress@' . $sitename;
 
 		$option_defaults = array(
-			'plugin_option_version' 	=> $cntctfrm_plugin_info["Version"],
-			'display_settings_notice'	=>	1,
-			'first_install'				=>	strtotime( "now" ),
-			'suggest_feature_banner'	=>	1,
-			'user_email'				=> 'admin',
-			'custom_email'				=> get_option("admin_email"),
-			'select_email'				=> 'custom',
-			'from_email'				=> 'custom',
-			'custom_from_email'			=> $from_email,
-			'attachment'				=> 0,
-			'attachment_explanations'	=> 1,
-			'send_copy'					=> 0,
-			'from_field'				=> get_bloginfo( 'name' ),
-			'select_from_field'			=> 'custom',
-			'display_name_field'		=> 1,
-			'display_address_field' 	=> 0,
-			'display_phone_field' 		=> 0,
-			'required_name_field' 		=> 1,
-			'required_address_field' 	=> 0,
-			'required_email_field' 		=> 1,
-			'required_phone_field' 		=> 0,
-			'required_subject_field' 	=> 1,
-			'required_message_field' 	=> 1,
-			'required_symbol'			=> '*',
-			'display_add_info' 			=> 1,
-			'display_sent_from' 		=> 1,
-			'display_date_time' 		=> 1,
-			'mail_method' 				=> 'wp-mail',
-			'display_coming_from' 		=> 1,
-			'display_user_agent' 		=> 1,
-			'language'					=> array(),
-			'change_label'				=> 0,
-			'name_label' 				=> array( 'default' => __( "Name", 'contact-form-plugin' ) . ':' ),
-			'address_label' 			=> array( 'default' => __( "Address", 'contact-form-plugin' ) . ':' ),
-			'email_label' 				=> array( 'default' => __( "Email Address", 'contact-form-plugin' ) . ':' ),
-			'phone_label' 				=> array( 'default' => __( "Phone number", 'contact-form-plugin' ) . ':' ),
-			'subject_label' 			=> array( 'default' => __( "Subject", 'contact-form-plugin' ) . ':' ),
-			'message_label' 			=> array( 'default' => __( "Message", 'contact-form-plugin' ) . ':' ),
-			'attachment_label'			=> array( 'default' => __( "Attachment", 'contact-form-plugin' ) . ':' ),
-			'attachment_tooltip'		=> array( 'default' => __( "Supported file types: HTML, TXT, CSS, GIF, PNG, JPEG, JPG, TIFF, BMP, AI, EPS, PS, CSV, RTF, PDF, DOC, DOCX, XLS, XLSX, ZIP, RAR, WAV, MP3, PPT.", 'contact-form-plugin' ) ),
-			'send_copy_label'			=> array( 'default' => __( "Send me a copy", 'contact-form-plugin' ) ),
-			'submit_label'				=> array( 'default' => __( "Submit", 'contact-form-plugin' ) ),
-			'name_error' 				=> array( 'default' => __( "Your name is required.", 'contact-form-plugin' ) ),
-			'address_error' 			=> array( 'default' => __( "Address is required.", 'contact-form-plugin' ) ),
-			'email_error' 				=> array( 'default' => __( "A valid email address is required.", 'contact-form-plugin' ) ),
-			'phone_error' 				=> array( 'default' => __( "Phone number is required.", 'contact-form-plugin' ) ),
-			'subject_error' 			=> array( 'default' => __( "Subject is required.", 'contact-form-plugin' ) ),
-			'message_error' 			=> array( 'default' => __( "Message text is required.", 'contact-form-plugin' ) ),
-			'attachment_error' 			=> array( 'default' => __( "File format is not valid.", 'contact-form-plugin' ) ),
-			'attachment_upload_error'	=> array( 'default' => __( "File upload error.", 'contact-form-plugin' ) ),
-			'attachment_move_error' 	=> array( 'default' => __( "The file could not be uploaded.", 'contact-form-plugin' ) ),
-			'attachment_size_error' 	=> array( 'default' => __( "This file is too large.", 'contact-form-plugin' ) ),
-			'captcha_error' 			=> array( 'default' => __( "Please fill out the CAPTCHA.", 'contact-form-plugin' ) ),
-			'form_error'				=> array( 'default' => __( "Please make corrections below and try again.", 'contact-form-plugin' ) ),
-			'action_after_send' 		=> 1,
-			'thank_text' 				=> array( 'default' => __( "Thank you for contacting us.", 'contact-form-plugin' ) ),
-			'redirect_url'				=> '',
-			'delete_attached_file'		=> '0',
-			'html_email'				=> 1,
-			'change_label_in_email'		=> 0,
-			'layout'                   	=> 1,
-			'submit_position' 			=> 'left',
-			'order_fields'             	=> array(
+			'plugin_option_version'     => $cntctfrm_plugin_info["Version"],
+			'display_settings_notice'   =>  1,
+			'first_install'             =>  strtotime( "now" ),
+			'suggest_feature_banner'    =>  1,
+			'user_email'                => 'admin',
+			'custom_email'              => get_option("admin_email"),
+			'select_email'              => 'custom',
+			'from_email'                => 'custom',
+			'custom_from_email'         => $from_email,
+			'attachment'                => 0,
+			'attachment_explanations'   => 1,
+			'send_copy'                 => 0,
+			'from_field'                => get_bloginfo( 'name' ),
+			'select_from_field'         => 'custom',
+			'display_name_field'        => 1,
+			'display_address_field'     => 0,
+			'display_phone_field'       => 0,
+			'required_name_field'       => 1,
+			'required_address_field'    => 0,
+			'required_email_field'      => 1,
+			'required_phone_field'      => 0,
+			'required_subject_field'    => 1,
+			'required_message_field'    => 1,
+			'required_symbol'           => '*',
+			'display_add_info'          => 1,
+			'display_sent_from'         => 1,
+			'display_date_time'         => 1,
+			'mail_method'               => 'wp-mail',
+			'display_coming_from'       => 1,
+			'display_user_agent'        => 1,
+			'language'                  => array(),
+			'change_label'              => 0,
+			'name_label'                => array( 'default' => __( "Name", 'contact-form-plugin' ) . ':' ),
+			'address_label'             => array( 'default' => __( "Address", 'contact-form-plugin' ) . ':' ),
+			'email_label'               => array( 'default' => __( "Email Address", 'contact-form-plugin' ) . ':' ),
+			'phone_label'               => array( 'default' => __( "Phone number", 'contact-form-plugin' ) . ':' ),
+			'subject_label'             => array( 'default' => __( "Subject", 'contact-form-plugin' ) . ':' ),
+			'message_label'             => array( 'default' => __( "Message", 'contact-form-plugin' ) . ':' ),
+			'attachment_label'          => array( 'default' => __( "Attachment", 'contact-form-plugin' ) . ':' ),
+			'attachment_tooltip'        => array( 'default' => __( "Supported file types: HTML, TXT, CSS, GIF, PNG, JPEG, JPG, TIFF, BMP, AI, EPS, PS, CSV, RTF, PDF, DOC, DOCX, XLS, XLSX, ZIP, RAR, WAV, MP3, PPT.", 'contact-form-plugin' ) ),
+			'send_copy_label'           => array( 'default' => __( "Send me a copy", 'contact-form-plugin' ) ),
+			'submit_label'              => array( 'default' => __( "Submit", 'contact-form-plugin' ) ),
+			'name_error'                => array( 'default' => __( "Your name is required.", 'contact-form-plugin' ) ),
+			'address_error'             => array( 'default' => __( "Address is required.", 'contact-form-plugin' ) ),
+			'email_error'               => array( 'default' => __( "A valid email address is required.", 'contact-form-plugin' ) ),
+			'phone_error'               => array( 'default' => __( "Phone number is required.", 'contact-form-plugin' ) ),
+			'subject_error'             => array( 'default' => __( "Subject is required.", 'contact-form-plugin' ) ),
+			'message_error'             => array( 'default' => __( "Message text is required.", 'contact-form-plugin' ) ),
+			'attachment_error'          => array( 'default' => __( "File format is not valid.", 'contact-form-plugin' ) ),
+			'attachment_upload_error'   => array( 'default' => __( "File upload error.", 'contact-form-plugin' ) ),
+			'attachment_move_error'     => array( 'default' => __( "The file could not be uploaded.", 'contact-form-plugin' ) ),
+			'attachment_size_error'     => array( 'default' => __( "This file is too large.", 'contact-form-plugin' ) ),
+			'captcha_error'             => array( 'default' => __( "Please fill out the CAPTCHA.", 'contact-form-plugin' ) ),
+			'form_error'                => array( 'default' => __( "Please make corrections below and try again.", 'contact-form-plugin' ) ),
+			'action_after_send'         => 1,
+			'thank_text'                => array( 'default' => __( "Thank you for contacting us.", 'contact-form-plugin' ) ),
+			'redirect_url'              => '',
+			'delete_attached_file'      => '0',
+			'html_email'                => 1,
+			'change_label_in_email'     => 0,
+			'layout'                    => 1,
+			'submit_position'           => 'left',
+			'order_fields'              => array(
 					'first_column'  => array(
 						'cntctfrm_contact_name',
 						'cntctfrm_contact_address',
@@ -342,10 +365,10 @@ if ( ! function_exists( 'cntctfrm_get_option_defaults' ) ) {
 					),
 					'second_column' => array()
 				),
-			'width'					=> array(
-				'type'			=> 'default',
-				'input_value'	=> '100',
-				'input_unit'	=> '%'
+			'width'                 => array(
+				'type'          => 'default',
+				'input_value'   => '100',
+				'input_unit'    => '%'
 			)
 		);
 
@@ -405,6 +428,13 @@ if ( ! function_exists ( 'cntctfrm_activation' ) ) {
 			cntctfrm_settings();
 			cntctfrm_db_create();
 		}
+		if ( is_multisite() ) {
+			switch_to_blog( 1 );
+			register_uninstall_hook( __FILE__, 'cntctfrm_delete_options' );
+			restore_current_blog();
+		} else {
+			register_uninstall_hook( __FILE__, 'cntctfrm_delete_options' );
+		}
 	}
 }
 
@@ -422,10 +452,10 @@ if ( ! function_exists( 'cntctfrm_related_plugins' ) ) {
 			require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 
 		/* Get Captcha options */
-		$free_active = is_plugin_active( 'captcha/captcha.php' );
+		$free_active = is_plugin_active( 'captcha-bws/captcha-bws.php' );
 		$plus_active = is_plugin_active( 'captcha-plus/captcha-plus.php' );
 		$pro_active = is_plugin_active( 'captcha-pro/captcha_pro.php' );
-		if ( $free_active || $plus_active || $pro_active ) {
+		if ( /*$free_active ||*/ $plus_active || $pro_active ) {
 			$cptch_options = get_option( 'cptch_options' );
 
 			if ( $free_active )
@@ -436,8 +466,8 @@ if ( ! function_exists( 'cntctfrm_related_plugins' ) ) {
 				$settings_page = 'captcha-plus.php';
 
 			$cntctfrm_related_plugins['captcha'] = array(
-				'options'			=> $cptch_options,
-				'settings_page'		=> $settings_page
+				'options'           => $cptch_options,
+				'settings_page'     => $settings_page
 			);
 		}
 
@@ -447,8 +477,8 @@ if ( ! function_exists( 'cntctfrm_related_plugins' ) ) {
 			$settings_page = is_plugin_active( 'google-captcha/google-captcha.php' ) ? 'google-captcha.php' : 'google-captcha-pro.php';
 
 			$cntctfrm_related_plugins['google-captcha'] = array(
-				'options'			=> $gglcptch_options,
-				'settings_page'		=> $settings_page
+				'options'           => $gglcptch_options,
+				'settings_page'     => $settings_page
 			);
 		}
 
@@ -459,8 +489,8 @@ if ( ! function_exists( 'cntctfrm_related_plugins' ) ) {
 				$settings_page = is_plugin_active_for_network( 'subscriber/subscriber.php' ) ? 'sbscrbr_settings_page' : 'sbscrbrpr_settings_page';
 
 				$cntctfrm_related_plugins['subscriber'] = array(
-					'options'			=> $sbscrbr_options,
-					'settings_page'		=> $settings_page
+					'options'           => $sbscrbr_options,
+					'settings_page'     => $settings_page
 				);
 			}
 		} else {
@@ -469,8 +499,8 @@ if ( ! function_exists( 'cntctfrm_related_plugins' ) ) {
 				$settings_page = is_plugin_active( 'subscriber/subscriber.php' ) ? 'sbscrbr_settings_page' : 'sbscrbrpr_settings_page';
 
 				$cntctfrm_related_plugins['subscriber'] = array(
-					'options'			=> $sbscrbr_options,
-					'settings_page'		=> $settings_page
+					'options'           => $sbscrbr_options,
+					'settings_page'     => $settings_page
 				);
 			}
 		}
@@ -481,8 +511,8 @@ if ( ! function_exists( 'cntctfrm_related_plugins' ) ) {
 
 			$settings_page = is_plugin_active( 'contact-form-to-db/contact_form_to_db.php' ) ? 'cntctfrmtdb_settings' : 'cntctfrmtdbpr_settings';
 			$cntctfrm_related_plugins['contact-form-to-db'] = array(
-				'options'			=> $cntctfrmtdb_options,
-				'settings_page'		=> $settings_page
+				'options'           => $cntctfrmtdb_options,
+				'settings_page'     => $settings_page
 			);
 		}
 	}
@@ -527,22 +557,22 @@ if ( ! function_exists( 'cntctfrm_get_ordered_fields' ) ) {
 			if ( array_key_exists( 'subscriber', $cntctfrm_related_plugins ) )
 				$display_subscriber = ! empty( $cntctfrm_related_plugins['subscriber']['options']['contact_form'] );
 		} else {
-			$display_captcha		= ( isset( $cntctfrm_options['display_captcha'] ) && 1 == $cntctfrm_options['display_captcha'] ) ? true : false;
-			$display_google_captcha	= ( isset( $cntctfrm_options['display_google_captcha'] ) && 1 == $cntctfrm_options['display_google_captcha'] ) ? true : false;
-			$display_subscriber		= ( isset( $cntctfrm_options['display_subscribe'] ) && 1 == $cntctfrm_options['display_subscribe'] ) ? true : false;
+			$display_captcha        = ( isset( $cntctfrm_options['display_captcha'] ) && 1 == $cntctfrm_options['display_captcha'] ) ? true : false;
+			$display_google_captcha = ( isset( $cntctfrm_options['display_google_captcha'] ) && 1 == $cntctfrm_options['display_google_captcha'] ) ? true : false;
+			$display_subscriber     = ( isset( $cntctfrm_options['display_subscribe'] ) && 1 == $cntctfrm_options['display_subscribe'] ) ? true : false;
 		}
 
 		$default_order_fields = array(
-			'cntctfrm_contact_name'			=> ( 1 == $cntctfrm_options['display_name_field'] ) ? true : false,
-			'cntctfrm_contact_address'		=> ( 1 == $cntctfrm_options['display_address_field'] ) ? true : false,
-			'cntctfrm_contact_email'		=> true,
-			'cntctfrm_contact_phone'		=> ( 1 == $cntctfrm_options['display_phone_field'] ) ? true : false,
-			'cntctfrm_contact_subject'		=> true,
-			'cntctfrm_contact_message'		=> true,
-			'cntctfrm_contact_attachment'	=> ( 1 == $cntctfrm_options['attachment'] ) ? true : false,
-			'cntctfrm_contact_send_copy'	=> ( 1 == $cntctfrm_options['send_copy'] ) ? true : false,
-			'cntctfrm_subscribe'			=> $display_subscriber,
-			'cntctfrm_captcha'				=> $display_captcha || $display_google_captcha ? true : false,
+			'cntctfrm_contact_name'         => ( 1 == $cntctfrm_options['display_name_field'] ) ? true : false,
+			'cntctfrm_contact_address'      => ( 1 == $cntctfrm_options['display_address_field'] ) ? true : false,
+			'cntctfrm_contact_email'        => true,
+			'cntctfrm_contact_phone'        => ( 1 == $cntctfrm_options['display_phone_field'] ) ? true : false,
+			'cntctfrm_contact_subject'      => true,
+			'cntctfrm_contact_message'      => true,
+			'cntctfrm_contact_attachment'   => ( 1 == $cntctfrm_options['attachment'] ) ? true : false,
+			'cntctfrm_contact_send_copy'    => ( 1 == $cntctfrm_options['send_copy'] ) ? true : false,
+			'cntctfrm_subscribe'            => $display_subscriber,
+			'cntctfrm_captcha'              => $display_captcha || $display_google_captcha ? true : false,
 		);
 
 		$display_fields = array();
@@ -670,15 +700,15 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 			$options_submit['from_email'] = $_POST['cntctfrm_from_email'];
 			$options_submit['custom_from_email'] = stripslashes( esc_html( $_POST['cntctfrm_custom_from_email'] ) );
 
-			$options_submit['mail_method']				= $_POST['cntctfrm_mail_method'];
-			$options_submit['from_field']				= stripslashes( esc_html( $_POST['cntctfrm_from_field'] ) );
-			$options_submit['select_from_field']		= $_POST['cntctfrm_select_from_field'];
-			$options_submit['display_name_field']		= isset( $_POST['cntctfrm_display_name_field'] ) ? 1 : 0;
-			$options_submit['display_address_field']	= isset( $_POST['cntctfrm_display_address_field'] ) ? 1 : 0;
-			$options_submit['display_phone_field']		= isset( $_POST['cntctfrm_display_phone_field'] ) ? 1 : 0;
-			$options_submit['attachment']				= isset( $_POST['cntctfrm_attachment'] ) ? $_POST['cntctfrm_attachment'] : 0;
-			$options_submit['attachment_explanations']	= isset( $_POST['cntctfrm_attachment_explanations'] ) ? $_POST['cntctfrm_attachment_explanations'] : 0;
-			$options_submit['send_copy']				= isset( $_POST['cntctfrm_send_copy'] ) ? $_POST['cntctfrm_send_copy'] : 0;
+			$options_submit['mail_method']              = $_POST['cntctfrm_mail_method'];
+			$options_submit['from_field']               = stripslashes( esc_html( $_POST['cntctfrm_from_field'] ) );
+			$options_submit['select_from_field']        = $_POST['cntctfrm_select_from_field'];
+			$options_submit['display_name_field']       = isset( $_POST['cntctfrm_display_name_field'] ) ? 1 : 0;
+			$options_submit['display_address_field']    = isset( $_POST['cntctfrm_display_address_field'] ) ? 1 : 0;
+			$options_submit['display_phone_field']      = isset( $_POST['cntctfrm_display_phone_field'] ) ? 1 : 0;
+			$options_submit['attachment']               = isset( $_POST['cntctfrm_attachment'] ) ? $_POST['cntctfrm_attachment'] : 0;
+			$options_submit['attachment_explanations']  = isset( $_POST['cntctfrm_attachment_explanations'] ) ? $_POST['cntctfrm_attachment_explanations'] : 0;
+			$options_submit['send_copy']                = isset( $_POST['cntctfrm_send_copy'] ) ? $_POST['cntctfrm_send_copy'] : 0;
 
 			$options_submit['delete_attached_file'] = isset( $_POST['cntctfrm_delete_attached_file'] ) ? $_POST['cntctfrm_delete_attached_file'] : 0;
 
@@ -689,10 +719,10 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 				cntctfrm_remove_language();
 
 			if ( $contact_form_multi_active ) {
-				$options_submit['display_captcha']			= isset( $_POST['cntctfrm_display_captcha'] ) ? 1 : 0;
-				$options_submit['display_google_captcha']	= isset( $_POST['cntctfrm_display_google_captcha'] ) ? 1 : 0;
-				$options_submit['display_subscribe']		= isset( $_POST['cntctfrm_display_subscriber'] ) ? 1 : 0;
-				$options_submit['save_email_to_db']			= isset( $_POST['cntctfrm_save_email_to_db'] ) ? 1 : 0;
+				$options_submit['display_captcha']          = isset( $_POST['cntctfrm_display_captcha'] ) ? 1 : 0;
+				$options_submit['display_google_captcha']   = isset( $_POST['cntctfrm_display_google_captcha'] ) ? 1 : 0;
+				$options_submit['display_subscribe']        = isset( $_POST['cntctfrm_display_subscriber'] ) ? 1 : 0;
+				$options_submit['save_email_to_db']         = isset( $_POST['cntctfrm_save_email_to_db'] ) ? 1 : 0;
 			} else {
 				/* Update related plugins options if Contact Form Multi is not active */
 				if ( array_key_exists( 'captcha', $cntctfrm_related_plugins ) ) {
@@ -729,120 +759,120 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 				$options_submit['required_name_field'] = isset( $_POST['cntctfrm_required_name_field'] ) ? 1 : 0;
 			}
 			if ( 0 == $options_submit['display_address_field'] ) {
-				$options_submit['required_address_field']	= 0;
+				$options_submit['required_address_field']   = 0;
 			} else {
-				$options_submit['required_address_field']	= isset( $_POST['cntctfrm_required_address_field'] ) ? 1 : 0;
+				$options_submit['required_address_field']   = isset( $_POST['cntctfrm_required_address_field'] ) ? 1 : 0;
 			}
 			$options_submit['required_email_field'] = isset( $_POST['cntctfrm_required_email_field'] ) ? 1 : 0;
 			if ( 0 == $options_submit['display_phone_field'] ) {
-				$options_submit['required_phone_field']	= 0;
+				$options_submit['required_phone_field'] = 0;
 			} else {
-				$options_submit['required_phone_field']	= isset( $_POST['cntctfrm_required_phone_field'] ) ? 1 : 0;
+				$options_submit['required_phone_field'] = isset( $_POST['cntctfrm_required_phone_field'] ) ? 1 : 0;
 			}
-			$options_submit['required_subject_field']	= isset( $_POST['cntctfrm_required_subject_field'] ) ? 1 : 0;
-			$options_submit['required_message_field']	= isset( $_POST['cntctfrm_required_message_field'] ) ? 1 : 0;
+			$options_submit['required_subject_field']   = isset( $_POST['cntctfrm_required_subject_field'] ) ? 1 : 0;
+			$options_submit['required_message_field']   = isset( $_POST['cntctfrm_required_message_field'] ) ? 1 : 0;
 
-			$options_submit['required_symbol']			= isset( $_POST['cntctfrm_required_symbol'] ) ? stripslashes( esc_html( $_POST['cntctfrm_required_symbol'] ) ) : '*';
-			$options_submit['html_email'] 				= isset( $_POST['cntctfrm_html_email'] ) ? 1 : 0;
-			$options_submit['display_add_info']			= isset( $_POST['cntctfrm_display_add_info'] ) ? 1 : 0;
+			$options_submit['required_symbol']          = isset( $_POST['cntctfrm_required_symbol'] ) ? stripslashes( esc_html( $_POST['cntctfrm_required_symbol'] ) ) : '*';
+			$options_submit['html_email']               = isset( $_POST['cntctfrm_html_email'] ) ? 1 : 0;
+			$options_submit['display_add_info']         = isset( $_POST['cntctfrm_display_add_info'] ) ? 1 : 0;
 
-			$options_submit['display_sent_from']		= isset( $_POST['cntctfrm_display_sent_from'] ) ? 1 : 0;
-			$options_submit['display_date_time']		= isset( $_POST['cntctfrm_display_date_time'] ) ? 1 : 0;
-			$options_submit['display_coming_from']		= isset( $_POST['cntctfrm_display_coming_from'] ) ? 1 : 0;
-			$options_submit['display_user_agent']		= isset( $_POST['cntctfrm_display_user_agent'] ) ? 1 : 0;
+			$options_submit['display_sent_from']        = isset( $_POST['cntctfrm_display_sent_from'] ) ? 1 : 0;
+			$options_submit['display_date_time']        = isset( $_POST['cntctfrm_display_date_time'] ) ? 1 : 0;
+			$options_submit['display_coming_from']      = isset( $_POST['cntctfrm_display_coming_from'] ) ? 1 : 0;
+			$options_submit['display_user_agent']       = isset( $_POST['cntctfrm_display_user_agent'] ) ? 1 : 0;
 
 			if ( 0 == $options_submit['display_sent_from'] && 0 == $options_submit['display_date_time'] && 0 == $options_submit['display_coming_from'] && 0 == $options_submit['display_user_agent'] )
 				$options_submit['display_add_info'] = 0;
 
 			if ( 0 == $options_submit['display_add_info'] ) {
-				$options_submit['display_sent_from']	= 1;
-				$options_submit['display_date_time']	= 1;
-				$options_submit['display_coming_from']	= 1;
-				$options_submit['display_user_agent']	= 1;
+				$options_submit['display_sent_from']    = 1;
+				$options_submit['display_date_time']    = 1;
+				$options_submit['display_coming_from']  = 1;
+				$options_submit['display_user_agent']   = 1;
 			}
 
-			$options_submit['change_label']				= isset( $_POST['cntctfrm_change_label'] ) ? 1 : 0;
-			$options_submit['change_label_in_email']	= isset( $_POST['cntctfrm_change_label_in_email'] ) ? 1 : 0;
+			$options_submit['change_label']             = isset( $_POST['cntctfrm_change_label'] ) ? 1 : 0;
+			$options_submit['change_label_in_email']    = isset( $_POST['cntctfrm_change_label_in_email'] ) ? 1 : 0;
 
 			if ( 1 == $options_submit['change_label'] ) {
 				foreach ( $_POST['cntctfrm_name_label'] as $key => $val ) {
-					$options_submit['name_label'][ $key ]				= stripcslashes( htmlspecialchars( $_POST['cntctfrm_name_label'][ $key ] ) );
-					$options_submit['address_label'][ $key ]			= stripcslashes( htmlspecialchars( $_POST['cntctfrm_address_label'][ $key ] ) );
-					$options_submit['email_label'][ $key ]				= stripcslashes( htmlspecialchars( $_POST['cntctfrm_email_label'][ $key ] ) );
-					$options_submit['phone_label'][ $key ]				= stripcslashes( htmlspecialchars( $_POST['cntctfrm_phone_label'][ $key ] ) );
-					$options_submit['subject_label'][ $key ]			= stripcslashes( htmlspecialchars( $_POST['cntctfrm_subject_label'][ $key ] ) );
-					$options_submit['message_label'][ $key ]			= stripcslashes( htmlspecialchars( $_POST['cntctfrm_message_label'][ $key ] ) );
-					$options_submit['attachment_label'][ $key ]			= stripcslashes( htmlspecialchars( $_POST['cntctfrm_attachment_label'][ $key ] ) );
-					$options_submit['attachment_tooltip'][ $key ]		= stripcslashes( htmlspecialchars( $_POST['cntctfrm_attachment_tooltip'][ $key ] ) );
-					$options_submit['send_copy_label'][ $key ]			= stripcslashes( htmlspecialchars( $_POST['cntctfrm_send_copy_label'][ $key ] ) );
-					$options_submit['thank_text'][ $key ]				= stripcslashes( htmlspecialchars( $_POST['cntctfrm_thank_text'][ $key ] ) );
-					$options_submit['submit_label'][ $key ]				= stripcslashes( htmlspecialchars( $_POST['cntctfrm_submit_label'][ $key ] ) );
-					$options_submit['name_error'][ $key ]				= stripcslashes( htmlspecialchars( $_POST['cntctfrm_name_error'][ $key ] ) );
-					$options_submit['address_error'][ $key ]			= stripcslashes( htmlspecialchars( $_POST['cntctfrm_address_error'][ $key ] ) );
-					$options_submit['email_error'][ $key ]				= stripcslashes( htmlspecialchars( $_POST['cntctfrm_email_error'][ $key ] ) );
-					$options_submit['phone_error'][ $key ]				= stripcslashes( htmlspecialchars( $_POST['cntctfrm_phone_error'][ $key ] ) );
-					$options_submit['subject_error'][ $key ]			= stripcslashes( htmlspecialchars( $_POST['cntctfrm_subject_error'][ $key ] ) );
-					$options_submit['message_error'][ $key ]			= stripcslashes( htmlspecialchars( $_POST['cntctfrm_message_error'][ $key ] ) );
-					$options_submit['attachment_error'][ $key ]			= stripcslashes( htmlspecialchars( $_POST['cntctfrm_attachment_error'][ $key ] ) );
-					$options_submit['attachment_upload_error'][ $key ]	= stripcslashes( htmlspecialchars( $_POST['cntctfrm_attachment_upload_error'][ $key ] ) );
-					$options_submit['attachment_move_error'][ $key ]	= stripcslashes( htmlspecialchars( $_POST['cntctfrm_attachment_move_error'][ $key ] ) );
-					$options_submit['attachment_size_error'][ $key ]	= stripcslashes( htmlspecialchars( $_POST['cntctfrm_attachment_size_error'][ $key ] ) );
-					$options_submit['captcha_error'][ $key ]			= stripcslashes( htmlspecialchars( $_POST['cntctfrm_captcha_error'][ $key ] ) );
-					$options_submit['form_error'][ $key ]				= stripcslashes( htmlspecialchars( $_POST['cntctfrm_form_error'][ $key ] ) );
+					$options_submit['name_label'][ $key ]               = stripcslashes( htmlspecialchars( $_POST['cntctfrm_name_label'][ $key ] ) );
+					$options_submit['address_label'][ $key ]            = stripcslashes( htmlspecialchars( $_POST['cntctfrm_address_label'][ $key ] ) );
+					$options_submit['email_label'][ $key ]              = stripcslashes( htmlspecialchars( $_POST['cntctfrm_email_label'][ $key ] ) );
+					$options_submit['phone_label'][ $key ]              = stripcslashes( htmlspecialchars( $_POST['cntctfrm_phone_label'][ $key ] ) );
+					$options_submit['subject_label'][ $key ]            = stripcslashes( htmlspecialchars( $_POST['cntctfrm_subject_label'][ $key ] ) );
+					$options_submit['message_label'][ $key ]            = stripcslashes( htmlspecialchars( $_POST['cntctfrm_message_label'][ $key ] ) );
+					$options_submit['attachment_label'][ $key ]         = stripcslashes( htmlspecialchars( $_POST['cntctfrm_attachment_label'][ $key ] ) );
+					$options_submit['attachment_tooltip'][ $key ]       = stripcslashes( htmlspecialchars( $_POST['cntctfrm_attachment_tooltip'][ $key ] ) );
+					$options_submit['send_copy_label'][ $key ]          = stripcslashes( htmlspecialchars( $_POST['cntctfrm_send_copy_label'][ $key ] ) );
+					$options_submit['thank_text'][ $key ]               = stripcslashes( htmlspecialchars( $_POST['cntctfrm_thank_text'][ $key ] ) );
+					$options_submit['submit_label'][ $key ]             = stripcslashes( htmlspecialchars( $_POST['cntctfrm_submit_label'][ $key ] ) );
+					$options_submit['name_error'][ $key ]               = stripcslashes( htmlspecialchars( $_POST['cntctfrm_name_error'][ $key ] ) );
+					$options_submit['address_error'][ $key ]            = stripcslashes( htmlspecialchars( $_POST['cntctfrm_address_error'][ $key ] ) );
+					$options_submit['email_error'][ $key ]              = stripcslashes( htmlspecialchars( $_POST['cntctfrm_email_error'][ $key ] ) );
+					$options_submit['phone_error'][ $key ]              = stripcslashes( htmlspecialchars( $_POST['cntctfrm_phone_error'][ $key ] ) );
+					$options_submit['subject_error'][ $key ]            = stripcslashes( htmlspecialchars( $_POST['cntctfrm_subject_error'][ $key ] ) );
+					$options_submit['message_error'][ $key ]            = stripcslashes( htmlspecialchars( $_POST['cntctfrm_message_error'][ $key ] ) );
+					$options_submit['attachment_error'][ $key ]         = stripcslashes( htmlspecialchars( $_POST['cntctfrm_attachment_error'][ $key ] ) );
+					$options_submit['attachment_upload_error'][ $key ]  = stripcslashes( htmlspecialchars( $_POST['cntctfrm_attachment_upload_error'][ $key ] ) );
+					$options_submit['attachment_move_error'][ $key ]    = stripcslashes( htmlspecialchars( $_POST['cntctfrm_attachment_move_error'][ $key ] ) );
+					$options_submit['attachment_size_error'][ $key ]    = stripcslashes( htmlspecialchars( $_POST['cntctfrm_attachment_size_error'][ $key ] ) );
+					$options_submit['captcha_error'][ $key ]            = stripcslashes( htmlspecialchars( $_POST['cntctfrm_captcha_error'][ $key ] ) );
+					$options_submit['form_error'][ $key ]               = stripcslashes( htmlspecialchars( $_POST['cntctfrm_form_error'][ $key ] ) );
 				}
 			} else {
 				$option_defaults = cntctfrm_get_option_defaults();
 
 				if ( empty( $cntctfrm_options['language'] ) ) {
-					$options_submit['name_label']				= $option_defaults['name_label'];
-					$options_submit['address_label']			= $option_defaults['address_label'];
-					$options_submit['email_label']				= $option_defaults['email_label'];
-					$options_submit['phone_label']				= $option_defaults['phone_label'];
-					$options_submit['subject_label']			= $option_defaults['subject_label'];
-					$options_submit['message_label']			= $option_defaults['message_label'];
-					$options_submit['attachment_label']			= $option_defaults['attachment_label'];
-					$options_submit['attachment_tooltip']		= $option_defaults['attachment_tooltip'];
-					$options_submit['send_copy_label']			= $option_defaults['send_copy_label'];
-					$options_submit['thank_text']				= $_POST['cntctfrm_thank_text'];
-					$options_submit['submit_label']				= $option_defaults['submit_label'];
-					$options_submit['name_error']				= $option_defaults['name_error'];
-					$options_submit['address_error']			= $option_defaults['address_error'];
-					$options_submit['email_error']				= $option_defaults['email_error'];
-					$options_submit['phone_error']				= $option_defaults['phone_error'];
-					$options_submit['subject_error']			= $option_defaults['subject_error'];
-					$options_submit['message_error']			= $option_defaults['message_error'];
-					$options_submit['attachment_error']			= $option_defaults['attachment_error'];
-					$options_submit['attachment_upload_error']	= $option_defaults['attachment_upload_error'];
-					$options_submit['attachment_move_error']	= $option_defaults['attachment_move_error'];
-					$options_submit['attachment_size_error']	= $option_defaults['attachment_size_error'];
-					$options_submit['captcha_error']			= $option_defaults['captcha_error'];
-					$options_submit['form_error']				= $option_defaults['form_error'];
+					$options_submit['name_label']               = $option_defaults['name_label'];
+					$options_submit['address_label']            = $option_defaults['address_label'];
+					$options_submit['email_label']              = $option_defaults['email_label'];
+					$options_submit['phone_label']              = $option_defaults['phone_label'];
+					$options_submit['subject_label']            = $option_defaults['subject_label'];
+					$options_submit['message_label']            = $option_defaults['message_label'];
+					$options_submit['attachment_label']         = $option_defaults['attachment_label'];
+					$options_submit['attachment_tooltip']       = $option_defaults['attachment_tooltip'];
+					$options_submit['send_copy_label']          = $option_defaults['send_copy_label'];
+					$options_submit['thank_text']               = $_POST['cntctfrm_thank_text'];
+					$options_submit['submit_label']             = $option_defaults['submit_label'];
+					$options_submit['name_error']               = $option_defaults['name_error'];
+					$options_submit['address_error']            = $option_defaults['address_error'];
+					$options_submit['email_error']              = $option_defaults['email_error'];
+					$options_submit['phone_error']              = $option_defaults['phone_error'];
+					$options_submit['subject_error']            = $option_defaults['subject_error'];
+					$options_submit['message_error']            = $option_defaults['message_error'];
+					$options_submit['attachment_error']         = $option_defaults['attachment_error'];
+					$options_submit['attachment_upload_error']  = $option_defaults['attachment_upload_error'];
+					$options_submit['attachment_move_error']    = $option_defaults['attachment_move_error'];
+					$options_submit['attachment_size_error']    = $option_defaults['attachment_size_error'];
+					$options_submit['captcha_error']            = $option_defaults['captcha_error'];
+					$options_submit['form_error']               = $option_defaults['form_error'];
 					foreach ( $options_submit['thank_text'] as $key => $val ) {
 						$options_submit['thank_text'][ $key ] = stripcslashes( htmlspecialchars( $val ) );
 					}
 				} else {
-					$options_submit['name_label']['default']				= $option_defaults['name_label']['default'];
-					$options_submit['address_label']['default']				= $option_defaults['address_label']['default'];
-					$options_submit['email_label']['default']				= $option_defaults['email_label']['default'];
-					$options_submit['phone_label']['default']				= $option_defaults['phone_label']['default'];
-					$options_submit['subject_label']['default']				= $option_defaults['subject_label']['default'];
-					$options_submit['message_label']['default']				= $option_defaults['message_label']['default'];
-					$options_submit['attachment_label']['default']			= $option_defaults['attachment_label']['default'];
-					$options_submit['attachment_tooltip']['default']		= $option_defaults['attachment_tooltip']['default'];
-					$options_submit['send_copy_label']['default']			= $option_defaults['send_copy_label']['default'];
-					$options_submit['submit_label']['default']				= $option_defaults['submit_label']['default'];
-					$options_submit['name_error']['default']				= $option_defaults['name_error']['default'];
-					$options_submit['address_error']['default']				= $option_defaults['address_error']['default'];
-					$options_submit['email_error']['default']				= $option_defaults['email_error']['default'];
-					$options_submit['phone_error']['default']				= $option_defaults['phone_error']['default'];
-					$options_submit['subject_error']['default']				= $option_defaults['subject_error']['default'];
-					$options_submit['message_error']['default']				= $option_defaults['message_error']['default'];
-					$options_submit['attachment_error']['default']			= $option_defaults['attachment_error']['default'];
-					$options_submit['attachment_upload_error']['default']	= $option_defaults['attachment_upload_error']['default'];
-					$options_submit['attachment_move_error']['default']		= $option_defaults['attachment_move_error']['default'];
-					$options_submit['attachment_size_error']['default']		= $option_defaults['attachment_size_error']['default'];
-					$options_submit['captcha_error']['default']				= $option_defaults['captcha_error']['default'];
-					$options_submit['form_error']['default']				= $option_defaults['form_error']['default'];
+					$options_submit['name_label']['default']                = $option_defaults['name_label']['default'];
+					$options_submit['address_label']['default']             = $option_defaults['address_label']['default'];
+					$options_submit['email_label']['default']               = $option_defaults['email_label']['default'];
+					$options_submit['phone_label']['default']               = $option_defaults['phone_label']['default'];
+					$options_submit['subject_label']['default']             = $option_defaults['subject_label']['default'];
+					$options_submit['message_label']['default']             = $option_defaults['message_label']['default'];
+					$options_submit['attachment_label']['default']          = $option_defaults['attachment_label']['default'];
+					$options_submit['attachment_tooltip']['default']        = $option_defaults['attachment_tooltip']['default'];
+					$options_submit['send_copy_label']['default']           = $option_defaults['send_copy_label']['default'];
+					$options_submit['submit_label']['default']              = $option_defaults['submit_label']['default'];
+					$options_submit['name_error']['default']                = $option_defaults['name_error']['default'];
+					$options_submit['address_error']['default']             = $option_defaults['address_error']['default'];
+					$options_submit['email_error']['default']               = $option_defaults['email_error']['default'];
+					$options_submit['phone_error']['default']               = $option_defaults['phone_error']['default'];
+					$options_submit['subject_error']['default']             = $option_defaults['subject_error']['default'];
+					$options_submit['message_error']['default']             = $option_defaults['message_error']['default'];
+					$options_submit['attachment_error']['default']          = $option_defaults['attachment_error']['default'];
+					$options_submit['attachment_upload_error']['default']   = $option_defaults['attachment_upload_error']['default'];
+					$options_submit['attachment_move_error']['default']     = $option_defaults['attachment_move_error']['default'];
+					$options_submit['attachment_size_error']['default']     = $option_defaults['attachment_size_error']['default'];
+					$options_submit['captcha_error']['default']             = $option_defaults['captcha_error']['default'];
+					$options_submit['form_error']['default']                = $option_defaults['form_error']['default'];
 
 					foreach ( $_POST['cntctfrm_thank_text'] as $key => $val ) {
 						$options_submit['thank_text'][ $key ] = stripcslashes( htmlspecialchars( $_POST['cntctfrm_thank_text'][ $key ] ) );
@@ -856,7 +886,7 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 			}
 
 			$options_submit['action_after_send'] = $_POST['cntctfrm_action_after_send'];
-			$options_submit['redirect_url']	= esc_url( $_POST['cntctfrm_redirect_url'] );
+			$options_submit['redirect_url'] = esc_url( $_POST['cntctfrm_redirect_url'] );
 			$cntctfrm_options = array_merge( $cntctfrm_options, $options_submit );
 
 			if ( 0 == $options_submit['action_after_send']
@@ -929,10 +959,10 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 			$option_defaults = cntctfrm_get_option_defaults();
 			if ( $contact_form_multi_active ) {
 				$contact_form_multi_options = array(
-					'display_captcha'			=> 0,
-					'display_google_captcha'	=> 0,
-					'display_subscribe'			=> 0,
-					'save_email_to_db'			=> 1,
+					'display_captcha'           => 0,
+					'display_google_captcha'    => 0,
+					'display_subscribe'         => 0,
+					'save_email_to_db'          => 1,
 				);
 				$option_defaults = array_merge( $option_defaults, $contact_form_multi_options );
 			}
@@ -1449,17 +1479,16 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 													</span>
 												<?php }
 											} else { ?>
-												<label><input disabled="disabled" type="checkbox" name="cntctfrm_display_subscriber" value="1" />	Subscriber by BestWebSoft</label>
+												<label><input disabled="disabled" type="checkbox" name="cntctfrm_display_subscriber" value="1" />   Subscriber by BestWebSoft</label>
 												<span class="bws_info">
-													<?php printf( '<a href="https://bestwebsoft.com/products/wordpress/plugins/subscriber/?k=a9dfd3fa8513784c36622993b350b19e&amp;pn=77&amp;v=%s&amp;wp_v=%s">%s Subscriber</a>', $cntctfrm_plugin_info["Version"], $wp_version, __( 'Download', 'contact-form-plugin' ) ); ?>
+													<?php printf( '<a href="https://bestwebsoft.com/products/wordpress/plugins/subscriber/?k=a9dfd3fa8513784c36622993b350b19e&amp;pn=77&amp;v=%s&amp;wp_v=%s" target="_blank">%s Subscriber</a>', $cntctfrm_plugin_info["Version"], $wp_version, __( 'Download', 'contact-form-plugin' ) ); ?>
 												</span>
 											<?php } ?>
 										</div>
 										<div style="clear: both;">
-											<?php if ( array_key_exists( 'captcha/captcha.php', $all_plugins ) || array_key_exists( 'captcha-plus/captcha-plus.php', $all_plugins ) || array_key_exists( 'captcha-pro/captcha_pro.php', $all_plugins ) ) {
+											<?php if ( /*array_key_exists( 'captcha-bws/captcha-bws.php', $all_plugins ) ||*/ array_key_exists( 'captcha-plus/captcha-plus.php', $all_plugins ) || array_key_exists( 'captcha-pro/captcha_pro.php', $all_plugins ) ) {
 												if ( array_key_exists( 'captcha', $cntctfrm_related_plugins ) ) {
 													$captcha_enabled = ! empty( $cntctfrm_related_plugins['captcha']['options']['forms']['bws_contact']['enable'] ) ? true : false;
-
 													if ( ! $contact_form_multi_active ) {
 														$display_captcha = $captcha_enabled;
 													} else {
@@ -1491,7 +1520,7 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 											} else { ?>
 												<label><input disabled="disabled" type="checkbox" name="cntctfrm_display_captcha" value="1" /> Captcha by BestWebSoft</label>
 												<span class="bws_info">
-													<?php printf( '<a href="https://bestwebsoft.com/products/wordpress/plugins/captcha/?k=19ac1e9b23bea947cfc4a9b8e3326c03&amp;pn=77&amp;v=%s&amp;wp_v=%s">%s Captcha</a>', $cntctfrm_plugin_info["Version"], $wp_version, __( 'Download', 'contact-form-plugin' ) ) ?>
+													<?php printf( '<a href="https://bestwebsoft.com/products/wordpress/plugins/captcha/?k=19ac1e9b23bea947cfc4a9b8e3326c03&amp;pn=77&amp;v=%s&amp;wp_v=%s" target="_blank">%s Captcha</a>', $cntctfrm_plugin_info["Version"], $wp_version, __( 'Download', 'contact-form-plugin' ) ) ?>
 												</span>
 											<?php } ?>
 										</div>
@@ -1505,10 +1534,10 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 													}
 
 													if ( ! $contact_form_multi_active || ! empty( $cntctfrm_related_plugins['google-captcha']['options']['contact_form'] ) ) { ?>
-														<label><input type="checkbox" name="cntctfrm_display_google_captcha" value="1" <?php checked( $display_google_captcha ); ?> /> Google Captcha (reCaptcha) by BestWebSoft</label>
+														<label><input type="checkbox" name="cntctfrm_display_google_captcha" value="1" <?php checked( $display_google_captcha ); ?> /> Google Captcha (reCAPTCHA) by BestWebSoft</label>
 													<?php } else { ?>
 														<label>
-															<input type="checkbox" name="cntctfrm_display_google_captcha" value="1" disabled="disabled" <?php checked( $display_google_captcha ); ?> /> Google Captcha (reCaptcha) by BestWebSoft
+															<input type="checkbox" name="cntctfrm_display_google_captcha" value="1" disabled="disabled" <?php checked( $display_google_captcha ); ?> /> Google Captcha (reCAPTCHA) by BestWebSoft
 															<span class="bws_info">&nbsp;(<?php _e( 'Please activate the appropriate option on', 'contact-form-plugin' ) ?>&nbsp;
 																<?php printf( '<a href="%s" target="_blank"> Google Captcha %s</a>&nbsp;)',
 																self_admin_url( '/admin.php?page=' . $cntctfrm_related_plugins['google-captcha']['settings_page'] ),
@@ -1517,14 +1546,14 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 														</label>
 													<?php }
 												} else { ?>
-													<label><input disabled="disabled" type="checkbox" name="cntctfrm_display_google_captcha" value="1" /> Google Captcha (reCaptcha) by BestWebSoft</label>
+													<label><input disabled="disabled" type="checkbox" name="cntctfrm_display_google_captcha" value="1" /> Google Captcha (reCAPTCHA) by BestWebSoft</label>
 													<span class="bws_info">
 														<?php printf( '<a href="%s" target="_blank">%s Google Captcha</a>', self_admin_url( 'plugins.php' ), __( 'Activate', 'contact-form-plugin' ) ); ?>
 													</span>
 												<?php }
 											} else { ?>
-												<label><input disabled="disabled" type="checkbox" name="cntctfrm_display_google_captcha" value="1" /> Google Captcha (reCaptcha) by BestWebSoft</label> <span class="bws_info">
-													<?php printf( '<a href="https://bestwebsoft.com/products/wordpress/plugins/google-captcha/?k=7d74e61dd1cea23d0e9bf2fa88b5b117&amp;pn=77&amp;v=%s&amp;wp_v=%s">%s Google Captcha</a>', $cntctfrm_plugin_info["Version"], $wp_version, __( 'Download', 'contact-form-plugin' ) ) ?>
+												<label><input disabled="disabled" type="checkbox" name="cntctfrm_display_google_captcha" value="1" /> Google Captcha (reCAPTCHA) by BestWebSoft</label> <span class="bws_info">
+													<?php printf( '<a href="https://bestwebsoft.com/products/wordpress/plugins/google-captcha/?k=7d74e61dd1cea23d0e9bf2fa88b5b117&amp;pn=77&amp;v=%s&amp;wp_v=%s" target="_blank">%s Google Captcha</a>', $cntctfrm_plugin_info["Version"], $wp_version, __( 'Download', 'contact-form-plugin' ) ) ?>
 													</span>
 											<?php } ?>
 										</div>
@@ -1570,10 +1599,10 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 									</td>
 									<td class="cntctfrm_display_add_info_block" <?php if ( '0' == $cntctfrm_options['display_add_info'] ) echo 'style="display:none"'; ?>>
 										<fieldset>
-											<label><input type="checkbox" id="cntctfrm_display_sent_from" name="cntctfrm_display_sent_from" value="1" <?php checked( '1', $cntctfrm_options['display_sent_from'] ); ?> /> <?php _e( "Sent from (IP address)", 'contact-form-plugin' ); ?></label> <label class="bws_info"><?php _e( "Example: Sent from (IP address):	127.0.0.1", 'contact-form-plugin' ); ?></label><br />
-											<label><input type="checkbox" id="cntctfrm_display_date_time" name="cntctfrm_display_date_time" value="1" <?php checked( '1', $cntctfrm_options['display_date_time'] ); ?> /> <?php _e( "Date/Time", 'contact-form-plugin' ); ?></label> <label class="bws_info"><?php _e( "Example: Date/Time:	August 19, 2013 8:50 pm", 'contact-form-plugin' ); ?></label><br />
-											<label><input type="checkbox" id="cntctfrm_display_coming_from" name="cntctfrm_display_coming_from" value="1" <?php checked( '1', $cntctfrm_options['display_coming_from'] ); ?> /> <?php _e( "Sent from (referer)", 'contact-form-plugin' ); ?></label> <label class="bws_info"><?php _e( "Example: Sent from (referer):	https://bestwebsoft.com/contacts/contact-us/", 'contact-form-plugin' ); ?></label><br />
-											<label><input type="checkbox" id="cntctfrm_display_user_agent" name="cntctfrm_display_user_agent" value="1" <?php checked( '1', $cntctfrm_options['display_user_agent'] ); ?> /> <?php _e( "Using (user agent)", 'contact-form-plugin' ); ?></label> <label class="bws_info"><?php _e( "Example: Using (user agent):	Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36", 'contact-form-plugin' ); ?></label>
+											<label><input type="checkbox" id="cntctfrm_display_sent_from" name="cntctfrm_display_sent_from" value="1" <?php checked( '1', $cntctfrm_options['display_sent_from'] ); ?> /> <?php _e( "Sent from (IP address)", 'contact-form-plugin' ); ?></label> <label class="bws_info"><?php _e( "Example: Sent from (IP address): 127.0.0.1", 'contact-form-plugin' ); ?></label><br />
+											<label><input type="checkbox" id="cntctfrm_display_date_time" name="cntctfrm_display_date_time" value="1" <?php checked( '1', $cntctfrm_options['display_date_time'] ); ?> /> <?php _e( "Date/Time", 'contact-form-plugin' ); ?></label> <label class="bws_info"><?php _e( "Example: Date/Time: August 19, 2013 8:50 pm", 'contact-form-plugin' ); ?></label><br />
+											<label><input type="checkbox" id="cntctfrm_display_coming_from" name="cntctfrm_display_coming_from" value="1" <?php checked( '1', $cntctfrm_options['display_coming_from'] ); ?> /> <?php _e( "Sent from (referer)", 'contact-form-plugin' ); ?></label> <label class="bws_info"><?php _e( "Example: Sent from (referer):   https://bestwebsoft.com/contacts/contact-us/", 'contact-form-plugin' ); ?></label><br />
+											<label><input type="checkbox" id="cntctfrm_display_user_agent" name="cntctfrm_display_user_agent" value="1" <?php checked( '1', $cntctfrm_options['display_user_agent'] ); ?> /> <?php _e( "Using (user agent)", 'contact-form-plugin' ); ?></label> <label class="bws_info"><?php _e( "Example: Using (user agent): Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36", 'contact-form-plugin' ); ?></label>
 										</fieldset>
 									</td>
 								</tr>
@@ -2397,13 +2426,6 @@ if ( ! function_exists( 'cntctfrm_display_form' ) ) {
 		$message = ( isset( $_POST['cntctfrm_contact_message'] ) && $cntctfrm_form_count == $form_submited ) ? stripcslashes( htmlspecialchars( $_POST['cntctfrm_contact_message'] ) ) : "";
 		$phone = ( isset( $_POST['cntctfrm_contact_phone'] ) && $cntctfrm_form_count == $form_submited ) ? stripcslashes( htmlspecialchars( $_POST['cntctfrm_contact_phone'] ) ) : "";
 
-		$name = strip_tags( preg_replace( '/<[^>]*>/', '', preg_replace( '/<script.*<\/[^>]*>/', '', $name ) ) );
-		$address = strip_tags( preg_replace( '/<[^>]*>/', '', preg_replace( '/<script.*<\/[^>]*>/', '', $address ) ) );
-		$email = strip_tags( preg_replace( '/<[^>]*>/', '', preg_replace( '/<script.*<\/[^>]*>/', '', $email ) ) );
-		$subject = strip_tags( preg_replace( '/<[^>]*>/', '', preg_replace( '/<script.*<\/[^>]*>/', '', $subject ) ) );
-		$message = strip_tags( preg_replace( '/<[^>]*>/', '', preg_replace( '/<script.*<\/[^>]*>/', '', $message ) ) );
-		$phone = strip_tags( preg_replace( '/<[^>]*>/', '', preg_replace( '/<script.*<\/[^>]*>/', '', $phone ) ) );
-
 		$send_copy = ( isset( $_POST['cntctfrm_contact_send_copy'] ) && $cntctfrm_form_count == $form_submited ) ? $_POST['cntctfrm_contact_send_copy'] : "";
 		/* If it is good */
 
@@ -2634,7 +2656,7 @@ if ( ! function_exists( 'cntctfrm_display_form' ) ) {
 						$content .= '<div class="cntctfrm_input cntctfrm_input_submit" style="text-align: ' . $cntctfrm_options['submit_position'] . ' !important;">';
 						if ( isset( $atts['id'] ) )
 							$content .= '<input type="hidden" value="' . esc_attr( $atts['id'] ) . '" name="cntctfrmmlt_shortcode_id">';
-						$content .= '<input type="hidden" value="send" name="cntctfrm_contact_action"><input type="hidden" value="Version: 3.30" />
+						$content .= '<input type="hidden" value="send" name="cntctfrm_contact_action">
 							<input type="hidden" value="' . esc_attr( $lang ) . '" name="cntctfrm_language">
 							<input type="hidden" value="' . $cntctfrm_form_count . '" name="cntctfrm_form_submited">
 							<input type="hidden" value="' . $options_name . '" name="cntctfrm_options_name">
@@ -2653,9 +2675,9 @@ if ( ! function_exists( 'cntctfrm_display_form' ) ) {
 
 /**
 * add or remove filters for compatibility with Captcha and Google Captcha
-* $action            	string    can be 'remove_filters' or 'add_filters'
-* $removed_filters    	array of existed filters (returned from this function when 'remove_filters' action)
-* @return  				array of existed filters for 'remove_filters' or 'false' for 'add_filters'
+* $action               string    can be 'remove_filters' or 'add_filters'
+* $removed_filters      array of existed filters (returned from this function when 'remove_filters' action)
+* @return               array of existed filters for 'remove_filters' or 'false' for 'add_filters'
 */
 if ( ! function_exists( 'cntctfrm_handle_captcha_filters' ) ) {
 	function cntctfrm_handle_captcha_filters( $action, $removed_filters = false ) {
@@ -2677,14 +2699,16 @@ if ( ! function_exists( 'cntctfrm_handle_captcha_filters' ) ) {
 				$remove_captcha[] = 'google-captcha';
 
 			$filters = array(
-				'google-captcha'	=> array(
-					'gglcptch_cf_display'	=> 'gglcptch_recaptcha_check',
-					'gglcptchpr_cf_display'	=> 'gglcptchpr_recaptcha_check'
+				'google-captcha'    => array(
+					'gglcptch_cf_display'   => 'gglcptch_recaptcha_check',
+					'gglcptchpr_cf_display' => 'gglcptchpr_recaptcha_check',
+					'gglcptch_display'      => 'gglcptch_contact_form_check',
 				),
-				'captcha'			=> array(
-					'cptch_custom_form'			=> 'cptch_check_custom_form',
-					'cptchpls_custom_form'		=> 'cptchpls_check_custom_form',
-					'cptchpr_custom_form'		=> 'cptchpr_check_custom_form',
+				'captcha'           => array(
+					'cptch_custom_form'         => 'cptch_check_custom_form',
+					'cptchpls_custom_form'      => 'cptchpls_check_custom_form',
+					'cptchpr_custom_form'       => 'cptchpr_check_custom_form',
+					'cptch_custom_form'         => 'cptch_check_bws_contact_form',
 				)
 			);
 
@@ -2759,13 +2783,6 @@ if ( ! function_exists( 'cntctfrm_check_form' ) ) {
 		$subject = isset( $_POST['cntctfrm_contact_subject'] ) ? htmlspecialchars( $_POST['cntctfrm_contact_subject'] ) : "";
 		$message = isset( $_POST['cntctfrm_contact_message'] ) ? htmlspecialchars( $_POST['cntctfrm_contact_message'] ) : "";
 		$phone = isset( $_POST['cntctfrm_contact_phone'] ) ? htmlspecialchars( $_POST['cntctfrm_contact_phone'] ) : "";
-
-		$name = strip_tags( preg_replace( '/<[^>]*>/', '', preg_replace( '/<script.*<\/[^>]*>/', '', $name ) ) );
-		$address = strip_tags( preg_replace( '/<[^>]*>/', '', preg_replace( '/<script.*<\/[^>]*>/', '', $address ) ) );
-		$email = strip_tags( preg_replace( '/<[^>]*>/', '', preg_replace( '/<script.*<\/[^>]*>/', '', $email ) ) );
-		$subject = strip_tags( preg_replace( '/<[^>]*>/', '', preg_replace( '/<script.*<\/[^>]*>/', '', $subject ) ) );
-		$message = strip_tags( preg_replace( '/<[^>]*>/', '', preg_replace( '/<script.*<\/[^>]*>/', '', $message ) ) );
-		$phone = strip_tags( preg_replace( '/<[^>]*>/', '', preg_replace( '/<script.*<\/[^>]*>/', '', $phone ) ) );
 
 		/* check language and replace with en default if need */
 		if ( ! in_array( $language, $cntctfrm_options['language'] ) ) {
@@ -2858,7 +2875,7 @@ if ( ! function_exists( 'cntctfrm_check_form' ) ) {
 			if ( false === $result ) { /* for CAPTCHA older than PRO - v1.0.7, PLUS - v1.1.0 v FREE - 1.2.5 */
 				$cntctfrm_error_message['error_captcha'] = $cntctfrm_options['captcha_error'][ $language ];
 			} else if ( ! empty( $result ) && ( is_string( $result ) || is_wp_error( $result ) ) ) {
-				$cntctfrm_error_message['error_captcha'] = is_string( $result ) ? $result : $result->get_error_message();
+				$cntctfrm_error_message['error_captcha'] = is_string( $result ) ? $result : implode( '', $result->get_error_messages() );
 			}
 		}
 
@@ -2974,13 +2991,6 @@ if ( ! function_exists( 'cntctfrm_send_mail' ) ) {
 		$message = isset( $_POST['cntctfrm_contact_message'] ) ? htmlspecialchars( $_POST['cntctfrm_contact_message'] ) : "";
 		$phone = isset( $_POST['cntctfrm_contact_phone'] ) ? htmlspecialchars( $_POST['cntctfrm_contact_phone'] ) : "";
 		$user_agent = cntctfrm_clean_input( $_SERVER['HTTP_USER_AGENT'] );
-
-		$name = stripslashes( strip_tags( preg_replace( '/<[^>]*>/', '', preg_replace( '/<script.*<\/[^>]*>/', '', $name ) ) ) );
-		$address = stripslashes( strip_tags( preg_replace( '/<[^>]*>/', '', preg_replace( '/<script.*<\/[^>]*>/', '', $address ) ) ) );
-		$email = stripslashes( strip_tags( preg_replace( '/<[^>]*>/', '', preg_replace( '/<script.*<\/[^>]*>/', '', $email ) ) ) );
-		$subject = stripslashes( strip_tags( preg_replace( '/<[^>]*>/', '', preg_replace( '/<script.*<\/[^>]*>/', '', $subject ) ) ) );
-		$message = stripslashes( strip_tags( preg_replace( '/<[^>]*>/', '', preg_replace( '/<script.*<\/[^>]*>/', '', $message ) ) ) );
-		$phone = stripslashes( strip_tags( preg_replace( '/<[^>]*>/', '', preg_replace( '/<script.*<\/[^>]*>/', '', $phone ) ) ) );
 
 		if ( isset( $_SESSION['cntctfrm_send_mail'] ) && true == $_SESSION['cntctfrm_send_mail'] )
 			return true;
@@ -3161,133 +3171,104 @@ if ( ! function_exists( 'cntctfrm_send_mail' ) ) {
 				$from_email = 'wordpress@' . $sitename;
 			}
 
-			if ( ( is_plugin_active( 'email-queue/email-queue.php' ) || is_plugin_active( 'email-queue-pro/email-queue-pro.php' ) ) && function_exists( 'mlq_if_mail_plugin_is_in_queue' ) && mlq_if_mail_plugin_is_in_queue( plugin_basename( __FILE__ ) ) ) {
-				/* if email-queue plugin is active and this plugin's "in_queue" status is 'ON' */
-				/* attachment path */
-				$attachment_file = ( 1 == $cntctfrm_options['attachment'] && isset( $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) && "" != $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) ? $cntctfrm_path_of_uploaded_file : '';
-				/* headers */
-				/* content type */
-				$headers .= ( 1 == $cntctfrm_options['html_email'] ) ? 'Content-type: text/html; charset=utf-8' . "\n" : 'Content-type: text/plain; charset=utf-8' . "\n" ;
-				/* 'from' name & email */
+			if ( 'wp-mail' == $cntctfrm_options['mail_method'] ) {
+				/* To send HTML mail, the Content-type header must be set */
+				if ( 1 == $cntctfrm_options['html_email'] )
+					$headers .= 'Content-type: text/html; charset=utf-8' . "\n";
+				else
+					$headers .= 'Content-type: text/plain; charset=utf-8' . "\n";
+
+				/* Additional headers */
 				$headers .= 'From: ' . $from_field_name . ' <' . $from_email . '>';
-				/* send copy */
-				if ( isset( $_POST['cntctfrm_contact_send_copy'] ) && 1 == $_POST['cntctfrm_contact_send_copy'] ) {
-					do_action( 'cntctfrm_get_mail_data_for_mlq', plugin_basename( __FILE__ ), $email, $subject, $message_text_for_user, $attachment_file, $headers );
+
+				if ( 1 == $cntctfrm_options['attachment'] && isset( $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) && "" != $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) {
+					$path_parts = pathinfo( $cntctfrm_path_of_uploaded_file );
+					$cntctfrm_path_of_uploaded_file_changed = $path_parts['dirname'] . '/' . preg_replace( '/^cntctfrm_[A-Z,a-z,0-9]{32}_/i', '', $path_parts['basename'] );
+
+					if ( ! @copy( $cntctfrm_path_of_uploaded_file, $cntctfrm_path_of_uploaded_file_changed ) )
+						$cntctfrm_path_of_uploaded_file_changed = $cntctfrm_path_of_uploaded_file;
+
+					$attachments = array( $cntctfrm_path_of_uploaded_file_changed );
 				}
-				global $mlq_mail_result;
-				do_action( 'cntctfrm_get_mail_data_for_mlq', plugin_basename( __FILE__ ), $to, $subject, $message_text, $attachment_file, $headers );
-				/* return $mail_result = true if email-queue has successfully inserted mail in its DB; in other case - return false */
-				return $mail_result = $mlq_mail_result;
+
+				if ( isset( $_POST['cntctfrm_contact_send_copy'] ) && 1 == $_POST['cntctfrm_contact_send_copy'] )
+					wp_mail( $email, $subject, $message_text_for_user, $headers, $attachments );
+
+				/* Mail it */
+				$mail_result = wp_mail( $to, $subject, $message_text, $headers, $attachments );
+				/* Delete attachment */
+				if ( 1 == $cntctfrm_options['attachment'] && isset( $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) && "" != $_FILES["cntctfrm_contact_attachment"]["tmp_name"]
+					&& $cntctfrm_path_of_uploaded_file_changed != $cntctfrm_path_of_uploaded_file ) {
+					@unlink( $cntctfrm_path_of_uploaded_file_changed );
+				}
+				if ( 1 == $cntctfrm_options['attachment'] && isset( $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) && "" != $_FILES["cntctfrm_contact_attachment"]["tmp_name"] && '1' == $cntctfrm_options['delete_attached_file'] ) {
+					@unlink( $cntctfrm_path_of_uploaded_file );
+				}
+				return $mail_result;
 			} else {
-				if ( 'wp-mail' == $cntctfrm_options['mail_method'] ) {
-					/* To send HTML mail, the Content-type header must be set */
+				/* Set headers */
+				$headers  .= 'MIME-Version: 1.0' . "\n";
+
+				if ( 1 == $cntctfrm_options['attachment'] && isset( $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) && "" != $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) {
+					$message_block = $message_text;
+					$message_block_for_user = $message_text_for_user;
+
+					/* Additional headers */
+					$headers .= 'From: ' . $from_field_name . ' <' . $from_email . '>' . "\n";
+
+					$bound_text = "jimmyP123";
+
+					$bound = "--" . $bound_text . "";
+
+					$bound_last = "--" . $bound_text . "--";
+
+					$headers .= "Content-Type: multipart/mixed; boundary=\"$bound_text\"";
+
+					$message_text = $message_text_for_user = __( "If you can see this MIME, it means that the MIME type is not supported by your email client!", 'contact-form-plugin' ) . "\n";
+
+					if ( 1 == $cntctfrm_options['html_email'] ) {
+						$message_text .= $bound . "\n" . "Content-Type: text/html; charset=\"utf-8\"\n" . "Content-Transfer-Encoding: 7bit\n\n" . $message_block . "\n\n";
+						$message_text_for_user .= $bound . "\n" . "Content-Type: text/html; charset=\"utf-8\"\n" . "Content-Transfer-Encoding: 7bit\n\n" . $message_block_for_user . "\n\n";
+					} else {
+						$message_text .= $bound . "\n" . "Content-Type: text/plain; charset=\"utf-8\"\n" . "Content-Transfer-Encoding: 7bit\n\n" . $message_block . "\n\n";
+						$message_text_for_user .= $bound . "\n" . "Content-Type: text/plain; charset=\"utf-8\"\n" . "Content-Transfer-Encoding: 7bit\n\n" . $message_block_for_user . "\n\n";
+					}
+
+					$file = file_get_contents( $cntctfrm_path_of_uploaded_file );
+
+					$message_text .= $bound . "\n" .
+						"Content-Type: application/octet-stream; name=\"" . sanitize_file_name( $_FILES["cntctfrm_contact_attachment"]["name"] ) . "\"\n" .
+						"Content-Description: " . basename( $cntctfrm_path_of_uploaded_file ) . "\n" .
+						"Content-Disposition: attachment;\n" . " filename=\"" . sanitize_file_name( $_FILES["cntctfrm_contact_attachment"]["name"] ) ."\"; size=" . filesize( $cntctfrm_path_of_uploaded_file ) . ";\n" .
+						"Content-Transfer-Encoding: base64\n\n" . chunk_split( base64_encode( $file ) ) . "\n\n" .
+						$bound_last;
+					$message_text_for_user .= $bound . "\n" .
+						"Content-Type: application/octet-stream; name=\"" . sanitize_file_name( $_FILES["cntctfrm_contact_attachment"]["name"] ) . "\"\n" .
+						"Content-Description: " . basename( $cntctfrm_path_of_uploaded_file ) . "\n" .
+						"Content-Disposition: attachment;\n" . " filename=\"" . sanitize_file_name( $_FILES["cntctfrm_contact_attachment"]["name"] ) ."\"; size=" . filesize( $cntctfrm_path_of_uploaded_file ) . ";\n" .
+						"Content-Transfer-Encoding: base64\n\n" . chunk_split( base64_encode( $file ) ) . "\n\n" .
+						$bound_last;
+				} else {
+					/* To send HTML mail, header must be set */
 					if ( 1 == $cntctfrm_options['html_email'] )
 						$headers .= 'Content-type: text/html; charset=utf-8' . "\n";
 					else
 						$headers .= 'Content-type: text/plain; charset=utf-8' . "\n";
 
 					/* Additional headers */
-					$headers .= 'From: ' . $from_field_name . ' <' . $from_email . '>';
-
-					if ( 1 == $cntctfrm_options['attachment'] && isset( $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) && "" != $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) {
-						$path_parts = pathinfo( $cntctfrm_path_of_uploaded_file );
-						$cntctfrm_path_of_uploaded_file_changed = $path_parts['dirname'] . '/' . preg_replace( '/^cntctfrm_[A-Z,a-z,0-9]{32}_/i', '', $path_parts['basename'] );
-
-						if ( ! @copy( $cntctfrm_path_of_uploaded_file, $cntctfrm_path_of_uploaded_file_changed ) )
-							$cntctfrm_path_of_uploaded_file_changed = $cntctfrm_path_of_uploaded_file;
-
-						$attachments = array( $cntctfrm_path_of_uploaded_file_changed );
-					}
-
-					if ( isset( $_POST['cntctfrm_contact_send_copy'] ) && 1 == $_POST['cntctfrm_contact_send_copy'] )
-						wp_mail( $email, $subject, $message_text_for_user, $headers, $attachments );
-
-					/* Mail it */
-					$mail_result = wp_mail( $to, $subject, $message_text, $headers, $attachments );
-					/* Delete attachment */
-					if ( 1 == $cntctfrm_options['attachment'] && isset( $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) && "" != $_FILES["cntctfrm_contact_attachment"]["tmp_name"]
-						&& $cntctfrm_path_of_uploaded_file_changed != $cntctfrm_path_of_uploaded_file ) {
-						@unlink( $cntctfrm_path_of_uploaded_file_changed );
-					}
-					if ( 1 == $cntctfrm_options['attachment'] && isset( $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) && "" != $_FILES["cntctfrm_contact_attachment"]["tmp_name"] && '1' == $cntctfrm_options['delete_attached_file'] ) {
-						@unlink( $cntctfrm_path_of_uploaded_file );
-					}
-					return $mail_result;
-				} else {
-					/* Set headers */
-					$headers  .= 'MIME-Version: 1.0' . "\n";
-
-					if ( 1 == $cntctfrm_options['attachment'] && isset( $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) && "" != $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) {
-						$message_block = $message_text;
-						$message_block_for_user = $message_text_for_user;
-
-						/* Additional headers */
-						$headers .= 'From: ' . $from_field_name . ' <' . $from_email . '>' . "\n";
-
-						$bound_text = "jimmyP123";
-
-						$bound = "--" . $bound_text . "";
-
-						$bound_last = "--" . $bound_text . "--";
-
-						$headers .= "Content-Type: multipart/mixed; boundary=\"$bound_text\"";
-
-						$message_text = $message_text_for_user = __( "If you can see this MIME, it means that the MIME type is not supported by your email client!", 'contact-form-plugin' ) . "\n";
-
-						if ( 1 == $cntctfrm_options['html_email'] ) {
-							$message_text .= $bound . "\n" . "Content-Type: text/html; charset=\"utf-8\"\n" . "Content-Transfer-Encoding: 7bit\n\n" . $message_block . "\n\n";
-							$message_text_for_user .= $bound . "\n" . "Content-Type: text/html; charset=\"utf-8\"\n" . "Content-Transfer-Encoding: 7bit\n\n" . $message_block_for_user . "\n\n";
-						} else {
-							$message_text .= $bound . "\n" . "Content-Type: text/plain; charset=\"utf-8\"\n" . "Content-Transfer-Encoding: 7bit\n\n" . $message_block . "\n\n";
-							$message_text_for_user .= $bound . "\n" . "Content-Type: text/plain; charset=\"utf-8\"\n" . "Content-Transfer-Encoding: 7bit\n\n" . $message_block_for_user . "\n\n";
-						}
-
-						$file = file_get_contents( $cntctfrm_path_of_uploaded_file );
-
-						$message_text .= $bound . "\n" .
-							"Content-Type: application/octet-stream; name=\"" . sanitize_file_name( $_FILES["cntctfrm_contact_attachment"]["name"] ) . "\"\n" .
-							"Content-Description: " . basename( $cntctfrm_path_of_uploaded_file ) . "\n" .
-							"Content-Disposition: attachment;\n" . " filename=\"" . sanitize_file_name( $_FILES["cntctfrm_contact_attachment"]["name"] ) ."\"; size=" . filesize( $cntctfrm_path_of_uploaded_file ) . ";\n" .
-							"Content-Transfer-Encoding: base64\n\n" . chunk_split( base64_encode( $file ) ) . "\n\n" .
-							$bound_last;
-						$message_text_for_user .= $bound . "\n" .
-							"Content-Type: application/octet-stream; name=\"" . sanitize_file_name( $_FILES["cntctfrm_contact_attachment"]["name"] ) . "\"\n" .
-							"Content-Description: " . basename( $cntctfrm_path_of_uploaded_file ) . "\n" .
-							"Content-Disposition: attachment;\n" . " filename=\"" . sanitize_file_name( $_FILES["cntctfrm_contact_attachment"]["name"] ) ."\"; size=" . filesize( $cntctfrm_path_of_uploaded_file ) . ";\n" .
-							"Content-Transfer-Encoding: base64\n\n" . chunk_split( base64_encode( $file ) ) . "\n\n" .
-							$bound_last;
-					} else {
-						/* To send HTML mail, header must be set */
-						if ( 1 == $cntctfrm_options['html_email'] )
-							$headers .= 'Content-type: text/html; charset=utf-8' . "\n";
-						else
-							$headers .= 'Content-type: text/plain; charset=utf-8' . "\n";
-
-						/* Additional headers */
-						$headers .= 'From: ' . $from_field_name . ' <' . $from_email . '>' . "\n";
-					}
-					if ( isset( $_POST['cntctfrm_contact_send_copy'] ) && 1 == $_POST['cntctfrm_contact_send_copy'] )
-						@mail( $email, $subject, $message_text_for_user, $headers );
-
-					$mail_result = @mail( $to, $subject, $message_text, $headers );
-					/* Delete attachment */
-					if ( 1 == $cntctfrm_options['attachment'] && isset( $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) && "" != $_FILES["cntctfrm_contact_attachment"]["tmp_name"] && '1' == $cntctfrm_options['delete_attached_file'] ) {
-						@unlink( $cntctfrm_path_of_uploaded_file );
-					}
-					return $mail_result;
+					$headers .= 'From: ' . $from_field_name . ' <' . $from_email . '>' . "\n";
 				}
+				if ( isset( $_POST['cntctfrm_contact_send_copy'] ) && 1 == $_POST['cntctfrm_contact_send_copy'] )
+					@mail( $email, $subject, $message_text_for_user, $headers );
+
+				$mail_result = @mail( $to, $subject, $message_text, $headers );
+				/* Delete attachment */
+				if ( 1 == $cntctfrm_options['attachment'] && isset( $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) && "" != $_FILES["cntctfrm_contact_attachment"]["tmp_name"] && '1' == $cntctfrm_options['delete_attached_file'] ) {
+					@unlink( $cntctfrm_path_of_uploaded_file );
+				}
+				return $mail_result;
 			}
 		}
-		return false;
-	}
-}
-
-/**
- * Function that is used by email-queue to check for compatibility
- * @return void
- */
-if ( ! function_exists( 'cntctfrm_check_for_compatibility_with_mlq' ) ) {
-	function cntctfrm_check_for_compatibility_with_mlq() {
 		return false;
 	}
 }
@@ -3364,7 +3345,7 @@ if ( ! function_exists ( 'cntctfrm_admin_head' ) ) {
 			}
 
 			$script_vars = array(
-				'cntctfrm_nonce' 		=> wp_create_nonce( plugin_basename( __FILE__ ), 'cntctfrm_ajax_nonce_field' ),
+				'cntctfrm_nonce'        => wp_create_nonce( plugin_basename( __FILE__ ), 'cntctfrm_ajax_nonce_field' ),
 				'cntctfrm_confirm_text'  => __( 'Are you sure that you want to delete this language data?', 'contact-form-plugin' )
 			);
 
@@ -3382,14 +3363,14 @@ if ( ! function_exists ( 'cntctfrm_admin_head' ) ) {
 			require_once( dirname( __FILE__ ) . '/bws_menu/bws_include.php' );
 
 			$tooltip_args = array(
-				'tooltip_id'	=> 'cntctfrm_install_multi_tooltip',
-				'css_selector' 	=> '#cntctfrm_show_multi_notice',
-				'actions' 		=> array(
-					'click' 	=> true,
-					'onload' 	=> true,
+				'tooltip_id'    => 'cntctfrm_install_multi_tooltip',
+				'css_selector'  => '#cntctfrm_show_multi_notice',
+				'actions'       => array(
+					'click'     => true,
+					'onload'    => true,
 				),
-				'content' 			=> '<h3>' . __( 'Add multiple forms', 'contact-form-plugin' ) . '</h3>' .'<p>' . __( 'Install Contact Form Multi plugin to create unlimited number of contact forms.', 'contact-form-plugin' ) . '</p>',
-				'buttons'			=> array(
+				'content'           => '<h3>' . __( 'Add multiple forms', 'contact-form-plugin' ) . '</h3>' .'<p>' . __( 'Install Contact Form Multi plugin to create unlimited number of contact forms.', 'contact-form-plugin' ) . '</p>',
+				'buttons'           => array(
 					array(
 						'type' => 'link',
 						'link' => 'https://bestwebsoft.com/products/wordpress/plugins/contact-form-multi/?k=747ca825fb44711e2d24e40697747bc6&pn=77&v=' . $cntctfrm_plugin_info["Version"] . '&wp_v=' . $wp_version,
@@ -3401,8 +3382,8 @@ if ( ! function_exists ( 'cntctfrm_admin_head' ) ) {
 					),
 				),
 				'position' => array(
-					'edge' 		=> 'top',
-					'align' 	=> is_rtl() ? 'right' : 'left',
+					'edge'      => 'top',
+					'align'     => is_rtl() ? 'right' : 'left',
 				),
 			);
 			bws_add_tooltip_in_admin( $tooltip_args );
@@ -3440,6 +3421,7 @@ if ( ! function_exists ( 'cntctfrm_wp_footer' ) ) {
 
 if ( ! function_exists ( 'cntctfrm_add_language' ) ) {
 	function cntctfrm_add_language() {
+		global $cntctfrm_lang_codes;
 		$is_ajax = defined( 'DOING_AJAX' ) && DOING_AJAX;
 
 		if ( $is_ajax )
@@ -3447,8 +3429,17 @@ if ( ! function_exists ( 'cntctfrm_add_language' ) ) {
 		else
 			$_POST['cntctfrm_change_tab'] = $_REQUEST['cntctfrm_languages'];
 
-		$lang_slug = $is_ajax ? $_REQUEST['lang'] : $_REQUEST['cntctfrm_languages'];
-		$lang = strip_tags( preg_replace( '/<[^>]*>/', '', preg_replace( '/<script.*<\/[^>]*>/', '', htmlspecialchars( $lang_slug ) ) ) );
+		$lang = $is_ajax ? $_REQUEST['lang'] : $_REQUEST['cntctfrm_languages'];
+
+		if ( ! array_key_exists( $lang, $cntctfrm_lang_codes ) ) {
+			$message = sprintf( '<strong>%s</strong>:&nbsp%s.', __( 'Error', 'contact-form-plugin' ), __( 'Illegal language code', 'contact-form-plugin' ) );
+			if ( $is_ajax ) {
+				throw new Exception( __( 'Illegal language code', 'contact-form-plugin' ) );
+				die();
+			} else {
+				wp_die( $message );
+			}
+		}
 
 		$contact_form_multi_active = cntctfrm_check_cf_multi_active();
 
@@ -3769,8 +3760,8 @@ if ( ! function_exists( 'cntctfrm_add_tabs' ) ) {
 	function cntctfrm_add_tabs() {
 		$screen = get_current_screen();
 		$args = array(
-			'id' 			=> 'cntctfrm',
-			'section' 		=> '200538909'
+			'id'            => 'cntctfrm',
+			'section'       => '200538909'
 		);
 		bws_help_tab( $screen, $args );
 	}
@@ -3831,5 +3822,3 @@ add_action( 'wp_ajax_cntctfrm_add_language', 'cntctfrm_add_language' );
 add_action( 'wp_ajax_cntctfrm_remove_language', 'cntctfrm_remove_language' );
 
 add_action( 'admin_notices', 'cntctfrm_plugin_banner');
-
-register_uninstall_hook( __FILE__, 'cntctfrm_delete_options' );
