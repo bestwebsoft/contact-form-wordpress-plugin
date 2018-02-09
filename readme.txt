@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: contact, contact form, feedback form, contact us form, contact button, email form, contac, form, web-page feedback, cf, cf plugin, contact form plugin
 Requires at least: 3.9
-Tested up to: 4.9.1
-Stable tag: 4.0.8
+Tested up to: 4.9.4
+Stable tag: 4.0.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -98,11 +98,11 @@ Visit our Help Center if you have any questions, our friendly Support Team is ha
 * Brazilian Portuguese (pt_BR) (thanks to [Breno Jacinto](mailto:brenojac@gmail.com), www.iconis.org.br, [DJIO](mailto:wordpress@djio.com.br), www.djio.com.br)
 * Catalan (ca) (thanks to [Kenneth](mailto:kenneth@snollocer.net))
 * Chinese (zh_CN) (thanks to [kplam](mailto:kplam@qq.com))
-* Czech (cs_CZ) (thanks to [PaMaDeSSoft](mailto:info@pamadessoft.cz), www.pamadessoft.cz)
+* Czech (cs_CZ) (thanks to [Michal Kučera](mailto:kucerami@gmail.com), www.n0lim.it, [PaMaDeSSoft](mailto:info@pamadessoft.cz), www.pamadessoft.cz)
 * Danish (da_DK) (thanks to [Kasper Jensen](mailto:support@teknisk-support.com), www.teknisk-support.com)
 * Dutch (nl_NL) (thanks to [Olivier Smet](mailto:olivier.smet@dynata.nl))
 * Estonian (et) (thanks to [Feliks](mailto:feliks@veebimeister.com), www.veebimeister.com)
-* French (fr_FR) (thanks Capronnier Luc)
+* French (fr_FR) (thanks [Capronnier Luc](mailto:lcapronnier@yahoo.com))
 * German (de_DE) (thanks to [Alex](mailto:private18@web.de))
 * Greek (el) (thanks to Dimitris Karantonis, www.soft4real.com/en-UK)
 * Indonesian (id_ID) (thanks to [Jordan Silaen](mailto:jordan.silaen@chameleonjohn.com), www.chameleonjohn.com)
@@ -132,7 +132,7 @@ The author of the Contact Form also recommends the following plugins:
 
 == Installation ==
 
-1. Upload the `Contact Form` folder to the `/wp-content/plugins/` directory.
+1. Upload the `contact-form-plugin` folder to the `/wp-content/plugins/` directory.
 2. Activate the plugin using the 'Plugins' menu in your WordPress admin panel.
 3. You can adjust the necessary settings using your WordPress admin panel in "BWS Panel" > "Contact Form".
 4. Create a page or a post and insert the shortcode [bestwebsoft_contact_form] into the text.
@@ -155,7 +155,7 @@ The address specified during WordPress installation will be used by the Contact 
 
 You should put the shortcode [bestwebsoft_contact_form] into your page or post.
 
-= I choosed a user via the plugin settings and got this error: "Please enter a valid email address. Settings are not saved." =
+= I chose a user via the plugin settings and got this error: "Please enter a valid email address. Settings are not saved." =
 
 This means that you made a syntax error.
 
@@ -221,6 +221,10 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 15. Re-order contact form fields using drag & drop interface.
 
 == Changelog ==
+
+= V4.0.9 - 09.02.2018 =
+* Update : Czech and French language files have been updated.
+* Bugfix : The compatibility issue with Contact Form Multi plugin has been fixed.
 
 = V4.0.8 - 04.12.2017 =
 * Bugfix : The compatibility issue with Google Captcha (reCAPTCHA) plugin has been fixed.
@@ -509,7 +513,7 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * Update : We updated the Italian, the French and the Brazilian Portuguese language files in the plugin.
 
 = V3.44 - 16.05.2013 =
-* NEW : Added email adress as additiional form field.
+* NEW : Added email adress as additional form field.
 * Bugfix : We fixed the bug of adding an attachment.
 
 = V3.43 - 08.04.2013 =
@@ -577,7 +581,7 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * Update : The email address validation was changed.
 
 = V3.25 - 22.10.2012 =
-* NEW : Added phone number as additiional form field.
+* NEW : Added phone number as additional form field.
 * NEW : Serbian language file is added to the plugin.
 
 = V3.24 - 12.08.2012 =
@@ -708,6 +712,10 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * Ability to add Contact Form into a post. Ability to adjust displaying of the form via shortcode is added.
 
 == Upgrade Notice ==
+
+= V4.0.9 =
+* Languages updated.
+* Bugs fixed.
 
 = V4.0.8 =
 * Bugs fixed.
@@ -910,7 +918,7 @@ The Finnish language file is added to the plugin. We fixed the bug of display ad
 The error related to use function 'get_userdatabylogin' instead 'get_user_by('login')' is fixed. BWS Panel section is updated. We updated the Italian, the French and the Brazilian Portuguese language files in the plugin.
 
 = V3.44 =
-Added email adress as additiional form field. We fixed the bug of adding an attachment.
+Added email adress as additional form field. We fixed the bug of adding an attachment.
 
 = V3.43 =
 We updated the English text in the plugin file. We fixed the bug of displaying phone error messages when a phone number field is not display.
@@ -967,7 +975,7 @@ The error related to the saving of the field "Change FROM fields of the contact 
 The setting of the required fields was added. Persian language file is added to the plugin. The email address validation was changed.
 
 = V3.25 =
-Added phone number as additiional form field. Serbian language file is added to the plugin.
+Added phone number as additional form field. Serbian language file is added to the plugin.
 
 = V3.24 =
 Czech and Romanian language files are added to the plugin.

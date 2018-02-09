@@ -6,7 +6,7 @@ Description: Simple contact form plugin any WordPress website must have.
 Author: BestWebSoft
 Text Domain: contact-form-plugin
 Domain Path: /languages
-Version: 4.0.8
+Version: 4.0.9
 Author URI: https://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -140,8 +140,6 @@ if ( ! function_exists( 'cntctfrm_settings' ) ) {
 				add_option( 'cntctfrmmlt_options', $option_defaults );
 			}
 
-			$id_first_form = cntctfrm_get_first_form_id();
-
 			$cntctfrmmlt_options = get_option( 'cntctfrmmlt_options' );
 
 			if ( ! isset( $cntctfrmmlt_options['plugin_option_version'] ) || $cntctfrmmlt_options['plugin_option_version'] != $cntctfrm_plugin_info["Version"] ) {
@@ -165,8 +163,8 @@ if ( ! function_exists( 'cntctfrm_settings' ) ) {
 			}
 
 			/* Get options from the database */
-			if ( $id_first_form || $form_id ) {
-				$id = ( $form_id ) ? $form_id : $id_first_form;
+			if ( isset( $_SESSION['cntctfrmmlt_id_form'] ) || $form_id ) {
+				$id = ( $form_id ) ? $form_id : $_SESSION['cntctfrmmlt_id_form'];
 				if ( $cntctfrm_options = get_option( 'cntctfrmmlt_options_' . $id ) ) {
 					/* */
 				} else {
@@ -212,9 +210,8 @@ if ( ! function_exists( 'cntctfrm_settings' ) ) {
 			$cntctfrm_options['hide_premium_options'] = array();
 
 			if ( $contact_form_multi_active ) {
-				$id_first_form = cntctfrm_get_first_form_id();
-				if ( $id_first_form || $form_id ) {
-					$id = ( $form_id ) ? $form_id : $id_first_form;
+				if ( isset( $_SESSION['cntctfrmmlt_id_form'] ) || $form_id ) {
+					$id = ( $form_id ) ? $form_id : $_SESSION['cntctfrmmlt_id_form'];
 					if ( get_option( 'cntctfrmmlt_options_' . $id ) ) {
 						update_option( 'cntctfrmmlt_options_' . $id , $cntctfrm_options );
 					} else {
@@ -241,9 +238,8 @@ if ( ! function_exists( 'cntctfrm_settings' ) ) {
 			cntctfrm_db_create();
 			$cntctfrm_options['plugin_db_version'] = $db_version;
 			if ( $contact_form_multi_active ) {
-				$id_first_form = cntctfrm_get_first_form_id();
-				if ( $id_first_form || $form_id ) {
-					$id = ( $form_id ) ? $form_id : $id_first_form;
+				if ( isset( $_SESSION['cntctfrmmlt_id_form'] ) || $form_id ) {
+					$id = ( $form_id ) ? $form_id : $_SESSION['cntctfrmmlt_id_form'];
 					if ( get_option( 'cntctfrmmlt_options_' . $id ) ) {
 						update_option( 'cntctfrmmlt_options_' . $id , $cntctfrm_options );
 					} else {
