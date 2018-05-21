@@ -7,7 +7,8 @@
 <p><span class="embed-youtube" style="text-align:center; display: block;"></span></p>
 <h4>Free Features</h4>
 <ul>
-<li>Paste shortcode on any page, post or widget to display the form</li>
+<li>Add contact form to any post, page or widget using the shortcode</li>
+<li>GDPR Compliant [NEW]</li>
 <li>Data validation before the submission</li>
 <li>Send a copy of the submitted message to the email</li>
 <li>Receive submissions to the default admin or custom email addresses</li>
@@ -35,7 +36,7 @@
 <li>Change the width for contact form</li>
 <li>Re-order form fields using drag &amp; drop interface</li>
 <li>Translate your form to any language with a simple language customizer</li>
-<li>Protect contact form from spam with <a href="https://bestwebsoft.com/products/wordpress/plugins/captcha/?k=45dcf2a5ccd70a7fc8606f8030730ac7" rel="nofollow">Captcha</a> or <a href="https://bestwebsoft.com/products/wordpress/plugins/google-captcha/?k=159789f556e3a9c58df8f25384903ba5" rel="nofollow">Google reCaptcha</a></li>
+<li>Protect contact form from spam with <a href="https://bestwebsoft.com/products/wordpress/plugins/captcha/?k=45dcf2a5ccd70a7fc8606f8030730ac7" rel="nofollow">Captcha</a> or <a href="https://bestwebsoft.com/products/wordpress/plugins/google-captcha/?k=159789f556e3a9c58df8f25384903ba5" rel="nofollow">Google reCAPTCHA</a></li>
 <li>Add unlimited contact forms using <a href="https://bestwebsoft.com/products/wordpress/plugins/contact-form-multi/?k=34543c152eff369d529e9b4da85985a9" rel="nofollow">Contact Form Multi</a></li>
 <li>Save and manage messages using <a href="https://bestwebsoft.com/products/wordpress/plugins/contact-form-to-db/?k=d7d962591b5be0ce6c27af778b1b36ee" rel="nofollow">Contact Form to DB</a></li>
 <li>Add users who send the submission to the <a href="https://bestwebsoft.com/products/wordpress/plugins/subscriber/?k=2ce0827916414c9c8576110f13560030" rel="nofollow">Subscriber</a> newsletter subscription list</li>

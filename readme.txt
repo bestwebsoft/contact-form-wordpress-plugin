@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: contact, contact form, feedback form, contact us form, contact button, email form, contac, form, web-page feedback, cf, cf plugin, contact form plugin
 Requires at least: 3.9
-Tested up to: 4.9.4
-Stable tag: 4.0.9
+Tested up to: 4.9.6
+Stable tag: 4.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -22,7 +22,8 @@ https://www.youtube.com/watch?v=F_piQa0hmkU
 
 = Free Features =
 
-* Paste shortcode on any page, post or widget to display the form
+* Add contact form to any post, page or widget using the shortcode
+* GDPR Compliant [NEW]
 * Data validation before the submission
 * Send a copy of the submitted message to the email
 * Receive submissions to the default admin or custom email addresses
@@ -44,7 +45,7 @@ https://www.youtube.com/watch?v=F_piQa0hmkU
 * Change the width for contact form
 * Re-order form fields using drag & drop interface
 * Translate your form to any language with a simple language customizer
-* Protect contact form from spam with [Captcha](https://bestwebsoft.com/products/wordpress/plugins/captcha/?k=45dcf2a5ccd70a7fc8606f8030730ac7) or [Google reCaptcha](https://bestwebsoft.com/products/wordpress/plugins/google-captcha/?k=159789f556e3a9c58df8f25384903ba5)
+* Protect contact form from spam with [Captcha](https://bestwebsoft.com/products/wordpress/plugins/captcha/?k=45dcf2a5ccd70a7fc8606f8030730ac7) or [Google reCAPTCHA](https://bestwebsoft.com/products/wordpress/plugins/google-captcha/?k=159789f556e3a9c58df8f25384903ba5)
 * Add unlimited contact forms using [Contact Form Multi](https://bestwebsoft.com/products/wordpress/plugins/contact-form-multi/?k=34543c152eff369d529e9b4da85985a9)
 * Save and manage messages using [Contact Form to DB](https://bestwebsoft.com/products/wordpress/plugins/contact-form-to-db/?k=d7d962591b5be0ce6c27af778b1b36ee)
 * Add users who send the submission to the [Subscriber](https://bestwebsoft.com/products/wordpress/plugins/subscriber/?k=2ce0827916414c9c8576110f13560030) newsletter subscription list
@@ -221,6 +222,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 15. Re-order contact form fields using drag & drop interface.
 
 == Changelog ==
+
+= V4.1.0 - 21.05.2018 =
+* NEW : GDPR Compliance has been added.
 
 = V4.0.9 - 09.02.2018 =
 * Update : Czech and French language files have been updated.
@@ -712,6 +716,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * Ability to add Contact Form into a post. Ability to adjust displaying of the form via shortcode is added.
 
 == Upgrade Notice ==
+
+= V4.1.0 =
+* Functionality improved.
 
 = V4.0.9 =
 * Languages updated.

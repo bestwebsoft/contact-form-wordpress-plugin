@@ -6,7 +6,7 @@ Description: Simple contact form plugin any WordPress website must have.
 Author: BestWebSoft
 Text Domain: contact-form-plugin
 Domain Path: /languages
-Version: 4.0.9
+Version: 4.1.0
 Author URI: https://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -296,6 +296,7 @@ if ( ! function_exists( 'cntctfrm_get_option_defaults' ) ) {
 			'attachment'                => 0,
 			'attachment_explanations'   => 1,
 			'send_copy'                 => 0,
+			'gdpr'                      => 0,
 			'from_field'                => get_bloginfo( 'name' ),
 			'select_from_field'         => 'custom',
 			'display_name_field'        => 1,
@@ -316,6 +317,8 @@ if ( ! function_exists( 'cntctfrm_get_option_defaults' ) ) {
 			'display_user_agent'        => 1,
 			'language'                  => array(),
 			'change_label'              => 0,
+			'gdpr_link'                 => '',
+			'gdpr_text'                 => '',
 			'name_label'                => array( 'default' => __( "Name", 'contact-form-plugin' ) . ':' ),
 			'address_label'             => array( 'default' => __( "Address", 'contact-form-plugin' ) . ':' ),
 			'email_label'               => array( 'default' => __( "Email Address", 'contact-form-plugin' ) . ':' ),
@@ -325,6 +328,7 @@ if ( ! function_exists( 'cntctfrm_get_option_defaults' ) ) {
 			'attachment_label'          => array( 'default' => __( "Attachment", 'contact-form-plugin' ) . ':' ),
 			'attachment_tooltip'        => array( 'default' => __( "Supported file types: HTML, TXT, CSS, GIF, PNG, JPEG, JPG, TIFF, BMP, AI, EPS, PS, CSV, RTF, PDF, DOC, DOCX, XLS, XLSX, ZIP, RAR, WAV, MP3, PPT.", 'contact-form-plugin' ) ),
 			'send_copy_label'           => array( 'default' => __( "Send me a copy", 'contact-form-plugin' ) ),
+			'gdpr_label'                => array( 'default' => __( "I consent to having this site collect my personal data.", 'contact-form-plugin' ) ),
 			'submit_label'              => array( 'default' => __( "Submit", 'contact-form-plugin' ) ),
 			'name_error'                => array( 'default' => __( "Your name is required.", 'contact-form-plugin' ) ),
 			'address_error'             => array( 'default' => __( "Address is required.", 'contact-form-plugin' ) ),
@@ -354,6 +358,7 @@ if ( ! function_exists( 'cntctfrm_get_option_defaults' ) ) {
 						'cntctfrm_contact_phone',
 						'cntctfrm_contact_subject',
 						'cntctfrm_contact_message',
+						'cntctfrm_contact_gdpr',
 						'cntctfrm_contact_attachment',
 						'cntctfrm_contact_send_copy',
 						'cntctfrm_subscribe',
@@ -388,6 +393,7 @@ if ( ! function_exists ( 'cntctfrm_db_create' ) ) {
 			'email',
 			'subject',
 			'message',
+			'gdpr',
 			'address',
 			'phone',
 			'attachment',
@@ -567,6 +573,7 @@ if ( ! function_exists( 'cntctfrm_get_ordered_fields' ) ) {
 			'cntctfrm_contact_message'      => true,
 			'cntctfrm_contact_attachment'   => ( 1 == $cntctfrm_options['attachment'] ) ? true : false,
 			'cntctfrm_contact_send_copy'    => ( 1 == $cntctfrm_options['send_copy'] ) ? true : false,
+			'cntctfrm_contact_gdpr'         => ( 1 == $cntctfrm_options['gdpr'] ) ? true : false,
 			'cntctfrm_subscribe'            => $display_subscriber,
 			'cntctfrm_captcha'              => $display_captcha || $display_google_captcha ? true : false,
 		);
@@ -705,6 +712,9 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 			$options_submit['attachment']               = isset( $_POST['cntctfrm_attachment'] ) ? $_POST['cntctfrm_attachment'] : 0;
 			$options_submit['attachment_explanations']  = isset( $_POST['cntctfrm_attachment_explanations'] ) ? $_POST['cntctfrm_attachment_explanations'] : 0;
 			$options_submit['send_copy']                = isset( $_POST['cntctfrm_send_copy'] ) ? $_POST['cntctfrm_send_copy'] : 0;
+			$options_submit['gdpr']                     = isset( $_POST['cntctfrm_gdpr'] ) ? $_POST['cntctfrm_gdpr'] : 0;
+			$options_submit['gdpr_link']                = isset( $_POST['cntctfrm_gdpr_link'] ) ? $_POST['cntctfrm_gdpr_link'] : '';
+			$options_submit['gdpr_text']                = isset( $_POST['cntctfrm_gdpr_text'] ) ? $_POST['cntctfrm_gdpr_text'] : '';
 
 			$options_submit['delete_attached_file'] = isset( $_POST['cntctfrm_delete_attached_file'] ) ? $_POST['cntctfrm_delete_attached_file'] : 0;
 
@@ -801,6 +811,7 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 					$options_submit['attachment_label'][ $key ]         = stripcslashes( htmlspecialchars( $_POST['cntctfrm_attachment_label'][ $key ] ) );
 					$options_submit['attachment_tooltip'][ $key ]       = stripcslashes( htmlspecialchars( $_POST['cntctfrm_attachment_tooltip'][ $key ] ) );
 					$options_submit['send_copy_label'][ $key ]          = stripcslashes( htmlspecialchars( $_POST['cntctfrm_send_copy_label'][ $key ] ) );
+					$options_submit['gdpr_label'][ $key ]               = stripcslashes( htmlspecialchars( $_POST['cntctfrm_gdpr_label'][ $key ] ) );
 					$options_submit['thank_text'][ $key ]               = stripcslashes( htmlspecialchars( $_POST['cntctfrm_thank_text'][ $key ] ) );
 					$options_submit['submit_label'][ $key ]             = stripcslashes( htmlspecialchars( $_POST['cntctfrm_submit_label'][ $key ] ) );
 					$options_submit['name_error'][ $key ]               = stripcslashes( htmlspecialchars( $_POST['cntctfrm_name_error'][ $key ] ) );
@@ -829,6 +840,7 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 					$options_submit['attachment_label']         = $option_defaults['attachment_label'];
 					$options_submit['attachment_tooltip']       = $option_defaults['attachment_tooltip'];
 					$options_submit['send_copy_label']          = $option_defaults['send_copy_label'];
+					$options_submit['gdpr_label']               = $option_defaults['gdpr_label'];
 					$options_submit['thank_text']               = $_POST['cntctfrm_thank_text'];
 					$options_submit['submit_label']             = $option_defaults['submit_label'];
 					$options_submit['name_error']               = $option_defaults['name_error'];
@@ -856,6 +868,7 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 					$options_submit['attachment_label']['default']          = $option_defaults['attachment_label']['default'];
 					$options_submit['attachment_tooltip']['default']        = $option_defaults['attachment_tooltip']['default'];
 					$options_submit['send_copy_label']['default']           = $option_defaults['send_copy_label']['default'];
+					$options_submit['gdpr_label']['default']                = $option_defaults['gdpr_label']['default'];
 					$options_submit['submit_label']['default']              = $option_defaults['submit_label']['default'];
 					$options_submit['name_error']['default']                = $option_defaults['name_error']['default'];
 					$options_submit['address_error']['default']             = $option_defaults['address_error']['default'];
@@ -1446,6 +1459,22 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 											</label>
 											<?php echo bws_add_help_box( '<img src="' . plugins_url( 'images/tooltip_sendme_block.png', __FILE__ ) . '" />', 'bws-hide-for-mobile bws-auto-width' ); ?>
 										</div>
+										<div>
+											<label>
+												<input type="checkbox" id="cntctfrm_gdpr" name="cntctfrm_gdpr" value="1" <?php checked( '1', $cntctfrm_options['gdpr'] ); ?> />
+												<?php _e( "GDPR Compliance", 'contact-form-plugin' ); ?>
+											</label>
+										</div>
+										<div id="cntctfrm_gdpr_link_options" >
+											<label class="cntctfrm_privacy_policy_text" >
+												<?php _e( "Link to Privacy Policy Page", 'contact-form-plugin' ); ?>
+												<input type="url" id="cntctfrm_gdpr_link" name="cntctfrm_gdpr_link" value="<?php echo $cntctfrm_options['gdpr_link']; ?>" />
+											</label>
+											<label class="cntctfrm_privacy_policy_text" >
+												<?php _e( "Text for Privacy Policy Link", 'contact-form-plugin' ); ?>
+												<input type="text" id="cntctfrm_gdpr_text" name="cntctfrm_gdpr_text" value="<?php echo $cntctfrm_options['gdpr_text']; ?>" />
+											</label>
+										</div>
 										<div style="clear: both;">
 											<?php if ( array_key_exists( 'subscriber/subscriber.php', $all_plugins ) || array_key_exists( 'subscriber-pro/subscriber-pro.php', $all_plugins ) ) {
 												if ( array_key_exists( 'subscriber', $cntctfrm_related_plugins ) ) {
@@ -1645,6 +1674,7 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 												<input type="text" maxlength="250" name="cntctfrm_attachment_label[default]" value="<?php echo $cntctfrm_options['attachment_label']['default']; ?>" /> <span class="bws_info"><?php _e( "Attachment", 'contact-form-plugin' ); ?>:</span><br />
 												<input type="text" maxlength="250" name="cntctfrm_attachment_tooltip[default]" value="<?php echo $cntctfrm_options['attachment_tooltip']['default']; ?>" /> <span class="bws_info"><?php _e( "Tips below the Attachment block", 'contact-form-plugin' ); ?></span><br />
 												<input type="text" maxlength="250" name="cntctfrm_send_copy_label[default]" value="<?php echo $cntctfrm_options['send_copy_label']['default']; ?>" /> <span class="bws_info"><?php _e( "Send me a copy", 'contact-form-plugin' ); ?></span><br />
+												<input type="text" maxlength="250" name="cntctfrm_gdpr_label[default]" value="<?php echo $cntctfrm_options['gdpr_label']['default']; ?>" /> <span class="bws_info"><?php _e( "I consent to having this site collect my personal data.", 'contact-form-plugin' ); ?></span><br />
 												<input type="text" maxlength="250" name="cntctfrm_submit_label[default]" value="<?php echo $cntctfrm_options['submit_label']['default']; ?>" /> <span class="bws_info"><?php _e( "Submit", 'contact-form-plugin' ); ?></span><br />
 												<input type="text" maxlength="250" name="cntctfrm_name_error[default]" value="<?php echo $cntctfrm_options['name_error']['default']; ?>" /> <span class="bws_info"><?php _e( "Error message for the Name field", 'contact-form-plugin' ); ?></span><br />
 												<input type="text" maxlength="250" name="cntctfrm_address_error[default]" value="<?php echo $cntctfrm_options['address_error']['default']; ?>" /> <span class="bws_info"><?php _e( "Error message for the Address field", 'contact-form-plugin' ); ?></span><br />
@@ -1683,6 +1713,7 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 														<input type="text" maxlength="250" name="cntctfrm_attachment_label[<?php echo $val; ?>]" value="<?php if ( isset( $cntctfrm_options['attachment_label'][ $val ] ) ) echo $cntctfrm_options['attachment_label'][ $val ]; ?>" /> <span class="bws_info"><?php _e( "Attachment", 'contact-form-plugin' ); ?>:</span><br />
 														<input type="text" maxlength="250" name="cntctfrm_attachment_tooltip[<?php echo $val; ?>]" value="<?php if ( isset( $cntctfrm_options['attachment_tooltip'][ $val ] ) ) echo $cntctfrm_options['attachment_tooltip'][ $val ]; ?>" /> <span class="bws_info"><?php _e( "Tips below the Attachment block", 'contact-form-plugin' ); ?></span><br />
 														<input type="text" maxlength="250" name="cntctfrm_send_copy_label[<?php echo $val; ?>]" value="<?php if ( isset( $cntctfrm_options['send_copy_label'][ $val ] ) ) echo $cntctfrm_options['send_copy_label'][ $val ]; ?>" /> <span class="bws_info"><?php _e( "Send me a copy", 'contact-form-plugin' ); ?></span><br />
+														<input type="text" maxlength="250" name="cntctfrm_gdpr_label[<?php echo $val; ?>]" value="<?php if ( isset( $cntctfrm_options['gdpr_label'][ $val ] ) ) echo $cntctfrm_options['gdpr_label'][ $val ]; ?>" /> <span class="bws_info"><?php _e( "I consent to having this site collect my personal data.", 'contact-form-plugin' ); ?></span><br />
 														<input type="text" maxlength="250" name="cntctfrm_submit_label[<?php echo $val; ?>]" value="<?php if ( isset( $cntctfrm_options['submit_label'][ $val ] ) ) echo $cntctfrm_options['submit_label'][ $val ]; ?>" /> <span class="bws_info"><?php _e( "Submit", 'contact-form-plugin' ); ?></span><br />
 														<input type="text" maxlength="250" name="cntctfrm_name_error[<?php echo $val; ?>]" value="<?php if ( isset( $cntctfrm_options['name_error'][ $val ] ) ) echo $cntctfrm_options['name_error'][ $val ]; ?>" /> <span class="bws_info"><?php _e( "Error message for the Name field", 'contact-form-plugin' ); ?></span><br />
 														<input type="text" maxlength="250" name="cntctfrm_address_error[<?php echo $val; ?>]" value="<?php if ( isset( $cntctfrm_options['address_error'][ $val ] ) ) echo $cntctfrm_options['address_error'][ $val ]; ?>" /> <span class="bws_info"><?php _e( "Error message for the Address field", 'contact-form-plugin' ); ?></span><br />
@@ -2222,6 +2253,22 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 																</li>
 															<?php }
 															break;
+														case 'cntctfrm_contact_gdpr':
+															if ( 1 == $cntctfrm_options['gdpr'] ) { ?>
+																<li class="cntctfrm_field_wrap">
+																	<div class="cntctfrm_checkbox cntctfrm_checkbox_gdpr">
+																		<div class="cntctfrm_drag_wrap"></div>
+																		<input type="checkbox" value="" name="cntctfrm_contact_gdpr" id="cntctfrm_contact_gdpr" class="bws_no_bind_notice" style="margin: 0;" />
+																		<label for="cntctfrm_contact_gdpr"><?php echo $cntctfrm_options['gdpr_label']['default']; ?></label>
+																		<?php if( ! empty( $cntctfrm_options['gdpr_link'] ) ) { ?>
+																			<a href="<?php $cntctfrm_options['gdpr_link'] ?>" target="_blank"><?php echo $cntctfrm_options['gdpr_text']; ?></a>
+																		<?php } else { ?>
+																			<span><?php echo $cntctfrm_options['gdpr_text']; ?></span>
+																		<?php } ?>
+																	</div>
+																</li>
+															<?php }
+															break;
 														case 'cntctfrm_subscribe':
 															if ( array_key_exists( 'subscriber', $cntctfrm_related_plugins ) ) {
 																if ( ( ! $contact_form_multi_active && ! empty( $cntctfrm_related_plugins['subscriber']['options']['contact_form'] ) ) || ! empty( $cntctfrm_options['display_subscribe'] ) ) {  ?>
@@ -2423,6 +2470,7 @@ if ( ! function_exists( 'cntctfrm_display_form' ) ) {
 		$phone = ( isset( $_POST['cntctfrm_contact_phone'] ) && $cntctfrm_form_count == $form_submited ) ? stripcslashes( htmlspecialchars( $_POST['cntctfrm_contact_phone'] ) ) : "";
 
 		$send_copy = ( isset( $_POST['cntctfrm_contact_send_copy'] ) && $cntctfrm_form_count == $form_submited ) ? $_POST['cntctfrm_contact_send_copy'] : "";
+		$gdpr = ( isset( $_POST['cntctfrm_contact_gdpr'] ) && $cntctfrm_form_count == $form_submited ) ? $_POST['cntctfrm_contact_gdpr'] : "";
 		/* If it is good */
 
 		if ( true === $cntctfrm_result && $cntctfrm_form_count == $form_submited ) {
@@ -2568,6 +2616,21 @@ if ( ! function_exists( 'cntctfrm_display_form' ) ) {
 									$content .= '<div class="cntctfrm_checkbox cntctfrm_checkbox_send_copy">
 										<input type="checkbox" value="1" name="cntctfrm_contact_send_copy" id="cntctfrm_contact_send_copy"' . ( $send_copy == '1' ? ' checked="checked" ' : "" ) . ' />
 										<label for="cntctfrm_contact_send_copy">' . $cntctfrm_options['send_copy_label'][ $lang ] . '</label>';
+									$content .= '</div>';
+								$content .= '</div>';
+							}
+							break;
+						case 'cntctfrm_contact_gdpr':
+							if ( 1 == $cntctfrm_options['gdpr'] ) {
+								$content .= '<div class="cntctfrm_field_wrap cntctfrm_field_attachment_wrap">';
+									$content .= '<div class="cntctfrm_checkbox cntctfrm_checkbox_gdpr">
+										<input type="checkbox" value="" required name="cntctfrm_contact_gdpr" id="cntctfrm_contact_gdpr"' . ( $gdpr == '1' ? ' checked="checked" ' : "" ) . ' />
+										<label for="cntctfrm_contact_gdpr">' . $cntctfrm_options['gdpr_label'][ $lang ] . '</label>';
+									if( ! empty( $cntctfrm_options['gdpr_link'] ) ) {
+										$content .= ' ' . '<a target="_blank" href="' . $cntctfrm_options['gdpr_link'] . '">' . $cntctfrm_options['gdpr_text'] . '</a>';
+									} else {
+										$content .= '<span>' . ' ' . $cntctfrm_options['gdpr_text'] . '</span>';
+									}
 									$content .= '</div>';
 								$content .= '</div>';
 							}
@@ -3479,7 +3542,7 @@ if ( ! function_exists ( 'cntctfrm_add_language' ) ) {
 if ( ! function_exists ( 'cntctfrm_remove_language' ) ) {
 	function cntctfrm_remove_language() {
 		$is_ajax = defined( 'DOING_AJAX' ) && DOING_AJAX;
-		if ( $is_alax )
+		if ( $is_ajax )
 			check_ajax_referer( plugin_basename( __FILE__ ), 'cntctfrm_ajax_nonce_field' );
 		else
 			$_POST['cntctfrm_change_tab'] = 'default';
@@ -3518,6 +3581,8 @@ if ( ! function_exists ( 'cntctfrm_remove_language' ) ) {
 			unset( $cntctfrm_options['attachment_tooltip'][ $lang ] );
 		if ( isset( $cntctfrm_options['send_copy_label'][ $lang ] ) )
 			unset( $cntctfrm_options['send_copy_label'][ $lang ] );
+		if ( isset( $cntctfrm_options['gdpr_label'][ $lang ] ) )
+			unset( $cntctfrm_options['gdpr_label'][ $lang ] );
 		if ( isset( $cntctfrm_options['thank_text'][ $lang ] ) )
 			unset( $cntctfrm_options['thank_text'][ $lang ] );
 		if ( isset( $cntctfrm_options['submit_label'][ $lang ] ) )

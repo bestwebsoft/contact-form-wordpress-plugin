@@ -274,6 +274,18 @@ td.cntctfrm_td_top_align {
 	margin-left: 20px;
 	z-index: -1;
 }
+.cntctfrm_pro_version_table_block.bws_pro_version_tooltip {
+	border-left: none;
+	border-top: none;
+	border-color: #DFDFDF;
+}
+#cntctfrm_gdpr_link_options {
+	border: 1px solid #e0e0e0;
+	max-width: 410px;
+	text-align: center;
+	margin-bottom: 8px;
+	padding-top: 3px;
+}
 @media screen and (max-width: 785px) {
 	.cntctfrm_auto_response_message {
 		margin-left: 0px;
@@ -302,9 +314,4 @@ td.cntctfrm_td_top_align {
 		padding-left: 5px;
 		padding-right: 5px;
 	}
-}
-.cntctfrm_pro_version_table_block.bws_pro_version_tooltip {
-	border-left: none;
-	border-top: none;
-	border-color: #DFDFDF;
 }
