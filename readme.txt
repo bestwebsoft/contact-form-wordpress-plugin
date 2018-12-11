@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: contact, contact form, feedback form, contact us form, contact button, email form, contac, form, web-page feedback, cf, cf plugin, contact form plugin
 Requires at least: 3.9
-Tested up to: 4.9.6
-Stable tag: 4.1.0
+Tested up to: 5.0
+Stable tag: 4.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -23,7 +23,7 @@ https://www.youtube.com/watch?v=F_piQa0hmkU
 = Free Features =
 
 * Add contact form to any post, page or widget using the shortcode
-* GDPR Compliant [NEW]
+* GDPR Compliant
 * Data validation before the submission
 * Send a copy of the submitted message to the email
 * Receive submissions to the default admin or custom email addresses
@@ -222,6 +222,10 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 15. Re-order contact form fields using drag & drop interface.
 
 == Changelog ==
+
+= V4.1.1 - 11.12.2018 =
+* Bugfix : The compatibility issue with Captcha plugin has been fixed.
+* Update : The compatibility with WordPress version 5.0 was updated.
 
 = V4.1.0 - 21.05.2018 =
 * NEW : GDPR Compliance has been added.
@@ -716,6 +720,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * Ability to add Contact Form into a post. Ability to adjust displaying of the form via shortcode is added.
 
 == Upgrade Notice ==
+
+= V4.1.1 =
+* Bugs fixed.
 
 = V4.1.0 =
 * Functionality improved.

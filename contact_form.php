@@ -6,12 +6,12 @@ Description: Simple contact form plugin any WordPress website must have.
 Author: BestWebSoft
 Text Domain: contact-form-plugin
 Domain Path: /languages
-Version: 4.1.0
+Version: 4.1.1
 Author URI: https://bestwebsoft.com/
 License: GPLv2 or later
 */
 
-/*  @ Copyright 2017 BestWebSoft  ( https://support.bestwebsoft.com )
+/*  @ Copyright 2018 BestWebSoft  ( https://support.bestwebsoft.com )
 
 	This program is free software; you can redistribute it and/or modify
 	it under the terms of the GNU General Public License, version 2, as
@@ -457,7 +457,7 @@ if ( ! function_exists( 'cntctfrm_related_plugins' ) ) {
 		$free_active = is_plugin_active( 'captcha-bws/captcha-bws.php' );
 		$plus_active = is_plugin_active( 'captcha-plus/captcha-plus.php' );
 		$pro_active = is_plugin_active( 'captcha-pro/captcha_pro.php' );
-		if ( /*$free_active ||*/ $plus_active || $pro_active ) {
+		if ( $free_active || $plus_active || $pro_active ) {
 			$cptch_options = get_option( 'cptch_options' );
 
 			if ( $free_active )
@@ -1511,7 +1511,7 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 											<?php } ?>
 										</div>
 										<div style="clear: both;">
-											<?php if ( /*array_key_exists( 'captcha-bws/captcha-bws.php', $all_plugins ) ||*/ array_key_exists( 'captcha-plus/captcha-plus.php', $all_plugins ) || array_key_exists( 'captcha-pro/captcha_pro.php', $all_plugins ) ) {
+											<?php if ( array_key_exists( 'captcha-bws/captcha-bws.php', $all_plugins ) || array_key_exists( 'captcha-plus/captcha-plus.php', $all_plugins ) || array_key_exists( 'captcha-pro/captcha_pro.php', $all_plugins ) ) {
 												if ( array_key_exists( 'captcha', $cntctfrm_related_plugins ) ) {
 													$captcha_enabled = ! empty( $cntctfrm_related_plugins['captcha']['options']['forms']['bws_contact']['enable'] ) ? true : false;
 													if ( ! $contact_form_multi_active ) {

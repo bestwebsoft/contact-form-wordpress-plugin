@@ -8,7 +8,7 @@
 <h4>Free Features</h4>
 <ul>
 <li>Add contact form to any post, page or widget using the shortcode</li>
-<li>GDPR Compliant [NEW]</li>
+<li>GDPR Compliant</li>
 <li>Data validation before the submission</li>
 <li>Send a copy of the submitted message to the email</li>
 <li>Receive submissions to the default admin or custom email addresses</li>
