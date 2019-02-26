@@ -1,0 +1,8 @@
+/* Pinterest icon */
+.menu-top.toplevel_page_contact_form .wp-menu-image {
+	font-family: 'bwsicons' !important;
+}
+.menu-top.toplevel_page_contact_form .wp-menu-image:before {
+	content: "\e905";
+	font-family: 'bwsicons' !important;
+}

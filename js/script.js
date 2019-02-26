@@ -1,5 +1,5 @@
 (function($) {
-	$(document).ready( function() {		
+	$(document).ready( function() {
 		$( '#cntctfrm_gdpr' ).on( 'change', function() {
 			if( $( this).is( ':checked' ) ) {
 				$( '#cntctfrm_gdpr_link_options' ).show();
@@ -121,8 +121,8 @@
 		$( 'input[name="cntctfrm_layout"]' ).change( function() {
 			var form_layout = $( this ).val();
 			if ( form_layout == 1 ) {
-				$( '#cntctfrm_settings_form #cntctfrm_contact_form' ).removeClass( 'cntctfrm_two_columns' );
-				$( '#cntctfrm_settings_form #cntctfrm_contact_form' ).addClass( 'cntctfrm_one_column' );
+				$( '#cntctfrm_contact_form' ).removeClass( 'cntctfrm_two_columns' );
+				$( '#cntctfrm_contact_form' ).addClass( 'cntctfrm_one_column' );
 				if( $( '#cntctfrm_second_column li' ).length > 0 ) {
 					$( '#cntctfrm_first_column' ).append( $( '#cntctfrm_second_column' ).html() );
 				}
@@ -130,8 +130,8 @@
 				$( '#cntctfrm_second_column' ).hide();
 			}
 			if ( form_layout == 2 ) {
-				$( '#cntctfrm_settings_form #cntctfrm_contact_form' ).removeClass( 'cntctfrm_one_column' );
-				$( '#cntctfrm_settings_form #cntctfrm_contact_form' ).addClass( 'cntctfrm_two_columns' );
+				$( '#cntctfrm_contact_form' ).removeClass( 'cntctfrm_one_column' );
+				$( '#cntctfrm_contact_form' ).addClass( 'cntctfrm_two_columns' );
 				$( '#cntctfrm_second_column' ).show();
 			}
 

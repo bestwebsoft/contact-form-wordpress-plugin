@@ -95,16 +95,16 @@
 	padding: 5px 10px 5px 5px;
 }
 #cntctfrm_left_table {
-	margin-right: 30px;
+	margin-right: 10px;
 }
 .cntctfrm_appearance_ltr #cntctfrm_left_table,
 .cntctfrm_appearance_rtl #cntctfrm_right_table {
-	max-width: 670px;
+	max-width: 700px;
 	width: 100%;
 }
 .cntctfrm_appearance_ltr #cntctfrm_right_table,
 .cntctfrm_appearance_rtl #cntctfrm_left_table {
-	max-width: 684px;
+	max-width: 700px;
 	width: 100%;
 }
 .cntctfrm_appearance_ltr #cntctfrm_left_table,
@@ -128,6 +128,9 @@
 	background: #EAEAEA;
 	border: 1px solid #DCDCDC;
 	padding: 10px;
+}
+div.cntctfrm_info {
+	padding-left: 23px;
 }
 /* cntctfrm_settings_table */
 .cntctfrm_settings_table th,
@@ -157,6 +160,16 @@
 #cntctfrm_table_from_email td.cntctfrm_radio_from_email {
 	text-align: center;
 	width: 25px;
+}
+.wp-picker-container {
+	margin-top: 5px;
+}
+#cntctfrm_gdpr_link_options {
+	border: 1px solid #e0e0e0;
+	max-width: 410px;
+	text-align: center;
+	margin-bottom: 8px;
+	padding-top: 3px;
 }
 @media screen and (max-width: 600px) {
 	#cntctfrm_nav_container {
@@ -205,7 +218,7 @@ td.cntctfrm_td_top_align {
 	max-width: 330px !important;
 }
 .cntctfrm_width_default.cntctfrm_two_columns {
-	max-width: 674px !important;
+	max-width: 700px !important;
 }
 .cntctfrm_width_default .cntctfrm_column {
 	max-width: 330px !important;
@@ -274,18 +287,6 @@ td.cntctfrm_td_top_align {
 	margin-left: 20px;
 	z-index: -1;
 }
-.cntctfrm_pro_version_table_block.bws_pro_version_tooltip {
-	border-left: none;
-	border-top: none;
-	border-color: #DFDFDF;
-}
-#cntctfrm_gdpr_link_options {
-	border: 1px solid #e0e0e0;
-	max-width: 410px;
-	text-align: center;
-	margin-bottom: 8px;
-	padding-top: 3px;
-}
 @media screen and (max-width: 785px) {
 	.cntctfrm_auto_response_message {
 		margin-left: 0px;
@@ -314,4 +315,16 @@ td.cntctfrm_td_top_align {
 		padding-left: 5px;
 		padding-right: 5px;
 	}
+}
+.cntctfrm_pro_version_table_block.bws_pro_version_tooltip {
+	border-left: none;
+	border-top: none;
+	border-color: #DFDFDF;
+}
+.nav-tab {
+	margin-left: 0 ! important;
+	margin-right: 5px ! important;
+}
+.wp-admin select {
+	vertical-align: top;
 }
