@@ -6,7 +6,7 @@ Description: Simple contact form plugin any WordPress website must have.
 Author: BestWebSoft
 Text Domain: contact-form-plugin
 Domain Path: /languages
-Version: 4.1.2
+Version: 4.1.3
 Author URI: https://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -415,7 +415,7 @@ if ( ! function_exists ( 'cntctfrm_db_create' ) ) {
 			UNIQUE KEY id (id)
 		);";
 		require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
-		dbDelta( $sql );
+        $wpdb->query( $sql );
 		$fields = array(
 			'name',
 			'email',

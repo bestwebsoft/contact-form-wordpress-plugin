@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: contact, contact form, feedback form, contact us form, contact button, email form, contac, form, web-page feedback, cf, cf plugin, contact form plugin
 Requires at least: 3.9
-Tested up to: 5.0.3
-Stable tag: 4.1.2
+Tested up to: 5.1
+Stable tag: 4.1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -222,6 +222,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 15. Re-order contact form fields using drag & drop interface.
 
 == Changelog ==
+
+= V4.1.3 - 06.03.2019 =
+* Bugfix : The bug with wp-options call has need fixed. 
 
 = V4.1.2 - 26.02.2019 =
 * Update : The plugin settings page has been changed.
@@ -723,6 +726,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * Ability to add Contact Form into a post. Ability to adjust displaying of the form via shortcode is added.
 
 == Upgrade Notice ==
+
+= V4.1.3 =
+* Bugs fixed.
 
 = V4.1.2 =
 * Appearance improved.
