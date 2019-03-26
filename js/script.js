@@ -47,6 +47,13 @@
 				$( '.cntctfrm_display_add_info_block' ).hide();
 			}
 		});
+		$( '#cntctfrm_attachment' ).change( function() {
+			if ( $( this ).is( ':checked' ) ) {
+				$( '.cntctfrm-multi-attachment' ).show();
+			} else {
+				$( '.cntctfrm-multi-attachment' ).hide();
+			}
+		});
 		$( '#cntctfrm_add_language_button' ).click( function( event ) {
 			event = event || window.event;
 			event.preventDefault();
@@ -121,8 +128,8 @@
 		$( 'input[name="cntctfrm_layout"]' ).change( function() {
 			var form_layout = $( this ).val();
 			if ( form_layout == 1 ) {
-				$( '#cntctfrm_contact_form' ).removeClass( 'cntctfrm_two_columns' );
-				$( '#cntctfrm_contact_form' ).addClass( 'cntctfrm_one_column' );
+				$( '#cntctfrm_settings_form #cntctfrm_contact_form' ).removeClass( 'cntctfrm_two_columns' );
+				$( '#cntctfrm_settings_form #cntctfrm_contact_form' ).addClass( 'cntctfrm_one_column' );
 				if( $( '#cntctfrm_second_column li' ).length > 0 ) {
 					$( '#cntctfrm_first_column' ).append( $( '#cntctfrm_second_column' ).html() );
 				}
@@ -130,8 +137,8 @@
 				$( '#cntctfrm_second_column' ).hide();
 			}
 			if ( form_layout == 2 ) {
-				$( '#cntctfrm_contact_form' ).removeClass( 'cntctfrm_one_column' );
-				$( '#cntctfrm_contact_form' ).addClass( 'cntctfrm_two_columns' );
+				$( '#cntctfrm_settings_form #cntctfrm_contact_form' ).removeClass( 'cntctfrm_one_column' );
+				$( '#cntctfrm_settings_form #cntctfrm_contact_form' ).addClass( 'cntctfrm_two_columns' );
 				$( '#cntctfrm_second_column' ).show();
 			}
 

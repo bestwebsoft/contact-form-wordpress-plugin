@@ -30,7 +30,11 @@
 <li>Phone number</li>
 </ul>
 </li>
-<li>File attachments</li>
+<li>File attachments
+<ul>
+<li>Multiple file selection [NEW]</li>
+</ul>
+</li>
 <li>Enable additional pre-build fields</li>
 <li>Enable two column layout</li>
 <li>Change the width for contact form</li>

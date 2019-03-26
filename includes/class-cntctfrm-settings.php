@@ -52,7 +52,7 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 						'pro_basename'  => 'contact-form-multi-pro/contact-form-multi-pro.php'
 					);
 			}
-			
+
 			parent::__construct( array(
 				'plugin_basename'		=> $plugin_basename,
 				'plugins_info'			=> $cntctfrm_plugin_info,
@@ -252,6 +252,7 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 
 			$this->options['change_label']             = isset( $_POST['cntctfrm_change_label'] ) ? 1 : 0;
 			$this->options['change_label_in_email']    = isset( $_POST['cntctfrm_change_label_in_email'] ) ? 1 : 0;
+			$this->options['active_multi_attachment']    = isset( $_POST['cntctfrm_active_multi_attachment'] ) ? 1 : 0;
 
 			if ( 1 == $this->options['change_label'] ) {
 				foreach ( $_POST['cntctfrm_name_label'] as $key => $val ) {
@@ -411,12 +412,12 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 			global $wpdb, $wp_version, $cntctfrm_plugin_info, $bstwbsftwppdtplgns_options, $cntctfrm_countries, $cntctfrm_lang_codes, $cntctfrm_related_plugins, $bws_hide_premium_options_check, $contact_form_multi_active;
 			$display_pro_options = false;
 			if ( 'pro' == $this->cfmlt_is_active ) {
-				$display_pro_options = true; 
+				$display_pro_options = true;
 			}
 			if ( empty( $cntctfrm_related_plugins ) ) {
 				cntctfrm_related_plugins();
-			} 
-			$userslogin = get_users( 'blog_id=' . $GLOBALS['blog_id'] . '&role=administrator' ); 
+			}
+			$userslogin = get_users( 'blog_id=' . $GLOBALS['blog_id'] . '&role=administrator' );
 			if ( ! function_exists( 'get_plugins' ) ) {
 				require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 			}
@@ -533,15 +534,15 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 			</div>
 		<?php }
 
-		public function tab_additional_settings() { 
+		public function tab_additional_settings() {
 			global $cntctfrm_related_plugins, $cntctfrm_lang_codes, $cntctfrm_plugin_info, $wp_version, $bws_hide_premium_options_check, $contact_form_multi_active;
 			$display_pro_options = false;
 			if ( 'pro' == $this->cfmlt_is_active ) {
-				$display_pro_options = true; 
+				$display_pro_options = true;
 			}
 			if ( empty( $cntctfrm_related_plugins ) ) {
 				cntctfrm_related_plugins();
-			} 
+			}
 			$all_plugins = get_plugins();?>
 			<h3 class="bws_tab_label"><?php _e( 'Additional Settings', 'contact-form-plugin' ); ?></h3>
 			<?php $this->help_phrase(); ?>
@@ -838,6 +839,23 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 							<td></td>
 						<?php } ?>
 					</tr>
+                    <tr valign="top" class="cntctfrm-multi-attachment" <?php if ( ! $this->options['attachment'] ) echo 'style="display:none";' ?> >
+                        <td>
+                            <?php _e( 'Multi-attachment', 'contact-form-plugin' ); ?>
+                            <div class="bws_help_box dashicons dashicons-editor-help">
+                                <div class="bws_hidden_help_text" style="min-width: 200px;"><?php _e( "Enable to multiple file selection", 'contact-form-plugin' ); ?></div>
+                            </div>
+                        </td>
+                        <td>
+                            <label class="bws_info"><input type="checkbox" name="cntctfrm_active_multi_attachment" value="1" <?php checked( '1', $this->options['active_multi_attachment'] ); ?> /></label>
+                        </td>
+                        <td></td>
+	                    <?php if ( ! $this->hide_pro_tabs ) { ?>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+	                    <?php } ?>
+                    </tr>
 				</tbody>
 			</table>
 			<table class="form-table" style="width:auto;">
@@ -1189,11 +1207,11 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 			</table>
 		<?php }
 
-		public function tab_appearance() { 
+		public function tab_appearance() {
 			global $cntctfrm_related_plugins, $cntctfrm_plugin_info, $wp_version, $bws_hide_premium_options_check, $contact_form_multi_active;
 			$display_pro_options = false;
 			if ( 'pro' == $this->cfmlt_is_active ) {
-				$display_pro_options = true; 
+				$display_pro_options = true;
 			}?>
 			<h3 class="bws_tab_label"><?php _e( 'Appearance', 'contact-form-plugin' ); ?></h3>
 			<?php $this->help_phrase(); ?>
@@ -1202,8 +1220,8 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 					<div class="error">
 						<p>
 							<strong>
-								<?php printf( 
-									__( "Please enable JavaScript to change '%s', '%s', '%s', '%s' options and for fields sorting.", 'contact-form-plugin' ), 
+								<?php printf(
+									__( "Please enable JavaScript to change '%s', '%s', '%s', '%s' options and for fields sorting.", 'contact-form-plugin' ),
 									__( "Form layout", 'contact-form-plugin' ),
 									__( "Labels position", 'contact-form-plugin' ),
 									__( "Labels align", 'contact-form-plugin' ),
