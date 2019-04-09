@@ -6,7 +6,7 @@ Description: Simple contact form plugin any WordPress website must have.
 Author: BestWebSoft
 Text Domain: contact-form-plugin
 Domain Path: /languages
-Version: 4.1.4
+Version: 4.1.5
 Author URI: https://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -34,37 +34,38 @@ License: GPLv2 or later
 if ( ! function_exists( 'cntctfrm_admin_menu' ) ) {
 	function cntctfrm_admin_menu() {
 		global $submenu, $cntctfrm_plugin_info, $wp_version;
-
-		$cntctfrm_settings = add_menu_page(
-			__( 'Contact Form Settings', 'contact-form-plugin' ), /* $page_title */
-			'Contact Form', /* $menu_title */
-			'manage_options', /* $capability */
-			'contact_form.php', /* $menu_slug */
-			'cntctfrm_settings_page' /* $callable_function */
-		);
-		add_submenu_page(
-			'contact_form.php',
-			__( 'Contact Form Settings', 'contact-form-plugin' ),
-			__( 'Settings', 'contact-form-plugin' ),
-			'manage_options',
-			'contact_form.php',
-			'cntctfrm_settings_page'
-		);
-		add_submenu_page(
-			'contact_form.php',
-			'BWS Panel',
-			'BWS Panel',
-			'manage_options',
-			'cntctfrm-bws-panel',
-			'bws_add_menu_render'
-		);
-		if ( isset( $submenu['contact_form.php'] ) )
-			$submenu['contact_form.php'][] = array(
-				'<span style="color:#d86463"> ' . __( 'Upgrade to Pro', 'contact-form-plugin' ) . '</span>',
+		if ( ! is_plugin_active( 'contact-form-pro/contact_form_pro.php') ) {
+			$cntctfrm_settings = add_menu_page(
+				__( 'Contact Form Settings', 'contact-form-plugin' ), /* $page_title */
+				'Contact Form', /* $menu_title */
+				'manage_options', /* $capability */
+				'contact_form.php', /* $menu_slug */
+				'cntctfrm_settings_page' /* $callable_function */
+			);
+			add_submenu_page(
+				'contact_form.php',
+				__( 'Contact Form Settings', 'contact-form-plugin' ),
+				__( 'Settings', 'contact-form-plugin' ),
 				'manage_options',
-				'https://bestwebsoft.com/products/wordpress/plugins/contact-form/?k=697c5e74f39779ce77850e11dbe21962&pn=77&v=' . $cntctfrm_plugin_info["Version"] . '&wp_v=' . $wp_version );
+				'contact_form.php',
+				'cntctfrm_settings_page'
+			);
+			add_submenu_page(
+				'contact_form.php',
+				'BWS Panel',
+				'BWS Panel',
+				'manage_options',
+				'cntctfrm-bws-panel',
+				'bws_add_menu_render'
+			);
+			if ( isset( $submenu['contact_form.php'] ) )
+				$submenu['contact_form.php'][] = array(
+					'<span style="color:#d86463"> ' . __( 'Upgrade to Pro', 'contact-form-plugin' ) . '</span>',
+					'manage_options',
+					'https://bestwebsoft.com/products/wordpress/plugins/contact-form/?k=697c5e74f39779ce77850e11dbe21962&pn=77&v=' . $cntctfrm_plugin_info["Version"] . '&wp_v=' . $wp_version );
 
-		add_action( "load-{$cntctfrm_settings}", 'cntctfrm_add_tabs' );
+			add_action( "load-{$cntctfrm_settings}", 'cntctfrm_add_tabs' );
+        }
 	}
 }
 
@@ -346,7 +347,6 @@ if ( ! function_exists( 'cntctfrm_get_option_defaults' ) ) {
 			'language'                  => array(),
 			'change_label'              => 0,
 			'gdpr_link'                 => '',
-			'gdpr_text'                 => '',
 			'name_label'                => array( 'default' => __( "Name", 'contact-form-plugin' ) . ':' ),
 			'address_label'             => array( 'default' => __( "Address", 'contact-form-plugin' ) . ':' ),
 			'email_label'               => array( 'default' => __( "Email Address", 'contact-form-plugin' ) . ':' ),
@@ -357,6 +357,7 @@ if ( ! function_exists( 'cntctfrm_get_option_defaults' ) ) {
 			'attachment_tooltip'        => array( 'default' => __( "Supported file types: HTML, TXT, CSS, GIF, PNG, JPEG, JPG, TIFF, BMP, AI, EPS, PS, CSV, RTF, PDF, DOC, DOCX, XLS, XLSX, ZIP, RAR, WAV, MP3, PPT.", 'contact-form-plugin' ) ),
 			'send_copy_label'           => array( 'default' => __( "Send me a copy", 'contact-form-plugin' ) ),
 			'gdpr_label'                => array( 'default' => __( "I consent to having this site collect my personal data.", 'contact-form-plugin' ) ),
+			'gdpr_text_button'			=> array( 'default' => __( "Learn more", 'contact-form-plugin' ) ),
 			'submit_label'              => array( 'default' => __( "Submit", 'contact-form-plugin' ) ),
 			'name_error'                => array( 'default' => __( "Your name is required.", 'contact-form-plugin' ) ),
 			'address_error'             => array( 'default' => __( "Address is required.", 'contact-form-plugin' ) ),
@@ -913,9 +914,9 @@ if ( ! function_exists( 'cntctfrm_display_form' ) ) {
 										<input type="checkbox" value="" required name="cntctfrm_contact_gdpr" id="cntctfrm_contact_gdpr"' . ( $gdpr == '1' ? ' checked="checked" ' : "" ) . ' />
 										<label for="cntctfrm_contact_gdpr">' . $cntctfrm_options['gdpr_label'][ $lang ] . '</label>';
 									if( ! empty( $cntctfrm_options['gdpr_link'] ) ) {
-										$content .= ' ' . '<a target="_blank" href="' . $cntctfrm_options['gdpr_link'] . '">' . $cntctfrm_options['gdpr_text'] . '</a>';
+										$content .= ' ' . '<a target="_blank" href="' . $cntctfrm_options['gdpr_link'] . '">' . $cntctfrm_options['gdpr_text_button'][ $lang ] . '</a>';
 									} else {
-										$content .= '<span>' . ' ' . $cntctfrm_options['gdpr_text'] . '</span>';
+										$content .= '<span>' . ' ' . $cntctfrm_options['gdpr_text_button'][ $lang ] . '</span>';
 									}
 									$content .= '</div>';
 								$content .= '</div>';

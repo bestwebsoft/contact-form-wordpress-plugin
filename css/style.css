@@ -171,6 +171,16 @@ div.cntctfrm_info {
 	margin-bottom: 8px;
 	padding-top: 3px;
 }
+@media screen and (max-width: 1350px) {
+	#cntctfrm_additional_settings_tab .form-table td {
+		display: inline-block;
+	}
+	#cntctfrm_gdpr_link_options {
+		padding: 5px;
+		display: table-caption;
+		text-align: left;
+	}
+}
 @media screen and (max-width: 600px) {
 	#cntctfrm_nav_container {
 		border: none;

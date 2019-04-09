@@ -32,7 +32,7 @@
 </li>
 <li>File attachments
 <ul>
-<li>Multiple file selection [NEW]</li>
+<li>Multiple file selection</li>
 </ul>
 </li>
 <li>Enable additional pre-build fields</li>

@@ -168,7 +168,6 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 			$this->options['send_copy']                = isset( $_POST['cntctfrm_send_copy'] ) ? $_POST['cntctfrm_send_copy'] : 0;
 			$this->options['gdpr']                     = isset( $_POST['cntctfrm_gdpr'] ) ? $_POST['cntctfrm_gdpr'] : 0;
 			$this->options['gdpr_link']                = isset( $_POST['cntctfrm_gdpr_link'] ) ? $_POST['cntctfrm_gdpr_link'] : '';
-			$this->options['gdpr_text']                = isset( $_POST['cntctfrm_gdpr_text'] ) ? $_POST['cntctfrm_gdpr_text'] : '';
 
 			$this->options['delete_attached_file'] = isset( $_POST['cntctfrm_delete_attached_file'] ) ? $_POST['cntctfrm_delete_attached_file'] : 0;
 
@@ -266,6 +265,7 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 					$this->options['attachment_tooltip'][ $key ]       = stripcslashes( htmlspecialchars( $_POST['cntctfrm_attachment_tooltip'][ $key ] ) );
 					$this->options['send_copy_label'][ $key ]          = stripcslashes( htmlspecialchars( $_POST['cntctfrm_send_copy_label'][ $key ] ) );
 					$this->options['gdpr_label'][ $key ]               = stripcslashes( htmlspecialchars( $_POST['cntctfrm_gdpr_label'][ $key ] ) );
+					$this->options['gdpr_text_button'][ $key ]         = stripcslashes( htmlspecialchars( $_POST['cntctfrm_gdpr_text_button'][ $key ] ) );
 					$this->options['thank_text'][ $key ]               = stripcslashes( htmlspecialchars( $_POST['cntctfrm_thank_text'][ $key ] ) );
 					$this->options['submit_label'][ $key ]             = stripcslashes( htmlspecialchars( $_POST['cntctfrm_submit_label'][ $key ] ) );
 					$this->options['name_error'][ $key ]               = stripcslashes( htmlspecialchars( $_POST['cntctfrm_name_error'][ $key ] ) );
@@ -295,6 +295,7 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 					$this->options['attachment_tooltip']       = $option_defaults['attachment_tooltip'];
 					$this->options['send_copy_label']          = $option_defaults['send_copy_label'];
 					$this->options['gdpr_label']               = $option_defaults['gdpr_label'];
+					$this->options['gdpr_text_button']         = $option_defaults['gdpr_text_button'];
 					$this->options['thank_text']               = $_POST['cntctfrm_thank_text'];
 					$this->options['submit_label']             = $option_defaults['submit_label'];
 					$this->options['name_error']               = $option_defaults['name_error'];
@@ -323,6 +324,7 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 					$this->options['attachment_tooltip']['default']        = $option_defaults['attachment_tooltip']['default'];
 					$this->options['send_copy_label']['default']           = $option_defaults['send_copy_label']['default'];
 					$this->options['gdpr_label']['default']                = $option_defaults['gdpr_label']['default'];
+					$this->options['gdpr_text_button']['default']          = $option_defaults['gdpr_text_button']['default'];
 					$this->options['submit_label']['default']              = $option_defaults['submit_label']['default'];
 					$this->options['name_error']['default']                = $option_defaults['name_error']['default'];
 					$this->options['address_error']['default']             = $option_defaults['address_error']['default'];
@@ -887,10 +889,6 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 								<?php _e( "Link to Privacy Policy Page", 'contact-form-plugin' ); ?>
 								<input type="url" id="cntctfrm_gdpr_link" name="cntctfrm_gdpr_link" value="<?php echo $this->options['gdpr_link']; ?>" />
 							</label>
-							<label class="cntctfrm_privacy_policy_text" >
-								<?php _e( "Text for Privacy Policy Link", 'contact-form-plugin' ); ?>
-								<input type="text" id="cntctfrm_gdpr_text" name="cntctfrm_gdpr_text" value="<?php echo $this->options['gdpr_text']; ?>" />
-							</label>
 						</div>
 						<div style="clear: both;">
 							<?php if ( array_key_exists( 'subscriber/subscriber.php', $all_plugins ) || array_key_exists( 'subscriber-pro/subscriber-pro.php', $all_plugins ) ) {
@@ -1089,6 +1087,7 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 								<input type="text" maxlength="250" name="cntctfrm_attachment_tooltip[default]" value="<?php echo $this->options['attachment_tooltip']['default']; ?>" /> <span class="bws_info"><?php _e( "Tips below the Attachment block", 'contact-form-plugin' ); ?></span><br />
 								<input type="text" maxlength="250" name="cntctfrm_send_copy_label[default]" value="<?php echo $this->options['send_copy_label']['default']; ?>" /> <span class="bws_info"><?php _e( "Send me a copy", 'contact-form-plugin' ); ?></span><br />
 								<input type="text" maxlength="250" name="cntctfrm_gdpr_label[default]" value="<?php echo $this->options['gdpr_label']['default']; ?>" /> <span class="bws_info"><?php _e( "I consent to having this site collect my personal data.", 'contact-form-plugin' ); ?></span><br />
+                                <input type="text" maxlength="250" name="cntctfrm_gdpr_text_button[default]" value="<?php echo $this->options['gdpr_text_button']['default']; ?>" /> <span class="bws_info"><?php _e( "Learn more", 'contact-form-plugin' ); ?></span><br />
 								<input type="text" maxlength="250" name="cntctfrm_submit_label[default]" value="<?php echo $this->options['submit_label']['default']; ?>" /> <span class="bws_info"><?php _e( "Submit", 'contact-form-plugin' ); ?></span><br />
 								<input type="text" maxlength="250" name="cntctfrm_name_error[default]" value="<?php echo $this->options['name_error']['default']; ?>" /> <span class="bws_info"><?php _e( "Error message for the Name field", 'contact-form-plugin' ); ?></span><br />
 								<input type="text" maxlength="250" name="cntctfrm_address_error[default]" value="<?php echo $this->options['address_error']['default']; ?>" /> <span class="bws_info"><?php _e( "Error message for the Address field", 'contact-form-plugin' ); ?></span><br />
@@ -1128,6 +1127,7 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 										<input type="text" maxlength="250" name="cntctfrm_attachment_tooltip[<?php echo $val; ?>]" value="<?php if ( isset( $this->options['attachment_tooltip'][ $val ] ) ) echo $this->options['attachment_tooltip'][ $val ]; ?>" /> <span class="bws_info"><?php _e( "Tips below the Attachment block", 'contact-form-plugin' ); ?></span><br />
 										<input type="text" maxlength="250" name="cntctfrm_send_copy_label[<?php echo $val; ?>]" value="<?php if ( isset( $this->options['send_copy_label'][ $val ] ) ) echo $this->options['send_copy_label'][ $val ]; ?>" /> <span class="bws_info"><?php _e( "Send me a copy", 'contact-form-plugin' ); ?></span><br />
 										<input type="text" maxlength="250" name="cntctfrm_gdpr_label[<?php echo $val; ?>]" value="<?php if ( isset( $this->options['gdpr_label'][ $val ] ) ) echo $this->options['gdpr_label'][ $val ]; ?>" /> <span class="bws_info"><?php _e( "I consent to having this site collect my personal data.", 'contact-form-plugin' ); ?></span><br />
+                                        <input type="text" maxlength="250" name="cntctfrm_gdpr_text_button[<?php echo $val; ?>]" value="<?php if ( isset( $this->options['gdpr_text_button'][ $val ] ) ) echo $this->options['gdpr_text_button'][ $val ]; ?>" /> <span class="bws_info"><?php _e( "Learn more", 'contact-form-plugin' ); ?></span><br />
 										<input type="text" maxlength="250" name="cntctfrm_submit_label[<?php echo $val; ?>]" value="<?php if ( isset( $this->options['submit_label'][ $val ] ) ) echo $this->options['submit_label'][ $val ]; ?>" /> <span class="bws_info"><?php _e( "Submit", 'contact-form-plugin' ); ?></span><br />
 										<input type="text" maxlength="250" name="cntctfrm_name_error[<?php echo $val; ?>]" value="<?php if ( isset( $this->options['name_error'][ $val ] ) ) echo $this->options['name_error'][ $val ]; ?>" /> <span class="bws_info"><?php _e( "Error message for the Name field", 'contact-form-plugin' ); ?></span><br />
 										<input type="text" maxlength="250" name="cntctfrm_address_error[<?php echo $val; ?>]" value="<?php if ( isset( $this->options['address_error'][ $val ] ) ) echo $this->options['address_error'][ $val ]; ?>" /> <span class="bws_info"><?php _e( "Error message for the Address field", 'contact-form-plugin' ); ?></span><br />
@@ -1676,9 +1676,9 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 																	<input type="checkbox" value="" name="cntctfrm_contact_gdpr" id="cntctfrm_contact_gdpr" class="bws_no_bind_notice" style="margin: 0;" />
 																	<label for="cntctfrm_contact_gdpr"><?php echo $this->options['gdpr_label']['default']; ?></label>
 																	<?php if( ! empty( $this->options['gdpr_link'] ) ) { ?>
-																		<a href="<?php $this->options['gdpr_link'] ?>" target="_blank"><?php echo $this->options['gdpr_text']; ?></a>
+																		<a href="<?php $this->options['gdpr_link'] ?>" target="_blank"><?php echo $this->options['gdpr_text_button']['default']; ?></a>
 																	<?php } else { ?>
-																		<span><?php echo $this->options['gdpr_text']; ?></span>
+																		<span><?php echo $this->options['gdpr_text_button']['default']; ?></span>
 																	<?php } ?>
 																</div>
 															</li>
