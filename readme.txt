@@ -2,9 +2,9 @@
 Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: contact, contact form, feedback form, contact us form, contact button, email form, contac, form, web-page feedback, cf, cf plugin, contact form plugin
-Requires at least: 3.9
-Tested up to: 5.1.1
-Stable tag: 4.1.5
+Requires at least: 4.0
+Tested up to: 5.2.2
+Stable tag: 4.1.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -223,6 +223,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 15. Re-order contact form fields using drag & drop interface.
 
 == Changelog ==
+
+= V4.1.6 - 04.09.2019 =
+* Update: The deactivation feedback has been changed. Misleading buttons have been removed.
 
 = V4.1.5 - 09.04.2019 =
 * Bugfix : The ability to translate GDPR Compliance has been fixed.
@@ -733,6 +736,12 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * Ability to add Contact Form into a post. Ability to adjust displaying of the form via shortcode is added.
 
 == Upgrade Notice ==
+
+= V4.1.6 =
+ * Usability improved
+
+= V4.1.5 =
+* Bugs fixed.
 
 = V4.1.4 =
 * Bugs fixed.
