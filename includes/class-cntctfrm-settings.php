@@ -653,7 +653,10 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 					<?php if ( ! $this->hide_pro_tabs ) { ?>
 						<tr valign="top" >
 							<td><?php _e( "Department selectbox", 'contact-form-plugin' ); ?></td>
-							<td class="bws_pro_version"></td>
+                            <td class="bws_pro_version">
+                                <label><input disabled="disabled" type="checkbox" name="cntctfrm_display_selectbox" value="1" />
+                                    <span class="cntctfrm_mobile_title"><?php _e( "Used", 'contact-form-plugin' ); ?></span></label>
+                            </td>
 							<td class="bws_pro_version">
 								<label><input disabled="disabled" type="checkbox" name="cntctfrm_required_department_field" value="1" />
 								<span class="cntctfrm_mobile_title"><?php _e( "Required", 'contact-form-plugin' ); ?></span></label>
@@ -728,9 +731,16 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 					</tr>
 					<tr valign="top">
 						<td><?php _e( "Email Address", 'contact-form-plugin' ); ?></td>
-						<td></td>
-						<td></td>
+
 						<?php if ( ! $this->hide_pro_tabs ) { ?>
+                            <td class="bws_pro_version">
+                                <label><input disabled="disabled" checked="checked" type="checkbox" name="cntctfrm_display_email" value="1" />
+                                    <span class="cntctfrm_mobile_title"><?php _e( "Used", 'contact-form-plugin' ); ?></span></label>
+                            </td>
+                            <td class="bws_pro_version">
+                                <label><input disabled="disabled" type="checkbox" name="cntctfrm_required_email" value="1" />
+                                    <span class="cntctfrm_mobile_title"><?php _e( "Required", 'contact-form-plugin' ); ?></span></label>
+                            </td>
 							<td class="bws_pro_version">
 								<label><input disabled="disabled" type="checkbox" name="cntctfrm_visible_email" value="1" checked="checked" />
 								<span class="cntctfrm_mobile_title"><?php _e( "Visible", 'contact-form-plugin' ); ?></span></label>
@@ -744,7 +754,10 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 									<?php _e( "Use User's email as a default value if the user is logged in.", 'contact-form-plugin' ); ?><br />
 								<span class="bws_info" style="padding-left: 20px;"><?php _e( "'Visible' and 'Disabled for editing' options will be applied only to logged-in users.", 'contact-form-plugin' ); ?></span>
 							</td>
-						<?php } ?>
+						<?php } else { ?>
+                            <td></td>
+                            <td></td>
+                        <?php } ?>
 					</tr>
 					<tr valign="top">
 						<td><?php _e( "Phone number", 'contact-form-plugin' ); ?></td>
@@ -764,7 +777,14 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 					</tr>
 					<tr valign="top">
 						<td><?php _e( "Subject", 'contact-form-plugin' ); ?></td>
-						<td></td>
+			            <?php if ( ! $this->hide_pro_tabs ) { ?>
+                            <td class="bws_pro_version">
+                                <label><input disabled="disabled" checked="checked" type="checkbox" name="cntctfrm_display_subject" value="1" />
+                                    <span class="cntctfrm_mobile_title"><?php _e( "Used", 'contact-form-plugin' ); ?></span></label>
+                            </td>
+                        <?php } else { ?>
+                            <td></td>
+                        <?php } ?>
 						<td>
 							<label><input type="checkbox" id="cntctfrm_required_subject_field" name="cntctfrm_required_subject_field" value="1" <?php checked( '1', $this->options['required_subject_field'] ); ?> />
 							<span class="cntctfrm_mobile_title"><?php _e( "Required", 'contact-form-plugin' ); ?></span></label>
@@ -788,7 +808,14 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 					</tr>
 					<tr valign="top">
 						<td><?php _e( "Message", 'contact-form-plugin' ); ?></td>
-						<td></td>
+						<?php if ( ! $this->hide_pro_tabs ) { ?>
+                            <td class="bws_pro_version">
+                                <label><input disabled="disabled" checked="checked" type="checkbox" name="cntctfrm_display_message" value="1" />
+                                    <span class="cntctfrm_mobile_title"><?php _e( "Used", 'contact-form-plugin' ); ?></span></label>
+                            </td>
+						<?php } else { ?>
+                            <td></td>
+						<?php } ?>
 						<td>
 							<label><input type="checkbox" id="cntctfrm_required_message_field" name="cntctfrm_required_message_field" value="1" <?php checked( '1', $this->options['required_message_field'] ); ?> />
 							<span class="cntctfrm_mobile_title"><?php _e( "Required", 'contact-form-plugin' ); ?></span></label>
@@ -860,6 +887,62 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
                     </tr>
 				</tbody>
 			</table>
+            <?php if( ! $this->hide_pro_tabs ) { ?>
+                <div class="bws_pro_version_bloc">
+                    <div class="bws_pro_version_table_bloc">
+                        <button type="submit" name="bws_hide_premium_options" class="notice-dismiss bws_hide_premium_options" title="<?php _e( 'Close', 'contact-form-plugin' ); ?>"></button>
+                        <div class="bws_table_bg"></div>
+                        <div class="bws_pro_version">
+                            <table id="cstmfld_hidden_field_table" class="cntctfrm_settings_table" style="width: 100%;">
+                                <thead>
+                                <tr valign="top">
+                                    <th scope="row">Title</th>
+                                    <th>Field Type</th>
+                                    <th>Used</th>
+                                    <th>Required</th>
+                                    <th>Visible</th>
+                                    <th>Disabled for editing</th>
+                                    <th scope="row">Field's default/available value</th>
+                                    <!--<th scope="row"></th>-->
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr valign="top">
+                                    <td><label><input class="subject cstmfld_add_new_title" type="text" maxlength="250" name="cntctfrm_title" value=""></label></td>
+                                    <td>
+                                        <select name="cntctfrm_add_new_field_type" class="cstmfld_add_new_field_type" style="width: 100%;">
+                                            <option value="1">text</option>
+                                            <option value="2">textarea</option>
+                                            <option value="3">checkbox</option>
+                                            <option value="4">radio</option>
+                                            <option value="6">date</option>
+                                            <option value="7">time</option>
+                                            <option value="9">number</option>
+                                        </select>
+                                    </td>
+                                    <td><label><input class="cntctfrm_type cstmfld_add_new_is_used" type="checkbox" name="cntctfrm_display" value="1" checked="checked"></label></td>
+                                    <td><label><input type="checkbox" class="cstmfld_add_new_is_required" name="cntctfrm_required" value="1"></label></td>
+                                    <td><label><input class="name cstmfld_add_new_is_visible" type="checkbox" name="cntctfrm_visible" value="1"></label></td>
+                                    <td><label><input class="name cstmfld_add_new_is_disabled_editing" type="checkbox" name="cntctfrm_disabled" value="1"></label></td>
+                                    <td class="cstmfld-default-value"><label><input class="subject cstmfld_add_new_default_value cstmfld_add_new_default_value" type="text" maxlength="250" name="cntctfrm_default" value=""></label></td>
+                                    <!--<td><button class="button cstmfld_add_field" name="cstmfld_add_field" style="width: 100%;">Add Field</button></td>-->
+                                </tr>
+                                </tbody>
+                            </table>
+                            <button class="button button-primary cstmfld_create_new_field" style="width: 100%;" name="cstmfld_create_new_field"><?php _e( 'Create Field', 'contact-form-plugin' ); ?></button>
+                        </div>
+                        <div style="padding: 10px; ">
+                            * <?php _e( 'If you upgrade to Pro version all your settings will be saved.', 'contact-form-plugin' ); ?>
+                        </div>
+                    </div>
+                    <div class="bws_pro_version_tooltip">
+                        <a class="bws_button" href="https://bestwebsoft.com/products/wordpress/plugins/contact-form/?k=697c5e74f39779ce77850e11dbe21962&amp;pn=77&amp;v=<?php echo $cntctfrm_plugin_info["Version"]; ?>&amp;wp_v=<?php echo $wp_version; ?>" target="_blank" title="Contact Form Pro">
+							<?php _e( 'Upgrade to Pro', 'contact-form-plugin' ); ?>
+                        </a>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            <?php } ?>
 			<table class="form-table" style="width:auto;">
 				<tr valign="top">
 					<th scope="row"><?php _e( "Add to the form", 'contact-form-plugin' ); ?></th>

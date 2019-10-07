@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Contact Form\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-25 16:25+0200\n"
-"PO-Revision-Date: 2019-02-25 16:26+0200\n"
+"POT-Creation-Date: 2019-07-01 12:18+0300\n"
+"PO-Revision-Date: 2019-07-01 12:18+0300\n"
 "Last-Translator: plugin@bestwebsoft.com <plugin@bestwebsoft.com>\n"
 "Language-Team: Aldu <alducornelissen@gmail.com>\n"
 "Language: af\n"
@@ -17,71 +17,72 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: contact_form.php:39 contact_form.php:47 contact_form.php:647
-#: includes/class-cntctfrm-settings.php:425
+#: contact_form.php:39 contact_form.php:47 contact_form.php:649
+#: includes/class-cntctfrm-settings.php:428
 msgid "Contact Form Settings"
 msgstr "Kontak Form Verstellings"
 
-#: contact_form.php:48 contact_form.php:1619 contact_form.php:1633
+#: contact_form.php:48 contact_form.php:1667 contact_form.php:1681
 #: includes/class-cntctfrm-settings.php:27
 msgid "Settings"
 msgstr "Verstellings"
 
-#: contact_form.php:63 includes/class-cntctfrm-settings.php:483
-#: includes/class-cntctfrm-settings.php:817
-#: includes/class-cntctfrm-settings.php:998
-#: includes/class-cntctfrm-settings.php:1513
+#: contact_form.php:63 includes/class-cntctfrm-settings.php:486
+#: includes/class-cntctfrm-settings.php:844
+#: includes/class-cntctfrm-settings.php:937
+#: includes/class-cntctfrm-settings.php:1094
+#: includes/class-cntctfrm-settings.php:1611
 msgid "Upgrade to Pro"
 msgstr ""
 
-#: contact_form.php:350 contact_form.php:1410 contact_form.php:1456
-#: includes/class-cntctfrm-settings.php:574
-#: includes/class-cntctfrm-settings.php:664
-#: includes/class-cntctfrm-settings.php:1064
-#: includes/class-cntctfrm-settings.php:1103
-#: includes/class-cntctfrm-settings.php:1344
+#: contact_form.php:350 contact_form.php:1442 contact_form.php:1488
+#: includes/class-cntctfrm-settings.php:577
+#: includes/class-cntctfrm-settings.php:670
+#: includes/class-cntctfrm-settings.php:1160
+#: includes/class-cntctfrm-settings.php:1200
+#: includes/class-cntctfrm-settings.php:1442
 msgid "Name"
 msgstr "Naam"
 
-#: contact_form.php:351 contact_form.php:1417 contact_form.php:1462
-#: includes/class-cntctfrm-settings.php:711
-#: includes/class-cntctfrm-settings.php:1065
-#: includes/class-cntctfrm-settings.php:1104
-#: includes/class-cntctfrm-settings.php:1349
+#: contact_form.php:351 contact_form.php:1449 contact_form.php:1494
+#: includes/class-cntctfrm-settings.php:717
+#: includes/class-cntctfrm-settings.php:1161
+#: includes/class-cntctfrm-settings.php:1201
+#: includes/class-cntctfrm-settings.php:1447
 msgid "Address"
 msgstr "Adres: "
 
-#: contact_form.php:352 includes/class-cntctfrm-settings.php:727
-#: includes/class-cntctfrm-settings.php:1066
-#: includes/class-cntctfrm-settings.php:1105
+#: contact_form.php:352 includes/class-cntctfrm-settings.php:733
+#: includes/class-cntctfrm-settings.php:1162
+#: includes/class-cntctfrm-settings.php:1202
 msgid "Email Address"
 msgstr "Epos Adres:"
 
-#: contact_form.php:353 includes/class-cntctfrm-settings.php:747
-#: includes/class-cntctfrm-settings.php:1067
-#: includes/class-cntctfrm-settings.php:1106
+#: contact_form.php:353 includes/class-cntctfrm-settings.php:760
+#: includes/class-cntctfrm-settings.php:1163
+#: includes/class-cntctfrm-settings.php:1203
 msgid "Phone number"
 msgstr "Telefoon nommer:"
 
-#: contact_form.php:354 contact_form.php:1428 contact_form.php:1471
-#: includes/class-cntctfrm-settings.php:763
-#: includes/class-cntctfrm-settings.php:1068
-#: includes/class-cntctfrm-settings.php:1107
-#: includes/class-cntctfrm-settings.php:1364
+#: contact_form.php:354 contact_form.php:1460 contact_form.php:1503
+#: includes/class-cntctfrm-settings.php:776
+#: includes/class-cntctfrm-settings.php:1164
+#: includes/class-cntctfrm-settings.php:1204
+#: includes/class-cntctfrm-settings.php:1462
 msgid "Subject"
 msgstr "Onderwerp"
 
-#: contact_form.php:355 contact_form.php:1433 contact_form.php:1475
-#: includes/class-cntctfrm-settings.php:787
-#: includes/class-cntctfrm-settings.php:1069
-#: includes/class-cntctfrm-settings.php:1108
-#: includes/class-cntctfrm-settings.php:1368
+#: contact_form.php:355 contact_form.php:1465 contact_form.php:1507
+#: includes/class-cntctfrm-settings.php:807
+#: includes/class-cntctfrm-settings.php:1165
+#: includes/class-cntctfrm-settings.php:1205
+#: includes/class-cntctfrm-settings.php:1466
 msgid "Message"
 msgstr "Boodskap"
 
-#: contact_form.php:356 includes/class-cntctfrm-settings.php:1070
-#: includes/class-cntctfrm-settings.php:1109
-#: includes/class-cntctfrm-settings.php:1373
+#: contact_form.php:356 includes/class-cntctfrm-settings.php:1166
+#: includes/class-cntctfrm-settings.php:1206
+#: includes/class-cntctfrm-settings.php:1471
 msgid "Attachment"
 msgstr "Aanhegsel:"
 
@@ -93,132 +94,138 @@ msgstr ""
 "Ondersteunde datalêer tipes: HTML, TXT, CSS, GIF, PNG, JPEG, JPG, TIFF, BMP, "
 "AI, EPS, PS, CSV, RTF, PDF, DOC, DOCX, XLS, XLSX, ZIP, RAR, WAV, MP3, PPT."
 
-#: contact_form.php:358 includes/class-cntctfrm-settings.php:1072
-#: includes/class-cntctfrm-settings.php:1111
+#: contact_form.php:358 includes/class-cntctfrm-settings.php:1168
+#: includes/class-cntctfrm-settings.php:1208
 msgid "Send me a copy"
 msgstr "Stuur vir my 'n kopie"
 
-#: contact_form.php:359 includes/class-cntctfrm-settings.php:1073
-#: includes/class-cntctfrm-settings.php:1112
+#: contact_form.php:359 includes/class-cntctfrm-settings.php:1169
+#: includes/class-cntctfrm-settings.php:1209
 msgid "I consent to having this site collect my personal data."
 msgstr ""
 
-#: contact_form.php:360 includes/class-cntctfrm-settings.php:1074
-#: includes/class-cntctfrm-settings.php:1113
+#: contact_form.php:360 contact_form.php:1759
+#: includes/class-cntctfrm-settings.php:1170
+#: includes/class-cntctfrm-settings.php:1210
+msgid "Learn more"
+msgstr ""
+
+#: contact_form.php:361 includes/class-cntctfrm-settings.php:1171
+#: includes/class-cntctfrm-settings.php:1211
 msgid "Submit"
 msgstr "Dien in"
 
-#: contact_form.php:361
+#: contact_form.php:362
 msgid "Your name is required."
 msgstr "Jou naam word benodig."
 
-#: contact_form.php:362
+#: contact_form.php:363
 msgid "Address is required."
 msgstr "Adres word benodig."
 
-#: contact_form.php:363
+#: contact_form.php:364
 msgid "A valid email address is required."
 msgstr "'n Geldige epos adres word benodig."
 
-#: contact_form.php:364
+#: contact_form.php:365
 msgid "Phone number is required."
 msgstr "'n Telefoon nommer word benodig."
 
-#: contact_form.php:365
+#: contact_form.php:366
 msgid "Subject is required."
 msgstr "'n Onderwerp word benodig."
 
-#: contact_form.php:366
+#: contact_form.php:367
 msgid "Message text is required."
 msgstr "'n Boodskap teks word benodig ."
 
-#: contact_form.php:367
+#: contact_form.php:368
 msgid "File format is not valid."
 msgstr "Datalêer formaat is nie geldig nie."
 
-#: contact_form.php:368
+#: contact_form.php:369
 msgid "File upload error."
 msgstr "Oplaai van datalêer foutief."
 
-#: contact_form.php:369
+#: contact_form.php:370
 msgid "The file could not be uploaded."
 msgstr "Die datalêer kon nie opgelaai word nie."
 
-#: contact_form.php:370
+#: contact_form.php:371
 msgid "This file is too large."
 msgstr "Die datalêer is te groot."
 
-#: contact_form.php:371
+#: contact_form.php:372
 msgid "Please fill out the CAPTCHA."
 msgstr "Vul asseblief die CAPTCHA in."
 
-#: contact_form.php:372
+#: contact_form.php:373
 msgid "Please make corrections below and try again."
 msgstr "Korregeer asseblief die foute hierdoner en probeer weer."
 
-#: contact_form.php:374
+#: contact_form.php:375
 msgid "Thank you for contacting us."
 msgstr "Dankie dat jy ons gekontak het."
 
-#: contact_form.php:651
+#: contact_form.php:653
 msgid "NEW_FORM"
 msgstr ""
 
-#: contact_form.php:652
+#: contact_form.php:654
 msgid ""
 "If you want to create multiple contact forms, please install the Contact "
 "Form Multi plugin."
 msgstr ""
 
-#: contact_form.php:657
+#: contact_form.php:659
 msgid ""
 "Contact Form plugin doesn't support your current version of Contact Form "
 "Multi plugin. Please update Contact Form Multi plugin to version 1.2.6 or "
 "higher."
 msgstr ""
 
-#: contact_form.php:759
+#: contact_form.php:761
 msgid "Sorry, email message could not be delivered."
 msgstr "Verskoning, die epos kon nie gestuur word nie."
 
-#: contact_form.php:1366 contact_form.php:1368
+#: contact_form.php:1398 contact_form.php:1400
 msgid "Sent from (ip address)"
 msgstr "Gestuur van (IP-Adres)"
 
-#: contact_form.php:1372 contact_form.php:1374
-#: includes/class-cntctfrm-settings.php:1024
+#: contact_form.php:1404 contact_form.php:1406
+#: includes/class-cntctfrm-settings.php:1120
 msgid "Date/Time"
 msgstr "Datum/Tyd"
 
-#: contact_form.php:1378 contact_form.php:1380
-#: includes/class-cntctfrm-settings.php:1025
+#: contact_form.php:1410 contact_form.php:1412
+#: includes/class-cntctfrm-settings.php:1121
 msgid "Sent from (referer)"
 msgstr "Gestuur van (referer)"
 
-#: contact_form.php:1384 contact_form.php:1386
-#: includes/class-cntctfrm-settings.php:1026
+#: contact_form.php:1416 contact_form.php:1418
+#: includes/class-cntctfrm-settings.php:1122
 msgid "Using (user agent)"
 msgstr "Gebruik (user agent)"
 
-#: contact_form.php:1396
+#: contact_form.php:1428
 msgid "Contact from"
 msgstr "Kontak Vorm"
 
-#: contact_form.php:1401 contact_form.php:1450
+#: contact_form.php:1433 contact_form.php:1482
 msgid "Site"
 msgstr "Webtuiste"
 
-#: contact_form.php:1423 contact_form.php:1467
-#: includes/class-cntctfrm-settings.php:598
+#: contact_form.php:1455 contact_form.php:1499
+#: includes/class-cntctfrm-settings.php:601
 msgid "Email"
 msgstr "Epos"
 
-#: contact_form.php:1439 contact_form.php:1480
-#: includes/class-cntctfrm-settings.php:1359
+#: contact_form.php:1471 contact_form.php:1512
+#: includes/class-cntctfrm-settings.php:1457
 msgid "Phone Number"
 msgstr "Telefoon Nommer:"
 
-#: contact_form.php:1562
+#: contact_form.php:1610
 msgid ""
 "If you can see this MIME, it means that the MIME type is not supported by "
 "your email client!"
@@ -226,105 +233,102 @@ msgstr ""
 "As u die MIME kan sie, beteken dit dat die MIME tipe nie ondersteun word "
 "deur u epos klient nie!"
 
-#: contact_form.php:1634
+#: contact_form.php:1682
 msgid "FAQ"
 msgstr "Gereeld Gestelde Vrae (FAQ)"
 
-#: contact_form.php:1635
+#: contact_form.php:1683
 msgid "Support"
 msgstr "Steun"
 
-#: contact_form.php:1684
+#: contact_form.php:1732
 msgid "Are you sure that you want to delete this language data?"
 msgstr "Is u seker dat u die taal data wil verwyder?"
 
-#: contact_form.php:1706
+#: contact_form.php:1754
 #, fuzzy
 msgid "Add multiple forms"
 msgstr "Voeg by die vorm by"
 
-#: contact_form.php:1706
+#: contact_form.php:1754
 msgid ""
 "Install Contact Form Multi plugin to create unlimited number of contact "
 "forms."
 msgstr ""
 
-#: contact_form.php:1711
-msgid "Learn more"
-msgstr ""
-
-#: contact_form.php:1715 includes/class-cntctfrm-settings.php:469
-#: includes/class-cntctfrm-settings.php:987
-#: includes/class-cntctfrm-settings.php:1272
+#: contact_form.php:1763 includes/class-cntctfrm-settings.php:472
+#: includes/class-cntctfrm-settings.php:890
+#: includes/class-cntctfrm-settings.php:1083
+#: includes/class-cntctfrm-settings.php:1370
 msgid "Close"
 msgstr ""
 
-#: contact_form.php:1769
+#: contact_form.php:1817
 msgid "Error"
 msgstr ""
 
-#: contact_form.php:1769 contact_form.php:1771
+#: contact_form.php:1817 contact_form.php:1819
 msgid "Illegal language code"
 msgstr ""
 
-#: contact_form.php:1805 contact_form.php:1807
-#: includes/class-cntctfrm-settings.php:1089
-#: includes/class-cntctfrm-settings.php:1091
-#: includes/class-cntctfrm-settings.php:1128
-#: includes/class-cntctfrm-settings.php:1130
-#: includes/class-cntctfrm-settings.php:1162
-#: includes/class-cntctfrm-settings.php:1164
-#: includes/class-cntctfrm-settings.php:1176
-#: includes/class-cntctfrm-settings.php:1178
+#: contact_form.php:1853 contact_form.php:1855
+#: includes/class-cntctfrm-settings.php:1186
+#: includes/class-cntctfrm-settings.php:1188
+#: includes/class-cntctfrm-settings.php:1226
+#: includes/class-cntctfrm-settings.php:1228
+#: includes/class-cntctfrm-settings.php:1260
+#: includes/class-cntctfrm-settings.php:1262
+#: includes/class-cntctfrm-settings.php:1274
+#: includes/class-cntctfrm-settings.php:1276
 msgid "Use shortcode"
 msgstr "Gebruik kortkode"
 
-#: contact_form.php:1805 contact_form.php:1807
-#: includes/class-cntctfrm-settings.php:1089
-#: includes/class-cntctfrm-settings.php:1091
-#: includes/class-cntctfrm-settings.php:1128
-#: includes/class-cntctfrm-settings.php:1130
-#: includes/class-cntctfrm-settings.php:1162
-#: includes/class-cntctfrm-settings.php:1164
-#: includes/class-cntctfrm-settings.php:1176
-#: includes/class-cntctfrm-settings.php:1178
+#: contact_form.php:1853 contact_form.php:1855
+#: includes/class-cntctfrm-settings.php:1186
+#: includes/class-cntctfrm-settings.php:1188
+#: includes/class-cntctfrm-settings.php:1226
+#: includes/class-cntctfrm-settings.php:1228
+#: includes/class-cntctfrm-settings.php:1260
+#: includes/class-cntctfrm-settings.php:1262
+#: includes/class-cntctfrm-settings.php:1274
+#: includes/class-cntctfrm-settings.php:1276
 msgid "for this language"
 msgstr "vir hierdie taal"
 
-#: contact_form.php:1955
+#: contact_form.php:2003
 msgid "Close notice"
 msgstr ""
 
-#: contact_form.php:1960
+#: contact_form.php:2008
 #, fuzzy
 msgid "allows to store your messages to the database."
 msgstr "Stoor eposse na die databasis."
 
-#: contact_form.php:1961
+#: contact_form.php:2009
 msgid "Manage messages that have been sent from your website."
 msgstr ""
 
-#: contact_form.php:1964
+#: contact_form.php:2012
 msgid "Learn More"
 msgstr ""
 
-#: contact_form.php:2024
+#: contact_form.php:2072
 #, fuzzy
 msgid "Contact form"
 msgstr "Kontak Vorm"
 
-#: contact_form.php:2037 contact_form.php:2047
+#: contact_form.php:2085 contact_form.php:2095
 #, fuzzy
 msgid "Language"
 msgstr "Voeg 'n taal by"
 
 #: includes/class-cntctfrm-settings.php:28
-#: includes/class-cntctfrm-settings.php:546
+#: includes/class-cntctfrm-settings.php:549
 msgid "Additional Settings"
 msgstr ""
 
 #: includes/class-cntctfrm-settings.php:29
-#: includes/class-cntctfrm-settings.php:1198
+#: includes/class-cntctfrm-settings.php:1296
 msgid "Appearance"
 msgstr ""
 
@@ -351,13 +355,13 @@ msgid ""
 "provider to upgrade PHP version."
 msgstr ""
 
-#: includes/class-cntctfrm-settings.php:347
+#: includes/class-cntctfrm-settings.php:350
 msgid ""
 "Email 'FROM' field option was changed, which may cause email messages being "
 "moved to the spam folder or email delivery failures."
 msgstr ""
 
-#: includes/class-cntctfrm-settings.php:357
+#: includes/class-cntctfrm-settings.php:360
 msgid ""
 "If the 'Redirect to page' option is selected then the URL field should be in "
 "the following format"
@@ -365,12 +369,12 @@ msgstr ""
 "As die 'Redirect to page' opsie geselekteer is moet die URL veld in die "
 "volgende formaat wees"
 
-#: includes/class-cntctfrm-settings.php:364
+#: includes/class-cntctfrm-settings.php:367
 #, fuzzy
 msgid "Such user does not exist."
 msgstr "Hierdie gebruiker bestaan nie. Die instellings is nie gestoor nie."
 
-#: includes/class-cntctfrm-settings.php:374
+#: includes/class-cntctfrm-settings.php:377
 #, fuzzy
 msgid ""
 "Please enter a valid email address in the 'Use this email address' field."
@@ -378,23 +382,23 @@ msgstr ""
 "Vul asseblief 'n geldige epos adres in die 'FROM/VAN' veld. Die verstellings "
 "is nie gestoor nie."
 
-#: includes/class-cntctfrm-settings.php:382
+#: includes/class-cntctfrm-settings.php:385
 #, fuzzy
 msgid "Please enter a valid email address in the 'FROM' field."
 msgstr ""
 "Vul asseblief 'n geldige epos adres in die 'FROM/VAN' veld. Die verstellings "
 "is nie gestoor nie."
 
-#: includes/class-cntctfrm-settings.php:402
+#: includes/class-cntctfrm-settings.php:405
 msgid "Settings saved."
 msgstr "Verstellings is gestoor."
 
-#: includes/class-cntctfrm-settings.php:404
+#: includes/class-cntctfrm-settings.php:407
 #, fuzzy
 msgid "Settings are not saved."
 msgstr "Verstellings is gestoor."
 
-#: includes/class-cntctfrm-settings.php:429
+#: includes/class-cntctfrm-settings.php:432
 msgid ""
 "If you leave the fields empty, the messages will be sent to the email "
 "address specified during registration."
@@ -402,17 +406,17 @@ msgstr ""
 "As u die velde leeg laat, sal die boodskappe gestuur word na die epos adres "
 "wat gespesifiseer was gedurende registrasie"
 
-#: includes/class-cntctfrm-settings.php:432
+#: includes/class-cntctfrm-settings.php:435
 #, fuzzy
 msgid "The user's email address"
 msgstr "Die gebruiker se epos adres:"
 
-#: includes/class-cntctfrm-settings.php:437
+#: includes/class-cntctfrm-settings.php:440
 #, fuzzy
 msgid "Select a username"
 msgstr "Skep 'n gebruikersnaam"
 
-#: includes/class-cntctfrm-settings.php:450
+#: includes/class-cntctfrm-settings.php:453
 #, fuzzy
 msgid ""
 "Select a username of the person who should get the messages from the contact "
@@ -421,102 +425,102 @@ msgstr ""
 "Sleutel 'n gebruikersnaam in vir die persoon wat die boodskappe moet kry van "
 "die kontak vorm."
 
-#: includes/class-cntctfrm-settings.php:455
+#: includes/class-cntctfrm-settings.php:458
 #, fuzzy
 msgid "Use this email address"
 msgstr "Gebruik hierdie epos adres:"
 
-#: includes/class-cntctfrm-settings.php:460
+#: includes/class-cntctfrm-settings.php:463
 #, fuzzy
 msgid "Enter the email address for receiving messages"
 msgstr "Sleutel in die epos adres in waar u die boodskappe aangestuur wil he."
 
-#: includes/class-cntctfrm-settings.php:473
+#: includes/class-cntctfrm-settings.php:476
 #, fuzzy
 msgid "Add department selectbox to the contact form"
 msgstr "Voeg 'n departementele keuse-boks by die kontak vorm:"
 
-#: includes/class-cntctfrm-settings.php:492
+#: includes/class-cntctfrm-settings.php:495
 msgid "Save emails to the database"
 msgstr "Stoor eposse na die databasis."
 
-#: includes/class-cntctfrm-settings.php:504
-#: includes/class-cntctfrm-settings.php:518
-#: includes/class-cntctfrm-settings.php:525
+#: includes/class-cntctfrm-settings.php:507
+#: includes/class-cntctfrm-settings.php:521
+#: includes/class-cntctfrm-settings.php:528
 msgid "Using"
 msgstr "In Gebruik"
 
-#: includes/class-cntctfrm-settings.php:510
-#: includes/class-cntctfrm-settings.php:889
-#: includes/class-cntctfrm-settings.php:930
-#: includes/class-cntctfrm-settings.php:965
+#: includes/class-cntctfrm-settings.php:513
+#: includes/class-cntctfrm-settings.php:985
+#: includes/class-cntctfrm-settings.php:1026
+#: includes/class-cntctfrm-settings.php:1061
 msgid "Please activate the appropriate option on"
 msgstr ""
 
-#: includes/class-cntctfrm-settings.php:513
-#: includes/class-cntctfrm-settings.php:892
-#: includes/class-cntctfrm-settings.php:933
-#: includes/class-cntctfrm-settings.php:968
+#: includes/class-cntctfrm-settings.php:516
+#: includes/class-cntctfrm-settings.php:988
+#: includes/class-cntctfrm-settings.php:1029
+#: includes/class-cntctfrm-settings.php:1064
 #, fuzzy
 msgid "settings page"
 msgstr "Die verstelling bladsy"
 
-#: includes/class-cntctfrm-settings.php:519
-#: includes/class-cntctfrm-settings.php:899
-#: includes/class-cntctfrm-settings.php:941
-#: includes/class-cntctfrm-settings.php:975
+#: includes/class-cntctfrm-settings.php:522
+#: includes/class-cntctfrm-settings.php:995
+#: includes/class-cntctfrm-settings.php:1037
+#: includes/class-cntctfrm-settings.php:1071
 msgid "Activate"
 msgstr "Aktiveer"
 
-#: includes/class-cntctfrm-settings.php:526
-#: includes/class-cntctfrm-settings.php:908
-#: includes/class-cntctfrm-settings.php:947
-#: includes/class-cntctfrm-settings.php:980
+#: includes/class-cntctfrm-settings.php:529
+#: includes/class-cntctfrm-settings.php:1004
+#: includes/class-cntctfrm-settings.php:1043
+#: includes/class-cntctfrm-settings.php:1076
 msgid "Download"
 msgstr "Download"
 
-#: includes/class-cntctfrm-settings.php:551
+#: includes/class-cntctfrm-settings.php:554
 msgid "Sending method"
 msgstr ""
 
-#: includes/class-cntctfrm-settings.php:556
+#: includes/class-cntctfrm-settings.php:559
 msgid "Wp-mail"
 msgstr "Wp-mail"
 
-#: includes/class-cntctfrm-settings.php:557
+#: includes/class-cntctfrm-settings.php:560
 #, fuzzy
 msgid "You can use the Wordpress wp_mail function for mailing"
 msgstr "U kan die wp_mail funksie gebruik vir eposse"
 
-#: includes/class-cntctfrm-settings.php:562
+#: includes/class-cntctfrm-settings.php:565
 msgid "Mail"
 msgstr "Mail"
 
-#: includes/class-cntctfrm-settings.php:563
+#: includes/class-cntctfrm-settings.php:566
 #, fuzzy
 msgid "You can use the PHP mail function for mailing"
 msgstr "U kan die wp_mail funksie gebruik vir eposse"
 
-#: includes/class-cntctfrm-settings.php:569
+#: includes/class-cntctfrm-settings.php:572
 msgid "'FROM' field"
 msgstr ""
 
-#: includes/class-cntctfrm-settings.php:585
+#: includes/class-cntctfrm-settings.php:588
 msgid "User name"
 msgstr "Gebruikersnaam"
 
-#: includes/class-cntctfrm-settings.php:587
+#: includes/class-cntctfrm-settings.php:590
 msgid ""
 "The name of the user who fills the form will be used in the field 'From'."
 msgstr ""
 "Die naam van die gebruiker wie die vorm invul sal gebruik word vir die 'From/"
 "Van' veld."
 
-#: includes/class-cntctfrm-settings.php:609
+#: includes/class-cntctfrm-settings.php:612
 msgid "User email"
 msgstr "Gebruiker epos"
 
-#: includes/class-cntctfrm-settings.php:611
+#: includes/class-cntctfrm-settings.php:614
 msgid ""
 "The email address of the user who fills the form will be used in the field "
 "'From'."
@@ -524,494 +528,503 @@ msgstr ""
 "Die epos adres van die gebruiker wie die vorm invul sal gebruik word in die "
 "'From/van' veld."
 
-#: includes/class-cntctfrm-settings.php:620
+#: includes/class-cntctfrm-settings.php:623
 msgid ""
 "If this option is changed, email messages may be moved to the spam folder or "
 "email delivery failures may occur."
 msgstr ""
 
-#: includes/class-cntctfrm-settings.php:629
+#: includes/class-cntctfrm-settings.php:632
 msgid "Required symbol"
 msgstr "Benodigde simbool"
 
-#: includes/class-cntctfrm-settings.php:639
+#: includes/class-cntctfrm-settings.php:642
 msgid "Fields"
 msgstr "Velde"
 
-#: includes/class-cntctfrm-settings.php:640
-#: includes/class-cntctfrm-settings.php:667
-#: includes/class-cntctfrm-settings.php:694
-#: includes/class-cntctfrm-settings.php:714
-#: includes/class-cntctfrm-settings.php:750
-#: includes/class-cntctfrm-settings.php:832
+#: includes/class-cntctfrm-settings.php:643
+#: includes/class-cntctfrm-settings.php:658
+#: includes/class-cntctfrm-settings.php:673
+#: includes/class-cntctfrm-settings.php:700
+#: includes/class-cntctfrm-settings.php:720
+#: includes/class-cntctfrm-settings.php:738
+#: includes/class-cntctfrm-settings.php:763
+#: includes/class-cntctfrm-settings.php:780
+#: includes/class-cntctfrm-settings.php:811
+#: includes/class-cntctfrm-settings.php:859
 msgid "Used"
 msgstr "Gebruik"
 
-#: includes/class-cntctfrm-settings.php:641
-#: includes/class-cntctfrm-settings.php:656
-#: includes/class-cntctfrm-settings.php:671
-#: includes/class-cntctfrm-settings.php:698
-#: includes/class-cntctfrm-settings.php:718
-#: includes/class-cntctfrm-settings.php:754
+#: includes/class-cntctfrm-settings.php:644
+#: includes/class-cntctfrm-settings.php:662
+#: includes/class-cntctfrm-settings.php:677
+#: includes/class-cntctfrm-settings.php:704
+#: includes/class-cntctfrm-settings.php:724
+#: includes/class-cntctfrm-settings.php:742
 #: includes/class-cntctfrm-settings.php:767
-#: includes/class-cntctfrm-settings.php:791
+#: includes/class-cntctfrm-settings.php:787
+#: includes/class-cntctfrm-settings.php:818
 msgid "Required"
 msgstr "Benodig"
 
-#: includes/class-cntctfrm-settings.php:643
-#: includes/class-cntctfrm-settings.php:676
-#: includes/class-cntctfrm-settings.php:733
-#: includes/class-cntctfrm-settings.php:772
-#: includes/class-cntctfrm-settings.php:796
+#: includes/class-cntctfrm-settings.php:646
+#: includes/class-cntctfrm-settings.php:682
+#: includes/class-cntctfrm-settings.php:746
+#: includes/class-cntctfrm-settings.php:792
+#: includes/class-cntctfrm-settings.php:823
 msgid "Visible"
 msgstr "Sigbaar"
 
-#: includes/class-cntctfrm-settings.php:644
-#: includes/class-cntctfrm-settings.php:680
-#: includes/class-cntctfrm-settings.php:737
-#: includes/class-cntctfrm-settings.php:776
-#: includes/class-cntctfrm-settings.php:800
+#: includes/class-cntctfrm-settings.php:647
+#: includes/class-cntctfrm-settings.php:686
+#: includes/class-cntctfrm-settings.php:750
+#: includes/class-cntctfrm-settings.php:796
+#: includes/class-cntctfrm-settings.php:827
 msgid "Disabled for editing"
 msgstr "Gedeaktiveer vir wysiging"
 
-#: includes/class-cntctfrm-settings.php:645
-#: includes/class-cntctfrm-settings.php:704
-#: includes/class-cntctfrm-settings.php:780
-#: includes/class-cntctfrm-settings.php:804
+#: includes/class-cntctfrm-settings.php:648
+#: includes/class-cntctfrm-settings.php:710
+#: includes/class-cntctfrm-settings.php:800
+#: includes/class-cntctfrm-settings.php:831
 msgid "Field's default value"
 msgstr "Veld se verstekwaarde"
 
-#: includes/class-cntctfrm-settings.php:652
+#: includes/class-cntctfrm-settings.php:655
 msgid "Department selectbox"
 msgstr ""
 
-#: includes/class-cntctfrm-settings.php:684
+#: includes/class-cntctfrm-settings.php:690
 msgid "Use User's name as a default value if the user is logged in."
 msgstr ""
 
-#: includes/class-cntctfrm-settings.php:685
-#: includes/class-cntctfrm-settings.php:742
+#: includes/class-cntctfrm-settings.php:691
+#: includes/class-cntctfrm-settings.php:755
 msgid ""
 "'Visible' and 'Disabled for editing' options will be applied only to logged-"
 "in users."
 msgstr ""
 
-#: includes/class-cntctfrm-settings.php:691
+#: includes/class-cntctfrm-settings.php:697
 msgid "Location selectbox"
 msgstr ""
 
-#: includes/class-cntctfrm-settings.php:741
+#: includes/class-cntctfrm-settings.php:754
 msgid "Use User's email as a default value if the user is logged in."
 msgstr ""
 
-#: includes/class-cntctfrm-settings.php:825
+#: includes/class-cntctfrm-settings.php:852
 msgid "Attachment block"
 msgstr "Aanhegsel blok"
 
-#: includes/class-cntctfrm-settings.php:827
+#: includes/class-cntctfrm-settings.php:854
 msgid "Users can attach the following file formats"
 msgstr "Gebruikers kan die volgende dataleêr formate aanheg"
 
-#: includes/class-cntctfrm-settings.php:845
+#: includes/class-cntctfrm-settings.php:870
+msgid "Multi-attachment"
+msgstr ""
+
+#: includes/class-cntctfrm-settings.php:872
+msgid "Enable to multiple file selection"
+msgstr ""
+
+#: includes/class-cntctfrm-settings.php:932
+msgid "If you upgrade to Pro version all your settings will be saved."
+msgstr "As u opgradeer na die Pro weergawe sal die verstellings gestoor word."
+
+#: includes/class-cntctfrm-settings.php:945
 msgid "Add to the form"
 msgstr "Voeg by die vorm by"
 
-#: includes/class-cntctfrm-settings.php:850
+#: includes/class-cntctfrm-settings.php:950
 msgid "Tips below the Attachment"
 msgstr "Wenke onder die Aanhegsel"
 
-#: includes/class-cntctfrm-settings.php:857
+#: includes/class-cntctfrm-settings.php:957
 msgid "'Send me a copy' block"
 msgstr "'Stuur vir my 'n kopie' blok"
 
-#: includes/class-cntctfrm-settings.php:864
+#: includes/class-cntctfrm-settings.php:964
 msgid "GDPR Compliance"
 msgstr ""
 
-#: includes/class-cntctfrm-settings.php:869
+#: includes/class-cntctfrm-settings.php:969
 msgid "Link to Privacy Policy Page"
 msgstr ""
 
-#: includes/class-cntctfrm-settings.php:873
-msgid "Text for Privacy Policy Link"
-msgstr ""
-
-#: includes/class-cntctfrm-settings.php:901
+#: includes/class-cntctfrm-settings.php:997
 msgid "Activate for network"
 msgstr ""
 
-#: includes/class-cntctfrm-settings.php:991
+#: includes/class-cntctfrm-settings.php:1087
 msgid "Agreement checkbox"
 msgstr "Ooreenstemming checkbox"
 
-#: includes/class-cntctfrm-settings.php:991
+#: includes/class-cntctfrm-settings.php:1087
 msgid "Required checkbox for submitting the form"
 msgstr "Benodigde checkbox om die vorm in te dien"
 
-#: includes/class-cntctfrm-settings.php:992
+#: includes/class-cntctfrm-settings.php:1088
 msgid "Optional checkbox"
 msgstr "Opsie checkbox"
 
-#: includes/class-cntctfrm-settings.php:992
+#: includes/class-cntctfrm-settings.php:1088
 msgid "Optional checkbox, the results of which will be displayed in email"
 msgstr "Opsionele checkbox, die resultate waarvan in die epos sal verskyn"
 
-#: includes/class-cntctfrm-settings.php:1007
+#: includes/class-cntctfrm-settings.php:1103
 msgid "Delete an attachment file from the server after the email is sent"
 msgstr "Verwyder 'n aanhegsel dataleêr van die server na epos gestuur is"
 
-#: includes/class-cntctfrm-settings.php:1013
+#: includes/class-cntctfrm-settings.php:1109
 msgid "Email in HTML format sending"
 msgstr "E-Mail in HTML Format"
 
-#: includes/class-cntctfrm-settings.php:1017
+#: includes/class-cntctfrm-settings.php:1113
 msgid "Display additional info in the email"
 msgstr "Toon addisionele inligting in die epos"
 
-#: includes/class-cntctfrm-settings.php:1023
+#: includes/class-cntctfrm-settings.php:1119
 #, fuzzy
 msgid "Sent from (IP address)"
 msgstr "Gestuur van (IP-Adres)"
 
-#: includes/class-cntctfrm-settings.php:1023
+#: includes/class-cntctfrm-settings.php:1119
 msgid "Example: Sent from (IP address): 127.0.0.1"
 msgstr ""
 
-#: includes/class-cntctfrm-settings.php:1024
+#: includes/class-cntctfrm-settings.php:1120
 msgid "Example: Date/Time: August 19, 2013 8:50 pm"
 msgstr ""
 
-#: includes/class-cntctfrm-settings.php:1025
+#: includes/class-cntctfrm-settings.php:1121
 msgid ""
 "Example: Sent from (referer):   https://bestwebsoft.com/contacts/contact-us/"
 msgstr ""
 
-#: includes/class-cntctfrm-settings.php:1026
+#: includes/class-cntctfrm-settings.php:1122
 msgid ""
 "Example: Using (user agent): Mozilla/5.0 (Windows NT 6.2; WOW64) "
 "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36"
 msgstr ""
 
-#: includes/class-cntctfrm-settings.php:1031
+#: includes/class-cntctfrm-settings.php:1127
 msgid "Language settings for the field names in the form"
 msgstr "Taal verstellings vir die naamvelde in die vorm"
 
-#: includes/class-cntctfrm-settings.php:1040
+#: includes/class-cntctfrm-settings.php:1136
 msgid "Add a language"
 msgstr "Voeg 'n taal by"
 
-#: includes/class-cntctfrm-settings.php:1044
+#: includes/class-cntctfrm-settings.php:1140
 msgid "Change the names of the contact form fields and error messages"
 msgstr "Verander die name van die kontak vorm velde en foutboodskappe"
 
-#: includes/class-cntctfrm-settings.php:1049
-#: includes/class-cntctfrm-settings.php:1147
-#: includes/class-cntctfrm-settings.php:1252
+#: includes/class-cntctfrm-settings.php:1145
+#: includes/class-cntctfrm-settings.php:1245
+#: includes/class-cntctfrm-settings.php:1350
 msgid "Default"
 msgstr "Verstek"
 
-#: includes/class-cntctfrm-settings.php:1062
-#: includes/class-cntctfrm-settings.php:1101
+#: includes/class-cntctfrm-settings.php:1158
+#: includes/class-cntctfrm-settings.php:1198
 msgid "click to expand/hide the list"
 msgstr "Kliek om uit te brei/lys te versteek"
 
-#: includes/class-cntctfrm-settings.php:1071
-#: includes/class-cntctfrm-settings.php:1110
+#: includes/class-cntctfrm-settings.php:1167
+#: includes/class-cntctfrm-settings.php:1207
 msgid "Tips below the Attachment block"
 msgstr "Wenke onder toe Aanhegsel blok"
 
-#: includes/class-cntctfrm-settings.php:1075
-#: includes/class-cntctfrm-settings.php:1114
+#: includes/class-cntctfrm-settings.php:1172
+#: includes/class-cntctfrm-settings.php:1212
 msgid "Error message for the Name field"
 msgstr "FFoutboodskap vir die Naamveld"
 
-#: includes/class-cntctfrm-settings.php:1076
-#: includes/class-cntctfrm-settings.php:1115
+#: includes/class-cntctfrm-settings.php:1173
+#: includes/class-cntctfrm-settings.php:1213
 msgid "Error message for the Address field"
 msgstr "Foutboodskap vir die Adres veld"
 
-#: includes/class-cntctfrm-settings.php:1077
-#: includes/class-cntctfrm-settings.php:1116
+#: includes/class-cntctfrm-settings.php:1174
+#: includes/class-cntctfrm-settings.php:1214
 msgid "Error message for the Email field"
 msgstr "Foutboodskap vir die Epos veld"
 
-#: includes/class-cntctfrm-settings.php:1078
-#: includes/class-cntctfrm-settings.php:1117
+#: includes/class-cntctfrm-settings.php:1175
+#: includes/class-cntctfrm-settings.php:1215
 msgid "Error message for the Phone field"
 msgstr "Foutboodskap vir die Telefoon Nommer veld"
 
-#: includes/class-cntctfrm-settings.php:1079
-#: includes/class-cntctfrm-settings.php:1118
+#: includes/class-cntctfrm-settings.php:1176
+#: includes/class-cntctfrm-settings.php:1216
 msgid "Error message for the Subject field"
 msgstr "Foutboodskap vir die Onderwerp veld"
 
-#: includes/class-cntctfrm-settings.php:1080
-#: includes/class-cntctfrm-settings.php:1119
+#: includes/class-cntctfrm-settings.php:1177
+#: includes/class-cntctfrm-settings.php:1217
 msgid "Error message for the Message field"
 msgstr "Foutboodskap vir die Boodskap veld"
 
-#: includes/class-cntctfrm-settings.php:1081
-#: includes/class-cntctfrm-settings.php:1120
+#: includes/class-cntctfrm-settings.php:1178
+#: includes/class-cntctfrm-settings.php:1218
 msgid "Error message about the file type for the Attachment field"
 msgstr "Foutboodskap oor die dataleêr tipe vir die Aanhegsel veld"
 
-#: includes/class-cntctfrm-settings.php:1082
-#: includes/class-cntctfrm-settings.php:1121
+#: includes/class-cntctfrm-settings.php:1179
+#: includes/class-cntctfrm-settings.php:1219
 msgid ""
 "Error message while uploading a file for the Attachment field to the server"
 msgstr ""
 "Foutboodskap tydens dataleêr oplaai vir die Aanhegsel veld na die server"
 
-#: includes/class-cntctfrm-settings.php:1083
-#: includes/class-cntctfrm-settings.php:1122
+#: includes/class-cntctfrm-settings.php:1180
+#: includes/class-cntctfrm-settings.php:1220
 msgid "Error message while moving the file for the Attachment field"
 msgstr "Foutboodskap tydens die skuif van dataleêr vir die Aanhegsel veld"
 
-#: includes/class-cntctfrm-settings.php:1084
-#: includes/class-cntctfrm-settings.php:1123
+#: includes/class-cntctfrm-settings.php:1181
+#: includes/class-cntctfrm-settings.php:1221
 msgid "Error message when file size limit for the Attachment field is exceeded"
 msgstr ""
 "Foutboodskap wanneer die dataleêr limiet vir die Aanhegsel veld oorskry is"
 
-#: includes/class-cntctfrm-settings.php:1085
-#: includes/class-cntctfrm-settings.php:1124
+#: includes/class-cntctfrm-settings.php:1182
+#: includes/class-cntctfrm-settings.php:1222
 msgid "Error message for the Captcha field"
 msgstr "Foutboodskap vir die Captcha veld"
 
-#: includes/class-cntctfrm-settings.php:1086
-#: includes/class-cntctfrm-settings.php:1125
+#: includes/class-cntctfrm-settings.php:1183
+#: includes/class-cntctfrm-settings.php:1223
 msgid "Error message for the whole form"
 msgstr "Foutboodskap vir die hele vorm"
 
-#: includes/class-cntctfrm-settings.php:1138
+#: includes/class-cntctfrm-settings.php:1236
 #, fuzzy
 msgid "Use the changed names of the contact form fields in the email"
 msgstr "Verander die name van die kontak vorm velde en foutboodskappe"
 
-#: includes/class-cntctfrm-settings.php:1144
+#: includes/class-cntctfrm-settings.php:1242
 msgid "Action after email is sent"
 msgstr "Aksie na epos gestuur is"
 
-#: includes/class-cntctfrm-settings.php:1146
+#: includes/class-cntctfrm-settings.php:1244
 msgid "Display text"
 msgstr "Toon teks"
 
-#: includes/class-cntctfrm-settings.php:1160
-#: includes/class-cntctfrm-settings.php:1174
+#: includes/class-cntctfrm-settings.php:1258
+#: includes/class-cntctfrm-settings.php:1272
 msgid "Text"
 msgstr "teks"
 
-#: includes/class-cntctfrm-settings.php:1185
+#: includes/class-cntctfrm-settings.php:1283
 msgid "Redirect to the page"
 msgstr "Herlei na die bladsy"
 
-#: includes/class-cntctfrm-settings.php:1186
+#: includes/class-cntctfrm-settings.php:1284
 msgid "Url"
 msgstr "Url"
 
-#: includes/class-cntctfrm-settings.php:1206
+#: includes/class-cntctfrm-settings.php:1304
 #, php-format
 msgid ""
 "Please enable JavaScript to change '%s', '%s', '%s', '%s' options and for "
 "fields sorting."
 msgstr ""
 
-#: includes/class-cntctfrm-settings.php:1207
-#: includes/class-cntctfrm-settings.php:1224
+#: includes/class-cntctfrm-settings.php:1305
+#: includes/class-cntctfrm-settings.php:1322
 msgid "Form layout"
 msgstr ""
 
-#: includes/class-cntctfrm-settings.php:1208
-#: includes/class-cntctfrm-settings.php:1291
+#: includes/class-cntctfrm-settings.php:1306
+#: includes/class-cntctfrm-settings.php:1389
 #, fuzzy
 msgid "Labels position"
 msgstr "Indien knoppie"
 
-#: includes/class-cntctfrm-settings.php:1209
-#: includes/class-cntctfrm-settings.php:1309
+#: includes/class-cntctfrm-settings.php:1307
+#: includes/class-cntctfrm-settings.php:1407
 msgid "Labels align"
 msgstr ""
 
-#: includes/class-cntctfrm-settings.php:1210
-#: includes/class-cntctfrm-settings.php:1236
+#: includes/class-cntctfrm-settings.php:1308
+#: includes/class-cntctfrm-settings.php:1334
 #, fuzzy
 msgid "Submit position"
 msgstr "Indien knoppie"
 
-#: includes/class-cntctfrm-settings.php:1211
-#: includes/class-cntctfrm-settings.php:1340
+#: includes/class-cntctfrm-settings.php:1309
+#: includes/class-cntctfrm-settings.php:1438
 msgid "Add tooltips"
 msgstr "Voeg tool-wenke"
 
-#: includes/class-cntctfrm-settings.php:1212
-#: includes/class-cntctfrm-settings.php:1381
+#: includes/class-cntctfrm-settings.php:1310
+#: includes/class-cntctfrm-settings.php:1479
 msgid "Style options"
 msgstr "Styl opsies"
 
-#: includes/class-cntctfrm-settings.php:1228
+#: includes/class-cntctfrm-settings.php:1326
 msgid "One column"
 msgstr ""
 
-#: includes/class-cntctfrm-settings.php:1231
+#: includes/class-cntctfrm-settings.php:1329
 msgid "Two columns"
 msgstr ""
 
-#: includes/class-cntctfrm-settings.php:1240
-#: includes/class-cntctfrm-settings.php:1280
-#: includes/class-cntctfrm-settings.php:1298
-#: includes/class-cntctfrm-settings.php:1313
+#: includes/class-cntctfrm-settings.php:1338
+#: includes/class-cntctfrm-settings.php:1378
+#: includes/class-cntctfrm-settings.php:1396
+#: includes/class-cntctfrm-settings.php:1411
 msgid "Left"
 msgstr ""
 
-#: includes/class-cntctfrm-settings.php:1243
-#: includes/class-cntctfrm-settings.php:1286
-#: includes/class-cntctfrm-settings.php:1301
-#: includes/class-cntctfrm-settings.php:1319
+#: includes/class-cntctfrm-settings.php:1341
+#: includes/class-cntctfrm-settings.php:1384
+#: includes/class-cntctfrm-settings.php:1399
+#: includes/class-cntctfrm-settings.php:1417
 msgid "Right"
 msgstr ""
 
-#: includes/class-cntctfrm-settings.php:1248
+#: includes/class-cntctfrm-settings.php:1346
 msgid "Width"
 msgstr ""
 
-#: includes/class-cntctfrm-settings.php:1256
+#: includes/class-cntctfrm-settings.php:1354
 msgid "Custom"
 msgstr ""
 
-#: includes/class-cntctfrm-settings.php:1263
+#: includes/class-cntctfrm-settings.php:1361
 msgid "px"
 msgstr ""
 
-#: includes/class-cntctfrm-settings.php:1276
+#: includes/class-cntctfrm-settings.php:1374
 msgid "Form align"
 msgstr ""
 
-#: includes/class-cntctfrm-settings.php:1283
-#: includes/class-cntctfrm-settings.php:1316
+#: includes/class-cntctfrm-settings.php:1381
+#: includes/class-cntctfrm-settings.php:1414
 msgid "Center"
 msgstr ""
 
-#: includes/class-cntctfrm-settings.php:1295
+#: includes/class-cntctfrm-settings.php:1393
 msgid "Top"
 msgstr ""
 
-#: includes/class-cntctfrm-settings.php:1304
+#: includes/class-cntctfrm-settings.php:1402
 msgid "Bottom"
 msgstr ""
 
-#: includes/class-cntctfrm-settings.php:1324
+#: includes/class-cntctfrm-settings.php:1422
 msgid "Errors output"
 msgstr "Foutboodskap uitset"
 
-#: includes/class-cntctfrm-settings.php:1327
+#: includes/class-cntctfrm-settings.php:1425
 msgid "Display error messages"
 msgstr "Toon foutboodskappe"
 
-#: includes/class-cntctfrm-settings.php:1328
+#: includes/class-cntctfrm-settings.php:1426
 msgid "Color of the input field errors."
 msgstr "Kleur van die inset veld foutboodskappe"
 
-#: includes/class-cntctfrm-settings.php:1329
+#: includes/class-cntctfrm-settings.php:1427
 msgid "Display error messages & color of the input field errors"
 msgstr "Toon foutboodskappe & kleur van die inset veld foutboodskappe"
 
-#: includes/class-cntctfrm-settings.php:1334
+#: includes/class-cntctfrm-settings.php:1432
 msgid "Add placeholder to the input blocks"
 msgstr "Voeg 'n plekhouer by die inset blokke"
 
-#: includes/class-cntctfrm-settings.php:1354
+#: includes/class-cntctfrm-settings.php:1452
 msgid "Email address"
 msgstr "Epos Adres:"
 
-#: includes/class-cntctfrm-settings.php:1385
+#: includes/class-cntctfrm-settings.php:1483
 msgid "Text color"
 msgstr "Teks kleur"
 
-#: includes/class-cntctfrm-settings.php:1393
+#: includes/class-cntctfrm-settings.php:1491
 msgid "Label text color"
 msgstr "Etiket teks kleur"
 
-#: includes/class-cntctfrm-settings.php:1402
+#: includes/class-cntctfrm-settings.php:1500
 msgid "Placeholder color"
 msgstr "Plekhouer kleur"
 
-#: includes/class-cntctfrm-settings.php:1407
+#: includes/class-cntctfrm-settings.php:1505
 msgid "Errors color"
 msgstr "Foutboodskap kleur"
 
-#: includes/class-cntctfrm-settings.php:1415
+#: includes/class-cntctfrm-settings.php:1513
 msgid "Error text color"
 msgstr "Foutboodskap teks kleur"
 
-#: includes/class-cntctfrm-settings.php:1423
+#: includes/class-cntctfrm-settings.php:1521
 msgid "Background color of the input field errors"
 msgstr "Agtergrond kleur van die inset veld foutboodskappe"
 
-#: includes/class-cntctfrm-settings.php:1431
+#: includes/class-cntctfrm-settings.php:1529
 msgid "Border color of the input field errors"
 msgstr "Rand-kleur van die inset veld foutboodskappe"
 
-#: includes/class-cntctfrm-settings.php:1439
+#: includes/class-cntctfrm-settings.php:1537
 msgid "Placeholder color of the input field errors"
 msgstr "Plekhouer kleur van die inset veld foutboodskappe"
 
-#: includes/class-cntctfrm-settings.php:1444
+#: includes/class-cntctfrm-settings.php:1542
 msgid "Input fields"
 msgstr "Inset velde"
 
-#: includes/class-cntctfrm-settings.php:1452
+#: includes/class-cntctfrm-settings.php:1550
 msgid "Input fields background color"
 msgstr "Inset velde agtergrond kleur"
 
-#: includes/class-cntctfrm-settings.php:1460
+#: includes/class-cntctfrm-settings.php:1558
 msgid "Text fields color"
 msgstr "Teks velde kleur"
 
-#: includes/class-cntctfrm-settings.php:1464
+#: includes/class-cntctfrm-settings.php:1562
 msgid "Border width in px, numbers only"
 msgstr "Rand wydte in px, nommers alleenlik"
 
-#: includes/class-cntctfrm-settings.php:1472
-#: includes/class-cntctfrm-settings.php:1505
+#: includes/class-cntctfrm-settings.php:1570
+#: includes/class-cntctfrm-settings.php:1603
 msgid "Border color"
 msgstr "Rand kleur"
 
-#: includes/class-cntctfrm-settings.php:1477
+#: includes/class-cntctfrm-settings.php:1575
 msgid "Submit button"
 msgstr "Indien knoppie"
 
-#: includes/class-cntctfrm-settings.php:1481
+#: includes/class-cntctfrm-settings.php:1579
 msgid "Width in px, numbers only"
 msgstr "Wydte in px, nommers alleenlik"
 
-#: includes/class-cntctfrm-settings.php:1489
+#: includes/class-cntctfrm-settings.php:1587
 msgid "Button color"
 msgstr "Knoppie Kleur"
 
-#: includes/class-cntctfrm-settings.php:1497
+#: includes/class-cntctfrm-settings.php:1595
 msgid "Button text color"
 msgstr "Knoppie teks kleur"
 
-#: includes/class-cntctfrm-settings.php:1524
+#: includes/class-cntctfrm-settings.php:1622
 #, fuzzy
 msgid "Contact Form | Preview"
 msgstr "Kontak Vorm Pro | Voorskou"
 
-#: includes/class-cntctfrm-settings.php:1525
+#: includes/class-cntctfrm-settings.php:1623
 msgid "Drag the necessary field to sort fields."
 msgstr ""
 
-#: includes/class-cntctfrm-settings.php:1772
+#: includes/class-cntctfrm-settings.php:1870
 msgid "Contact Form Shortcode"
 msgstr ""
 
-#: includes/class-cntctfrm-settings.php:1775
+#: includes/class-cntctfrm-settings.php:1873
 msgid "Add Contact Form  to your page or post using the following shortcode:"
 msgstr ""
-
-#~ msgid "If you upgrade to Pro version all your settings will be saved."
-#~ msgstr ""
-#~ "As u opgradeer na die Pro weergawe sal die verstellings gestoor word."
 
 #, fuzzy
 #~ msgid ""

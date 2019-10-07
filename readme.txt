@@ -2,9 +2,9 @@
 Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: contact, contact form, feedback form, contact us form, contact button, email form, contac, form, web-page feedback, cf, cf plugin, contact form plugin
-Requires at least: 4.0
-Tested up to: 5.2.2
-Stable tag: 4.1.6
+Requires at least: 3.9
+Tested up to: 5.2.3
+Stable tag: 4.1.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -221,8 +221,14 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 13. Receive a copy of the email sent via the contact form.
 14. Divide your contact form fields into columns and change 'Submit' button position.
 15. Re-order contact form fields using drag & drop interface.
+16. Enable the file multiattachment option to get important files from senders via contact form.
 
 == Changelog ==
+
+= V4.1.7 - 07.10.2019 =
+* Update : The compatibility with WordPress version 5.2.3 was updated.
+* PRO : An ability to create custom fields has been added.
+* PRO : An ability to deactivate default fields has been added.
 
 = V4.1.6 - 04.09.2019 =
 * Update: The deactivation feedback has been changed. Misleading buttons have been removed.
@@ -233,21 +239,20 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 = V4.1.4 - 26.03.2019 =
 * NEW : The ability to attach multiple files has been added.
 
-= V4.1.3 - 06.03.2019 =
+= V4.1.3 - 06.02.2019 =
 * Bugfix : The bug with wp-options call has need fixed.
 
 = V4.1.2 - 26.02.2019 =
 * Update : The plugin settings page has been changed.
 
 = V4.1.1 - 11.12.2018 =
-* Bugfix : The compatibility issue with Captcha plugin has been fixed.
 * Update : The compatibility with WordPress version 5.0 was updated.
 
 = V4.1.0 - 21.05.2018 =
 * NEW : GDPR Compliance has been added.
 
 = V4.0.9 - 09.02.2018 =
-* Update : Czech and French language files have been updated.
+* Update : Czech language file has been updated.
 * Bugfix : The compatibility issue with Contact Form Multi plugin has been fixed.
 
 = V4.0.8 - 04.12.2017 =
@@ -257,6 +262,7 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 
 = V4.0.7 - 04.07.2017 =
 * Bugfix : The compatibility issue with Google Captcha (reCAPTCHA) plugin was fixed.
+* Bugfix : The bug with Email field displaying in Appearance tab was fixed.
 * NEW : The ability to change width for contact form fields has been added.
 * Update : French language file is updated.
 
@@ -267,6 +273,8 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 = V4.0.5 - 03.03.2017 =
 * Bugfix : The bug with selecting language via BWS Shortcode button was fixed.
 * Bugfix : The bug with enabling/disabling Captcha on the plugin additional settings page was fixed.
+* Bugfix : The bug with re-ordering Captcha on the plugin appearance settings page was fixed.
+* Bugfix : The bug with customizing form on the plugin appearance settings page was fixed.
 * Update : BWS Panel section was updated.
 
 = V4.0.4 - 15.12.2016 =
@@ -281,469 +289,283 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * Bugfix : XSS vulnerability was removed.
 * Bugfix : The bug with displaying google captcha has been fixed.
 
-= V4.0.1 - 19.07.2016 =
-* Update : An ability to enable/disable Captcha, Google Captcha, Subscribe checkbox and an ability to save email to the database for each multi forms (if Contact Form Multi is activated).
+= V2.1.4 - 19.07.2016 =
+* Update : An ability to enable/disable Captcha, Google Captcha, Subscribe checkbox and an ability to save email to the database for each multi forms (if Contact Form Multi by Bestwebsoft is activated).
 * Update : Color picker script was replaced.
 
-= V4.0.0 - 27.06.2016 =
+= V2.1.3 - 27.06.2016 =
 * NEW : The ability to add custom styles to frontend of your site has been added.
 * Update : The Spanish language file is updated.
 * Update : The French language file is updated.
 
-= V3.99 - 27.04.2016 =
+= V2.1.2 - 27.04.2016 =
 * Bugfix : The bug with adding options to the database was fixed.
 
-= V3.98 - 25.04.2016 =
+= V2.1.1 - 25.04.2016 =
 * NEW : Compatibility with plugin Subscriber.
 * NEW : The Danish language file is added.
 
-= V3.97 - 08.01.2016 =
-* Update : The styles for reCaptcha were updated.
+= V2.1.0 - 08.01.2016 =
 * NEW : The Czech language file is added.
 * Update : The French language file is updated.
 
-= V3.96 - 04.12.2015 =
+= V2.0.9 - 04.12.2015 =
 * Bugfix : The bug with sorting on mobile devices was fixed.
 * Bugfix : XSS vulnerability was removed.
 * Bugfix : The bug with plugin menu duplicating was fixed.
 * Update : The French language file is updated.
 
-= V3.95 - 02.11.2015 =
+= V2.0.8 - 16.11.2015 =
+* Bugfix : Bug with the options saving on the settings page (appearance tab) was fixed.
+
+= V2.0.7 - 05.11.2015 =
 * NEW : An ability to sort contact form fields was added.
 * NEW : An ability to displaying contact form in 2 columns.
+* NEW : An ability to change the contact form alignment.
+* NEW : An ability to change labels position in the contact form.
+* NEW : An ability to change labels align in the contact form.
 * NEW : A button for contact form shortcode inserting to the content was added.
 * NEW : The Dutch language file is added.
+* Update : Textdomain was changed.
 * Update : The method of the URL obtaining in the attribute "action" of the contact form has been changed.
 * Update : The French language file is updated.
 * Bugfix : Vulnerabilities with `$path_of_upload_file` and `$form_action` was fixed.
 
-= V3.94 - 15.09.2015 =
-* Update : We updated all functionality for wordpress 4.3.
-* Update : Text Domain was changed.
-
-= V3.93 - 05.08.2015 =
+= V2.0.6 - 05.08.2015 =
+* New : We've made it possible to make Department field required.
 * New : Ability to restore settings to defaults.
 * Bugfix : We fixed syntax error.
 * Update : We updated all functionality for wordpress 4.2.4.
 
-= V3.92 - 03.07.2015 =
+= V2.0.5 - 03.07.2015 =
 * Update : We fixed the url after the form is submitted.
 * Update : We fixed display form for rtl.
 
-= V3.91 - 03.06.2015 =
+= V2.0.4 - 03.06.2015 =
+* Update : We fixed 'Send me a copy' email with the attachment.
 * Update : We fixed error of a visual display of the settings page.
-* Bugfix : We fixed 'Send me a copy' email with the attachment.
 
-= V3.90 - 04.05.2015 =
+= V2.0.3 - 13.05.2015 =
+* Update : We updated all functionality for wordpress 4.2.2.
+
+= V2.0.2 - 04.05.2015 =
 * Update : We updated all functionality for wordpress 4.2.1.
 * Update : The French language file is updated.
 
-= V3.89 - 13.03.2015 =
-* Bugfix : Bug with undefined function on plugin's settings page was fixed.
-
-= V3.88 - 06.03.2015 =
-* Bugfix : Bugs with syntax error and undefined function were fixed.
-
-= V3.87 - 05.03.2015 =
+= V2.0.1 - 26.03.2015 =
 * Bugfix : Error with option name when Contact Form Multi plugin is activated was fixed.
 * Update : Plugin performance was improved.
 * Update : BWS Panel section was updated.
-* Update : The French language file is updated.
 
-= V3.86 - 19.02.2015 =
+= V1.43 - 19.02.2015 =
 * Bugfix : Bug with Contact Form impacting 'From name' headers in messages sent by other plugins was fixed.
 * Update : 'Additional options' block was moved to a new tab, which is now named 'Additional settings'.
 * Update : 'Extra settings' tab name was changed to 'Appearance'.
+* Update : We updated all functionality for wordpress 4.1.1.
 * NEW : The Greek language file is added.
 
-= V3.85 - 25.12.2014 =
+= V1.42 - 26.12.2014 =
+* Bugfix : We fixed the bug with attachment.
+* Update : The Estonian and Japanese language files are updated.
+
+= V1.41 - 03.12.2014 =
 * NEW : We added functionality for displaying two or more contact forms on a single page.
 * Update : We changed the layout of Contact Form from fixed to responsive.
 * Update : The French language file is updated.
-* Update : The Japanese language file is updated.
-* Update : The Estonian language file is updated.
 
-= V3.84 - 21.10.2014 =
-* Update : The Norwegian and Russian language files are updated.
-* Bugfix : We fixed the bug with saving 'The $_SERVER variable that is used to build a URL of the form'.
+= V1.40 - 21.10.2014 =
 * Bugfix : We fixed the bug with network activation.
+* Bugfix : We fixed the bug with close banner button.
+* Update : The Russian, Slovak and Ukrainian language files are updated.
+* NEW : The Norwegian language file is added.
 
-= V3.83 - 02.09.2014 =
-* Update : The Slovak language file is updated.
+= V1.39 - 27.08.2014 =
+* Bugfix : Bug with saving email addresses with long domain part was fixed.
 
-= V3.82 - 07.08.2014 =
-* Budfix : Security Exploit was fixed.
+= V1.38 - 22.08.2014 =
+* Bugfix : Bug with saving options during the first installation was fixed.
+
+= V1.37 - 21.08.2014 =
+* Bugfix : Bug with saving several email addresses was fixed.
+
+= V1.36 - 20.08.2014 =
+* Bugfix : Bug with saving redirection link was fixed.
+
+= V1.35 - 13.08.2014 =
+* Update : We updated all functionality for wordpress 4.0-beta3.
+* Bugfix : Security Exploit was fixed.
+
+= V1.34 - 08.08.2014 =
+* Bugfix : The bug with not supported MIME type error was fixed.
+
+= V1.33 - 01.08.2014 =
+* NEW : Auto Response is added.
+
+= V1.32 - 21.07.2014 =
+* NEW : Ability to substitute "name" and "email" fields with User's data for logged-in users, as well as to hide and make these data disabled for editing.
 * Update : The French language file is updated.
+* Update : The Spanish language file is updated.
 
-= V3.81 - 17.07.2014 =
+= V1.31 - 17.07.2014 =
 * Update : We updated all functionality for Email Queue plugin.
 
-= V3.80 - 08.07.2014 =
+= V1.30 - 08.07.2014 =
 * Bugfix : The bug related to overwriting of the attachments with the same names was fixed.
 * NEW : We added ability to use the changed names of the fields of the contact form in the sent letter.
 
-= V3.79 - 06.06.2014 =
-* Bugfix : We fixed the bug with getting default settings.
-* Bugfix : We fixed the bug with plugin Contact Form Multi.
+= V1.29 - 26.06.2014 =
+* NEW : We added location selectbox.
 
-= V3.78 - 20.05.2014 =
-* Update : We updated all functionality for wordpress 3.9.1.
-* Update : The French language file is updated.
+= V1.28 - 28.05.2014 =
+* Bugfix : We fixed the bugs with Contact Form Multi plugin.
+
+= V1.27 - 20.05.2014 =
 * NEW : The Spanish language file is added.
 * Bugfix : We fixed the bug of loading the user's list ( We have limited the list "The user's email address" on the settings page to the lowest role - author ).
 
-= V3.77 - 18.04.2014 =
+= V1.26 - 09.05.2014 =
+* Update : We updated all functionality for wordpress 3.9.1.
+* Update : The French language file is updated.
+
+= V1.25 - 17.04.2014 =
 * Update : We updated all functionality for wordpress 3.9.
-* Bugfix : We fixed the bug of db table creation.
+* NEW : Compatibility with plugin Contact Form Multi Pro.
 * Update : The Ukrainian language file is updated.
-* Update : Screenshots are updated.
 
-= V3.76 - 14.04.2014 =
-* Update : We updated all functionality for wordpress 3.8.2.
-
-= V3.75 - 08.04.2014 =
+= V1.24 - 08.04.2014 =
 * NEW : The Afrikaans language file is added.
 * Bugfix : We fixed the bug of the user's list on multisite.
 
-= V3.74 - 24.03.2014 =
+= V1.23 - 24.03.2014 =
 * NEW : Compatibility with plugin Contact Form Multi.
 * NEW : 'xlsx' mime-type is added.
 * NEW : Added transition to the contact form after submitting.
 
-= V3.73 - 06.03.2014 =
+= V1.22 - 10.03.2014 =
 * Budfix : Plugin optimization is done.
 * Update : The French language file is updated.
 * Bugfix : We fixed the bug of duplicate MIME-Version.
 
-= V3.72 - 20.02.2014 =
+= V1.21 - 20.02.2014 =
 * NEW : The Estonian and German language file are added.
 * NEW : Setting of choice for the form's action URL ($_SERVER['HTTP_HOST'] or $_SERVER['SERVER_NAME']).
 
-= V3.71 - 03.02.2014 =
+= V1.20 - 31.01.2014 =
 * Update : We updated all functionality for wordpress 3.8.1.
 * NEW : The Turkish and Vietnamese language file are added.
 
-= V3.70 - 16.01.2014 =
-* Update : BWS Panel section was updated.
-
-= V3.69 - 26.12.2013 =
+= V1.19 - 14.01.2014 =
+* Update : BWS Panel section is updated.
+* NEW : The department is added in email.
 * Update : The French language file is updated.
 * NEW : The Chinese language file is added.
 
-= V3.68 - 17.12.2013 =
+= V1.18 - 17.12.2013 =
 * Update : We updated all functionality for wordpress 3.8.
 * Update : We changed capability to 'manage_options' for the plugins settings pages.
 
-= V3.67 - 05.12.2013 =
+= V1.17 - 04.12.2013 =
+* NEW : Ability to reorder elements in the department's list.
 * NEW : Ability to send email in plain format.
-* NEW : A notice when changing settings on the plugin's settings page was added.
 * Update : The Ukrainian language file is updated.
-* Update : Screenshots are updated.
 
-= V3.66 - 29.11.2013 =
+= V1.16 - 26.11.2013 =
+* Bugfix : We fixed the bug related to warning while saving settings.
+* NEW : Ability to hide, make disabled or define subject and message fields.
 * NEW : Ability to not use name field.
 * NEW : We added mime types for .aar and .sce files.
 
-= V3.65 - 22.11.2013 =
-* Bugfix : We fixed the bug related to use html-special chars.
-* Update : BWS Panel section is updated.
-
-= V3.64 - 15.11.2013 =
-* NEW : Ability to change tips below the Attachment block.
-* NEW : Ability to change required symbol (asterisk).
-
-= V3.63 - 8.11.2013 =
+= V1.15 - 19.11.2013 =
 * Update : The French language file is updated.
-* NEW : Add hide-button for the settings page.
+* NEW : Add checking license key in the plugin settings page.
+* NEW : Add Privacy checkbox (Required checkbox for submitting the form).
+* NEW : Add Optional checkbox (Optional checkbox, the results of which will be displayed in email).
+* Bugfix : We fixed the bug related to use html-special chars.
 
-= V3.62 - 1.11.2013 =
+= V1.14 - 4.11.2013 =
 * NEW : Add checking installed wordpress version.
 * Update : Activation of radio button or checkbox by clicking on its label.
 * Update : We updated all functionality for wordpress 3.7.1.
 
-= V3.61 - 25.10.2013 =
+= V1.13 - 25.10.2013 =
 * NEW : Add option for saving emails into the DataBase.
 * Bugfix : File format according JavaScript and CSS Coding Standards.
 * Update : We updated all functionality for wordpress 3.7.
 
-= V3.60 - 18.10.2013 =
+= V1.12 - 23.10.2013 =
 * NEW : Compatibility with plugin Contact Form To DB.
-* Bugfix : We fixed the bug of uploading attachment in multisite.
 
-= V3.59 - 11.10.2013 =
-* NEW : Ability to not display asterisk near required fields.
+= V1.11 - 11.10.2013 =
+* NEW : Ability to change required symbol (asterisk).
 
-= V3.58 - 01.10.2013 =
+= V1.10 - 01.10.2013 =
 * Update : The Brazilian Portuguese language file is updated.
 * NEW : Ability to use the name of the user who fills the form in the field 'From'.
 
-= V3.57 - 23.09.2013 =
-* Update : The French language file is updated.
+= V1.09 - 25.09.2013 =
+* Update : The and French language file is updated.
 * Update : We updated all functionality for wordpress 3.6.1.
+* NEW : Ability to add SelectBox to the contact form with the title Department, where the message will arrive.
 
-= V3.56 - 12.09.2013 =
+= V1.08 - 13.09.2013 =
 * Bugfix : We fixed the bug related to manage languages on the plugin settings page.
 * Update : The Ukrainian language file is updated.
 
-= V3.55 - 03.09.2013 =
-* NEW : Compatibility with Captcha Pro.
-
-= V3.54 - 30.08.2013 =
+= V1.07 - 30.08.2013 =
 * Update : Function for displaying BWS Panel section placed in a separate file and has own language files.
 * Update : Compatibility test with 20 most popular WordPress plugins.
+* Bugfix : We fixed the bug of the wrong message tooltip.
+* NEW : Compatibility with Captcha Pro.
+* NEW : Ability to add field "Reply-to" with user email to the email header.
 
-= V3.53 - 20.08.2013 =
+= V1.06 - 20.08.2013 =
 * Bugfix : We fixed the bug related to 'docx' mime type.
 * Update : We changed plugin settings page displaying.
 * NEW : Added an ability to delete an attachment file from the server after the email is sent.
 * NEW : The Slovak language file is added.
 * Update : The French language file is updated.
-
-= V3.52 - 13.08.2013 =
 * Update : The Japanese language file is updated.
 * Bugfix : We fixed the bug related to XSS attack.
 
-= V3.51 - 05.08.2013 =
-* Update : The Brazilian Portuguese language file is updated.
-* Update : We updated all functionality for wordpress 3.6.
+= V1.05 - 05.08.2013 =
+* Update : We updated all functionality for wordpress 3.6
 * Bugfix : We fixed the email validation bug.
 * Update : We removed displaying of additional info in the copy of email to the sender.
 
-= V3.50 - 29.07.2013 =
+= V1.04 - 30.07.2013 =
 * NEW : Added an ability to use diffrent shortcodes.
 * Update : The Swedish language file is updated.
 * Update : The Brazilian Portuguese language file is updated.
 
-= V3.49 - 22.07.2013 =
-* NEW : Added an ability to view and send system information by mail.
+= V1.03 - 24.07.2013 =
+* Bugfix : We fixed the displaying bug.
 
-= V3.48 - 16.07.2013 =
+= V1.02 - 23.07.2013 =
+* NEW : The setting of displaying Captcha is added.
+* NEW : Added an ability to view and send system information by mail.
+* Update : We updated all functionality for wordpress 3.5.2
 * NEW : The Catalan language file is added.
 * Update : The French language file is updated.
-* Update : We updated all functionality for wordpress 3.5.2.
 
-= V3.47 - 02.07.2013 =
-* NEW : The setting of displaying Captcha is added.
-* Update : The French language file is updated.
-
-= V3.46 - 24.06.2013 =
+= V1.01 - 25.06.2013 =
 * NEW : The Finnish language file is added to the plugin.
-* Bugfix : We fixed the bug of display additional info in the email when email has an attachment.
-* NEW : Added html blocks.
 
-= V3.45 - 27.05.2013 =
-* Bugfix : The error related to use function 'get_userdatabylogin' instead 'get_user_by('login')' is fixed.
-* Update : BWS Panel section is updated.
-* Update : We updated the Italian, the French and the Brazilian Portuguese language files in the plugin.
-
-= V3.44 - 16.05.2013 =
-* NEW : Added email adress as additional form field.
-* Bugfix : We fixed the bug of adding an attachment.
-
-= V3.43 - 08.04.2013 =
-* Update : We updated the English text in the plugin file.
-* Bugfix : We fixed the bug of displaying phone error messages when a phone number field is not display.
-
-= V3.42 - 01.04.2013 =
-* Update : The Serbian language file is updated.
-* Bugfix : The bug after clicking submit, when site uses a custom port, is fixed.
-
-= V3.41 - 22.03.2013 =
-* NEW : Added ability to change a label 'Send me a copy'.
-* Bugfix : The bug of changing the message 'Action after email is sent' was fixed.
-
-= V3.40 - 19.03.2013 =
-* NEW : Hungarian language file is added to the plugin.
-* Bugfix : The bug of displaying error messages was fixed.
-
-= V3.39 - 04.03.2013 =
-* NEW : Ukrainian language file is added to the plugin.
-
-= V3.38 - 26.02.2013 =
-* NEW : We added HTML tag for the text, that is displayed after email is sent.
-
-= V3.37 - 21.02.2013 =
-* NEW : Belarusian language file is added to the plugin.
-
-= V3.36 - 19.02.2013 =
-* Update : European Portuguese language file is updated.
-
-= V3.35 - 19.02.2013 =
-* Bugfix : The error related to the cross-site scripting vulnerabilities was fixed.
-
-= V3.34 - 7.02.2013 =
-* Update : We changed the English text in the plugin file and all language files were updated.
-
-= V3.33 - 4.02.2013 =
-* Update : Dutch language file was updated.
-
-= V3.32 - 31.01.2013 =
-* Bugfix : Bugs in admin menu were fixed.
-* Update : We updated all functionality for wordpress 3.5.1.
-
-= V3.31 - 25.01.2013 =
-* Update : Swedish language file was updated.
-
-= V3.30 - 19.12.2012 =
-* Bugfix : The error related to extra "rn" in the user email address when using WP_mail and in the Name field when using php_mail was fixed.
-* Update : We updated all functionality for wordpress 3.5.
-
-= V3.29 - 12.12.2012 =
-* Bugfix : The error related to the empty label on the contact form was fixed.
-
-= V3.28 - 11.12.2012 =
-* NEW : Galician language file is added to the plugin.
-* NEW : Multilanguage labels for fields is added to the plugin.
-* Update : The shortcode structure was changed.
-
-= V3.27 - 20.11.2012 =
-* Bugfix : The error related to the saving of the field "Change FROM fields of the contact form" was fixed.
-
-= V3.26 - 19.11.2012 =
-* NEW : The setting of the required fields was added.
-* NEW : Persian language file is added to the plugin.
-* Update : The email address validation was changed.
-
-= V3.25 - 22.10.2012 =
-* NEW : Added phone number as additional form field.
-* NEW : Serbian language file is added to the plugin.
-
-= V3.24 - 12.08.2012 =
-* NEW : Czech and Romanian language files are added to the plugin.
-
-= V3.23 - 03.08.2012 =
-* Bugfix : Cross Site Request Forgery bug was fixed.
-
-= V3.22 - 24.07.2012 =
-* NEW : Japanese language file is added to the plugin.
-* Bugfix : Cross Site Request Forgery bug was fixed.
-
-= V3.21 - 10.07.2012 =
-* NEW : Hebrew language file is added to the plugin.
-* Update : We updated French language file.
-* Update : We updated all functionality for wordpress 3.4.1.
-* Update : In the email in the field  Date/Time used correct time zone - instead of UTC we use local settings which are setup on the page  Settings -> General.
-
-= V3.20 - 27.06.2012 =
-* NEW : Added ability to select action after the send mail - Display text or Redirect to page.
-* Update : We updated all functionality for wordpress 3.4.
-
-= V3.19 - 19.06.2012 =
-* Bugfix : The bug of email address validation in admin section was fixed.
-
-= V3.18 - 18.06.2012 =
-* NEW : Arabic and Hindi language files is added.
-* NEW : Added ability to display or hide explanations after Attachment block.
-
-= V3.17 - 12.04.2012 =
-* NEW : Danish and Greek language files is added.
-* NEW : Added ability to send mail using the functional: wordpress wp_mail function or php mail function.
-
-= V3.16 - 26.03.2012 =
-* Bugfix : The form output code is validated.
-
-= V3.15 - 22.03.2012 =
-* New : The feature to setup the displaying of the additional information fields in the email was implemented (Sent from (ip address), Date/Time, Coming from (referer), Using (user agent)).
-* Bugfix : The bug of attribute action on element form was fixed.
-
-= V3.14 - 20.03.2012 =
-* NEW : Added ability to change FROM fields.
-
-= V3.13 - 14.03.2012 =
-* Change : French language file is changed.
-
-= V3.12 - 12.03.2012 =
-* NEW : Added ability to upload wav and mp3 files.
-
-= V3.11 - 12.03.2012 =
-* NEW : French language file is added to the plugin.
-* NEW : Added ability to use the contact form shortcode as widget in the sidebars.
-* Change : The change was done to an email sending functionality – now it is using wordpress functionality only.
-
-= V3.10 - 02.03.2012 =
-* NEW : Bulgarian language file is added to the plugin.
-
-= V3.09 - 24.02.2012 =
-* NEW : Spanish language file is added to the plugin.
-* Change : Code which includes styles and scripts is added to the plugin for correct SSL verification.
-* Bugfix : The bug of email address validation in admin section was fixed.
-
-= V3.08 - 17.02.2012 =
-* NEW : Spanish language file is added to the plugin.
-
-= V3.07 - 17.02.2012 =
-* NEW : Norwegian language file is added to the plugin.
-* NEW : Polish language file is added to the plugin.
-
-= V3.06 - 07.02.2012 =
-* NEW : Dutch language file is added to the plugin.
-
-= V3.05 - 09.01.2012 =
-* Bugfix : The bug of sending emails to admin user even if a different user is specified when setting plugin to "use email of wordpress user" was fixed.
-* Bugfix : The bug of sending a blank attachment field of the form was fixed.
-
-= V3.04 - 05.01.2012 =
-* NEW : Brazilian Portuguese and Turkish language files were added to the plugin.
-
-= V3.03 - 04.01.2012 =
-* NEW : German language files are added to the plugin.
-* Bugfix : The bug related to resending of an email after the page is updated was fixed.
-
-= V3.02 - 02.01.2012 =
-* NEW : Italian language files were added to the plugin.
-* NEW : A possibility to change a label when the fields of the form are displayed.
-* Changed : Display of the files types names that user can attach to an mail.
-
-= V3.01 - 28.12.2011 =
-* NEW : 'Attachment' and 'Send me a copy' blocks were added to the contact form.
-* NEW : Language files are added to the plugin.
-
-= V2.08 - 12.11.2011 =
-* Slashes bug in email is fixed and server info is added to email.
-
-= V2.07 - 10.11.2011 =
-* The bug of complex form validation when captcha is not used in the contact form is fixed. Please upgrade immediately.
-
-= V2.06 - 16.09.2011 =
-* The bug of complex email validation when filling in the contact form is fixed.
-
-= V2.05 - 23.08.2011 =
-* BWS Plugin's menu section was fixed and right now it is consisted of 3 parts: activated, installed and recommended plugins.
- The bug of positioning in admin menu is fixed. Translation omissions are corrected. Now there is a link where it is possible to see the site where email comes from.
-
-= V2.04 - 14.07.2011 =
-* BWS Plugin's menu section was fixed and right now it is consisted of 2 parts: installed and recommended plugins. Icons displaying is fixed.
-
-= V2.03 - 13.07.2011 =
-* The bug of using custom email is fixed in this version. Please upgrade the plugin immediately. Thank you
-
-= V2.02 =
-* The bug with the link to the settings page is fixed in this version. Please upgrade the plugin immediately.
-
-= V2.01 =
-* Usability at the settings page of the plugin was improved.
-
-= V1.03 =
-* Contact form email address bug is fixed.
-
-= V1.02 =
-* "Thanks" message display bug is fixed. Radio buttons automatic switching is added (for the settings page) after setting mouse cursor (clicking) at a text field.
-
-= V1.01 =
-* Contact form positioning bug is fixed.
-
-= V1.00 =
-* Ability to add Contact Form into a post. Ability to adjust displaying of the form via shortcode is added.
+= V1.0 - 24.06.2013 =
+* NEW : You can change the Contact Form CSS
+* NEW : You can add a placeholder
+* NEW : You can add tooltips for each field
+* NEW : You can use JavaScript for the form validation with highlighting option
 
 == Upgrade Notice ==
 
+= V4.1.7 =
+* Bugs fixed.
+* New features added.
+
 = V4.1.6 =
- * Usability improved
+* Usability improved
 
 = V4.1.5 =
-* Bugs fixed.
-
-= V4.1.4 =
 * Bugs fixed.
 
 = V4.1.4 =
