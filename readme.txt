@@ -2,9 +2,9 @@
 Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: contact, contact form, feedback form, contact us form, contact button, email form, contac, form, web-page feedback, cf, cf plugin, contact form plugin
-Requires at least: 3.9
+Requires at least: 4.0
 Tested up to: 5.2.3
-Stable tag: 4.1.7
+Stable tag: 4.1.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -224,6 +224,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 16. Enable the file multiattachment option to get important files from senders via contact form.
 
 == Changelog ==
+
+= V4.1.8 - 15.10.2019 =
+* Bugfix : Timeout update error was fixed.
 
 = V4.1.7 - 07.10.2019 =
 * Update : The compatibility with WordPress version 5.2.3 was updated.
@@ -557,6 +560,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * NEW : You can use JavaScript for the form validation with highlighting option
 
 == Upgrade Notice ==
+
+= V4.1.8 =
+* Bugs fixed.
 
 = V4.1.7 =
 * Bugs fixed.

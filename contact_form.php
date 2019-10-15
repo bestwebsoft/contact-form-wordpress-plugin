@@ -6,7 +6,7 @@ Description: Simple contact form plugin any WordPress website must have.
 Author: BestWebSoft
 Text Domain: contact-form-plugin
 Domain Path: /languages
-Version: 4.1.7
+Version: 4.1.8
 Author URI: https://bestwebsoft.com/
 License: GPLv2 or later
 */

@@ -1,7 +1,7 @@
 <?php
 /*
 * Function for displaying BestWebSoft menu
-* Version: 2.2.1
+* Version: 2.2.2
 */
 
 if ( ! function_exists ( 'bws_admin_enqueue_scripts' ) )
@@ -388,7 +388,7 @@ if ( ! function_exists( 'bws_add_menu_render' ) ) {
 						} else {
 							$args = array(
 								'method' 	  => 'POST',
-								'timeout'     => 10
+								'timeout'     => 100
 							);
 							$received_content = wp_remote_post( $url, $args );
 						}

@@ -993,7 +993,7 @@ if ( ! class_exists( 'Bws_Settings_Tabs' ) ) {
 												} else {
 													$args = array(
 													        'method' 	  => 'POST',
-													        'timeout'     => 10
+													        'timeout'     => 100
                                                     );
 													$received_content = wp_remote_post( $url, $args );
 												}
