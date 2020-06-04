@@ -3,8 +3,6 @@
  * Appearances the content on the plugin settings page
  */
 
-require_once( dirname( dirname( __FILE__ ) ) . '/bws_menu/class-bws-settings.php' );
-
 if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 	class Cntctfrm_Settings_Tabs extends Bws_Settings_Tabs {
 		private $cfmlt_is_active;
@@ -28,8 +26,8 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 				'additional_settings'	=> array( 'label' => __( 'Additional Settings', 'contact-form-plugin' ) ),
 				'appearance'			=> array( 'label' => __( 'Appearance', 'contact-form-plugin' ) ),
 				'misc' 					=> array( 'label' => __( 'Misc', 'contact-form-plugin' ) ),
-				'license'				=> array( 'label' => __( 'License Key', 'contact-form-plugin' ) ),
 				'custom_code'			=> array( 'label' => __( 'Custom Code', 'contact-form-plugin' ) ),
+                'license'				=> array( 'label' => __( 'License Key', 'contact-form-plugin' ) ),
 			);
 
 			$addons_check = array();
@@ -113,6 +111,7 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 		 */
 		public function save_options() {
 			global $wpdb, $cntctfrm_countries, $cntctfrm_related_plugins, $contact_form_multi_active;
+
 			if ( empty( $cntctfrm_related_plugins ) )
 				cntctfrm_related_plugins();
 			$error = $message = $notice = '';
@@ -134,12 +133,12 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 
 			$this->options['layout'] = ( isset( $_POST['cntctfrm_layout'] ) ) ? (int) $_POST['cntctfrm_layout'] : 1;
 
-			$layout_first_column_string = stripslashes( esc_html( $_POST['cntctfrm_layout_first_column'] ) );
+			$layout_first_column_string = stripslashes( sanitize_text_field( $_POST['cntctfrm_layout_first_column'] ) );
 			$layout_first_column = explode( ',', $layout_first_column_string );
 			$layout_first_column = array_diff( $layout_first_column, array('') );
 
-			$layout_second_column_string = stripslashes( esc_html( $_POST['cntctfrm_layout_second_column'] ) );
-			$layout_second_column = explode( ',', $layout_second_column_string );
+            $layout_second_column_string = stripslashes( sanitize_text_field( $_POST['cntctfrm_layout_second_column'] ) );
+            $layout_second_column = explode( ',', $layout_second_column_string );
 			$layout_second_column = array_diff( $layout_second_column, array('') );
 
 			if ( 1 === $this->options['layout'] && ! empty( $layout_second_column ) ) {
@@ -147,29 +146,29 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 				$layout_second_column = array();
 			}
 
-			$this->options['submit_position'] = ( isset( $_POST['cntctfrm_submit_position'] ) ) ? stripslashes( esc_html( $_POST['cntctfrm_submit_position'] ) ) : 'left';
-			$this->options['order_fields']['first_column'] = $layout_first_column;
-			$this->options['order_fields']['second_column'] = $layout_second_column;
+            $this->options['submit_position']          = isset( $_POST['cntctfrm_submit_position'] ) && in_array( $_POST['cntctfrm_submit_position'], array( 'right', 'left' ) ) ? $_POST['cntctfrm_submit_position'] : 'left';
+            $this->options['order_fields']['first_column'] = $layout_first_column;
+            $this->options['order_fields']['second_column'] = $layout_second_column;
 
-			$this->options['user_email'] = $_POST['cntctfrm_user_email'];
-			$this->options['custom_email'] = trim( stripslashes( esc_html( $_POST['cntctfrm_custom_email'] ) ), " ," );
-			$this->options['select_email'] = $_POST['cntctfrm_select_email'];
-			$this->options['from_email'] = $_POST['cntctfrm_from_email'];
-			$this->options['custom_from_email'] = stripslashes( esc_html( $_POST['cntctfrm_custom_from_email'] ) );
+            $this->options['user_email']               = isset( $_POST['cntctfrm_user_email'] ) ? sanitize_text_field( $_POST['cntctfrm_user_email'] ) : $this->options['user_email'];
+            $this->options['custom_email']             = isset( $_POST['cntctfrm_custom_email'] ) ? sanitize_email( $_POST['cntctfrm_custom_email'] ) : $this->options['custom_email'];
+            $this->options['select_email']             = isset( $_POST['cntctfrm_select_email'] ) && in_array( $_POST['cntctfrm_select_email'], array( 'user', 'custom', 'departments' ) ) ? ( $_POST['cntctfrm_select_email'] ) : 'user';
+            $this->options['from_email']               = isset( $_POST['cntctfrm_from_email'] ) && in_array( $_POST['cntctfrm_from_email'], array( 'user', 'custom' ) ) ? ( $_POST['cntctfrm_from_email'] ) : 'user';
+            $this->options['custom_from_email']        = isset( $_POST['cntctfrm_custom_from_email'] ) ? sanitize_email( $_POST['cntctfrm_custom_from_email'] ) : $this->options['custom_from_email'];
 
-			$this->options['mail_method']              = $_POST['cntctfrm_mail_method'];
-			$this->options['from_field']               = stripslashes( esc_html( $_POST['cntctfrm_from_field'] ) );
-			$this->options['select_from_field']        = $_POST['cntctfrm_select_from_field'];
-			$this->options['display_name_field']       = isset( $_POST['cntctfrm_display_name_field'] ) ? 1 : 0;
-			$this->options['display_address_field']    = isset( $_POST['cntctfrm_display_address_field'] ) ? 1 : 0;
-			$this->options['display_phone_field']      = isset( $_POST['cntctfrm_display_phone_field'] ) ? 1 : 0;
-			$this->options['attachment']               = isset( $_POST['cntctfrm_attachment'] ) ? $_POST['cntctfrm_attachment'] : 0;
-			$this->options['attachment_explanations']  = isset( $_POST['cntctfrm_attachment_explanations'] ) ? $_POST['cntctfrm_attachment_explanations'] : 0;
-			$this->options['send_copy']                = isset( $_POST['cntctfrm_send_copy'] ) ? $_POST['cntctfrm_send_copy'] : 0;
-			$this->options['gdpr']                     = isset( $_POST['cntctfrm_gdpr'] ) ? $_POST['cntctfrm_gdpr'] : 0;
-			$this->options['gdpr_link']                = isset( $_POST['cntctfrm_gdpr_link'] ) ? $_POST['cntctfrm_gdpr_link'] : '';
+            $this->options['mail_method']              = isset( $_POST['cntctfrm_mail_method'] ) && in_array( $_POST['cntctfrm_mail_method'], array( 'wp-mail', 'mail' ) ) ? ( $_POST['cntctfrm_mail_method'] ) : 'wp-mail';
+            $this->options['from_field']               = isset( $_POST['cntctfrm_from_field'] ) ? sanitize_text_field( $_POST['cntctfrm_from_field'] ) : $this->options['from_field'];
+            $this->options['select_from_field']        = isset( $_POST['cntctfrm_select_from_field'] ) && in_array( $_POST['cntctfrm_select_from_field'], array( 'custom', 'user_name' ) ) ? ( $_POST['cntctfrm_select_from_field'] ) : 'custom';
+            $this->options['display_name_field']       = isset( $_POST['cntctfrm_display_name_field'] ) ? 1 : 0;
+            $this->options['display_address_field']    = isset( $_POST['cntctfrm_display_address_field'] ) ? 1 : 0;
+            $this->options['display_phone_field']      = isset( $_POST['cntctfrm_display_phone_field'] ) ? 1 : 0;
+            $this->options['attachment']               = isset( $_POST['cntctfrm_attachment'] ) ? 1 : 0;
+            $this->options['attachment_explanations']  = isset( $_POST['cntctfrm_attachment_explanations'] ) ? 1 : 0;
+            $this->options['send_copy']                = isset( $_POST['cntctfrm_send_copy'] ) ? 1 : 0;
+            $this->options['gdpr']                     = isset( $_POST['cntctfrm_gdpr'] ) ? 1 : 0;
+            $this->options['gdpr_link']                = isset( $_POST['cntctfrm_gdpr_link'] ) ? esc_url( $_POST['cntctfrm_gdpr_link'] ) : $this->options['gdpr_link'];
 
-			$this->options['delete_attached_file'] = isset( $_POST['cntctfrm_delete_attached_file'] ) ? $_POST['cntctfrm_delete_attached_file'] : 0;
+			$this->options['delete_attached_file']     = isset( $_POST['cntctfrm_delete_attached_file'] ) ? 1 : 0;
 
 			if ( isset( $_POST['cntctfrm_add_language_button'] ) )
 				cntctfrm_add_language();
@@ -230,7 +229,7 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 			$this->options['required_subject_field']   = isset( $_POST['cntctfrm_required_subject_field'] ) ? 1 : 0;
 			$this->options['required_message_field']   = isset( $_POST['cntctfrm_required_message_field'] ) ? 1 : 0;
 
-			$this->options['required_symbol']          = isset( $_POST['cntctfrm_required_symbol'] ) ? stripslashes( esc_html( $_POST['cntctfrm_required_symbol'] ) ) : '*';
+			$this->options['required_symbol']          = isset( $_POST['cntctfrm_required_symbol'] ) ? sanitize_text_field( $_POST['cntctfrm_required_symbol'] ) : '*';
 			$this->options['html_email']               = isset( $_POST['cntctfrm_html_email'] ) ? 1 : 0;
 			$this->options['display_add_info']         = isset( $_POST['cntctfrm_display_add_info'] ) ? 1 : 0;
 
@@ -249,37 +248,37 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 				$this->options['display_user_agent']   = 1;
 			}
 
-			$this->options['change_label']             = isset( $_POST['cntctfrm_change_label'] ) ? 1 : 0;
-			$this->options['change_label_in_email']    = isset( $_POST['cntctfrm_change_label_in_email'] ) ? 1 : 0;
-			$this->options['active_multi_attachment']    = isset( $_POST['cntctfrm_active_multi_attachment'] ) ? 1 : 0;
+			$this->options['change_label']              = isset( $_POST['cntctfrm_change_label'] ) ? 1 : 0;
+			$this->options['change_label_in_email']     = isset( $_POST['cntctfrm_change_label_in_email'] ) ? 1 : 0;
+			$this->options['active_multi_attachment']   = isset( $_POST['cntctfrm_active_multi_attachment'] ) ? 1 : 0;
 
 			if ( 1 == $this->options['change_label'] ) {
 				foreach ( $_POST['cntctfrm_name_label'] as $key => $val ) {
 					$this->options['name_label'][ $key ]               = stripcslashes( htmlspecialchars( $_POST['cntctfrm_name_label'][ $key ] ) );
-					$this->options['address_label'][ $key ]            = stripcslashes( htmlspecialchars( $_POST['cntctfrm_address_label'][ $key ] ) );
-					$this->options['email_label'][ $key ]              = stripcslashes( htmlspecialchars( $_POST['cntctfrm_email_label'][ $key ] ) );
-					$this->options['phone_label'][ $key ]              = stripcslashes( htmlspecialchars( $_POST['cntctfrm_phone_label'][ $key ] ) );
-					$this->options['subject_label'][ $key ]            = stripcslashes( htmlspecialchars( $_POST['cntctfrm_subject_label'][ $key ] ) );
-					$this->options['message_label'][ $key ]            = stripcslashes( htmlspecialchars( $_POST['cntctfrm_message_label'][ $key ] ) );
-					$this->options['attachment_label'][ $key ]         = stripcslashes( htmlspecialchars( $_POST['cntctfrm_attachment_label'][ $key ] ) );
-					$this->options['attachment_tooltip'][ $key ]       = stripcslashes( htmlspecialchars( $_POST['cntctfrm_attachment_tooltip'][ $key ] ) );
-					$this->options['send_copy_label'][ $key ]          = stripcslashes( htmlspecialchars( $_POST['cntctfrm_send_copy_label'][ $key ] ) );
-					$this->options['gdpr_label'][ $key ]               = stripcslashes( htmlspecialchars( $_POST['cntctfrm_gdpr_label'][ $key ] ) );
-					$this->options['gdpr_text_button'][ $key ]         = stripcslashes( htmlspecialchars( $_POST['cntctfrm_gdpr_text_button'][ $key ] ) );
-					$this->options['thank_text'][ $key ]               = stripcslashes( htmlspecialchars( $_POST['cntctfrm_thank_text'][ $key ] ) );
-					$this->options['submit_label'][ $key ]             = stripcslashes( htmlspecialchars( $_POST['cntctfrm_submit_label'][ $key ] ) );
-					$this->options['name_error'][ $key ]               = stripcslashes( htmlspecialchars( $_POST['cntctfrm_name_error'][ $key ] ) );
-					$this->options['address_error'][ $key ]            = stripcslashes( htmlspecialchars( $_POST['cntctfrm_address_error'][ $key ] ) );
-					$this->options['email_error'][ $key ]              = stripcslashes( htmlspecialchars( $_POST['cntctfrm_email_error'][ $key ] ) );
-					$this->options['phone_error'][ $key ]              = stripcslashes( htmlspecialchars( $_POST['cntctfrm_phone_error'][ $key ] ) );
-					$this->options['subject_error'][ $key ]            = stripcslashes( htmlspecialchars( $_POST['cntctfrm_subject_error'][ $key ] ) );
-					$this->options['message_error'][ $key ]            = stripcslashes( htmlspecialchars( $_POST['cntctfrm_message_error'][ $key ] ) );
-					$this->options['attachment_error'][ $key ]         = stripcslashes( htmlspecialchars( $_POST['cntctfrm_attachment_error'][ $key ] ) );
-					$this->options['attachment_upload_error'][ $key ]  = stripcslashes( htmlspecialchars( $_POST['cntctfrm_attachment_upload_error'][ $key ] ) );
-					$this->options['attachment_move_error'][ $key ]    = stripcslashes( htmlspecialchars( $_POST['cntctfrm_attachment_move_error'][ $key ] ) );
-					$this->options['attachment_size_error'][ $key ]    = stripcslashes( htmlspecialchars( $_POST['cntctfrm_attachment_size_error'][ $key ] ) );
-					$this->options['captcha_error'][ $key ]            = stripcslashes( htmlspecialchars( $_POST['cntctfrm_captcha_error'][ $key ] ) );
-					$this->options['form_error'][ $key ]               = stripcslashes( htmlspecialchars( $_POST['cntctfrm_form_error'][ $key ] ) );
+                    $this->options['address_label'][ $key ]            = stripcslashes( htmlspecialchars( $_POST['cntctfrm_address_label'][ $key ] ) );
+                    $this->options['email_label'][ $key ]              = stripcslashes( htmlspecialchars( $_POST['cntctfrm_email_label'][ $key ] ) );
+                    $this->options['phone_label'][ $key ]              = stripcslashes( htmlspecialchars( $_POST['cntctfrm_phone_label'][ $key ] ) );
+                    $this->options['subject_label'][ $key ]            = stripcslashes( htmlspecialchars( $_POST['cntctfrm_subject_label'][ $key ] ) );
+                    $this->options['message_label'][ $key ]            = stripcslashes( htmlspecialchars( $_POST['cntctfrm_message_label'][ $key ] ) );
+                    $this->options['attachment_label'][ $key ]         = stripcslashes( htmlspecialchars( $_POST['cntctfrm_attachment_label'][ $key ] ) );
+                    $this->options['attachment_tooltip'][ $key ]       = stripcslashes( htmlspecialchars( $_POST['cntctfrm_attachment_tooltip'][ $key ] ) );
+                    $this->options['send_copy_label'][ $key ]          = stripcslashes( htmlspecialchars( $_POST['cntctfrm_send_copy_label'][ $key ] ) );
+                    $this->options['gdpr_label'][ $key ]               = stripcslashes( htmlspecialchars( $_POST['cntctfrm_gdpr_label'][ $key ] ) );
+                    $this->options['gdpr_text_button'][ $key ]         = stripcslashes( htmlspecialchars( $_POST['cntctfrm_gdpr_text_button'][ $key ] ) );
+                    $this->options['thank_text'][ $key ]               = stripcslashes( htmlspecialchars( $_POST['cntctfrm_thank_text'][ $key ] ) );
+                    $this->options['submit_label'][ $key ]             = stripcslashes( htmlspecialchars( $_POST['cntctfrm_submit_label'][ $key ] ) );
+                    $this->options['name_error'][ $key ]               = stripcslashes( htmlspecialchars( $_POST['cntctfrm_name_error'][ $key ] ) );
+                    $this->options['address_error'][ $key ]            = stripcslashes( htmlspecialchars( $_POST['cntctfrm_address_error'][ $key ] ) );
+                    $this->options['email_error'][ $key ]              = stripcslashes( htmlspecialchars( $_POST['cntctfrm_email_error'][ $key ] ) );
+                    $this->options['phone_error'][ $key ]              = stripcslashes( htmlspecialchars( $_POST['cntctfrm_phone_error'][ $key ] ) );
+                    $this->options['subject_error'][ $key ]            = stripcslashes( htmlspecialchars( $_POST['cntctfrm_subject_error'][ $key ] ) );
+                    $this->options['message_error'][ $key ]            = stripcslashes( htmlspecialchars( $_POST['cntctfrm_message_error'][ $key ] ) );
+                    $this->options['attachment_error'][ $key ]         = stripcslashes( htmlspecialchars( $_POST['cntctfrm_attachment_error'][ $key ] ) );
+                    $this->options['attachment_upload_error'][ $key ]  = stripcslashes( htmlspecialchars( $_POST['cntctfrm_attachment_upload_error'][ $key ] ) );
+                    $this->options['attachment_move_error'][ $key ]    = stripcslashes( htmlspecialchars( $_POST['cntctfrm_attachment_move_error'][ $key ] ) );
+                    $this->options['attachment_size_error'][ $key ]    = stripcslashes( htmlspecialchars( $_POST['cntctfrm_attachment_size_error'][ $key ] ) );
+                    $this->options['captcha_error'][ $key ]            = stripcslashes( htmlspecialchars( $_POST['cntctfrm_captcha_error'][ $key ] ) );
+                    $this->options['form_error'][ $key ]               = stripcslashes( htmlspecialchars( $_POST['cntctfrm_form_error'][ $key ] ) );
 				}
 			} else {
 				$option_defaults = cntctfrm_get_option_defaults();
@@ -311,7 +310,7 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 					$this->options['captcha_error']            = $option_defaults['captcha_error'];
 					$this->options['form_error']               = $option_defaults['form_error'];
 					foreach ( $this->options['thank_text'] as $key => $val ) {
-						$this->options['thank_text'][ $key ] = stripcslashes( htmlspecialchars( $val ) );
+						$this->options['thank_text'][ $key ] = sanitize_text_field( $val ) ;
 					}
 				} else {
 					$this->options['name_label']['default']                = $option_defaults['name_label']['default'];
@@ -340,7 +339,7 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 					$this->options['form_error']['default']                = $option_defaults['form_error']['default'];
 
 					foreach ( $_POST['cntctfrm_thank_text'] as $key => $val ) {
-						$this->options['thank_text'][ $key ] = stripcslashes( htmlspecialchars( $_POST['cntctfrm_thank_text'][ $key ] ) );
+						$this->options['thank_text'][ $key ] = sanitize_text_field( $_POST['cntctfrm_thank_text'][ $key ] ) ;
 					}
 				}
 			}
@@ -350,8 +349,8 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 				$notice = __( "Email 'FROM' field option was changed, which may cause email messages being moved to the spam folder or email delivery failures.", 'contact-form-plugin' );
 			}
 
-			$this->options['action_after_send'] = $_POST['cntctfrm_action_after_send'];
-			$this->options['redirect_url'] = esc_url( $_POST['cntctfrm_redirect_url'] );
+			$this->options['action_after_send'] = ( isset( $_POST['cntctfrm_action_after_send'] ) && in_array( $_POST['cntctfrm_action_after_send'], array( '1', '0') ) ?( $_POST['cntctfrm_action_after_send'] ) : '1' );
+			$this->options['redirect_url'] = isset( $_POST['cntctfrm_redirect_url'] ) ? esc_url( $_POST['cntctfrm_redirect_url'] ) : $this->options['redirect_url'];
 			$this->options = array_merge( $this->options, $this->options );
 
 			if ( 0 == $this->options['action_after_send']
@@ -896,21 +895,21 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
                             <table id="cstmfld_hidden_field_table" class="cntctfrm_settings_table" style="width: 100%;">
                                 <thead>
                                 <tr valign="top">
-                                    <th scope="row">Title</th>
-                                    <th>Field Type</th>
-                                    <th>Used</th>
-                                    <th>Required</th>
-                                    <th>Visible</th>
-                                    <th>Disabled for editing</th>
-                                    <th scope="row">Field's default/available value</th>
+                                    <th scope="row"><?php _e( 'Title', 'contact-form-plugin' ); ?></th>
+                                    <th><?php _e( 'Field Type', 'contact-form-plugin' ); ?></th>
+                                    <th><?php _e( 'Used', 'contact-form-plugin' ); ?></th>
+                                    <th><?php _e( 'Required', 'contact-form-plugin' ); ?></th>
+                                    <th><?php _e( 'Visible', 'contact-form-plugin' ); ?></th>
+                                    <th><?php _e( 'Disabled for editing', 'contact-form-plugin' ); ?></th>
+                                    <th scope="row"><?php _e( 'Field\'s default/available value', 'contact-form-plugin' ); ?></th>
                                     <!--<th scope="row"></th>-->
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr valign="top">
-                                    <td><label><input class="subject cstmfld_add_new_title" type="text" maxlength="250" name="cntctfrm_title" value=""></label></td>
+                                    <td><label><input disabled="disabled" class="subject cstmfld_add_new_title" type="text" maxlength="250" name="cntctfrm_title" value=""></label></td>
                                     <td>
-                                        <select name="cntctfrm_add_new_field_type" class="cstmfld_add_new_field_type" style="width: 100%;">
+                                        <select disabled="disabled" name="cntctfrm_add_new_field_type" class="cstmfld_add_new_field_type" style="width: 100%;">
                                             <option value="1">text</option>
                                             <option value="2">textarea</option>
                                             <option value="3">checkbox</option>
@@ -920,16 +919,16 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
                                             <option value="9">number</option>
                                         </select>
                                     </td>
-                                    <td><label><input class="cntctfrm_type cstmfld_add_new_is_used" type="checkbox" name="cntctfrm_display" value="1" checked="checked"></label></td>
-                                    <td><label><input type="checkbox" class="cstmfld_add_new_is_required" name="cntctfrm_required" value="1"></label></td>
-                                    <td><label><input class="name cstmfld_add_new_is_visible" type="checkbox" name="cntctfrm_visible" value="1"></label></td>
-                                    <td><label><input class="name cstmfld_add_new_is_disabled_editing" type="checkbox" name="cntctfrm_disabled" value="1"></label></td>
-                                    <td class="cstmfld-default-value"><label><input class="subject cstmfld_add_new_default_value cstmfld_add_new_default_value" type="text" maxlength="250" name="cntctfrm_default" value=""></label></td>
+                                    <td><label><input disabled="disabled" class="cntctfrm_type cstmfld_add_new_is_used" type="checkbox" name="cntctfrm_display" value="1" checked="checked"></label></td>
+                                    <td><label><input disabled="disabled" type="checkbox" class="cstmfld_add_new_is_required" name="cntctfrm_required" value="1"></label></td>
+                                    <td><label><input disabled="disabled" class="name cstmfld_add_new_is_visible" type="checkbox" name="cntctfrm_visible" value="1"></label></td>
+                                    <td><label><input disabled="disabled" class="name cstmfld_add_new_is_disabled_editing" type="checkbox" name="cntctfrm_disabled" value="1"></label></td>
+                                    <td class="cstmfld-default-value"><label><input disabled="disabled" class="subject cstmfld_add_new_default_value cstmfld_add_new_default_value" type="text" maxlength="250" name="cntctfrm_default" value=""></label></td>
                                     <!--<td><button class="button cstmfld_add_field" name="cstmfld_add_field" style="width: 100%;">Add Field</button></td>-->
                                 </tr>
                                 </tbody>
                             </table>
-                            <button class="button button-primary cstmfld_create_new_field" style="width: 100%;" name="cstmfld_create_new_field"><?php _e( 'Create Field', 'contact-form-plugin' ); ?></button>
+                            <button disabled="disabled" class="button button-primary cstmfld_create_new_field" style="width: 100%;" name="cstmfld_create_new_field"><?php _e( 'Create Field', 'contact-form-plugin' ); ?></button>
                         </div>
                         <div style="padding: 10px; ">
                             * <?php _e( 'If you upgrade to Pro version all your settings will be saved.', 'contact-form-plugin' ); ?>
@@ -947,7 +946,7 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 				<tr valign="top">
 					<th scope="row"><?php _e( "Add to the form", 'contact-form-plugin' ); ?></th>
 					<td colspan="3"><fieldset>
-						<div>
+						<div style="clear: both;">
 							<label>
 								<input type="checkbox" id="cntctfrm_attachment_explanations" name="cntctfrm_attachment_explanations" value="1" <?php checked( '1' == $this->options['attachment_explanations'] && '1' == $this->options['attachment'] ); ?> />
 								<?php _e( "Tips below the Attachment", 'contact-form-plugin' ); ?>
@@ -1103,7 +1102,7 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 					</fieldset></td>
 				</tr>
 				<tr valign="top">
-					<th scope="row"><?php _e( "Delete an attachment file from the server after the email is sent", 'contact-form-plugin' ); ?> </th>
+					<th scope="row" style="width:200px;"><?php _e( "Delete an attachment file from the server after the email is sent", 'contact-form-plugin' ); ?> </th>
 					<td colspan="3">
 						<input type="checkbox" id="cntctfrm_delete_attached_file" name="cntctfrm_delete_attached_file" value="1" <?php checked( '1', $this->options['delete_attached_file'] ); ?> />
 					</td>
@@ -1114,17 +1113,19 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 				</tr>
 				<tr valign="top">
 					<th scope="row"><?php _e( "Display additional info in the email", 'contact-form-plugin' ); ?></th>
-					<td style="width:15px;" class="cntctfrm_td_top_align">
+					<td colspan="2" class="cntctfrm_td_top_align">
 						<input type="checkbox" id="cntctfrm_display_add_info" name="cntctfrm_display_add_info" value="1" <?php checked( '1', $this->options['display_add_info'] ); ?> />
-					</td>
-					<td class="cntctfrm_display_add_info_block" <?php if ( '0' == $this->options['display_add_info'] ) echo 'style="display:none"'; ?>>
+                    <br />
+                    <br />
+					<div class="cntctfrm_display_add_info_block" <?php if ( '0' == $this->options['display_add_info'] ) echo 'style="display:none"'; ?>>
 						<fieldset>
-							<label><input type="checkbox" id="cntctfrm_display_sent_from" name="cntctfrm_display_sent_from" value="1" <?php checked( '1', $this->options['display_sent_from'] ); ?> /> <?php _e( "Sent from (IP address)", 'contact-form-plugin' ); ?></label> <label class="bws_info"><?php _e( "Example: Sent from (IP address): 127.0.0.1", 'contact-form-plugin' ); ?></label><br />
-							<label><input type="checkbox" id="cntctfrm_display_date_time" name="cntctfrm_display_date_time" value="1" <?php checked( '1', $this->options['display_date_time'] ); ?> /> <?php _e( "Date/Time", 'contact-form-plugin' ); ?></label> <label class="bws_info"><?php _e( "Example: Date/Time: August 19, 2013 8:50 pm", 'contact-form-plugin' ); ?></label><br />
-							<label><input type="checkbox" id="cntctfrm_display_coming_from" name="cntctfrm_display_coming_from" value="1" <?php checked( '1', $this->options['display_coming_from'] ); ?> /> <?php _e( "Sent from (referer)", 'contact-form-plugin' ); ?></label> <label class="bws_info"><?php _e( "Example: Sent from (referer):   https://bestwebsoft.com/contacts/contact-us/", 'contact-form-plugin' ); ?></label><br />
-							<label><input type="checkbox" id="cntctfrm_display_user_agent" name="cntctfrm_display_user_agent" value="1" <?php checked( '1', $this->options['display_user_agent'] ); ?> /> <?php _e( "Using (user agent)", 'contact-form-plugin' ); ?></label> <label class="bws_info"><?php _e( "Example: Using (user agent): Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36", 'contact-form-plugin' ); ?></label>
+							<label><input type="checkbox" id="cntctfrm_display_sent_from" name="cntctfrm_display_sent_from" value="1" <?php checked( '1', $this->options['display_sent_from'] ); ?> /> <?php _e( "Sent from (IP address)", 'contact-form-plugin' ); ?></label><br /> <span class="bws_info"><?php _e( "Example: Sent from (IP address): 127.0.0.1", 'contact-form-plugin' ); ?></span><br />
+							<label><input type="checkbox" id="cntctfrm_display_date_time" name="cntctfrm_display_date_time" value="1" <?php checked( '1', $this->options['display_date_time'] ); ?> /> <?php _e( "Date/Time", 'contact-form-plugin' ); ?></label><br /> <span class="bws_info"><?php _e( "Example: Date/Time: August 19, 2013 8:50 pm", 'contact-form-plugin' ); ?></span><br />
+							<label><input type="checkbox" id="cntctfrm_display_coming_from" name="cntctfrm_display_coming_from" value="1" <?php checked( '1', $this->options['display_coming_from'] ); ?> /> <?php _e( "Sent from (referer)", 'contact-form-plugin' ); ?></label><br /> <span class="bws_info"><?php _e( "Example: Sent from (referer):   https://bestwebsoft.com/contacts/contact-us/", 'contact-form-plugin' ); ?></span><br />
+							<label><input type="checkbox" id="cntctfrm_display_user_agent" name="cntctfrm_display_user_agent" value="1" <?php checked( '1', $this->options['display_user_agent'] ); ?> /> <?php _e( "Using (user agent)", 'contact-form-plugin' ); ?></label> <br /><span class="bws_info"><?php _e( "Example: Using (user agent): Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36", 'contact-form-plugin' ); ?></span>
 						</fieldset>
-					</td>
+					</div>
+                    </td>
 				</tr>
 				<tr valign="top">
 					<th scope="row"><?php _e( "Language settings for the field names in the form", 'contact-form-plugin' ); ?></th>
@@ -1142,9 +1143,10 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 				<tr valign="top">
 					<th scope="row"><?php _e( "Change the names of the contact form fields and error messages", 'contact-form-plugin' ); ?></th>
 					<td style="width:15px;" class="cntctfrm_td_top_align">
-						<input type="checkbox" id="cntctfrm_change_label" name="cntctfrm_change_label" value="1" <?php checked( '1', $this->options['change_label'] ); ?> />
-					</td>
-					<td class="cntctfrm_change_label_block" <?php if ( '0' == $this->options['change_label'] ) echo 'style="display:none"'; ?>>
+						<input type="checkbox" id="cntctfrm_change_label" name="cntctfrm_change_label" class="bws_option_affect" data-affect-show=".cntctfrm_change_label_block" value="1" <?php checked( '1', $this->options['change_label'] ); ?> />
+					<br />
+                    <br />
+					<div class="cntctfrm_change_label_block" <?php if ( '0' == $this->options['change_label'] ) echo 'style="display:none"'; ?>>
 						<div class="cntctfrm_label_language_tab <?php echo ! isset( $_POST['cntctfrm_change_tab'] ) || 'default' == $_POST['cntctfrm_change_tab'] ? 'cntctfrm_active' : ''; ?>" id="cntctfrm_label_default"><?php _e( 'Default', 'contact-form-plugin' ); ?>
 							<noscript>
 								<input type="submit" class="cntctfrm_change_tab" value="default" name="cntctfrm_change_tab">
@@ -1233,7 +1235,8 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 								</div>
 							<?php }
 						} ?>
-					</td>
+					</div>
+                    </td>
 				</tr>
 				<tr valign="top">
 					<th scope="row"><?php _e( 'Use the changed names of the contact form fields in the email', 'contact-form-plugin' ); ?></th>
@@ -1244,7 +1247,8 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 				<tr valign="top">
 					<th scope="row"><?php _e( "Action after email is sent", 'contact-form-plugin' ); ?></th>
 					<td colspan="2" class="cntctfrm_action_after_send_block">
-						<label><input type="radio" id="cntctfrm_action_after_send" name="cntctfrm_action_after_send" value="1" <?php checked( '1', $this->options['action_after_send'] ); ?> /> <?php _e( "Display text", 'contact-form-plugin' ); ?></label><br />
+						<label><input type="radio" id="cntctfrm_action_after_send" name="cntctfrm_action_after_send" class="bws_option_affect" data-affect-show=".cntctfrm_label_lang_tab" data-affect-hide=".cntctfrm_redirect_url_input" value="1" <?php checked( '1', $this->options['action_after_send'] ); ?> /> <?php _e( "Display text", 'contact-form-plugin' ); ?></label><br />
+                        <div class="cntctfrm_label_lang_tab">
 						<div class="cntctfrm_label_language_tab <?php echo ! isset( $_POST['cntctfrm_change_tab'] ) || 'default' == $_POST['cntctfrm_change_tab'] ? 'cntctfrm_active' : ''; ?>" id="cntctfrm_text_default"><?php _e( 'Default', 'contact-form-plugin' ); ?>
 							<noscript>
 								<input type="submit" class="cntctfrm_change_tab" value="default" name="cntctfrm_change_tab">
@@ -1281,10 +1285,13 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 								</div>
 							<?php }
 						} ?>
+                        </div>
 						<div id="cntctfrm_before"></div>
 						<br />
-						<label><input type="radio" id="cntctfrm_action_after_send_url" name="cntctfrm_action_after_send" value="0" <?php checked( '0', $this->options['action_after_send'] ); ?> /> <?php _e( "Redirect to the page", 'contact-form-plugin' ); ?></label><br />
+						<label><input type="radio" id="cntctfrm_action_after_send_url" name="cntctfrm_action_after_send" class="bws_option_affect" data-affect-hide=".cntctfrm_label_lang_tab" data-affect-show=".cntctfrm_redirect_url_input" value="0" <?php checked( '0', $this->options['action_after_send'] ); ?> /> <?php _e( "Redirect to the page", 'contact-form-plugin' ); ?></label><br />
+                        <div class="cntctfrm_redirect_url_input">
 						<label><input type="text" maxlength="250" name="cntctfrm_redirect_url" value="<?php echo $this->options['redirect_url']; ?>" /> <span class="bws_info"><?php _e( "Url", 'contact-form-plugin' ); ?></span></label>
+                        </div>
 					</td>
 				</tr>
 			</table>
@@ -1487,8 +1494,8 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 												<td colspan="2">
 													<div>
 														<div class="wp-picker-container">
-															<button type="button" class="button wp-color-result">
-																<span class="wp-color-result-text">Select Color</span>
+															<button type="button" class="button wp-color-result" disabled="disabled">
+																<span class="wp-color-result-text"><?php _e( "Select Color", 'contact-form-plugin' ); ?></span>
 															</button>
 														</div>
 														<div class="cntctfrm_label_block"><?php _e( 'Label text color', 'contact-form-plugin' ); ?></div>
@@ -1496,8 +1503,8 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 													</div>
 													<div>
 														<div class="wp-picker-container">
-															<button type="button" class="button wp-color-result">
-																<span class="wp-color-result-text">Select Color</span>
+															<button type="button" class="button wp-color-result" disabled="disabled">
+																<span class="wp-color-result-text"><?php _e( "Select Color", 'contact-form-plugin' ); ?></span>
 															</button>
 														</div>
 														<div class="cntctfrm_label_block"><?php _e( "Placeholder color", 'contact-form-plugin' ); ?></div>
@@ -1509,32 +1516,32 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 												<td colspan="2">
 													<div>
 														<div class="wp-picker-container">
-															<button type="button" class="button wp-color-result">
-																<span class="wp-color-result-text">Select Color</span>
+															<button type="button" class="button wp-color-result" disabled="disabled">
+																<span class="wp-color-result-text"><?php _e( "Select Color", 'contact-form-plugin' ); ?></span>
 															</button>
 														</div>
 														<div class="cntctfrm_label_block"><?php _e( 'Error text color', 'contact-form-plugin' ); ?></div>
 													</div>
 													<div>
 														<div class="wp-picker-container">
-															<button type="button" class="button wp-color-result">
-																<span class="wp-color-result-text">Select Color</span>
+															<button type="button" class="button wp-color-result" disabled="disabled">
+																<span class="wp-color-result-text"><?php _e( "Select Color", 'contact-form-plugin' ); ?></span>
 															</button>
 														</div>
 														<div class="cntctfrm_label_block"><?php _e( 'Background color of the input field errors', 'contact-form-plugin' ); ?></div>
 													</div>
 													<div>
 														<div class="wp-picker-container">
-															<button type="button" class="button wp-color-result">
-																<span class="wp-color-result-text">Select Color</span>
+															<button type="button" class="button wp-color-result" disabled="disabled">
+																<span class="wp-color-result-text"><?php _e( "Select Color", 'contact-form-plugin' ); ?></span>
 															</button>
 														</div>
 														<div class="cntctfrm_label_block"><?php _e( 'Border color of the input field errors', 'contact-form-plugin' ); ?></div>
 													</div>
 													<div>
 														<div class="wp-picker-container">
-															<button type="button" class="button wp-color-result">
-																<span class="wp-color-result-text">Select Color</span>
+															<button type="button" class="button wp-color-result" disabled="disabled">
+																<span class="wp-color-result-text"><?php _e( "Select Color", 'contact-form-plugin' ); ?></span>
 															</button>
 														</div>
 														<div class="cntctfrm_label_block"><?php _e( "Placeholder color of the input field errors", 'contact-form-plugin' ); ?></div>
@@ -1546,16 +1553,16 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 												<td colspan="2">
 													<div>
 														<div class="wp-picker-container">
-															<button type="button" class="button wp-color-result">
-																<span class="wp-color-result-text">Select Color</span>
+															<button type="button" class="button wp-color-result" disabled="disabled">
+																<span class="wp-color-result-text"><?php _e( "Select Color", 'contact-form-plugin' ); ?></span>
 															</button>
 														</div>
 														<div class="cntctfrm_label_block"><?php _e( "Input fields background color", 'contact-form-plugin' ); ?></div>
 													</div>
 													<div>
 														<div class="wp-picker-container">
-															<button type="button" class="button wp-color-result">
-																<span class="wp-color-result-text">Select Color</span>
+															<button type="button" class="button wp-color-result" disabled="disabled">
+																<span class="wp-color-result-text"><?php _e( "Select Color", 'contact-form-plugin' ); ?></span>
 															</button>
 														</div>
 														<div class="cntctfrm_label_block"><?php _e( "Text fields color", 'contact-form-plugin' ); ?></div>
@@ -1566,8 +1573,8 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 													</div>
 													<div>
 														<div class="wp-picker-container">
-															<button type="button" class="button wp-color-result">
-																<span class="wp-color-result-text">Select Color</span>
+															<button type="button" class="button wp-color-result" disabled="disabled">
+																<span class="wp-color-result-text"><?php _e( "Select Color", 'contact-form-plugin' ); ?></span>
 															</button>
 														</div>
 														 <div class="cntctfrm_label_block"><?php _e( 'Border color', 'contact-form-plugin' ); ?></div>
@@ -1583,24 +1590,24 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 													</div>
 													<div>
 														<div class="wp-picker-container">
-															<button type="button" class="button wp-color-result">
-																<span class="wp-color-result-text">Select Color</span>
+															<button type="button" class="button wp-color-result" disabled="disabled">
+																<span class="wp-color-result-text"><?php _e( "Select Color", 'contact-form-plugin' ); ?></span>
 															</button>
 														</div>
 														 <div class="cntctfrm_label_block"><?php _e( 'Button color', 'contact-form-plugin' ); ?></div>
 													</div>
 													<div>
 														<div class="wp-picker-container">
-															<button type="button" class="button wp-color-result">
-																<span class="wp-color-result-text">Select Color</span>
+															<button type="button" class="button wp-color-result" disabled="disabled">
+																<span class="wp-color-result-text"><?php _e( "Select Color", 'contact-form-plugin' ); ?></span>
 															</button>
 														</div>
 														<div class="cntctfrm_label_block"><?php _e( "Button text color", 'contact-form-plugin' ); ?></div>
 													</div>
 													<div>
 														<div class="wp-picker-container">
-															<button type="button" class="button wp-color-result">
-																<span class="wp-color-result-text">Select Color</span>
+															<button type="button" class="button wp-color-result" disabled="disabled">
+																<span class="wp-color-result-text"><?php _e( "Select Color", 'contact-form-plugin' ); ?></span>
 															</button>
 														</div>
 														 <div class="cntctfrm_label_block"><?php _e( 'Border color', 'contact-form-plugin' ); ?></div>

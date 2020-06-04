@@ -6,12 +6,12 @@ Description: Simple contact form plugin any WordPress website must have.
 Author: BestWebSoft
 Text Domain: contact-form-plugin
 Domain Path: /languages
-Version: 4.1.8
+Version: 4.1.9
 Author URI: https://bestwebsoft.com/
 License: GPLv2 or later
 */
 
-/*  @ Copyright 2019 BestWebSoft  ( https://support.bestwebsoft.com )
+/*  @ Copyright 2020 BestWebSoft  ( https://support.bestwebsoft.com )
 
 	This program is free software; you can redistribute it and/or modify
 	it under the terms of the GNU General Public License, version 2, as
@@ -85,7 +85,7 @@ if ( ! function_exists ( 'cntctfrm_init' ) ) {
 			$cntctfrm_plugin_info = get_plugin_data( __FILE__ );
 		}
 		/* Function check if plugin is compatible with current WP version  */
-		bws_wp_min_version_check( plugin_basename( __FILE__ ), $cntctfrm_plugin_info, '3.9' );
+		bws_wp_min_version_check( plugin_basename( __FILE__ ), $cntctfrm_plugin_info, '4.5' );
 
 		cntctfrm_check_and_send();
 	}
@@ -93,7 +93,7 @@ if ( ! function_exists ( 'cntctfrm_init' ) ) {
 
 if ( ! function_exists ( 'cntctfrm_admin_init' ) ) {
 	function cntctfrm_admin_init() {
-		global $bws_plugin_info, $cntctfrm_plugin_info, $bws_shortcode_list, $cntctfrm_lang_codes;
+		global $bws_plugin_info, $cntctfrm_plugin_info, $bws_shortcode_list, $cntctfrm_lang_codes, $pagenow, $cntctfrm_options;
 		/* Add variable for bws_menu */
 
 		if ( empty( $bws_plugin_info ) )
@@ -101,38 +101,204 @@ if ( ! function_exists ( 'cntctfrm_admin_init' ) ) {
 
 		/* Display form on the setting page */
 		$cntctfrm_lang_codes = array(
-			'ab' => 'Abkhazian', 'aa' => 'Afar', 'af' => 'Afrikaans', 'ak' => 'Akan', 'sq' => 'Albanian', 'am' => 'Amharic', 'ar' => 'Arabic', 'an' => 'Aragonese', 'hy' => 'Armenian', 'as' => 'Assamese', 'av' => 'Avaric', 'ae' => 'Avestan', 'ay' => 'Aymara', 'az' => 'Azerbaijani',
-			'bm' => 'Bambara', 'ba' => 'Bashkir', 'eu' => 'Basque', 'be' => 'Belarusian', 'bn' => 'Bengali', 'bh' => 'Bihari', 'bi' => 'Bislama', 'bs' => 'Bosnian', 'br' => 'Breton', 'bg' => 'Bulgarian', 'my' => 'Burmese',
-			'ca' => 'Catalan; Valencian', 'ch' => 'Chamorro', 'ce' => 'Chechen', 'ny' => 'Chichewa; Chewa; Nyanja', 'zh' => 'Chinese', 'cu' => 'Church Slavic; Old Slavonic; Church Slavonic; Old Bulgarian; Old Church Slavonic', 'cv' => 'Chuvash', 'km' => 'Central Khmer', 'kw' => 'Cornish', 'co' => 'Corsican', 'cr' => 'Cree', 'hr' => 'Croatian', 'cs' => 'Czech',
-			'da' => 'Danish', 'dv' => 'Divehi; Dhivehi; Maldivian', 'nl' => 'Dutch; Flemish', 'dz' => 'Dzongkha',
-			'en' => 'English', 'eo' => 'Esperanto', 'et' => 'Estonian', 'ee' => 'Ewe',
-			'fo' => 'Faroese', 'fj' => 'Fijjian', 'fi' => 'Finnish', 'fr' => 'French', 'ff' => 'Fulah',
-			'gd' => 'Gaelic; Scottish Gaelic', 'gl' => 'Galician', 'lg' => 'Ganda', 'ka' => 'Georgian', 'de' => 'German', 'el' => 'Greek, Modern', 'gn' => 'Guarani', 'gu' => 'Gujarati',
-			'ht' => 'Haitian; Haitian Creole', 'ha' => 'Hausa', 'he' => 'Hebrew', 'hz' => 'Herero', 'hi' => 'Hindi', 'ho' => 'Hiri Motu', 'hu' => 'Hungarian',
-			'is' => 'Icelandic', 'io' => 'Ido', 'ig' => 'Igbo', 'id' => 'Indonesian', 'ie' => 'Interlingue', 'ia' => 'Interlingua (International Auxiliary Language Association)', 'iu' => 'Inuktitut', 'ik' => 'Inupiaq', 'ga' => 'Irish', 'it' => 'Italian',
-			'ja' => 'Japanese', 'jv' => 'Javanese',
-			'kl' => 'Kalaallisut; Greenlandic', 'kn' => 'Kannada', 'kr' => 'Kanuri', 'ks' => 'Kashmiri', 'kk' => 'Kazakh', 'ki' => 'Kikuyu; Gikuyu', 'rw' => 'Kinyarwanda', 'ky' => 'Kirghiz; Kyrgyz', 'kv' => 'Komi', 'kg' => 'Kongo', 'ko' => 'Korean', 'kj' => 'Kuanyama; Kwanyama', 'ku' => 'Kurdish',
-			'lo' => 'Lao', 'la' => 'Latin', 'lv' => 'Latvian', 'li' => 'Limburgan; Limburger; Limburgish', 'ln' => 'Lingala', 'lt' => 'Lithuanian', 'lu' => 'Luba-Katanga', 'lb' => 'Luxembourgish; Letzeburgesch',
-			'mk' => 'Macedonian', 'mg' => 'Malagasy', 'ms' => 'Malay', 'ml' => 'Malayalam', 'mt' => 'Maltese', 'gv' => 'Manx', 'mi' => 'Maori', 'mr' => 'Marathi', 'mh' => 'Marshallese', 'mo' => 'Moldavian', 'mn' => 'Mongolian',
-			'na' => 'Nauru', 'nv' => 'Navajo; Navaho', 'nr' => 'Ndebele, South; South Ndebele', 'nd' => 'Ndebele, North; North Ndebele', 'ng' => 'Ndonga', 'ne' => 'Nepali', 'se' => 'Northern Sami', 'no' => 'Norwegian', 'nn' => 'Norwegian Nynorsk; Nynorsk, Norwegian', 'nb' => 'Norwegian Bokmål; Bokmål, Norwegian',
-			'oc' => 'Occitan, Provençal', 'oj' => 'Ojibwa', 'or' => 'Oriya', 'om' => 'Oromo', 'os' => 'Ossetian; Ossetic',
-			'pi' => 'Pali', 'pa' => 'Panjabi; Punjabi', 'fa' => 'Persian', 'pl' => 'Polish', 'pt' => 'Portuguese', 'ps' => 'Pushto',
+			'ab' => 'Abkhazian',
+            'aa' => 'Afar',
+            'af' => 'Afrikaans',
+            'ak' => 'Akan',
+            'sq' => 'Albanian',
+            'am' => 'Amharic',
+            'ar' => 'Arabic',
+            'an' => 'Aragonese',
+            'hy' => 'Armenian',
+            'as' => 'Assamese',
+            'av' => 'Avaric',
+            'ae' => 'Avestan',
+            'ay' => 'Aymara',
+            'az' => 'Azerbaijani',
+			'bm' => 'Bambara',
+            'ba' => 'Bashkir',
+            'eu' => 'Basque',
+            'be' => 'Belarusian',
+            'bn' => 'Bengali',
+            'bh' => 'Bihari',
+            'bi' => 'Bislama',
+            'bs' => 'Bosnian',
+            'br' => 'Breton',
+            'bg' => 'Bulgarian',
+            'my' => 'Burmese',
+			'ca' => 'Catalan; Valencian',
+            'ch' => 'Chamorro',
+            'ce' => 'Chechen',
+            'ny' => 'Chichewa; Chewa; Nyanja',
+            'zh' => 'Chinese',
+            'cu' => 'Church Slavic; Old Slavonic; Church Slavonic; Old Bulgarian; Old Church Slavonic',
+            'cv' => 'Chuvash',
+            'km' => 'Central Khmer',
+            'kw' => 'Cornish',
+            'co' => 'Corsican',
+            'cr' => 'Cree',
+            'hr' => 'Croatian',
+            'cs' => 'Czech',
+			'da' => 'Danish',
+            'dv' => 'Divehi; Dhivehi; Maldivian',
+            'nl' => 'Dutch; Flemish',
+            'dz' => 'Dzongkha',
+			'en' => 'English',
+            'eo' => 'Esperanto',
+            'et' => 'Estonian',
+            'ee' => 'Ewe',
+			'fo' => 'Faroese',
+            'fj' => 'Fijjian',
+            'fi' => 'Finnish',
+            'fr' => 'French',
+            'ff' => 'Fulah',
+			'gd' => 'Gaelic; Scottish Gaelic',
+            'gl' => 'Galician',
+            'lg' => 'Ganda',
+            'ka' => 'Georgian',
+            'de' => 'German',
+            'el' => 'Greek, Modern',
+            'gn' => 'Guarani',
+            'gu' => 'Gujarati',
+			'ht' => 'Haitian; Haitian Creole',
+            'ha' => 'Hausa',
+            'he' => 'Hebrew',
+            'hz' => 'Herero',
+            'hi' => 'Hindi',
+            'ho' => 'Hiri Motu',
+            'hu' => 'Hungarian',
+			'is' => 'Icelandic',
+            'io' => 'Ido',
+            'ig' => 'Igbo',
+            'id' => 'Indonesian',
+            'ie' => 'Interlingue',
+            'ia' => 'Interlingua (International Auxiliary Language Association)',
+            'iu' => 'Inuktitut',
+            'ik' => 'Inupiaq',
+            'ga' => 'Irish',
+            'it' => 'Italian',
+			'ja' => 'Japanese',
+            'jv' => 'Javanese',
+			'kl' => 'Kalaallisut; Greenlandic',
+            'kn' => 'Kannada',
+            'kr' => 'Kanuri',
+            'ks' => 'Kashmiri',
+            'kk' => 'Kazakh',
+            'ki' => 'Kikuyu; Gikuyu',
+            'rw' => 'Kinyarwanda',
+            'ky' => 'Kirghiz; Kyrgyz',
+            'kv' => 'Komi',
+            'kg' => 'Kongo',
+            'ko' => 'Korean',
+            'kj' => 'Kuanyama; Kwanyama',
+            'ku' => 'Kurdish',
+			'lo' => 'Lao',
+            'la' => 'Latin',
+            'lv' => 'Latvian',
+            'li' => 'Limburgan; Limburger; Limburgish',
+            'ln' => 'Lingala',
+            'lt' => 'Lithuanian',
+            'lu' => 'Luba-Katanga',
+            'lb' => 'Luxembourgish; Letzeburgesch',
+			'mk' => 'Macedonian',
+            'mg' => 'Malagasy',
+            'ms' => 'Malay',
+            'ml' => 'Malayalam',
+            'mt' => 'Maltese',
+            'gv' => 'Manx',
+            'mi' => 'Maori',
+            'mr' => 'Marathi',
+            'mh' => 'Marshallese',
+            'mo' => 'Moldavian',
+            'mn' => 'Mongolian',
+			'na' => 'Nauru',
+            'nv' => 'Navajo; Navaho',
+            'nr' => 'Ndebele, South; South Ndebele',
+            'nd' => 'Ndebele, North; North Ndebele',
+            'ng' => 'Ndonga',
+            'ne' => 'Nepali',
+            'se' => 'Northern Sami',
+            'no' => 'Norwegian',
+            'nn' => 'Norwegian Nynorsk; Nynorsk, Norwegian',
+            'nb' => 'Norwegian Bokmål; Bokmål, Norwegian',
+			'oc' => 'Occitan, Provençal',
+            'oj' => 'Ojibwa',
+            'or' => 'Oriya',
+            'om' => 'Oromo',
+            'os' => 'Ossetian; Ossetic',
+			'pi' => 'Pali',
+            'pa' => 'Panjabi; Punjabi',
+            'fa' => 'Persian',
+            'pl' => 'Polish',
+            'pt' => 'Portuguese',
+            'ps' => 'Pushto',
 			'qu' => 'Quechua',
-			'ro' => 'Romanian', 'rm' => 'Romansh', 'rn' => 'Rundi', 'ru' => 'Russian',
-			'sm' => 'Samoan', 'sg' => 'Sango', 'sa' => 'Sanskrit', 'sc' => 'Sardinian', 'sr' => 'Serbian', 'sn' => 'Shona', 'ii' => 'Sichuan Yi', 'sd' => 'Sindhi', 'si' => 'Sinhala; Sinhalese', 'sk' => 'Slovak', 'sl' => 'Slovenian', 'so' => 'Somali', 'st' => 'Sotho, Southern', 'es' => 'Spanish; Castilian', 'su' => 'Sundanese', 'sw' => 'Swahili', 'ss' => 'Swati', 'sv' => 'Swedish',
-			'tl' => 'Tagalog', 'ty' => 'Tahitian', 'tg' => 'Tajik', 'ta' => 'Tamil', 'tt' => 'Tatar', 'te' => 'Telugu', 'th' => 'Thai', 'bo' => 'Tibetan', 'ti' => 'Tigrinya', 'to' => 'Tonga (Tonga Islands)', 'ts' => 'Tsonga', 'tn' => 'Tswana', 'tr' => 'Turkish', 'tk' => 'Turkmen', 'tw' => 'Twi',
-			'ug' => 'Uighur; Uyghur', 'uk' => 'Ukrainian', 'ur' => 'Urdu', 'uz' => 'Uzbek',
-			've' => 'Venda', 'vi' => 'Vietnamese', 'vo' => 'Volapük',
-			'wa' => 'Walloon', 'cy' => 'Welsh', 'fy' => 'Western Frisian', 'wo' => 'Wolof',
+			'ro' => 'Romanian',
+            'rm' => 'Romansh',
+            'rn' => 'Rundi',
+            'ru' => 'Russian',
+			'sm' => 'Samoan',
+            'sg' => 'Sango',
+            'sa' => 'Sanskrit',
+            'sc' => 'Sardinian',
+            'sr' => 'Serbian',
+            'sn' => 'Shona',
+            'ii' => 'Sichuan Yi',
+            'sd' => 'Sindhi',
+            'si' => 'Sinhala; Sinhalese',
+            'sk' => 'Slovak',
+            'sl' => 'Slovenian',
+            'so' => 'Somali',
+            'st' => 'Sotho, Southern',
+            'es' => 'Spanish; Castilian',
+            'su' => 'Sundanese',
+            'sw' => 'Swahili',
+            'ss' => 'Swati',
+            'sv' => 'Swedish',
+			'tl' => 'Tagalog',
+            'ty' => 'Tahitian',
+            'tg' => 'Tajik',
+            'ta' => 'Tamil',
+            'tt' => 'Tatar',
+            'te' => 'Telugu',
+            'th' => 'Thai',
+            'bo' => 'Tibetan',
+            'ti' => 'Tigrinya',
+            'to' => 'Tonga (Tonga Islands)',
+            'ts' => 'Tsonga',
+            'tn' => 'Tswana',
+            'tr' => 'Turkish',
+            'tk' => 'Turkmen',
+            'tw' => 'Twi',
+			'ug' => 'Uighur; Uyghur',
+            'uk' => 'Ukrainian',
+            'ur' => 'Urdu',
+            'uz' => 'Uzbek',
+			've' => 'Venda',
+            'vi' => 'Vietnamese',
+            'vo' => 'Volapük',
+			'wa' => 'Walloon',
+            'cy' => 'Welsh',
+            'fy' => 'Western Frisian',
+            'wo' => 'Wolof',
 			'xh' => 'Xhosa',
-			'yi' => 'Yiddish', 'yo' => 'Yoruba',
-			'za' => 'Zhuang; Chuang', 'zu' => 'Zulu'
+			'yi' => 'Yiddish',
+            'yo' => 'Yoruba',
+			'za' => 'Zhuang; Chuang',
+            'zu' => 'Zulu',
 		);
 
 		/* Call register settings function */
 		if ( isset( $_REQUEST['page'] ) && 'contact_form.php' == $_REQUEST['page'] )
 			cntctfrm_settings();
 
+        if ( 'plugins.php' == $pagenow ) {
+            /* Install the option defaults */
+            if ( function_exists( 'bws_plugin_banner_go_pro' ) ) {
+                cntctfrm_settings();
+                bws_plugin_banner_go_pro( $cntctfrm_options, $cntctfrm_plugin_info, 'cntctfrm', 'contact-form-plugin', 'f575dc39cba54a9de88df346eed52101', '77', 'contact-form-plugin' );
+            }
+        }
 		/* add contact form to global $bws_shortcode_list  */
 		$bws_shortcode_list['cntctfrm'] = array( 'name' => 'Contact Form', 'js_function' => 'cntctfrm_shortcode_init' );
 	}
@@ -643,6 +809,8 @@ if ( ! function_exists( 'cntctfrm_get_ordered_fields' ) ) {
 if( ! function_exists( 'cntctfrm_settings_page' ) ) {
 	function cntctfrm_settings_page() {
 		global $cntctfrm_plugin_info, $wp_version, $cntctfrmmlt_plugin_info;
+        if ( ! class_exists( 'Bws_Settings_Tabs' ) )
+            require_once( dirname( __FILE__ ) . '/bws_menu/class-bws-settings.php' );
 		require_once( dirname( __FILE__ ) . '/includes/class-cntctfrm-settings.php' );
 		$page = new Cntctfrm_Settings_Tabs( plugin_basename( __FILE__ ) ); ?>
 		<div class="wrap">
@@ -751,11 +919,11 @@ if ( ! function_exists( 'cntctfrm_display_form' ) ) {
 		if ( true === $cntctfrm_result && $cntctfrm_form_count == $form_submited ) {
 			$_SESSION['cntctfrm_send_mail'] = true;
 
-			if ( 1 == $cntctfrm_options['action_after_send'] )
-				$content .= '<div id="cntctfrm_contact_form' . $form_countid . '"><div id="cntctfrm_thanks">' . $cntctfrm_options['thank_text'][ $lang ] . '</div></div>';
-			else
-				$content .= "<script type='text/javascript'>window.location.href = '" . $cntctfrm_options['redirect_url'] . "';</script>";
-
+			if ( 1 == $cntctfrm_options['action_after_send'] ) {
+                $content .= '<div id="cntctfrm_contact_form' . $form_countid . '"><div id="cntctfrm_thanks">' . $cntctfrm_options['thank_text'][$lang] . '</div></div>';
+            } else {
+                $content .= "<script type='text/javascript'>window.location.href = '" . $cntctfrm_options['redirect_url'] . "';</script>";
+            }
 		} elseif ( false === $cntctfrm_result && $cntctfrm_form_count == $form_submited ) {
 			/* If email not be delivered */
 			$cntctfrm_error_message['error_form'] = __( "Sorry, email message could not be delivered.", 'contact-form-plugin' );
@@ -893,7 +1061,7 @@ if ( ! function_exists( 'cntctfrm_display_form' ) ) {
 									if ( 1 == $cntctfrm_options['attachment_explanations'] ) {
 											$content .= '<label class="cntctfrm_contact_attachment_extensions"><br />' . $cntctfrm_options['attachment_tooltip'][ $lang ] . '</label>';
 									}
-									$content .= '</div>';
+
 								$content .= '</div>';
 							}
 							break;
@@ -998,7 +1166,7 @@ if ( ! function_exists( 'cntctfrm_display_form' ) ) {
 					$column = ( $i == 1 ) ? 'first_column' : 'second_column';
 					$content .= '<div id="cntctfrm_submit_' . $column . '" class="cntctfrm_column">';
 					if ( $i == $submit_position_value[ $cntctfrm_direction ][ $cntctfrm_options['submit_position'] ] ) {
-						$content .= '<div class="cntctfrm_input cntctfrm_input_submit" style="text-align: ' . $cntctfrm_options['submit_position'] . ' !important;">';
+						$content .= '<div class="cntctfrm_input cntctfrm_input_submit">';
 						if ( isset( $atts['id'] ) )
 							$content .= '<input type="hidden" value="' . esc_attr( $atts['id'] ) . '" name="cntctfrmmlt_shortcode_id">';
 						$content .= '<input type="hidden" value="send" name="cntctfrm_contact_action">
@@ -1045,15 +1213,16 @@ if ( ! function_exists( 'cntctfrm_handle_captcha_filters' ) ) {
 
 			$filters = array(
 				'google-captcha'    => array(
-					'gglcptch_cf_display'   => 'gglcptch_recaptcha_check',
-					'gglcptchpr_cf_display' => 'gglcptchpr_recaptcha_check',
-					'gglcptch_display'      => 'gglcptch_contact_form_check',
+					'gglcptch_cf_display'       => 'gglcptch_recaptcha_check',
+					'gglcptchpr_cf_display'     => 'gglcptchpr_recaptcha_check',
+					'gglcptch_display'          => 'gglcptch_contact_form_check',
 				),
 				'captcha'           => array(
 					'cptch_custom_form'         => 'cptch_check_custom_form',
 					'cptchpls_custom_form'      => 'cptchpls_check_custom_form',
 					'cptchpr_custom_form'       => 'cptchpr_check_custom_form',
 					'cptch_custom_form'         => 'cptch_check_bws_contact_form',
+                    'cptch_cf_form'             => 'cptch_check_bws_contact_form',
 				)
 			);
 
@@ -1224,7 +1393,7 @@ if ( ! function_exists( 'cntctfrm_check_form' ) ) {
 			}
 		}
 
-		if ( isset( $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) && "" != $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) {
+		if ( ! empty( $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) && array("") != $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) {
 
 			// Number of uploaded files
 			$num_files = count( (array)$_FILES['cntctfrm_contact_attachment']['tmp_name']);
@@ -1549,7 +1718,7 @@ if ( ! function_exists( 'cntctfrm_send_mail' ) ) {
 				/* Additional headers */
 				$headers .= 'From: ' . $from_field_name . ' <' . $from_email . '>';
 
-				if ( 1 == $cntctfrm_options['attachment'] && isset( $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) && "" != $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) {
+				if ( 1 == $cntctfrm_options['attachment'] && ! empty( $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) && array("") != $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) {
 					if( empty( $cntctfrm_path_of_uploaded_files ) || ! is_array( $cntctfrm_path_of_uploaded_files ) || sizeof( $cntctfrm_path_of_uploaded_files ) <= 1 ) {
 						$path_parts = pathinfo( $cntctfrm_path_of_uploaded_file );
 						$cntctfrm_path_of_uploaded_file_changed = $path_parts['dirname'] . '/' . preg_replace( '/^cntctfrm_[A-Z,a-z,0-9]{32}_/i', '', $path_parts['basename'] );
@@ -1580,11 +1749,11 @@ if ( ! function_exists( 'cntctfrm_send_mail' ) ) {
 				/* Mail it */
 				$mail_result = wp_mail( $to, $subject, $message_text, $headers, $attachments );
 				/* Delete attachment */
-				if ( 1 == $cntctfrm_options['attachment'] && isset( $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) && "" != $_FILES["cntctfrm_contact_attachment"]["tmp_name"]
+				if ( 1 == $cntctfrm_options['attachment'] && ! empty( $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) && array("") != $_FILES["cntctfrm_contact_attachment"]["tmp_name"]
 					&& $cntctfrm_path_of_uploaded_file_changed != $cntctfrm_path_of_uploaded_file ) {
 					@unlink( $cntctfrm_path_of_uploaded_file_changed );
 				}
-				if ( 1 == $cntctfrm_options['attachment'] && isset( $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) && "" != $_FILES["cntctfrm_contact_attachment"]["tmp_name"] && '1' == $cntctfrm_options['delete_attached_file'] ) {
+				if ( 1 == $cntctfrm_options['attachment'] && ! empty( $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) && array("") != $_FILES["cntctfrm_contact_attachment"]["tmp_name"] && '1' == $cntctfrm_options['delete_attached_file'] ) {
 					@unlink( $cntctfrm_path_of_uploaded_file );
 					@unlink( $cntctfrm_path_of_uploaded_files );
 				}
@@ -1593,7 +1762,7 @@ if ( ! function_exists( 'cntctfrm_send_mail' ) ) {
 				/* Set headers */
 				$headers  .= 'MIME-Version: 1.0' . "\n";
 
-				if ( 1 == $cntctfrm_options['attachment'] && isset( $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) && "" != $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) {
+				if ( 1 == $cntctfrm_options['attachment'] && ! empty( $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) && array("") != $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) {
 					$message_block = $message_text;
 					$message_block_for_user = $message_text_for_user;
 
@@ -1647,7 +1816,7 @@ if ( ! function_exists( 'cntctfrm_send_mail' ) ) {
 
 				$mail_result = @mail( $to, $subject, $message_text, $headers );
 				/* Delete attachment */
-				if ( 1 == $cntctfrm_options['attachment'] && isset( $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) && "" != $_FILES["cntctfrm_contact_attachment"]["tmp_name"] && '1' == $cntctfrm_options['delete_attached_file'] ) {
+				if ( 1 == $cntctfrm_options['attachment'] && ! empty( $_FILES["cntctfrm_contact_attachment"]["tmp_name"] ) && array("") != $_FILES["cntctfrm_contact_attachment"]["tmp_name"] && '1' == $cntctfrm_options['delete_attached_file'] ) {
 					@unlink( $cntctfrm_path_of_uploaded_file );
 				}
 				return $mail_result;
@@ -1956,10 +2125,6 @@ if ( ! function_exists ( 'cntctfrm_plugin_banner' ) ) {
 			global $cntctfrm_plugin_info, $wp_version, $bstwbsftwppdtplgns_cookie_add, $bstwbsftwppdtplgns_banner_array;
 
 			if ( 'plugins.php' == $hook_suffix ) {
-				$cntctfrm_options = get_option( 'cntctfrm_options' );
-				if ( isset( $cntctfrm_options['first_install'] ) && strtotime( '-1 week' ) > $cntctfrm_options['first_install'] ) {
-					bws_plugin_banner( $cntctfrm_plugin_info, 'cntctfrm', 'contact-form', 'f575dc39cba54a9de88df346eed52101', '77', '//ps.w.org/contact-form-plugin/assets/icon-128x128.png' );
-				}
 				bws_plugin_banner_to_settings( $cntctfrm_plugin_info, 'cntctfrm_options', 'contact-form-plugin', 'admin.php?page=contact_form.php' );
 			}
 
@@ -1979,26 +2144,27 @@ if ( ! function_exists ( 'cntctfrm_plugin_banner' ) ) {
 			foreach ( $bstwbsftwppdtplgns_banner_array as $key => $value ) {
 				if ( $this_banner == $value[0] ) {
 					if ( ! isset( $bstwbsftwppdtplgns_cookie_add ) ) {
-						echo '<script type="text/javascript" src="' . plugins_url( '/bws_menu/js/c_o_o_k_i_e.js', __FILE__ ) . '"></script>';
-						$bstwbsftwppdtplgns_cookie_add = true;
-					} ?>
-					<script type="text/javascript">
+                        wp_enqueue_script( 'bstwbsftwppdtplgns_cookie_add', plugins_url( 'bws_menu/js/c_o_o_k_i_e.js', __FILE__ ) );
+					}
+					$cntctfrm_script_banner = "
 						(function($) {
 							$(document).ready( function() {
-								var hide_message = $.cookie( '<?php echo $this_banner_prefix; ?>_hide_banner_on_plugin_page' );
-								if ( hide_message == "true" ) {
-									$( ".<?php echo $this_banner_prefix; ?>_message" ).css( "display", "none" );
+								var hide_message = $.cookie( '" . $this_banner_prefix . " _hide_banner_on_plugin_page' );
+								if ( hide_message == \"true\" ) {
+									$( '" . $this_banner_prefix . " _message' ).css( \"display\", \"none\" );
 								} else {
-									$( ".<?php echo $this_banner_prefix; ?>_message" ).css( "display", "block" );
+									$( '" . $this_banner_prefix . " _message' ).css( \"display\", \"block\" );
 								};
-								$( ".<?php echo $this_banner_prefix; ?>_close_icon" ).click( function() {
-									$( ".<?php echo $this_banner_prefix; ?>_message" ).css( "display", "none" );
-									$.cookie( "<?php echo $this_banner_prefix; ?>_hide_banner_on_plugin_page", "true", { expires: 32 } );
+								$( '" . $this_banner_prefix . " _close_icon' ).click( function() {
+									$( '" . $this_banner_prefix . " _message' ).css( \"display\", \"none\" );
+									$.cookie( '" . $this_banner_prefix . " _hide_banner_on_plugin_page', \"true\", { expires: 32 } );
 								});
-							});
-						})(jQuery);
-					</script>
-					<?php if ( ! array_key_exists( 'contact-form-to-db/contact_form_to_db.php', $all_plugins ) && ! array_key_exists( 'contact-form-to-db-pro/contact_form_to_db_pro.php', $all_plugins ) ) { ?>
+                            } ) ( jQuery );
+                        }";
+                    wp_register_script( 'cntctfrm_bws_script_banner', '' );
+                    wp_enqueue_script( 'cntctfrm_bws_script_banner' );
+                    wp_add_inline_script( 'cntctfrm_bws_script_banner', sprintf( $cntctfrm_script_banner ) );
+					if ( ! array_key_exists( 'contact-form-to-db/contact_form_to_db.php', $all_plugins ) && ! array_key_exists( 'contact-form-to-db-pro/contact_form_to_db_pro.php', $all_plugins ) ) { ?>
 						<div class="updated" style="padding: 0; margin: 0; border: none; background: none;">
 							<div class="cntctfrm_for_ctfrmtdb_message bws_banner_on_plugin_page" style="display: none;">
 								<button class="<?php echo $this_banner_prefix; ?>_close_icon close_icon notice-dismiss bws_hide_settings_notice" title="<?php _e( 'Close notice', 'contact-form-plugin' ); ?>"></button>
@@ -2098,42 +2264,43 @@ if ( ! function_exists( 'cntctfrm_shortcode_button_content' ) ) {
 					<input class="bws_default_shortcode" type="hidden" name="default" value="[bestwebsoft_contact_form]" />
 				<?php } ?>
 			</fieldset>
-			<script type="text/javascript">
-				function cntctfrm_shortcode_init() {
-					(function($) {
-						var current_object = '<?php echo ( $wp_version < 3.9 ) ? "#TB_ajaxContent" : ".mce-reset" ?>';
-						<?php if ( $contact_form_multi_active ) { ?>
-							$( current_object + ' #bws_shortcode_display' ).bind( 'display_shortcode', function() {
-								var cntctfrm_form_id = $( current_object + ' #cntctfrm_forms_list option:selected' ).val(),
-									cntctfrm_get_form_language = $( current_object + ' #cntctfrm_multi_languages_list option:selected' ).val(),
-									cntctfrm_form_language = ( cntctfrm_get_form_language == 'default' ) ? '' : ' lang=' + cntctfrm_get_form_language,
-									shortcode = '[bestwebsoft_contact_form' + cntctfrm_form_language + ' id=' + cntctfrm_form_id + ']';
-								$( this ).text( shortcode );
-							});
-							$( current_object + ' #cntctfrm_forms_list' ).on( 'change', function() {
-								var cntctfrm_form = $( this ).find( 'option:selected' ).val(),
-									cntctfrm_languages = $( current_object + ' #cntctfrm_multi_languages_list' ),
-									cntctfrm_languages_options = cntctfrm_languages.find( 'option' );
-								cntctfrm_languages_options.hide();
-								cntctfrm_languages_options.filter( '[data-form-id="' + cntctfrm_form + '"]' ).show();
-								cntctfrm_languages_options.filter( '[value="default"]' ).attr( 'selected', true );
-								$( current_object + ' #bws_shortcode_display' ).trigger( 'display_shortcode' );
-							});
-							$( current_object + ' #cntctfrm_multi_languages_list' ).on( 'change', function() {
-								$( current_object + ' #bws_shortcode_display' ).trigger( 'display_shortcode' );
-							});
-						<?php } else { ?>
-							$( current_object + ' #cntctfrm_languages_list' ).on( 'change', function() {
-								var cntctfrm_get_language = $( current_object + ' #cntctfrm_languages_list option:selected' ).val(),
-									cntctfrm_language = ( cntctfrm_get_language == 'default' ) ? '' : ' lang=' + cntctfrm_get_language,
-									shortcode = '[bestwebsoft_contact_form' + cntctfrm_language + ']';
-								$( current_object + ' #bws_shortcode_display' ).text( shortcode );
-							});
-						<?php } ?>
-					})(jQuery);
-				}
-			</script>
-			<div class="clear"></div>
+            <?php $script = "function cntctfrm_shortcode_init() {
+					( function( $ ) {
+						var current_object = '.mce-reset';";
+                    if ( $contact_form_multi_active ) {
+                        $script .= "$( current_object + ' #bws_shortcode_display' ).bind( 'display_shortcode', function() {
+                            var cntctfrm_form_id = $( current_object + ' #cntctfrm_forms_list option:selected' ).val(),
+                                cntctfrm_get_form_language = $( current_object + ' #cntctfrm_multi_languages_list option:selected' ).val(),
+                                cntctfrm_form_language = ( cntctfrm_get_form_language == 'default' ) ? '' : ' lang=' + cntctfrm_get_form_language,
+                                shortcode = '[bestwebsoft_contact_form' + cntctfrm_form_language + ' id=' + cntctfrm_form_id + ']';
+                            $( this ).text( shortcode );
+                        });
+                        $( current_object + ' #cntctfrm_forms_list' ).on( 'change', function() {
+                            var cntctfrm_form = $( this ).find( 'option:selected' ).val(),
+                                cntctfrm_languages = $( current_object + ' #cntctfrm_multi_languages_list' ),
+                                cntctfrm_languages_options = cntctfrm_languages.find( 'option' );
+                            cntctfrm_languages_options.hide();
+                            cntctfrm_languages_options.filter( '[data-form-id=\"' + cntctfrm_form + '\"]' ).show();
+                            cntctfrm_languages_options.filter( '[value=\"default\"]' ).attr( 'selected', true );
+                            $( current_object + ' #bws_shortcode_display' ).trigger( 'display_shortcode' );
+                        });
+                        $( current_object + ' #cntctfrm_multi_languages_list' ).on( 'change', function() {
+                            $( current_object + ' #bws_shortcode_display' ).trigger( 'display_shortcode' );
+                        });";
+                    } else {
+                        $script .= "$( current_object + ' #cntctfrm_languages_list' ).on( 'change', function() {
+                            var cntctfrm_get_language = $( current_object + ' #cntctfrm_languages_list option:selected' ).val(),
+                                cntctfrm_language = ( cntctfrm_get_language == 'default' ) ? '' : ' lang=' + cntctfrm_get_language,
+                                shortcode = '[bestwebsoft_contact_form' + cntctfrm_language + ']';
+                            $( current_object + ' #bws_shortcode_display' ).text( shortcode );
+                        });";
+                    }
+                    $script .= "} ) ( jQuery );
+                }";
+            wp_register_script( 'cntctfrm_bws_shortcode_button_script', '' );
+            wp_enqueue_script( 'cntctfrm_bws_shortcode_button_script' );
+            wp_add_inline_script( 'cntctfrm_bws_shortcode_button_script', sprintf( $script ) ); ?>
+            <div class="cntctfrm_clear"></div>
 		</div>
 		<?php return $content;
 	}

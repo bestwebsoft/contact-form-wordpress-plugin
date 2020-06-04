@@ -2,9 +2,9 @@
 Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: contact, contact form, feedback form, contact us form, contact button, email form, contac, form, web-page feedback, cf, cf plugin, contact form plugin
-Requires at least: 4.0
-Tested up to: 5.2.3
-Stable tag: 4.1.8
+Requires at least: 4.5
+Tested up to: 5.4.1
+Stable tag: 4.1.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -46,7 +46,7 @@ https://www.youtube.com/watch?v=F_piQa0hmkU
 * Change the width for contact form
 * Re-order form fields using drag & drop interface
 * Translate your form to any language with a simple language customizer
-* Protect contact form from spam with [Captcha](https://bestwebsoft.com/products/wordpress/plugins/captcha/?k=45dcf2a5ccd70a7fc8606f8030730ac7) or [Google reCAPTCHA](https://bestwebsoft.com/products/wordpress/plugins/google-captcha/?k=159789f556e3a9c58df8f25384903ba5)
+* Protect contact form from spam with [Captcha](https://bestwebsoft.com/products/wordpress/plugins/captcha/?k=45dcf2a5ccd70a7fc8606f8030730ac7) or [reCaptcha](https://bestwebsoft.com/products/wordpress/plugins/google-captcha/?k=159789f556e3a9c58df8f25384903ba5)
 * Add unlimited contact forms using [Contact Form Multi](https://bestwebsoft.com/products/wordpress/plugins/contact-form-multi/?k=34543c152eff369d529e9b4da85985a9)
 * Save and manage messages using [Contact Form to DB](https://bestwebsoft.com/products/wordpress/plugins/contact-form-to-db/?k=d7d962591b5be0ce6c27af778b1b36ee)
 * Add users who send the submission to the [Subscriber](https://bestwebsoft.com/products/wordpress/plugins/subscriber/?k=2ce0827916414c9c8576110f13560030) newsletter subscription list
@@ -60,6 +60,7 @@ https://www.youtube.com/watch?v=F_piQa0hmkU
 >
 > All features from Free version included plus:
 >
+> * Add contact form custom fields
 > * Add department selectbox and sort messages by inquiry type
 > * Add required and optional checkboxes (i.e. Terms and Conditions)
 > * Automatically populate name and email input fields for logged-in users
@@ -126,7 +127,7 @@ The author of the Contact Form also recommends the following plugins:
 
 * [SMTP](https://bestwebsoft.com/products/wordpress/plugins/smtp/) – Configure SMTP server to receive email messages from WordPress to Gmail, Yahoo, Hotmail and other services.
 * [Captcha](https://bestwebsoft.com/products/wordpress/plugins/captcha/?k=45dcf2a5ccd70a7fc8606f8030730ac7) – #1 super security anti-spam captcha plugin for WordPress forms.
-* [Google Captcha (reCAPTCHA)](https://bestwebsoft.com/products/wordpress/plugins/google-captcha/?k=159789f556e3a9c58df8f25384903ba5) –  Protect WordPress website forms from spam entries with Google reCAPTCHA.
+* [reCaptcha](https://bestwebsoft.com/products/wordpress/plugins/google-captcha/?k=159789f556e3a9c58df8f25384903ba5) –  Protect WordPress website forms from spam entries with reCaptcha.
 * [Limit Attempts](https://bestwebsoft.com/products/wordpress/plugins/limit-attempts/?k=129e34c19fc68ae4a15b4fc1b4983081) – Protect WordPress website against brute force attacks. Limit rate of login attempts.
 * [Contact Form Multi](https://bestwebsoft.com/products/wordpress/plugins/contact-form-multi/?k=34543c152eff369d529e9b4da85985a9) – Add unlimited number of contact forms to WordPress website.
 * [Contact Form to DB](https://bestwebsoft.com/products/wordpress/plugins/contact-form-to-db/?k=d7d962591b5be0ce6c27af778b1b36ee) – Save and manage contact form messages. Never lose important data.
@@ -136,7 +137,7 @@ The author of the Contact Form also recommends the following plugins:
 
 1. Upload the `contact-form-plugin` folder to the `/wp-content/plugins/` directory.
 2. Activate the plugin using the 'Plugins' menu in your WordPress admin panel.
-3. You can adjust the necessary settings using your WordPress admin panel in "BWS Panel" > "Contact Form".
+3. You can adjust the necessary settings using your WordPress admin panel in "Contact Form".
 4. Create a page or a post and insert the shortcode [bestwebsoft_contact_form] into the text.
 
 [View a PDF version of Step-by-step Instruction on Contact Form Installation](https://docs.google.com/document/d/1-hvn6WRvWnOqj5v5pLUk7Awyu87lq5B_dO-Tv-MC9JQ/).
@@ -224,6 +225,13 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 16. Enable the file multiattachment option to get important files from senders via contact form.
 
 == Changelog ==
+
+= V4.1.9 - 03.06.2020 =
+* Bugfix : We fixed the bug with Multi Attachment.
+* Bugfix : We fixed the bug with Captcha by BestWebSoft.
+* Bugfix : We fixed the bug with submit button on rtl sites.
+* Update : All functionality was updated for WordPress 5.4.1.
+* Update : BWS Panel section was updated.
 
 = V4.1.8 - 15.10.2019 =
 * Bugfix : Timeout update error was fixed.
@@ -560,6 +568,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * NEW : You can use JavaScript for the form validation with highlighting option
 
 == Upgrade Notice ==
+
+= V4.1.9 =
+* The compatibility with new WordPress version updated.
 
 = V4.1.8 =
 * Bugs fixed.

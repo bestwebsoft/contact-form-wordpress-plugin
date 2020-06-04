@@ -206,6 +206,7 @@ div.cntctfrm_info {
 }
 td.cntctfrm_td_top_align {
 	vertical-align: top;
+	max-width: 300px;
 }
 /* appearance settings */
 .cntctfrm_label_block {
