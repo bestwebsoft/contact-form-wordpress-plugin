@@ -6,7 +6,7 @@ Description: Simple contact form plugin any WordPress website must have.
 Author: BestWebSoft
 Text Domain: contact-form-plugin
 Domain Path: /languages
-Version: 4.1.9
+Version: 4.2.0
 Author URI: https://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -707,7 +707,7 @@ if ( ! function_exists( 'cntctfrm_related_plugins' ) ) {
 		if ( is_plugin_active( 'contact-form-to-db/contact_form_to_db.php' ) || is_plugin_active( 'contact-form-to-db-pro/contact_form_to_db_pro.php' ) ) {
 			$cntctfrmtdb_options = get_option( 'cntctfrmtdb_options' );
 
-			$settings_page = is_plugin_active( 'contact-form-to-db/contact_form_to_db.php' ) ? 'cntctfrmtdb_settings' : 'cntctfrmtdbpr_settings';
+			$settings_page = is_plugin_active( 'contact-form-to-db/contact_form_to_db.php' ) ? 'contact_form_to_db.php' : 'contact_form_to_db_pro.php';
 			$cntctfrm_related_plugins['contact-form-to-db'] = array(
 				'options'           => $cntctfrmtdb_options,
 				'settings_page'     => $settings_page
@@ -940,7 +940,7 @@ if ( ! function_exists( 'cntctfrm_display_form' ) ) {
 			$content .= '<form method="post" id="cntctfrm_contact_form' . $form_countid . '" class="cntctfrm_contact_form' . $classes . '"';
 			$content .= ' action="' . $page_url .  $form_countid . '" enctype="multipart/form-data">';
 			if ( isset( $cntctfrm_error_message['error_form'] ) && $cntctfrm_form_count == $form_submited ) {
-				$content .= '<div class="cntctfrm_error_text">' . $cntctfrm_error_message['error_form'] . '</div>';
+				$content .= '<div class="cntctfrm_error_text">' . ( isset( $cntctfrm_result['error_lmtttmpts'] ) ? $cntctfrm_result['error_lmtttmpts'] : $cntctfrm_error_message['error_form'] ) . '</div>';
 			}
             if ( ! isset( $id ) ) {
 	            $cntctfrm_ordered_fields = cntctfrm_get_ordered_fields();
@@ -1496,6 +1496,15 @@ if ( ! function_exists( 'cntctfrm_check_form' ) ) {
 					return $cntctfrm_result;
 				}
 			}
+
+			/* Check for Limit Attempts */
+			if ( has_filter( 'cntctfrm_check' ) ) {
+				$cntctfrm_limit_check = apply_filters( 'cntctfrm_check', $cntctfrm_error_message );
+
+				if ( $cntctfrm_limit_check )
+					return $cntctfrm_limit_check;
+			}
+
 			unset( $cntctfrm_error_message['error_form'] );
 			/* If all is good - send mail */
 			$cntctfrm_result = cntctfrm_send_mail();

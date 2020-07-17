@@ -60,8 +60,6 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 				'is_network_options'	=> is_network_admin(),
 				'tabs'					=> $tabs,
 				'wp_slug'				=> 'contact-form',
-				'pro_page'				=> 'admin.php?page=contact_form_pro.php',
-				'bws_license_plugin'	=> 'contact-form-pro/contact_form_pro.php',
 				'licenses'				=> $addons_check
 			) );
 
@@ -475,7 +473,7 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 										<th scope="row"><?php _e( "Add department selectbox to the contact form", 'contact-form-plugin' ); ?></th>
 										<td colspan="2">
 											<input type="radio" name="cntctfrm_select_email" value="departments" disabled="disabled" />
-											<div><img style="width:100%;" src="<?php echo plugins_url( '../images/pro_screen_1.png', __FILE__ ); ?>" alt="" /></div>
+											<div><img src="<?php echo plugins_url( '../images/pro_screen_1.png', __FILE__ ); ?>" alt="" /></div>
 										</td>
 									</tr>
 								</table>
@@ -1056,26 +1054,26 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 									}
 
 									if ( ! $contact_form_multi_active || ! empty( $cntctfrm_related_plugins['google-captcha']['options']['contact_form'] ) ) { ?>
-										<label><input type="checkbox" name="cntctfrm_display_google_captcha" value="1" <?php checked( $display_google_captcha ); ?> /> Google Captcha (reCAPTCHA) by BestWebSoft</label>
+										<label><input type="checkbox" name="cntctfrm_display_google_captcha" value="1" <?php checked( $display_google_captcha ); ?> /> reCaptcha by BestWebSoft</label>
 									<?php } else { ?>
 										<label>
-											<input type="checkbox" name="cntctfrm_display_google_captcha" value="1" disabled="disabled" <?php checked( $display_google_captcha ); ?> /> Google Captcha (reCAPTCHA) by BestWebSoft
+											<input type="checkbox" name="cntctfrm_display_google_captcha" value="1" disabled="disabled" <?php checked( $display_google_captcha ); ?> /> reCaptcha by BestWebSoft
 											<span class="bws_info">&nbsp;(<?php _e( 'Please activate the appropriate option on', 'contact-form-plugin' ) ?>&nbsp;
-												<?php printf( '<a href="%s" target="_blank"> Google Captcha %s</a>&nbsp;)',
+												<?php printf( '<a href="%s" target="_blank"> reCaptcha by BestWebSoft %s</a>&nbsp;)',
 												self_admin_url( '/admin.php?page=' . $cntctfrm_related_plugins['google-captcha']['settings_page'] ),
 												__( 'settings page', 'contact-form-plugin' ) ); ?>
 											</span>
 										</label>
 									<?php }
 								} else { ?>
-									<label><input disabled="disabled" type="checkbox" name="cntctfrm_display_google_captcha" value="1" /> Google Captcha (reCAPTCHA) by BestWebSoft</label>
+									<label><input disabled="disabled" type="checkbox" name="cntctfrm_display_google_captcha" value="1" /> reCaptcha by BestWebSoft</label>
 									<span class="bws_info">
-										<?php printf( '<a href="%s" target="_blank">%s Google Captcha</a>', self_admin_url( 'plugins.php' ), __( 'Activate', 'contact-form-plugin' ) ); ?>
+										<?php printf( '<a href="%s" target="_blank">%s reCaptcha</a>', self_admin_url( 'plugins.php' ), __( 'Activate', 'contact-form-plugin' ) ); ?>
 									</span>
 								<?php }
 							} else { ?>
-								<label><input disabled="disabled" type="checkbox" name="cntctfrm_display_google_captcha" value="1" /> Google Captcha (reCAPTCHA) by BestWebSoft</label> <span class="bws_info">
-									<?php printf( '<a href="https://bestwebsoft.com/products/wordpress/plugins/google-captcha/?k=7d74e61dd1cea23d0e9bf2fa88b5b117&amp;pn=77&amp;v=%s&amp;wp_v=%s" target="_blank">%s Google Captcha</a>', $cntctfrm_plugin_info["Version"], $wp_version, __( 'Download', 'contact-form-plugin' ) ) ?>
+								<label><input disabled="disabled" type="checkbox" name="cntctfrm_display_google_captcha" value="1" /> reCaptcha by BestWebSoft</label> <span class="bws_info">
+									<?php printf( '<a href="https://bestwebsoft.com/products/wordpress/plugins/google-captcha/?k=7d74e61dd1cea23d0e9bf2fa88b5b117&amp;pn=77&amp;v=%s&amp;wp_v=%s" target="_blank">%s reCaptcha</a>', $cntctfrm_plugin_info["Version"], $wp_version, __( 'Download', 'contact-form-plugin' ) ) ?>
 									</span>
 							<?php } ?>
 						</div>

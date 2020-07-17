@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: contact, contact form, feedback form, contact us form, contact button, email form, contac, form, web-page feedback, cf, cf plugin, contact form plugin
 Requires at least: 4.5
-Tested up to: 5.4.1
-Stable tag: 4.1.9
+Tested up to: 5.4.2
+Stable tag: 4.2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -50,6 +50,7 @@ https://www.youtube.com/watch?v=F_piQa0hmkU
 * Add unlimited contact forms using [Contact Form Multi](https://bestwebsoft.com/products/wordpress/plugins/contact-form-multi/?k=34543c152eff369d529e9b4da85985a9)
 * Save and manage messages using [Contact Form to DB](https://bestwebsoft.com/products/wordpress/plugins/contact-form-to-db/?k=d7d962591b5be0ce6c27af778b1b36ee)
 * Add users who send the submission to the [Subscriber](https://bestwebsoft.com/products/wordpress/plugins/subscriber/?k=2ce0827916414c9c8576110f13560030) newsletter subscription list
+* Limit sending emails from the same user using [Limit Attempts](https://bestwebsoft.com/products/wordpress/plugins/limit-attempts/?k=129e34c19fc68ae4a15b4fc1b4983081)
 * Add custom code via plugin settings page
 * Compatible with latest WordPress version
 * Incredibly simple settings for fast setup without modifying code
@@ -225,6 +226,10 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 16. Enable the file multiattachment option to get important files from senders via contact form.
 
 == Changelog ==
+
+= V4.2.0 - 15.07.2020 =
+* NEW : Compatibility with Limit Attempts plugin has been added.
+* Update : BWS panel section was updated.
 
 = V4.1.9 - 03.06.2020 =
 * Bugfix : We fixed the bug with Multi Attachment.
@@ -568,6 +573,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * NEW : You can use JavaScript for the form validation with highlighting option
 
 == Upgrade Notice ==
+
+= V4.2.0 =
+* New features added.
 
 = V4.1.9 =
 * The compatibility with new WordPress version updated.
