@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: contact, contact form, feedback form, contact us form, contact button, email form, contac, form, web-page feedback, cf, cf plugin, contact form plugin
 Requires at least: 4.5
-Tested up to: 5.4.2
-Stable tag: 4.2.0
+Tested up to: 5.5
+Stable tag: 4.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -166,7 +166,7 @@ This means that you made a syntax error.
 = How to add the contact form not in English? =
 
 1. Add a language in the block "Language settings for the field names in the form" on the plugin settings page.
-2. Mark the check box (if it's not marked yet) in the block  "Change the names of the contact form fields and error messages", choose the necessary tab,click the twistie to expand the list of the fields and fill in the fields. Choose the necessary tab in the block "Action after email is sent" as well and fill in the field. Save the changes.
+2. Mark the check box (if it's not marked yet) in the block  "Change the names of the contact form fields and error messages", choose the necessary tab, click the arrow to expand the list of the fields and fill in the fields. Choose the necessary tab in the block "Action after email is sent" as well and fill in the field. Save the changes.
 3. You will see the shortcode under the tab with the necessary language. Please paste that shortcode to the page or post.
 
 = I'm not receiving messages from Contact Form OR the plugin does not send an email - "Sorry, email message could not be delivered." =
@@ -226,6 +226,11 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 16. Enable the file multiattachment option to get important files from senders via contact form.
 
 == Changelog ==
+
+= V4.2.1 - 31.08.2020 =
+* NEW : Additional button to go to the Contact Form to DB plugin has been added.
+* Bugfix : Bug with incorrect titles in Auto Response has been fixed.
+* Update : All functionality for WordPress 5.5 has been updated.
 
 = V4.2.0 - 15.07.2020 =
 * NEW : Compatibility with Limit Attempts plugin has been added.
@@ -573,6 +578,10 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * NEW : You can use JavaScript for the form validation with highlighting option
 
 == Upgrade Notice ==
+
+= V4.2.1 =
+* Bugs fixed.
+* The compatibility with new WordPress version updated.
 
 = V4.2.0 =
 * New features added.

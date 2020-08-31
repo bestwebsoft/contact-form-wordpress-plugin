@@ -493,7 +493,6 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 						<td colspan="2">
 							<?php if ( array_key_exists( 'contact-form-to-db/contact_form_to_db.php', $all_plugins ) || array_key_exists( 'contact-form-to-db-pro/contact_form_to_db_pro.php', $all_plugins ) ) {
 								if ( array_key_exists( 'contact-form-to-db', $cntctfrm_related_plugins ) ) {
-									$save_emails  = false;
 									if ( false == $this->cfmlt_is_active ) {
 										$save_emails = ! empty( $cntctfrm_related_plugins['contact-form-to-db']['options']['save_messages_to_db'] ) ? true : false;
 									} else {
@@ -506,7 +505,7 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 											</span>
 										</label>
 									<?php } else { ?>
-										<label><input type="checkbox" name="cntctfrm_save_email_to_db" value="1" disabled="disabled" <?php checked( $save_emails ); ?> /></label>
+										<label><input type="checkbox" name="cntctfrm_save_email_to_db" value="1" disabled="disabled" /></label>
 										<span class="bws_info">&nbsp;<?php _e( 'Please activate the appropriate option on', 'contact-form-plugin' ) ?>&nbsp;
 											<?php printf( '<a href="%s" target="_blank"> Contact Form to DB %s</a>&nbsp;',
 												self_admin_url( '/admin.php?page=' . $cntctfrm_related_plugins['contact-form-to-db']['settings_page'] ),
@@ -514,7 +513,7 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 										</span>
 									<?php }
 								} else { ?>
-									<label><input disabled="disabled" type="checkbox" name="cntctfrm_save_email_to_db" value="1" <?php checked( ! empty( $this->options["save_email_to_db"] ) ); ?> />
+									<label><input disabled="disabled" type="checkbox" name="cntctfrm_save_email_to_db" value="1" />
 										<span class="bws_info"><?php _e( 'Using', 'contact-form-plugin' ); ?> Contact Form to DB by BestWebSoft
 										<?php printf( '<a href="%s" target="_blank">%s Contact Form to DB</a>', self_admin_url( 'plugins.php' ), __( 'Activate', 'contact-form-plugin' ) ); ?>
 										</span>
@@ -726,10 +725,9 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 							<td></td>
 						<?php } ?>
 					</tr>
-					<tr valign="top">
-						<td><?php _e( "Email Address", 'contact-form-plugin' ); ?></td>
-
-						<?php if ( ! $this->hide_pro_tabs ) { ?>
+			        <?php if ( ! $this->hide_pro_tabs ) { ?>
+					    <tr valign="top">
+						    <td><?php _e( "Email Address", 'contact-form-plugin' ); ?></td>
                             <td class="bws_pro_version">
                                 <label><input disabled="disabled" checked="checked" type="checkbox" name="cntctfrm_display_email" value="1" />
                                     <span class="cntctfrm_mobile_title"><?php _e( "Used", 'contact-form-plugin' ); ?></span></label>
@@ -751,11 +749,8 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 									<?php _e( "Use User's email as a default value if the user is logged in.", 'contact-form-plugin' ); ?><br />
 								<span class="bws_info" style="padding-left: 20px;"><?php _e( "'Visible' and 'Disabled for editing' options will be applied only to logged-in users.", 'contact-form-plugin' ); ?></span>
 							</td>
-						<?php } else { ?>
-                            <td></td>
-                            <td></td>
-                        <?php } ?>
-					</tr>
+					    </tr>
+				    <?php } ?>
 					<tr valign="top">
 						<td><?php _e( "Phone number", 'contact-form-plugin' ); ?></td>
 						<td>
@@ -970,7 +965,7 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 								<input type="url" id="cntctfrm_gdpr_link" name="cntctfrm_gdpr_link" value="<?php echo $this->options['gdpr_link']; ?>" />
 							</label>
 						</div>
-						<div style="clear: both;">
+						<div style="clear: both; white-space: nowrap;">
 							<?php if ( array_key_exists( 'subscriber/subscriber.php', $all_plugins ) || array_key_exists( 'subscriber-pro/subscriber-pro.php', $all_plugins ) ) {
 								if ( array_key_exists( 'subscriber', $cntctfrm_related_plugins ) ) {
 									if ( ! $contact_form_multi_active ) {
@@ -1005,7 +1000,7 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 								</span>
 							<?php } ?>
 						</div>
-						<div style="clear: both;">
+						<div style="clear: both; white-space: nowrap;">
 							<?php if ( array_key_exists( 'captcha-bws/captcha-bws.php', $all_plugins ) || array_key_exists( 'captcha-plus/captcha-plus.php', $all_plugins ) || array_key_exists( 'captcha-pro/captcha_pro.php', $all_plugins ) ) {
 								if ( array_key_exists( 'captcha', $cntctfrm_related_plugins ) ) {
 									$captcha_enabled = ! empty( $cntctfrm_related_plugins['captcha']['options']['forms']['bws_contact']['enable'] ) ? true : false;
@@ -1044,7 +1039,7 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 								</span>
 							<?php } ?>
 						</div>
-						<div style="clear: both;">
+						<div style="clear: both; white-space: nowrap;">
 							<?php if ( array_key_exists( 'google-captcha/google-captcha.php', $all_plugins ) || array_key_exists( 'google-captcha-pro/google-captcha-pro.php', $all_plugins ) ) {
 								if ( array_key_exists( 'google-captcha', $cntctfrm_related_plugins ) ) {
 									if ( ! $contact_form_multi_active ) {
@@ -1111,7 +1106,7 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 				</tr>
 				<tr valign="top">
 					<th scope="row"><?php _e( "Display additional info in the email", 'contact-form-plugin' ); ?></th>
-					<td colspan="2" class="cntctfrm_td_top_align">
+					<td colspan="2">
 						<input type="checkbox" id="cntctfrm_display_add_info" name="cntctfrm_display_add_info" value="1" <?php checked( '1', $this->options['display_add_info'] ); ?> />
                     <br />
                     <br />
@@ -1140,7 +1135,7 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 				</tr>
 				<tr valign="top">
 					<th scope="row"><?php _e( "Change the names of the contact form fields and error messages", 'contact-form-plugin' ); ?></th>
-					<td style="width:15px;" class="cntctfrm_td_top_align">
+					<td>
 						<input type="checkbox" id="cntctfrm_change_label" name="cntctfrm_change_label" class="bws_option_affect" data-affect-show=".cntctfrm_change_label_block" value="1" <?php checked( '1', $this->options['change_label'] ); ?> />
 					<br />
                     <br />
@@ -1260,7 +1255,7 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 						} ?>
 						<div class="clear"></div>
 						<div class="cntctfrm_language_tab cntctfrm_tab_default <?php echo ! isset( $_POST['cntctfrm_change_tab'] ) || 'default' == $_POST['cntctfrm_change_tab'] ? '' : 'hidden' ?>" style="padding: 5px 10px 5px 5px;">
-							<label><input type="text" maxlength="250" name="cntctfrm_thank_text[default]" value="<?php echo $this->options['thank_text']['default']; ?>" /> <span class="bws_info"><?php _e( "Text", 'contact-form-plugin' ); ?></span></label><br />
+							<input type="text" maxlength="250" name="cntctfrm_thank_text[default]" value="<?php echo $this->options['thank_text']['default']; ?>" /> <span class="bws_info"><?php _e( "Text", 'contact-form-plugin' ); ?></span><br />
 							<?php if ( ! $contact_form_multi_active ) { ?>
 								<span class="bws_info cntctfrm_shortcode_for_language"><?php _e( "Use shortcode", 'contact-form-plugin' ); ?> <span class="cntctfrm_shortcode">[bestwebsoft_contact_form]</span> <?php _e( "for this language", 'contact-form-plugin' ); ?></span>
 							<?php } else { ?>
@@ -1566,7 +1561,7 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 														<div class="cntctfrm_label_block"><?php _e( "Text fields color", 'contact-form-plugin' ); ?></div>
 													</div>
 													<div>
-														<input disabled='disabled' size="8" type="text" value="" name="cntctfrm_border_input_width" />
+														<input disabled='disabled' size="8" type="text" value="" name="cntctfrm_border_input_width" /><br />
 														<div class="cntctfrm_label_block"><?php _e( 'Border width in px, numbers only', 'contact-form-plugin' ); ?></div>
 													</div>
 													<div>
@@ -1583,7 +1578,7 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 												<th scope="row"><?php _e( "Submit button", 'contact-form-plugin' ); ?></th>
 												<td colspan="2">
 													<div>
-														<input disabled='disabled' size="8" type="text" value="" name="cntctfrm_button_width" />
+														<input disabled='disabled' size="8" type="text" value="" name="cntctfrm_button_width" /><br />
 														<div class="cntctfrm_label_block"><?php _e( 'Width in px, numbers only', 'contact-form-plugin' ); ?></div>
 													</div>
 													<div>

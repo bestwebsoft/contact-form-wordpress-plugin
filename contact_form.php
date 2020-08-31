@@ -6,7 +6,7 @@ Description: Simple contact form plugin any WordPress website must have.
 Author: BestWebSoft
 Text Domain: contact-form-plugin
 Domain Path: /languages
-Version: 4.2.0
+Version: 4.2.1
 Author URI: https://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -50,6 +50,13 @@ if ( ! function_exists( 'cntctfrm_admin_menu' ) ) {
 				'contact_form.php',
 				'cntctfrm_settings_page'
 			);
+			if ( isset( $submenu['contact_form.php'] ) && ( is_plugin_active( 'contact-form-to-db/contact_form_to_db.php' ) || is_plugin_active( 'contact-form-to-db-pro/contact_form_to_db_pro.php' ) ) ) {
+				$submenu['contact_form.php'][] = array(
+					'CF to DB',
+					'manage_options',
+					admin_url( 'admin.php?page=cntctfrmtdb_manager' )
+				);
+			}
 			add_submenu_page(
 				'contact_form.php',
 				'BWS Panel',
@@ -2170,7 +2177,7 @@ if ( ! function_exists ( 'cntctfrm_plugin_banner' ) ) {
 								});
                             } ) ( jQuery );
                         }";
-                    wp_register_script( 'cntctfrm_bws_script_banner', '' );
+                    wp_register_script( 'cntctfrm_bws_script_banner', '//' );
                     wp_enqueue_script( 'cntctfrm_bws_script_banner' );
                     wp_add_inline_script( 'cntctfrm_bws_script_banner', sprintf( $cntctfrm_script_banner ) );
 					if ( ! array_key_exists( 'contact-form-to-db/contact_form_to_db.php', $all_plugins ) && ! array_key_exists( 'contact-form-to-db-pro/contact_form_to_db_pro.php', $all_plugins ) ) { ?>
@@ -2306,7 +2313,7 @@ if ( ! function_exists( 'cntctfrm_shortcode_button_content' ) ) {
                     }
                     $script .= "} ) ( jQuery );
                 }";
-            wp_register_script( 'cntctfrm_bws_shortcode_button_script', '' );
+            wp_register_script( 'cntctfrm_bws_shortcode_button_script', '//' );
             wp_enqueue_script( 'cntctfrm_bws_shortcode_button_script' );
             wp_add_inline_script( 'cntctfrm_bws_shortcode_button_script', sprintf( $script ) ); ?>
             <div class="cntctfrm_clear"></div>

@@ -150,9 +150,9 @@
 .cntctfrm_ltr.cntctfrm_two_columns.cntctfrm_width_default #cntctfrm_submit_first_column {
 	margin: 0 10px 0 0;
 }
-.cntctfrm_rtl.cntctfrm_two_columns.cntctfrm_width_default #cntctfrm_first_column,
-.cntctfrm_rtl.cntctfrm_two_columns.cntctfrm_width_default #cntctfrm_submit_first_column {
-	margin: 0 0 0 2%;
+.cntctfrm_two_columns.cntctfrm_rtl.cntctfrm_width_default #cntctfrm_first_column,
+.cntctfrm_two_columns.cntctfrm_rtl.cntctfrm_width_default #cntctfrm_submit_first_column {
+	margin: 0 0 0 10px;
 }
 .cntctfrm_ltr.cntctfrm_two_columns.cntctfrm_width_custom #cntctfrm_first_column,
 .cntctfrm_ltr.cntctfrm_two_columns.cntctfrm_width_custom #cntctfrm_submit_first_column {
