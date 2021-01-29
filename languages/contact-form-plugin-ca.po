@@ -1,1276 +1,2327 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Contact Form\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-01 12:18+0300\n"
-"PO-Revision-Date: 2019-07-01 12:18+0300\n"
-"Last-Translator: plugin@bestwebsoft.com <plugin@bestwebsoft.com>\n"
-"Language-Team: Kenneth <kenneth@snollocer.net>\n"
+"Project-Id-Version: Traduccion a Catalan by IBIDEM GROUP\n"
+"POT-Creation-Date: 2021-01-21 15:45+0200\n"
+"PO-Revision-Date: 2021-01-21 15:45+0200\n"
+"Last-Translator: \n"
+"Language-Team: https://www.ibidemgroup.com\n"
 "Language: ca_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-KeywordsList: __;_e\n"
+"X-Generator: Poedit 2.4.2\n"
 "X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: contact_form.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.8.7.1\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+"X-Poedit-SearchPathExcluded-1: bws_menu\n"
 
-#: contact_form.php:39 contact_form.php:47 contact_form.php:649
-#: includes/class-cntctfrm-settings.php:428
+#: contact_form.php:39 contact_form.php:48 contact_form.php:825
+#: includes/class-cntctfrm-settings.php:426
 msgid "Contact Form Settings"
-msgstr "Opcions Contact Form"
+msgstr "Configuració del formulari de contacte"
 
-#: contact_form.php:48 contact_form.php:1667 contact_form.php:1681
-#: includes/class-cntctfrm-settings.php:27
+#: contact_form.php:49 contact_form.php:1854 contact_form.php:1868
+#: includes/class-cntctfrm-settings.php:25
 msgid "Settings"
 msgstr "Configuració"
 
-#: contact_form.php:63 includes/class-cntctfrm-settings.php:486
-#: includes/class-cntctfrm-settings.php:844
-#: includes/class-cntctfrm-settings.php:937
-#: includes/class-cntctfrm-settings.php:1094
-#: includes/class-cntctfrm-settings.php:1611
+#: contact_form.php:71 includes/class-cntctfrm-settings.php:484
+#: includes/class-cntctfrm-settings.php:938
+#: includes/class-cntctfrm-settings.php:1095
+#: includes/class-cntctfrm-settings.php:1621
 msgid "Upgrade to Pro"
-msgstr ""
+msgstr "Actualització a Pro"
 
-#: contact_form.php:350 contact_form.php:1442 contact_form.php:1488
-#: includes/class-cntctfrm-settings.php:577
-#: includes/class-cntctfrm-settings.php:670
-#: includes/class-cntctfrm-settings.php:1160
-#: includes/class-cntctfrm-settings.php:1200
-#: includes/class-cntctfrm-settings.php:1442
+#: contact_form.php:524 contact_form.php:1629 contact_form.php:1675
+#: includes/class-cntctfrm-settings.php:574
+#: includes/class-cntctfrm-settings.php:667
+#: includes/class-cntctfrm-settings.php:1165
+#: includes/class-cntctfrm-settings.php:1205
+#: includes/class-cntctfrm-settings.php:1452
 msgid "Name"
 msgstr "Nom"
 
-#: contact_form.php:351 contact_form.php:1449 contact_form.php:1494
-#: includes/class-cntctfrm-settings.php:717
-#: includes/class-cntctfrm-settings.php:1161
-#: includes/class-cntctfrm-settings.php:1201
-#: includes/class-cntctfrm-settings.php:1447
+#: contact_form.php:525 contact_form.php:1636 contact_form.php:1681
+#: includes/class-cntctfrm-settings.php:714
+#: includes/class-cntctfrm-settings.php:1166
+#: includes/class-cntctfrm-settings.php:1206
+#: includes/class-cntctfrm-settings.php:1457
 msgid "Address"
-msgstr "Adreça:"
+msgstr "Adreça"
 
-#: contact_form.php:352 includes/class-cntctfrm-settings.php:733
-#: includes/class-cntctfrm-settings.php:1162
-#: includes/class-cntctfrm-settings.php:1202
+#: contact_form.php:526 includes/class-cntctfrm-settings.php:731
+#: includes/class-cntctfrm-settings.php:1167
+#: includes/class-cntctfrm-settings.php:1207
 msgid "Email Address"
-msgstr "Adreça de correu electrònic:"
+msgstr "Correu electrònic"
 
-#: contact_form.php:353 includes/class-cntctfrm-settings.php:760
-#: includes/class-cntctfrm-settings.php:1163
-#: includes/class-cntctfrm-settings.php:1203
-#, fuzzy
+#: contact_form.php:527 includes/class-cntctfrm-settings.php:756
+#: includes/class-cntctfrm-settings.php:1168
+#: includes/class-cntctfrm-settings.php:1208
 msgid "Phone number"
-msgstr "Nombre de telèfon"
+msgstr "Nº Telèfon"
 
-#: contact_form.php:354 contact_form.php:1460 contact_form.php:1503
-#: includes/class-cntctfrm-settings.php:776
-#: includes/class-cntctfrm-settings.php:1164
-#: includes/class-cntctfrm-settings.php:1204
-#: includes/class-cntctfrm-settings.php:1462
+#: contact_form.php:528 contact_form.php:1647 contact_form.php:1690
+#: includes/class-cntctfrm-settings.php:775
+#: includes/class-cntctfrm-settings.php:1169
+#: includes/class-cntctfrm-settings.php:1209
+#: includes/class-cntctfrm-settings.php:1472
 msgid "Subject"
 msgstr "Assumpte"
 
-#: contact_form.php:355 contact_form.php:1465 contact_form.php:1507
-#: includes/class-cntctfrm-settings.php:807
-#: includes/class-cntctfrm-settings.php:1165
-#: includes/class-cntctfrm-settings.php:1205
-#: includes/class-cntctfrm-settings.php:1466
+#: contact_form.php:529 contact_form.php:1652 contact_form.php:1694
+#: includes/class-cntctfrm-settings.php:806
+#: includes/class-cntctfrm-settings.php:1170
+#: includes/class-cntctfrm-settings.php:1210
+#: includes/class-cntctfrm-settings.php:1476
 msgid "Message"
-msgstr "MIssatge"
+msgstr "Missatge"
 
-#: contact_form.php:356 includes/class-cntctfrm-settings.php:1166
-#: includes/class-cntctfrm-settings.php:1206
-#: includes/class-cntctfrm-settings.php:1471
+#: contact_form.php:530 includes/class-cntctfrm-settings.php:1171
+#: includes/class-cntctfrm-settings.php:1211
+#: includes/class-cntctfrm-settings.php:1481
 msgid "Attachment"
-msgstr "Adjunt:"
+msgstr "Adjunt"
 
-#: contact_form.php:357
+#: contact_form.php:531
 msgid ""
 "Supported file types: HTML, TXT, CSS, GIF, PNG, JPEG, JPG, TIFF, BMP, AI, "
 "EPS, PS, CSV, RTF, PDF, DOC, DOCX, XLS, XLSX, ZIP, RAR, WAV, MP3, PPT."
 msgstr ""
-"Formats de fitxer suportats: HTML, TXT, CSS, GIF, PNG, JPEG, JPG, TIFF, BMP, "
+"Tipus de fitxers admesos: HTML, TXT, CSS, GIF, PNG, JPEG, JPG, TIFF, BMP, "
 "AI, EPS, PS, CSV, RTF, PDF, DOC, DOCX, XLS, XLSX, ZIP, RAR, WAV, MP3, PPT."
 
-#: contact_form.php:358 includes/class-cntctfrm-settings.php:1168
-#: includes/class-cntctfrm-settings.php:1208
+#: contact_form.php:532 includes/class-cntctfrm-settings.php:1173
+#: includes/class-cntctfrm-settings.php:1213
 msgid "Send me a copy"
 msgstr "Envia'm una còpia"
 
-#: contact_form.php:359 includes/class-cntctfrm-settings.php:1169
-#: includes/class-cntctfrm-settings.php:1209
+#: contact_form.php:533 includes/class-cntctfrm-settings.php:1174
+#: includes/class-cntctfrm-settings.php:1214
 msgid "I consent to having this site collect my personal data."
-msgstr ""
+msgstr "Accepto que aquest lloc reculli les meves dades personals."
 
-#: contact_form.php:360 contact_form.php:1759
-#: includes/class-cntctfrm-settings.php:1170
-#: includes/class-cntctfrm-settings.php:1210
-#, fuzzy
+#: contact_form.php:534 contact_form.php:1946
+#: includes/class-cntctfrm-settings.php:1175
+#: includes/class-cntctfrm-settings.php:1215
 msgid "Learn more"
-msgstr "Llegir més"
+msgstr "Saber-ne més"
 
-#: contact_form.php:361 includes/class-cntctfrm-settings.php:1171
-#: includes/class-cntctfrm-settings.php:1211
+#: contact_form.php:535 includes/class-cntctfrm-settings.php:1176
+#: includes/class-cntctfrm-settings.php:1216
 msgid "Submit"
 msgstr "Enviar"
 
-#: contact_form.php:362
+#: contact_form.php:536
 msgid "Your name is required."
-msgstr "El seu nom es obligatori."
+msgstr "El seu nom és necessari."
 
-#: contact_form.php:363
+#: contact_form.php:537
 msgid "Address is required."
-msgstr "Una adreça vàlida és obligatòria."
+msgstr "Cal adreça."
 
-#: contact_form.php:364
+#: contact_form.php:538
 msgid "A valid email address is required."
-msgstr "Una Adreça de correu electrònic és obligatòria."
+msgstr "Cal una adreça electrònica vàlida."
 
-#: contact_form.php:365
+#: contact_form.php:539
 msgid "Phone number is required."
-msgstr "El seu nombre de telèfon és obligatori."
+msgstr "Cal el número de telèfon."
 
-#: contact_form.php:366
+#: contact_form.php:540
 msgid "Subject is required."
-msgstr "L'assumpte és obligatori."
+msgstr "L'assignatura és obligatòria."
 
-#: contact_form.php:367
+#: contact_form.php:541
 msgid "Message text is required."
-msgstr "El missatge és obligatori."
+msgstr "Cal text del missatge."
 
-#: contact_form.php:368
+#: contact_form.php:542
 msgid "File format is not valid."
-msgstr "El format de l'adjunt és incorrecte."
+msgstr "El format del fitxer no és vàlid."
 
-#: contact_form.php:369
+#: contact_form.php:543
 msgid "File upload error."
-msgstr "Error de càrrega del fitxer"
+msgstr "Error de càrrega de fitxers."
 
-#: contact_form.php:370
+#: contact_form.php:544
 msgid "The file could not be uploaded."
-msgstr "El fitxer no ha pogut ser carregat"
+msgstr "No s'ha pogut carregar el fitxer."
 
-#: contact_form.php:371
+#: contact_form.php:545
 msgid "This file is too large."
-msgstr "Aquest document és massa gran."
+msgstr "Aquest fitxer és massa gran."
 
-#: contact_form.php:372
+#: contact_form.php:546
 msgid "Please fill out the CAPTCHA."
-msgstr "Si us plau completi el CAPTCHA"
+msgstr "Si us plau, ompli el CAPTCHA."
 
-#: contact_form.php:373
+#: contact_form.php:547
 msgid "Please make corrections below and try again."
-msgstr "Si us plau, corregeixi les dades i provi un altre cop."
+msgstr "Feu correccions a continuació i torneu-ho a provar."
 
-#: contact_form.php:375
+#: contact_form.php:549
 msgid "Thank you for contacting us."
-msgstr "Gràcies per contactar amb nosaltres"
+msgstr "Gràcies per contactar amb nosaltres."
 
-#: contact_form.php:653
+#: contact_form.php:829
 msgid "NEW_FORM"
-msgstr ""
+msgstr "NEW_FORM"
 
-#: contact_form.php:654
+#: contact_form.php:830
 msgid ""
 "If you want to create multiple contact forms, please install the Contact "
 "Form Multi plugin."
 msgstr ""
+"Si voleu crear diversos formularis de contacte, instal·leu el formulari de "
+"contacte multi plugin."
 
-#: contact_form.php:659
+#: contact_form.php:835
 msgid ""
 "Contact Form plugin doesn't support your current version of Contact Form "
 "Multi plugin. Please update Contact Form Multi plugin to version 1.2.6 or "
 "higher."
 msgstr ""
+"El connector Formulari de contacte no admet la versió actual del connector "
+"Multi formulari de contacte. Actualitzeu el formulari de contacte Multi "
+"plugin a la versió 1.2.6 o superior."
 
-#: contact_form.php:761
+#: contact_form.php:937
 msgid "Sorry, email message could not be delivered."
-msgstr "Ho sentim, el seu e-mail no ha pogut ser lliurat."
+msgstr "Ho sentim, el missatge de correu electrònic no s'ha pogut lliurar."
 
-#: contact_form.php:1398 contact_form.php:1400
+#: contact_form.php:1585 contact_form.php:1587
 msgid "Sent from (ip address)"
-msgstr "Enviat des de  (adreça IP)"
+msgstr "Enviat des de (adreça IP)"
 
-#: contact_form.php:1404 contact_form.php:1406
-#: includes/class-cntctfrm-settings.php:1120
+#: contact_form.php:1591 contact_form.php:1593
+#: includes/class-cntctfrm-settings.php:1122
 msgid "Date/Time"
 msgstr "Data/hora"
 
-#: contact_form.php:1410 contact_form.php:1412
-#: includes/class-cntctfrm-settings.php:1121
+#: contact_form.php:1597 contact_form.php:1599
+#: includes/class-cntctfrm-settings.php:1123
 msgid "Sent from (referer)"
-msgstr "Enviat des de (referent)"
+msgstr "Enviat des de (referèndum)"
 
-#: contact_form.php:1416 contact_form.php:1418
-#: includes/class-cntctfrm-settings.php:1122
+#: contact_form.php:1603 contact_form.php:1605
+#: includes/class-cntctfrm-settings.php:1124
 msgid "Using (user agent)"
-msgstr "Usant (user agent)"
+msgstr "Ús (agent d'usuari)"
 
-#: contact_form.php:1428
+#: contact_form.php:1615
 msgid "Contact from"
-msgstr "Contact from"
+msgstr "Contacte des de"
 
-#: contact_form.php:1433 contact_form.php:1482
+#: contact_form.php:1620 contact_form.php:1669
 msgid "Site"
 msgstr "Lloc"
 
-#: contact_form.php:1455 contact_form.php:1499
-#: includes/class-cntctfrm-settings.php:601
+#: contact_form.php:1642 contact_form.php:1686
+#: includes/class-cntctfrm-settings.php:598
 msgid "Email"
-msgstr "Adreça de correu electrònic"
+msgstr "Correu electrònic"
 
-#: contact_form.php:1471 contact_form.php:1512
-#: includes/class-cntctfrm-settings.php:1457
+#: contact_form.php:1658 contact_form.php:1699
+#: includes/class-cntctfrm-settings.php:1467
 msgid "Phone Number"
-msgstr "Nombre de telèfon"
+msgstr "Número de telèfon"
 
-#: contact_form.php:1610
+#: contact_form.php:1797
 msgid ""
 "If you can see this MIME, it means that the MIME type is not supported by "
 "your email client!"
 msgstr ""
-"Si pot veure aquest MIME, vol dir que el tipus MIME no és compatible amb el "
-"seu client de correu electrònic!"
+"Si podeu veure aquest MIME, vol dir que el tipus MIME no és compatible amb "
+"el vostre client de correu electrònic!"
 
-#: contact_form.php:1682
+#: contact_form.php:1869
 msgid "FAQ"
 msgstr "FAQ"
 
-#: contact_form.php:1683
+#: contact_form.php:1870
 msgid "Support"
 msgstr "Suport"
 
-#: contact_form.php:1732
+#: contact_form.php:1919
 msgid "Are you sure that you want to delete this language data?"
-msgstr "Està vostè segur que vol esborrar aquest idioma?"
+msgstr "Esteu segur que voleu suprimir aquestes dades d'idioma?"
 
-#: contact_form.php:1754
-#, fuzzy
+#: contact_form.php:1941
 msgid "Add multiple forms"
-msgstr "Afegir consells sobre les eines"
+msgstr "Afegeix diversos formularis"
 
-#: contact_form.php:1754
+#: contact_form.php:1941
 msgid ""
 "Install Contact Form Multi plugin to create unlimited number of contact "
 "forms."
 msgstr ""
+"Instal·leu el connector Multi formulari de contacte per crear un nombre "
+"il·limitat de formularis de contacte."
 
-#: contact_form.php:1763 includes/class-cntctfrm-settings.php:472
-#: includes/class-cntctfrm-settings.php:890
-#: includes/class-cntctfrm-settings.php:1083
-#: includes/class-cntctfrm-settings.php:1370
+#: contact_form.php:1950 includes/class-cntctfrm-settings.php:470
+#: includes/class-cntctfrm-settings.php:876
+#: includes/class-cntctfrm-settings.php:1084
+#: includes/class-cntctfrm-settings.php:1380
 msgid "Close"
-msgstr ""
+msgstr "Tancar"
 
-#: contact_form.php:1817
+#: contact_form.php:2004
 msgid "Error"
-msgstr ""
+msgstr "Error"
 
-#: contact_form.php:1817 contact_form.php:1819
+#: contact_form.php:2004 contact_form.php:2006
 msgid "Illegal language code"
-msgstr ""
+msgstr "Codi de llengua no vàlid"
 
-#: contact_form.php:1853 contact_form.php:1855
-#: includes/class-cntctfrm-settings.php:1186
-#: includes/class-cntctfrm-settings.php:1188
-#: includes/class-cntctfrm-settings.php:1226
-#: includes/class-cntctfrm-settings.php:1228
-#: includes/class-cntctfrm-settings.php:1260
-#: includes/class-cntctfrm-settings.php:1262
-#: includes/class-cntctfrm-settings.php:1274
-#: includes/class-cntctfrm-settings.php:1276
+#: contact_form.php:2040 contact_form.php:2042
+#: includes/class-cntctfrm-settings.php:1191
+#: includes/class-cntctfrm-settings.php:1193
+#: includes/class-cntctfrm-settings.php:1231
+#: includes/class-cntctfrm-settings.php:1233
+#: includes/class-cntctfrm-settings.php:1267
+#: includes/class-cntctfrm-settings.php:1269
+#: includes/class-cntctfrm-settings.php:1281
+#: includes/class-cntctfrm-settings.php:1283
 msgid "Use shortcode"
-msgstr "useu un codi curt"
+msgstr "Utilitza el codi curt"
 
-#: contact_form.php:1853 contact_form.php:1855
-#: includes/class-cntctfrm-settings.php:1186
-#: includes/class-cntctfrm-settings.php:1188
-#: includes/class-cntctfrm-settings.php:1226
-#: includes/class-cntctfrm-settings.php:1228
-#: includes/class-cntctfrm-settings.php:1260
-#: includes/class-cntctfrm-settings.php:1262
-#: includes/class-cntctfrm-settings.php:1274
-#: includes/class-cntctfrm-settings.php:1276
+#: contact_form.php:2040 contact_form.php:2042
+#: includes/class-cntctfrm-settings.php:1191
+#: includes/class-cntctfrm-settings.php:1193
+#: includes/class-cntctfrm-settings.php:1231
+#: includes/class-cntctfrm-settings.php:1233
+#: includes/class-cntctfrm-settings.php:1267
+#: includes/class-cntctfrm-settings.php:1269
+#: includes/class-cntctfrm-settings.php:1281
+#: includes/class-cntctfrm-settings.php:1283
 msgid "for this language"
-msgstr "Per aquesta llengua"
+msgstr "per a aquesta llengua"
 
-#: contact_form.php:2003
+#: contact_form.php:2187
 msgid "Close notice"
-msgstr ""
+msgstr "Tancar avís"
 
-#: contact_form.php:2008
+#: contact_form.php:2192
 msgid "allows to store your messages to the database."
-msgstr ""
+msgstr "permet emmagatzemar els missatges a la base de dades."
 
-#: contact_form.php:2009
+#: contact_form.php:2193
 msgid "Manage messages that have been sent from your website."
-msgstr ""
+msgstr "Gestioneu els missatges que s'han enviat des del vostre lloc web."
 
-#: contact_form.php:2012
+#: contact_form.php:2196
 msgid "Learn More"
-msgstr ""
+msgstr "Saber-ne més"
 
-#: contact_form.php:2072
-#, fuzzy
+#: contact_form.php:2256
 msgid "Contact form"
-msgstr "Contact from"
+msgstr "Formulari Contacte"
 
-#: contact_form.php:2085 contact_form.php:2095
-#, fuzzy
+#: contact_form.php:2269 contact_form.php:2279
 msgid "Language"
-msgstr "Afegeix lengua"
+msgstr "Idioma"
+
+#: includes/class-cntctfrm-settings.php:26
+#: includes/class-cntctfrm-settings.php:546
+msgid "Additional Settings"
+msgstr "Configuració addicional"
+
+#: includes/class-cntctfrm-settings.php:27
+#: includes/class-cntctfrm-settings.php:1306
+msgid "Appearance"
+msgstr "Aparença"
 
 #: includes/class-cntctfrm-settings.php:28
-#: includes/class-cntctfrm-settings.php:549
-msgid "Additional Settings"
-msgstr ""
+msgid "Misc"
+msgstr "Misc"
 
 #: includes/class-cntctfrm-settings.php:29
-#: includes/class-cntctfrm-settings.php:1296
-msgid "Appearance"
-msgstr ""
+msgid "Custom Code"
+msgstr "Codi personalitzat"
 
 #: includes/class-cntctfrm-settings.php:30
-msgid "Misc"
-msgstr ""
-
-#: includes/class-cntctfrm-settings.php:31
 msgid "License Key"
-msgstr ""
+msgstr "Clau de llicència"
 
-#: includes/class-cntctfrm-settings.php:32
-msgid "Custom Code"
-msgstr ""
-
-#: includes/class-cntctfrm-settings.php:99
+#: includes/class-cntctfrm-settings.php:96
 msgid "Please enable JavaScript in your browser."
-msgstr ""
+msgstr "Si us plau, activeu JavaScript al navegador."
 
-#: includes/class-cntctfrm-settings.php:101
+#: includes/class-cntctfrm-settings.php:98
 #, php-format
 msgid ""
 "Contact Form plugin requires PHP %s or higher. Please contact your hosting "
 "provider to upgrade PHP version."
 msgstr ""
+"El connector formulari de contacte requereix que php %s o superior. Poseu-"
+"vos en contacte amb el vostre proveïdor d'allotjament per actualitzar la "
+"versió PHP."
 
-#: includes/class-cntctfrm-settings.php:350
+#: includes/class-cntctfrm-settings.php:348
 msgid ""
 "Email 'FROM' field option was changed, which may cause email messages being "
 "moved to the spam folder or email delivery failures."
 msgstr ""
+"S'ha canviat l'opció de camp \"DE\" del correu electrònic, la qual cosa pot "
+"provocar que els missatges de correu electrònic es moguin a la carpeta de "
+"correu brossa o als errors de lliurament de correu electrònic."
 
-#: includes/class-cntctfrm-settings.php:360
+#: includes/class-cntctfrm-settings.php:358
 msgid ""
 "If the 'Redirect to page' option is selected then the URL field should be in "
 "the following format"
 msgstr ""
-"Si l'opció de 'redireccionament a la pàgina' està seleccionat llavors el "
-"camp URL ha d'estar en el següent format"
+"Si se selecciona l'opció \"Redirecció a la pàgina\", el camp URL ha d'estar "
+"en el format següent"
 
-#: includes/class-cntctfrm-settings.php:367
-#, fuzzy
+#: includes/class-cntctfrm-settings.php:365
 msgid "Such user does not exist."
-msgstr "Usuari inexistent. Els canvis no s'han desat."
+msgstr "Aquest usuari no existeix."
 
-#: includes/class-cntctfrm-settings.php:377
-#, fuzzy
+#: includes/class-cntctfrm-settings.php:375
 msgid ""
 "Please enter a valid email address in the 'Use this email address' field."
 msgstr ""
-"Si us plau introdueixi una Adreça de correu electrònic correcta. Els canvis "
-"no s'han desat."
+"Introduïu una adreça electrònica vàlida al camp \"Utilitza aquesta adreça "
+"electrònica\"."
 
-#: includes/class-cntctfrm-settings.php:385
-#, fuzzy
+#: includes/class-cntctfrm-settings.php:383
 msgid "Please enter a valid email address in the 'FROM' field."
-msgstr ""
-"Si us plau introdueixi una Adreça de correu electrònic correcta. Els canvis "
-"no s'han desat."
+msgstr "Introduïu una adreça electrònica vàlida al camp \"DE\"."
 
-#: includes/class-cntctfrm-settings.php:405
+#: includes/class-cntctfrm-settings.php:403
 msgid "Settings saved."
 msgstr "Configuració desada."
 
-#: includes/class-cntctfrm-settings.php:407
-#, fuzzy
+#: includes/class-cntctfrm-settings.php:405
 msgid "Settings are not saved."
-msgstr "Configuració desada."
+msgstr "La configuració no es desa."
 
-#: includes/class-cntctfrm-settings.php:432
+#: includes/class-cntctfrm-settings.php:430
 msgid ""
 "If you leave the fields empty, the messages will be sent to the email "
 "address specified during registration."
 msgstr ""
-"Si la informació d'aquest camp queda buida, s'usarà l'adreça especificada "
-"durant el registre."
+"Si deixeu els camps buits, els missatges s'enviaran a l'adreça de correu "
+"electrònic especificada durant el registre."
 
-#: includes/class-cntctfrm-settings.php:435
-#, fuzzy
+#: includes/class-cntctfrm-settings.php:433
 msgid "The user's email address"
-msgstr "Adreça de correu electrònic de l'usuari:"
+msgstr "Adreça electrònica de l'usuari"
 
-#: includes/class-cntctfrm-settings.php:440
-#, fuzzy
+#: includes/class-cntctfrm-settings.php:438
 msgid "Select a username"
-msgstr "Seleccioni un nom d'usuari"
+msgstr "Seleccioneu un nom d'usuari"
 
-#: includes/class-cntctfrm-settings.php:453
-#, fuzzy
+#: includes/class-cntctfrm-settings.php:451
 msgid ""
 "Select a username of the person who should get the messages from the contact "
 "form."
-msgstr "Introdueixi el nom de l'usuari que rebrà missatges des de contact form"
+msgstr ""
+"Seleccioneu un nom d'usuari de la persona que ha d'obtenir els missatges del "
+"formulari de contacte."
 
-#: includes/class-cntctfrm-settings.php:458
-#, fuzzy
+#: includes/class-cntctfrm-settings.php:456
 msgid "Use this email address"
-msgstr "Usi aquesta adreça de correu electrònic::"
+msgstr "Utilitzeu aquesta adreça electrònica"
 
-#: includes/class-cntctfrm-settings.php:463
-#, fuzzy
+#: includes/class-cntctfrm-settings.php:461
 msgid "Enter the email address for receiving messages"
-msgstr ""
-"Introdueixi una adreça de correu electrònic on vulgui re-enviar el missatge"
+msgstr "Introduïu l'adreça electrònica per rebre missatges"
 
-#: includes/class-cntctfrm-settings.php:476
+#: includes/class-cntctfrm-settings.php:474
 msgid "Add department selectbox to the contact form"
-msgstr ""
+msgstr "Afegeix el quadre de selecció del departament al formulari de contacte"
 
-#: includes/class-cntctfrm-settings.php:495
+#: includes/class-cntctfrm-settings.php:493
 msgid "Save emails to the database"
-msgstr ""
+msgstr "Desar correus electrònics a la base de dades"
 
-#: includes/class-cntctfrm-settings.php:507
-#: includes/class-cntctfrm-settings.php:521
-#: includes/class-cntctfrm-settings.php:528
+#: includes/class-cntctfrm-settings.php:504
+#: includes/class-cntctfrm-settings.php:518
+#: includes/class-cntctfrm-settings.php:525
 msgid "Using"
-msgstr ""
+msgstr "Utilitzant"
+
+#: includes/class-cntctfrm-settings.php:510
+#: includes/class-cntctfrm-settings.php:986
+#: includes/class-cntctfrm-settings.php:1027
+#: includes/class-cntctfrm-settings.php:1062
+msgid "Please activate the appropriate option on"
+msgstr "Activeu l'opció adequada a"
 
 #: includes/class-cntctfrm-settings.php:513
-#: includes/class-cntctfrm-settings.php:985
-#: includes/class-cntctfrm-settings.php:1026
-#: includes/class-cntctfrm-settings.php:1061
-msgid "Please activate the appropriate option on"
-msgstr ""
-
-#: includes/class-cntctfrm-settings.php:516
-#: includes/class-cntctfrm-settings.php:988
-#: includes/class-cntctfrm-settings.php:1029
-#: includes/class-cntctfrm-settings.php:1064
-#, fuzzy
+#: includes/class-cntctfrm-settings.php:989
+#: includes/class-cntctfrm-settings.php:1030
+#: includes/class-cntctfrm-settings.php:1065
 msgid "settings page"
-msgstr "Configuració extra"
+msgstr "pàgina de configuració"
 
-#: includes/class-cntctfrm-settings.php:522
-#: includes/class-cntctfrm-settings.php:995
-#: includes/class-cntctfrm-settings.php:1037
-#: includes/class-cntctfrm-settings.php:1071
-#, fuzzy
+#: includes/class-cntctfrm-settings.php:519
+#: includes/class-cntctfrm-settings.php:996
+#: includes/class-cntctfrm-settings.php:1038
+#: includes/class-cntctfrm-settings.php:1072
 msgid "Activate"
-msgstr "Captcha activat"
+msgstr "Activa"
 
-#: includes/class-cntctfrm-settings.php:529
-#: includes/class-cntctfrm-settings.php:1004
-#: includes/class-cntctfrm-settings.php:1043
-#: includes/class-cntctfrm-settings.php:1076
+#: includes/class-cntctfrm-settings.php:526
+#: includes/class-cntctfrm-settings.php:1005
+#: includes/class-cntctfrm-settings.php:1044
+#: includes/class-cntctfrm-settings.php:1077
 msgid "Download"
-msgstr "Descarregar"
+msgstr "Descàrrega"
 
-#: includes/class-cntctfrm-settings.php:554
+#: includes/class-cntctfrm-settings.php:551
 msgid "Sending method"
-msgstr ""
+msgstr "Mètode d'enviament"
 
-#: includes/class-cntctfrm-settings.php:559
+#: includes/class-cntctfrm-settings.php:556
 msgid "Wp-mail"
-msgstr "Wp-mail"
+msgstr "Wp-mail (correu wp)"
 
-#: includes/class-cntctfrm-settings.php:560
-#, fuzzy
+#: includes/class-cntctfrm-settings.php:557
 msgid "You can use the Wordpress wp_mail function for mailing"
-msgstr "Vostè pot utilitzar la funció wp_mail pel correu."
+msgstr "Podeu utilitzar la funció wordpress wp_mail per enviar"
 
-#: includes/class-cntctfrm-settings.php:565
+#: includes/class-cntctfrm-settings.php:562
 msgid "Mail"
-msgstr "Mail"
+msgstr "Correu"
 
-#: includes/class-cntctfrm-settings.php:566
-#, fuzzy
+#: includes/class-cntctfrm-settings.php:563
 msgid "You can use the PHP mail function for mailing"
-msgstr "Vostè pot utilitzar la funció wp_mail pel correu."
+msgstr "Podeu utilitzar la funció de correu PHP per enviar"
 
-#: includes/class-cntctfrm-settings.php:572
+#: includes/class-cntctfrm-settings.php:569
 msgid "'FROM' field"
-msgstr ""
+msgstr "Camp 'FROM'"
 
-#: includes/class-cntctfrm-settings.php:588
+#: includes/class-cntctfrm-settings.php:585
 msgid "User name"
-msgstr ""
+msgstr "Nom d'usuari"
 
-#: includes/class-cntctfrm-settings.php:590
-#, fuzzy
+#: includes/class-cntctfrm-settings.php:587
 msgid ""
 "The name of the user who fills the form will be used in the field 'From'."
 msgstr ""
-"L'adreça de correu electrònic de l'usuari que omple el formulari s'ha de "
-"posar al camp 'From'."
+"El nom de l'usuari que emplena el formulari s'utilitzarà en el camp \"De\"."
 
-#: includes/class-cntctfrm-settings.php:612
+#: includes/class-cntctfrm-settings.php:609
 msgid "User email"
-msgstr ""
+msgstr "Correu electrònic d'usuari"
 
-#: includes/class-cntctfrm-settings.php:614
+#: includes/class-cntctfrm-settings.php:611
 msgid ""
 "The email address of the user who fills the form will be used in the field "
 "'From'."
 msgstr ""
-"L'adreça de correu electrònic de l'usuari que omple el formulari s'ha de "
-"posar al camp 'From'."
+"L'adreça de correu electrònic de l'usuari que empleni el formulari "
+"s'utilitzarà en el camp \"De\"."
 
-#: includes/class-cntctfrm-settings.php:623
+#: includes/class-cntctfrm-settings.php:620
 msgid ""
 "If this option is changed, email messages may be moved to the spam folder or "
 "email delivery failures may occur."
 msgstr ""
+"Si es canvia aquesta opció, és possible que els missatges de correu "
+"electrònic es moguin a la carpeta de correu brossa o als errors de "
+"lliurament de correu electrònic."
 
-#: includes/class-cntctfrm-settings.php:632
-#, fuzzy
+#: includes/class-cntctfrm-settings.php:629
 msgid "Required symbol"
-msgstr "Camps requerits"
+msgstr "Símbol necessari"
 
-#: includes/class-cntctfrm-settings.php:642
+#: includes/class-cntctfrm-settings.php:639
 msgid "Fields"
-msgstr ""
+msgstr "Camps"
 
-#: includes/class-cntctfrm-settings.php:643
-#: includes/class-cntctfrm-settings.php:658
-#: includes/class-cntctfrm-settings.php:673
-#: includes/class-cntctfrm-settings.php:700
-#: includes/class-cntctfrm-settings.php:720
+#: includes/class-cntctfrm-settings.php:640
+#: includes/class-cntctfrm-settings.php:655
+#: includes/class-cntctfrm-settings.php:670
+#: includes/class-cntctfrm-settings.php:697
+#: includes/class-cntctfrm-settings.php:717
+#: includes/class-cntctfrm-settings.php:734
+#: includes/class-cntctfrm-settings.php:759
+#: includes/class-cntctfrm-settings.php:779
+#: includes/class-cntctfrm-settings.php:810
+#: includes/class-cntctfrm-settings.php:845
+#: includes/class-cntctfrm-settings.php:884
+msgid "Used"
+msgstr "Utilitzat"
+
+#: includes/class-cntctfrm-settings.php:641
+#: includes/class-cntctfrm-settings.php:659
+#: includes/class-cntctfrm-settings.php:674
+#: includes/class-cntctfrm-settings.php:701
+#: includes/class-cntctfrm-settings.php:721
 #: includes/class-cntctfrm-settings.php:738
 #: includes/class-cntctfrm-settings.php:763
-#: includes/class-cntctfrm-settings.php:780
-#: includes/class-cntctfrm-settings.php:811
-#: includes/class-cntctfrm-settings.php:859
-msgid "Used"
-msgstr ""
+#: includes/class-cntctfrm-settings.php:786
+#: includes/class-cntctfrm-settings.php:817
+#: includes/class-cntctfrm-settings.php:885
+msgid "Required"
+msgstr "Requerit"
+
+#: includes/class-cntctfrm-settings.php:643
+#: includes/class-cntctfrm-settings.php:679
+#: includes/class-cntctfrm-settings.php:742
+#: includes/class-cntctfrm-settings.php:791
+#: includes/class-cntctfrm-settings.php:822
+#: includes/class-cntctfrm-settings.php:886
+msgid "Visible"
+msgstr "Visible"
 
 #: includes/class-cntctfrm-settings.php:644
-#: includes/class-cntctfrm-settings.php:662
-#: includes/class-cntctfrm-settings.php:677
-#: includes/class-cntctfrm-settings.php:704
-#: includes/class-cntctfrm-settings.php:724
-#: includes/class-cntctfrm-settings.php:742
-#: includes/class-cntctfrm-settings.php:767
-#: includes/class-cntctfrm-settings.php:787
-#: includes/class-cntctfrm-settings.php:818
-#, fuzzy
-msgid "Required"
-msgstr "Camps requerits"
-
-#: includes/class-cntctfrm-settings.php:646
-#: includes/class-cntctfrm-settings.php:682
+#: includes/class-cntctfrm-settings.php:683
 #: includes/class-cntctfrm-settings.php:746
-#: includes/class-cntctfrm-settings.php:792
-#: includes/class-cntctfrm-settings.php:823
-msgid "Visible"
-msgstr ""
-
-#: includes/class-cntctfrm-settings.php:647
-#: includes/class-cntctfrm-settings.php:686
-#: includes/class-cntctfrm-settings.php:750
-#: includes/class-cntctfrm-settings.php:796
-#: includes/class-cntctfrm-settings.php:827
+#: includes/class-cntctfrm-settings.php:795
+#: includes/class-cntctfrm-settings.php:826
+#: includes/class-cntctfrm-settings.php:887
 msgid "Disabled for editing"
-msgstr ""
+msgstr "Inhabilitat per a l'edició"
 
-#: includes/class-cntctfrm-settings.php:648
-#: includes/class-cntctfrm-settings.php:710
-#: includes/class-cntctfrm-settings.php:800
-#: includes/class-cntctfrm-settings.php:831
+#: includes/class-cntctfrm-settings.php:645
+#: includes/class-cntctfrm-settings.php:707
+#: includes/class-cntctfrm-settings.php:799
+#: includes/class-cntctfrm-settings.php:830
 msgid "Field's default value"
-msgstr ""
+msgstr "Valor per defecte del camp"
 
-#: includes/class-cntctfrm-settings.php:655
+#: includes/class-cntctfrm-settings.php:652
 msgid "Department selectbox"
-msgstr ""
+msgstr "Quadre de selecció departament"
 
-#: includes/class-cntctfrm-settings.php:690
+#: includes/class-cntctfrm-settings.php:687
 msgid "Use User's name as a default value if the user is logged in."
 msgstr ""
+"Utilitzeu el nom de l'usuari com a valor per defecte si l'usuari ha iniciat "
+"la sessió."
 
-#: includes/class-cntctfrm-settings.php:691
-#: includes/class-cntctfrm-settings.php:755
+#: includes/class-cntctfrm-settings.php:688
+#: includes/class-cntctfrm-settings.php:751
 msgid ""
 "'Visible' and 'Disabled for editing' options will be applied only to logged-"
 "in users."
 msgstr ""
+"Les opcions \"Visible\" i \"Desactivades per editar\" només s'aplicaran als "
+"usuaris connectats."
 
-#: includes/class-cntctfrm-settings.php:697
+#: includes/class-cntctfrm-settings.php:694
 msgid "Location selectbox"
-msgstr ""
+msgstr "Quadre de selecció Ubicació"
 
-#: includes/class-cntctfrm-settings.php:754
+#: includes/class-cntctfrm-settings.php:750
 msgid "Use User's email as a default value if the user is logged in."
 msgstr ""
+"Utilitzeu el correu electrònic de l'usuari com a valor per defecte si "
+"l'usuari ha iniciat la sessió."
 
-#: includes/class-cntctfrm-settings.php:852
+#: includes/class-cntctfrm-settings.php:770
+#, php-format
+msgid ""
+"Specify a mask which will be used for the phone validation, where * is a "
+"number. Use only the following symbols: %s"
+msgstr ""
+
+#: includes/class-cntctfrm-settings.php:838
 msgid "Attachment block"
-msgstr "Adjunt blocat"
+msgstr "Bloc de fitxers adjunts"
 
-#: includes/class-cntctfrm-settings.php:854
+#: includes/class-cntctfrm-settings.php:840
 msgid "Users can attach the following file formats"
-msgstr "Els usuaris poden adjuntar els següents formats d'arxiu"
+msgstr "Els usuaris poden adjuntar els formats de fitxer següents"
 
-#: includes/class-cntctfrm-settings.php:870
+#: includes/class-cntctfrm-settings.php:856
 msgid "Multi-attachment"
-msgstr ""
+msgstr "Diversos fitxers adjunts"
 
-#: includes/class-cntctfrm-settings.php:872
+#: includes/class-cntctfrm-settings.php:858
 msgid "Enable to multiple file selection"
+msgstr "Habilita a la selecció de diversos fitxers"
+
+#: includes/class-cntctfrm-settings.php:882
+msgid "Title"
+msgstr "Títol"
+
+#: includes/class-cntctfrm-settings.php:883
+msgid "Field Type"
+msgstr "Tipus de Camp"
+
+#: includes/class-cntctfrm-settings.php:888
+msgid "Field's default/available value"
+msgstr "Valor per defecte /disponible del camp"
+
+#: includes/class-cntctfrm-settings.php:914
+msgid "Create Field"
+msgstr "Crea un camp"
+
+#: includes/class-cntctfrm-settings.php:919
+msgid "Google Analytics Measurement ID"
 msgstr ""
 
-#: includes/class-cntctfrm-settings.php:932
+#: includes/class-cntctfrm-settings.php:924
+#, php-format
+msgid ""
+"Enter your %sMeasurement ID%s to track contact form submissions in Google "
+"Analytics."
+msgstr ""
+
+#: includes/class-cntctfrm-settings.php:925
+msgid "Google Analytics version 4 is required."
+msgstr ""
+
+#: includes/class-cntctfrm-settings.php:933
 msgid "If you upgrade to Pro version all your settings will be saved."
 msgstr ""
+"Si actualitzeu a la versió Pro, es desaran totes les vostres configuracions."
 
-#: includes/class-cntctfrm-settings.php:945
+#: includes/class-cntctfrm-settings.php:946
 msgid "Add to the form"
-msgstr ""
+msgstr "Afegir al formulari"
 
-#: includes/class-cntctfrm-settings.php:950
-#, fuzzy
+#: includes/class-cntctfrm-settings.php:951
 msgid "Tips below the Attachment"
-msgstr "Consells del blocatge de l'adjunt"
+msgstr "Consells a sota del Fitxer adjunt"
 
-#: includes/class-cntctfrm-settings.php:957
-#, fuzzy
+#: includes/class-cntctfrm-settings.php:958
 msgid "'Send me a copy' block"
-msgstr "Envia'm una còpia"
+msgstr "Bloc 'Envia'm una còpia'"
 
-#: includes/class-cntctfrm-settings.php:964
+#: includes/class-cntctfrm-settings.php:965
 msgid "GDPR Compliance"
-msgstr ""
+msgstr "Compliment de l'RGPD"
 
-#: includes/class-cntctfrm-settings.php:969
+#: includes/class-cntctfrm-settings.php:970
 msgid "Link to Privacy Policy Page"
-msgstr ""
+msgstr "Pàgina d'enllaç a la política de privadesa"
 
-#: includes/class-cntctfrm-settings.php:997
-#, fuzzy
+#: includes/class-cntctfrm-settings.php:998
 msgid "Activate for network"
-msgstr "Plugin activat"
+msgstr "Activa per a la xarxa"
 
-#: includes/class-cntctfrm-settings.php:1087
+#: includes/class-cntctfrm-settings.php:1088
 msgid "Agreement checkbox"
-msgstr ""
+msgstr "Casella de selecció Acord"
 
-#: includes/class-cntctfrm-settings.php:1087
+#: includes/class-cntctfrm-settings.php:1088
 msgid "Required checkbox for submitting the form"
-msgstr ""
+msgstr "Casella de selecció necessària per enviar el formulari"
 
-#: includes/class-cntctfrm-settings.php:1088
+#: includes/class-cntctfrm-settings.php:1089
 msgid "Optional checkbox"
-msgstr ""
+msgstr "Casella de selecció opcional"
 
-#: includes/class-cntctfrm-settings.php:1088
+#: includes/class-cntctfrm-settings.php:1089
 msgid "Optional checkbox, the results of which will be displayed in email"
 msgstr ""
+"Casella de selecció opcional, els resultats de la qual es mostraran al "
+"correu electrònic"
 
-#: includes/class-cntctfrm-settings.php:1103
+#: includes/class-cntctfrm-settings.php:1104
 msgid "Delete an attachment file from the server after the email is sent"
 msgstr ""
+"Suprimir un fitxer adjunt del servidor després d'enviar el correu electrònic"
 
-#: includes/class-cntctfrm-settings.php:1109
+#: includes/class-cntctfrm-settings.php:1110
 msgid "Email in HTML format sending"
-msgstr ""
+msgstr "Correu electrònic en format HTML d'enviament"
 
-#: includes/class-cntctfrm-settings.php:1113
+#: includes/class-cntctfrm-settings.php:1114
 msgid "Display additional info in the email"
-msgstr "Mostra informació addicional al correu electrònic,"
-
-#: includes/class-cntctfrm-settings.php:1119
-#, fuzzy
-msgid "Sent from (IP address)"
-msgstr "Enviat des de  (adreça IP)"
-
-#: includes/class-cntctfrm-settings.php:1119
-msgid "Example: Sent from (IP address): 127.0.0.1"
-msgstr ""
-
-#: includes/class-cntctfrm-settings.php:1120
-msgid "Example: Date/Time: August 19, 2013 8:50 pm"
-msgstr ""
+msgstr "Mostra informació addicional al correu electrònic"
 
 #: includes/class-cntctfrm-settings.php:1121
+msgid "Sent from (IP address)"
+msgstr "Enviat des de (adreça IP)"
+
+#: includes/class-cntctfrm-settings.php:1121
+msgid "Example: Sent from (IP address): 127.0.0.1"
+msgstr "Exemple: enviat des de (adreça IP): 127.0.0.1"
+
+#: includes/class-cntctfrm-settings.php:1122
+msgid "Example: Date/Time: August 19, 2013 8:50 pm"
+msgstr "Exemple: data / hora: agost 19, 2013 8:50 pm"
+
+#: includes/class-cntctfrm-settings.php:1123
 msgid ""
 "Example: Sent from (referer):   https://bestwebsoft.com/contacts/contact-us/"
 msgstr ""
+"Exemple: enviat des del (referèndum): https://bestwebsoft.com/contacts/"
+"contact-us/"
 
-#: includes/class-cntctfrm-settings.php:1122
+#: includes/class-cntctfrm-settings.php:1124
 msgid ""
 "Example: Using (user agent): Mozilla/5.0 (Windows NT 6.2; WOW64) "
 "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36"
 msgstr ""
+"Exemple: ús (agent d'usuari): Mozilla/5.0 (Windows NT 6.2; WOW64) "
+"AppleWebKit/537.36 (KHTML, com Gecko) Chrome/28.0.1500.95 Safari/537.36"
 
-#: includes/class-cntctfrm-settings.php:1127
-msgid "Language settings for the field names in the form"
-msgstr "Configuració de la llengua als noms dels camps del formulari"
-
-#: includes/class-cntctfrm-settings.php:1136
-msgid "Add a language"
-msgstr "Afegeix lengua"
+#: includes/class-cntctfrm-settings.php:1130
+#, fuzzy
+#| msgid "Manage License Settings"
+msgid "Language Settings"
+msgstr "Administra la configuració de la llicència"
 
 #: includes/class-cntctfrm-settings.php:1140
+msgid "Add a language"
+msgstr "Afegir una llengua"
+
+#: includes/class-cntctfrm-settings.php:1144
 msgid "Change the names of the contact form fields and error messages"
 msgstr ""
-"Modifica els noms dels camps i els missatges d'error del formulari de "
-"contacte"
+"Canviar els noms dels camps del formulari de contacte i dels missatges "
+"d'error"
 
-#: includes/class-cntctfrm-settings.php:1145
-#: includes/class-cntctfrm-settings.php:1245
-#: includes/class-cntctfrm-settings.php:1350
+#: includes/class-cntctfrm-settings.php:1150
+#: includes/class-cntctfrm-settings.php:1252
+#: includes/class-cntctfrm-settings.php:1360
 msgid "Default"
 msgstr "Per defecte"
 
-#: includes/class-cntctfrm-settings.php:1158
-#: includes/class-cntctfrm-settings.php:1198
+#: includes/class-cntctfrm-settings.php:1163
+#: includes/class-cntctfrm-settings.php:1203
 msgid "click to expand/hide the list"
-msgstr ""
-
-#: includes/class-cntctfrm-settings.php:1167
-#: includes/class-cntctfrm-settings.php:1207
-#, fuzzy
-msgid "Tips below the Attachment block"
-msgstr "Consells del blocatge de l'adjunt"
+msgstr "feu clic per expandir/amagar la llista"
 
 #: includes/class-cntctfrm-settings.php:1172
 #: includes/class-cntctfrm-settings.php:1212
-msgid "Error message for the Name field"
-msgstr "Missatge d'error per al camp 'Nom'"
-
-#: includes/class-cntctfrm-settings.php:1173
-#: includes/class-cntctfrm-settings.php:1213
-msgid "Error message for the Address field"
-msgstr "Missatge d'error per al camp 'Adreça'"
-
-#: includes/class-cntctfrm-settings.php:1174
-#: includes/class-cntctfrm-settings.php:1214
-msgid "Error message for the Email field"
-msgstr "Missatge d'error per al camp 'Adreça de correu electrònic'"
-
-#: includes/class-cntctfrm-settings.php:1175
-#: includes/class-cntctfrm-settings.php:1215
-msgid "Error message for the Phone field"
-msgstr "Missatge d'error per al camp 'Telèfon\""
-
-#: includes/class-cntctfrm-settings.php:1176
-#: includes/class-cntctfrm-settings.php:1216
-msgid "Error message for the Subject field"
-msgstr "Missatge d'error per al camp 'Assumpte'"
+msgid "Tips below the Attachment block"
+msgstr "Consells a sota del bloc Adjunt"
 
 #: includes/class-cntctfrm-settings.php:1177
 #: includes/class-cntctfrm-settings.php:1217
-msgid "Error message for the Message field"
-msgstr "Missatge d'error per al camp 'Missatge'"
+msgid "Error message for the Name field"
+msgstr "Missatge d'error per al camp Nom"
 
 #: includes/class-cntctfrm-settings.php:1178
 #: includes/class-cntctfrm-settings.php:1218
-msgid "Error message about the file type for the Attachment field"
-msgstr "Missatge d'error sobre el tipus de per al camp 'Adjunt'"
+msgid "Error message for the Address field"
+msgstr "Missatge d'error per al camp Adreça"
 
 #: includes/class-cntctfrm-settings.php:1179
 #: includes/class-cntctfrm-settings.php:1219
-msgid ""
-"Error message while uploading a file for the Attachment field to the server"
-msgstr "Missatge d'error al carregar al servidor un fitxer per al camp Adjunt"
+msgid "Error message for the Email field"
+msgstr "Missatge d'error per al camp Correu electrònic"
 
 #: includes/class-cntctfrm-settings.php:1180
 #: includes/class-cntctfrm-settings.php:1220
-msgid "Error message while moving the file for the Attachment field"
-msgstr "Missatge d'error al mourerun fitxer per al camp Adjunt"
+msgid "Error message for the Phone field"
+msgstr "Missatge d'error per al camp Telèfon"
 
 #: includes/class-cntctfrm-settings.php:1181
 #: includes/class-cntctfrm-settings.php:1221
-msgid "Error message when file size limit for the Attachment field is exceeded"
-msgstr ""
-"Missatge d'error al superar el límit de mida de fitxer per al camp Adjunt"
+msgid "Error message for the Subject field"
+msgstr "Missatge d'error per al camp Tema"
 
 #: includes/class-cntctfrm-settings.php:1182
 #: includes/class-cntctfrm-settings.php:1222
-msgid "Error message for the Captcha field"
-msgstr "Missatge d'error al camp Captcha"
+msgid "Error message for the Message field"
+msgstr "Missatge d'error per al camp Missatge"
 
 #: includes/class-cntctfrm-settings.php:1183
 #: includes/class-cntctfrm-settings.php:1223
-msgid "Error message for the whole form"
-msgstr "Missatge d'error a tot el formulari"
+msgid "Error message about the file type for the Attachment field"
+msgstr "Missatge d'error sobre el tipus de fitxer per al camp Adjunt"
 
-#: includes/class-cntctfrm-settings.php:1236
-#, fuzzy
-msgid "Use the changed names of the contact form fields in the email"
+#: includes/class-cntctfrm-settings.php:1184
+#: includes/class-cntctfrm-settings.php:1224
+msgid ""
+"Error message while uploading a file for the Attachment field to the server"
+msgstr "Missatge d'error en carregar un fitxer per al camp Adjunt al servidor"
+
+#: includes/class-cntctfrm-settings.php:1185
+#: includes/class-cntctfrm-settings.php:1225
+msgid "Error message while moving the file for the Attachment field"
+msgstr "Missatge d'error en moure el fitxer per al camp Adjunt"
+
+#: includes/class-cntctfrm-settings.php:1186
+#: includes/class-cntctfrm-settings.php:1226
+msgid "Error message when file size limit for the Attachment field is exceeded"
 msgstr ""
-"Modifica els noms dels camps i els missatges d'error del formulari de "
-"contacte"
+"Missatge d'error quan se supera el límit de mida del fitxer per al camp "
+"Adjunt"
+
+#: includes/class-cntctfrm-settings.php:1187
+#: includes/class-cntctfrm-settings.php:1227
+msgid "Error message for the Captcha field"
+msgstr "Missatge d'error per al camp Captcha"
+
+#: includes/class-cntctfrm-settings.php:1188
+#: includes/class-cntctfrm-settings.php:1228
+msgid "Error message for the whole form"
+msgstr "Missatge d'error per a tot el formulari"
 
 #: includes/class-cntctfrm-settings.php:1242
+msgid "Use the changed names of the contact form fields in the email"
+msgstr ""
+"Utilitzar els noms canviats dels camps del formulari de contacte al correu "
+"electrònic"
+
+#: includes/class-cntctfrm-settings.php:1248
 msgid "Action after email is sent"
-msgstr "Accions després d'enviar un correu electrònic."
+msgstr "Acció després d'enviar un correu electrònic"
 
-#: includes/class-cntctfrm-settings.php:1244
+#: includes/class-cntctfrm-settings.php:1250
 msgid "Display text"
-msgstr "Mostra el text"
+msgstr "Visualitza el text"
 
-#: includes/class-cntctfrm-settings.php:1258
-#: includes/class-cntctfrm-settings.php:1272
+#: includes/class-cntctfrm-settings.php:1265
+#: includes/class-cntctfrm-settings.php:1279
 msgid "Text"
 msgstr "Text"
 
-#: includes/class-cntctfrm-settings.php:1283
+#: includes/class-cntctfrm-settings.php:1291
 msgid "Redirect to the page"
 msgstr "Redirigir a la pàgina"
 
-#: includes/class-cntctfrm-settings.php:1284
+#: includes/class-cntctfrm-settings.php:1293
 msgid "Url"
-msgstr "Url"
+msgstr "URL"
 
-#: includes/class-cntctfrm-settings.php:1304
+#: includes/class-cntctfrm-settings.php:1314
 #, php-format
 msgid ""
 "Please enable JavaScript to change '%s', '%s', '%s', '%s' options and for "
 "fields sorting."
 msgstr ""
+"Activeu JavaScript per canviar les opcions '%s', '%s', '%s', '%s' i per a la "
+"classificació de camps."
 
-#: includes/class-cntctfrm-settings.php:1305
-#: includes/class-cntctfrm-settings.php:1322
+#: includes/class-cntctfrm-settings.php:1315
+#: includes/class-cntctfrm-settings.php:1332
 msgid "Form layout"
-msgstr ""
+msgstr "Disposició del formulari"
 
-#: includes/class-cntctfrm-settings.php:1306
-#: includes/class-cntctfrm-settings.php:1389
-#, fuzzy
+#: includes/class-cntctfrm-settings.php:1316
+#: includes/class-cntctfrm-settings.php:1399
 msgid "Labels position"
-msgstr "Enviar"
+msgstr "Posició de les etiquetes"
 
-#: includes/class-cntctfrm-settings.php:1307
-#: includes/class-cntctfrm-settings.php:1407
+#: includes/class-cntctfrm-settings.php:1317
+#: includes/class-cntctfrm-settings.php:1417
 msgid "Labels align"
-msgstr ""
+msgstr "Alinea les etiquetes"
 
-#: includes/class-cntctfrm-settings.php:1308
-#: includes/class-cntctfrm-settings.php:1334
-#, fuzzy
+#: includes/class-cntctfrm-settings.php:1318
+#: includes/class-cntctfrm-settings.php:1344
 msgid "Submit position"
-msgstr "Enviar"
+msgstr "Envia la posició"
 
-#: includes/class-cntctfrm-settings.php:1309
-#: includes/class-cntctfrm-settings.php:1438
+#: includes/class-cntctfrm-settings.php:1319
+#: includes/class-cntctfrm-settings.php:1448
 msgid "Add tooltips"
-msgstr "Afegir consells sobre les eines"
+msgstr "Afegeix consells de funció"
 
-#: includes/class-cntctfrm-settings.php:1310
-#: includes/class-cntctfrm-settings.php:1479
+#: includes/class-cntctfrm-settings.php:1320
+#: includes/class-cntctfrm-settings.php:1489
 msgid "Style options"
 msgstr "Opcions d'estil"
 
-#: includes/class-cntctfrm-settings.php:1326
+#: includes/class-cntctfrm-settings.php:1336
 msgid "One column"
-msgstr ""
+msgstr "Una columna"
 
-#: includes/class-cntctfrm-settings.php:1329
+#: includes/class-cntctfrm-settings.php:1339
 msgid "Two columns"
-msgstr ""
+msgstr "Dues columnes"
 
-#: includes/class-cntctfrm-settings.php:1338
-#: includes/class-cntctfrm-settings.php:1378
-#: includes/class-cntctfrm-settings.php:1396
-#: includes/class-cntctfrm-settings.php:1411
+#: includes/class-cntctfrm-settings.php:1348
+#: includes/class-cntctfrm-settings.php:1388
+#: includes/class-cntctfrm-settings.php:1406
+#: includes/class-cntctfrm-settings.php:1421
 msgid "Left"
-msgstr ""
+msgstr "Esquerra"
 
-#: includes/class-cntctfrm-settings.php:1341
-#: includes/class-cntctfrm-settings.php:1384
-#: includes/class-cntctfrm-settings.php:1399
-#: includes/class-cntctfrm-settings.php:1417
-msgid "Right"
-msgstr ""
-
-#: includes/class-cntctfrm-settings.php:1346
-msgid "Width"
-msgstr ""
-
-#: includes/class-cntctfrm-settings.php:1354
-msgid "Custom"
-msgstr ""
-
-#: includes/class-cntctfrm-settings.php:1361
-msgid "px"
-msgstr ""
-
-#: includes/class-cntctfrm-settings.php:1374
-msgid "Form align"
-msgstr ""
-
-#: includes/class-cntctfrm-settings.php:1381
-#: includes/class-cntctfrm-settings.php:1414
-msgid "Center"
-msgstr ""
-
-#: includes/class-cntctfrm-settings.php:1393
-msgid "Top"
-msgstr ""
-
-#: includes/class-cntctfrm-settings.php:1402
-msgid "Bottom"
-msgstr ""
-
-#: includes/class-cntctfrm-settings.php:1422
-msgid "Errors output"
-msgstr "Errors de sortida"
-
-#: includes/class-cntctfrm-settings.php:1425
-msgid "Display error messages"
-msgstr "Mostra els missatges d'error"
-
-#: includes/class-cntctfrm-settings.php:1426
-msgid "Color of the input field errors."
-msgstr "Color dels errors al camp d'entrada"
-
+#: includes/class-cntctfrm-settings.php:1351
+#: includes/class-cntctfrm-settings.php:1394
+#: includes/class-cntctfrm-settings.php:1409
 #: includes/class-cntctfrm-settings.php:1427
+msgid "Right"
+msgstr "Dreta"
+
+#: includes/class-cntctfrm-settings.php:1356
+msgid "Width"
+msgstr "Amplada"
+
+#: includes/class-cntctfrm-settings.php:1364
+msgid "Custom"
+msgstr "Personalitzat"
+
+#: includes/class-cntctfrm-settings.php:1371
+msgid "px"
+msgstr "px"
+
+#: includes/class-cntctfrm-settings.php:1384
+msgid "Form align"
+msgstr "Alineació del formulari"
+
+#: includes/class-cntctfrm-settings.php:1391
+#: includes/class-cntctfrm-settings.php:1424
+msgid "Center"
+msgstr "Centre"
+
+#: includes/class-cntctfrm-settings.php:1403
+msgid "Top"
+msgstr "A dalt"
+
+#: includes/class-cntctfrm-settings.php:1412
+msgid "Bottom"
+msgstr "Inferior"
+
+#: includes/class-cntctfrm-settings.php:1432
+msgid "Errors output"
+msgstr "Sortida d'errors"
+
+#: includes/class-cntctfrm-settings.php:1435
+msgid "Display error messages"
+msgstr "Visualitza els missatges d'error"
+
+#: includes/class-cntctfrm-settings.php:1436
+msgid "Color of the input field errors."
+msgstr "Color dels errors del camp d'entrada."
+
+#: includes/class-cntctfrm-settings.php:1437
 msgid "Display error messages & color of the input field errors"
 msgstr "Mostra els missatges d'error i el color dels errors del camp d'entrada"
 
-#: includes/class-cntctfrm-settings.php:1432
+#: includes/class-cntctfrm-settings.php:1442
 msgid "Add placeholder to the input blocks"
-msgstr "Afegeix marcador de posició als blocs d'entrada"
+msgstr "Afegeix un espai reservat als blocs d'entrada"
 
-#: includes/class-cntctfrm-settings.php:1452
+#: includes/class-cntctfrm-settings.php:1462
 msgid "Email address"
-msgstr "Adreça de correu electrònic:"
+msgstr "Adreça de correu electrònic"
 
-#: includes/class-cntctfrm-settings.php:1483
+#: includes/class-cntctfrm-settings.php:1493
 msgid "Text color"
 msgstr "Color del text"
 
-#: includes/class-cntctfrm-settings.php:1491
+#: includes/class-cntctfrm-settings.php:1498
+#: includes/class-cntctfrm-settings.php:1507
+#: includes/class-cntctfrm-settings.php:1520
+#: includes/class-cntctfrm-settings.php:1528
+#: includes/class-cntctfrm-settings.php:1536
+#: includes/class-cntctfrm-settings.php:1544
+#: includes/class-cntctfrm-settings.php:1557
+#: includes/class-cntctfrm-settings.php:1565
+#: includes/class-cntctfrm-settings.php:1577
+#: includes/class-cntctfrm-settings.php:1594
+#: includes/class-cntctfrm-settings.php:1602
+#: includes/class-cntctfrm-settings.php:1610
+msgid "Select Color"
+msgstr "Selecciona un color"
+
+#: includes/class-cntctfrm-settings.php:1501
 msgid "Label text color"
-msgstr "Color del text de l'etiqeta"
+msgstr "Color del text de l'etiqueta"
 
-#: includes/class-cntctfrm-settings.php:1500
+#: includes/class-cntctfrm-settings.php:1510
 msgid "Placeholder color"
-msgstr "Color del marcador de posició"
+msgstr "Color del contenidor"
 
-#: includes/class-cntctfrm-settings.php:1505
+#: includes/class-cntctfrm-settings.php:1515
 msgid "Errors color"
 msgstr "Color dels errors"
 
-#: includes/class-cntctfrm-settings.php:1513
+#: includes/class-cntctfrm-settings.php:1523
 msgid "Error text color"
-msgstr "Color del text d'error"
+msgstr "Color del text de l'error"
 
-#: includes/class-cntctfrm-settings.php:1521
+#: includes/class-cntctfrm-settings.php:1531
 msgid "Background color of the input field errors"
 msgstr "Color de fons dels errors del camp d'entrada"
 
-#: includes/class-cntctfrm-settings.php:1529
+#: includes/class-cntctfrm-settings.php:1539
 msgid "Border color of the input field errors"
 msgstr "Color de la vora dels errors del camp d'entrada"
 
-#: includes/class-cntctfrm-settings.php:1537
+#: includes/class-cntctfrm-settings.php:1547
 msgid "Placeholder color of the input field errors"
-msgstr "Color del marcador de posició dels errors del camp d'entrada"
+msgstr "Color del contenidor dels errors del camp d'entrada"
 
-#: includes/class-cntctfrm-settings.php:1542
+#: includes/class-cntctfrm-settings.php:1552
 msgid "Input fields"
-msgstr "Visualitza l'adjunt"
+msgstr "Camps d'entrada"
 
-#: includes/class-cntctfrm-settings.php:1550
+#: includes/class-cntctfrm-settings.php:1560
 msgid "Input fields background color"
 msgstr "Color de fons dels camps d'entrada"
 
-#: includes/class-cntctfrm-settings.php:1558
+#: includes/class-cntctfrm-settings.php:1568
 msgid "Text fields color"
 msgstr "Color dels camps de text"
 
-#: includes/class-cntctfrm-settings.php:1562
+#: includes/class-cntctfrm-settings.php:1572
 msgid "Border width in px, numbers only"
-msgstr "Ample de vora en px, sols nombres"
+msgstr "Amplada de la vora en px, només números"
 
-#: includes/class-cntctfrm-settings.php:1570
-#: includes/class-cntctfrm-settings.php:1603
+#: includes/class-cntctfrm-settings.php:1580
+#: includes/class-cntctfrm-settings.php:1613
 msgid "Border color"
 msgstr "Color de la vora"
 
-#: includes/class-cntctfrm-settings.php:1575
+#: includes/class-cntctfrm-settings.php:1585
 msgid "Submit button"
-msgstr "Enviar"
+msgstr "Botó d’Enviar"
 
-# #: contact_form.php:928
-#: includes/class-cntctfrm-settings.php:1579
+#: includes/class-cntctfrm-settings.php:1589
 msgid "Width in px, numbers only"
-msgstr "Ample en px, sols nombres"
+msgstr "Amplada en px, només números"
 
-#: includes/class-cntctfrm-settings.php:1587
+#: includes/class-cntctfrm-settings.php:1597
 msgid "Button color"
 msgstr "Color del botó"
 
-#: includes/class-cntctfrm-settings.php:1595
+#: includes/class-cntctfrm-settings.php:1605
 msgid "Button text color"
 msgstr "Color del text del botó"
 
-#: includes/class-cntctfrm-settings.php:1622
-#, fuzzy
+#: includes/class-cntctfrm-settings.php:1632
 msgid "Contact Form | Preview"
-msgstr "Contact Form Pro | Vista prèvia"
+msgstr "Formulari de contacte | Presentar"
 
-#: includes/class-cntctfrm-settings.php:1623
+#: includes/class-cntctfrm-settings.php:1633
 msgid "Drag the necessary field to sort fields."
-msgstr ""
+msgstr "Arrossegueu el camp necessari per ordenar els camps."
 
-#: includes/class-cntctfrm-settings.php:1870
+#: includes/class-cntctfrm-settings.php:1880
 msgid "Contact Form Shortcode"
-msgstr ""
+msgstr "Formulari de contacte Shortcode"
 
-#: includes/class-cntctfrm-settings.php:1873
+#: includes/class-cntctfrm-settings.php:1883
 msgid "Add Contact Form  to your page or post using the following shortcode:"
 msgstr ""
+"Afegeix formulari de contacte a la teva pàgina o publicació mitjançant el "
+"codi curt següent:"
 
-#, fuzzy
+#. Plugin Name of the plugin/theme
+msgid "Contact Form by BestWebSoft"
+msgstr "Formulari de contacte de BestWebSoft"
+
+#. Plugin URI of the plugin/theme
+msgid "https://bestwebsoft.com/products/wordpress/plugins/contact-form/"
+msgstr "https://bestwebsoft.com/products/wordpress/plugins/contact-form/"
+
+#. Description of the plugin/theme
+msgid "Simple contact form plugin any WordPress website must have."
+msgstr ""
+"Plugin de formulari de contacte simple qualsevol lloc web de WordPress ha de "
+"tenir."
+
+#. Author of the plugin/theme
+msgid "BestWebSoft"
+msgstr "4 0800 000"
+
+#. Author URI of the plugin/theme
+msgid "https://bestwebsoft.com/"
+msgstr "https://bestwebsoft.com/"
+
+#~ msgid "Language settings for the field names in the form"
+#~ msgstr "Configuració d'idioma per als noms de camp del formulari"
+
+#~ msgid "requires"
+#~ msgstr "requereix"
+
 #~ msgid ""
-#~ "If you would like to add the Contact Form to your website, just copy and "
-#~ "paste this shortcode to your post or page or widget"
+#~ "or higher, that is why it has been deactivated! Please upgrade WordPress "
+#~ "and try again."
 #~ msgstr ""
-#~ "Si vol afegir Contact Form en la seva web, copiï i enganxi aquest codi en "
-#~ "el seu missatge, pàgina o widget:"
+#~ "o superior, per això s'ha desactivat! Actualitzeu WordPress i torneu-ho a "
+#~ "provar."
+
+#~ msgid "Back to the WordPress"
+#~ msgstr "Tornar al WordPress"
+
+#~ msgid "Plugins page"
+#~ msgstr "Pàgina de connectors"
+
+#~ msgid "Like the plugin?"
+#~ msgstr "Com el connector?"
+
+#~ msgid "%s reviews"
+#~ msgstr "%s ressenyes"
+
+#~ msgid "Rate it"
+#~ msgstr "Valora-ho"
+
+#~ msgid "Need help?"
+#~ msgstr "Necessites ajuda?"
+
+#~ msgid "Visit Help Center"
+#~ msgstr "Visita el Centre d'Ajuda"
+
+#~ msgid "Want to support the plugin?"
+#~ msgstr "Voleu donar suport al connector?"
+
+#~ msgid "Donate"
+#~ msgstr "Dóna"
+
+#~ msgid "WARNING: Illegal use notification"
+#~ msgstr "ADVERTÈNCIA: Notificació d'ús il·legal"
+
+#~ msgid ""
+#~ "You can use one license of the Pro plugin for one domain only. Please "
+#~ "check and edit your license or domain if necessary using your personal "
+#~ "Client Area. We strongly recommend you to solve the problem within 24 "
+#~ "hours, otherwise the Pro plugin will be deactivated."
+#~ msgstr ""
+#~ "Podeu utilitzar una llicència del connector Pro només per a un domini. "
+#~ "Comproveu i editeu la vostra llicència o domini si és necessari "
+#~ "utilitzant l'àrea personal del client. Us recomanem que solucioneu el "
+#~ "problema en un termini de 24 hores, en cas contrari el connector Pro es "
+#~ "desactivarà."
+
+#~ msgid ""
+#~ "Notice: Your Pro Trial license has expired. To continue using the plugin, "
+#~ "you should buy a Pro license"
+#~ msgstr ""
+#~ "Avís: la vostra llicència de prova pro ha caducat. Per continuar "
+#~ "utilitzant el connector, hauríeu de comprar una llicència Pro"
+
+#~ msgid ""
+#~ "Your license has expired. To continue getting top-priority support and "
+#~ "plugin updates, you should extend it."
+#~ msgstr ""
+#~ "La llicència ha caducat. Per continuar obtenint suport de màxima "
+#~ "prioritat i actualitzacions de connectors, l'hauríeu d'ampliar."
+
+#~ msgid "Notice: You are using the Pro Trial license of %s plugin."
+#~ msgstr ""
+#~ "Avís: Esteu utilitzant la llicència pro trial del connector %s prova."
+
+#~ msgid "Notice: You are using the Pro Trial license of plugin."
+#~ msgstr "Avís: Esteu utilitzant la llicència de prova pro del connector."
+
+#~ msgid "The Pro Trial license will expire on"
+#~ msgstr "La llicència de prova Pro caducarà el"
+
+#~ msgid "It’s time to upgrade your"
+#~ msgstr "És hora d'actualitzar el seu"
+
+#~ msgid "to"
+#~ msgstr "a"
+
+#~ msgid "version!"
+#~ msgstr "versió!"
+
+#~ msgid "Extend standard plugin functionality with new great options."
+#~ msgstr "Estengui funcionalitat de plugin estàndard amb grans opcions noves."
+
+#~ msgid ""
+#~ "Your license key for %s expires on %s and you won't be granted TOP-"
+#~ "PRIORITY SUPPORT or UPDATES."
+#~ msgstr ""
+#~ "La clau de llicència %s caduca %s i no se us concedirà suport o "
+#~ "ACTUALITZACIONS DE MÀXIMA PRIORITAT."
+
+#~ msgid ""
+#~ "or higher! We do not guarantee that our plugin will work correctly. "
+#~ "Please upgrade to WordPress latest version."
+#~ msgstr ""
+#~ "o superior! No garantim que el nostre plugin funcioni correctament. "
+#~ "Actualitzeu a l'última versió de WordPress."
+
+#~ msgid "Thank you for installing %s plugin!"
+#~ msgstr "Gràcies per instal·lar %s plugin!"
+
+#~ msgid "Let's get started"
+#~ msgstr "Comencem"
+
+#~ msgid "or"
+#~ msgstr "o"
+
+#~ msgid "Add New"
+#~ msgstr "Afegir nou"
+
+#~ msgid "Thank you for installing plugins by BestWebSoft!"
+#~ msgstr "Gràcies per instal·lar plugins per BestWebSoft!"
+
+#~ msgid "More Details"
+#~ msgstr "Més informació"
+
+#~ msgid "Less Details"
+#~ msgstr "Menys detalls"
+
+#~ msgid "Deprecated function(-s) is used on the site here:"
+#~ msgstr "Les funcions obsoletes s'utilitzen en el lloc aquí:"
+
+#~ msgid ""
+#~ "This function(-s) will be removed over time. Please update the product(-"
+#~ "s)."
+#~ msgstr ""
+#~ "Aquesta funció(-s) s' eliminarà amb el temps. Actualitzeu els productes(-"
+#~ "s)."
+
+#~ msgid "Thank you for choosing %s plugin!"
+#~ msgstr "Gràcies per triar %s plugin!"
+
+#~ msgid ""
+#~ "If you have a feature, suggestion or idea you'd like to see in the "
+#~ "plugin, we'd love to hear about it!"
+#~ msgstr ""
+#~ "Si vostè té una característica, suggeriment o idea que li agradaria veure "
+#~ "en el plugin, ens encantaria saber sobre això!"
+
+#~ msgid "Suggest a Feature"
+#~ msgstr "Suggeriu una funció"
+
+#~ msgid "Notice"
+#~ msgstr "Anotació"
+
+#~ msgid "The plugin's settings have been changed."
+#~ msgstr "S' ha canviat la configuració del connector."
 
 #~ msgid "Save Changes"
-#~ msgstr "Desar els canvis"
-
-#~ msgid "Contact Form"
-#~ msgstr "Contact Form"
-
-#, fuzzy
-#~ msgid "Additional settings"
-#~ msgstr "Opcions addicionals"
-
-#, fuzzy
-#~ msgid ""
-#~ "If you would like to add a Contact Form to your page or post, please use "
-#~ "%s button"
-#~ msgstr ""
-#~ "Si vol afegir Contact Form en la seva web, copiï i enganxi aquest codi en "
-#~ "el seu missatge, pàgina o widget:"
-
-#, fuzzy
-#~ msgid "Example: Sent from (IP address):\t127.0.0.1"
-#~ msgstr "Enviat des de  (adreça IP)"
-
-#~ msgid "Name:"
-#~ msgstr "Nom:"
-
-#~ msgid "Address:"
-#~ msgstr "Adreça:"
-
-#~ msgid "Email Address:"
-#~ msgstr "Adreça de correu electrònic:"
-
-#~ msgid "Phone number:"
-#~ msgstr "Nombre de telèfon"
-
-#~ msgid "Subject:"
-#~ msgstr "Asumpte:"
-
-#~ msgid "Message:"
-#~ msgstr "Missatge:"
-
-#~ msgid "Attachment:"
-#~ msgstr "Adjunt:"
-
-#, fuzzy
-#~ msgid ""
-#~ "Please enable JavaScript to add language in the contact form, change the "
-#~ "names of the contact form fields and error messages."
-#~ msgstr ""
-#~ "Modifica els noms dels camps i els missatges d'error del formulari de "
-#~ "contacte"
-
-#~ msgid "What to use?"
-#~ msgstr "Què usar?"
-
-#, fuzzy
-#~ msgid "Using Contact Form to DB by BestWebSoft"
-#~ msgstr "Contact Form Pro"
-
-#, fuzzy
-#~ msgid "Activate Captcha"
-#~ msgstr "Captcha activat"
-
-#, fuzzy
-#~ msgid "Download Captcha"
-#~ msgstr "Descarrega captcha"
-
-#~ msgid "Phone"
-#~ msgstr "Telèfon"
-
-#~ msgid "To send mail you can use the php mail function"
-#~ msgstr "Per enviar correu vostè pot usar la funció 'php mail'"
-
-#~ msgid "English"
-#~ msgstr "Anglès"
-
-#~ msgid "Show with errors"
-#~ msgstr "Mostra amb errors"
-
-#~ msgid "Please enter your full name..."
-#~ msgstr "Si us plau introduïu el nom complet"
-
-#~ msgid "Please enter your address..."
-#~ msgstr "Si us plau introduïu l'adreça"
-
-#~ msgid "Please enter your email address..."
-#~ msgstr "Si us plau introdueixi el seu e-mail"
-
-#~ msgid "Please enter your phone number..."
-#~ msgstr "Si us plau introduïu el nombre de telèfon"
-
-#~ msgid "Please enter subject..."
-#~ msgstr "Si us plau introduïu l'assumpte"
-
-#~ msgid "Please enter your message..."
-#~ msgstr "Si us plau introduïu el missatge"
-
-#, fuzzy
-#~ msgid "Download Contact Form to DB"
-#~ msgstr "Contact Form Pro"
-
-#~ msgid "Captcha"
-#~ msgstr "Captcha"
-
-#~ msgid "(powered by bestwebsoft.com)"
-#~ msgstr "(Impulsat per bestwebsoft.com)"
-
-#, fuzzy
-#~ msgid "requires"
-#~ msgstr "Camps requerits"
-
-#, fuzzy
-#~ msgid "Plugins page"
-#~ msgstr "Plugins Pro"
-
-#, fuzzy
-#~ msgid "Please, enter Your license key"
-#~ msgstr "Si us plau introduïu el missatge"
-
-#, fuzzy
-#~ msgid "Rate the plugin"
-#~ msgstr "Plugins gratuïts"
-
-#, fuzzy
-#~ msgid "If there is something wrong about it, please contact us"
-#~ msgstr ""
-#~ "Si té alguna pregunta, contacti'ns si us plau via plugin@bestwebsoft.com "
-#~ "o utilitzi el formulari de contacte de la nostra web"
-
-#~ msgid "Extra settings"
-#~ msgstr "Configuració extra"
-
-#, fuzzy
-#~ msgid "The text in the 'From' field"
-#~ msgstr "Modifica el camp DE al contact form"
-
-#, fuzzy
-#~ msgid "This text will be used in the 'FROM' field"
-#~ msgstr "Aquesta adreça de correu electrònic s'utilitzarà al camp 'De'"
-
-#, fuzzy
-#~ msgid "The email address in the 'From' field"
-#~ msgstr "Introduir el correu electrònic al camp 'From'"
-
-#~ msgid "This email address will be used in the 'From' field."
-#~ msgstr "Aquesta adreça de correu electrònic s'utilitzarà al camp 'De'"
+#~ msgstr "Desa els canvis"
 
 #~ msgid ""
-#~ "This functionality is available in the Pro version of the plugin. For "
-#~ "more details, please follow the link"
+#~ "You can always look at premium options by checking the \"Pro Options\" in "
+#~ "the \"Misc\" tab."
 #~ msgstr ""
-#~ "Aquesta funcionalitat està disponible en la versió Pro del connector. Per "
-#~ "a més detalls, si us plau seguiu l'enllaç"
+#~ "Sempre podeu mirar les opcions premium marcant les \"Opcions Pro\" a la "
+#~ "pestanya \"Misc\"."
 
-#~ msgid "Contact Form Pro"
-#~ msgstr "Contact Form Pro"
+#~ msgid "Add BWS Shortcode"
+#~ msgstr "Afegeix codi curt BWS"
 
-#~ msgid "Contact Form Pro Extra Settings"
-#~ msgstr "Opcions extra del Contact Form Pro"
+#~ msgid "Add BWS Plugins Shortcode"
+#~ msgstr "Afegeix un codi curt de connectors BWS"
 
-#~ msgid "Contact Form Pro | Extra Settings"
-#~ msgstr "Opcions extra | Contact Form Pro"
+#~ msgid "Add shortcode"
+#~ msgstr "Afegeix codi curt"
 
-#~ msgid "Display fields"
-#~ msgstr "Mostra els camps"
+#~ msgid "Add BestWebSoft plugins' shortcodes using this button."
+#~ msgstr "Afegeix codis curts dels connectors BestWebSoft amb aquest botó."
 
-#, fuzzy
-#~ msgid "Display tips below the Attachment block"
-#~ msgstr "Consells del blocatge de l'adjunt"
+#~ msgid "Are you sure you want to restore default settings?"
+#~ msgstr "Esteu segur que voleu restaurar la configuració per defecte?"
 
-#~ msgid "Required fields"
-#~ msgstr "Camps requerits"
+#~ msgid "Yes, restore all settings"
+#~ msgstr "Sí, restaura tots els paràmetres"
 
-#~ msgid "You can attach the following file formats"
-#~ msgstr "Pot adjuntar els següents formats d'arxiu"
+#~ msgid "No, go back to the settings page"
+#~ msgstr "No, torna a la pàgina de configuració"
 
-#, fuzzy
-#~ msgid "Memory usage"
-#~ msgstr "MIssatge"
+#~ msgid "Plugin"
+#~ msgstr "Extensió"
 
-#, fuzzy
-#~ msgid "Site URL"
-#~ msgstr "Lloc"
+#~ msgid "Shortcode settings"
+#~ msgstr "Configuració de codi curt"
 
-#, fuzzy
-#~ msgid "Please enter a valid email address."
-#~ msgstr "Si us plau introdueixi el seu e-mail"
+#~ msgid "The shortcode will be inserted"
+#~ msgstr "El codi curt s'inserirà"
 
-#~ msgid "Installed plugins"
-#~ msgstr "Plugins instal·lats"
+#~ msgid "For more information:"
+#~ msgstr "Per més informació:"
 
-#~ msgid "Recommended plugins"
-#~ msgstr "Plugins recomanants"
+#~ msgid "Documentation"
+#~ msgstr "Documentació"
 
-#~ msgid "Purchase"
-#~ msgstr "Comprar"
+#~ msgid "Video Instructions"
+#~ msgstr "Instruccions de vídeo"
 
-#~ msgid "Install %s"
-#~ msgstr "Instal·la %s"
+#~ msgid "Submit a Request"
+#~ msgstr "Enviar una sol·licitud"
 
-#~ msgid "Install now from wordpress.org"
-#~ msgstr "Instal·la ara des de wordpress.org"
+#~ msgid "Wrong license key"
+#~ msgstr "Clau de llicència incorrecta"
 
-#, fuzzy
+#~ msgid ""
+#~ "Something went wrong. Please try again later. If the error appears again, "
+#~ "please contact us"
+#~ msgstr ""
+#~ "Alguna cosa ha anat malament. Torneu-ho a provar més tard. Si l'error "
+#~ "torna a aparèixer, poseu-vos en contacte amb nosaltres"
+
+#~ msgid "We are sorry for inconvenience."
+#~ msgstr "Lamentem les molèsties."
+
+#~ msgid "Wrong license key."
+#~ msgstr "Clau de llicència incorrecta."
+
+#~ msgid ""
+#~ "This license key is bound to another site. Change it via personal Client "
+#~ "Area."
+#~ msgstr ""
+#~ "Aquesta clau de llicència està vinculada a un altre lloc. Canvieu-lo a "
+#~ "través de l'Àrea personal del client."
+
+#~ msgid "Log in"
+#~ msgstr "Iniciar sessió"
+
+#~ msgid ""
+#~ "Unfortunately, you have exceeded the number of available tries per day."
+#~ msgstr ""
+#~ "Desafortunadament, ha superat el nombre d'intents disponibles per dia."
+
+#~ msgid ""
+#~ "Unfortunately, Your license has expired. To continue getting top-priority "
+#~ "support and plugin updates, you should extend it in your %s"
+#~ msgstr ""
+#~ "Malauradament, la vostra llicència ha caducat. Per continuar obtenint "
+#~ "suport de màxima prioritat i actualitzacions de connectors, l'hauríeu "
+#~ "d'ampliar a la %s"
+
+#~ msgid ""
+#~ "Unfortunately, the Pro licence was already installed to this domain. The "
+#~ "Pro Trial license can be installed only once."
+#~ msgstr ""
+#~ "Malauradament, la llicència Pro ja estava instal·lada en aquest domini. "
+#~ "La llicència de Judici Pro es pot instal·lar només una vegada."
+
+#~ msgid "The license key is valid."
+#~ msgstr "La clau de llicència és vàlida."
+
+#~ msgid "Your license will expire on"
+#~ msgstr "La llicència caducarà el"
+
+#~ msgid "Congratulations! Pro Membership license is activated successfully."
+#~ msgstr "Felicitacions! La llicència d'afiliació pro s'activa correctament."
+
+#~ msgid ""
+#~ "Something went wrong. Try again later or upload the plugin manually. We "
+#~ "are sorry for inconvenience."
+#~ msgstr ""
+#~ "Alguna cosa ha anat malament. Torneu-ho a provar més tard o carregueu el "
+#~ "connector manualment. Lamentem les molèsties."
+
+#~ msgid "Please enter your license key."
+#~ msgstr "Introduïu la clau de llicència."
+
+#~ msgid "Not set"
+#~ msgstr "No establert"
+
+#~ msgid "On"
+#~ msgstr "A"
+
+#~ msgid "Off"
+#~ msgstr "Off"
+
+#~ msgid "N/A"
+#~ msgstr "N/A"
+
+#~ msgid "Mb"
+#~ msgstr "Mb"
+
+#~ msgid "Yes"
+#~ msgstr "Si"
+
+#~ msgid "No"
+#~ msgstr "No"
+
+#~ msgid "WordPress Environment"
+#~ msgstr "Entorn WordPress"
+
+#~ msgid "Home URL"
+#~ msgstr "URL d'inici"
+
+#~ msgid "Website URL"
+#~ msgstr "URL del lloc web"
+
+#~ msgid "WP Version"
+#~ msgstr "Versió WP"
+
+#~ msgid "WP Multisite"
+#~ msgstr "WP Multisite"
+
+#~ msgid "WP Memory Limit"
+#~ msgstr "Límit de memòria WP"
+
+#~ msgid "Active Theme"
+#~ msgstr "Tema actiu"
+
+#~ msgid "by %s"
+#~ msgstr "per %s"
+
+#~ msgid "Server Environment"
+#~ msgstr "Entorn de Servidor"
+
+#~ msgid "Operating System"
+#~ msgstr "Sistema operatiu"
+
+#~ msgid "Server"
+#~ msgstr "Servidor"
+
+#~ msgid "PHP Version"
+#~ msgstr "Versió PHP"
+
+#~ msgid "PHP Allow URL fopen"
+#~ msgstr "PHP Permet l'URL fopen"
+
+#~ msgid "PHP Memory Limit"
+#~ msgstr "PHP Memory Limit"
+
+#~ msgid "Memory Usage"
+#~ msgstr "Ús de memòria"
+
+#~ msgid "PHP Max Upload Size"
+#~ msgstr "Mida màxima de càrrega de PHP"
+
+#~ msgid "PHP Max Post Size"
+#~ msgstr "Mida màxima de l'entrada de PHP"
+
+#~ msgid "PHP Max Script Execute Time"
+#~ msgstr "Temps d'execució de l'script PHP Max"
+
+#~ msgid "PHP Exif support"
+#~ msgstr "Assistència tècnica de PHP Exif"
+
+#~ msgid "PHP IPTC support"
+#~ msgstr "Assistència tècnica de PHP IPTC"
+
+#~ msgid "PHP XML support"
+#~ msgstr "Assistència tècnica de PHP XML"
+
+#~ msgid "Database"
+#~ msgstr "Base de dades"
+
+#~ msgid "WP DB version"
+#~ msgstr "Versió WP DB"
+
+#~ msgid "MySQL version"
+#~ msgstr "Versió MySQL"
+
+#~ msgid "SQL Mode"
+#~ msgstr "SQL Mode"
+
 #~ msgid "Active Plugins"
-#~ msgstr "Plugin activat"
+#~ msgstr "Extensions actives"
 
-#, fuzzy
 #~ msgid "Inactive Plugins"
-#~ msgstr "Plugin activat"
+#~ msgstr "Connectors inactius"
 
-#, fuzzy
-#~ msgid "Send to support"
-#~ msgstr "Suport"
+#~ msgid "Please enter a valid email address."
+#~ msgstr "Si us plau, introdueix una adreça de correu electrònic vàlida."
 
-#~ msgid "Contact Form Options"
-#~ msgstr "Opciones Contact Form"
+#~ msgid "Email with system info is sent to %s."
+#~ msgstr "El correu electrònic amb informació del sistema s'envia a %s."
 
-#~ msgid "Please enter a valid email address. Settings are not saved."
+#~ msgid "Plugins"
+#~ msgstr "Extensions"
+
+#~ msgid "Themes"
+#~ msgstr "Temes"
+
+#~ msgid "System status"
+#~ msgstr "Estat del sistema"
+
+#~ msgid "Manage purchased licenses & subscriptions"
+#~ msgstr "Administra les llicències i subscripcions adquirides"
+
+#~ msgid "Get Access to %s+ Premium Plugins"
+#~ msgstr "Obtenir accés a %s + Premium Plugins"
+
+#~ msgid "Subscribe to Pro Membership"
+#~ msgstr "Subscriure's a pro membres"
+
+#~ msgid "Check license key"
+#~ msgstr "Comproveu la clau de llicència"
+
+#~ msgid "Enter your license key"
+#~ msgstr "Introduir la vostra clau de llicència"
+
+#~ msgid "Upload Plugin"
+#~ msgstr "Connector de pujada"
+
+#~ msgid ""
+#~ "The plugin generated %d characters of <strong>unexpected output</strong> "
+#~ "during activation. If you notice &#8220;headers already sent&#8221; "
+#~ "messages, problems with syndication feeds or other issues, try "
+#~ "deactivating or removing this plugin."
 #~ msgstr ""
-#~ "Por favor introduzca un e-mail correcto. Los cambios no se han guardado."
+#~ "El connector va generar %d caràcters de sortida inesperada "
+#~ "<strong>durant</strong> l'activació. Si observeu missatges \"capçaleres "
+#~ "ja enviades\", problemes amb els canals de sindicació o altres problemes, "
+#~ "proveu de desactivar o eliminar aquest connector."
 
-#, fuzzy
-#~ msgid "E-Mail Address"
-#~ msgstr "Dirección e-mail:"
+#~ msgid ""
+#~ "Plugin could not be activated because it triggered a <strong>fatal error</"
+#~ "strong>."
+#~ msgstr ""
+#~ "El connector no s'ha pogut activar perquè ha provocat un <strong>error "
+#~ "fatal</strong> ."
 
-#~ msgid "E-Mail Addresse:"
-#~ msgstr "Indirizzo e-mail:"
+#~ msgid "Plugin <strong>activated</strong>."
+#~ msgstr "Plugin <strong>activat</strong> ."
+
+#~ msgid "Download Pro Plugin"
+#~ msgstr "Descarregar Pro Plugin"
+
+#~ msgid "Your Pro plugin is ready"
+#~ msgstr "El seu plugin Pro està llest"
+
+#~ msgid "Your plugin has been zipped, and now is ready to download."
+#~ msgstr ""
+#~ "El vostre connector s'ha comprimit i ara està llest per descarregar."
+
+#~ msgid "Download Now"
+#~ msgstr "Descarrega't ara"
+
+#~ msgid "Need help installing the plugin?"
+#~ msgstr "Necessites ajuda per instal·lar el connector?"
+
+#~ msgid ""
+#~ "How to install WordPress plugin from your admin Dashboard (ZIP archive)"
+#~ msgstr ""
+#~ "Com instal·lar el connector de WordPress des del tauler d'administració "
+#~ "(arxiu ZIP)"
+
+#~ msgid "Get Started"
+#~ msgstr "Començar"
+
+#~ msgid "Knowledge Base"
+#~ msgstr "Knowledge Base"
+
+#~ msgid "Licenses & Domains"
+#~ msgstr "Llicències i Dominis"
+
+#~ msgid "Client Area"
+#~ msgstr "Àrea del client"
+
+#~ msgid "Return to BestWebSoft Panel"
+#~ msgstr "Torna a BestWebSoft Panel"
+
+#~ msgid "All"
+#~ msgstr "Tots"
+
+#~ msgid "Installed"
+#~ msgstr "Instal·lat"
+
+#~ msgid "Not Installed"
+#~ msgstr "Sense instal·lar"
+
+#~ msgid "Filter results"
+#~ msgstr "Filtrar resultats"
+
+#~ msgid "Category"
+#~ msgstr "Categoria"
+
+#~ msgid "Not installed"
+#~ msgstr "No està instal·lat"
+
+#~ msgid "Renew to get updates"
+#~ msgstr "Renovar per obtenir actualitzacions"
+
+#~ msgid "Update to v %s"
+#~ msgstr "Actualització a v %s"
+
+#~ msgid "Get Pro"
+#~ msgstr "Obtenir Pro"
+
+#~ msgid "Activate this plugin"
+#~ msgstr "Activa aquest connector"
+
+#~ msgid "Install this plugin"
+#~ msgstr "Instal·la aquest connector"
 
 #~ msgid "Install Now"
-#~ msgstr "Installa Ora"
+#~ msgstr "Instal·la ara"
+
+#~ msgid "Nothing found. Try another criteria."
+#~ msgstr "No s'ha trobat res. Proveu un altre criteri."
+
+#~ msgid "By %s"
+#~ msgstr "Per %s"
+
+#~ msgid "Already Installed"
+#~ msgstr "Ja instal·lat"
+
+#~ msgid "Browse More WordPress Themes"
+#~ msgstr "Navega per més temes de WordPress"
+
+#~ msgid "Send to support"
+#~ msgstr "Enviar al suport"
+
+#~ msgid "Send to custom email &#187;"
+#~ msgstr "Enviï a e-mail de costum &#187;"
+
+#~ msgid "Information"
+#~ msgstr "Informació"
+
+#~ msgid "Inactive"
+#~ msgstr "Inactiu"
+
+#~ msgid "Expired"
+#~ msgstr "Caducat"
+
+#~ msgid "%s day(-s) left"
+#~ msgstr "%s dia(-s) a l'esquerra"
+
+#~ msgid "Expired on %s"
+#~ msgstr "Caducat el %s"
+
+#~ msgid "Renew Now"
+#~ msgstr "Renova ara"
+
+#~ msgid "Active"
+#~ msgstr "Actiu"
+
+#~ msgid "License"
+#~ msgstr "Llicència"
+
+#~ msgid "Status"
+#~ msgstr "Estat"
+
+#~ msgid "Version"
+#~ msgstr "Versió"
+
+#~ msgid "All plugin settings were restored."
+#~ msgstr "S'han restaurat tots els paràmetres del connector."
+
+#~ msgid ""
+#~ "You do not have sufficient permissions to edit plugins for this site."
+#~ msgstr "No teniu prou permisos per editar connectors per a aquest lloc."
+
+#~ msgid "These styles will be added to the header on all pages of your site."
+#~ msgstr ""
+#~ "Aquests estils s'afegiran a la capçalera de totes les pàgines del vostre "
+#~ "lloc."
+
+#~ msgid ""
+#~ "This PHP code will be hooked to the %s action and will be printed on "
+#~ "front end only."
+#~ msgstr ""
+#~ "Aquest codi PHP estarà enganxat a l'acció %s i s'imprimirà només a la "
+#~ "part frontal."
+
+#~ msgid "These code will be added to the header on all pages of your site."
+#~ msgstr ""
+#~ "Aquest codi s'afegirà a la capçalera de totes les pàgines del vostre lloc."
+
+#~ msgid ""
+#~ "You need to make this files writable before you can save your changes. "
+#~ "See %s the Codex %s for more information."
+#~ msgstr ""
+#~ "Heu de fer que aquests fitxers es puguin enregistrar per poder desar els "
+#~ "canvis. Consulteu %s Còdec %s per obtenir més informació."
+
+#~ msgid "Browsing"
+#~ msgstr "Navegació"
+
+#~ msgid "Activate custom %s code."
+#~ msgstr "Activeu el codi %s personalitzat."
+
+#~ msgid "Learn more about %s"
+#~ msgstr "Més informació sobre %s"
+
+#~ msgid "Miscellaneous Settings"
+#~ msgstr "Arranjaments diversos"
+
+#~ msgid ""
+#~ "It is prohibited to change %s settings on this site in the %s network "
+#~ "settings."
+#~ msgstr ""
+#~ "Està prohibit canviar la configuració %s d'aquest lloc a la configuració "
+#~ "%s xarxa."
+
+#~ msgid ""
+#~ "It is prohibited to view %s settings on this site in the %s network "
+#~ "settings."
+#~ msgstr ""
+#~ "Està prohibit veure la configuració %s d'aquest lloc a la configuració %s "
+#~ "xarxa."
+
+#~ msgid "Pro Options"
+#~ msgstr "Opcions pro"
+
+#~ msgid "Enable to display plugin Pro options."
+#~ msgstr "Habilita per a mostrar les opcions del connector Pro."
+
+#~ msgid "Track Usage"
+#~ msgstr "Ús de la pista"
+
+#~ msgid ""
+#~ "Enable to allow tracking plugin usage anonymously in order to make it "
+#~ "better."
+#~ msgstr ""
+#~ "Habiliteu permetre l'ús de connectors de seguiment de forma anònima per "
+#~ "fer-lo millor."
+
+#~ msgid "Default Settings"
+#~ msgstr "Configuració per defecte"
+
+#~ msgid "Restore Settings"
+#~ msgstr "Restaura la configuració"
+
+#~ msgid "This will restore plugin settings to defaults."
+#~ msgstr "Això restaurarà la configuració del connector per omissió."
+
+#~ msgid "Import / Export"
+#~ msgstr "Importació/exportació"
+
+#~ msgid ""
+#~ "Enter your license key to activate %s and get premium plugin features."
+#~ msgstr ""
+#~ "Introdueixi la seva clau de llicència per activar %s i aconseguir trets "
+#~ "de plugin de complement."
+
+#~ msgid ""
+#~ "Unfortunately, you have exceeded the number of available tries per day. "
+#~ "Please, upload the plugin manually."
+#~ msgstr ""
+#~ "Desafortunadament, ha superat el nombre d'intents disponibles per dia. Si "
+#~ "us plau, carregueu el connector manualment."
+
+#~ msgid "Start Your Free %s-Day Trial Now"
+#~ msgstr "Comenci el seu judici de %s Dia lliure ara"
+
+#~ msgid ""
+#~ "If necessary, you can check if the license key is correct or reenter it "
+#~ "in the field below."
+#~ msgstr ""
+#~ "Si cal, podeu comprovar si la clau de llicència és correcta o tornar-la a "
+#~ "entrar al camp següent."
+
+#~ msgid "Login to Client Area"
+#~ msgstr "Inicia sessió a l'àrea del client"
+
+#~ msgid ""
+#~ "Manage active licenses, download BWS products, and view your payment "
+#~ "history using BestWebSoft Client Area."
+#~ msgstr ""
+#~ "Gestioneu llicències actives, baixeu productes BWS i visualitzeu "
+#~ "l'historial de pagaments mitjançant l'Àrea de client de BestWebSoft."
+
+#~ msgid "This license key is bound to another site."
+#~ msgstr "Aquesta clau de llicència està vinculada a un altre lloc."
+
+#~ msgid ""
+#~ "This license key is valid, but Your license has expired. If you want to "
+#~ "update our plugin in future, you should extend the license."
+#~ msgstr ""
+#~ "Aquesta clau de llicència és vàlida, però la vostra llicència ha caducat. "
+#~ "Si voleu actualitzar el nostre plugin en el futur, hauríeu d'ampliar la "
+#~ "llicència."
+
+#~ msgid "Unfortunately, you have exceeded the number of available tries."
+#~ msgstr "Malauradament, heu superat el nombre d'intents disponibles."
+
+#~ msgid ""
+#~ "Unfortunately, the Pro Trial licence was already installed to this "
+#~ "domain. The Pro Trial license can be installed only once."
+#~ msgstr ""
+#~ "Malauradament, la llicència Pro Trial ja estava instal·lada en aquest "
+#~ "domini. La llicència de Judici Pro es pot instal·lar només una vegada."
+
+#~ msgid "The Pro Trial license key is valid."
+#~ msgstr "La clau de llicència de Judici Pro és vàlida."
+
+#~ msgid ""
+#~ "In order to continue using the plugin it is necessary to buy a %s license."
+#~ msgstr "Per continuar utilitzant el plugin cal comprar una llicència de %s."
+
+#~ msgid ""
+#~ "Unfortunately, Your license has expired. To continue getting top-priority "
+#~ "support and plugin updates, you should extend it in your %s."
+#~ msgstr ""
+#~ "Malauradament, la vostra llicència ha caducat. Per continuar obtenint "
+#~ "suport de màxima prioritat i actualitzacions de connectors, l'hauríeu "
+#~ "d'ampliar a %s."
+
+#~ msgid "Please, enter Your license key"
+#~ msgstr "Si us plau, introdueixi la seva clau de llicència"
+
+#~ msgid "Need Help?"
+#~ msgstr "Necessiteu ajuda?"
+
+#~ msgid "Read the Instruction"
+#~ msgstr "Llegiu la Instrucció"
+
+#~ msgid "Watch the Video"
+#~ msgstr "Veure el vídeo"
+
+#~ msgid "Start Your Free Trial"
+#~ msgstr "Inicia la teva prova gratuïta"
+
+#~ msgid "Need help? We are ready to answer your questions."
+#~ msgstr ""
+#~ "Necessites ajuda? Estem preparats per respondre a les seves preguntes."
+
+#~ msgid "Contact Support"
+#~ msgstr "Poseu-vos en contacte amb El Suport"
+
+#~ msgid "The plugin is not working"
+#~ msgstr "El connector no funciona"
+
+#~ msgid "Kindly share what didn't work so we can fix it in future updates..."
+#~ msgstr ""
+#~ "Amablement compartir el que no funcionava així el podem arreglar en "
+#~ "actualitzacions futures..."
+
+#~ msgid "The plugin didn't work as expected"
+#~ msgstr "El connector no ha funcionat com s'esperava"
+
+#~ msgid "What did you expect?"
+#~ msgstr "Què esperaves?"
+
+#~ msgid "The plugin suddenly stopped working"
+#~ msgstr "El plugin de sobte va deixar de funcionar"
+
+#~ msgid "The plugin broke my site"
+#~ msgstr "El plugin va trencar el meu lloc"
+
+#~ msgid "I couldn't understand how to get it work"
+#~ msgstr "No podria entendre com aconseguir que funcioni"
+
+#~ msgid "I found a better plugin"
+#~ msgstr "Trobava un millor plugin"
+
+#~ msgid "What's the plugin name?"
+#~ msgstr "Quin és el nom del connector?"
+
+#~ msgid ""
+#~ "The plugin is great, but I need specific feature that you don't support"
+#~ msgstr "El plugin és gran, però necessito tret específic que no dóna suport"
+
+#~ msgid "What feature?"
+#~ msgstr "Quina característica?"
+
+#~ msgid "I no longer need the plugin"
+#~ msgstr "Ja no necessito el plugin"
+
+#~ msgid "It's a temporary deactivation, I'm just debugging an issue"
+#~ msgstr "És una desactivació temporal, només estic depurant un problema"
+
+#~ msgid "Other"
+#~ msgstr "Altres"
+
+#~ msgid "Quick Feedback"
+#~ msgstr "Comentaris ràpids"
+
+#~ msgid "If you have a moment, please let us know why you are deactivating"
+#~ msgstr "Si tens un moment, fes-nos saber per què estàs desactivant"
+
+#~ msgid "Send website data and allow to contact me back"
+#~ msgstr ""
+#~ "Enviar dades del lloc web i permetre posar-se en contacte amb mi de nou"
+
+#~ msgid "Submit and Deactivate"
+#~ msgstr "Enviar i desactivar"
+
+#~ msgid "Skip and Deactivate"
+#~ msgstr "Omitir i desactivar"
+
+#~ msgid "Processing"
+#~ msgstr "S'està processant"
+
+#~ msgid "Please tell us the reason so we can improve it."
+#~ msgstr "Si us plau, digui'ns el motiu perquè puguem millorar-lo."
+
+#~ msgid "System Status"
+#~ msgstr "Estat del sistema"
+
+#~ msgid ""
+#~ "If necessary, you can check if the license key is correct or reenter it "
+#~ "in the field below. You can find your license key on your personal page - "
+#~ "Client Area - on our website"
+#~ msgstr ""
+#~ "Si cal, podeu comprovar si la clau de llicència és correcta o tornar-la a "
+#~ "entrar al camp següent. Pots trobar la teva clau de llicència a la teva "
+#~ "pàgina personal - Àrea client - a la nostra web"
+
+#~ msgid ""
+#~ "(your username is the email address specified during the purchase). If "
+#~ "necessary, please submit \"Lost your password?\" request."
+#~ msgstr ""
+#~ "(el vostre nom d'usuari és l'adreça de correu electrònic especificada "
+#~ "durant la compra). Si cal, envieu la sol·licitud \"Has perdut la "
+#~ "contrasenya?\"."
+
+#~ msgid "After that, you can activate it by entering your license key."
+#~ msgstr ""
+#~ "Després d'allò, el pot activar introduint la seva clau de llicència."
+
+#~ msgid "License key can be found in the"
+#~ msgstr "La clau de llicència es pot trobar a la"
+
+#~ msgid "(your username is the email address specified during the purchase)."
+#~ msgstr ""
+#~ "(el vostre nom d'usuari és l'adreça de correu electrònic especificada "
+#~ "durant la compra)."
+
+#~ msgid ""
+#~ "Congratulations! The Pro license of the plugin is activated successfully."
+#~ msgstr ""
+#~ "Felicitacions! La llicència Pro del connector s'activa correctament."
+
+#~ msgid "Please, go to"
+#~ msgstr "Si us plau, aneu a"
+
+#~ msgid "the setting page"
+#~ msgstr "la pàgina de configuració"
+
+#~ msgid "Restore all plugin settings to defaults"
+#~ msgstr "Restaura tots els paràmetres del connector per omissió"
+
+#~ msgid "Restore settings"
+#~ msgstr "Restaura la configuració"
+
+#~ msgid ""
+#~ "Congratulations! Pro version of the plugin is  installed and activated "
+#~ "successfully."
+#~ msgstr ""
+#~ "Felicitacions! La versió pro del connector està instal·lada i activada "
+#~ "correctament."
+
+#~ msgid "Show Pro features"
+#~ msgstr "Mostra les característiques de Pro"
+
+#~ msgid "Enter your license key to install and activate"
+#~ msgstr "Introduïu la clau de llicència per instal·lar i activar"
+
+#~ msgid "version of the plugin."
+#~ msgstr "versió del connector."
+
+#~ msgid "Admin Tools"
+#~ msgstr "Eines d'administració"
+
+#~ msgid "Content"
+#~ msgstr "Contingut"
+
+#~ msgid "eCommerce"
+#~ msgstr "comerç electrònic"
+
+#~ msgid "Marketing"
+#~ msgstr "Màrqueting"
+
+#~ msgid "Navigation"
+#~ msgstr "Navegació"
+
+#~ msgid "Recommended"
+#~ msgstr "Recomanat"
+
+#~ msgid "Security"
+#~ msgstr "Seguretat"
+
+#~ msgid "SEO"
+#~ msgstr "Seo"
+
+#~ msgid "SMM"
+#~ msgstr "Smm"
+
+#~ msgid "Best secure captcha plugin to protect your WordPress forms."
+#~ msgstr ""
+#~ "Millor plugin de captcha segur per protegir els seus formularis de "
+#~ "WordPress."
+
+#~ msgid "Create your own rental website for car renting and booking."
+#~ msgstr "Crea el teu propi web de lloguer de cotxes i reserves."
+
+#~ msgid ""
+#~ "Add columns with custom content to WordPress website pages, posts, "
+#~ "widgets, etc."
+#~ msgstr ""
+#~ "Afegiu columnes amb contingut personalitzat a pàgines web de WordPress, "
+#~ "publicacions, ginys, etc."
+
+#~ msgid ""
+#~ "Allow customers to reach you using secure contact form plugin any website "
+#~ "must have."
+#~ msgstr ""
+#~ "Permet que els clients us arribin mitjançant un connector de formulari de "
+#~ "contacte segur que qualsevol lloc web ha de tenir."
+
+#~ msgid "Add unlimited number of contact forms to WordPress website."
+#~ msgstr ""
+#~ "Afegiu un nombre il·limitat de formularis de contacte al lloc web de "
+#~ "WordPress."
+
+#~ msgid "Save and manage Contact Form messages. Never lose important data."
+#~ msgstr ""
+#~ "Deseu i administreu els missatges del formulari de contacte. No perdis "
+#~ "mai dades importants."
+
+#~ msgid "Add unlimited custom pages to WordPress admin dashboard."
+#~ msgstr ""
+#~ "Afegiu pàgines personalitzades il·limitades al tauler d'administració de "
+#~ "WordPress."
+
+#~ msgid ""
+#~ "Add custom post types and taxonomies to WordPress website search results."
+#~ msgstr ""
+#~ "Afegiu tipus d'entrada personalitzats i taxonomies als resultats de cerca "
+#~ "del lloc web de WordPress."
+
+#~ msgid "Add PayPal and 2CO donate buttons to receive charity payments."
+#~ msgstr "Afegir PayPal i 2CO donar botons per rebre pagaments de caritat."
+
+#~ msgid ""
+#~ "Get latest error log messages to diagnose website problems. Define and "
+#~ "fix issues faster."
+#~ msgstr ""
+#~ "Obteniu els últims missatges de registre d'errors per diagnosticar "
+#~ "problemes del lloc web. Definiu i solucioneu problemes més ràpidament."
+
+#~ msgid ""
+#~ "Add Facebook Follow, Like, and Share buttons to WordPress posts, pages, "
+#~ "and widgets."
+#~ msgstr ""
+#~ "Afegeixi Facebook Seguir, Agradar, i Compartir botons a correus de "
+#~ "WordPress, pàgines, i widgets."
+
+#~ msgid ""
+#~ "Add beautiful galleries, albums & images to your WordPress website in a "
+#~ "few clicks."
+#~ msgstr ""
+#~ "Afegir belles galeries, àlbums i imatges al seu lloc web de WordPress en "
+#~ "uns pocs clics."
+
+#~ msgid ""
+#~ "Stronger security solution which protects your WordPress website from "
+#~ "hacks and unauthorized login attempts."
+#~ msgstr ""
+#~ "Solució de seguretat més forta que protegeix el seu lloc web de WordPress "
+#~ "de talls i intents d'inici de sessió no autoritzats."
+
+#~ msgid ""
+#~ "Add Adsense ads to WordPress website pages, posts, custom posts, search "
+#~ "results, categories, tags, and widgets."
+#~ msgstr ""
+#~ "Afegiu anuncis d'Adsense a pàgines web de WordPress, publicacions, "
+#~ "publicacions personalitzades, resultats de la cerca, categories, "
+#~ "etiquetes i widgets."
+
+#~ msgid ""
+#~ "Add Google Analytics code to WordPress website and track basic stats."
+#~ msgstr ""
+#~ "Afegiu el codi de Google Analytics al lloc web de WordPress i feu un "
+#~ "seguiment de les estadístiques bàsiques."
+
+#~ msgid "Protect WordPress website forms from spam entries with reCaptcha."
+#~ msgstr ""
+#~ "Protegiu els formularis del lloc web de WordPress de les entrades de "
+#~ "correu brossa amb reCaptcha."
+
+#~ msgid "Add customized Google maps to WordPress posts, pages and widgets."
+#~ msgstr ""
+#~ "Afegiu mapes de Google personalitzats a publicacions, pàgines i widgets "
+#~ "de WordPress."
+
+#~ msgid ""
+#~ "Generate and add XML sitemap to WordPress website. Help search engines "
+#~ "index your blog."
+#~ msgstr ""
+#~ "Genera i afegeix mapa del lloc XML al lloc web de WordPress. Ajudar els "
+#~ "motors de cerca índex del seu bloc."
+
+#~ msgid ""
+#~ "Replace external WordPress website links with Google shortlinks and track "
+#~ "click stats."
+#~ msgstr ""
+#~ "Substituïu enllaços de lloc web de WordPress externs amb enllaços curts "
+#~ "de Google i feu un seguiment de les estadístiques de clics."
+
+#~ msgid ""
+#~ "Protect WordPress website – allow and deny access for certain IP "
+#~ "addresses, hostnames, etc."
+#~ msgstr ""
+#~ "Protegeixi lloc web de WordPress - permeti i negui accés per a certes "
+#~ "adreces d'IP, noms d'amfitrió, etc."
+
+#~ msgid ""
+#~ "Create your personal job board and listing WordPress website. Search "
+#~ "jobs, submit CV/resumes, choose candidates."
+#~ msgstr ""
+#~ "Creeu la vostra taula de treball personal i llista del lloc web de "
+#~ "WordPress. Cerqueu feines, envieu CV/currículums, trieu candidats."
+
+#~ msgid ""
+#~ "Protect WordPress website against brute force attacks. Limit rate of "
+#~ "login attempts."
+#~ msgstr ""
+#~ "Protegeix el lloc web de WordPress contra atacs de força bruta. Velocitat "
+#~ "límit d'intents d'inici de sessió."
+
+#~ msgid ""
+#~ "Add LinkedIn Share and Follow buttons to WordPress posts, pages and "
+#~ "widgets. 5 plugins included – profile, insider, etc."
+#~ msgstr ""
+#~ "Afegeixi LinkedIn Compartir i Seguir botons a correus de WordPress, "
+#~ "pàgines i widgets. 5 plugins inclosos - perfil, insider, etc."
+
+#~ msgid ""
+#~ "Translate WordPress website content to other languages manually. Create "
+#~ "multilingual pages, posts, widgets, menus, etc."
+#~ msgstr ""
+#~ "Tradueix el contingut del lloc web de WordPress a altres idiomes "
+#~ "manualment. Crear pàgines multilingües, missatges, ginys, menús, etc."
+
+#~ msgid ""
+#~ "Add customizable pagination to WordPress website. Split long content to "
+#~ "multiple pages for better navigation."
+#~ msgstr ""
+#~ "Afegiu una paginació personalitzable al lloc web de WordPress. Divideix "
+#~ "el contingut llarg en diverses pàgines per a una millor navegació."
+
+#~ msgid ""
+#~ "Generate PDF files and print WordPress posts/pages. Customize document "
+#~ "header/footer styles and appearance."
+#~ msgstr ""
+#~ "Generar arxius PDF i imprimir publicacions / pàgines de WordPress. "
+#~ "Personalitza els estils de capçalera/ peu de pàgina del document i "
+#~ "l'aparença."
+
+#~ msgid ""
+#~ "Add Pinterest Follow, Pin It buttons and profile widgets (Pin, Board, "
+#~ "Profile) to WordPress posts, pages and widgets."
+#~ msgstr ""
+#~ "Afegeix Pinterest Follow, Pin It botons i ginys de perfil (Pin, Board, "
+#~ "Profile) a publicacions, pàgines i ginys de WordPress."
+
+#~ msgid ""
+#~ "Create your personal portfolio WordPress website. Manage and showcase "
+#~ "past projects to get more clients."
+#~ msgstr ""
+#~ "Creï la seva cartera personal lloc web de WordPress. Gestionar i mostrar "
+#~ "projectes passats per aconseguir més clients."
+
+#~ msgid ""
+#~ "Export WordPress posts to CSV file format easily. Configure data order."
+#~ msgstr ""
+#~ "Exporta les publicacions de WordPress al format de fitxer CSV fàcilment. "
+#~ "Configura l'ordre de dades."
+
+#~ msgid ""
+#~ "Add extra fields to default WordPress user profile. The easiest way to "
+#~ "create and manage additional custom values."
+#~ msgstr ""
+#~ "Afegiu camps addicionals al perfil d'usuari predeterminat de WordPress. "
+#~ "La manera més fàcil de crear i gestionar valors personalitzats "
+#~ "addicionals."
+
+#~ msgid ""
+#~ "Add and display HTML advertisement banner on WordPress website. Customize "
+#~ "bar styles and appearance."
+#~ msgstr ""
+#~ "Afegiu i mostreu un bàner d'anunci HTML al lloc web de WordPress. "
+#~ "Personalitza els estils de barra i l'aparença."
+
+#~ msgid ""
+#~ "Add customizable quotes and tips blocks to WordPress posts, pages and "
+#~ "widgets."
+#~ msgstr ""
+#~ "Afegiu cites i blocs de consells personalitzables a publicacions, pàgines "
+#~ "i widgets de WordPress."
+
+#~ msgid ""
+#~ "Add rating plugin to your WordPress website to receive feedback from your "
+#~ "customers."
+#~ msgstr ""
+#~ "Afegiu un connector de classificació al vostre lloc web de WordPress per "
+#~ "rebre comentaris dels vostres clients."
+
+#~ msgid ""
+#~ "Create your personal real estate WordPress website. Sell, rent and buy "
+#~ "properties. Add, search and browse listings easily."
+#~ msgstr ""
+#~ "Creï el seu lloc web de WordPress de béns arrels personals. Vendre, "
+#~ "llogar i comprar propietats. Afegiu, cerqueu i navegueu per les llistes "
+#~ "fàcilment."
+
+#~ msgid ""
+#~ "Add related, featured, latest, and popular posts to your WordPress "
+#~ "website. Connect your blog readers with a relevant content."
+#~ msgstr ""
+#~ "Afegiu publicacions relacionades, destacades, més recents i populars al "
+#~ "vostre lloc web de WordPress. Connecteu els lectors del vostre bloc amb "
+#~ "un contingut rellevant."
+
+#~ msgid ""
+#~ "Send bulk email messages to WordPress users. Custom templates, advanced "
+#~ "settings and detailed reports."
+#~ msgstr ""
+#~ "Envieu missatges de correu electrònic massius als usuaris de WordPress. "
+#~ "Plantilles personalitzades, configuració avançada i informes detallats."
+
+#~ msgid ""
+#~ "The best responsive slider plugin for your WordPress website. Create "
+#~ "beautifully animated slides just in a few clicks."
+#~ msgstr ""
+#~ "El millor connector lliscant responsiu per al vostre lloc web de "
+#~ "WordPress. Crear diapositives molt animades només en uns pocs clics."
+
+#~ msgid ""
+#~ "Configure SMTP server to receive email messages from WordPress to Gmail, "
+#~ "Yahoo, Hotmail and other services."
+#~ msgstr ""
+#~ "Configureu el servidor SMTP per rebre missatges de correu electrònic de "
+#~ "WordPress a Gmail, Yahoo, Hotmail i altres serveis."
+
+#~ msgid ""
+#~ "Add social media buttons and widgets to WordPress posts, pages and "
+#~ "widgets. FB, Twitter, Pinterest, LinkedIn."
+#~ msgstr ""
+#~ "Afegiu botons i ginys de les xarxes socials als missatges, pàgines i "
+#~ "ginys de WordPress. FB, Twitter, Pinterest, LinkedIn."
+
+#~ msgid ""
+#~ "Add social media login, registration, and commenting to your WordPress "
+#~ "website."
+#~ msgstr ""
+#~ "Afegeixi connexió de mitjans de comunicació social, registre, i comentant "
+#~ "al seu lloc web de WordPress."
+
+#~ msgid ""
+#~ "Add email newsletter sign up form to WordPress posts, pages and widgets. "
+#~ "Collect data and subscribe your users."
+#~ msgstr ""
+#~ "Afegiu el formulari de registre del butlletí de correu electrònic a les "
+#~ "publicacions, pàgines i ginys de WordPress. Recopila dades i subscriu als "
+#~ "teus usuaris."
+
+#~ msgid ""
+#~ "Add testimonials and feedbacks from your customers to WordPress website "
+#~ "posts, pages, and widgets."
+#~ msgstr ""
+#~ "Afegiu testimonis i comentaris dels vostres clients a publicacions, "
+#~ "pàgines i widgets del lloc web de WordPress."
+
+#~ msgid ""
+#~ "Best timesheet plugin for WordPress. Track employee time, streamline "
+#~ "attendance and generate reports."
+#~ msgstr ""
+#~ "Millor connector de full de temps per a WordPress. Fer un seguiment del "
+#~ "temps dels empleats, agilitzar l'assistència i generar informes."
+
+#~ msgid ""
+#~ "Add Twitter Follow, Tweet, Hashtag, and Mention buttons to WordPress "
+#~ "posts and pages."
+#~ msgstr ""
+#~ "Afegiu els botons De Twitter Follow, Tweet, Hashtag i Menció a "
+#~ "publicacions i pàgines de WordPress."
+
+#~ msgid ""
+#~ "Automatically check and update WordPress website core with all installed "
+#~ "plugins and themes to the latest versions."
+#~ msgstr ""
+#~ "Comprovi automàticament i actualitzi nucli de lloc web de WordPress amb "
+#~ "tots els plugins instal·lats i temes a les últimes versions."
+
+#~ msgid ""
+#~ "Powerful user role management plugin for WordPress website. Create, edit, "
+#~ "copy, and delete user roles."
+#~ msgstr ""
+#~ "Plugin de direcció de paper d'usuari fort per a lloc web de WordPress. "
+#~ "Crear, editar, copiar i suprimir funcions d'usuari."
+
+#~ msgid ""
+#~ "Display live count of online visitors who are currently browsing your "
+#~ "WordPress website."
+#~ msgstr ""
+#~ "Mostra el recompte en directe de visitants en línia que estan navegant "
+#~ "actualment pel vostre lloc web de WordPress."
+
+#~ msgid ""
+#~ "Backup and export Zendesk Help Center content automatically to your "
+#~ "WordPress website database."
+#~ msgstr ""
+#~ "Còpia de seguretat i exportació zendesk ajuda del contingut "
+#~ "automàticament a la base de dades del lloc web de WordPress."

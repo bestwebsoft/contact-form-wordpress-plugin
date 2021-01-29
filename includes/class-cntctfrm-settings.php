@@ -60,7 +60,8 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 				'is_network_options'	=> is_network_admin(),
 				'tabs'					=> $tabs,
 				'wp_slug'				=> 'contact-form',
-				'licenses'				=> $addons_check
+				'licenses'				=> $addons_check,
+                'doc_link'              => 'https://docs.google.com/document/d/1qZYPJhkSdVyyM6XO5WfiBcTS2Sa9_9UMn4vS2g48JRY/'
 			) );
 
 			add_action( get_parent_class( $this ) . '_appearance_custom_messages', array( $this, 'appearance_custom_messages' ) );
@@ -720,9 +721,9 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 							<span class="cntctfrm_mobile_title"><?php _e( "Required", 'contact-form-plugin' ); ?></span></label>
 						</td>
 						<?php if ( ! $this->hide_pro_tabs ) { ?>
-							<td></td>
-							<td></td>
-							<td></td>
+							<td class="bws_pro_version"></td>
+							<td class="bws_pro_version"></td>
+							<td class="bws_pro_version"></td>
 						<?php } ?>
 					</tr>
 			        <?php if ( ! $this->hide_pro_tabs ) { ?>
@@ -733,7 +734,7 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
                                     <span class="cntctfrm_mobile_title"><?php _e( "Used", 'contact-form-plugin' ); ?></span></label>
                             </td>
                             <td class="bws_pro_version">
-                                <label><input disabled="disabled" type="checkbox" name="cntctfrm_required_email" value="1" />
+                                <label><input disabled="disabled" checked="checked" type="checkbox" name="cntctfrm_required_email" value="1" />
                                     <span class="cntctfrm_mobile_title"><?php _e( "Required", 'contact-form-plugin' ); ?></span></label>
                             </td>
 							<td class="bws_pro_version">
@@ -762,9 +763,12 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 							<span class="cntctfrm_mobile_title"><?php _e( "Required", 'contact-form-plugin' ); ?></span></label>
 						</td>
 						<?php if ( ! $this->hide_pro_tabs ) { ?>
-							<td></td>
-							<td></td>
-							<td></td>
+							<td class="bws_pro_version"></td>
+							<td class="bws_pro_version"></td>
+                            <td class="bws_pro_version">
+                                <input disabled="disabled" type="text" name="cntctfrm_phone_mask" value="" />
+                                <div class="bws_info" style="word-break: break-word;"><?php printf( __( 'Specify a mask which will be used for the phone validation, where * is a number. Use only the following symbols: %s', 'contact-form-plugin' ), '* - ( ) +' ); ?></div>
+                            </td>
 						<?php } ?>
 					</tr>
 					<tr valign="top">
@@ -818,7 +822,7 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 								<span class="cntctfrm_mobile_title"><?php _e( "Visible", 'contact-form-plugin' ); ?></span></label>
 							</td>
 							<td class="bws_pro_version">
-								<label><input class="message" disabled="disabled" disabled="disabled" type="checkbox" name="cntctfrm_disabled_message" value="1" />
+								<label><input class="message" disabled="disabled" type="checkbox" name="cntctfrm_disabled_message" value="1" />
 								<span class="cntctfrm_mobile_title"><?php _e( "Disabled for editing", 'contact-form-plugin' ); ?></span></label>
 							</td>
 							<td class="bws_pro_version">
@@ -829,19 +833,6 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 							</td>
 						<?php } ?>
 					</tr>
-					<?php if ( ! $this->hide_pro_tabs ) { ?>
-						<tr valign="top">
-							<td></td>
-							<td></td>
-							<td></td>
-							<td colspan="3" class="bws_pro_version_tooltip bws_pro_version cntctfrm_pro_version_table_block">
-								<a class="bws_button" href="https://bestwebsoft.com/products/wordpress/plugins/contact-form/?k=697c5e74f39779ce77850e11dbe21962&amp;pn=77&amp;v=<?php echo $cntctfrm_plugin_info["Version"]; ?>&amp;wp_v=<?php echo $wp_version; ?>" target="_blank" title="Contact Form Pro">
-									<?php _e( 'Upgrade to Pro', 'contact-form-plugin' ); ?>
-								</a>
-								<div class="clear"></div>
-							</td>
-						</tr>
-					<?php } ?>
 					<tr valign="top">
 						<td>
 							<?php _e( "Attachment block", 'contact-form-plugin' ); ?>
@@ -853,12 +844,14 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 							<label><input type="checkbox" id="cntctfrm_attachment" name="cntctfrm_attachment" value="1" <?php checked( '1', $this->options['attachment'] ); ?> />
 							<span class="cntctfrm_mobile_title"><?php _e( "Used", 'contact-form-plugin' ); ?></span></label>
 						</td>
-						<td></td>
 						<?php if ( ! $this->hide_pro_tabs ) { ?>
-							<td></td>
-							<td></td>
-							<td></td>
-						<?php } ?>
+                            <td class="bws_pro_version"></td>
+                            <td class="bws_pro_version"></td>
+							<td class="bws_pro_version"></td>
+							<td class="bws_pro_version"></td>
+						<?php } else { ?>
+                            <td></td>
+                        <?php } ?>
 					</tr>
                     <tr valign="top" class="cntctfrm-multi-attachment" <?php if ( ! $this->options['attachment'] ) echo 'style="display:none";' ?> >
                         <td>
@@ -870,12 +863,14 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
                         <td>
                             <label class="bws_info"><input type="checkbox" name="cntctfrm_active_multi_attachment" value="1" <?php checked( '1', $this->options['active_multi_attachment'] ); ?> /></label>
                         </td>
-                        <td></td>
 	                    <?php if ( ! $this->hide_pro_tabs ) { ?>
+                            <td class="bws_pro_version"></td>
+                            <td class="bws_pro_version"></td>
+                            <td class="bws_pro_version"></td>
+                            <td class="bws_pro_version"></td>
+                        <?php } else { ?>
                             <td></td>
-                            <td></td>
-                            <td></td>
-	                    <?php } ?>
+                        <?php } ?>
                     </tr>
 				</tbody>
 			</table>
@@ -917,11 +912,26 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
                                     <td><label><input disabled="disabled" class="name cstmfld_add_new_is_visible" type="checkbox" name="cntctfrm_visible" value="1"></label></td>
                                     <td><label><input disabled="disabled" class="name cstmfld_add_new_is_disabled_editing" type="checkbox" name="cntctfrm_disabled" value="1"></label></td>
                                     <td class="cstmfld-default-value"><label><input disabled="disabled" class="subject cstmfld_add_new_default_value cstmfld_add_new_default_value" type="text" maxlength="250" name="cntctfrm_default" value=""></label></td>
-                                    <!--<td><button class="button cstmfld_add_field" name="cstmfld_add_field" style="width: 100%;">Add Field</button></td>-->
                                 </tr>
                                 </tbody>
                             </table>
                             <button disabled="disabled" class="button button-primary cstmfld_create_new_field" style="width: 100%;" name="cstmfld_create_new_field"><?php _e( 'Create Field', 'contact-form-plugin' ); ?></button>
+                            <table class="form-table" style="width:auto;">
+                                <tbody>
+                                <tr>
+                                    <th scope="row">
+	                                    <?php _e( 'Google Analytics Measurement ID', 'contact-form-plugin' ); ?>
+                                    </th>
+                                    <td>
+                                        <input disabled="disabled" type="text" name="cntctfrm_tracking_id" value="" />
+                                        <div class="bws_info">
+	                                        <?php  printf( __( 'Enter your %sMeasurement ID%s to track contact form submissions in Google Analytics.', 'contact-form-plugin' ), '<a href="https://support.google.com/analytics/answer/9304153?hl=en&ref_topic=9303319">', '</a>' ); ?><br />
+	                                        <?php  _e( 'Google Analytics version 4 is required.', 'contact-form-plugin' ) ?>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
                         </div>
                         <div style="padding: 10px; ">
                             * <?php _e( 'If you upgrade to Pro version all your settings will be saved.', 'contact-form-plugin' ); ?>
@@ -939,7 +949,7 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 				<tr valign="top">
 					<th scope="row"><?php _e( "Add to the form", 'contact-form-plugin' ); ?></th>
 					<td colspan="3"><fieldset>
-						<div style="clear: both;">
+                        <div id="cntctfrm-attachment-explanations" style="clear: both;<?php if ( ! $this->options['attachment'] ) echo ' display:none;' ?>">
 							<label>
 								<input type="checkbox" id="cntctfrm_attachment_explanations" name="cntctfrm_attachment_explanations" value="1" <?php checked( '1' == $this->options['attachment_explanations'] && '1' == $this->options['attachment'] ); ?> />
 								<?php _e( "Tips below the Attachment", 'contact-form-plugin' ); ?>
@@ -1121,9 +1131,10 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
                     </td>
 				</tr>
 				<tr valign="top">
-					<th scope="row"><?php _e( "Language settings for the field names in the form", 'contact-form-plugin' ); ?></th>
+					<th scope="row"><?php _e( "Language Settings", 'contact-form-plugin' ); ?></th>
 					<td colspan="2">
 						<select name="cntctfrm_languages" id="cntctfrm_languages" style="max-width: 300px;">
+                            <option value="0"></option>
 							<?php foreach ( $cntctfrm_lang_codes as $key => $val ) {
 								if ( ! empty( $this->options['language'] ) && in_array( $key, $this->options['language'] ) )
 									continue;

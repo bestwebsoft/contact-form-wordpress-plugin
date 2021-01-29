@@ -49,44 +49,49 @@
 		});
 		$( '#cntctfrm_attachment' ).change( function() {
 			if ( $( this ).is( ':checked' ) ) {
-				$( '.cntctfrm-multi-attachment' ).show();
+				$( '.cntctfrm-multi-attachment, #cntctfrm-attachment-explanations' ).show();
 			} else {
-				$( '.cntctfrm-multi-attachment' ).hide();
+				$( '.cntctfrm-multi-attachment, #cntctfrm-attachment-explanations' ).hide();
 			}
 		});
 		$( '#cntctfrm_add_language_button' ).click( function( event ) {
 			event = event || window.event;
 			event.preventDefault();
-			$.ajax({
-				url: '../wp-admin/admin-ajax.php',/* update_url, */
-				type: "POST",
-				data: "action=cntctfrm_add_language&lang=" + $( '#cntctfrm_languages' ).val() + '&cntctfrm_ajax_nonce_field=' + cntctfrm_ajax.cntctfrm_nonce,
-				success: function( result ) {
-					var text = $.parseJSON( result );
-					var lang_val = $( '#cntctfrm_languages' ).val();
-					$( '.cntctfrm_change_label_block .cntctfrm_language_tab, .cntctfrm_action_after_send_block .cntctfrm_language_tab' ).each( function() {
-						$( this ).addClass( 'hidden' );
-					});
-					$( '.cntctfrm_change_label_block .cntctfrm_language_tab' ).first().clone().appendTo( '.cntctfrm_change_label_block' ).removeClass( 'hidden' ).removeClass( 'cntctfrm_tab_default' ).addClass( 'cntctfrm_tab_' + lang_val );
-					$( '.cntctfrm_action_after_send_block .cntctfrm_language_tab' ).first().clone().insertBefore( '#cntctfrm_before' ).removeClass( 'hidden' ).removeClass( 'cntctfrm_tab_default' ).addClass( 'cntctfrm_tab_' + lang_val );
-					$( '.cntctfrm_change_label_block .cntctfrm_language_tab' ).last().find( 'input' ).each( function() {
-						$( this ).val( '' );
-						$( this ).attr( 'name', $( this ).attr( 'name' ).replace( '[default]', '[' + lang_val + ']' ) );
-					});
-					$( '.cntctfrm_change_label_block .cntctfrm_language_tab' ).last().find( '.cntctfrm_shortcode_for_language' ).last().html( text );
-					$( '.cntctfrm_action_after_send_block .cntctfrm_language_tab' ).last().find( 'input' ).val( '' ).attr( 'name', $( '.cntctfrm_action_after_send_block .cntctfrm_language_tab' ).last().find( 'input' ).attr( 'name' ).replace( '[default]', '[' + lang_val + ']' ) );
-					$( '.cntctfrm_action_after_send_block .cntctfrm_language_tab' ).last().find( '.cntctfrm_shortcode_for_language' ).last().html( text );
-					$( '.cntctfrm_change_label_block .cntctfrm_label_language_tab, .cntctfrm_action_after_send_block .cntctfrm_label_language_tab' ).each( function() {
-						$( this ).removeClass( 'cntctfrm_active' );
-					});
-					$( '.cntctfrm_change_label_block .clear' ).prev().clone().attr( 'id', 'cntctfrm_label_' + lang_val ).addClass( 'cntctfrm_active' ).html( $( '#cntctfrm_languages option:selected' ).text() + ' <span class="cntctfrm_delete" rel="' + lang_val + '">X</span>').insertBefore( '.cntctfrm_change_label_block .clear' );
-					$( '.cntctfrm_action_after_send_block .clear' ).prev().clone().attr( 'id', 'cntctfrm_text_' + lang_val ).addClass( 'cntctfrm_active' ).html( $( '#cntctfrm_languages option:selected' ).text() + ' <span class="cntctfrm_delete" rel="' + lang_val + '">X</span>').insertBefore( '.cntctfrm_action_after_send_block .clear' );
-					$( '#cntctfrm_languages option:selected' ).remove();
-				},
-				error: function( request, status, error ) {
-					alert( error + request.status );
-				}
-			});
+			var lang_val = $( '#cntctfrm_languages' ).val();
+			if ( '0' !== lang_val ) {
+				$.ajax({
+					url: '../wp-admin/admin-ajax.php',/* update_url, */
+					type: "POST",
+					data: "action=cntctfrm_add_language&lang=" + lang_val + '&cntctfrm_ajax_nonce_field=' + cntctfrm_ajax.cntctfrm_nonce,
+					success: function( result ) {
+						var text = $.parseJSON( result );
+						var lang_val = $( '#cntctfrm_languages' ).val();
+						$( '.cntctfrm_change_label_block .cntctfrm_language_tab, .cntctfrm_action_after_send_block .cntctfrm_language_tab' ).each( function() {
+							$( this ).addClass( 'hidden' );
+						});
+						$( '.cntctfrm_change_label_block .cntctfrm_language_tab' ).first().clone().appendTo( '.cntctfrm_change_label_block' ).removeClass( 'hidden' ).removeClass( 'cntctfrm_tab_default' ).addClass( 'cntctfrm_tab_' + lang_val );
+						$( '.cntctfrm_action_after_send_block .cntctfrm_language_tab' ).first().clone().insertBefore( '#cntctfrm_before' ).removeClass( 'hidden' ).removeClass( 'cntctfrm_tab_default' ).addClass( 'cntctfrm_tab_' + lang_val );
+						$( '.cntctfrm_change_label_block .cntctfrm_language_tab' ).last().find( 'input' ).each( function() {
+							$( this ).val( '' );
+							$( this ).attr( 'name', $( this ).attr( 'name' ).replace( '[default]', '[' + lang_val + ']' ) );
+						});
+						$( '.cntctfrm_change_label_block .cntctfrm_language_tab' ).last().find( '.cntctfrm_shortcode_for_language' ).last().html( text );
+						$( '.cntctfrm_action_after_send_block .cntctfrm_language_tab' ).last().find( 'input' ).val( '' ).attr( 'name', $( '.cntctfrm_action_after_send_block .cntctfrm_language_tab' ).last().find( 'input' ).attr( 'name' ).replace( '[default]', '[' + lang_val + ']' ) );
+						$( '.cntctfrm_action_after_send_block .cntctfrm_language_tab' ).last().find( '.cntctfrm_shortcode_for_language' ).last().html( text );
+						$( '.cntctfrm_change_label_block .cntctfrm_label_language_tab, .cntctfrm_action_after_send_block .cntctfrm_label_language_tab' ).each( function() {
+							$( this ).removeClass( 'cntctfrm_active' );
+						});
+						$( '.cntctfrm_change_label_block .clear' ).prev().clone().attr( 'id', 'cntctfrm_label_' + lang_val ).addClass( 'cntctfrm_active' ).html( $( '#cntctfrm_languages option:selected' ).text() + ' <span class="cntctfrm_delete" rel="' + lang_val + '">X</span>').insertBefore( '.cntctfrm_change_label_block .clear' );
+						$( '.cntctfrm_action_after_send_block .clear' ).prev().clone().attr( 'id', 'cntctfrm_text_' + lang_val ).addClass( 'cntctfrm_active' ).html( $( '#cntctfrm_languages option:selected' ).text() + ' <span class="cntctfrm_delete" rel="' + lang_val + '">X</span>').insertBefore( '.cntctfrm_action_after_send_block .clear' );
+						$( '#cntctfrm_languages option:selected' ).remove();
+						$( '#cntctfrm_change_label' ).prop( 'checked', true );
+						$( '.cntctfrm_change_label_block' ).show();
+					},
+					error: function( request, status, error ) {
+						alert( error + request.status );
+					}
+				});
+			}
 		});
 		$( '.cntctfrm_language_tab_block' ).css( 'display', 'none' );
 		$( '.cntctfrm_language_tab_block_mini' ).css( 'display', 'block' );

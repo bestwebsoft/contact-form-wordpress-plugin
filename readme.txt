@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: contact, contact form, feedback form, contact us form, contact button, email form, contac, form, web-page feedback, cf, cf plugin, contact form plugin
 Requires at least: 4.5
-Tested up to: 5.5
-Stable tag: 4.2.1
+Tested up to: 5.6
+Stable tag: 4.2.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -67,17 +67,18 @@ https://www.youtube.com/watch?v=F_piQa0hmkU
 > * Automatically populate name and email input fields for logged-in users
 > * Add "Reply to" email address in the message head
 > * Set default text for subject and message input fields
+> * Phone number validation [NEW]
 > * Show, hide or disable fields:
 > 	* Name
 > 	* Email Address
 > 	* Subject
 > 	* Message
 > * Enable auto response option with editable message
+> * Add Google Analytics Measurement ID for tracking form submission [NEW]
 > * Customizable form
 > 	* Styles (no programming knowledge required)
 > 	* Alignment, labels alignment and position
-> * Editable tooltips
-> * Editable placeholders
+> * Editable tooltips and  placeholders
 > * Get answer to your support question within one business day ([Support Policy](https://bestwebsoft.com/support-policy/))
 >
 > [Upgrade to Pro Now](https://bestwebsoft.com/products/wordpress/plugins/contact-form/?k=4028655c87316c98ae9ac7ca1928067f)
@@ -86,7 +87,7 @@ If you have a feature suggestion or idea you'd like to see in the plugin, we'd l
 
 = Documentation & Videos =
 
-* [[Doc] How to Use](https://docs.google.com/document/d/1qZYPJhkSdVyyM6XO5WfiBcTS2Sa9_9UMn4vS2g48JRY/)
+* [[Doc] User Guide](https://docs.google.com/document/d/1qZYPJhkSdVyyM6XO5WfiBcTS2Sa9_9UMn4vS2g48JRY/)
 * [[Doc] Installation](https://docs.google.com/document/d/1-hvn6WRvWnOqj5v5pLUk7Awyu87lq5B_dO-Tv-MC9JQ/)
 * [[Doc] Purchase](https://docs.google.com/document/d/1EUdBVvnm7IHZ6y0DNyldZypUQKpB8UVPToSc_LdOYQI/)
 * [[Video] Purchase, Installation, Configuration Tutorial](https://www.youtube.com/watch?v=k1wq00ajACo)
@@ -100,7 +101,7 @@ Visit our Help Center if you have any questions, our friendly Support Team is ha
 
 * Afrikaans (af_ZA) (thanks to [Aldu](mailto:alducornelissen@gmail.com))
 * Brazilian Portuguese (pt_BR) (thanks to [Breno Jacinto](mailto:brenojac@gmail.com), www.iconis.org.br, [DJIO](mailto:wordpress@djio.com.br), www.djio.com.br)
-* Catalan (ca) (thanks to [Kenneth](mailto:kenneth@snollocer.net))
+* Catalan (ca) (thanks to [Jose Bescos](mailto:jmbescos@ibidemgroup.com) - www.ibidemgroup.com)
 * Chinese (zh_CN) (thanks to [kplam](mailto:kplam@qq.com))
 * Czech (cs_CZ) (thanks to [Michal Kučera](mailto:kucerami@gmail.com), www.n0lim.it, [PaMaDeSSoft](mailto:info@pamadessoft.cz), www.pamadessoft.cz)
 * Danish (da_DK) (thanks to [Kasper Jensen](mailto:support@teknisk-support.com), www.teknisk-support.com)
@@ -226,6 +227,14 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 16. Enable the file multiattachment option to get important files from senders via contact form.
 
 == Changelog ==
+
+= V4.2.2 - 28.01.2021 =
+* Update : All functionality was updated for WordPress 5.6.
+* Update : The plugin settings page has been updated.
+* Update : Catalan language file is updated.
+* Update : BWS Panel section was updated.
+* PRO : Ability to add Google Analytics Measurement ID for tracking form submission.
+* PRO : Phone number mask has been added.
 
 = V4.2.1 - 31.08.2020 =
 * NEW : Additional button to go to the Contact Form to DB plugin has been added.
@@ -578,6 +587,12 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * NEW : You can use JavaScript for the form validation with highlighting option
 
 == Upgrade Notice ==
+
+= V4.2.2 =
+* The compatibility with new WordPress version updated.
+* New features added.
+* Plugin optimization completed.
+* Languages updated.
 
 = V4.2.1 =
 * Bugs fixed.

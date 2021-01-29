@@ -6,12 +6,12 @@ Description: Simple contact form plugin any WordPress website must have.
 Author: BestWebSoft
 Text Domain: contact-form-plugin
 Domain Path: /languages
-Version: 4.2.1
+Version: 4.2.2
 Author URI: https://bestwebsoft.com/
 License: GPLv2 or later
 */
 
-/*  @ Copyright 2020 BestWebSoft  ( https://support.bestwebsoft.com )
+/*  @ Copyright 2021 BestWebSoft  ( https://support.bestwebsoft.com )
 
 	This program is free software; you can redistribute it and/or modify
 	it under the terms of the GNU General Public License, version 2, as
@@ -40,7 +40,8 @@ if ( ! function_exists( 'cntctfrm_admin_menu' ) ) {
 				'Contact Form', /* $menu_title */
 				'manage_options', /* $capability */
 				'contact_form.php', /* $menu_slug */
-				'cntctfrm_settings_page' /* $callable_function */
+				'cntctfrm_settings_page', /* $callable_function */
+                'none'
 			);
 			add_submenu_page(
 				'contact_form.php',

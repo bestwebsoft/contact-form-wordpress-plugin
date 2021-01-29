@@ -61,6 +61,7 @@
 <li>Automatically populate name and email input fields for logged-in users</li>
 <li>Add &#8220;Reply to&#8221; email address in the message head</li>
 <li>Set default text for subject and message input fields</li>
+<li>Phone number validation [NEW]</li>
 <li>Show, hide or disable fields:
 <ul>
 <li>Name</li>
@@ -70,14 +71,14 @@
 </ul>
 </li>
 <li>Enable auto response option with editable message</li>
+<li>Add Google Analytics Measurement ID for tracking form submission [NEW]</li>
 <li>Customizable form
 <ul>
 <li>Styles (no programming knowledge required)</li>
 <li>Alignment, labels alignment and position</li>
 </ul>
 </li>
-<li>Editable tooltips</li>
-<li>Editable placeholders</li>
+<li>Editable tooltips and  placeholders</li>
 <li>Get answer to your support question within one business day (<a href="https://bestwebsoft.com/support-policy/" rel="nofollow ugc">Support Policy</a>)</li>
 </ul>
 <p><a href="https://bestwebsoft.com/products/wordpress/plugins/contact-form/?k=4028655c87316c98ae9ac7ca1928067f" rel="nofollow ugc">Upgrade to Pro Now</a></p>
@@ -85,7 +86,7 @@
 <p>If you have a feature suggestion or idea you&#8217;d like to see in the plugin, we&#8217;d love to hear about it! <a href="https://support.bestwebsoft.com/hc/en-us/requests/new" rel="nofollow ugc">Suggest a Feature</a></p>
 <h4>Documentation &amp; Videos</h4>
 <ul>
-<li><a href="https://docs.google.com/document/d/1qZYPJhkSdVyyM6XO5WfiBcTS2Sa9_9UMn4vS2g48JRY/" rel="nofollow ugc">[Doc] How to Use</a></li>
+<li><a href="https://docs.google.com/document/d/1qZYPJhkSdVyyM6XO5WfiBcTS2Sa9_9UMn4vS2g48JRY/" rel="nofollow ugc">[Doc] User Guide</a></li>
 <li><a href="https://docs.google.com/document/d/1-hvn6WRvWnOqj5v5pLUk7Awyu87lq5B_dO-Tv-MC9JQ/" rel="nofollow ugc">[Doc] Installation</a></li>
 <li><a href="https://docs.google.com/document/d/1EUdBVvnm7IHZ6y0DNyldZypUQKpB8UVPToSc_LdOYQI/" rel="nofollow ugc">[Doc] Purchase</a></li>
 <li><a href="https://www.youtube.com/watch?v=k1wq00ajACo" rel="nofollow ugc">[Video] Purchase, Installation, Configuration Tutorial</a></li>
@@ -97,7 +98,7 @@
 <ul>
 <li>Afrikaans (af_ZA) (thanks to <a href="mailto:&#x61;&#108;&#100;&#x75;&#x63;&#111;r&#x6e;&#101;&#108;&#x69;&#x73;&#115;&#101;&#x6e;&#x40;&#103;&#x6d;&#x61;&#105;&#108;&#x2e;&#x63;&#111;m" rel="nofollow ugc">Aldu</a>)</li>
 <li>Brazilian Portuguese (pt_BR) (thanks to <a href="mailto:&#098;&#114;&#x65;&#110;&#111;&#x6a;&#097;&#099;&#x40;&#x67;&#109;&#x61;&#x69;&#108;&#x2e;&#x63;&#111;&#x6d;" rel="nofollow ugc">Breno Jacinto</a>, www.iconis.org.br, <a href="mailto:&#119;&#111;&#x72;&#x64;&#x70;&#114;&#101;&#x73;&#x73;&#x40;&#100;&#106;&#x69;&#x6f;&#x2e;&#099;&#111;&#x6d;&#x2e;&#x62;&#114;" rel="nofollow ugc">DJIO</a>, www.djio.com.br)</li>
-<li>Catalan (ca) (thanks to <a href="mailto:&#x6b;&#x65;&#x6e;&#110;&#101;&#x74;&#x68;&#x40;&#115;&#110;&#x6f;&#x6c;&#x6c;&#111;&#099;&#x65;&#x72;&#x2e;&#110;&#101;&#x74;" rel="nofollow ugc">Kenneth</a>)</li>
+<li>Catalan (ca) (thanks to <a href="mailto:&#x6a;&#109;&#x62;e&#115;&#x63;&#111;&#x73;&#064;&#x69;&#098;&#x69;&#100;&#x65;&#109;&#x67;r&#111;&#x75;&#112;&#x2e;&#099;&#x6f;&#109;" rel="nofollow ugc">Jose Bescos</a> &#8211; www.ibidemgroup.com)</li>
 <li>Chinese (zh_CN) (thanks to <a href="mailto:&#107;&#x70;&#x6c;&#097;&#109;&#064;&#x71;&#113;&#046;c&#x6f;&#x6d;" rel="nofollow ugc">kplam</a>)</li>
 <li>Czech (cs_CZ) (thanks to <a href="mailto:&#107;&#117;&#x63;&#x65;&#114;&#x61;&#x6d;&#105;&#064;&#x67;&#109;&#097;&#x69;&#108;&#046;&#x63;&#x6f;&#109;" rel="nofollow ugc">Michal Kučera</a>, www.n0lim.it, <a href="mailto:&#105;&#110;&#102;&#111;&#064;&#x70;&#x61;&#x6d;&#x61;&#x64;&#x65;&#115;&#115;&#111;&#102;&#116;.&#x63;&#x7a;" rel="nofollow ugc">PaMaDeSSoft</a>, www.pamadessoft.cz)</li>
 <li>Danish (da_DK) (thanks to <a href="mailto:&#115;&#117;&#x70;&#112;&#111;&#x72;&#116;&#064;&#x74;&#x65;&#107;&#x6e;&#x69;&#115;&#x6b;&#x2d;&#115;&#x75;&#x70;&#112;o&#x72;&#116;.&#x63;&#111;&#109;" rel="nofollow ugc">Kasper Jensen</a>, www.teknisk-support.com)</li>
