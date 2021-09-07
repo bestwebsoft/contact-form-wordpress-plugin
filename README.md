@@ -94,6 +94,8 @@
 </ul>
 <h4>Help &amp; Support</h4>
 <p>Visit our Help Center if you have any questions, our friendly Support Team is happy to help — <a href="https://support.bestwebsoft.com/" rel="nofollow ugc">https://support.bestwebsoft.com/</a></p>
+<h4>Affiliate Program</h4>
+<p>Earn 20% commission by selling the premium WordPress plugins and themes by BestWebSoft — <a href="https://bestwebsoft.com/affiliate/" rel="nofollow">https://bestwebsoft.com/affiliate/</a></p>
 <h4>Translation</h4>
 <ul>
 <li>Afrikaans (af_ZA) (thanks to <a href="mailto:&#x61;&#108;&#100;&#x75;&#x63;&#111;r&#x6e;&#101;&#108;&#x69;&#x73;&#115;&#101;&#x6e;&#x40;&#103;&#x6d;&#x61;&#105;&#108;&#x2e;&#x63;&#111;m" rel="nofollow ugc">Aldu</a>)</li>
