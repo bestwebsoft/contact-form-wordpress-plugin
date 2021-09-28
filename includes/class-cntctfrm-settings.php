@@ -23,9 +23,9 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 				'settings'				=> array( 'label' => esc_html__( 'Settings', 'contact-form-plugin' ) ),
 				'additional_settings'	=> array( 'label' => esc_html__( 'Additional Settings', 'contact-form-plugin' ) ),
 				'appearance'			=> array( 'label' => esc_html__( 'Appearance', 'contact-form-plugin' ) ),
-				'misc' 					=> array( 'label' => esc_html__( 'Misc', 'contact-form-plugin' ) ),
+				'misc'					=> array( 'label' => esc_html__( 'Misc', 'contact-form-plugin' ) ),
+				/*pls   */
 				'custom_code'			=> array( 'label' => esc_html__( 'Custom Code', 'contact-form-plugin' ) ),
-                /*pls   */
                 'license'				=> array( 'label' => esc_html__( 'License Key', 'contact-form-plugin' ) ),
                 /*  pls*/
 			);
@@ -131,7 +131,7 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 			if ( isset( $_POST['cntctfrm_width_type'] ) && in_array( $_POST['cntctfrm_width_type'], array( 'default', 'custom' ) ) ) {
 				$this->options['width']['type'] = $_POST['cntctfrm_width_type'];
 				if ( 'custom' == $_POST['cntctfrm_width_type'] ) {
-					$this->options['width']['input_value'] = ( isset( $_POST['cntctfrm_input_width_value'] ) ) ? (int) $_POST[ 'cntctfrm_input_width_value' ] : 100;
+					$this->options['width']['input_value'] = ( isset( $_POST['cntctfrm_input_width_value'] ) ) ? intval( $_POST[ 'cntctfrm_input_width_value' ] ) : 100;
 					$this->options['width']['input_unit'] = ( isset( $_POST['cntctfrm_input_width_unit'] ) && in_array( $_POST['cntctfrm_input_width_unit'], array( '%', 'px' ) ) ) ? $_POST[ 'cntctfrm_input_width_unit' ] : '%';
 				}
 			}
@@ -156,8 +156,16 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
             $this->options['order_fields']['second_column'] = $layout_second_column;
 
             $this->options['user_email']               = isset( $_POST['cntctfrm_user_email'] ) ? sanitize_text_field( $_POST['cntctfrm_user_email'] ) : $this->options['user_email'];
-            $this->options['custom_email']             = isset( $_POST['cntctfrm_custom_email'] ) ? sanitize_email( $_POST['cntctfrm_custom_email'] ) : $this->options['custom_email'];
-            $this->options['select_email']             = isset( $_POST['cntctfrm_select_email'] ) && in_array( $_POST['cntctfrm_select_email'], array( 'user', 'custom', 'departments' ) ) ? ( $_POST['cntctfrm_select_email'] ) : 'user';
+			if ( isset( $_POST['cntctfrm_custom_email'] ) && preg_match( '|,|', $_POST['cntctfrm_custom_email'] ) ) {
+				$cntctfrm_multi_emails = explode( ',', $_POST['cntctfrm_custom_email'] );
+				foreach ( $cntctfrm_multi_emails as $cntctfrm_multi_email ) {
+					$to[] = sanitize_email( $cntctfrm_multi_email );
+				}
+				$this->options['custom_email']         = implode( ', ', $to );
+			} else {
+				$this->options['custom_email']         = isset( $_POST['cntctfrm_custom_email'] ) ? sanitize_email( $_POST['cntctfrm_custom_email'] ) : $this->options['custom_email'];
+			}
+			$this->options['select_email']             = isset( $_POST['cntctfrm_select_email'] ) && in_array( $_POST['cntctfrm_select_email'], array( 'user', 'custom', 'departments' ) ) ? ( $_POST['cntctfrm_select_email'] ) : 'user';
             $this->options['from_email']               = isset( $_POST['cntctfrm_from_email'] ) && in_array( $_POST['cntctfrm_from_email'], array( 'user', 'custom' ) ) ? ( $_POST['cntctfrm_from_email'] ) : 'user';
             $this->options['custom_from_email']        = isset( $_POST['cntctfrm_custom_from_email'] ) ? sanitize_email( $_POST['cntctfrm_custom_from_email'] ) : $this->options['custom_from_email'];
 
@@ -259,31 +267,31 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 
 			if ( 1 == $this->options['change_label'] ) {
 				foreach ( $_POST['cntctfrm_name_label'] as $key => $val ) {
-					$this->options['name_label'][ $key ]               = stripcslashes( htmlspecialchars( $_POST['cntctfrm_name_label'][ $key ] ) );
-                    $this->options['address_label'][ $key ]            = stripcslashes( htmlspecialchars( $_POST['cntctfrm_address_label'][ $key ] ) );
-                    $this->options['email_label'][ $key ]              = stripcslashes( htmlspecialchars( $_POST['cntctfrm_email_label'][ $key ] ) );
-                    $this->options['phone_label'][ $key ]              = stripcslashes( htmlspecialchars( $_POST['cntctfrm_phone_label'][ $key ] ) );
-                    $this->options['subject_label'][ $key ]            = stripcslashes( htmlspecialchars( $_POST['cntctfrm_subject_label'][ $key ] ) );
-                    $this->options['message_label'][ $key ]            = stripcslashes( htmlspecialchars( $_POST['cntctfrm_message_label'][ $key ] ) );
-                    $this->options['attachment_label'][ $key ]         = stripcslashes( htmlspecialchars( $_POST['cntctfrm_attachment_label'][ $key ] ) );
-                    $this->options['attachment_tooltip'][ $key ]       = stripcslashes( htmlspecialchars( $_POST['cntctfrm_attachment_tooltip'][ $key ] ) );
-                    $this->options['send_copy_label'][ $key ]          = stripcslashes( htmlspecialchars( $_POST['cntctfrm_send_copy_label'][ $key ] ) );
-                    $this->options['gdpr_label'][ $key ]               = stripcslashes( htmlspecialchars( $_POST['cntctfrm_gdpr_label'][ $key ] ) );
-                    $this->options['gdpr_text_button'][ $key ]         = stripcslashes( htmlspecialchars( $_POST['cntctfrm_gdpr_text_button'][ $key ] ) );
-                    $this->options['thank_text'][ $key ]               = stripcslashes( htmlspecialchars( $_POST['cntctfrm_thank_text'][ $key ] ) );
-                    $this->options['submit_label'][ $key ]             = stripcslashes( htmlspecialchars( $_POST['cntctfrm_submit_label'][ $key ] ) );
-                    $this->options['name_error'][ $key ]               = stripcslashes( htmlspecialchars( $_POST['cntctfrm_name_error'][ $key ] ) );
-                    $this->options['address_error'][ $key ]            = stripcslashes( htmlspecialchars( $_POST['cntctfrm_address_error'][ $key ] ) );
-                    $this->options['email_error'][ $key ]              = stripcslashes( htmlspecialchars( $_POST['cntctfrm_email_error'][ $key ] ) );
-                    $this->options['phone_error'][ $key ]              = stripcslashes( htmlspecialchars( $_POST['cntctfrm_phone_error'][ $key ] ) );
-                    $this->options['subject_error'][ $key ]            = stripcslashes( htmlspecialchars( $_POST['cntctfrm_subject_error'][ $key ] ) );
-                    $this->options['message_error'][ $key ]            = stripcslashes( htmlspecialchars( $_POST['cntctfrm_message_error'][ $key ] ) );
-                    $this->options['attachment_error'][ $key ]         = stripcslashes( htmlspecialchars( $_POST['cntctfrm_attachment_error'][ $key ] ) );
-                    $this->options['attachment_upload_error'][ $key ]  = stripcslashes( htmlspecialchars( $_POST['cntctfrm_attachment_upload_error'][ $key ] ) );
-                    $this->options['attachment_move_error'][ $key ]    = stripcslashes( htmlspecialchars( $_POST['cntctfrm_attachment_move_error'][ $key ] ) );
-                    $this->options['attachment_size_error'][ $key ]    = stripcslashes( htmlspecialchars( $_POST['cntctfrm_attachment_size_error'][ $key ] ) );
-                    $this->options['captcha_error'][ $key ]            = stripcslashes( htmlspecialchars( $_POST['cntctfrm_captcha_error'][ $key ] ) );
-                    $this->options['form_error'][ $key ]               = stripcslashes( htmlspecialchars( $_POST['cntctfrm_form_error'][ $key ] ) );
+					$this->options['name_label'][ $key ]               = stripcslashes( sanitize_text_field( $_POST['cntctfrm_name_label'][ $key ] ) );
+                    $this->options['address_label'][ $key ]            = stripcslashes( sanitize_text_field( $_POST['cntctfrm_address_label'][ $key ] ) );
+                    $this->options['email_label'][ $key ]              = stripcslashes( sanitize_email( $_POST['cntctfrm_email_label'][ $key ] ) );
+                    $this->options['phone_label'][ $key ]              = stripcslashes( sanitize_text_field( $_POST['cntctfrm_phone_label'][ $key ] ) );
+                    $this->options['subject_label'][ $key ]            = stripcslashes( sanitize_text_field( $_POST['cntctfrm_subject_label'][ $key ] ) );
+                    $this->options['message_label'][ $key ]            = stripcslashes( sanitize_textarea_field( $_POST['cntctfrm_message_label'][ $key ] ) );
+                    $this->options['attachment_label'][ $key ]         = stripcslashes( sanitize_text_field( $_POST['cntctfrm_attachment_label'][ $key ] ) );
+                    $this->options['attachment_tooltip'][ $key ]       = stripcslashes( sanitize_text_field( $_POST['cntctfrm_attachment_tooltip'][ $key ] ) );
+                    $this->options['send_copy_label'][ $key ]          = stripcslashes( sanitize_text_field( $_POST['cntctfrm_send_copy_label'][ $key ] ) );
+                    $this->options['gdpr_label'][ $key ]               = stripcslashes( sanitize_text_field( $_POST['cntctfrm_gdpr_label'][ $key ] ) );
+                    $this->options['gdpr_text_button'][ $key ]         = stripcslashes( sanitize_text_field( $_POST['cntctfrm_gdpr_text_button'][ $key ] ) );
+                    $this->options['thank_text'][ $key ]               = stripcslashes( sanitize_text_field( $_POST['cntctfrm_thank_text'][ $key ] ) );
+                    $this->options['submit_label'][ $key ]             = stripcslashes( sanitize_text_field( $_POST['cntctfrm_submit_label'][ $key ] ) );
+                    $this->options['name_error'][ $key ]               = stripcslashes( sanitize_text_field( $_POST['cntctfrm_name_error'][ $key ] ) );
+                    $this->options['address_error'][ $key ]            = stripcslashes( sanitize_text_field( $_POST['cntctfrm_address_error'][ $key ] ) );
+                    $this->options['email_error'][ $key ]              = stripcslashes( sanitize_text_field( $_POST['cntctfrm_email_error'][ $key ] ) );
+                    $this->options['phone_error'][ $key ]              = stripcslashes( sanitize_text_field( $_POST['cntctfrm_phone_error'][ $key ] ) );
+                    $this->options['subject_error'][ $key ]            = stripcslashes( sanitize_text_field( $_POST['cntctfrm_subject_error'][ $key ] ) );
+                    $this->options['message_error'][ $key ]            = stripcslashes( sanitize_text_field( $_POST['cntctfrm_message_error'][ $key ] ) );
+                    $this->options['attachment_error'][ $key ]         = stripcslashes( sanitize_text_field( $_POST['cntctfrm_attachment_error'][ $key ] ) );
+                    $this->options['attachment_upload_error'][ $key ]  = stripcslashes( sanitize_text_field( $_POST['cntctfrm_attachment_upload_error'][ $key ] ) );
+                    $this->options['attachment_move_error'][ $key ]    = stripcslashes( sanitize_text_field( $_POST['cntctfrm_attachment_move_error'][ $key ] ) );
+                    $this->options['attachment_size_error'][ $key ]    = stripcslashes( sanitize_text_field( $_POST['cntctfrm_attachment_size_error'][ $key ] ) );
+                    $this->options['captcha_error'][ $key ]            = stripcslashes( sanitize_text_field( $_POST['cntctfrm_captcha_error'][ $key ] ) );
+                    $this->options['form_error'][ $key ]               = stripcslashes( sanitize_text_field( $_POST['cntctfrm_form_error'][ $key ] ) );
 				}
 			} else {
 				$option_defaults = cntctfrm_get_option_defaults();
@@ -420,7 +428,7 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 			if ( empty( $cntctfrm_related_plugins ) ) {
 				cntctfrm_related_plugins();
 			}
-			$userslogin = get_users( 'blog_id=' . $GLOBALS['blog_id'] . '&role=administrator' );
+			$userslogin = get_users( 'blog_id=' . absint( $GLOBALS['blog_id'] ) . '&role=administrator' );
 			if ( ! function_exists( 'get_plugins' ) ) {
 				require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 			}
@@ -461,7 +469,7 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 							<label>
 								<input type="radio" id="cntctfrm_select_email_custom" name="cntctfrm_select_email" value="custom" <?php checked( 'custom', $this->options['select_email'] ); ?>/>
 								<input type="text" maxlength="500" name="cntctfrm_custom_email" value="<?php echo $this->options['custom_email']; ?>" />
-								<div class="bws_info cntctfrm_info"><?php esc_html_e( 'Enter the email address for receiving messages', 'contact-form-plugin' ); ?>.</div>
+								<div class="bws_info cntctfrm_info"><?php esc_html_e( 'Enter multiple email addresses separated by comma for receiving messages.', 'contact-form-plugin' ); ?>.</div>
 							</label>
 						</td>
 					</tr>
@@ -1078,7 +1086,7 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 							<?php } ?>
 						</div>
 						<div style="clear: both; white-space: nowrap;">
-							<?php if ( array_key_exists( 'google-captcha/google-captcha.php', $all_plugins ) || array_key_exists( 'google-captcha-pro/google-captcha-pro.php', $all_plugins ) ) {
+							<?php if ( array_key_exists( 'google-captcha/google-captcha.php', $all_plugins ) || array_key_exists( 'google-captcha-pro/google-captcha-pro.php', $all_plugins ) || array_key_exists( 'google-captcha-plus/google-captcha-plus.php', $all_plugins ) ) {
 								if ( array_key_exists( 'google-captcha', $cntctfrm_related_plugins ) ) {
 									if ( ! $contact_form_multi_active ) {
 										$display_google_captcha = ! empty( $cntctfrm_related_plugins['google-captcha']['options']['contact_form'] ) ? true : false;
@@ -1907,7 +1915,7 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
                 </h3>
                 <div class="inside">
                     <?php esc_html_e( "Add Contact Form  to your page or post using the following shortcode:", 'contact-form-plugin' );
-                    $id_form = $this->cfmlt_is_active ? ' id='. $GLOBALS['cntctfrmmlt_id_form'] : '';
+                    $id_form = $this->cfmlt_is_active ? ' id='. absint( $GLOBALS['cntctfrmmlt_id_form'] ) : '';
                     bws_shortcode_output( "[bestwebsoft_contact_form". $id_form . "]");?>
                 </div>
             </div>

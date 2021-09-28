@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: contact, contact form, feedback form, contact us form, contact button, email form, contac, form, web-page feedback, cf, cf plugin, contact form plugin
 Requires at least: 4.5
-Tested up to: 5.7.2
-Stable tag: 4.2.3
+Tested up to: 5.8.1
+Stable tag: 4.2.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -67,14 +67,14 @@ https://www.youtube.com/watch?v=F_piQa0hmkU
 > * Automatically populate name and email input fields for logged-in users
 > * Add "Reply to" email address in the message head
 > * Set default text for subject and message input fields
-> * Phone number validation [NEW]
+> * Phone number validation
 > * Show, hide or disable fields:
 > 	* Name
 > 	* Email Address
 > 	* Subject
 > 	* Message
 > * Enable auto response option with editable message
-> * Add Google Analytics Measurement ID for tracking form submission [NEW]
+> * Add Google Analytics Measurement ID for tracking form submission
 > * Customizable form
 > 	* Styles (no programming knowledge required)
 > 	* Alignment, labels alignment and position
@@ -87,15 +87,19 @@ If you have a feature suggestion or idea you'd like to see in the plugin, we'd l
 
 = Documentation & Videos =
 
-* [[Doc] User Guide](https://docs.google.com/document/d/1qZYPJhkSdVyyM6XO5WfiBcTS2Sa9_9UMn4vS2g48JRY/)
-* [[Doc] Installation](https://docs.google.com/document/d/1-hvn6WRvWnOqj5v5pLUk7Awyu87lq5B_dO-Tv-MC9JQ/)
-* [[Doc] Purchase](https://docs.google.com/document/d/1EUdBVvnm7IHZ6y0DNyldZypUQKpB8UVPToSc_LdOYQI/)
+* [[Doc] User Guide](https://bestwebsoft.com/documentation/contact-form/)
+* [[Doc] Installation](https://bestwebsoft.com/documentation/how-to-install-a-wordpress-product/how-to-install-a-wordpress-plugin/)
+* [[Doc] Purchase](https://bestwebsoft.com/documentation/how-to-purchase-a-wordpress-plugin/how-to-purchase-wordpress-plugin-from-bestwebsoft/)
 * [[Video] Purchase, Installation, Configuration Tutorial](https://www.youtube.com/watch?v=k1wq00ajACo)
 * [[Video] Installation Instruction](https://www.youtube.com/watch?v=JwG2c4PcO8o)
 
 = Help & Support =
 
 Visit our Help Center if you have any questions, our friendly Support Team is happy to help — <https://support.bestwebsoft.com/>
+
+= Affiliate Program =
+
+Earn 20% commission by selling the premium WordPress plugins and themes by BestWebSoft — [https://bestwebsoft.com/affiliate/](https://bestwebsoft.com/affiliate/?utm_source=plugin&utm_medium=readme&utm_campaign=affiliate_program)
 
 = Translation =
 
@@ -142,7 +146,7 @@ The author of the Contact Form also recommends the following plugins:
 3. You can adjust the necessary settings using your WordPress admin panel in "Contact Form".
 4. Create a page or a post and insert the shortcode [bestwebsoft_contact_form] into the text.
 
-[View a PDF version of Step-by-step Instruction on Contact Form Installation](https://docs.google.com/document/d/1-hvn6WRvWnOqj5v5pLUk7Awyu87lq5B_dO-Tv-MC9JQ/).
+[View a PDF version of Step-by-step Instruction on Contact Form Installation](https://bestwebsoft.com/documentation/how-to-install-a-wordpress-product/how-to-install-a-wordpress-plugin/).
 
 https://www.youtube.com/watch?v=JwG2c4PcO8o
 
@@ -182,7 +186,7 @@ Note: If the Contact Form sends letters, but you don't receive them, you can ins
 
 ***
 Additional info:
-[How to Use Contact Form - Step-by-step Instruction](https://docs.google.com/document/d/1qZYPJhkSdVyyM6XO5WfiBcTS2Sa9_9UMn4vS2g48JRY/)
+[How to Use Contact Form - Step-by-step Instruction](https://bestwebsoft.com/documentation/contact-form/contact-form-user-guide/)
 ***
 
 Submit a support request if the problem still remains. Please include the following information when contacting support:
@@ -205,7 +209,7 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 1. the link to the page where the problem occurs
 2. the name of the plugin and its version. If you are using a pro version - your order number.
 3. the version of your WordPress installation
-4. copy and paste into the message your system status report. Please read more here: [Instruction on System Status](https://docs.google.com/document/d/1Wi2X8RdRGXk9kMszQy1xItJrpN0ncXgioH935MaBKtc/)
+4. copy and paste into the message your system status report. Please read more here: [Instruction on System Status](https://bestwebsoft.com/documentation/admin-panel-issues/system-status/)
 
 == Screenshots ==
 
@@ -227,6 +231,12 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 16. Enable the file multiattachment option to get important files from senders via contact form.
 
 == Changelog ==
+
+= V4.2.4 - 28.09.2021 =
+* Update : BWS Panel section was updated.
+* Update : All functionality was updated for WordPress 5.8.1.
+* NEW : Ability to add several addresses for receiving messages.
+* NEW : Compatibility with reCapthcha Plus plugin has been added.
 
 = V4.2.3 - 24.05.2021 =
 * Update : All functionality was updated for WordPress 5.7.2.
@@ -591,6 +601,10 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * NEW : You can use JavaScript for the form validation with highlighting option
 
 == Upgrade Notice ==
+
+= V4.2.4 =
+* New features added.
+* The compatibility with new WordPress version updated.
 
 = V4.2.3 =
 * The compatibility with new WordPress version updated.
