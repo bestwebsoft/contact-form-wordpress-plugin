@@ -45,7 +45,6 @@
 <li>Save and manage messages using <a href="https://bestwebsoft.com/products/wordpress/plugins/contact-form-to-db/?k=d7d962591b5be0ce6c27af778b1b36ee" rel="nofollow ugc">Contact Form to DB</a></li>
 <li>Add users who send the submission to the <a href="https://bestwebsoft.com/products/wordpress/plugins/subscriber/?k=2ce0827916414c9c8576110f13560030" rel="nofollow ugc">Subscriber</a> newsletter subscription list</li>
 <li>Limit sending emails from the same user using <a href="https://bestwebsoft.com/products/wordpress/plugins/limit-attempts/?k=129e34c19fc68ae4a15b4fc1b4983081" rel="nofollow ugc">Limit Attempts</a></li>
-<li>Add custom code via plugin settings page</li>
 <li>Compatible with latest WordPress version</li>
 <li>Incredibly simple settings for fast setup without modifying code</li>
 <li>Detailed step-by-step documentations and videos</li>
@@ -72,10 +71,12 @@
 </li>
 <li>Enable auto response option with editable message</li>
 <li>Add Google Analytics Measurement ID for tracking form submission</li>
+<li>Add custom code via plugin settings page</li>
 <li>Customizable form
 <ul>
 <li>Styles (no programming knowledge required)</li>
 <li>Alignment, labels alignment and position</li>
+<li>Submit button appearance [NEW]</li>
 </ul>
 </li>
 <li>Editable tooltips and  placeholders</li>

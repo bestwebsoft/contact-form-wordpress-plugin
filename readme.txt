@@ -1,10 +1,10 @@
-=== Contact Form by BestWebSoft ===
+=== Contact Form by BestWebSoft - Advanced Contact Us Form Builder for WordPress ===
 Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: contact, contact form, feedback form, contact us form, contact button, email form, contac, form, web-page feedback, cf, cf plugin, contact form plugin
-Requires at least: 4.5
-Tested up to: 5.8.1
-Stable tag: 4.2.4
+Requires at least: 5.3
+Tested up to: 6.2
+Stable tag: 4.2.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -51,7 +51,6 @@ https://www.youtube.com/watch?v=F_piQa0hmkU
 * Save and manage messages using [Contact Form to DB](https://bestwebsoft.com/products/wordpress/plugins/contact-form-to-db/?k=d7d962591b5be0ce6c27af778b1b36ee)
 * Add users who send the submission to the [Subscriber](https://bestwebsoft.com/products/wordpress/plugins/subscriber/?k=2ce0827916414c9c8576110f13560030) newsletter subscription list
 * Limit sending emails from the same user using [Limit Attempts](https://bestwebsoft.com/products/wordpress/plugins/limit-attempts/?k=129e34c19fc68ae4a15b4fc1b4983081)
-* Add custom code via plugin settings page
 * Compatible with latest WordPress version
 * Incredibly simple settings for fast setup without modifying code
 * Detailed step-by-step documentations and videos
@@ -75,9 +74,11 @@ https://www.youtube.com/watch?v=F_piQa0hmkU
 > 	* Message
 > * Enable auto response option with editable message
 > * Add Google Analytics Measurement ID for tracking form submission
+> * Add custom code via plugin settings page
 > * Customizable form
 > 	* Styles (no programming knowledge required)
 > 	* Alignment, labels alignment and position
+> 	* Submit button appearance [NEW]
 > * Editable tooltips and  placeholders
 > * Get answer to your support question within one business day ([Support Policy](https://bestwebsoft.com/support-policy/))
 >
@@ -231,6 +232,12 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 16. Enable the file multiattachment option to get important files from senders via contact form.
 
 == Changelog ==
+
+= V4.2.5 - 28.06.2022 =
+* Update : BWS Panel section was updated.
+* Update : All functionality was updated for WordPress 6.2.
+* Bugfix : Email label on the form field saving has been fixed.
+* PRO : An ability to edit submit button has been added.
 
 = V4.2.4 - 28.09.2021 =
 * Update : BWS Panel section was updated.
@@ -601,6 +608,12 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * NEW : You can use JavaScript for the form validation with highlighting option
 
 == Upgrade Notice ==
+
+= V4.2.5 =
+* The compatibility with new WordPress version updated.
+* New features added.
+* Plugin optimization completed.
+* Bugs fixed.
 
 = V4.2.4 =
 * New features added.

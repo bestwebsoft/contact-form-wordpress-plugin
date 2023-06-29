@@ -142,9 +142,11 @@
 }
 .cntctfrm_ltr .cntctfrm_column {
 	float: left;
+	width: 49%;
 }
 .cntctfrm_rtl .cntctfrm_column {
 	float: right;
+	width: 49%;
 }
 .cntctfrm_ltr.cntctfrm_two_columns.cntctfrm_width_default #cntctfrm_first_column,
 .cntctfrm_ltr.cntctfrm_two_columns.cntctfrm_width_default #cntctfrm_submit_first_column {
