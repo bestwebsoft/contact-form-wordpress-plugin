@@ -6,7 +6,7 @@ Description: Simple contact form plugin any WordPress website must have.
 Author: BestWebSoft
 Text Domain: contact-form-plugin
 Domain Path: /languages
-Version: 4.2.5
+Version: 4.2.6
 Author URI: https://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -488,7 +488,7 @@ if ( ! function_exists( 'cntctfrm_get_option_defaults' ) ) {
 		if ( ! $cntctfrm_plugin_info )
 			$cntctfrm_plugin_info = get_plugin_data( __FILE__ );
 
-		$sitename = strtolower( filter_var( $_SERVER['SERVER_NAME'], FILTER_SANITIZE_STRING ) );
+		$sitename = strtolower( sanitize_email( wp_unslash( $_SERVER['SERVER_NAME'] ) ) );
 		if ( substr( $sitename, 0, 4 ) == 'www.' )
 			$sitename = substr( $sitename, 4 );
 		$from_email = 'wordpress@' . $sitename;
@@ -1756,7 +1756,7 @@ if ( ! function_exists( 'cntctfrm_send_mail' ) ) {
 			/* 'from' email */
 			$from_email = ( 'custom' == $cntctfrm_options['from_email'] ) ? stripslashes( $cntctfrm_options['custom_from_email'] ) : stripslashes( $email );
 			if ( $from_email == "" || ! is_email( $from_email ) ) {
-				$sitename = strtolower( filter_var( $_SERVER['SERVER_NAME'], FILTER_SANITIZE_STRING ) );
+				$sitename = strtolower( sanitize_email( wp_unslash( $_SERVER['SERVER_NAME'] ) ) );
 				if ( substr( $sitename, 0, 4 ) == 'www.' ) {
 					$sitename = substr( $sitename, 4 );
 				}
@@ -1841,20 +1841,36 @@ if ( ! function_exists( 'cntctfrm_send_mail' ) ) {
 						$message_text_for_user .= $bound . "\n" . "Content-Type: text/plain; charset=\"utf-8\"\n" . "Content-Transfer-Encoding: 7bit\n\n" . $message_block_for_user . "\n\n";
 					}
 
-					$file = file_get_contents( $cntctfrm_path_of_uploaded_file );
+					/* Number of uploaded files */
+					$num_files = count( (array) $_FILES['cntctfrm_contact_attachment']['tmp_name'] );
+					for ( $i = 0; $i < $num_files; $i++ ) {
+						global $cntctfrm_path_of_uploaded_file, $cntctfrm_path_of_uploaded_files;
 
-					$message_text .= $bound . "\n" .
-						"Content-Type: application/octet-stream; name=\"" . sanitize_file_name( $_FILES["cntctfrm_contact_attachment"]["name"] ) . "\"\n" .
-						"Content-Description: " . basename( $cntctfrm_path_of_uploaded_file ) . "\n" .
-						"Content-Disposition: attachment;\n" . " filename=\"" . sanitize_file_name( $_FILES["cntctfrm_contact_attachment"]["name"] ) ."\"; size=" . filesize( $cntctfrm_path_of_uploaded_file ) . ";\n" .
-						"Content-Transfer-Encoding: base64\n\n" . chunk_split( base64_encode( $file ) ) . "\n\n" .
-						$bound_last;
-					$message_text_for_user .= $bound . "\n" .
-						"Content-Type: application/octet-stream; name=\"" . sanitize_file_name( $_FILES["cntctfrm_contact_attachment"]["name"] ) . "\"\n" .
-						"Content-Description: " . basename( $cntctfrm_path_of_uploaded_file ) . "\n" .
-						"Content-Disposition: attachment;\n" . " filename=\"" . sanitize_file_name( $_FILES["cntctfrm_contact_attachment"]["name"] ) ."\"; size=" . filesize( $cntctfrm_path_of_uploaded_file ) . ";\n" .
-						"Content-Transfer-Encoding: base64\n\n" . chunk_split( base64_encode( $file ) ) . "\n\n" .
-						$bound_last;
+						if ( $cntctfrm_options['active_multi_attachment'] ) {
+							$file_name   = sanitize_file_name( $_FILES['cntctfrm_contact_attachment']['name'][ $i ] );
+							$file        = file_get_contents( $cntctfrm_path_of_uploaded_files[ $i ] );
+							$file_size   = filesize( $cntctfrm_path_of_uploaded_files[ $i ] );
+							$description = basename( $cntctfrm_path_of_uploaded_files[ $i ] );
+						} else {
+							$file_name   = sanitize_file_name( $_FILES['cntctfrm_contact_attachment']['name'] );
+							$file        = file_get_contents( $cntctfrm_path_of_uploaded_file );
+							$file_size   = filesize( $cntctfrm_path_of_uploaded_file );
+							$description = basename( $cntctfrm_path_of_uploaded_file );
+						}
+						$message_text          .= $bound . "\n" .
+							'Content-Type: application/octet-stream; name="' . $file_name . "\"\n" .
+							'Content-Description: ' . $description . "\n" .
+							"Content-Disposition: attachment;\n" . ' filename="' . $file_name . '"; size=' . $file_size . ";\n" .
+							"Content-Transfer-Encoding: base64\n\n" . chunk_split( base64_encode( $file ) ) . "\n\n";
+						$message_text_for_user .= $bound . "\n" .
+							'Content-Type: application/octet-stream; name="' . $file_name . "\"\n" .
+							'Content-Description: ' . $description . "\n" .
+							"Content-Disposition: attachment;\n" . ' filename="' . $file_name . '"; size=' . $file_size . ";\n" .
+							"Content-Transfer-Encoding: base64\n\n" . chunk_split( base64_encode( $file ) ) . "\n\n";
+					}
+					$message_text          .= $bound_last;
+					$message_text_for_user .= $bound_last;
+
 				} else {
 					/* To send HTML mail, header must be set */
 					if ( 1 == $cntctfrm_options['html_email'] )

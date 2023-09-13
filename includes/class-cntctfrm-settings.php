@@ -60,7 +60,7 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 				'is_network_options' => is_network_admin(),
 				'tabs'               => $tabs,				
 				'licenses'           => $addons_check,				
-				'doc_link'           => 'https://docs.google.com/document/d/1qZYPJhkSdVyyM6XO5WfiBcTS2Sa9_9UMn4vS2g48JRY/',
+				'doc_link'           => 'https://bestwebsoft.com/documentation/contact-form/contact-form-user-guide/',
 				'wp_slug'            => 'contact-form-plugin',
 				'link_key'           => '697c5e74f39779ce77850e11dbe21962',
 				'link_pn'            => '77',
