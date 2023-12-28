@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: contact, contact form, feedback form, contact us form, contact button, email form, contac, form, web-page feedback, cf, cf plugin, contact form plugin
 Requires at least: 5.6
-Tested up to: 6.3.1
-Stable tag: 4.2.6
+Tested up to: 6.4.2
+Stable tag: 4.2.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -25,6 +25,7 @@ https://www.youtube.com/watch?v=F_piQa0hmkU
 * Add contact form to any post, page or widget using the shortcode
 * GDPR Compliant
 * Data validation before the submission
+* Add a character limit for message text in a form
 * Send a copy of the submitted message to the email
 * Receive submissions to the default admin or custom email addresses
 * Add additional data about the sender to the email notification:
@@ -140,6 +141,11 @@ The author of the Contact Form also recommends the following plugins:
 * [Contact Form to DB](https://bestwebsoft.com/products/wordpress/plugins/contact-form-to-db/?k=d7d962591b5be0ce6c27af778b1b36ee) – Save and manage contact form messages. Never lose important data.
 * [Updater](https://bestwebsoft.com/products/wordpress/plugins/updater/?k=982fae837f4c6e3b152183537448dbca) – Automatically check and update WordPress website core with all installed plugins and themes to the latest versions.
 
+= Credits =
+
+* This plugin, when certain options are activated, may connect to Google Analytics (Google LLC) servers to process information about the submission of contact forms. <https://analytics.google.com/> Terms of service <https://www.google.com/analytics/>. Privacy Policy <https://policies.google.com/privacy>.
+* This plugin incorporates a license verification mechanism to ensure the authenticity of your license key and provide access to premium features and updates. The verification process involves connecting securely to our external service hosted at BestWebSoft website <https://bestwebsoft.com>. Privacy Policy <https://bestwebsoft.com/privacy-policy/>. End user license agreement <https://bestwebsoft.com/end-user-license-agreement/>.
+
 == Installation ==
 
 1. Upload the `contact-form-plugin` folder to the `/wp-content/plugins/` directory.
@@ -232,6 +238,15 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 16. Enable the file multiattachment option to get important files from senders via contact form.
 
 == Changelog ==
+
+= V4.2.8 - 28.12.2023 =
+* Bugfix : Syntax errors fixed.
+
+= V4.2.7 - 27.12.2023 =
+* Update : All functionality was updated for WordPress 6.4.2.
+* NEW : Ability to add a character limit for message text in a form.
+* Bugfix : Fixed validation for the text field.
+* Update : BWS Panel section was updated.
 
 = V4.2.6 - 10.09.2023 =
 * Update : BWS Panel section was updated.
@@ -613,6 +628,15 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * NEW : You can use JavaScript for the form validation with highlighting option
 
 == Upgrade Notice ==
+
+= V4.2.8 =
+* Bugs fixed.
+
+= V4.2.7 =
+* The compatibility with new WordPress version updated.
+* Plugin optimization completed.
+* New features added.
+* Bugs fixed.
 
 = V4.2.6 =
 * The compatibility with new WordPress version updated.

@@ -27,6 +27,14 @@
 			$( '#cntctfrm_select_from_custom_field' ).attr( 'checked', 'checked' );
 		});
 
+		/* Add a checkbox change event handler to update the visibility of inputs. */
+		$( '#cntctfrm_message_limit' ).change( function () {
+			if ( $( this ).is( ':checked' ) ) {
+				$( '.cntctfrm_message_limit_size' ).show();
+			} else {
+				$( '.cntctfrm_message_limit_size' ).hide();
+			}
+		});
 		$( 'input[name="cntctfrm_custom_from_email"]' ).focus( function() {
 			$( this ).trigger( 'change' );
 			$( '#cntctfrm_from_custom_email' ).attr( 'checked', 'checked' );

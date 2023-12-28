@@ -10,6 +10,7 @@
 <li>Add contact form to any post, page or widget using the shortcode</li>
 <li>GDPR Compliant</li>
 <li>Data validation before the submission</li>
+<li>Add a character limit for message text in a form</li>
 <li>Send a copy of the submitted message to the email</li>
 <li>Receive submissions to the default admin or custom email addresses</li>
 <li>Add additional data about the sender to the email notification:
@@ -132,4 +133,9 @@
 <li><a href="https://bestwebsoft.com/products/wordpress/plugins/contact-form-multi/?k=34543c152eff369d529e9b4da85985a9" rel="nofollow ugc">Contact Form Multi</a> – Add unlimited number of contact forms to WordPress website.</li>
 <li><a href="https://bestwebsoft.com/products/wordpress/plugins/contact-form-to-db/?k=d7d962591b5be0ce6c27af778b1b36ee" rel="nofollow ugc">Contact Form to DB</a> – Save and manage contact form messages. Never lose important data.</li>
 <li><a href="https://bestwebsoft.com/products/wordpress/plugins/updater/?k=982fae837f4c6e3b152183537448dbca" rel="nofollow ugc">Updater</a> – Automatically check and update WordPress website core with all installed plugins and themes to the latest versions.</li>
+</ul>
+<h4>Credits</h4>
+<ul>
+<li>This plugin, when certain options are activated, may connect to Google Analytics (Google LLC) servers to process information about the submission of contact forms. <a href="https://analytics.google.com/" rel="nofollow ugc">https://analytics.google.com/</a> Terms of service <a href="https://www.google.com/analytics/" rel="nofollow ugc">https://www.google.com/analytics/</a>. Privacy Policy <a href="https://policies.google.com/privacy" rel="nofollow ugc">https://policies.google.com/privacy</a>.</li>
+<li>This plugin incorporates a license verification mechanism to ensure the authenticity of your license key and provide access to premium features and updates. The verification process involves connecting securely to our external service hosted at BestWebSoft website <a href="https://bestwebsoft.com" rel="nofollow ugc">https://bestwebsoft.com</a>. Privacy Policy <a href="https://bestwebsoft.com/privacy-policy/" rel="nofollow ugc">https://bestwebsoft.com/privacy-policy/</a>. End user license agreement <a href="https://bestwebsoft.com/end-user-license-agreement/" rel="nofollow ugc">https://bestwebsoft.com/end-user-license-agreement/</a>.</li>
 </ul>

@@ -55,10 +55,12 @@
 }
 .cntctfrm_contact_form input[type="text"],
 .cntctfrm_contact_form input[type="file"],
+.cntctfrm_contact_form input[type="email"],
 .cntctfrm_contact_form select,
 .cntctfrm_contact_form textarea,
 .widget .cntctfrm_contact_form input[type="text"],
 .widget .cntctfrm_contact_form input[type="file"],
+.widget .cntctfrm_contact_form input[type="email"],
 .widget .cntctfrm_contact_form select,
 .widget .cntctfrm_contact_form textarea {
 	width: 100%;
@@ -67,10 +69,12 @@
 }
 .cntctfrm_contact_form.cntctfrm_width_default input[type="text"],
 .cntctfrm_contact_form.cntctfrm_width_default input[type="file"],
+.cntctfrm_contact_form.cntctfrm_width_default input[type="email"],
 .cntctfrm_contact_form.cntctfrm_width_default select,
 .cntctfrm_contact_form.cntctfrm_width_default textarea,
 .widget .cntctfrm_contact_form.cntctfrm_width_default input[type="text"],
 .widget .cntctfrm_contact_form.cntctfrm_width_default input[type="file"],
+.widget .cntctfrm_contact_form.cntctfrm_width_default input[type="email"],
 .widget .cntctfrm_contact_form.cntctfrm_width_default select,
 .widget .cntctfrm_contact_form.cntctfrm_width_default textarea {
 	max-width: 320px;
