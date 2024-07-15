@@ -2,90 +2,87 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Contact Form\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-01 12:19+0300\n"
-"PO-Revision-Date: 2019-07-01 12:20+0300\n"
+"POT-Creation-Date: 2024-07-15 14:47+0300\n"
+"PO-Revision-Date: 2024-07-15 14:48+0300\n"
 "Last-Translator: plugin@bestwebsoft.com <plugin@bestwebsoft.com>\n"
 "Language-Team: Localization blog | http://bizover.net <contact@bizover.net>\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html__\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.8.7.1\n"
+"X-Generator: Poedit 3.4.3\n"
 "X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: bws_menu\n"
 
-#: contact_form.php:39 contact_form.php:47 contact_form.php:649
-#: includes/class-cntctfrm-settings.php:428
+#: contact_form.php:43 contact_form.php:52 contact_form.php:917
+#: includes/class-cntctfrm-settings.php:477
 msgid "Contact Form Settings"
 msgstr "Cài đặt hình thức liên lạc"
 
-#: contact_form.php:48 contact_form.php:1667 contact_form.php:1681
-#: includes/class-cntctfrm-settings.php:27
+#: contact_form.php:53 contact_form.php:2142 contact_form.php:2162
+#: includes/class-cntctfrm-settings.php:30
 msgid "Settings"
 msgstr "Cài đặt"
 
-#: contact_form.php:63 includes/class-cntctfrm-settings.php:486
-#: includes/class-cntctfrm-settings.php:844
-#: includes/class-cntctfrm-settings.php:937
-#: includes/class-cntctfrm-settings.php:1094
-#: includes/class-cntctfrm-settings.php:1611
+#: contact_form.php:76
 msgid "Upgrade to Pro"
-msgstr ""
+msgstr "Nâng cấp lên Pro"
 
-#: contact_form.php:350 contact_form.php:1442 contact_form.php:1488
-#: includes/class-cntctfrm-settings.php:577
-#: includes/class-cntctfrm-settings.php:670
-#: includes/class-cntctfrm-settings.php:1160
-#: includes/class-cntctfrm-settings.php:1200
-#: includes/class-cntctfrm-settings.php:1442
+#: contact_form.php:573 contact_form.php:1876 contact_form.php:1924
+#: includes/class-cntctfrm-settings.php:636
+#: includes/class-cntctfrm-settings.php:734
+#: includes/class-cntctfrm-settings.php:1310
+#: includes/class-cntctfrm-settings.php:1354
+#: includes/class-cntctfrm-settings.php:1616
 msgid "Name"
 msgstr "Tên"
 
-#: contact_form.php:351 contact_form.php:1449 contact_form.php:1494
-#: includes/class-cntctfrm-settings.php:717
-#: includes/class-cntctfrm-settings.php:1161
-#: includes/class-cntctfrm-settings.php:1201
-#: includes/class-cntctfrm-settings.php:1447
+#: contact_form.php:574 contact_form.php:1883 contact_form.php:1930
+#: includes/class-cntctfrm-settings.php:786
+#: includes/class-cntctfrm-settings.php:1311
+#: includes/class-cntctfrm-settings.php:1355
+#: includes/class-cntctfrm-settings.php:1621
 msgid "Address"
 msgstr "Địa chỉ"
 
-#: contact_form.php:352 includes/class-cntctfrm-settings.php:733
-#: includes/class-cntctfrm-settings.php:1162
-#: includes/class-cntctfrm-settings.php:1202
+#: contact_form.php:575 includes/class-cntctfrm-settings.php:808
+#: includes/class-cntctfrm-settings.php:1312
+#: includes/class-cntctfrm-settings.php:1356
 msgid "Email Address"
 msgstr "Địa chỉ email"
 
-#: contact_form.php:353 includes/class-cntctfrm-settings.php:760
-#: includes/class-cntctfrm-settings.php:1163
-#: includes/class-cntctfrm-settings.php:1203
+#: contact_form.php:576 includes/class-cntctfrm-settings.php:834
+#: includes/class-cntctfrm-settings.php:1313
+#: includes/class-cntctfrm-settings.php:1357
 msgid "Phone number"
 msgstr "Số điện thoại"
 
-#: contact_form.php:354 contact_form.php:1460 contact_form.php:1503
-#: includes/class-cntctfrm-settings.php:776
-#: includes/class-cntctfrm-settings.php:1164
-#: includes/class-cntctfrm-settings.php:1204
-#: includes/class-cntctfrm-settings.php:1462
+#: contact_form.php:577 contact_form.php:1894 contact_form.php:1939
+#: includes/class-cntctfrm-settings.php:856
+#: includes/class-cntctfrm-settings.php:1314
+#: includes/class-cntctfrm-settings.php:1358
+#: includes/class-cntctfrm-settings.php:1636
 msgid "Subject"
 msgstr "Chủ đề"
 
-#: contact_form.php:355 contact_form.php:1465 contact_form.php:1507
-#: includes/class-cntctfrm-settings.php:807
-#: includes/class-cntctfrm-settings.php:1165
-#: includes/class-cntctfrm-settings.php:1205
-#: includes/class-cntctfrm-settings.php:1466
+#: contact_form.php:578 contact_form.php:1899 contact_form.php:1943
+#: includes/class-cntctfrm-settings.php:894
+#: includes/class-cntctfrm-settings.php:1315
+#: includes/class-cntctfrm-settings.php:1359
+#: includes/class-cntctfrm-settings.php:1640
 msgid "Message"
 msgstr "Tin nhắn"
 
-#: contact_form.php:356 includes/class-cntctfrm-settings.php:1166
-#: includes/class-cntctfrm-settings.php:1206
-#: includes/class-cntctfrm-settings.php:1471
+#: contact_form.php:579 includes/class-cntctfrm-settings.php:1316
+#: includes/class-cntctfrm-settings.php:1360
+#: includes/class-cntctfrm-settings.php:1645
 msgid "Attachment"
 msgstr "Tập tin đính kèm"
 
-#: contact_form.php:357
+#: contact_form.php:580
 msgid ""
 "Supported file types: HTML, TXT, CSS, GIF, PNG, JPEG, JPG, TIFF, BMP, AI, "
 "EPS, PS, CSV, RTF, PDF, DOC, DOCX, XLS, XLSX, ZIP, RAR, WAV, MP3, PPT."
@@ -93,138 +90,191 @@ msgstr ""
 "Hỗ trợ các loại tập tin: HTML, TXT, CSS, GIF, PNG, JPEG, JPG, TIFF, BMP, AI, "
 "EPS, PS, CSV, RTF, PDF, DOC, DOCX, XLS, XLSX, ZIP, RAR, WAV, MP3, PPT."
 
-#: contact_form.php:358 includes/class-cntctfrm-settings.php:1168
-#: includes/class-cntctfrm-settings.php:1208
+#: contact_form.php:581 includes/class-cntctfrm-settings.php:1318
+#: includes/class-cntctfrm-settings.php:1362
 msgid "Send me a copy"
 msgstr "Gửi cho tôi một bản sao"
 
-#: contact_form.php:359 includes/class-cntctfrm-settings.php:1169
-#: includes/class-cntctfrm-settings.php:1209
+#: contact_form.php:582 includes/class-cntctfrm-settings.php:1319
+#: includes/class-cntctfrm-settings.php:1363
 msgid "I consent to having this site collect my personal data."
-msgstr ""
+msgstr "Tôi đồng ý để trang này thu thập dữ liệu cá nhân của tôi."
 
-#: contact_form.php:360 contact_form.php:1759
-#: includes/class-cntctfrm-settings.php:1170
-#: includes/class-cntctfrm-settings.php:1210
+#: contact_form.php:583 contact_form.php:2258
+#: includes/class-cntctfrm-settings.php:1320
+#: includes/class-cntctfrm-settings.php:1364
 msgid "Learn more"
-msgstr ""
+msgstr "Tìm hiểu thêm"
 
-#: contact_form.php:361 includes/class-cntctfrm-settings.php:1171
-#: includes/class-cntctfrm-settings.php:1211
+#: contact_form.php:584 includes/class-cntctfrm-settings.php:1321
+#: includes/class-cntctfrm-settings.php:1365
 msgid "Submit"
 msgstr "Gửi"
 
-#: contact_form.php:362
+#: contact_form.php:585
 msgid "Your name is required."
 msgstr "Tên của bạn là cần thiết."
 
-#: contact_form.php:363
+#: contact_form.php:586
 msgid "Address is required."
 msgstr "Địa chỉ được yêu cầu."
 
-#: contact_form.php:364
+#: contact_form.php:587
 msgid "A valid email address is required."
 msgstr "Một địa chỉ email hợp lệ là bắt buộc."
 
-#: contact_form.php:365
+#: contact_form.php:588
 msgid "Phone number is required."
 msgstr "Số điện thoại được yêu cầu."
 
-#: contact_form.php:366
+#: contact_form.php:589
 msgid "Subject is required."
 msgstr "Chủ đề là bắt buộc."
 
-#: contact_form.php:367
+#: contact_form.php:590
 msgid "Message text is required."
 msgstr "Tin nhắn văn bản được yêu cầu."
 
-#: contact_form.php:368
+#: contact_form.php:591
+msgid "Message length does not meet requirements."
+msgstr "Độ dài tin nhắn không đáp ứng yêu cầu."
+
+#: contact_form.php:592
 msgid "File format is not valid."
 msgstr "Định dạng tập tin là không hợp lệ."
 
-#: contact_form.php:369
+#: contact_form.php:593
 msgid "File upload error."
 msgstr "Lỗi tải lên tệp."
 
-#: contact_form.php:370
+#: contact_form.php:594
 msgid "The file could not be uploaded."
 msgstr "Không thể tải các tập tin."
 
-#: contact_form.php:371
+#: contact_form.php:595
 msgid "This file is too large."
 msgstr "Tập tin này là quá lớn."
 
-#: contact_form.php:372
+#: contact_form.php:596
 msgid "Please fill out the CAPTCHA."
 msgstr "Xin vui lòng điền CAPTCHA."
 
-#: contact_form.php:373
+#: contact_form.php:597
 msgid "Please make corrections below and try again."
 msgstr "Xin vui lòng làm cho chỉnh dưới đây và thử lại."
 
-#: contact_form.php:375
+#: contact_form.php:599
 msgid "Thank you for contacting us."
 msgstr "Cảm ơn bạn đã liên hệ với chúng tôi."
 
-#: contact_form.php:653
-msgid "NEW_FORM"
+#: contact_form.php:933
+#, php-format
+msgid ""
+"%1$sNote:%2$s The contact form is not protected from spam and bots. Use %3$s "
+"Captcha by BestWebSoft plugin %5$s or %4$s reCaptcha by BestWebSoft plugin "
+"%5$s to protect your contact form."
 msgstr ""
+"%1$sLưu ý:%2$s Biểu mẫu liên hệ không được bảo vệ khỏi spam và bot. Sử dụng "
+"%3$s plugin Captcha của BestWebSoft %5$s hoặc %4$s reCaptcha của plugin "
+"BestWebSoft %5$s để bảo vệ biểu mẫu liên hệ của bạn."
 
-#: contact_form.php:654
+#: contact_form.php:942
+msgid "NEW_FORM"
+msgstr "HÌNH THỨC MỚI"
+
+#: contact_form.php:943
 msgid ""
 "If you want to create multiple contact forms, please install the Contact "
 "Form Multi plugin."
 msgstr ""
+"Nếu bạn muốn tạo nhiều biểu mẫu liên hệ, vui lòng cài đặt plugin Contact "
+"Form Multi."
 
-#: contact_form.php:659
+#: contact_form.php:948
 msgid ""
 "Contact Form plugin doesn't support your current version of Contact Form "
 "Multi plugin. Please update Contact Form Multi plugin to version 1.2.6 or "
 "higher."
 msgstr ""
+"Plugin Biểu mẫu liên hệ không hỗ trợ phiên bản plugin Multi Form liên hệ "
+"hiện tại của bạn. Vui lòng cập nhật plugin Contact Form Multi lên phiên bản "
+"1.2.6 trở lên."
 
-#: contact_form.php:761
+#: contact_form.php:1062
 msgid "Sorry, email message could not be delivered."
 msgstr "Xin lỗi, không thể gửi được thư email."
 
-#: contact_form.php:1398 contact_form.php:1400
+#: contact_form.php:1100 contact_form.php:1156
+msgid ""
+"Please enter only letters at least 3 characters, words seperated by spaces"
+msgstr ""
+"Vui lòng chỉ nhập các chữ cái ít nhất 3 ký tự, các từ cách nhau bằng dấu cách"
+
+#: contact_form.php:1114
+msgid ""
+"Please enter only letters and numbers at least 3 characters, words seperated "
+"by spaces"
+msgstr ""
+"Vui lòng chỉ nhập chữ cái và số ít nhất 3 ký tự, các từ cách nhau bằng dấu "
+"cách"
+
+#: contact_form.php:1142
+msgid "Please enter only numbers at least 6 characters"
+msgstr "Vui lòng chỉ nhập số ít nhất 6 ký tự"
+
+#: contact_form.php:1494
+#, php-format
+msgid "between %1$d and %2$d characters"
+msgstr "giữa %1$d và %2$d ký tự"
+
+#: contact_form.php:1501 includes/class-cntctfrm-settings.php:1954
+#, php-format
+msgid "more than %1$d characters"
+msgstr "nhiều hơn %1$d ký tự"
+
+#: contact_form.php:1507 includes/class-cntctfrm-settings.php:1959
+#, php-format
+msgid "less than %1$d characters"
+msgstr "ít hơn %1$d ký tự"
+
+#: contact_form.php:1828 contact_form.php:1830
 msgid "Sent from (ip address)"
 msgstr "Gửi từ (địa chỉ ip)"
 
-#: contact_form.php:1404 contact_form.php:1406
-#: includes/class-cntctfrm-settings.php:1120
+#: contact_form.php:1835 contact_form.php:1837
+#: includes/class-cntctfrm-settings.php:1262
 msgid "Date/Time"
 msgstr "Ngày/thời gian"
 
-#: contact_form.php:1410 contact_form.php:1412
-#: includes/class-cntctfrm-settings.php:1121
+#: contact_form.php:1842 contact_form.php:1844
+#: includes/class-cntctfrm-settings.php:1263
 msgid "Sent from (referer)"
 msgstr "Gửi từ (referer)"
 
-#: contact_form.php:1416 contact_form.php:1418
-#: includes/class-cntctfrm-settings.php:1122
+#: contact_form.php:1849 contact_form.php:1851
+#: includes/class-cntctfrm-settings.php:1264
 msgid "Using (user agent)"
 msgstr "Sử dụng (người sử dụng đại lý)"
 
-#: contact_form.php:1428
+#: contact_form.php:1862
 msgid "Contact from"
 msgstr "Liên hệ với từ"
 
-#: contact_form.php:1433 contact_form.php:1482
+#: contact_form.php:1867 contact_form.php:1917
 msgid "Site"
 msgstr "Trang web"
 
-#: contact_form.php:1455 contact_form.php:1499
-#: includes/class-cntctfrm-settings.php:601
+#: contact_form.php:1889 contact_form.php:1935
+#: includes/class-cntctfrm-settings.php:660
 msgid "Email"
 msgstr "Thư điện tử"
 
-#: contact_form.php:1471 contact_form.php:1512
-#: includes/class-cntctfrm-settings.php:1457
+#: contact_form.php:1905 contact_form.php:1948
+#: includes/class-cntctfrm-settings.php:1631
 msgid "Phone Number"
 msgstr "Số điện thoại"
 
-#: contact_form.php:1610
+#: contact_form.php:2057
 msgid ""
 "If you can see this MIME, it means that the MIME type is not supported by "
 "your email client!"
@@ -232,135 +282,145 @@ msgstr ""
 "Nếu bạn có thể thấy MIME này, nó có nghĩa là rằng loại MIME không được hỗ "
 "trợ bởi ứng dụng email của bạn!"
 
-#: contact_form.php:1682
+#: contact_form.php:2164
 msgid "FAQ"
 msgstr "CÂU HỎI THƯỜNG GẶP"
 
-#: contact_form.php:1683
+#: contact_form.php:2165
 msgid "Support"
 msgstr "Hỗ trợ"
 
-#: contact_form.php:1732
+#: contact_form.php:2229
 msgid "Are you sure that you want to delete this language data?"
 msgstr "Bạn có chắc rằng bạn muốn xóa dữ liệu ngôn ngữ này không?"
 
-#: contact_form.php:1754
-#, fuzzy
+#: contact_form.php:2253
 msgid "Add multiple forms"
-msgstr "Thêm vào các hình thức"
+msgstr "Thêm nhiều biểu mẫu"
 
-#: contact_form.php:1754
+#: contact_form.php:2253
 msgid ""
 "Install Contact Form Multi plugin to create unlimited number of contact "
 "forms."
 msgstr ""
+"Cài đặt plugin Contact Form Multi để tạo số lượng form liên hệ không giới "
+"hạn."
 
-#: contact_form.php:1763 includes/class-cntctfrm-settings.php:472
-#: includes/class-cntctfrm-settings.php:890
-#: includes/class-cntctfrm-settings.php:1083
-#: includes/class-cntctfrm-settings.php:1370
+#: contact_form.php:2262 includes/class-cntctfrm-settings.php:526
+#: includes/class-cntctfrm-settings.php:984
+#: includes/class-cntctfrm-settings.php:1218
+#: includes/class-cntctfrm-settings.php:1544
 msgid "Close"
-msgstr ""
+msgstr "Đóng"
 
-#: contact_form.php:1817
+#: contact_form.php:2329
 msgid "Error"
-msgstr ""
+msgstr "Lỗi"
 
-#: contact_form.php:1817 contact_form.php:1819
+#: contact_form.php:2329 contact_form.php:2331
 msgid "Illegal language code"
-msgstr ""
+msgstr "Mã ngôn ngữ bất hợp pháp"
 
-#: contact_form.php:1853 contact_form.php:1855
-#: includes/class-cntctfrm-settings.php:1186
-#: includes/class-cntctfrm-settings.php:1188
-#: includes/class-cntctfrm-settings.php:1226
-#: includes/class-cntctfrm-settings.php:1228
-#: includes/class-cntctfrm-settings.php:1260
-#: includes/class-cntctfrm-settings.php:1262
-#: includes/class-cntctfrm-settings.php:1274
-#: includes/class-cntctfrm-settings.php:1276
+#: contact_form.php:2363 contact_form.php:2365
+#: includes/class-cntctfrm-settings.php:1337
+#: includes/class-cntctfrm-settings.php:1339
+#: includes/class-cntctfrm-settings.php:1381
+#: includes/class-cntctfrm-settings.php:1383
+#: includes/class-cntctfrm-settings.php:1421
+#: includes/class-cntctfrm-settings.php:1423
+#: includes/class-cntctfrm-settings.php:1438
+#: includes/class-cntctfrm-settings.php:1440
 msgid "Use shortcode"
 msgstr "Sử dụng shortcode"
 
-#: contact_form.php:1853 contact_form.php:1855
-#: includes/class-cntctfrm-settings.php:1186
-#: includes/class-cntctfrm-settings.php:1188
-#: includes/class-cntctfrm-settings.php:1226
-#: includes/class-cntctfrm-settings.php:1228
-#: includes/class-cntctfrm-settings.php:1260
-#: includes/class-cntctfrm-settings.php:1262
-#: includes/class-cntctfrm-settings.php:1274
-#: includes/class-cntctfrm-settings.php:1276
+#: contact_form.php:2363 contact_form.php:2365
+#: includes/class-cntctfrm-settings.php:1337
+#: includes/class-cntctfrm-settings.php:1339
+#: includes/class-cntctfrm-settings.php:1381
+#: includes/class-cntctfrm-settings.php:1383
+#: includes/class-cntctfrm-settings.php:1421
+#: includes/class-cntctfrm-settings.php:1423
+#: includes/class-cntctfrm-settings.php:1438
+#: includes/class-cntctfrm-settings.php:1440
 msgid "for this language"
 msgstr "cho ngôn ngữ này"
 
-#: contact_form.php:2003
+#: contact_form.php:2554
 msgid "Close notice"
-msgstr ""
+msgstr "Đóng thông báo"
 
-#: contact_form.php:2008
-#, fuzzy
+#: contact_form.php:2559
 msgid "allows to store your messages to the database."
-msgstr "Lưu email vào cơ sở dữ liệu"
+msgstr "cho phép lưu trữ tin nhắn của bạn vào cơ sở dữ liệu."
 
-#: contact_form.php:2009
+#: contact_form.php:2560
 msgid "Manage messages that have been sent from your website."
-msgstr ""
+msgstr "Quản lý tin nhắn đã được gửi từ trang web của bạn."
 
-#: contact_form.php:2012
+#: contact_form.php:2563
 msgid "Learn More"
-msgstr ""
+msgstr "Tìm hiểu thêm"
 
-#: contact_form.php:2072
-#, fuzzy
+#: contact_form.php:2633
 msgid "Contact form"
-msgstr "Liên hệ với từ"
+msgstr "Mẫu liên hệ"
 
-#: contact_form.php:2085 contact_form.php:2095
-#, fuzzy
+#: contact_form.php:2648 contact_form.php:2660
 msgid "Language"
-msgstr "Thêm một ngôn ngữ"
-
-#: includes/class-cntctfrm-settings.php:28
-#: includes/class-cntctfrm-settings.php:549
-msgid "Additional Settings"
-msgstr ""
-
-#: includes/class-cntctfrm-settings.php:29
-#: includes/class-cntctfrm-settings.php:1296
-msgid "Appearance"
-msgstr ""
-
-#: includes/class-cntctfrm-settings.php:30
-msgid "Misc"
-msgstr ""
+msgstr "Ngôn ngữ"
 
 #: includes/class-cntctfrm-settings.php:31
-msgid "License Key"
-msgstr ""
+#: includes/class-cntctfrm-settings.php:608
+msgid "Additional Settings"
+msgstr "Cài đặt thêm"
 
 #: includes/class-cntctfrm-settings.php:32
+#: includes/class-cntctfrm-settings.php:1466
+msgid "Appearance"
+msgstr "Xuất hiện"
+
+#: includes/class-cntctfrm-settings.php:33
+msgid "Misc"
+msgstr "Linh tinh"
+
+#: includes/class-cntctfrm-settings.php:34
 msgid "Custom Code"
-msgstr ""
+msgstr "Mã tùy chỉnh"
 
-#: includes/class-cntctfrm-settings.php:99
+#: includes/class-cntctfrm-settings.php:35
+msgid "License Key"
+msgstr "Mã bản quyền"
+
+#: includes/class-cntctfrm-settings.php:111
 msgid "Please enable JavaScript in your browser."
-msgstr ""
+msgstr "Vui lòng kích hoạt javascript trong trình duyệt của bạn."
 
-#: includes/class-cntctfrm-settings.php:101
+#: includes/class-cntctfrm-settings.php:113
 #, php-format
 msgid ""
 "Contact Form plugin requires PHP %s or higher. Please contact your hosting "
 "provider to upgrade PHP version."
 msgstr ""
+"Plugin Biểu mẫu liên hệ yêu cầu PHP %s trở lên. Vui lòng liên hệ với nhà "
+"cung cấp dịch vụ lưu trữ của bạn để nâng cấp phiên bản PHP."
 
-#: includes/class-cntctfrm-settings.php:350
+#: includes/class-cntctfrm-settings.php:143
+msgid "Sorry, your nonce did not verify."
+msgstr "Xin lỗi, dữ liệu của bạn nhập vào không được xác minh"
+
+#: includes/class-cntctfrm-settings.php:211
+msgid "Min / Max symbols in the message cannot be empty."
+msgstr "Ký hiệu Min/Max trong tin nhắn không được để trống."
+
+#: includes/class-cntctfrm-settings.php:399
 msgid ""
 "Email 'FROM' field option was changed, which may cause email messages being "
 "moved to the spam folder or email delivery failures."
 msgstr ""
+"Tùy chọn trường 'TỪ' của email đã được thay đổi, điều này có thể khiến thư "
+"email bị chuyển vào thư mục thư rác hoặc gửi email không thành công."
 
-#: includes/class-cntctfrm-settings.php:360
+#: includes/class-cntctfrm-settings.php:409
 msgid ""
 "If the 'Redirect to page' option is selected then the URL field should be in "
 "the following format"
@@ -368,36 +428,29 @@ msgstr ""
 "Nếu tùy chọn 'Chuyển hướng đến trang' được chọn thì trường URL nên ở định "
 "dạng sau"
 
-#: includes/class-cntctfrm-settings.php:367
-#, fuzzy
+#: includes/class-cntctfrm-settings.php:414
 msgid "Such user does not exist."
-msgstr "Người dùng như vậy không tồn tại. Cài đặt không được lưu."
+msgstr "Người dùng như vậy không tồn tại."
 
-#: includes/class-cntctfrm-settings.php:377
-#, fuzzy
+#: includes/class-cntctfrm-settings.php:423
 msgid ""
 "Please enter a valid email address in the 'Use this email address' field."
 msgstr ""
-"Vui lòng nhập một địa chỉ email hợp lệ trong trường 'Từ'. Cài đặt không được "
-"lưu."
+"Vui lòng nhập địa chỉ email hợp lệ vào trường 'Sử dụng địa chỉ email này'."
 
-#: includes/class-cntctfrm-settings.php:385
-#, fuzzy
+#: includes/class-cntctfrm-settings.php:431
 msgid "Please enter a valid email address in the 'FROM' field."
-msgstr ""
-"Vui lòng nhập một địa chỉ email hợp lệ trong trường 'Từ'. Cài đặt không được "
-"lưu."
+msgstr "Vui lòng nhập địa chỉ email hợp lệ."
 
-#: includes/class-cntctfrm-settings.php:405
+#: includes/class-cntctfrm-settings.php:452
 msgid "Settings saved."
 msgstr "Cài đặt đã lưu."
 
-#: includes/class-cntctfrm-settings.php:407
-#, fuzzy
+#: includes/class-cntctfrm-settings.php:454
 msgid "Settings are not saved."
-msgstr "Cài đặt đã lưu."
+msgstr "Cài đặt chưa được lưu."
 
-#: includes/class-cntctfrm-settings.php:432
+#: includes/class-cntctfrm-settings.php:481
 msgid ""
 "If you leave the fields empty, the messages will be sent to the email "
 "address specified during registration."
@@ -405,122 +458,110 @@ msgstr ""
 "Nếu bạn để các lĩnh vực trống, các tin nhắn sẽ được gửi đến địa chỉ email "
 "được chỉ định trong quá trình đăng ký."
 
-#: includes/class-cntctfrm-settings.php:435
-#, fuzzy
+#: includes/class-cntctfrm-settings.php:484
 msgid "The user's email address"
-msgstr "Các địa chỉ email của người dùng:"
+msgstr "Địa chỉ email của người dùng"
 
-#: includes/class-cntctfrm-settings.php:440
-#, fuzzy
+#: includes/class-cntctfrm-settings.php:489
 msgid "Select a username"
-msgstr "Tạo một tên người dùng"
+msgstr "Chọn một tên người dùng"
 
-#: includes/class-cntctfrm-settings.php:453
-#, fuzzy
+#: includes/class-cntctfrm-settings.php:508
 msgid ""
 "Select a username of the person who should get the messages from the contact "
 "form."
-msgstr ""
-"Nhập tên người dùng của người sẽ nhận được các tin nhắn từ hình thức liên "
-"lạc."
+msgstr "Chọn tên người dùng của người sẽ nhận tin nhắn từ biểu mẫu liên hệ."
 
-#: includes/class-cntctfrm-settings.php:458
-#, fuzzy
+#: includes/class-cntctfrm-settings.php:513
 msgid "Use this email address"
-msgstr "Sử dụng địa chỉ email này:"
+msgstr "Sử dụng địa chỉ email này"
 
-#: includes/class-cntctfrm-settings.php:463
-#, fuzzy
-msgid "Enter the email address for receiving messages"
-msgstr "Nhập địa chỉ email mà bạn muốn các thư được chuyển tiếp đến."
+#: includes/class-cntctfrm-settings.php:518
+msgid ""
+"Enter multiple email addresses separated by comma for receiving messages."
+msgstr "Nhập nhiều địa chỉ email cách nhau bằng dấu phẩy để nhận tin nhắn."
 
-#: includes/class-cntctfrm-settings.php:476
-#, fuzzy
+#: includes/class-cntctfrm-settings.php:530
 msgid "Add department selectbox to the contact form"
-msgstr "Địa chỉ sở selectbox để hình thức liên lạc:"
+msgstr "Thêm hộp chọn bộ phận vào biểu mẫu liên hệ"
 
-#: includes/class-cntctfrm-settings.php:495
+#: includes/class-cntctfrm-settings.php:543
 msgid "Save emails to the database"
 msgstr "Lưu email vào cơ sở dữ liệu"
 
-#: includes/class-cntctfrm-settings.php:507
-#: includes/class-cntctfrm-settings.php:521
-#: includes/class-cntctfrm-settings.php:528
+#: includes/class-cntctfrm-settings.php:556
+#: includes/class-cntctfrm-settings.php:576
+#: includes/class-cntctfrm-settings.php:585
 msgid "Using"
-msgstr ""
+msgstr "Sử Dụng"
 
-#: includes/class-cntctfrm-settings.php:513
-#: includes/class-cntctfrm-settings.php:985
-#: includes/class-cntctfrm-settings.php:1026
-#: includes/class-cntctfrm-settings.php:1061
+#: includes/class-cntctfrm-settings.php:562
+#: includes/class-cntctfrm-settings.php:1087
+#: includes/class-cntctfrm-settings.php:1142
+#: includes/class-cntctfrm-settings.php:1187
 msgid "Please activate the appropriate option on"
-msgstr ""
+msgstr "Vui lòng kích hoạt tùy chọn thích hợp trên"
 
-#: includes/class-cntctfrm-settings.php:516
-#: includes/class-cntctfrm-settings.php:988
-#: includes/class-cntctfrm-settings.php:1029
-#: includes/class-cntctfrm-settings.php:1064
-#, fuzzy
+#: includes/class-cntctfrm-settings.php:567
+#: includes/class-cntctfrm-settings.php:1092
+#: includes/class-cntctfrm-settings.php:1147
+#: includes/class-cntctfrm-settings.php:1192
 msgid "settings page"
-msgstr "Cài đặt phụ"
+msgstr "trang cài đặt"
 
-#: includes/class-cntctfrm-settings.php:522
-#: includes/class-cntctfrm-settings.php:995
-#: includes/class-cntctfrm-settings.php:1037
-#: includes/class-cntctfrm-settings.php:1071
-#, fuzzy
+#: includes/class-cntctfrm-settings.php:577
+#: includes/class-cntctfrm-settings.php:1104
+#: includes/class-cntctfrm-settings.php:1159
+#: includes/class-cntctfrm-settings.php:1203
 msgid "Activate"
-msgstr "Kích hoạt captcha"
+msgstr "Kích hoạt"
 
-#: includes/class-cntctfrm-settings.php:529
-#: includes/class-cntctfrm-settings.php:1004
-#: includes/class-cntctfrm-settings.php:1043
-#: includes/class-cntctfrm-settings.php:1076
-#, fuzzy
+#: includes/class-cntctfrm-settings.php:586
+#: includes/class-cntctfrm-settings.php:1116
+#: includes/class-cntctfrm-settings.php:1167
+#: includes/class-cntctfrm-settings.php:1210
 msgid "Download"
-msgstr "Tải về captcha"
+msgstr "Tải xuống"
 
-#: includes/class-cntctfrm-settings.php:554
+#: includes/class-cntctfrm-settings.php:613
 msgid "Sending method"
-msgstr ""
+msgstr "Phương thức gửi"
 
-#: includes/class-cntctfrm-settings.php:559
+#: includes/class-cntctfrm-settings.php:618
 msgid "Wp-mail"
 msgstr "WP-thư"
 
-#: includes/class-cntctfrm-settings.php:560
-#, fuzzy
-msgid "You can use the Wordpress wp_mail function for mailing"
-msgstr "Bạn có thể sử dụng các chức năng wp_mail để gửi thư"
+#: includes/class-cntctfrm-settings.php:619
+msgid "You can use the WordPress wp_mail function for mailing"
+msgstr "Bạn có thể sử dụng chức năng wp_mail của WordPress để gửi thư"
 
-#: includes/class-cntctfrm-settings.php:565
+#: includes/class-cntctfrm-settings.php:624
 msgid "Mail"
 msgstr "Thư"
 
-#: includes/class-cntctfrm-settings.php:566
-#, fuzzy
+#: includes/class-cntctfrm-settings.php:625
 msgid "You can use the PHP mail function for mailing"
-msgstr "Bạn có thể sử dụng các chức năng wp_mail để gửi thư"
+msgstr "Bạn có thể sử dụng chức năng thư PHP để gửi thư"
 
-#: includes/class-cntctfrm-settings.php:572
+#: includes/class-cntctfrm-settings.php:631
 msgid "'FROM' field"
-msgstr ""
+msgstr "trường 'TỪ'"
 
-#: includes/class-cntctfrm-settings.php:588
+#: includes/class-cntctfrm-settings.php:647
 msgid "User name"
 msgstr "Tên người dùng"
 
-#: includes/class-cntctfrm-settings.php:590
+#: includes/class-cntctfrm-settings.php:649
 msgid ""
 "The name of the user who fills the form will be used in the field 'From'."
 msgstr ""
 "Tên người dùng đã điền vào các hình thức sẽ được sử dụng trong trường 'Từ'."
 
-#: includes/class-cntctfrm-settings.php:612
+#: includes/class-cntctfrm-settings.php:671
 msgid "User email"
 msgstr "Người dùng thư điện tử"
 
-#: includes/class-cntctfrm-settings.php:614
+#: includes/class-cntctfrm-settings.php:673
 msgid ""
 "The email address of the user who fills the form will be used in the field "
 "'From'."
@@ -528,506 +569,605 @@ msgstr ""
 "Địa chỉ email của người dùng đã điền vào các hình thức sẽ được sử dụng trong "
 "trường 'Từ'."
 
-#: includes/class-cntctfrm-settings.php:623
+#: includes/class-cntctfrm-settings.php:682
 msgid ""
 "If this option is changed, email messages may be moved to the spam folder or "
 "email delivery failures may occur."
 msgstr ""
+"Nếu tùy chọn này bị thay đổi, email có thể bị chuyển vào thư mục thư rác "
+"hoặc có thể xảy ra lỗi gửi email."
 
-#: includes/class-cntctfrm-settings.php:632
+#: includes/class-cntctfrm-settings.php:691
 msgid "Required symbol"
 msgstr "Biểu tượng yêu cầu"
 
-#: includes/class-cntctfrm-settings.php:642
+#: includes/class-cntctfrm-settings.php:701
 msgid "Fields"
 msgstr "Lĩnh vực"
 
-#: includes/class-cntctfrm-settings.php:643
-#: includes/class-cntctfrm-settings.php:658
-#: includes/class-cntctfrm-settings.php:673
-#: includes/class-cntctfrm-settings.php:700
-#: includes/class-cntctfrm-settings.php:720
-#: includes/class-cntctfrm-settings.php:738
-#: includes/class-cntctfrm-settings.php:763
-#: includes/class-cntctfrm-settings.php:780
+#: includes/class-cntctfrm-settings.php:702
+#: includes/class-cntctfrm-settings.php:721
+#: includes/class-cntctfrm-settings.php:737
+#: includes/class-cntctfrm-settings.php:768
+#: includes/class-cntctfrm-settings.php:789
 #: includes/class-cntctfrm-settings.php:811
-#: includes/class-cntctfrm-settings.php:859
+#: includes/class-cntctfrm-settings.php:837
+#: includes/class-cntctfrm-settings.php:862
+#: includes/class-cntctfrm-settings.php:900
+#: includes/class-cntctfrm-settings.php:940
+#: includes/class-cntctfrm-settings.php:992
 msgid "Used"
 msgstr "Sử dụng"
 
-#: includes/class-cntctfrm-settings.php:644
-#: includes/class-cntctfrm-settings.php:662
-#: includes/class-cntctfrm-settings.php:677
-#: includes/class-cntctfrm-settings.php:704
-#: includes/class-cntctfrm-settings.php:724
-#: includes/class-cntctfrm-settings.php:742
-#: includes/class-cntctfrm-settings.php:767
-#: includes/class-cntctfrm-settings.php:787
-#: includes/class-cntctfrm-settings.php:818
+#: includes/class-cntctfrm-settings.php:703
+#: includes/class-cntctfrm-settings.php:725
+#: includes/class-cntctfrm-settings.php:741
+#: includes/class-cntctfrm-settings.php:772
+#: includes/class-cntctfrm-settings.php:793
+#: includes/class-cntctfrm-settings.php:815
+#: includes/class-cntctfrm-settings.php:841
+#: includes/class-cntctfrm-settings.php:871
+#: includes/class-cntctfrm-settings.php:909
+#: includes/class-cntctfrm-settings.php:993
 msgid "Required"
 msgstr "Yêu cầu"
 
-#: includes/class-cntctfrm-settings.php:646
-#: includes/class-cntctfrm-settings.php:682
-#: includes/class-cntctfrm-settings.php:746
-#: includes/class-cntctfrm-settings.php:792
-#: includes/class-cntctfrm-settings.php:823
+#: includes/class-cntctfrm-settings.php:706
+#: includes/class-cntctfrm-settings.php:747
+#: includes/class-cntctfrm-settings.php:819
+#: includes/class-cntctfrm-settings.php:878
+#: includes/class-cntctfrm-settings.php:915
+#: includes/class-cntctfrm-settings.php:994
 msgid "Visible"
 msgstr "Có thể nhìn thấy"
 
-#: includes/class-cntctfrm-settings.php:647
-#: includes/class-cntctfrm-settings.php:686
-#: includes/class-cntctfrm-settings.php:750
-#: includes/class-cntctfrm-settings.php:796
-#: includes/class-cntctfrm-settings.php:827
+#: includes/class-cntctfrm-settings.php:707
+#: includes/class-cntctfrm-settings.php:751
+#: includes/class-cntctfrm-settings.php:823
+#: includes/class-cntctfrm-settings.php:882
+#: includes/class-cntctfrm-settings.php:919
+#: includes/class-cntctfrm-settings.php:995
 msgid "Disabled for editing"
 msgstr "Khuyết tật để chỉnh sửa"
 
-#: includes/class-cntctfrm-settings.php:648
-#: includes/class-cntctfrm-settings.php:710
-#: includes/class-cntctfrm-settings.php:800
-#: includes/class-cntctfrm-settings.php:831
+#: includes/class-cntctfrm-settings.php:708
+#: includes/class-cntctfrm-settings.php:778
+#: includes/class-cntctfrm-settings.php:886
+#: includes/class-cntctfrm-settings.php:923
 msgid "Field's default value"
 msgstr "Giá trị mặc định của trường"
 
-#: includes/class-cntctfrm-settings.php:655
+#: includes/class-cntctfrm-settings.php:718
 msgid "Department selectbox"
-msgstr ""
+msgstr "hộp chọn bộ phận"
 
-#: includes/class-cntctfrm-settings.php:690
+#: includes/class-cntctfrm-settings.php:755
 msgid "Use User's name as a default value if the user is logged in."
 msgstr ""
+"Sử dụng tên Người dùng làm giá trị mặc định nếu người dùng đã đăng nhập."
 
-#: includes/class-cntctfrm-settings.php:691
-#: includes/class-cntctfrm-settings.php:755
+#: includes/class-cntctfrm-settings.php:756
+#: includes/class-cntctfrm-settings.php:828
 msgid ""
 "'Visible' and 'Disabled for editing' options will be applied only to logged-"
 "in users."
 msgstr ""
+"Tùy chọn 'Hiển thị' và 'Đã tắt để chỉnh sửa' sẽ chỉ được áp dụng cho người "
+"dùng đã đăng nhập."
 
-#: includes/class-cntctfrm-settings.php:697
+#: includes/class-cntctfrm-settings.php:765
 msgid "Location selectbox"
-msgstr ""
+msgstr "Hộp chọn vị trí"
 
-#: includes/class-cntctfrm-settings.php:754
+#: includes/class-cntctfrm-settings.php:827
 msgid "Use User's email as a default value if the user is logged in."
 msgstr ""
+"Sử dụng email của Người dùng làm giá trị mặc định nếu người dùng đã đăng "
+"nhập."
 
-#: includes/class-cntctfrm-settings.php:852
+#: includes/class-cntctfrm-settings.php:849
+#, php-format
+msgid ""
+"Specify a mask which will be used for the phone validation, where * is a "
+"number. Use only the following symbols: %s"
+msgstr ""
+"Chỉ định mặt nạ sẽ được sử dụng để xác thực điện thoại, trong đó * là một "
+"số. Chỉ sử dụng các ký hiệu sau: %s"
+
+#: includes/class-cntctfrm-settings.php:933
 msgid "Attachment block"
 msgstr "Tập tin đính kèm khối"
 
-#: includes/class-cntctfrm-settings.php:854
+#: includes/class-cntctfrm-settings.php:935
 msgid "Users can attach the following file formats"
 msgstr "Người dùng có thể đính kèm các định dạng tệp sau"
 
-#: includes/class-cntctfrm-settings.php:870
+#: includes/class-cntctfrm-settings.php:958
 msgid "Multi-attachment"
-msgstr ""
+msgstr "Nhiều tệp đính kèm"
 
-#: includes/class-cntctfrm-settings.php:872
+#: includes/class-cntctfrm-settings.php:960
 msgid "Enable to multiple file selection"
-msgstr ""
+msgstr "Cho phép lựa chọn nhiều tập tin"
 
-#: includes/class-cntctfrm-settings.php:932
-msgid "If you upgrade to Pro version all your settings will be saved."
-msgstr ""
-"Nếu bạn nâng cấp lên phiên bản Pro, tất cả các thiết lập của bạn sẽ được lưu."
+#: includes/class-cntctfrm-settings.php:990
+msgid "Title"
+msgstr "Tiêu đề"
 
-#: includes/class-cntctfrm-settings.php:945
+#: includes/class-cntctfrm-settings.php:991
+msgid "Field Type"
+msgstr "Loại trường"
+
+#: includes/class-cntctfrm-settings.php:996
+msgid "Field's default/available value"
+msgstr "Giá trị mặc định/có sẵn của trường"
+
+#: includes/class-cntctfrm-settings.php:1021
+msgid "Create Field"
+msgstr "Tạo trường"
+
+#: includes/class-cntctfrm-settings.php:1026
+msgid "Google Analytics Measurement ID"
+msgstr "Mã đo lường Google Analytics"
+
+#: includes/class-cntctfrm-settings.php:1031
+#, php-format
+msgid ""
+"Enter your %1$sMeasurement ID%2$s to track contact form submissions in "
+"Google Analytics."
+msgstr ""
+"Nhập %1$sID đo lường%2$s của bạn để theo dõi việc gửi biểu mẫu liên hệ trong "
+"Google Analytics."
+
+#: includes/class-cntctfrm-settings.php:1032
+msgid "Google Analytics version 4 is required."
+msgstr "Google Analytics phiên bản 4 là bắt buộc."
+
+#: includes/class-cntctfrm-settings.php:1045
 msgid "Add to the form"
 msgstr "Thêm vào các hình thức"
 
-#: includes/class-cntctfrm-settings.php:950
+#: includes/class-cntctfrm-settings.php:1050
 msgid "Tips below the Attachment"
 msgstr "Mẹo bên dưới phần đính kèm"
 
-#: includes/class-cntctfrm-settings.php:957
+#: includes/class-cntctfrm-settings.php:1057
 msgid "'Send me a copy' block"
 msgstr "'Gửi tôi một bản sao' khối"
 
-#: includes/class-cntctfrm-settings.php:964
+#: includes/class-cntctfrm-settings.php:1064
 msgid "GDPR Compliance"
-msgstr ""
+msgstr "Tuân thủ GDPR"
 
-#: includes/class-cntctfrm-settings.php:969
+#: includes/class-cntctfrm-settings.php:1069
 msgid "Link to Privacy Policy Page"
-msgstr ""
+msgstr "Liên kết đến trang Chính sách quyền riêng tư"
 
-#: includes/class-cntctfrm-settings.php:997
+#: includes/class-cntctfrm-settings.php:1106
 msgid "Activate for network"
-msgstr ""
+msgstr "Kích hoạt cho mạng"
 
-#: includes/class-cntctfrm-settings.php:1087
+#: includes/class-cntctfrm-settings.php:1222
 msgid "Agreement checkbox"
 msgstr "Thỏa thuận hộp kiểm"
 
-#: includes/class-cntctfrm-settings.php:1087
+#: includes/class-cntctfrm-settings.php:1222
 msgid "Required checkbox for submitting the form"
 msgstr "Các hộp kiểm yêu cầu để gửi biểu mẫu"
 
-#: includes/class-cntctfrm-settings.php:1088
+#: includes/class-cntctfrm-settings.php:1223
 msgid "Optional checkbox"
 msgstr "Tùy chọn hộp kiểm"
 
-#: includes/class-cntctfrm-settings.php:1088
+#: includes/class-cntctfrm-settings.php:1223
 msgid "Optional checkbox, the results of which will be displayed in email"
 msgstr "Tùy chọn hộp kiểm, kết quả trong đó sẽ được hiển thị trong email"
 
-#: includes/class-cntctfrm-settings.php:1103
+#: includes/class-cntctfrm-settings.php:1234
 msgid "Delete an attachment file from the server after the email is sent"
 msgstr "Xóa một tập tin đính kèm từ hệ phục vụ sau khi các email được gửi"
 
-#: includes/class-cntctfrm-settings.php:1109
+#: includes/class-cntctfrm-settings.php:1240
 msgid "Email in HTML format sending"
 msgstr "Gửi email cho HTML định dạng gửi"
 
-#: includes/class-cntctfrm-settings.php:1113
+#: includes/class-cntctfrm-settings.php:1244
+msgid "Limit for Message field"
+msgstr "Giới hạn cho trường Tin nhắn"
+
+#: includes/class-cntctfrm-settings.php:1246
+msgid "Min / Max symbols in the message"
+msgstr "Ký hiệu Min/Max trong tin nhắn"
+
+#: includes/class-cntctfrm-settings.php:1248
+msgid "min"
+msgstr "phút"
+
+#: includes/class-cntctfrm-settings.php:1249
+msgid "max"
+msgstr "tối đa"
+
+#: includes/class-cntctfrm-settings.php:1254
 msgid "Display additional info in the email"
 msgstr "Hiển thị thông tin bổ sung trong email"
 
-#: includes/class-cntctfrm-settings.php:1119
-#, fuzzy
+#: includes/class-cntctfrm-settings.php:1261
 msgid "Sent from (IP address)"
-msgstr "Gửi từ (địa chỉ ip)"
+msgstr "Gửi từ (địa chỉ IP)"
 
-#: includes/class-cntctfrm-settings.php:1119
+#: includes/class-cntctfrm-settings.php:1261
 msgid "Example: Sent from (IP address): 127.0.0.1"
-msgstr ""
+msgstr "Ví dụ: Gửi từ (địa chỉ IP): 127.0.0.1"
 
-#: includes/class-cntctfrm-settings.php:1120
+#: includes/class-cntctfrm-settings.php:1262
 msgid "Example: Date/Time: August 19, 2013 8:50 pm"
-msgstr ""
+msgstr "Ví dụ: Ngày/Giờ: 19/08/2013 8:50 tối"
 
-#: includes/class-cntctfrm-settings.php:1121
+#: includes/class-cntctfrm-settings.php:1263
 msgid ""
 "Example: Sent from (referer):   https://bestwebsoft.com/contacts/contact-us/"
 msgstr ""
+"Ví dụ: Gửi từ (người giới thiệu): https://bestwebsoft.com/contacts/contact-"
+"us/"
 
-#: includes/class-cntctfrm-settings.php:1122
+#: includes/class-cntctfrm-settings.php:1264
 msgid ""
 "Example: Using (user agent): Mozilla/5.0 (Windows NT 6.2; WOW64) "
 "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36"
 msgstr ""
+"Ví dụ: Sử dụng (tác nhân người dùng): Mozilla/5.0 (Windows NT 6.2; WOW64) "
+"AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36"
 
-#: includes/class-cntctfrm-settings.php:1127
-msgid "Language settings for the field names in the form"
-msgstr "Cài đặt ngôn ngữ cho tên trường trong các hình thức"
+#: includes/class-cntctfrm-settings.php:1270
+msgid "Language Settings"
+msgstr "Cài đặt ngôn ngữ"
 
-#: includes/class-cntctfrm-settings.php:1136
+#: includes/class-cntctfrm-settings.php:1283
 msgid "Add a language"
 msgstr "Thêm một ngôn ngữ"
 
-#: includes/class-cntctfrm-settings.php:1140
+#: includes/class-cntctfrm-settings.php:1287
 msgid "Change the names of the contact form fields and error messages"
 msgstr "Thay đổi tên của các lĩnh vực hình thức liên lạc và thông báo lỗi"
 
-#: includes/class-cntctfrm-settings.php:1145
-#: includes/class-cntctfrm-settings.php:1245
-#: includes/class-cntctfrm-settings.php:1350
+#: includes/class-cntctfrm-settings.php:1293
+#: includes/class-cntctfrm-settings.php:1404
+#: includes/class-cntctfrm-settings.php:1523
 msgid "Default"
 msgstr "Mặc định"
 
-#: includes/class-cntctfrm-settings.php:1158
-#: includes/class-cntctfrm-settings.php:1198
+#: includes/class-cntctfrm-settings.php:1308
+#: includes/class-cntctfrm-settings.php:1352
 msgid "click to expand/hide the list"
-msgstr ""
+msgstr "bấm vào để mở rộng/ẩn danh sách"
 
-#: includes/class-cntctfrm-settings.php:1167
-#: includes/class-cntctfrm-settings.php:1207
+#: includes/class-cntctfrm-settings.php:1317
+#: includes/class-cntctfrm-settings.php:1361
 msgid "Tips below the Attachment block"
 msgstr "Lời khuyên dưới đây khối tập tin đính kèm"
 
-#: includes/class-cntctfrm-settings.php:1172
-#: includes/class-cntctfrm-settings.php:1212
+#: includes/class-cntctfrm-settings.php:1322
+#: includes/class-cntctfrm-settings.php:1366
 msgid "Error message for the Name field"
 msgstr "Thông báo lỗi cho trường tên"
 
-#: includes/class-cntctfrm-settings.php:1173
-#: includes/class-cntctfrm-settings.php:1213
+#: includes/class-cntctfrm-settings.php:1323
+#: includes/class-cntctfrm-settings.php:1367
 msgid "Error message for the Address field"
 msgstr "Thông báo lỗi cho trường địa chỉ"
 
-#: includes/class-cntctfrm-settings.php:1174
-#: includes/class-cntctfrm-settings.php:1214
+#: includes/class-cntctfrm-settings.php:1324
+#: includes/class-cntctfrm-settings.php:1368
 msgid "Error message for the Email field"
 msgstr "Thông báo lỗi cho trường Email"
 
-#: includes/class-cntctfrm-settings.php:1175
-#: includes/class-cntctfrm-settings.php:1215
+#: includes/class-cntctfrm-settings.php:1325
+#: includes/class-cntctfrm-settings.php:1369
 msgid "Error message for the Phone field"
 msgstr "Thông báo lỗi cho lĩnh vực điện thoại"
 
-#: includes/class-cntctfrm-settings.php:1176
-#: includes/class-cntctfrm-settings.php:1216
+#: includes/class-cntctfrm-settings.php:1326
+#: includes/class-cntctfrm-settings.php:1370
 msgid "Error message for the Subject field"
 msgstr "Thông báo lỗi cho trường chủ đề"
 
-#: includes/class-cntctfrm-settings.php:1177
-#: includes/class-cntctfrm-settings.php:1217
+#: includes/class-cntctfrm-settings.php:1327
+#: includes/class-cntctfrm-settings.php:1371
 msgid "Error message for the Message field"
 msgstr "Thông báo lỗi cho trường tin nhắn"
 
-#: includes/class-cntctfrm-settings.php:1178
-#: includes/class-cntctfrm-settings.php:1218
+#: includes/class-cntctfrm-settings.php:1328
+#: includes/class-cntctfrm-settings.php:1372
+msgid "Error message for Limit for the Message field"
+msgstr "Thông báo lỗi về Giới hạn cho trường Thông báo"
+
+#: includes/class-cntctfrm-settings.php:1329
+#: includes/class-cntctfrm-settings.php:1373
 msgid "Error message about the file type for the Attachment field"
 msgstr "Thông báo lỗi về các loại tập tin cho trường đính kèm"
 
-#: includes/class-cntctfrm-settings.php:1179
-#: includes/class-cntctfrm-settings.php:1219
+#: includes/class-cntctfrm-settings.php:1330
+#: includes/class-cntctfrm-settings.php:1374
 msgid ""
 "Error message while uploading a file for the Attachment field to the server"
 msgstr ""
 "Thông báo lỗi trong khi tải lên một tập tin cho trường đính kèm vào hệ phục "
 "vụ"
 
-#: includes/class-cntctfrm-settings.php:1180
-#: includes/class-cntctfrm-settings.php:1220
+#: includes/class-cntctfrm-settings.php:1331
+#: includes/class-cntctfrm-settings.php:1375
 msgid "Error message while moving the file for the Attachment field"
 msgstr ""
 "Thông báo lỗi trong khi di chuyển tập tin đối với lĩnh vực tập tin đính kèm"
 
-#: includes/class-cntctfrm-settings.php:1181
-#: includes/class-cntctfrm-settings.php:1221
+#: includes/class-cntctfrm-settings.php:1332
+#: includes/class-cntctfrm-settings.php:1376
 msgid "Error message when file size limit for the Attachment field is exceeded"
 msgstr ""
 "Thông báo lỗi khi vượt quá giới hạn kích thước tập tin cho trường đính kèm"
 
-#: includes/class-cntctfrm-settings.php:1182
-#: includes/class-cntctfrm-settings.php:1222
+#: includes/class-cntctfrm-settings.php:1333
+#: includes/class-cntctfrm-settings.php:1377
 msgid "Error message for the Captcha field"
 msgstr "Thông báo lỗi cho lĩnh vực Captcha"
 
-#: includes/class-cntctfrm-settings.php:1183
-#: includes/class-cntctfrm-settings.php:1223
+#: includes/class-cntctfrm-settings.php:1334
+#: includes/class-cntctfrm-settings.php:1378
 msgid "Error message for the whole form"
 msgstr "Thông báo lỗi cho các hình thức toàn bộ"
 
-#: includes/class-cntctfrm-settings.php:1236
-#, fuzzy
+#: includes/class-cntctfrm-settings.php:1394
 msgid "Use the changed names of the contact form fields in the email"
-msgstr "Thay đổi tên của các lĩnh vực hình thức liên lạc và thông báo lỗi"
+msgstr "Sử dụng tên đã thay đổi của các trường biểu mẫu liên hệ trong email"
 
-#: includes/class-cntctfrm-settings.php:1242
+#: includes/class-cntctfrm-settings.php:1400
 msgid "Action after email is sent"
 msgstr "Hành động sau khi email được gửi"
 
-#: includes/class-cntctfrm-settings.php:1244
+#: includes/class-cntctfrm-settings.php:1402
 msgid "Display text"
 msgstr "Hiển thị văn bản"
 
-#: includes/class-cntctfrm-settings.php:1258
-#: includes/class-cntctfrm-settings.php:1272
+#: includes/class-cntctfrm-settings.php:1419
+#: includes/class-cntctfrm-settings.php:1436
 msgid "Text"
 msgstr "Văn bản"
 
-#: includes/class-cntctfrm-settings.php:1283
+#: includes/class-cntctfrm-settings.php:1450
 msgid "Redirect to the page"
 msgstr "Chuyển hướng đến trang"
 
-#: includes/class-cntctfrm-settings.php:1284
+#: includes/class-cntctfrm-settings.php:1452
 msgid "Url"
 msgstr "URL"
 
-#: includes/class-cntctfrm-settings.php:1304
+#: includes/class-cntctfrm-settings.php:1475
 #, php-format
 msgid ""
-"Please enable JavaScript to change '%s', '%s', '%s', '%s' options and for "
-"fields sorting."
+"Please enable JavaScript to change '%1$s', '%2$s', '%3$s', '%4$s' options "
+"and for fields sorting."
 msgstr ""
+"Vui lòng bật JavaScript để thay đổi các tùy chọn '%1$s', '%2$s', '%3$s', "
+"'%4$s' và để sắp xếp các trường."
 
-#: includes/class-cntctfrm-settings.php:1305
-#: includes/class-cntctfrm-settings.php:1322
+#: includes/class-cntctfrm-settings.php:1476
+#: includes/class-cntctfrm-settings.php:1495
 msgid "Form layout"
-msgstr ""
+msgstr "Bố cục biểu mẫu"
 
-#: includes/class-cntctfrm-settings.php:1306
-#: includes/class-cntctfrm-settings.php:1389
-#, fuzzy
+#: includes/class-cntctfrm-settings.php:1477
+#: includes/class-cntctfrm-settings.php:1563
 msgid "Labels position"
-msgstr "Gửi nút"
+msgstr "Vị trí nhãn"
 
-#: includes/class-cntctfrm-settings.php:1307
-#: includes/class-cntctfrm-settings.php:1407
+#: includes/class-cntctfrm-settings.php:1478
+#: includes/class-cntctfrm-settings.php:1581
 msgid "Labels align"
-msgstr ""
+msgstr "Nhãn căn chỉnh"
 
-#: includes/class-cntctfrm-settings.php:1308
-#: includes/class-cntctfrm-settings.php:1334
-#, fuzzy
+#: includes/class-cntctfrm-settings.php:1479
+#: includes/class-cntctfrm-settings.php:1507
 msgid "Submit position"
-msgstr "Gửi nút"
+msgstr "Gửi vị trí"
 
-#: includes/class-cntctfrm-settings.php:1309
-#: includes/class-cntctfrm-settings.php:1438
+#: includes/class-cntctfrm-settings.php:1480
+#: includes/class-cntctfrm-settings.php:1612
 msgid "Add tooltips"
 msgstr "Thêm chú giải công cụ"
 
-#: includes/class-cntctfrm-settings.php:1310
-#: includes/class-cntctfrm-settings.php:1479
+#: includes/class-cntctfrm-settings.php:1481
+#: includes/class-cntctfrm-settings.php:1653
 msgid "Style options"
 msgstr "Tùy chọn phong cách"
 
-#: includes/class-cntctfrm-settings.php:1326
+#: includes/class-cntctfrm-settings.php:1499
 msgid "One column"
-msgstr ""
+msgstr "Một cột"
 
-#: includes/class-cntctfrm-settings.php:1329
+#: includes/class-cntctfrm-settings.php:1502
 msgid "Two columns"
-msgstr ""
+msgstr "Hai cột"
 
-#: includes/class-cntctfrm-settings.php:1338
-#: includes/class-cntctfrm-settings.php:1378
-#: includes/class-cntctfrm-settings.php:1396
-#: includes/class-cntctfrm-settings.php:1411
+#: includes/class-cntctfrm-settings.php:1511
+#: includes/class-cntctfrm-settings.php:1552
+#: includes/class-cntctfrm-settings.php:1570
+#: includes/class-cntctfrm-settings.php:1585
 msgid "Left"
-msgstr ""
+msgstr "Trái"
 
-#: includes/class-cntctfrm-settings.php:1341
-#: includes/class-cntctfrm-settings.php:1384
-#: includes/class-cntctfrm-settings.php:1399
-#: includes/class-cntctfrm-settings.php:1417
+#: includes/class-cntctfrm-settings.php:1514
+#: includes/class-cntctfrm-settings.php:1558
+#: includes/class-cntctfrm-settings.php:1573
+#: includes/class-cntctfrm-settings.php:1591
 msgid "Right"
-msgstr ""
+msgstr "Phải"
 
-#: includes/class-cntctfrm-settings.php:1346
+#: includes/class-cntctfrm-settings.php:1519
 msgid "Width"
-msgstr ""
+msgstr "Rộng"
 
-#: includes/class-cntctfrm-settings.php:1354
+#: includes/class-cntctfrm-settings.php:1527
 msgid "Custom"
-msgstr ""
+msgstr "Tùy chỉnh"
 
-#: includes/class-cntctfrm-settings.php:1361
+#: includes/class-cntctfrm-settings.php:1534
 msgid "px"
-msgstr ""
+msgstr "px"
 
-#: includes/class-cntctfrm-settings.php:1374
+#: includes/class-cntctfrm-settings.php:1548
 msgid "Form align"
-msgstr ""
+msgstr "Căn chỉnh biểu mẫu"
 
-#: includes/class-cntctfrm-settings.php:1381
-#: includes/class-cntctfrm-settings.php:1414
+#: includes/class-cntctfrm-settings.php:1555
+#: includes/class-cntctfrm-settings.php:1588
 msgid "Center"
-msgstr ""
+msgstr "Giữa"
 
-#: includes/class-cntctfrm-settings.php:1393
+#: includes/class-cntctfrm-settings.php:1567
 msgid "Top"
-msgstr ""
+msgstr "Trên"
 
-#: includes/class-cntctfrm-settings.php:1402
+#: includes/class-cntctfrm-settings.php:1576
 msgid "Bottom"
-msgstr ""
+msgstr "Dưới"
 
-#: includes/class-cntctfrm-settings.php:1422
+#: includes/class-cntctfrm-settings.php:1596
 msgid "Errors output"
 msgstr "Đầu ra lỗi"
 
-#: includes/class-cntctfrm-settings.php:1425
+#: includes/class-cntctfrm-settings.php:1599
 msgid "Display error messages"
 msgstr "Hiển thị thông báo lỗi"
 
-#: includes/class-cntctfrm-settings.php:1426
+#: includes/class-cntctfrm-settings.php:1600
 msgid "Color of the input field errors."
 msgstr "Màu sắc của trường nhập lỗi."
 
-#: includes/class-cntctfrm-settings.php:1427
+#: includes/class-cntctfrm-settings.php:1601
 msgid "Display error messages & color of the input field errors"
 msgstr "Hiển thị thông báo lỗi và màu sắc của trường nhập lỗi"
 
-#: includes/class-cntctfrm-settings.php:1432
+#: includes/class-cntctfrm-settings.php:1606
 msgid "Add placeholder to the input blocks"
 msgstr "Thêm giữ chỗ để các khối đầu vào"
 
-#: includes/class-cntctfrm-settings.php:1452
+#: includes/class-cntctfrm-settings.php:1626
 msgid "Email address"
 msgstr "Địa chỉ email"
 
-#: includes/class-cntctfrm-settings.php:1483
+#: includes/class-cntctfrm-settings.php:1657
 msgid "Text color"
 msgstr "Văn bản màu"
 
-#: includes/class-cntctfrm-settings.php:1491
+#: includes/class-cntctfrm-settings.php:1662
+#: includes/class-cntctfrm-settings.php:1671
+#: includes/class-cntctfrm-settings.php:1684
+#: includes/class-cntctfrm-settings.php:1692
+#: includes/class-cntctfrm-settings.php:1700
+#: includes/class-cntctfrm-settings.php:1708
+#: includes/class-cntctfrm-settings.php:1721
+#: includes/class-cntctfrm-settings.php:1729
+#: includes/class-cntctfrm-settings.php:1741
+#: includes/class-cntctfrm-settings.php:1758
+#: includes/class-cntctfrm-settings.php:1766
+#: includes/class-cntctfrm-settings.php:1774
+msgid "Select Color"
+msgstr "Chọn màu"
+
+#: includes/class-cntctfrm-settings.php:1665
 msgid "Label text color"
 msgstr "Nhãn văn bản màu"
 
-#: includes/class-cntctfrm-settings.php:1500
+#: includes/class-cntctfrm-settings.php:1674
 msgid "Placeholder color"
 msgstr "Giữ chỗ màu"
 
-#: includes/class-cntctfrm-settings.php:1505
+#: includes/class-cntctfrm-settings.php:1679
 msgid "Errors color"
 msgstr "Lỗi màu"
 
-#: includes/class-cntctfrm-settings.php:1513
+#: includes/class-cntctfrm-settings.php:1687
 msgid "Error text color"
 msgstr "Lỗi văn bản màu"
 
-#: includes/class-cntctfrm-settings.php:1521
+#: includes/class-cntctfrm-settings.php:1695
 msgid "Background color of the input field errors"
 msgstr "Màu nền của trường nhập lỗi"
 
-#: includes/class-cntctfrm-settings.php:1529
+#: includes/class-cntctfrm-settings.php:1703
 msgid "Border color of the input field errors"
 msgstr "Biên giới màu sắc của trường nhập lỗi"
 
-#: includes/class-cntctfrm-settings.php:1537
+#: includes/class-cntctfrm-settings.php:1711
 msgid "Placeholder color of the input field errors"
 msgstr "Giữ chỗ màu sắc của trường nhập lỗi"
 
-#: includes/class-cntctfrm-settings.php:1542
+#: includes/class-cntctfrm-settings.php:1716
 msgid "Input fields"
 msgstr "Lĩnh vực đầu vào"
 
-#: includes/class-cntctfrm-settings.php:1550
+#: includes/class-cntctfrm-settings.php:1724
 msgid "Input fields background color"
 msgstr "Lĩnh vực đầu vào nền màu"
 
-#: includes/class-cntctfrm-settings.php:1558
+#: includes/class-cntctfrm-settings.php:1732
 msgid "Text fields color"
 msgstr "Văn bản lĩnh vực màu"
 
-#: includes/class-cntctfrm-settings.php:1562
+#: includes/class-cntctfrm-settings.php:1736
 msgid "Border width in px, numbers only"
 msgstr "Chiều rộng biên giới ở px, chỉ có số điện thoại"
 
-#: includes/class-cntctfrm-settings.php:1570
-#: includes/class-cntctfrm-settings.php:1603
+#: includes/class-cntctfrm-settings.php:1744
+#: includes/class-cntctfrm-settings.php:1777
 msgid "Border color"
 msgstr "Biên giới màu sắc"
 
-#: includes/class-cntctfrm-settings.php:1575
+#: includes/class-cntctfrm-settings.php:1749
 msgid "Submit button"
 msgstr "Gửi nút"
 
-#: includes/class-cntctfrm-settings.php:1579
+#: includes/class-cntctfrm-settings.php:1753
 msgid "Width in px, numbers only"
 msgstr "Chiều rộng trong px, chỉ có số điện thoại"
 
-#: includes/class-cntctfrm-settings.php:1587
+#: includes/class-cntctfrm-settings.php:1761
 msgid "Button color"
 msgstr "Nút màu"
 
-#: includes/class-cntctfrm-settings.php:1595
+#: includes/class-cntctfrm-settings.php:1769
 msgid "Button text color"
 msgstr "Nút màu chữ"
 
-#: includes/class-cntctfrm-settings.php:1622
-#, fuzzy
+#: includes/class-cntctfrm-settings.php:1789
 msgid "Contact Form | Preview"
-msgstr "Liên hệ tạo thành Pro | Xem trước"
+msgstr "Mẫu liên hệ | Xem trước"
 
-#: includes/class-cntctfrm-settings.php:1623
+#: includes/class-cntctfrm-settings.php:1790
 msgid "Drag the necessary field to sort fields."
-msgstr ""
+msgstr "Kéo trường cần thiết để sắp xếp các trường."
 
-#: includes/class-cntctfrm-settings.php:1870
+#: includes/class-cntctfrm-settings.php:1948
+#, php-format
+msgid "between %1$d, and %2$d characters"
+msgstr "giữa %1$d và %2$d ký tự"
+
+#: includes/class-cntctfrm-settings.php:2144
 msgid "Contact Form Shortcode"
-msgstr ""
+msgstr "Mã ngắn Contact Form"
 
-#: includes/class-cntctfrm-settings.php:1873
+#: includes/class-cntctfrm-settings.php:2148
 msgid "Add Contact Form  to your page or post using the following shortcode:"
 msgstr ""
+"Thêm Biểu mẫu liên hệ vào trang hoặc bài đăng của bạn bằng mã ngắn sau:"
+
+#~ msgid "If you upgrade to Pro version all your settings will be saved."
+#~ msgstr ""
+#~ "Nếu bạn nâng cấp lên phiên bản Pro, tất cả các thiết lập của bạn sẽ được "
+#~ "lưu."
+
+#~ msgid "Language settings for the field names in the form"
+#~ msgstr "Cài đặt ngôn ngữ cho tên trường trong các hình thức"
 
 #, fuzzy
 #~ msgid ""

@@ -1,10 +1,10 @@
 === Contact Form by BestWebSoft - Advanced Contact Us Form Builder for WordPress ===
 Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
-Tags: contact, contact form, feedback form, contact us form, contact button, email form, contac, form, web-page feedback, cf, cf plugin, contact form plugin
+Tags: contact, contact form, feedback form, contact us form, contact button
 Requires at least: 5.6
-Tested up to: 6.4.2
-Stable tag: 4.2.8
+Tested up to: 6.5
+Stable tag: 4.3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -239,8 +239,16 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 
 == Changelog ==
 
-= V4.2.8 - 28.12.2023 =
-* Bugfix : Syntax errors fixed.
+= V4.3.1 - 15.07.2024 =
+* Update : All functionality was updated for WordPress 6.5.
+* Bugfix : Fixed validation for all fields.
+* Bugfix : Fixed Limit Attemps plugin compatibility.
+* Update : BWS Panel section was updated.
+
+= V4.2.9 - 07.03.2024 =
+* Update : All functionality was updated for WordPress 6.4.3.
+* Bugfix : Fixed validation for all fields.
+* Update : BWS Panel section was updated.
 
 = V4.2.7 - 27.12.2023 =
 * Update : All functionality was updated for WordPress 6.4.2.
@@ -629,7 +637,14 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 
 == Upgrade Notice ==
 
-= V4.2.8 =
+= V4.3.1 =
+* The compatibility with new WordPress version updated.
+* Plugin optimization completed.
+* Bugs fixed.
+
+= V4.2.9 =
+* The compatibility with new WordPress version updated.
+* Plugin optimization completed.
 * Bugs fixed.
 
 = V4.2.7 =

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: contact-form-plugin 4.0.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-01 12:19+0300\n"
-"PO-Revision-Date: 2022-11-05 09:57+0100\n"
+"POT-Creation-Date: 2024-07-15 15:04+0300\n"
+"PO-Revision-Date: 2024-07-15 15:05+0300\n"
 "Last-Translator: Luc Capronnier <lcapronnier@yahoo.com>\n"
 "Language-Team: Luc Capronnier <lcapronnier@yahoo.com>\n"
 "Language: fr_FR\n"
@@ -15,79 +15,76 @@ msgstr ""
 "esc_attr_e\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 3.2\n"
+"X-Generator: Poedit 3.4.3\n"
 "X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: bws_menu\n"
 
-#: contact_form.php:39 contact_form.php:47 contact_form.php:649
-#: includes/class-cntctfrm-settings.php:428
+#: contact_form.php:43 contact_form.php:52 contact_form.php:917
+#: includes/class-cntctfrm-settings.php:477
 msgid "Contact Form Settings"
 msgstr "Options du formulaire de contact"
 
-#: contact_form.php:48 contact_form.php:1667 contact_form.php:1681
-#: includes/class-cntctfrm-settings.php:27
+#: contact_form.php:53 contact_form.php:2142 contact_form.php:2162
+#: includes/class-cntctfrm-settings.php:30
 msgid "Settings"
 msgstr "Paramètres"
 
-#: contact_form.php:63 includes/class-cntctfrm-settings.php:486
-#: includes/class-cntctfrm-settings.php:844
-#: includes/class-cntctfrm-settings.php:937
-#: includes/class-cntctfrm-settings.php:1094
-#: includes/class-cntctfrm-settings.php:1611
+#: contact_form.php:76
 msgid "Upgrade to Pro"
 msgstr "Passer à la version PRO"
 
-#: contact_form.php:350 contact_form.php:1442 contact_form.php:1488
-#: includes/class-cntctfrm-settings.php:577
-#: includes/class-cntctfrm-settings.php:670
-#: includes/class-cntctfrm-settings.php:1160
-#: includes/class-cntctfrm-settings.php:1200
-#: includes/class-cntctfrm-settings.php:1442
+#: contact_form.php:573 contact_form.php:1876 contact_form.php:1924
+#: includes/class-cntctfrm-settings.php:636
+#: includes/class-cntctfrm-settings.php:734
+#: includes/class-cntctfrm-settings.php:1310
+#: includes/class-cntctfrm-settings.php:1354
+#: includes/class-cntctfrm-settings.php:1616
 msgid "Name"
 msgstr "Nom"
 
-#: contact_form.php:351 contact_form.php:1449 contact_form.php:1494
-#: includes/class-cntctfrm-settings.php:717
-#: includes/class-cntctfrm-settings.php:1161
-#: includes/class-cntctfrm-settings.php:1201
-#: includes/class-cntctfrm-settings.php:1447
+#: contact_form.php:574 contact_form.php:1883 contact_form.php:1930
+#: includes/class-cntctfrm-settings.php:786
+#: includes/class-cntctfrm-settings.php:1311
+#: includes/class-cntctfrm-settings.php:1355
+#: includes/class-cntctfrm-settings.php:1621
 msgid "Address"
 msgstr "Adresse"
 
-#: contact_form.php:352 includes/class-cntctfrm-settings.php:733
-#: includes/class-cntctfrm-settings.php:1162
-#: includes/class-cntctfrm-settings.php:1202
+#: contact_form.php:575 includes/class-cntctfrm-settings.php:808
+#: includes/class-cntctfrm-settings.php:1312
+#: includes/class-cntctfrm-settings.php:1356
 msgid "Email Address"
 msgstr "Adresse e-mail"
 
-#: contact_form.php:353 includes/class-cntctfrm-settings.php:760
-#: includes/class-cntctfrm-settings.php:1163
-#: includes/class-cntctfrm-settings.php:1203
+#: contact_form.php:576 includes/class-cntctfrm-settings.php:834
+#: includes/class-cntctfrm-settings.php:1313
+#: includes/class-cntctfrm-settings.php:1357
 msgid "Phone number"
 msgstr "Téléphone"
 
-#: contact_form.php:354 contact_form.php:1460 contact_form.php:1503
-#: includes/class-cntctfrm-settings.php:776
-#: includes/class-cntctfrm-settings.php:1164
-#: includes/class-cntctfrm-settings.php:1204
-#: includes/class-cntctfrm-settings.php:1462
+#: contact_form.php:577 contact_form.php:1894 contact_form.php:1939
+#: includes/class-cntctfrm-settings.php:856
+#: includes/class-cntctfrm-settings.php:1314
+#: includes/class-cntctfrm-settings.php:1358
+#: includes/class-cntctfrm-settings.php:1636
 msgid "Subject"
 msgstr "Sujet"
 
-#: contact_form.php:355 contact_form.php:1465 contact_form.php:1507
-#: includes/class-cntctfrm-settings.php:807
-#: includes/class-cntctfrm-settings.php:1165
-#: includes/class-cntctfrm-settings.php:1205
-#: includes/class-cntctfrm-settings.php:1466
+#: contact_form.php:578 contact_form.php:1899 contact_form.php:1943
+#: includes/class-cntctfrm-settings.php:894
+#: includes/class-cntctfrm-settings.php:1315
+#: includes/class-cntctfrm-settings.php:1359
+#: includes/class-cntctfrm-settings.php:1640
 msgid "Message"
 msgstr "Message"
 
-#: contact_form.php:356 includes/class-cntctfrm-settings.php:1166
-#: includes/class-cntctfrm-settings.php:1206
-#: includes/class-cntctfrm-settings.php:1471
+#: contact_form.php:579 includes/class-cntctfrm-settings.php:1316
+#: includes/class-cntctfrm-settings.php:1360
+#: includes/class-cntctfrm-settings.php:1645
 msgid "Attachment"
 msgstr "Pièce jointe"
 
-#: contact_form.php:357
+#: contact_form.php:580
 msgid ""
 "Supported file types: HTML, TXT, CSS, GIF, PNG, JPEG, JPG, TIFF, BMP, AI, "
 "EPS, PS, CSV, RTF, PDF, DOC, DOCX, XLS, XLSX, ZIP, RAR, WAV, MP3, PPT."
@@ -96,84 +93,100 @@ msgstr ""
 "TIFF, BMP, AI, EPS, PS, CSV, RTF, PDF, DOC, DOCX, XLS, XLSX, ZIP, RAR, WAV, "
 "MP3, PPT."
 
-#: contact_form.php:358 includes/class-cntctfrm-settings.php:1168
-#: includes/class-cntctfrm-settings.php:1208
+#: contact_form.php:581 includes/class-cntctfrm-settings.php:1318
+#: includes/class-cntctfrm-settings.php:1362
 msgid "Send me a copy"
 msgstr "M&rsquo;envoyer une copie"
 
-#: contact_form.php:359 includes/class-cntctfrm-settings.php:1169
-#: includes/class-cntctfrm-settings.php:1209
+#: contact_form.php:582 includes/class-cntctfrm-settings.php:1319
+#: includes/class-cntctfrm-settings.php:1363
 msgid "I consent to having this site collect my personal data."
 msgstr "Je consent à ce que le site collecte mes données personnelles."
 
-#: contact_form.php:360 contact_form.php:1759
-#: includes/class-cntctfrm-settings.php:1170
-#: includes/class-cntctfrm-settings.php:1210
+#: contact_form.php:583 contact_form.php:2258
+#: includes/class-cntctfrm-settings.php:1320
+#: includes/class-cntctfrm-settings.php:1364
 msgid "Learn more"
 msgstr "En savoir plus"
 
-#: contact_form.php:361 includes/class-cntctfrm-settings.php:1171
-#: includes/class-cntctfrm-settings.php:1211
+#: contact_form.php:584 includes/class-cntctfrm-settings.php:1321
+#: includes/class-cntctfrm-settings.php:1365
 msgid "Submit"
 msgstr "Envoyer"
 
-#: contact_form.php:362
+#: contact_form.php:585
 msgid "Your name is required."
 msgstr "Un nom est obligatoire."
 
-#: contact_form.php:363
+#: contact_form.php:586
 msgid "Address is required."
 msgstr "Une adresse est obligatoire."
 
-#: contact_form.php:364
+#: contact_form.php:587
 msgid "A valid email address is required."
 msgstr "Une adresse e-mail valide est obligatoire."
 
-#: contact_form.php:365
+#: contact_form.php:588
 msgid "Phone number is required."
 msgstr "Le numéro de téléphone est obligatoire."
 
-#: contact_form.php:366
+#: contact_form.php:589
 msgid "Subject is required."
 msgstr "Le sujet est obligatoire."
 
-#: contact_form.php:367
+#: contact_form.php:590
 msgid "Message text is required."
 msgstr "Un message est obligatoire."
 
-#: contact_form.php:368
+#: contact_form.php:591
+msgid "Message length does not meet requirements."
+msgstr "La longueur du message n'est pas conforme aux exigences."
+
+#: contact_form.php:592
 msgid "File format is not valid."
 msgstr "Le type de pièce jointe n&rsquo;est pas valide."
 
-#: contact_form.php:369
+#: contact_form.php:593
 msgid "File upload error."
 msgstr "Erreur de chargement du fichier."
 
-#: contact_form.php:370
+#: contact_form.php:594
 msgid "The file could not be uploaded."
 msgstr "Le fichier n&rsquo;a pas pu être envoyé."
 
-#: contact_form.php:371
+#: contact_form.php:595
 msgid "This file is too large."
 msgstr "Le fichier est trop volumineux."
 
-#: contact_form.php:372
+#: contact_form.php:596
 msgid "Please fill out the CAPTCHA."
 msgstr "Merci de compléter le CAPTCHA."
 
-#: contact_form.php:373
+#: contact_form.php:597
 msgid "Please make corrections below and try again."
 msgstr "Merci de faire les corrections suivantes et de réessayer."
 
-#: contact_form.php:375
+#: contact_form.php:599
 msgid "Thank you for contacting us."
 msgstr "Merci de nous avoir contacté."
 
-#: contact_form.php:653
+#: contact_form.php:933
+#, php-format
+msgid ""
+"%1$sNote:%2$s The contact form is not protected from spam and bots. Use %3$s "
+"Captcha by BestWebSoft plugin %5$s or %4$s reCaptcha by BestWebSoft plugin "
+"%5$s to protect your contact form."
+msgstr ""
+"%1$sNote :%2$s Le formulaire de contact n'est pas protégé contre le spam et "
+"les robots. Utilisez %3$s Captcha by BestWebSoft plugin %5$s ou %4$s "
+"reCaptcha by BestWebSoft plugin %5$s pour protéger votre formulaire de "
+"contact."
+
+#: contact_form.php:942
 msgid "NEW_FORM"
 msgstr "Nouveau formulaire"
 
-#: contact_form.php:654
+#: contact_form.php:943
 msgid ""
 "If you want to create multiple contact forms, please install the Contact "
 "Form Multi plugin."
@@ -181,7 +194,7 @@ msgstr ""
 "Si vous voulez créer plusieurs formulaire de contact, merci d&rsquo;"
 "installer l&rsquo;extension 'Contact Form Multi'."
 
-#: contact_form.php:659
+#: contact_form.php:948
 msgid ""
 "Contact Form plugin doesn't support your current version of Contact Form "
 "Multi plugin. Please update Contact Form Multi plugin to version 1.2.6 or "
@@ -191,48 +204,82 @@ msgstr ""
 "Formulaire de Contact Multiple. Merci de mettre à jour l'extension "
 "Formulaire de Contact Multiple à la version 1.2.6 ou supérieure."
 
-#: contact_form.php:761
+#: contact_form.php:1062
 msgid "Sorry, email message could not be delivered."
 msgstr "Désolé, votre courriel n&rsquo;a pas pu être envoyé."
 
-#: contact_form.php:1398 contact_form.php:1400
+#: contact_form.php:1100 contact_form.php:1156
+msgid ""
+"Please enter only letters at least 3 characters, words seperated by spaces"
+msgstr ""
+"Veuillez saisir uniquement des lettres d'au moins 3 caractères, les mots "
+"étant séparés par des espaces"
+
+#: contact_form.php:1114
+msgid ""
+"Please enter only letters and numbers at least 3 characters, words seperated "
+"by spaces"
+msgstr ""
+"Veuillez saisir uniquement des lettres et des chiffres d'au moins 3 "
+"caractères, les mots étant séparés par des espaces"
+
+#: contact_form.php:1142
+msgid "Please enter only numbers at least 6 characters"
+msgstr "Veuillez saisir uniquement des chiffres d'au moins 6 caractères"
+
+#: contact_form.php:1494
+#, php-format
+msgid "between %1$d and %2$d characters"
+msgstr "entre %1$d et %2$d caractères"
+
+#: contact_form.php:1501 includes/class-cntctfrm-settings.php:1954
+#, php-format
+msgid "more than %1$d characters"
+msgstr "plus de %1$d caractères"
+
+#: contact_form.php:1507 includes/class-cntctfrm-settings.php:1959
+#, php-format
+msgid "less than %1$d characters"
+msgstr "moins de %1$d caractères"
+
+#: contact_form.php:1828 contact_form.php:1830
 msgid "Sent from (ip address)"
 msgstr "Envoyé de (adresse IP)"
 
-#: contact_form.php:1404 contact_form.php:1406
-#: includes/class-cntctfrm-settings.php:1120
+#: contact_form.php:1835 contact_form.php:1837
+#: includes/class-cntctfrm-settings.php:1262
 msgid "Date/Time"
 msgstr "Date/Heure"
 
-#: contact_form.php:1410 contact_form.php:1412
-#: includes/class-cntctfrm-settings.php:1121
+#: contact_form.php:1842 contact_form.php:1844
+#: includes/class-cntctfrm-settings.php:1263
 msgid "Sent from (referer)"
 msgstr "Envoyer de (référence)"
 
-#: contact_form.php:1416 contact_form.php:1418
-#: includes/class-cntctfrm-settings.php:1122
+#: contact_form.php:1849 contact_form.php:1851
+#: includes/class-cntctfrm-settings.php:1264
 msgid "Using (user agent)"
 msgstr "Depuis (navigateur)"
 
-#: contact_form.php:1428
+#: contact_form.php:1862
 msgid "Contact from"
 msgstr "Contact de"
 
-#: contact_form.php:1433 contact_form.php:1482
+#: contact_form.php:1867 contact_form.php:1917
 msgid "Site"
 msgstr "Site"
 
-#: contact_form.php:1455 contact_form.php:1499
-#: includes/class-cntctfrm-settings.php:601
+#: contact_form.php:1889 contact_form.php:1935
+#: includes/class-cntctfrm-settings.php:660
 msgid "Email"
 msgstr "E-mail"
 
-#: contact_form.php:1471 contact_form.php:1512
-#: includes/class-cntctfrm-settings.php:1457
+#: contact_form.php:1905 contact_form.php:1948
+#: includes/class-cntctfrm-settings.php:1631
 msgid "Phone Number"
 msgstr "Téléphone"
 
-#: contact_form.php:1610
+#: contact_form.php:2057
 msgid ""
 "If you can see this MIME, it means that the MIME type is not supported by "
 "your email client!"
@@ -240,23 +287,23 @@ msgstr ""
 "Si vous voyez ce MIME c&rsquo;est que votre navigateur n&rsquo;accepte pas "
 "ce type de MIME&nbsp;!"
 
-#: contact_form.php:1682
+#: contact_form.php:2164
 msgid "FAQ"
 msgstr "FAQ"
 
-#: contact_form.php:1683
+#: contact_form.php:2165
 msgid "Support"
 msgstr "Support"
 
-#: contact_form.php:1732
+#: contact_form.php:2229
 msgid "Are you sure that you want to delete this language data?"
 msgstr "Êtes vous sûr de vouloir supprimer cette langue&nbsp;?"
 
-#: contact_form.php:1754
+#: contact_form.php:2253
 msgid "Add multiple forms"
 msgstr "Ajouter plusieurs formulaires"
 
-#: contact_form.php:1754
+#: contact_form.php:2253
 msgid ""
 "Install Contact Form Multi plugin to create unlimited number of contact "
 "forms."
@@ -264,96 +311,100 @@ msgstr ""
 "Installer l&rsquo;extension 'Contact Form Multi' pour créer un nombre infini "
 "de formulaires de contact."
 
-#: contact_form.php:1763 includes/class-cntctfrm-settings.php:472
-#: includes/class-cntctfrm-settings.php:890
-#: includes/class-cntctfrm-settings.php:1083
-#: includes/class-cntctfrm-settings.php:1370
+#: contact_form.php:2262 includes/class-cntctfrm-settings.php:526
+#: includes/class-cntctfrm-settings.php:984
+#: includes/class-cntctfrm-settings.php:1218
+#: includes/class-cntctfrm-settings.php:1544
 msgid "Close"
 msgstr "Fermer"
 
-#: contact_form.php:1817
+#: contact_form.php:2329
 msgid "Error"
 msgstr "Erreur"
 
-#: contact_form.php:1817 contact_form.php:1819
+#: contact_form.php:2329 contact_form.php:2331
 msgid "Illegal language code"
 msgstr "Code de langue inconnu"
 
-#: contact_form.php:1853 contact_form.php:1855
-#: includes/class-cntctfrm-settings.php:1186
-#: includes/class-cntctfrm-settings.php:1188
-#: includes/class-cntctfrm-settings.php:1226
-#: includes/class-cntctfrm-settings.php:1228
-#: includes/class-cntctfrm-settings.php:1260
-#: includes/class-cntctfrm-settings.php:1262
-#: includes/class-cntctfrm-settings.php:1274
-#: includes/class-cntctfrm-settings.php:1276
+#: contact_form.php:2363 contact_form.php:2365
+#: includes/class-cntctfrm-settings.php:1337
+#: includes/class-cntctfrm-settings.php:1339
+#: includes/class-cntctfrm-settings.php:1381
+#: includes/class-cntctfrm-settings.php:1383
+#: includes/class-cntctfrm-settings.php:1421
+#: includes/class-cntctfrm-settings.php:1423
+#: includes/class-cntctfrm-settings.php:1438
+#: includes/class-cntctfrm-settings.php:1440
 msgid "Use shortcode"
 msgstr "Utiliser le code court"
 
-#: contact_form.php:1853 contact_form.php:1855
-#: includes/class-cntctfrm-settings.php:1186
-#: includes/class-cntctfrm-settings.php:1188
-#: includes/class-cntctfrm-settings.php:1226
-#: includes/class-cntctfrm-settings.php:1228
-#: includes/class-cntctfrm-settings.php:1260
-#: includes/class-cntctfrm-settings.php:1262
-#: includes/class-cntctfrm-settings.php:1274
-#: includes/class-cntctfrm-settings.php:1276
+#: contact_form.php:2363 contact_form.php:2365
+#: includes/class-cntctfrm-settings.php:1337
+#: includes/class-cntctfrm-settings.php:1339
+#: includes/class-cntctfrm-settings.php:1381
+#: includes/class-cntctfrm-settings.php:1383
+#: includes/class-cntctfrm-settings.php:1421
+#: includes/class-cntctfrm-settings.php:1423
+#: includes/class-cntctfrm-settings.php:1438
+#: includes/class-cntctfrm-settings.php:1440
 msgid "for this language"
 msgstr "pour cette langue"
 
-#: contact_form.php:2003
+#: contact_form.php:2554
 msgid "Close notice"
 msgstr "Fermer l&rsquo;avertissement"
 
-#: contact_form.php:2008
+#: contact_form.php:2559
 msgid "allows to store your messages to the database."
 msgstr "permet d&rsquo;enregistrer les messages dans la base de données."
 
-#: contact_form.php:2009
+#: contact_form.php:2560
 msgid "Manage messages that have been sent from your website."
 msgstr "Gérer les messages qui ont été envoyés depuis votre site."
 
-#: contact_form.php:2012
+#: contact_form.php:2563
 msgid "Learn More"
 msgstr "En savoir plus"
 
-#: contact_form.php:2072
+#: contact_form.php:2633
 msgid "Contact form"
 msgstr "Formulaire de contact"
 
-#: contact_form.php:2085 contact_form.php:2095
+#: contact_form.php:2642 contact_form.php:2656
+msgid "default"
+msgstr "défaut"
+
+#: contact_form.php:2648 contact_form.php:2660
 msgid "Language"
 msgstr "Langue"
 
-#: includes/class-cntctfrm-settings.php:28
-#: includes/class-cntctfrm-settings.php:549
+#: includes/class-cntctfrm-settings.php:31
+#: includes/class-cntctfrm-settings.php:608
 msgid "Additional Settings"
 msgstr "Paramètres supplémentaires"
 
-#: includes/class-cntctfrm-settings.php:29
-#: includes/class-cntctfrm-settings.php:1296
+#: includes/class-cntctfrm-settings.php:32
+#: includes/class-cntctfrm-settings.php:1466
 msgid "Appearance"
 msgstr "Aspect"
 
-#: includes/class-cntctfrm-settings.php:30
+#: includes/class-cntctfrm-settings.php:33
 msgid "Misc"
 msgstr "Divers"
 
-#: includes/class-cntctfrm-settings.php:31
-msgid "License Key"
-msgstr "Clé de licence"
-
-#: includes/class-cntctfrm-settings.php:32
+#: includes/class-cntctfrm-settings.php:34
 msgid "Custom Code"
 msgstr "Code personnalisé"
 
-#: includes/class-cntctfrm-settings.php:99
+#: includes/class-cntctfrm-settings.php:35
+msgid "License Key"
+msgstr "Clé de licence"
+
+#: includes/class-cntctfrm-settings.php:111
 msgid "Please enable JavaScript in your browser."
 msgstr "Merci d'activer JavaScript dans votre navigateur."
 
-#: includes/class-cntctfrm-settings.php:101
+#: includes/class-cntctfrm-settings.php:113
 #, php-format
 msgid ""
 "Contact Form plugin requires PHP %s or higher. Please contact your hosting "
@@ -362,7 +413,15 @@ msgstr ""
 "L'extension Formulaire de Contact nécessite PHP %s ou supérieur. Merci de "
 "contacter votre hébergeur pour mettre à jour PHP."
 
-#: includes/class-cntctfrm-settings.php:350
+#: includes/class-cntctfrm-settings.php:143
+msgid "Sorry, your nonce did not verify."
+msgstr "Désolé, votre nonce n' a pas été vérifié."
+
+#: includes/class-cntctfrm-settings.php:211
+msgid "Min / Max symbols in the message cannot be empty."
+msgstr "Les symboles Min / Max du message ne peuvent pas être vides."
+
+#: includes/class-cntctfrm-settings.php:399
 msgid ""
 "Email 'FROM' field option was changed, which may cause email messages being "
 "moved to the spam folder or email delivery failures."
@@ -371,7 +430,7 @@ msgstr ""
 "entraîner un classement des messages dans les dossiers spam ou bien une "
 "erreur d&rsquo;acheminement peut survenir."
 
-#: includes/class-cntctfrm-settings.php:360
+#: includes/class-cntctfrm-settings.php:409
 msgid ""
 "If the 'Redirect to page' option is selected then the URL field should be in "
 "the following format"
@@ -379,30 +438,30 @@ msgstr ""
 "Si l&rsquo;option 'Rediriger vers la page' est positionnée, alors le champ "
 "Url doit être rempli avec le format suivant"
 
-#: includes/class-cntctfrm-settings.php:367
+#: includes/class-cntctfrm-settings.php:414
 msgid "Such user does not exist."
 msgstr "Cet utilisateur est inconnu."
 
-#: includes/class-cntctfrm-settings.php:377
+#: includes/class-cntctfrm-settings.php:423
 msgid ""
 "Please enter a valid email address in the 'Use this email address' field."
 msgstr ""
 "Merci de saisir une adresse e-mail valide pour le champ 'Utiliser cette "
 "adresse e-mail'."
 
-#: includes/class-cntctfrm-settings.php:385
+#: includes/class-cntctfrm-settings.php:431
 msgid "Please enter a valid email address in the 'FROM' field."
 msgstr "Merci de saisir une adresse e-mail valide pour le champ 'FROM'."
 
-#: includes/class-cntctfrm-settings.php:405
+#: includes/class-cntctfrm-settings.php:452
 msgid "Settings saved."
 msgstr "Options enregistrées."
 
-#: includes/class-cntctfrm-settings.php:407
+#: includes/class-cntctfrm-settings.php:454
 msgid "Settings are not saved."
 msgstr "Paramètres non enregistrées."
 
-#: includes/class-cntctfrm-settings.php:432
+#: includes/class-cntctfrm-settings.php:481
 msgid ""
 "If you leave the fields empty, the messages will be sent to the email "
 "address specified during registration."
@@ -410,15 +469,15 @@ msgstr ""
 "Si les champs ci-dessous ne sont pas renseignés le message sera envoyé à "
 "l&rsquo;adresse spécifiée lors de l&rsquo;enregistrement."
 
-#: includes/class-cntctfrm-settings.php:435
+#: includes/class-cntctfrm-settings.php:484
 msgid "The user's email address"
 msgstr "Utiliser l&rsquo;e-mail du compte WordPress"
 
-#: includes/class-cntctfrm-settings.php:440
+#: includes/class-cntctfrm-settings.php:489
 msgid "Select a username"
 msgstr "Choisir un nom d&rsquo;utilisateur"
 
-#: includes/class-cntctfrm-settings.php:453
+#: includes/class-cntctfrm-settings.php:508
 msgid ""
 "Select a username of the person who should get the messages from the contact "
 "form."
@@ -426,102 +485,103 @@ msgstr ""
 "Choisir le nom d&rsquo;utilisateur qui recevra les messages envoyés depuis "
 "le formulaire de contact."
 
-#: includes/class-cntctfrm-settings.php:458
+#: includes/class-cntctfrm-settings.php:513
 msgid "Use this email address"
 msgstr "Utiliser cette adresse e-mail"
 
-#: includes/class-cntctfrm-settings.php:463
-msgid "Enter the email address for receiving messages"
+#: includes/class-cntctfrm-settings.php:518
+msgid ""
+"Enter multiple email addresses separated by comma for receiving messages."
 msgstr ""
-"Choisir l&rsquo;adresse e-mail qui sera utilisée pour recevoir les messages"
+"Saisissez plusieurs adresses électroniques séparées par une virgule pour la "
+"réception des messages."
 
-#: includes/class-cntctfrm-settings.php:476
+#: includes/class-cntctfrm-settings.php:530
 msgid "Add department selectbox to the contact form"
 msgstr ""
 "Ajouter la liste déroulante pour le département dans le formulaire de contact"
 
-#: includes/class-cntctfrm-settings.php:495
+#: includes/class-cntctfrm-settings.php:543
 msgid "Save emails to the database"
 msgstr "Enregistrer les e-mails dans la base de données"
 
-#: includes/class-cntctfrm-settings.php:507
-#: includes/class-cntctfrm-settings.php:521
-#: includes/class-cntctfrm-settings.php:528
+#: includes/class-cntctfrm-settings.php:556
+#: includes/class-cntctfrm-settings.php:576
+#: includes/class-cntctfrm-settings.php:585
 msgid "Using"
 msgstr "Utilisant"
 
-#: includes/class-cntctfrm-settings.php:513
-#: includes/class-cntctfrm-settings.php:985
-#: includes/class-cntctfrm-settings.php:1026
-#: includes/class-cntctfrm-settings.php:1061
+#: includes/class-cntctfrm-settings.php:562
+#: includes/class-cntctfrm-settings.php:1087
+#: includes/class-cntctfrm-settings.php:1142
+#: includes/class-cntctfrm-settings.php:1187
 msgid "Please activate the appropriate option on"
 msgstr "Merci de configure les options appropriées sur"
 
-#: includes/class-cntctfrm-settings.php:516
-#: includes/class-cntctfrm-settings.php:988
-#: includes/class-cntctfrm-settings.php:1029
-#: includes/class-cntctfrm-settings.php:1064
+#: includes/class-cntctfrm-settings.php:567
+#: includes/class-cntctfrm-settings.php:1092
+#: includes/class-cntctfrm-settings.php:1147
+#: includes/class-cntctfrm-settings.php:1192
 msgid "settings page"
 msgstr "page des paramètres"
 
-#: includes/class-cntctfrm-settings.php:522
-#: includes/class-cntctfrm-settings.php:995
-#: includes/class-cntctfrm-settings.php:1037
-#: includes/class-cntctfrm-settings.php:1071
+#: includes/class-cntctfrm-settings.php:577
+#: includes/class-cntctfrm-settings.php:1104
+#: includes/class-cntctfrm-settings.php:1159
+#: includes/class-cntctfrm-settings.php:1203
 msgid "Activate"
-msgstr "Activé"
+msgstr "Activer"
 
-#: includes/class-cntctfrm-settings.php:529
-#: includes/class-cntctfrm-settings.php:1004
-#: includes/class-cntctfrm-settings.php:1043
-#: includes/class-cntctfrm-settings.php:1076
+#: includes/class-cntctfrm-settings.php:586
+#: includes/class-cntctfrm-settings.php:1116
+#: includes/class-cntctfrm-settings.php:1167
+#: includes/class-cntctfrm-settings.php:1210
 msgid "Download"
 msgstr "Téléchargement"
 
-#: includes/class-cntctfrm-settings.php:554
+#: includes/class-cntctfrm-settings.php:613
 msgid "Sending method"
 msgstr "Méthode pour l&rsquo;envoie"
 
-#: includes/class-cntctfrm-settings.php:559
+#: includes/class-cntctfrm-settings.php:618
 msgid "Wp-mail"
 msgstr "Wp-mail"
 
-#: includes/class-cntctfrm-settings.php:560
-msgid "You can use the Wordpress wp_mail function for mailing"
+#: includes/class-cntctfrm-settings.php:619
+msgid "You can use the WordPress wp_mail function for mailing"
 msgstr ""
-"Pour envoyer le courriel, vous pouvez utiliser la fonction wp_mail de "
-"WordPress"
+"Vous pouvez utiliser la fonction WordPress wp_mail pour l'envoi de courriers"
 
-#: includes/class-cntctfrm-settings.php:565
+#: includes/class-cntctfrm-settings.php:624
 msgid "Mail"
 msgstr "E-mail"
 
-#: includes/class-cntctfrm-settings.php:566
+#: includes/class-cntctfrm-settings.php:625
 msgid "You can use the PHP mail function for mailing"
 msgstr ""
 "Pour envoyer le courriel, vous pouvez utiliser la fonction PHP mail de "
 "WordPress"
 
-#: includes/class-cntctfrm-settings.php:572
+#: includes/class-cntctfrm-settings.php:631
 msgid "'FROM' field"
 msgstr "Champ 'From'"
 
-#: includes/class-cntctfrm-settings.php:588
+#: includes/class-cntctfrm-settings.php:647
 msgid "User name"
 msgstr "Nom de l&rsquo;utilisateur"
 
-#: includes/class-cntctfrm-settings.php:590
+#: includes/class-cntctfrm-settings.php:649
 msgid ""
 "The name of the user who fills the form will be used in the field 'From'."
 msgstr ""
 "Dans le champ 'FROM' du courriel, il sera utilisé l&rsquo;adresse e-mail de "
 "l&rsquo;utilisateur qui rempli le formulaire."
 
-#: includes/class-cntctfrm-settings.php:612
+#: includes/class-cntctfrm-settings.php:671
 msgid "User email"
 msgstr "E-mail de l&rsquo;utilisateur"
 
-#: includes/class-cntctfrm-settings.php:614
+#: includes/class-cntctfrm-settings.php:673
 msgid ""
 "The email address of the user who fills the form will be used in the field "
 "'From'."
@@ -529,7 +589,7 @@ msgstr ""
 "Dans le champ 'FROM' du courriel, il sera utilisé l&rsquo;adresse e-mail de "
 "l&rsquo;utilisateur qui rempli le formulaire."
 
-#: includes/class-cntctfrm-settings.php:623
+#: includes/class-cntctfrm-settings.php:682
 msgid ""
 "If this option is changed, email messages may be moved to the spam folder or "
 "email delivery failures may occur."
@@ -537,185 +597,242 @@ msgstr ""
 "Si cette option est modifiée, les courriels pourront se retrouver classer "
 "dans le dossier spam ou bien une erreur d&rsquo;acheminement peut survenir."
 
-#: includes/class-cntctfrm-settings.php:632
+#: includes/class-cntctfrm-settings.php:691
 msgid "Required symbol"
 msgstr "Symbole obligatoire"
 
-#: includes/class-cntctfrm-settings.php:642
+#: includes/class-cntctfrm-settings.php:701
 msgid "Fields"
 msgstr "Champs"
 
-#: includes/class-cntctfrm-settings.php:643
-#: includes/class-cntctfrm-settings.php:658
-#: includes/class-cntctfrm-settings.php:673
-#: includes/class-cntctfrm-settings.php:700
-#: includes/class-cntctfrm-settings.php:720
-#: includes/class-cntctfrm-settings.php:738
-#: includes/class-cntctfrm-settings.php:763
-#: includes/class-cntctfrm-settings.php:780
+#: includes/class-cntctfrm-settings.php:702
+#: includes/class-cntctfrm-settings.php:721
+#: includes/class-cntctfrm-settings.php:737
+#: includes/class-cntctfrm-settings.php:768
+#: includes/class-cntctfrm-settings.php:789
 #: includes/class-cntctfrm-settings.php:811
-#: includes/class-cntctfrm-settings.php:859
+#: includes/class-cntctfrm-settings.php:837
+#: includes/class-cntctfrm-settings.php:862
+#: includes/class-cntctfrm-settings.php:900
+#: includes/class-cntctfrm-settings.php:940
+#: includes/class-cntctfrm-settings.php:992
 msgid "Used"
 msgstr "Utilisé"
 
-#: includes/class-cntctfrm-settings.php:644
-#: includes/class-cntctfrm-settings.php:662
-#: includes/class-cntctfrm-settings.php:677
-#: includes/class-cntctfrm-settings.php:704
-#: includes/class-cntctfrm-settings.php:724
-#: includes/class-cntctfrm-settings.php:742
-#: includes/class-cntctfrm-settings.php:767
-#: includes/class-cntctfrm-settings.php:787
-#: includes/class-cntctfrm-settings.php:818
+#: includes/class-cntctfrm-settings.php:703
+#: includes/class-cntctfrm-settings.php:725
+#: includes/class-cntctfrm-settings.php:741
+#: includes/class-cntctfrm-settings.php:772
+#: includes/class-cntctfrm-settings.php:793
+#: includes/class-cntctfrm-settings.php:815
+#: includes/class-cntctfrm-settings.php:841
+#: includes/class-cntctfrm-settings.php:871
+#: includes/class-cntctfrm-settings.php:909
+#: includes/class-cntctfrm-settings.php:993
 msgid "Required"
 msgstr "Obligatoire"
 
-#: includes/class-cntctfrm-settings.php:646
-#: includes/class-cntctfrm-settings.php:682
-#: includes/class-cntctfrm-settings.php:746
-#: includes/class-cntctfrm-settings.php:792
-#: includes/class-cntctfrm-settings.php:823
+#: includes/class-cntctfrm-settings.php:706
+#: includes/class-cntctfrm-settings.php:747
+#: includes/class-cntctfrm-settings.php:819
+#: includes/class-cntctfrm-settings.php:878
+#: includes/class-cntctfrm-settings.php:915
+#: includes/class-cntctfrm-settings.php:994
 msgid "Visible"
 msgstr "Visible"
 
-#: includes/class-cntctfrm-settings.php:647
-#: includes/class-cntctfrm-settings.php:686
-#: includes/class-cntctfrm-settings.php:750
-#: includes/class-cntctfrm-settings.php:796
-#: includes/class-cntctfrm-settings.php:827
+#: includes/class-cntctfrm-settings.php:707
+#: includes/class-cntctfrm-settings.php:751
+#: includes/class-cntctfrm-settings.php:823
+#: includes/class-cntctfrm-settings.php:882
+#: includes/class-cntctfrm-settings.php:919
+#: includes/class-cntctfrm-settings.php:995
 msgid "Disabled for editing"
 msgstr "Non actif pour l&rsquo;édition"
 
-#: includes/class-cntctfrm-settings.php:648
-#: includes/class-cntctfrm-settings.php:710
-#: includes/class-cntctfrm-settings.php:800
-#: includes/class-cntctfrm-settings.php:831
+#: includes/class-cntctfrm-settings.php:708
+#: includes/class-cntctfrm-settings.php:778
+#: includes/class-cntctfrm-settings.php:886
+#: includes/class-cntctfrm-settings.php:923
 msgid "Field's default value"
 msgstr "Valeur par défaut du champ"
 
-#: includes/class-cntctfrm-settings.php:655
+#: includes/class-cntctfrm-settings.php:718
 msgid "Department selectbox"
 msgstr "Liste déroulante des localisations"
 
-#: includes/class-cntctfrm-settings.php:690
+#: includes/class-cntctfrm-settings.php:755
 msgid "Use User's name as a default value if the user is logged in."
 msgstr ""
 "Utiliser le nom de l&rsquo;utilisateur comme valeur par défaut si un "
 "utilisateur est connecté."
 
-#: includes/class-cntctfrm-settings.php:691
-#: includes/class-cntctfrm-settings.php:755
+#: includes/class-cntctfrm-settings.php:756
+#: includes/class-cntctfrm-settings.php:828
 msgid ""
 "'Visible' and 'Disabled for editing' options will be applied only to logged-"
 "in users."
 msgstr ""
-"'Visible' et 'Inactif', ces options ne seront appliqués qu&rsquo;aux "
-"utilisateurs connectés."
+"les options \"Visible\" et \"Désactivé pour l'édition\" ne s'appliquent "
+"qu'aux utilisateurs connectés."
 
-#: includes/class-cntctfrm-settings.php:697
+#: includes/class-cntctfrm-settings.php:765
 msgid "Location selectbox"
 msgstr "Liste déroulante des localisations"
 
-#: includes/class-cntctfrm-settings.php:754
+#: includes/class-cntctfrm-settings.php:827
 msgid "Use User's email as a default value if the user is logged in."
 msgstr ""
 "Utiliser l&rsquo;adresse e-mail de l&rsquo;utilisateur comme valeur par "
 "défaut si un utilisateur est connecté."
 
-#: includes/class-cntctfrm-settings.php:852
+#: includes/class-cntctfrm-settings.php:849
+#, php-format
+msgid ""
+"Specify a mask which will be used for the phone validation, where * is a "
+"number. Use only the following symbols: %s"
+msgstr ""
+"Indiquez un masque qui sera utilisé pour la validation du téléphone, où * "
+"est un chiffre. N'utilisez que les symboles suivants : %s"
+
+#: includes/class-cntctfrm-settings.php:933
 msgid "Attachment block"
 msgstr "Bloc pièce jointe"
 
-#: includes/class-cntctfrm-settings.php:854
+#: includes/class-cntctfrm-settings.php:935
 msgid "Users can attach the following file formats"
 msgstr "Les utilisateurs peuvent joindre des documents des types suivants"
 
-#: includes/class-cntctfrm-settings.php:870
+#: includes/class-cntctfrm-settings.php:958
 msgid "Multi-attachment"
 msgstr "Pièces jointes multiples"
 
-#: includes/class-cntctfrm-settings.php:872
+#: includes/class-cntctfrm-settings.php:960
 msgid "Enable to multiple file selection"
 msgstr "Activer la sélection de fichiers multiples"
 
-#: includes/class-cntctfrm-settings.php:932
-msgid "If you upgrade to Pro version all your settings will be saved."
-msgstr ""
-"Si vous passez à la version Pro, tous ces paramètres seront enregistrés."
+#: includes/class-cntctfrm-settings.php:990
+msgid "Title"
+msgstr "Titre"
 
-#: includes/class-cntctfrm-settings.php:945
+#: includes/class-cntctfrm-settings.php:991
+msgid "Field Type"
+msgstr "Type de champ"
+
+#: includes/class-cntctfrm-settings.php:996
+msgid "Field's default/available value"
+msgstr "Valeur par défaut/disponible du champ"
+
+#: includes/class-cntctfrm-settings.php:1021
+msgid "Create Field"
+msgstr "Créer un champ"
+
+#: includes/class-cntctfrm-settings.php:1026
+msgid "Google Analytics Measurement ID"
+msgstr "ID de mesure Google Analytics"
+
+#: includes/class-cntctfrm-settings.php:1031
+#, php-format
+msgid ""
+"Enter your %1$sMeasurement ID%2$s to track contact form submissions in "
+"Google Analytics."
+msgstr ""
+"Saisissez votre %1$sID de mesure%2$s pour suivre les soumissions de "
+"formulaires de contact dans Google Analytics."
+
+#: includes/class-cntctfrm-settings.php:1032
+msgid "Google Analytics version 4 is required."
+msgstr "La version 4 de Google Analytics est requise."
+
+#: includes/class-cntctfrm-settings.php:1045
 msgid "Add to the form"
 msgstr "Ajouter au formulaire"
 
-#: includes/class-cntctfrm-settings.php:950
+#: includes/class-cntctfrm-settings.php:1050
 msgid "Tips below the Attachment"
 msgstr "Afficher les explications en-dessous du bloc des pièces jointes"
 
-#: includes/class-cntctfrm-settings.php:957
+#: includes/class-cntctfrm-settings.php:1057
 msgid "'Send me a copy' block"
 msgstr "Afficher le bloc \"M&rsquo;envoyer une copie\""
 
-#: includes/class-cntctfrm-settings.php:964
+#: includes/class-cntctfrm-settings.php:1064
 msgid "GDPR Compliance"
 msgstr "Conformité RGPD"
 
-#: includes/class-cntctfrm-settings.php:969
+#: includes/class-cntctfrm-settings.php:1069
 msgid "Link to Privacy Policy Page"
 msgstr "Lien vers la page Politique de confidentialité"
 
-#: includes/class-cntctfrm-settings.php:997
+#: includes/class-cntctfrm-settings.php:1106
 msgid "Activate for network"
 msgstr "Activer pour le réseau"
 
-#: includes/class-cntctfrm-settings.php:1087
+#: includes/class-cntctfrm-settings.php:1222
 msgid "Agreement checkbox"
 msgstr "Case à cocher pour valider le formulaire"
 
-#: includes/class-cntctfrm-settings.php:1087
+#: includes/class-cntctfrm-settings.php:1222
 msgid "Required checkbox for submitting the form"
 msgstr "Boite à cocher obligatoire pour la validation du formulaire"
 
-#: includes/class-cntctfrm-settings.php:1088
+#: includes/class-cntctfrm-settings.php:1223
 msgid "Optional checkbox"
 msgstr "Boite à cocher optionnelle"
 
-#: includes/class-cntctfrm-settings.php:1088
+#: includes/class-cntctfrm-settings.php:1223
 msgid "Optional checkbox, the results of which will be displayed in email"
 msgstr "Boite à cocher optionnelle, le résultat sera affiché dans le courriel"
 
-#: includes/class-cntctfrm-settings.php:1103
+#: includes/class-cntctfrm-settings.php:1234
 msgid "Delete an attachment file from the server after the email is sent"
 msgstr ""
 "Supprimer le fichier joint sur le serveur après l&rsquo;envoie du courriel"
 
-#: includes/class-cntctfrm-settings.php:1109
+#: includes/class-cntctfrm-settings.php:1240
 msgid "Email in HTML format sending"
 msgstr "Courriel au format HTML"
 
-#: includes/class-cntctfrm-settings.php:1113
+#: includes/class-cntctfrm-settings.php:1244
+msgid "Limit for Message field"
+msgstr "Limite pour le champ Message"
+
+#: includes/class-cntctfrm-settings.php:1246
+msgid "Min / Max symbols in the message"
+msgstr "Symboles Min / Max dans le message"
+
+#: includes/class-cntctfrm-settings.php:1248
+msgid "min"
+msgstr "min"
+
+#: includes/class-cntctfrm-settings.php:1249
+msgid "max"
+msgstr "max"
+
+#: includes/class-cntctfrm-settings.php:1254
 msgid "Display additional info in the email"
 msgstr "Afficher les informations complémentaires dans le courriel"
 
-#: includes/class-cntctfrm-settings.php:1119
+#: includes/class-cntctfrm-settings.php:1261
 msgid "Sent from (IP address)"
 msgstr "Envoyé de (adresse IP)"
 
-#: includes/class-cntctfrm-settings.php:1119
+#: includes/class-cntctfrm-settings.php:1261
 msgid "Example: Sent from (IP address): 127.0.0.1"
 msgstr "Exemple&nbsp;: Envoyé de (adresse IP)&nbsp;: 127.0.0.1"
 
-#: includes/class-cntctfrm-settings.php:1120
+#: includes/class-cntctfrm-settings.php:1262
 msgid "Example: Date/Time: August 19, 2013 8:50 pm"
 msgstr "Exemple&nbsp;: Date/Heure&nbsp;: 19 août 2013 8:50"
 
-#: includes/class-cntctfrm-settings.php:1121
+#: includes/class-cntctfrm-settings.php:1263
 msgid ""
 "Example: Sent from (referer):   https://bestwebsoft.com/contacts/contact-us/"
 msgstr ""
 "Exemple&nbsp;: Envoyer de (referer)&nbsp;: http://bestwebsoft.com/contacts/"
 "contact-us/"
 
-#: includes/class-cntctfrm-settings.php:1122
+#: includes/class-cntctfrm-settings.php:1264
 msgid ""
 "Example: Using (user agent): Mozilla/5.0 (Windows NT 6.2; WOW64) "
 "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36"
@@ -724,330 +841,362 @@ msgstr ""
 "WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 "
 "Safari/537.36"
 
-#: includes/class-cntctfrm-settings.php:1127
-msgid "Language settings for the field names in the form"
-msgstr "Définition des langues pour les titres des champs"
+#: includes/class-cntctfrm-settings.php:1270
+msgid "Language Settings"
+msgstr "Paramètres linguistiques"
 
-#: includes/class-cntctfrm-settings.php:1136
+#: includes/class-cntctfrm-settings.php:1283
 msgid "Add a language"
 msgstr "Ajouter une langue"
 
-#: includes/class-cntctfrm-settings.php:1140
+#: includes/class-cntctfrm-settings.php:1287
 msgid "Change the names of the contact form fields and error messages"
 msgstr ""
 "Modifier le texte pour les champs du formulaire de contact et les messages "
 "d&rsquo;erreur"
 
-#: includes/class-cntctfrm-settings.php:1145
-#: includes/class-cntctfrm-settings.php:1245
-#: includes/class-cntctfrm-settings.php:1350
+#: includes/class-cntctfrm-settings.php:1293
+#: includes/class-cntctfrm-settings.php:1404
+#: includes/class-cntctfrm-settings.php:1523
 msgid "Default"
 msgstr "Défaut"
 
-#: includes/class-cntctfrm-settings.php:1158
-#: includes/class-cntctfrm-settings.php:1198
+#: includes/class-cntctfrm-settings.php:1308
+#: includes/class-cntctfrm-settings.php:1352
 msgid "click to expand/hide the list"
 msgstr "cliquer pour voir/cacher la liste"
 
-#: includes/class-cntctfrm-settings.php:1167
-#: includes/class-cntctfrm-settings.php:1207
+#: includes/class-cntctfrm-settings.php:1317
+#: includes/class-cntctfrm-settings.php:1361
 msgid "Tips below the Attachment block"
 msgstr "Afficher les explications en-dessous du bloc des pièces jointes"
 
-#: includes/class-cntctfrm-settings.php:1172
-#: includes/class-cntctfrm-settings.php:1212
+#: includes/class-cntctfrm-settings.php:1322
+#: includes/class-cntctfrm-settings.php:1366
 msgid "Error message for the Name field"
 msgstr "Message d&rsquo;erreur pour le champ Nom"
 
-#: includes/class-cntctfrm-settings.php:1173
-#: includes/class-cntctfrm-settings.php:1213
+#: includes/class-cntctfrm-settings.php:1323
+#: includes/class-cntctfrm-settings.php:1367
 msgid "Error message for the Address field"
 msgstr "Message d&rsquo;erreur pour le champ Adresse"
 
-#: includes/class-cntctfrm-settings.php:1174
-#: includes/class-cntctfrm-settings.php:1214
+#: includes/class-cntctfrm-settings.php:1324
+#: includes/class-cntctfrm-settings.php:1368
 msgid "Error message for the Email field"
 msgstr "Message d&rsquo;erreur pour le champ E-mail"
 
-#: includes/class-cntctfrm-settings.php:1175
-#: includes/class-cntctfrm-settings.php:1215
+#: includes/class-cntctfrm-settings.php:1325
+#: includes/class-cntctfrm-settings.php:1369
 msgid "Error message for the Phone field"
 msgstr "Message d&rsquo;erreur pour le champ Téléphone"
 
-#: includes/class-cntctfrm-settings.php:1176
-#: includes/class-cntctfrm-settings.php:1216
+#: includes/class-cntctfrm-settings.php:1326
+#: includes/class-cntctfrm-settings.php:1370
 msgid "Error message for the Subject field"
 msgstr "Message d&rsquo;erreur pour le champ Sujet"
 
-#: includes/class-cntctfrm-settings.php:1177
-#: includes/class-cntctfrm-settings.php:1217
+#: includes/class-cntctfrm-settings.php:1327
+#: includes/class-cntctfrm-settings.php:1371
 msgid "Error message for the Message field"
 msgstr "Message d&rsquo;erreur pour le champ Message"
 
-#: includes/class-cntctfrm-settings.php:1178
-#: includes/class-cntctfrm-settings.php:1218
+#: includes/class-cntctfrm-settings.php:1328
+#: includes/class-cntctfrm-settings.php:1372
+msgid "Error message for Limit for the Message field"
+msgstr "Message d'erreur pour la limite du champ Message"
+
+#: includes/class-cntctfrm-settings.php:1329
+#: includes/class-cntctfrm-settings.php:1373
 msgid "Error message about the file type for the Attachment field"
 msgstr "Message d&rsquo;erreur pour le champ Fichier joint (type du fichier)"
 
-#: includes/class-cntctfrm-settings.php:1179
-#: includes/class-cntctfrm-settings.php:1219
+#: includes/class-cntctfrm-settings.php:1330
+#: includes/class-cntctfrm-settings.php:1374
 msgid ""
 "Error message while uploading a file for the Attachment field to the server"
 msgstr ""
 "Message d&rsquo;erreur pour le champ Fichier joint (problème d&rsquo;envoi "
 "vers le serveur)"
 
-#: includes/class-cntctfrm-settings.php:1180
-#: includes/class-cntctfrm-settings.php:1220
+#: includes/class-cntctfrm-settings.php:1331
+#: includes/class-cntctfrm-settings.php:1375
 msgid "Error message while moving the file for the Attachment field"
 msgstr ""
 "Message d&rsquo;erreur pour le champ Fichier joint (déplacement du fichier)"
 
-#: includes/class-cntctfrm-settings.php:1181
-#: includes/class-cntctfrm-settings.php:1221
+#: includes/class-cntctfrm-settings.php:1332
+#: includes/class-cntctfrm-settings.php:1376
 msgid "Error message when file size limit for the Attachment field is exceeded"
 msgstr ""
 "Message d&rsquo;erreur pour le champ Fichier joint (taille limite du fichier "
 "atteinte)"
 
-#: includes/class-cntctfrm-settings.php:1182
-#: includes/class-cntctfrm-settings.php:1222
+#: includes/class-cntctfrm-settings.php:1333
+#: includes/class-cntctfrm-settings.php:1377
 msgid "Error message for the Captcha field"
 msgstr "Message d&rsquo;erreur pour le CAPTCHA"
 
-#: includes/class-cntctfrm-settings.php:1183
-#: includes/class-cntctfrm-settings.php:1223
+#: includes/class-cntctfrm-settings.php:1334
+#: includes/class-cntctfrm-settings.php:1378
 msgid "Error message for the whole form"
 msgstr "Message d&rsquo;erreur demandant à compléter les champs manquants"
 
-#: includes/class-cntctfrm-settings.php:1236
+#: includes/class-cntctfrm-settings.php:1394
 msgid "Use the changed names of the contact form fields in the email"
 msgstr "Utiliser les noms des champs modifiés dans les courriels"
 
-#: includes/class-cntctfrm-settings.php:1242
+#: includes/class-cntctfrm-settings.php:1400
 msgid "Action after email is sent"
 msgstr "Action après l&rsquo;envoie du courriel"
 
-#: includes/class-cntctfrm-settings.php:1244
+#: includes/class-cntctfrm-settings.php:1402
 msgid "Display text"
 msgstr "Afficher le texte"
 
-#: includes/class-cntctfrm-settings.php:1258
-#: includes/class-cntctfrm-settings.php:1272
+#: includes/class-cntctfrm-settings.php:1419
+#: includes/class-cntctfrm-settings.php:1436
 msgid "Text"
 msgstr "Texte"
 
-#: includes/class-cntctfrm-settings.php:1283
+#: includes/class-cntctfrm-settings.php:1450
 msgid "Redirect to the page"
 msgstr "Rediriger vers la page"
 
-#: includes/class-cntctfrm-settings.php:1284
+#: includes/class-cntctfrm-settings.php:1452
 msgid "Url"
 msgstr "Url"
 
-#: includes/class-cntctfrm-settings.php:1304
+#: includes/class-cntctfrm-settings.php:1475
 #, php-format
 msgid ""
-"Please enable JavaScript to change '%s', '%s', '%s', '%s' options and for "
-"fields sorting."
+"Please enable JavaScript to change '%1$s', '%2$s', '%3$s', '%4$s' options "
+"and for fields sorting."
 msgstr ""
-"Merci d'activer JavaScript pour changer les options '%s', '%s', '%s', '%s' "
-"et pour le tri des champs."
+"Veuillez activer JavaScript pour modifier les options '%1$s', '%2$s', "
+"'%3$s', '%4$s' et pour le tri des champs."
 
-#: includes/class-cntctfrm-settings.php:1305
-#: includes/class-cntctfrm-settings.php:1322
+#: includes/class-cntctfrm-settings.php:1476
+#: includes/class-cntctfrm-settings.php:1495
 msgid "Form layout"
 msgstr "Structure du formulaire"
 
-#: includes/class-cntctfrm-settings.php:1306
-#: includes/class-cntctfrm-settings.php:1389
+#: includes/class-cntctfrm-settings.php:1477
+#: includes/class-cntctfrm-settings.php:1563
 msgid "Labels position"
 msgstr "Position des textes"
 
-#: includes/class-cntctfrm-settings.php:1307
-#: includes/class-cntctfrm-settings.php:1407
+#: includes/class-cntctfrm-settings.php:1478
+#: includes/class-cntctfrm-settings.php:1581
 msgid "Labels align"
 msgstr "Alignement des textes"
 
-#: includes/class-cntctfrm-settings.php:1308
-#: includes/class-cntctfrm-settings.php:1334
+#: includes/class-cntctfrm-settings.php:1479
+#: includes/class-cntctfrm-settings.php:1507
 msgid "Submit position"
 msgstr "Position du bouton envoyer"
 
-#: includes/class-cntctfrm-settings.php:1309
-#: includes/class-cntctfrm-settings.php:1438
+#: includes/class-cntctfrm-settings.php:1480
+#: includes/class-cntctfrm-settings.php:1612
 msgid "Add tooltips"
 msgstr "Ajouter les conseils"
 
-#: includes/class-cntctfrm-settings.php:1310
-#: includes/class-cntctfrm-settings.php:1479
+#: includes/class-cntctfrm-settings.php:1481
+#: includes/class-cntctfrm-settings.php:1653
 msgid "Style options"
 msgstr "Options de style"
 
-#: includes/class-cntctfrm-settings.php:1326
+#: includes/class-cntctfrm-settings.php:1499
 msgid "One column"
 msgstr "Une colonne"
 
-#: includes/class-cntctfrm-settings.php:1329
+#: includes/class-cntctfrm-settings.php:1502
 msgid "Two columns"
 msgstr "Deux colonnes"
 
-#: includes/class-cntctfrm-settings.php:1338
-#: includes/class-cntctfrm-settings.php:1378
-#: includes/class-cntctfrm-settings.php:1396
-#: includes/class-cntctfrm-settings.php:1411
+#: includes/class-cntctfrm-settings.php:1511
+#: includes/class-cntctfrm-settings.php:1552
+#: includes/class-cntctfrm-settings.php:1570
+#: includes/class-cntctfrm-settings.php:1585
 msgid "Left"
 msgstr "Gauche"
 
-#: includes/class-cntctfrm-settings.php:1341
-#: includes/class-cntctfrm-settings.php:1384
-#: includes/class-cntctfrm-settings.php:1399
-#: includes/class-cntctfrm-settings.php:1417
+#: includes/class-cntctfrm-settings.php:1514
+#: includes/class-cntctfrm-settings.php:1558
+#: includes/class-cntctfrm-settings.php:1573
+#: includes/class-cntctfrm-settings.php:1591
 msgid "Right"
 msgstr "Droite"
 
-#: includes/class-cntctfrm-settings.php:1346
+#: includes/class-cntctfrm-settings.php:1519
 msgid "Width"
 msgstr "Largeur"
 
-#: includes/class-cntctfrm-settings.php:1354
+#: includes/class-cntctfrm-settings.php:1527
 msgid "Custom"
 msgstr "Personnaliser"
 
-#: includes/class-cntctfrm-settings.php:1361
+#: includes/class-cntctfrm-settings.php:1534
 msgid "px"
 msgstr "px"
 
-#: includes/class-cntctfrm-settings.php:1374
+#: includes/class-cntctfrm-settings.php:1548
 msgid "Form align"
 msgstr "Alignement des champs"
 
-#: includes/class-cntctfrm-settings.php:1381
-#: includes/class-cntctfrm-settings.php:1414
+#: includes/class-cntctfrm-settings.php:1555
+#: includes/class-cntctfrm-settings.php:1588
 msgid "Center"
 msgstr "Centre"
 
-#: includes/class-cntctfrm-settings.php:1393
+#: includes/class-cntctfrm-settings.php:1567
 msgid "Top"
 msgstr "Haut"
 
-#: includes/class-cntctfrm-settings.php:1402
+#: includes/class-cntctfrm-settings.php:1576
 msgid "Bottom"
 msgstr "Bas"
 
-#: includes/class-cntctfrm-settings.php:1422
+#: includes/class-cntctfrm-settings.php:1596
 msgid "Errors output"
 msgstr "Affichage des erreurs"
 
-#: includes/class-cntctfrm-settings.php:1425
+#: includes/class-cntctfrm-settings.php:1599
 msgid "Display error messages"
 msgstr "Afficher les messages d&rsquo;erreur"
 
-#: includes/class-cntctfrm-settings.php:1426
+#: includes/class-cntctfrm-settings.php:1600
 msgid "Color of the input field errors."
 msgstr "Mettre en couleur les champs ayant des erreurs."
 
-#: includes/class-cntctfrm-settings.php:1427
+#: includes/class-cntctfrm-settings.php:1601
 msgid "Display error messages & color of the input field errors"
 msgstr ""
 "Afficher les messages d&rsquo;erreur et mettre en couleur les champs ayant "
 "des erreurs"
 
-#: includes/class-cntctfrm-settings.php:1432
+#: includes/class-cntctfrm-settings.php:1606
 msgid "Add placeholder to the input blocks"
 msgstr "Ajouter la localisation dans le bloc de saisie"
 
-#: includes/class-cntctfrm-settings.php:1452
+#: includes/class-cntctfrm-settings.php:1626
 msgid "Email address"
 msgstr "Adresse e-mail"
 
-#: includes/class-cntctfrm-settings.php:1483
+#: includes/class-cntctfrm-settings.php:1657
 msgid "Text color"
 msgstr "Couleur du texte"
 
-#: includes/class-cntctfrm-settings.php:1491
+#: includes/class-cntctfrm-settings.php:1662
+#: includes/class-cntctfrm-settings.php:1671
+#: includes/class-cntctfrm-settings.php:1684
+#: includes/class-cntctfrm-settings.php:1692
+#: includes/class-cntctfrm-settings.php:1700
+#: includes/class-cntctfrm-settings.php:1708
+#: includes/class-cntctfrm-settings.php:1721
+#: includes/class-cntctfrm-settings.php:1729
+#: includes/class-cntctfrm-settings.php:1741
+#: includes/class-cntctfrm-settings.php:1758
+#: includes/class-cntctfrm-settings.php:1766
+#: includes/class-cntctfrm-settings.php:1774
+msgid "Select Color"
+msgstr "Sélectionner une couleur"
+
+#: includes/class-cntctfrm-settings.php:1665
 msgid "Label text color"
 msgstr "Couleur des textes des intitulés"
 
-#: includes/class-cntctfrm-settings.php:1500
+#: includes/class-cntctfrm-settings.php:1674
 msgid "Placeholder color"
 msgstr "Couleur pour la localisation"
 
-#: includes/class-cntctfrm-settings.php:1505
+#: includes/class-cntctfrm-settings.php:1679
 msgid "Errors color"
 msgstr "Couleur pour les erreurs"
 
-#: includes/class-cntctfrm-settings.php:1513
+#: includes/class-cntctfrm-settings.php:1687
 msgid "Error text color"
 msgstr "Couleur pour le texte des erreurs"
 
-#: includes/class-cntctfrm-settings.php:1521
+#: includes/class-cntctfrm-settings.php:1695
 msgid "Background color of the input field errors"
 msgstr "Couleur de fond pour les erreurs de saisie dans les champs"
 
-#: includes/class-cntctfrm-settings.php:1529
+#: includes/class-cntctfrm-settings.php:1703
 msgid "Border color of the input field errors"
 msgstr "Couleur de la bordure pour les erreurs de saisie dans les champs"
 
-#: includes/class-cntctfrm-settings.php:1537
+#: includes/class-cntctfrm-settings.php:1711
 msgid "Placeholder color of the input field errors"
 msgstr ""
 "Couleur pour la localisation lors d&rsquo;une erreur de saisie du champ"
 
-#: includes/class-cntctfrm-settings.php:1542
+#: includes/class-cntctfrm-settings.php:1716
 msgid "Input fields"
 msgstr "Champs de saisie"
 
-#: includes/class-cntctfrm-settings.php:1550
+#: includes/class-cntctfrm-settings.php:1724
 msgid "Input fields background color"
 msgstr "Couleur de fond pour les champs de saisie"
 
-#: includes/class-cntctfrm-settings.php:1558
+#: includes/class-cntctfrm-settings.php:1732
 msgid "Text fields color"
 msgstr "Couleur pour les textes des champs de saisie"
 
-#: includes/class-cntctfrm-settings.php:1562
+#: includes/class-cntctfrm-settings.php:1736
 msgid "Border width in px, numbers only"
 msgstr "Largeur des bordures en px, nombre seulement"
 
-#: includes/class-cntctfrm-settings.php:1570
-#: includes/class-cntctfrm-settings.php:1603
+#: includes/class-cntctfrm-settings.php:1744
+#: includes/class-cntctfrm-settings.php:1777
 msgid "Border color"
 msgstr "Couleur des bordures"
 
-#: includes/class-cntctfrm-settings.php:1575
+#: includes/class-cntctfrm-settings.php:1749
 msgid "Submit button"
 msgstr "Bouton Envoyer"
 
-#: includes/class-cntctfrm-settings.php:1579
+#: includes/class-cntctfrm-settings.php:1753
 msgid "Width in px, numbers only"
 msgstr "Largeur en px, nombre seulement"
 
-#: includes/class-cntctfrm-settings.php:1587
+#: includes/class-cntctfrm-settings.php:1761
 msgid "Button color"
 msgstr "Couleur du bouton"
 
-#: includes/class-cntctfrm-settings.php:1595
+#: includes/class-cntctfrm-settings.php:1769
 msgid "Button text color"
 msgstr "Couleur du texte du bouton"
 
-#: includes/class-cntctfrm-settings.php:1622
+#: includes/class-cntctfrm-settings.php:1789
 msgid "Contact Form | Preview"
 msgstr "Formulaire de Contact | Prévisualisation"
 
-#: includes/class-cntctfrm-settings.php:1623
+#: includes/class-cntctfrm-settings.php:1790
 msgid "Drag the necessary field to sort fields."
 msgstr "Déposer/déplacer les champs nécessaires dans la liste et les ordonner."
 
-#: includes/class-cntctfrm-settings.php:1870
+#: includes/class-cntctfrm-settings.php:1948
+#, php-format
+msgid "between %1$d, and %2$d characters"
+msgstr "entre %1$d et %2$d caractères"
+
+#: includes/class-cntctfrm-settings.php:2144
 msgid "Contact Form Shortcode"
 msgstr "Code-court du Formulaire de Contact"
 
-#: includes/class-cntctfrm-settings.php:1873
+#: includes/class-cntctfrm-settings.php:2148
 msgid "Add Contact Form  to your page or post using the following shortcode:"
 msgstr ""
 "Ajouter Formulaire e Contact à votre page ou poster avec le code-court "
 "suivant :"
+
+#~ msgid "If you upgrade to Pro version all your settings will be saved."
+#~ msgstr ""
+#~ "Si vous passez à la version Pro, tous ces paramètres seront enregistrés."
+
+#~ msgid "Language settings for the field names in the form"
+#~ msgstr "Définition des langues pour les titres des champs"
 
 #~ msgid ""
 #~ "If you would like to add the Contact Form to your website, just copy and "
@@ -1118,8 +1267,8 @@ msgstr ""
 #~ "display blog name."
 #~ msgstr ""
 #~ "Vous pouvez utiliser %%NAME%% pour afficher des données du champ email et "
-#~ "%%MESSAGE%% pour afficher des données du champ message, de même %%SITENAME"
-#~ "%% pour afficher le nom du site."
+#~ "%%MESSAGE%% pour afficher des données du champ message, de même %"
+#~ "%SITENAME%% pour afficher le nom du site."
 
 #~ msgid ""
 #~ "Please enable JavaScript to change '%s', '%s' options and for fields "
@@ -1801,9 +1950,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Si nécessaire vous pouvez vérifier que la clé de licence est correcte ou "
 #~ "la saisir de nouveau dans le champ ci-dessous."
-
-#~ msgid "Manage License Settings"
-#~ msgstr "Gérer les paramètres de licence"
 
 #~ msgid "Login to Client Area"
 #~ msgstr "Se connecter à l&rsquo;espace client"

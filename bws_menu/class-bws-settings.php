@@ -443,21 +443,21 @@ if ( ! class_exists( 'Bws_Settings_Tabs' ) ) {
 				echo 'style="display:none"';
 			}
 			?>
-			><p><strong><?php echo wp_kses_post( $save_results['message'] ); ?></strong></p></div>
+			><p><strong><?php echo ! empty( $save_results['message'] ) ? wp_kses_post( $save_results['message'] ) : ''; ?></strong></p></div>
 			<div class="updated bws-notice inline" 
 			<?php
 			if ( empty( $save_results['notice'] ) ) {
 				echo 'style="display:none"';
 			}
 			?>
-			><p><strong><?php echo wp_kses_post( $save_results['notice'] ); ?></strong></p></div>
+			><p><strong><?php echo ! empty( $save_results['notice'] ) ? wp_kses_post( $save_results['notice'] ) : ''; ?></strong></p></div>
 			<div class="error inline" 
 			<?php
 			if ( empty( $save_results['error'] ) ) {
 				echo 'style="display:none"';
 			}
 			?>
-			><p><strong><?php echo wp_kses_post( $save_results['error'] ); ?></strong></p></div>
+			><p><strong><?php echo ! empty( $save_results['error'] ) ? wp_kses_post( $save_results['error'] ) : ''; ?></strong></p></div>
 			<?php
 		}
 

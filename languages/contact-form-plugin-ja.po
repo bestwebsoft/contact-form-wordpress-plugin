@@ -1,3024 +1,1386 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Contact Form by BestWebSoft\n"
-"PO-Revision-Date: 2023-04-13 14:44+0300\n"
+"POT-Creation-Date: 2024-07-15 15:07+0300\n"
+"PO-Revision-Date: 2024-07-15 15:09+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2\n"
-"X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.4.3\n"
+"X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: contact_form.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: "
-"__;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,"
-"2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__"
-"ngettext_noop:1,2\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SearchPathExcluded-0: bws_menu\n"
 
 # automatic translation
-#: bws_menu/bws_functions.php:85 bws_menu/bws_functions.php:283
-msgid "requires"
-msgstr "必要"
-
-# automatic translation
-#: bws_menu/bws_functions.php:87
-msgid ""
-"or higher, that is why it has been deactivated! Please upgrade WordPress "
-"and try again."
-msgstr "それ以上の場合、それが非アクティブ化された理由です! WordPress をアップグレードしてから、もう一度お試しください。"
-
-# automatic translation
-#: bws_menu/bws_functions.php:88
-msgid "Back to the WordPress"
-msgstr "ワードプレスに戻る"
-
-# automatic translation
-#: bws_menu/bws_functions.php:90
-msgid "Plugins page"
-msgstr "プラグインページ"
-
-# automatic translation
-#: bws_menu/bws_functions.php:112
-msgid "Like the plugin?"
-msgstr "プラグインが好きですか？"
-
-# automatic translation
-#: bws_menu/bws_functions.php:113
-#, php-format
-msgid "%s reviews"
-msgstr "%s 件のレビュー"
-
-# automatic translation
-#: bws_menu/bws_functions.php:114
-msgid "Rate it"
-msgstr "それを評価"
-
-# automatic translation
-#: bws_menu/bws_functions.php:123
-msgid "Need help?"
-msgstr "助けが必要？"
-
-# automatic translation
-#: bws_menu/bws_functions.php:124 bws_menu/bws_functions.php:1189
-#: bws_menu/class-bws-settings.php:1193
-msgid "Visit Help Center"
-msgstr "ヘルプセンターにアクセス"
-
-# automatic translation
-#: bws_menu/bws_functions.php:127
-msgid "Want to support the plugin?"
-msgstr "プラグインをサポートしたいですか？"
-
-# automatic translation
-#: bws_menu/bws_functions.php:128 bws_menu/bws_menu.php:659
-msgid "Donate"
-msgstr "寄付"
-
-# automatic translation
-#: bws_menu/bws_functions.php:155
-msgid "WARNING: Illegal use notification"
-msgstr "警告: 不正使用の通知"
-
-# automatic translation
-#: bws_menu/bws_functions.php:155
-msgid ""
-"You can use one license of the Pro plugin for one domain only. Please check "
-"and edit your license or domain if necessary using your personal Client "
-"Area. We strongly recommend you to solve the problem within 24 hours, "
-"otherwise the Pro plugin will be deactivated."
-msgstr ""
-"Pro プラグインの 1 つのライセンスは、1 つのドメインに対してのみ使用できます。必要に応じて、個人のクライアント "
-"エリアを使用して、ライセンスまたはドメインを確認して編集してください。 24 時間以内に問題を解決することを強くお勧めします。そうしないと、Pro "
-"プラグインが無効になります。"
-
-# automatic translation
-#: bws_menu/bws_functions.php:155 bws_menu/bws_functions.php:247
-#: bws_menu/bws_menu.php:754 bws_menu/class-bws-settings.php:189
-#: contact_form.php:2240
-msgid "Learn More"
-msgstr "もっと詳しく知る"
-
-# automatic translation
-#: bws_menu/bws_functions.php:174
-msgid ""
-"Notice: Your Pro Trial license has expired. To continue using the plugin, "
-"you should buy a Pro license"
-msgstr "注意: Pro トライアル ライセンスの有効期限が切れています。プラグインを引き続き使用するには、Pro ライセンスを購入する必要があります"
-
-# automatic translation
-#: bws_menu/bws_functions.php:176
-msgid ""
-"Your license has expired. To continue getting top-priority support and "
-"plugin updates, you should extend it."
-msgstr "ライセンスの有効期限が切れています。最優先のサポートとプラグインの更新を引き続き取得するには、延長する必要があります。"
-
-# automatic translation
-#: bws_menu/bws_functions.php:176 bws_menu/bws_functions.php:267
-#: contact_form.php:541 contact_form.php:1985
-#: includes/class-cntctfrm-settings.php:1220
-#: includes/class-cntctfrm-settings.php:1260
-msgid "Learn more"
-msgstr "もっと詳しく知る"
-
-# automatic translation
-#: bws_menu/bws_functions.php:196
-#, php-format
-msgid "Notice: You are using the Pro Trial license of %s plugin."
-msgstr "注意: %s プラグインのプロ トライアル ライセンスを使用しています。"
-
-# automatic translation
-#: bws_menu/bws_functions.php:198
-msgid "Notice: You are using the Pro Trial license of plugin."
-msgstr "注意: プラグインのプロ トライアル ライセンスを使用しています。"
-
-# automatic translation
-#: bws_menu/bws_functions.php:201
-msgid "The Pro Trial license will expire on"
-msgstr "プロ トライアル ライセンスの有効期限は次のとおりです。"
-
-# automatic translation
-#: bws_menu/bws_functions.php:238 bws_menu/bws_functions.php:263
-#: bws_menu/bws_functions.php:313 bws_menu/bws_functions.php:323
-#: bws_menu/bws_functions.php:560 bws_menu/bws_functions.php:593
-#: contact_form.php:2231
-msgid "Close notice"
-msgstr "お知らせを閉じる"
-
-# automatic translation
-#: bws_menu/bws_functions.php:243
-msgid "It’s time to upgrade your"
-msgstr "アップグレードする時が来ました"
-
-# automatic translation
-#: bws_menu/bws_functions.php:243
-msgid "to"
-msgstr "に"
-
-# automatic translation
-#: bws_menu/bws_functions.php:243
-msgid "version!"
-msgstr "バージョン！"
-
-# automatic translation
-#: bws_menu/bws_functions.php:244
-msgid "Extend standard plugin functionality with new great options."
-msgstr "新しい優れたオプションで標準のプラグイン機能を拡張します。"
-
-# automatic translation
-#: bws_menu/bws_functions.php:267
-#, php-format
-msgid ""
-"Your license key for %1$s expires on %2$s and you won't be granted "
-"TOP-PRIORITY SUPPORT or UPDATES."
-msgstr "%1$s のライセンス キーは %2$s に期限切れになり、最優先のサポートまたは更新は許可されません。"
-
-# automatic translation
-#: bws_menu/bws_functions.php:285
-msgid ""
-"or higher! We do not guarantee that our plugin will work correctly. Please "
-"upgrade to WordPress latest version."
-msgstr "以上！プラグインが正しく動作することを保証するものではありません。 WordPress の最新バージョンにアップグレードしてください。"
-
-# automatic translation
-#: bws_menu/bws_functions.php:303
-#, php-format
-msgid "Thank you for installing %s plugin!"
-msgstr "%s プラグインをインストールしていただきありがとうございます!"
-
-# automatic translation
-#: bws_menu/bws_functions.php:305
-msgid "Let's get started"
-msgstr "始めましょう"
-
-# automatic translation
-#: bws_menu/bws_functions.php:306 bws_menu/bws_functions.php:339
-#: bws_menu/bws_menu.php:665 bws_menu/bws_menu.php:667 contact_form.php:49
-#: contact_form.php:1891 contact_form.php:1905
-#: includes/class-cntctfrm-settings.php:23
-msgid "Settings"
-msgstr "設定"
-
-# automatic translation
-#: bws_menu/bws_functions.php:308 bws_menu/bws_menu.php:377
-#: bws_menu/class-bws-settings.php:908 bws_menu/class-bws-settings.php:1196
-#: bws_menu/class-bws-settings.php:1209 bws_menu/deprecated.php:260
-msgid "or"
-msgstr "また"
-
-# automatic translation
-#: bws_menu/bws_functions.php:309 bws_menu/bws_functions.php:341
-msgid "Add New"
-msgstr "新しく追加する"
-
-# automatic translation
-#: bws_menu/bws_functions.php:328
-msgid "Thank you for installing plugins by BestWebSoft!"
-msgstr "BestWebSoft のプラグインをインストールしていただきありがとうございます。"
-
-# automatic translation
-#: bws_menu/bws_functions.php:330
-msgid "More Details"
-msgstr "詳細"
-
-# automatic translation
-#: bws_menu/bws_functions.php:331
-msgid "Less Details"
-msgstr "詳細を非表示"
-
-# automatic translation
-#: bws_menu/bws_functions.php:362
-msgid "Deprecated function(-s) is used on the site here:"
-msgstr "非推奨の関数 (-s) は、次のサイトで使用されています。"
-
-# automatic translation
-#: bws_menu/bws_functions.php:380
-msgid "This function(-s) will be removed over time. Please update the product(-s)."
-msgstr "この機能 (-s) は、時間の経過とともに削除されます。製品を更新してください(-s)。"
-
-# automatic translation
-#: bws_menu/bws_functions.php:555
-#, php-format
-msgid "Thank you for choosing %s plugin!"
-msgstr "%s プラグインをお選びいただきありがとうございます!"
-
-# automatic translation
-#: bws_menu/bws_functions.php:556
-msgid ""
-"If you have a feature, suggestion or idea you'd like to see in the plugin, "
-"we'd love to hear about it!"
-msgstr "プラグインに追加してほしい機能、提案、またはアイデアがあれば、ぜひお知らせください。"
-
-# automatic translation
-#: bws_menu/bws_functions.php:557
-msgid "Suggest a Feature"
-msgstr "機能を提案する"
-
-# automatic translation
-#: bws_menu/bws_functions.php:598
-msgid "Affiliate Program"
-msgstr "アフィリエイトプログラム"
-
-# automatic translation
-#: bws_menu/bws_functions.php:599
-#, php-format
-msgid "Get %s"
-msgstr "取得"
-
-# automatic translation
-#: bws_menu/bws_functions.php:600
-msgid "from each BestWebSoft plugin and theme sale you refer"
-msgstr "あなたが参照する各BestWebSoftプラグインとテーマの販売から"
-
-# automatic translation
-#: bws_menu/bws_functions.php:604
-msgid "Join affiliate program"
-msgstr "アフィリエイト プログラムに参加する"
-
-# automatic translation
-#: bws_menu/bws_functions.php:608
-msgid "Promote and sell products"
-msgstr "製品の宣伝と販売"
-
-# automatic translation
-#: bws_menu/bws_functions.php:612
-msgid "Get commission!"
-msgstr "コミッションをゲット！"
-
-# automatic translation
-#: bws_menu/bws_functions.php:617
-msgid "Start Now"
-msgstr "今すぐ開始"
-
-# automatic translation
-#: bws_menu/bws_functions.php:634 bws_menu/class-bws-settings.php:640
-#: bws_menu/class-bws-settings.php:645 bws_menu/class-bws-settings.php:714
-#: bws_menu/class-bws-settings.php:719
-msgid "Notice"
-msgstr "知らせ"
-
-# automatic translation
-#: bws_menu/bws_functions.php:634
-msgid "The plugin's settings have been changed."
-msgstr "プラグインの設定が変更されました。"
-
-# automatic translation
-#: bws_menu/bws_functions.php:635 bws_menu/class-bws-settings.php:235
-#: bws_menu/class-bws-settings.php:263
-msgid "Save Changes"
-msgstr "変更内容を保存"
-
-# automatic translation
-#: bws_menu/bws_functions.php:656
-msgid ""
-"You can always look at premium options by checking the \"Pro Options\" in "
-"the \"Misc\" tab."
-msgstr "「その他」タブの「プロ オプション」をチェックすると、いつでもプレミアム オプションを確認できます。"
-
-# automatic translation
-#: bws_menu/bws_functions.php:838
-msgid "Add BWS Shortcode"
-msgstr "BWSショートコードを追加"
-
-# automatic translation
-#: bws_menu/bws_functions.php:839
-msgid "Add BWS Plugins Shortcode"
-msgstr "BWS プラグイン ショートコードを追加する"
-
-# automatic translation
-#: bws_menu/bws_functions.php:861
-msgid "Add shortcode"
-msgstr "ショートコードを追加"
-
-# automatic translation
-#: bws_menu/bws_functions.php:861
-msgid "Add BestWebSoft plugins' shortcodes using this button."
-msgstr "このボタンを使用して、BestWebSoft プラグインのショートコードを追加します。"
-
-# automatic translation
-#: bws_menu/bws_functions.php:970 contact_form.php:1989
-#: includes/class-cntctfrm-settings.php:483
-#: includes/class-cntctfrm-settings.php:931
-#: includes/class-cntctfrm-settings.php:1133
-#: includes/class-cntctfrm-settings.php:1422
-msgid "Close"
-msgstr "近い"
-
-# automatic translation
-#: bws_menu/bws_functions.php:1062
-msgid "Are you sure you want to restore default settings?"
-msgstr "デフォルト設定を復元してもよろしいですか?"
-
-# automatic translation
-#: bws_menu/bws_functions.php:1065
-msgid "Yes, restore all settings"
-msgstr "はい、すべての設定を復元します"
-
-# automatic translation
-#: bws_menu/bws_functions.php:1066
-msgid "No, go back to the settings page"
-msgstr "いいえ、設定ページに戻ります"
-
-# automatic translation
-#: bws_menu/bws_functions.php:1128
-msgid "Plugin"
-msgstr "プラグイン"
-
-# automatic translation
-#: bws_menu/bws_functions.php:1137
-msgid "Shortcode settings"
-msgstr "ショートコードの設定"
-
-# automatic translation
-#: bws_menu/bws_functions.php:1142
-msgid "The shortcode will be inserted"
-msgstr "ショートコードが挿入されます"
-
-# automatic translation
-#: bws_menu/bws_functions.php:1194 contact_form.php:1906
-msgid "FAQ"
-msgstr "よくある質問"
-
-# automatic translation
-#: bws_menu/bws_functions.php:1200
-msgid "For more information:"
-msgstr "詳細については："
-
-# automatic translation
-#: bws_menu/bws_functions.php:1201 bws_menu/bws_menu.php:475
-#: bws_menu/class-bws-settings.php:870
-msgid "Documentation"
-msgstr "ドキュメンテーション"
-
-# automatic translation
-#: bws_menu/bws_functions.php:1202 bws_menu/bws_menu.php:477
-#: bws_menu/class-bws-settings.php:872
-msgid "Video Instructions"
-msgstr "ビデオの説明"
-
-# automatic translation
-#: bws_menu/bws_functions.php:1203
-msgid "Submit a Request"
-msgstr "リクエストを送信"
-
-# automatic translation
-#: bws_menu/bws_menu.php:105 bws_menu/class-bws-settings.php:971
-msgid "Wrong license key"
-msgstr "間違ったライセンス キー"
-
-# automatic translation
-#: bws_menu/bws_menu.php:127 bws_menu/class-bws-settings.php:997
-#: bws_menu/class-bws-settings.php:1074 bws_menu/class-bws-settings.php:1112
-msgid ""
-"Something went wrong. Please try again later. If the error appears again, "
-"please contact us"
-msgstr "エラーが発生しました。後でもう一度やり直してください。再度エラーが表示される場合は、弊社までご連絡ください"
-
-# automatic translation
-#: bws_menu/bws_menu.php:127 bws_menu/class-bws-settings.php:997
-#: bws_menu/class-bws-settings.php:1074 bws_menu/class-bws-settings.php:1112
-msgid "We are sorry for inconvenience."
-msgstr "ご不便をおかけして申し訳ございません。"
-
-# automatic translation
-#: bws_menu/bws_menu.php:134 bws_menu/class-bws-settings.php:1003
-#: bws_menu/class-bws-settings.php:1118
-msgid "Wrong license key."
-msgstr "ライセンスキーが間違っています。"
-
-# automatic translation
-#: bws_menu/bws_menu.php:136
-msgid ""
-"This license key is bound to another site. Change it via personal Client "
-"Area."
-msgstr "このライセンス キーは別のサイトにバインドされています。パーソナル クライアント エリアから変更します。"
-
-# automatic translation
-#: bws_menu/bws_menu.php:136
-msgid "Log in"
-msgstr "ログイン"
-
-# automatic translation
-#: bws_menu/bws_menu.php:138 bws_menu/bws_menu.php:385
-#: bws_menu/deprecated.php:172
-msgid "Unfortunately, you have exceeded the number of available tries per day."
-msgstr "残念ながら、1 日に利用できる試行回数を超えました。"
-
-# automatic translation
-#: bws_menu/bws_menu.php:140
-#, php-format
-msgid ""
-"Unfortunately, Your license has expired. To continue getting top-priority "
-"support and plugin updates, you should extend it in your %s"
-msgstr "残念ながら、ライセンスの有効期限が切れています。最優先のサポートとプラグインの更新を引き続き取得するには、%s で拡張する必要があります"
-
-# automatic translation
-#: bws_menu/bws_menu.php:142 bws_menu/class-bws-settings.php:1126
-msgid ""
-"Unfortunately, the Pro licence was already installed to this domain. The "
-"Pro Trial license can be installed only once."
-msgstr "残念ながら、Pro ライセンスは既にこのドメインにインストールされています。 Pro Trial ライセンスは 1 回のみインストールできます。"
-
-# automatic translation
-#: bws_menu/bws_menu.php:148 bws_menu/class-bws-settings.php:1018
-msgid "The license key is valid."
-msgstr "ライセンスキーは有効です。"
-
-# automatic translation
-#: bws_menu/bws_menu.php:150 bws_menu/class-bws-settings.php:1022
-msgid "Your license will expire on"
-msgstr "ライセンスの有効期限は次のとおりです"
-
-# automatic translation
-#: bws_menu/bws_menu.php:153
-msgid "Congratulations! Pro Membership license is activated successfully."
-msgstr "おめでとう！プロ メンバーシップ ライセンスが正常にアクティブ化されました。"
-
-# automatic translation
-#: bws_menu/bws_menu.php:160 bws_menu/class-bws-settings.php:1136
-msgid ""
-"Something went wrong. Try again later or upload the plugin manually. We are "
-"sorry for inconvenience."
-msgstr "エラーが発生しました。後で再試行するか、プラグインを手動でアップロードしてください。ご不便をおかけして申し訳ございません。"
-
-# automatic translation
-#: bws_menu/bws_menu.php:171
-msgid "Please enter your license key."
-msgstr "ライセンスキーを入力してください。"
-
-# automatic translation
-#: bws_menu/bws_menu.php:183
-msgid "Not set"
-msgstr "設定されていません"
-
-# automatic translation
-#: bws_menu/bws_menu.php:186
-msgid "On"
-msgstr "の上"
-
-# automatic translation
-#: bws_menu/bws_menu.php:186
-msgid "Off"
-msgstr "オフ"
-
-# automatic translation
-#: bws_menu/bws_menu.php:187 bws_menu/bws_menu.php:188
-#: bws_menu/bws_menu.php:189 bws_menu/bws_menu.php:190
-#: bws_menu/bws_menu.php:191 bws_menu/bws_menu.php:192
-#: bws_menu/bws_menu.php:201
-msgid "N/A"
-msgstr "なし"
-
-# automatic translation
-#: bws_menu/bws_menu.php:192
-msgid "Mb"
-msgstr "メガバイト"
-
-# automatic translation
-#: bws_menu/bws_menu.php:193 bws_menu/bws_menu.php:194
-#: bws_menu/bws_menu.php:195 bws_menu/bws_menu.php:199
-msgid "Yes"
-msgstr "はい"
-
-# automatic translation
-#: bws_menu/bws_menu.php:193 bws_menu/bws_menu.php:194
-#: bws_menu/bws_menu.php:195 bws_menu/bws_menu.php:199
-msgid "No"
-msgstr "いいえ"
-
-# automatic translation
-#: bws_menu/bws_menu.php:206
-msgid "WordPress Environment"
-msgstr "WordPress 環境"
-
-# automatic translation
-#: bws_menu/bws_menu.php:208
-msgid "Home URL"
-msgstr "ホーム URL"
-
-# automatic translation
-#: bws_menu/bws_menu.php:209
-msgid "Website URL"
-msgstr "ウェブサイトのURL"
-
-# automatic translation
-#: bws_menu/bws_menu.php:210
-msgid "WP Version"
-msgstr "WP版"
-
-# automatic translation
-#: bws_menu/bws_menu.php:211
-msgid "WP Multisite"
-msgstr "WP マルチサイト"
-
-# automatic translation
-#: bws_menu/bws_menu.php:212
-msgid "WP Memory Limit"
-msgstr "WP メモリ制限"
-
-# automatic translation
-#: bws_menu/bws_menu.php:213
-msgid "Active Theme"
-msgstr "アクティブなテーマ"
-
-# automatic translation
-#: bws_menu/bws_menu.php:213 bws_menu/bws_menu.php:258
-#: bws_menu/bws_menu.php:261
-#, php-format
-msgid "by %s"
-msgstr "%sによる"
-
-# automatic translation
-#: bws_menu/bws_menu.php:217
-msgid "Server Environment"
-msgstr "サーバー環境"
-
-# automatic translation
-#: bws_menu/bws_menu.php:219
-msgid "Operating System"
-msgstr "オペレーティング·システム"
-
-# automatic translation
-#: bws_menu/bws_menu.php:220
-msgid "Server"
-msgstr "サーバ"
-
-# automatic translation
-#: bws_menu/bws_menu.php:221
-msgid "PHP Version"
-msgstr "PHP バージョン"
-
-# automatic translation
-#: bws_menu/bws_menu.php:222
-msgid "PHP Allow URL fopen"
-msgstr "PHP 許可 URL fopen"
-
-# automatic translation
-#: bws_menu/bws_menu.php:223
-msgid "PHP Memory Limit"
-msgstr "PHP メモリ制限"
-
-# automatic translation
-#: bws_menu/bws_menu.php:224
-msgid "Memory Usage"
-msgstr "メモリ使用量"
-
-# automatic translation
-#: bws_menu/bws_menu.php:225
-msgid "PHP Max Upload Size"
-msgstr "PHP 最大アップロード サイズ"
-
-# automatic translation
-#: bws_menu/bws_menu.php:226
-msgid "PHP Max Post Size"
-msgstr "PHP 最大投稿サイズ"
-
-# automatic translation
-#: bws_menu/bws_menu.php:227
-msgid "PHP Max Script Execute Time"
-msgstr "PHP スクリプトの最大実行時間"
-
-# automatic translation
-#: bws_menu/bws_menu.php:228
-msgid "PHP Exif support"
-msgstr "PHP Exif のサポート"
-
-# automatic translation
-#: bws_menu/bws_menu.php:229
-msgid "PHP IPTC support"
-msgstr "PHP IPTC サポート"
-
-# automatic translation
-#: bws_menu/bws_menu.php:230
-msgid "PHP XML support"
-msgstr "PHP XML サポート"
-
-# automatic translation
-#: bws_menu/bws_menu.php:236
-msgid "Database"
-msgstr "データベース"
-
-# automatic translation
-#: bws_menu/bws_menu.php:238
-msgid "WP DB version"
-msgstr "WP DB バージョン"
-
-# automatic translation
-#: bws_menu/bws_menu.php:239
-msgid "MySQL version"
-msgstr "MySQL のバージョン"
-
-# automatic translation
-#: bws_menu/bws_menu.php:240
-msgid "SQL Mode"
-msgstr "SQL モード"
-
-# automatic translation
-#: bws_menu/bws_menu.php:244
-msgid "Active Plugins"
-msgstr "アクティブなプラグイン"
-
-# automatic translation
-#: bws_menu/bws_menu.php:249
-msgid "Inactive Plugins"
-msgstr "非アクティブなプラグイン"
-
-# automatic translation
-#: bws_menu/bws_menu.php:270
-msgid "Please enter a valid email address."
-msgstr "有効なメールアドレスを入力してください。"
-
-# automatic translation
-#: bws_menu/bws_menu.php:272
-#, php-format
-msgid "Email with system info is sent to %s."
-msgstr "システム情報を含む電子メールが %s に送信されます。"
-
-# automatic translation
-#: bws_menu/bws_menu.php:276 contact_form.php:556
-msgid "Thank you for contacting us."
-msgstr "ご連絡いただきありがとうございます。"
-
-# automatic translation
-#: bws_menu/bws_menu.php:300 contact_form.php:971
-msgid "Sorry, email message could not be delivered."
-msgstr "申し訳ありませんが、メール メッセージを配信できませんでした。"
-
-# automatic translation
-#: bws_menu/bws_menu.php:321 bws_menu/bws_menu.php:342
-#: bws_menu/bws_menu.php:427 bws_menu/deprecated.php:27
-msgid "Plugins"
-msgstr "プラグイン"
-
-# automatic translation
-#: bws_menu/bws_menu.php:329 bws_menu/bws_menu.php:350
-#: bws_menu/bws_menu.php:739 bws_menu/deprecated.php:28
-msgid "Themes"
-msgstr "テーマ"
-
-# automatic translation
-#: bws_menu/bws_menu.php:334 bws_menu/bws_menu.php:358
-#: bws_menu/bws_menu.php:775
-msgid "System status"
-msgstr "システムステータス"
-
-# automatic translation
-#: bws_menu/bws_menu.php:365 contact_form.php:1907
-msgid "Support"
-msgstr "サポート"
-
-# automatic translation
-#: bws_menu/bws_menu.php:366
-msgid "Manage purchased licenses & subscriptions"
-msgstr "購入したライセンスとサブスクリプションを管理する"
-
-# automatic translation
-#: bws_menu/bws_menu.php:375
-#, php-format
-msgid "Get Access to %s+ Premium Plugins"
-msgstr "%s+ プレミアム プラグインへのアクセスを取得"
-
-# automatic translation
-#: bws_menu/bws_menu.php:377
-msgid "Subscribe to Pro Membership"
-msgstr "プロ会員に申し込む"
-
-# automatic translation
-#: bws_menu/bws_menu.php:387 bws_menu/bws_menu.php:408
-#: bws_menu/class-bws-settings.php:925 bws_menu/deprecated.php:133
-msgid "Check license key"
-msgstr "ライセンスキーの確認"
-
-# automatic translation
-#: bws_menu/bws_menu.php:395
-msgid "Enter your license key"
-msgstr "ライセンスキーを入力してください"
-
-# automatic translation
-#: bws_menu/bws_menu.php:406 bws_menu/bws_menu.php:673
-#: bws_menu/bws_menu.php:682 bws_menu/class-bws-settings.php:898
-#: bws_menu/deprecated.php:170 bws_menu/deprecated.php:178
-#: bws_menu/deprecated.php:268 bws_menu/deprecated.php:281
-#: includes/class-cntctfrm-settings.php:527
-#: includes/class-cntctfrm-settings.php:1044
-#: includes/class-cntctfrm-settings.php:1086
-#: includes/class-cntctfrm-settings.php:1120
-msgid "Activate"
-msgstr "活性化"
-
-# automatic translation
-#: bws_menu/bws_menu.php:428
-msgid "Upload Plugin"
-msgstr "アップロードプラグイン"
-
-# automatic translation
-#: bws_menu/bws_menu.php:433
-#, php-format
-msgid ""
-"The plugin generated %d characters of <strong>unexpected output</strong> "
-"during activation. If you notice &#8220;headers already sent&#8221; "
-"messages, problems with syndication feeds or other issues, try deactivating "
-"or removing this plugin."
-msgstr ""
-"プラグインは、アクティブ化中に %d 文字の<strong>予期しない出力</strong>を生成しました。 「headers already "
-"sent」メッセージ、シンジケーション フィードの問題、またはその他の問題に気付いた場合は、このプラグインを無効にするか、削除してみてください。"
-
-# automatic translation
-#: bws_menu/bws_menu.php:435
-msgid ""
-"Plugin could not be activated because it triggered a <strong>fatal "
-"error</strong>."
-msgstr "<strong>致命的なエラーが</strong>発生したため、プラグインをアクティブ化できませんでした。"
-
-# automatic translation
-#: bws_menu/bws_menu.php:440
-msgid "Plugin <strong>activated</strong>."
-msgstr "プラグインが<strong>有効化されました</strong>。"
-
-# automatic translation
-#: bws_menu/bws_menu.php:457
-msgid "Download Pro Plugin"
-msgstr "プロプラグインをダウンロード"
-
-# automatic translation
-#: bws_menu/bws_menu.php:459 bws_menu/class-bws-settings.php:853
-msgid "Your Pro plugin is ready"
-msgstr "Pro プラグインの準備ができました"
-
-# automatic translation
-#: bws_menu/bws_menu.php:461 bws_menu/class-bws-settings.php:855
-msgid "Your plugin has been zipped, and now is ready to download."
-msgstr "プラグインが圧縮され、ダウンロードする準備が整いました。"
-
-# automatic translation
-#: bws_menu/bws_menu.php:464 bws_menu/class-bws-settings.php:858
-msgid "Download Now"
-msgstr "ダウンロード中"
-
-# automatic translation
-#: bws_menu/bws_menu.php:468 bws_menu/class-bws-settings.php:862
-msgid "Need help installing the plugin?"
-msgstr "プラグインのインストールにヘルプが必要ですか?"
-
-# automatic translation
-#: bws_menu/bws_menu.php:470 bws_menu/class-bws-settings.php:864
-msgid "How to install WordPress plugin from your admin Dashboard (ZIP archive)"
-msgstr "管理ダッシュボードから WordPress プラグインをインストールする方法 (ZIP アーカイブ)"
-
-# automatic translation
-#: bws_menu/bws_menu.php:473 bws_menu/class-bws-settings.php:868
-msgid "Get Started"
-msgstr "始めましょう"
-
-# automatic translation
-#: bws_menu/bws_menu.php:479 bws_menu/class-bws-settings.php:874
-msgid "Knowledge Base"
-msgstr "知識ベース"
-
-# automatic translation
-#: bws_menu/bws_menu.php:482
-msgid "Licenses & Domains"
-msgstr "ライセンスとドメイン"
-
-# automatic translation
-#: bws_menu/bws_menu.php:487
-msgid "Client Area"
-msgstr "クライアントエリア"
-
-# automatic translation
-#: bws_menu/bws_menu.php:491
-msgid "Return to BestWebSoft Panel"
-msgstr "BestWebSoft パネルに戻る"
-
-# automatic translation
-#: bws_menu/bws_menu.php:506 bws_menu/bws_menu.php:541
-#: bws_menu/bws_menu.php:714
-msgid "All"
-msgstr "全て"
-
-# automatic translation
-#: bws_menu/bws_menu.php:514 bws_menu/bws_menu.php:762
-msgid "Installed"
-msgstr "インストール済み"
-
-# automatic translation
-#: bws_menu/bws_menu.php:522
-msgid "Not Installed"
-msgstr "インストールされていない"
-
-# automatic translation
-#: bws_menu/bws_menu.php:529
-msgid "Filter results"
-msgstr "結果のフィルタリング"
-
-# automatic translation
-#: bws_menu/bws_menu.php:532 bws_menu/bws_menu.php:705
-msgid "Category"
-msgstr "カテゴリー"
-
-# automatic translation
-#: bws_menu/bws_menu.php:625
-msgid "Not installed"
-msgstr "インストールされていない"
-
-# automatic translation
-#: bws_menu/bws_menu.php:629
-msgid "Renew to get updates"
-msgstr "更新してアップデートを入手する"
-
-# automatic translation
-#: bws_menu/bws_menu.php:632
-#, php-format
-msgid "Update to v %s"
-msgstr "v %s に更新"
-
-# automatic translation
-#: bws_menu/bws_menu.php:647 bws_menu/bws_menu.php:676
-msgid "Get Pro"
-msgstr "プロになる"
-
-# automatic translation
-#: bws_menu/bws_menu.php:653 bws_menu/class-bws-settings.php:202
-#: bws_menu/class-bws-settings.php:1206 contact_form.php:72
-msgid "Upgrade to Pro"
-msgstr "プロ仕様にアップグレードする"
-
-# automatic translation
-#: bws_menu/bws_menu.php:673 bws_menu/bws_menu.php:682
-msgid "Activate this plugin"
-msgstr "このプラグインを有効にする"
-
-# automatic translation
-#: bws_menu/bws_menu.php:687
-msgid "Install this plugin"
-msgstr "このプラグインをインストール"
-
-# automatic translation
-#: bws_menu/bws_menu.php:687
-msgid "Install Now"
-msgstr "今すぐインストール"
-
-# automatic translation
-#: bws_menu/bws_menu.php:700
-msgid "Nothing found. Try another criteria."
-msgstr "何も見つかりません。別の基準を試してください。"
-
-# automatic translation
-#: bws_menu/bws_menu.php:751
-#, php-format
-msgid "By %s"
-msgstr "%s で"
-
-# automatic translation
-#: bws_menu/bws_menu.php:760
-msgid "Already Installed"
-msgstr "すでにインストールされています"
-
-# automatic translation
-#: bws_menu/bws_menu.php:772
-msgid "Browse More WordPress Themes"
-msgstr "他の WordPress テーマを参照する"
-
-# automatic translation
-#: bws_menu/bws_menu.php:791
-msgid "Send to support"
-msgstr "サポートに送信"
-
-# automatic translation
-#: bws_menu/bws_menu.php:798
-msgid "Send to custom email &#187;"
-msgstr "カスタム メールに送信 &#187;"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:174
-msgid "Information"
-msgstr "情報"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:189
-msgid "Inactive"
-msgstr "非活性"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:197
-msgid "Expired"
-msgstr "期限切れ"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:200
-#, php-format
-msgid "%s day(-s) left"
-msgstr "残り %s 日 (-s)"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:206
-#, php-format
-msgid "Expired on %s"
-msgstr "%s に期限切れ"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:206
-msgid "Renew Now"
-msgstr "今すぐ更新"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:208
-msgid "Active"
-msgstr "アクティブ"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:214
-msgid "License"
-msgstr "ライセンス"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:217
-msgid "Status"
-msgstr "スターテス"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:221
-msgid "Version"
-msgstr "バージョン"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:368
-msgid "All plugin settings were restored."
-msgstr "すべてのプラグイン設定が復元されました。"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:531 includes/class-cntctfrm-settings.php:28
-msgid "Custom Code"
-msgstr "カスタムコード"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:537
-msgid ""
-"The ability to add custom code is available in the Pro version. If the Pro "
-"version is not available please contact us via Help Center"
-msgstr "カスタム コードを追加する機能は、Pro バージョンで利用できます。 Proバージョンが利用できない場合は、ヘルプセンターからお問い合わせください"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:548
-msgid "You do not have sufficient permissions to edit plugins for this site."
-msgstr "このサイトのプラグインを編集するための十分な権限がありません。"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:554
-msgid "These styles will be added to the header on all pages of your site."
-msgstr "これらのスタイルは、サイトのすべてのページのヘッダーに追加されます。"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:558
-#, php-format
-msgid ""
-"This PHP code will be hooked to the %s Action and will be printed on front "
-"end only."
-msgstr "この PHP コードは %s アクションにフックされ、フロント エンドでのみ出力されます。"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:562
-msgid "These code will be added to the header on all pages of your site."
-msgstr "これらのコードは、サイトのすべてのページのヘッダーに追加されます。"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:574
-msgid "Browsing"
-msgstr "ブラウジング"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:586
-#, php-format
-msgid "Activate custom %s code."
-msgstr "カスタム %s コードを有効にします。"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:597
-#, php-format
-msgid "Learn more about %s"
-msgstr "%s の詳細"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:629
-msgid "Miscellaneous Settings"
-msgstr "その他の設定"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:640 bws_menu/class-bws-settings.php:714
-#, php-format
-msgid ""
-"It is prohibited to change %1$s settings on this site in the %2$s network "
-"settings."
-msgstr "%2$s ネットワーク設定で、このサイトの %1$s 設定を変更することは禁止されています。"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:645 bws_menu/class-bws-settings.php:719
-#, php-format
-msgid ""
-"It is prohibited to view %1$s settings on this site in the %2$s network "
-"settings."
-msgstr "%2$s ネットワーク設定で、このサイトの %1$s 設定を表示することは禁止されています。"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:656
-msgid "Pro Options"
-msgstr "プロのオプション"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:665
-msgid "Enable to display plugin Pro options."
-msgstr "プラグインの Pro オプションを表示できるようにします。"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:671
-msgid "Track Usage"
-msgstr "使用状況の追跡"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:680
-msgid ""
-"Enable to allow tracking plugin usage anonymously in order to make it "
-"better."
-msgstr "プラグインの使用状況を匿名で追跡できるように有効にして、改善します。"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:685
-msgid "Default Settings"
-msgstr "デフォルトの設定"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:687
-msgid "Restore Settings"
-msgstr "設定の復元"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:688
-msgid "This will restore plugin settings to defaults."
-msgstr "これにより、プラグイン設定がデフォルトに復元されます。"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:703
-msgid "Import / Export"
-msgstr "インポート・エクスポート"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:837 includes/class-cntctfrm-settings.php:29
-msgid "License Key"
-msgstr "ライセンスキー"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:901
-#, php-format
-msgid "Enter your license key to activate %s and get premium plugin features."
-msgstr "ライセンス キーを入力して %s をアクティベートし、プレミアム プラグイン機能を取得してください。"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:904 bws_menu/class-bws-settings.php:1122
-#: bws_menu/deprecated.php:275
-msgid ""
-"Unfortunately, you have exceeded the number of available tries per day. "
-"Please, upload the plugin manually."
-msgstr "残念ながら、1 日に利用できる試行回数を超えました。プラグインを手動でアップロードしてください。"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:908 bws_menu/deprecated.php:260
-#, php-format
-msgid "Start Your Free %s-Day Trial Now"
-msgstr "%s 日間の無料トライアルを今すぐ開始"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:927
-msgid ""
-"If necessary, you can check if the license key is correct or reenter it in "
-"the field below."
-msgstr "必要に応じて、ライセンス キーが正しいかどうかを確認するか、下のフィールドに再入力できます。"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:938
-msgid "Manage License Settings"
-msgstr "ライセンス設定の管理"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:940
-msgid "Login to Client Area"
-msgstr "クライアントエリアにログイン"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:942
-msgid ""
-"Manage active licenses, download BWS products, and view your payment "
-"history using BestWebSoft Client Area."
-msgstr "BestWebSoft クライアント エリアを使用して、有効なライセンスを管理し、BWS 製品をダウンロードし、支払い履歴を表示します。"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:964
-msgid "Security check"
-msgstr "セキュリティーチェック"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:1005 bws_menu/class-bws-settings.php:1120
-msgid "This license key is bound to another site."
-msgstr "このライセンス キーは別のサイトにバインドされています。"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:1007
-msgid ""
-"This license key is valid, but Your license has expired. If you want to "
-"update our plugin in future, you should extend the license."
-msgstr "このライセンス キーは有効ですが、ライセンスの有効期限が切れています。今後プラグインを更新する場合は、ライセンスを延長する必要があります。"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:1009
-msgid "Unfortunately, you have exceeded the number of available tries."
-msgstr "残念ながら、利用可能な試行回数を超えました。"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:1011
-msgid ""
-"Unfortunately, the Pro Trial licence was already installed to this domain. "
-"The Pro Trial license can be installed only once."
-msgstr ""
-"残念ながら、Pro Trial ライセンスはこのドメインに既にインストールされています。 Pro Trial ライセンスは 1 "
-"回のみインストールできます。"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:1016
-msgid "The Pro Trial license key is valid."
-msgstr "プロ トライアル ライセンス キーは有効です。"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:1029 bws_menu/deprecated.php:155
-#, php-format
-msgid "In order to continue using the plugin it is necessary to buy a %s license."
-msgstr "プラグインを引き続き使用するには、%s ライセンスを購入する必要があります。"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:1124
-#, php-format
-msgid ""
-"Unfortunately, Your license has expired. To continue getting top-priority "
-"support and plugin updates, you should extend it in your %s."
-msgstr "残念ながら、ライセンスの有効期限が切れています。最優先のサポートとプラグインの更新を引き続き取得するには、%s で拡張する必要があります。"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:1173
-msgid "Please, enter Your license key"
-msgstr "ライセンスキーを入力してください"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:1189
-msgid "Need Help?"
-msgstr "助けが必要？"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:1191
-msgid "Read the Instruction"
-msgstr "指示を読む"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:1196
-msgid "Watch the Video"
-msgstr "ビデオを見る"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:1210
-msgid "Start Your Free Trial"
-msgstr "無料トライアルを開始する"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:1248
-msgid "Request a Feature"
-msgstr "機能をリクエストする"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:1254
-#, php-format
-msgid "How can we improve %s?"
-msgstr "%s を改善するにはどうすればよいですか?"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:1256
-msgid "We look forward to hear your ideas."
-msgstr "皆様のご意見をお待ちしております。"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:1258
-msgid "Describe your idea"
-msgstr "あなたのアイデアを説明してください"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:1261 bws_menu/deactivation-form.php:123
-msgid "Send website data and allow to contact me back"
-msgstr "ウェブサイトのデータを送信し、私に連絡することを許可します"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:1266 contact_form.php:542
-#: includes/class-cntctfrm-settings.php:1221
-#: includes/class-cntctfrm-settings.php:1261
-msgid "Submit"
-msgstr "送信"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:1267 bws_menu/deactivation-form.php:130
-msgid "Processing"
-msgstr "処理"
-
-# automatic translation
-#: bws_menu/class-bws-settings.php:1268
-msgid "Thank you!"
-msgstr "ありがとう！"
-
-# automatic translation
-#: bws_menu/deactivation-form.php:25
-msgid "Need help? We are ready to answer your questions."
-msgstr "助けが必要？ご質問にお答えする準備ができています。"
-
-# automatic translation
-#: bws_menu/deactivation-form.php:25
-msgid "Contact Support"
-msgstr "サポート問い合わせ先"
-
-# automatic translation
-#: bws_menu/deactivation-form.php:30
-msgid "The plugin is not working"
-msgstr "プラグインが機能していません"
-
-# automatic translation
-#: bws_menu/deactivation-form.php:32
-msgid "Kindly share what didn't work so we can fix it in future updates..."
-msgstr "今後のアップデートで修正できるように、機能しなかったものを共有してください..."
-
-# automatic translation
-#: bws_menu/deactivation-form.php:36
-msgid "The plugin didn't work as expected"
-msgstr "プラグインが期待どおりに機能しなかった"
-
-# automatic translation
-#: bws_menu/deactivation-form.php:38
-msgid "What did you expect?"
-msgstr "何を期待していましたか？"
-
-# automatic translation
-#: bws_menu/deactivation-form.php:42
-msgid "The plugin suddenly stopped working"
-msgstr "プラグインが突然動かなくなった"
-
-# automatic translation
-#: bws_menu/deactivation-form.php:49
-msgid "The plugin broke my site"
-msgstr "プラグインが私のサイトを壊した"
-
-# automatic translation
-#: bws_menu/deactivation-form.php:56
-msgid "I couldn't understand how to get it work"
-msgstr "それを機能させる方法を理解できませんでした"
-
-# automatic translation
-#: bws_menu/deactivation-form.php:63
-msgid "I found a better plugin"
-msgstr "もっと良いプラグインを見つけた"
-
-# automatic translation
-#: bws_menu/deactivation-form.php:65
-msgid "What's the plugin name?"
-msgstr "プラグイン名は？"
-
-# automatic translation
-#: bws_menu/deactivation-form.php:69
-msgid "The plugin is great, but I need specific feature that you don't support"
-msgstr "プラグインは素晴らしいですが、サポートされていない特定の機能が必要です"
-
-# automatic translation
-#: bws_menu/deactivation-form.php:71
-msgid "What feature?"
-msgstr "何の機能？"
-
-# automatic translation
-#: bws_menu/deactivation-form.php:75
-msgid "I no longer need the plugin"
-msgstr "プラグインが不要になりました"
-
-# automatic translation
-#: bws_menu/deactivation-form.php:81
-msgid "It's a temporary deactivation, I'm just debugging an issue"
-msgstr "これは一時的な非アクティブ化です。問題をデバッグしているだけです"
-
-# automatic translation
-#: bws_menu/deactivation-form.php:87
-msgid "Other"
-msgstr "他の"
-
-# automatic translation
-#: bws_menu/deactivation-form.php:96
-msgid "Quick Feedback"
-msgstr "クイックフィードバック"
-
-# automatic translation
-#: bws_menu/deactivation-form.php:98
-msgid "If you have a moment, please let us know why you are deactivating"
-msgstr "お時間がありましたら、無効にする理由をお知らせください。"
-
-# automatic translation
-#: bws_menu/deactivation-form.php:128
-msgid "Submit and Deactivate"
-msgstr "送信して非アクティブ化"
-
-# automatic translation
-#: bws_menu/deactivation-form.php:129
-msgid "Skip and Deactivate"
-msgstr "スキップして非アクティブ化"
-
-# automatic translation
-#: bws_menu/deactivation-form.php:275
-msgid "Please tell us the reason so we can improve it."
-msgstr "改善できるように理由を教えてください。"
-
-# automatic translation
-#: bws_menu/deprecated.php:29
-msgid "System Status"
-msgstr "システムステータス"
-
-# automatic translation
-#: bws_menu/deprecated.php:129
-msgid ""
-"If necessary, you can check if the license key is correct or reenter it in "
-"the field below. You can find your license key on your personal page - "
-"Client Area - on our website"
-msgstr ""
-"必要に応じて、ライセンス キーが正しいかどうかを確認するか、下のフィールドに再入力できます。ライセンス キーは、当社の Web サイトの個人ページ "
-"(クライアント エリア) で見つけることができます。"
-
-# automatic translation
-#: bws_menu/deprecated.php:129
-msgid ""
-"(your username is the email address specified during the purchase). If "
-"necessary, please submit \"Lost your password?\" request."
-msgstr "(ユーザー名は、購入時に指定したメール アドレスです)。必要に応じて、「パスワードをお忘れですか?」と送信してください。リクエスト。"
-
-# automatic translation
-#: bws_menu/deprecated.php:155
-msgid "After that, you can activate it by entering your license key."
-msgstr "その後、ライセンスキーを入力してアクティベートできます。"
-
-# automatic translation
-#: bws_menu/deprecated.php:158 bws_menu/deprecated.php:253
-msgid "License key can be found in the"
-msgstr "ライセンス キーは"
-
-# automatic translation
-#: bws_menu/deprecated.php:160 bws_menu/deprecated.php:255
-msgid "(your username is the email address specified during the purchase)."
-msgstr "(ユーザー名は、購入時に指定したメール アドレスです)。"
-
-# automatic translation
-#: bws_menu/deprecated.php:187
-msgid "Congratulations! The Pro license of the plugin is activated successfully."
-msgstr "おめでとう！プラグインの Pro ライセンスが正常にアクティブ化されました。"
-
-# automatic translation
-#: bws_menu/deprecated.php:189 bws_menu/deprecated.php:233
-msgid "Please, go to"
-msgstr "に行ってください"
-
-# automatic translation
-#: bws_menu/deprecated.php:189 bws_menu/deprecated.php:233
-msgid "the setting page"
-msgstr "設定ページ"
-
-# automatic translation
-#: bws_menu/deprecated.php:207
-msgid "Restore all plugin settings to defaults"
-msgstr "すべてのプラグイン設定をデフォルトに戻す"
-
-# automatic translation
-#: bws_menu/deprecated.php:209
-msgid "Restore settings"
-msgstr "設定の復元"
-
-# automatic translation
-#: bws_menu/deprecated.php:231
-msgid ""
-"Congratulations! Pro version of the plugin is  installed and activated "
-"successfully."
-msgstr "おめでとう！プラグインの Pro バージョンがインストールされ、正常にアクティブ化されました。"
-
-# automatic translation
-#: bws_menu/deprecated.php:242
-msgid "Show Pro features"
-msgstr "プロの機能を表示"
-
-# automatic translation
-#: bws_menu/deprecated.php:249
-msgid "Enter your license key to install and activate"
-msgstr "ライセンス キーを入力して、インストールとアクティブ化を行います"
-
-# automatic translation
-#: bws_menu/deprecated.php:251
-msgid "version of the plugin."
-msgstr "プラグインのバージョン。"
-
-# automatic translation
-#: bws_menu/product_list.php:9
-msgid "Admin Tools"
-msgstr "管理ツール"
-
-# automatic translation
-#: bws_menu/product_list.php:10
-msgid "Content"
-msgstr "コンテンツ"
-
-# automatic translation
-#: bws_menu/product_list.php:11
-msgid "eCommerce"
-msgstr "eコマース"
-
-# automatic translation
-#: bws_menu/product_list.php:12
-msgid "Marketing"
-msgstr "マーケティング"
-
-# automatic translation
-#: bws_menu/product_list.php:13
-msgid "Navigation"
-msgstr "ナビゲーション"
-
-# automatic translation
-#: bws_menu/product_list.php:14
-msgid "Recommended"
-msgstr "おすすめされた"
-
-# automatic translation
-#: bws_menu/product_list.php:15
-msgid "Security"
-msgstr "安全"
-
-# automatic translation
-#: bws_menu/product_list.php:16
-msgid "SEO"
-msgstr "これ"
-
-# automatic translation
-#: bws_menu/product_list.php:17
-msgid "SMM"
-msgstr "SMM"
-
-# automatic translation
-#: bws_menu/product_list.php:24
-msgid "Give a birth for your bike rental and booking WordPress website."
-msgstr "自転車のレンタルと予約の WordPress ウェブサイトを誕生させましょう。"
-
-# automatic translation
-#: bws_menu/product_list.php:36
-msgid "Best secure captcha plugin to protect your WordPress forms."
-msgstr "WordPress フォームを保護するための最高の安全なキャプチャ プラグイン。"
-
-# automatic translation
-#: bws_menu/product_list.php:46
-msgid "Create your own rental website for car renting and booking."
-msgstr "レンタカーと予約のための独自のレンタル Web サイトを作成します。"
-
-# automatic translation
-#: bws_menu/product_list.php:58
-msgid ""
-"Add columns with custom content to WordPress website pages, posts, widgets, "
-"etc."
-msgstr "カスタム コンテンツを含む列を WordPress Web サイト ページ、投稿、ウィジェットなどに追加します。"
-
-# automatic translation
-#: bws_menu/product_list.php:65
-msgid ""
-"Allow customers to reach you using secure contact form plugin any website "
-"must have."
-msgstr "Web サイトに必要な安全なコンタクト フォーム プラグインを使用して、顧客があなたに連絡できるようにします。"
-
-# automatic translation
-#: bws_menu/product_list.php:75
-msgid "Add unlimited number of contact forms to WordPress website."
-msgstr "WordPress Web サイトに無制限の数の連絡先フォームを追加します。"
-
-# automatic translation
-#: bws_menu/product_list.php:85
-msgid "Save and manage Contact Form messages. Never lose important data."
-msgstr "お問い合わせフォームのメッセージを保存して管理します。重要なデータを失うことはありません。"
-
-# automatic translation
-#: bws_menu/product_list.php:95
-msgid "Add unlimited custom pages to WordPress admin dashboard."
-msgstr "WordPress 管理ダッシュボードに無制限のカスタム ページを追加します。"
-
-# automatic translation
-#: bws_menu/product_list.php:105
-msgid "Add custom post types and taxonomies to WordPress website search results."
-msgstr "WordPress ウェブサイトの検索結果にカスタム投稿タイプとタクソノミーを追加します。"
-
-# automatic translation
-#: bws_menu/product_list.php:115
-msgid "Add PayPal and 2CO donate buttons to receive charity payments."
-msgstr "PayPal と 2CO の寄付ボタンを追加して、チャリティーの支払いを受け取ります。"
-
-# automatic translation
-#: bws_menu/product_list.php:122
-msgid ""
-"Get latest error log messages to diagnose website problems. Define and fix "
-"issues faster."
-msgstr "最新のエラー ログ メッセージを取得して、Web サイトの問題を診断します。問題をより迅速に定義して修正します。"
-
-# automatic translation
-#: bws_menu/product_list.php:129
-msgid ""
-"Add Facebook Follow, Like, and Share buttons to WordPress posts, pages, and "
-"widgets."
-msgstr "Facebook のフォロー、いいね、共有ボタンを WordPress の投稿、ページ、ウィジェットに追加します。"
-
-# automatic translation
-#: bws_menu/product_list.php:139
-msgid ""
-"Add beautiful galleries, albums & images to your WordPress website in a few "
-"clicks."
-msgstr "数回クリックするだけで、美しいギャラリー、アルバム、画像を WordPress ウェブサイトに追加できます。"
-
-# automatic translation
-#: bws_menu/product_list.php:149
-msgid ""
-"Stronger security solution which protects your WordPress website from hacks "
-"and unauthorized login attempts."
-msgstr "WordPress Web サイトをハッキングや不正なログイン試行から保護する、より強力なセキュリティ ソリューション。"
-
-# automatic translation
-#: bws_menu/product_list.php:159
-msgid ""
-"Add Adsense ads to WordPress website pages, posts, custom posts, search "
-"results, categories, tags, and widgets."
-msgstr "Adsense 広告を WordPress Web サイト ページ、投稿、カスタム投稿、検索結果、カテゴリ、タグ、およびウィジェットに追加します。"
-
-# automatic translation
-#: bws_menu/product_list.php:169
-msgid "Add Google Analytics code to WordPress website and track basic stats."
-msgstr "Google Analytics コードを WordPress Web サイトに追加して、基本的な統計を追跡します。"
-
-# automatic translation
-#: bws_menu/product_list.php:179
-msgid "Protect WordPress website forms from spam entries with reCaptcha."
-msgstr "reCaptcha を使用して、WordPress Web サイトのフォームをスパム エントリから保護します。"
-
-# automatic translation
-#: bws_menu/product_list.php:189
-msgid "Add customized Google maps to WordPress posts, pages and widgets."
-msgstr "カスタマイズした Google マップを WordPress の投稿、ページ、ウィジェットに追加します。"
-
-# automatic translation
-#: bws_menu/product_list.php:199
-msgid ""
-"Generate and add XML sitemap to WordPress website. Help search engines "
-"index your blog."
-msgstr "XML サイトマップを生成して WordPress Web サイトに追加します。検索エンジンがあなたのブログをインデックスに登録できるようにします。"
-
-# automatic translation
-#: bws_menu/product_list.php:209
-msgid ""
-"Replace external WordPress website links with Google shortlinks and track "
-"click stats."
-msgstr "外部 WordPress ウェブサイト リンクを Google 短縮リンクに置き換え、クリック統計を追跡します。"
-
-# automatic translation
-#: bws_menu/product_list.php:216
-msgid ""
-"Protect WordPress website – allow and deny access for certain IP addresses, "
-"hostnames, etc."
-msgstr "WordPress ウェブサイトを保護 – 特定の IP アドレス、ホスト名などへのアクセスを許可および拒否します。"
-
-# automatic translation
-#: bws_menu/product_list.php:226
-msgid ""
-"Create your personal job board and listing WordPress website. Search jobs, "
-"submit CV/resumes, choose candidates."
-msgstr "あなたの個人的な求人掲示板とリスティング WordPress Web サイトを作成します。求人の検索、履歴書の提出、候補者の選択。"
-
-# automatic translation
-#: bws_menu/product_list.php:233
-msgid ""
-"Protect WordPress website against brute force attacks. Limit rate of login "
-"attempts."
-msgstr "ブルート フォース攻撃から WordPress Web サイトを保護します。ログイン試行回数を制限します。"
-
-# automatic translation
-#: bws_menu/product_list.php:243
-msgid ""
-"Add LinkedIn Share and Follow buttons to WordPress posts, pages and "
-"widgets. 5 plugins included – profile, insider, etc."
-msgstr ""
-"LinkedIn の共有ボタンとフォロー ボタンを WordPress の投稿、ページ、ウィジェットに追加します。 5 つのプラグインが含まれています "
-"– プロファイル、インサイダーなど。"
-
-# automatic translation
-#: bws_menu/product_list.php:253
-msgid ""
-"Translate WordPress website content to other languages manually. Create "
-"multilingual pages, posts, widgets, menus, etc."
-msgstr "WordPress Web サイトのコンテンツを他の言語に手動で翻訳します。多言語ページ、投稿、ウィジェット、メニューなどを作成します。"
-
-# automatic translation
-#: bws_menu/product_list.php:263
-msgid ""
-"Add customizable pagination to WordPress website. Split long content to "
-"multiple pages for better navigation."
-msgstr ""
-"WordPress Web "
-"サイトにカスタマイズ可能なページネーションを追加します。ナビゲーションを改善するために、長いコンテンツを複数のページに分割します。"
-
-# automatic translation
-#: bws_menu/product_list.php:273
-msgid ""
-"Generate PDF files and print WordPress posts/pages. Customize document "
-"header/footer styles and appearance."
-msgstr "PDF ファイルを生成し、WordPress の投稿/ページを印刷します。ドキュメントのヘッダー/フッターのスタイルと外観をカスタマイズします。"
-
-# automatic translation
-#: bws_menu/product_list.php:283
-msgid ""
-"Add Pinterest Follow, Pin It buttons and profile widgets (Pin, Board, "
-"Profile) to WordPress posts, pages and widgets."
-msgstr ""
-"Pinterest のフォロー、ピン留めボタン、プロフィール ウィジェット (ピン、ボード、プロフィール) を WordPress "
-"の投稿、ページ、ウィジェットに追加します。"
-
-# automatic translation
-#: bws_menu/product_list.php:293
-msgid ""
-"Create your personal portfolio WordPress website. Manage and showcase past "
-"projects to get more clients."
-msgstr "個人のポートフォリオ WordPress Web サイトを作成します。過去のプロジェクトを管理して紹介し、より多くのクライアントを獲得します。"
-
-# automatic translation
-#: bws_menu/product_list.php:303
-msgid "Export WordPress posts to CSV file format easily. Configure data order."
-msgstr "WordPress の投稿を CSV ファイル形式に簡単にエクスポートします。データの順序を構成します。"
-
-# automatic translation
-#: bws_menu/product_list.php:313
-msgid ""
-"Add extra fields to default WordPress user profile. The easiest way to "
-"create and manage additional custom values."
-msgstr "デフォルトの WordPress ユーザー プロファイルにフィールドを追加します。追加のカスタム値を作成および管理する最も簡単な方法。"
-
-# automatic translation
-#: bws_menu/product_list.php:323
-msgid ""
-"Add and display HTML advertisement banner on WordPress website. Customize "
-"bar styles and appearance."
-msgstr "WordPress ウェブサイトに HTML 広告バナーを追加して表示します。バーのスタイルと外観をカスタマイズします。"
-
-# automatic translation
-#: bws_menu/product_list.php:333
-msgid ""
-"Add customizable quotes and tips blocks to WordPress posts, pages and "
-"widgets."
-msgstr "WordPress の投稿、ページ、ウィジェットにカスタマイズ可能な引用文とヒント ブロックを追加します。"
-
-# automatic translation
-#: bws_menu/product_list.php:340
-msgid ""
-"Add rating plugin to your WordPress website to receive feedback from your "
-"customers."
-msgstr "WordPress Web サイトに評価プラグインを追加して、顧客からのフィードバックを受け取ります。"
-
-# automatic translation
-#: bws_menu/product_list.php:350
-msgid ""
-"Create your personal real estate WordPress website. Sell, rent and buy "
-"properties. Add, search and browse listings easily."
-msgstr "個人の不動産 WordPress Web サイトを作成します。不動産の販売、賃貸、購入。リストを簡単に追加、検索、閲覧できます。"
-
-# automatic translation
-#: bws_menu/product_list.php:360
-msgid ""
-"Add related, featured, latest, and popular posts to your WordPress website. "
-"Connect your blog readers with a relevant content."
-msgstr "関連記事、特集記事、最新記事、人気記事を WordPress Web サイトに追加します。ブログの読者を関連するコンテンツにつなげます。"
-
-# automatic translation
-#: bws_menu/product_list.php:367
-msgid ""
-"Send bulk email messages to WordPress users. Custom templates, advanced "
-"settings and detailed reports."
-msgstr "WordPress ユーザーに一括メール メッセージを送信します。カスタム テンプレート、詳細設定、詳細レポート。"
-
-# automatic translation
-#: bws_menu/product_list.php:377
-msgid ""
-"The best responsive slider plugin for your WordPress website. Create "
-"beautifully animated slides just in a few clicks."
-msgstr ""
-"WordPress ウェブサイトに最適なレスポンシブ スライダー "
-"プラグイン。数回クリックするだけで、美しくアニメーション化されたスライドを作成できます。"
-
-# automatic translation
-#: bws_menu/product_list.php:384
-msgid ""
-"Configure SMTP server to receive email messages from WordPress to Gmail, "
-"Yahoo, Hotmail and other services."
-msgstr ""
-"WordPress から Gmail、Yahoo、Hotmail およびその他のサービスへの電子メール メッセージを受信するように SMTP "
-"サーバーを構成します。"
-
-# automatic translation
-#: bws_menu/product_list.php:391
-msgid ""
-"Add social media buttons and widgets to WordPress posts, pages and widgets. "
-"FB, Twitter, Pinterest, LinkedIn."
-msgstr ""
-"ソーシャル メディアのボタンとウィジェットを WordPress の投稿、ページ、ウィジェットに追加します。 "
-"FB、ツイッター、ピンタレスト、リンクトイン。"
-
-# automatic translation
-#: bws_menu/product_list.php:401
-msgid ""
-"Add social media login, registration, and commenting to your WordPress "
-"website."
-msgstr "ソーシャル メディアのログイン、登録、コメントを WordPress Web サイトに追加します。"
-
-# automatic translation
-#: bws_menu/product_list.php:408
-msgid ""
-"Add email newsletter sign up form to WordPress posts, pages and widgets. "
-"Collect data and subscribe your users."
-msgstr ""
-"WordPress の投稿、ページ、ウィジェットにメール ニュースレターのサインアップ "
-"フォームを追加します。データを収集し、ユーザーをサブスクライブします。"
-
-# automatic translation
-#: bws_menu/product_list.php:418
-msgid ""
-"Add testimonials and feedbacks from your customers to WordPress website "
-"posts, pages, and widgets."
-msgstr "お客様の声やフィードバックを WordPress Web サイトの投稿、ページ、ウィジェットに追加します。"
-
-# automatic translation
-#: bws_menu/product_list.php:425
-msgid ""
-"Best timesheet plugin for WordPress. Track employee time, streamline "
-"attendance and generate reports."
-msgstr "WordPress に最適なタイムシート プラグイン。従業員の時間を追跡し、出席を合理化し、レポートを生成します。"
-
-# automatic translation
-#: bws_menu/product_list.php:435
-msgid ""
-"Add Twitter Follow, Tweet, Hashtag, and Mention buttons to WordPress posts "
-"and pages."
-msgstr "Twitter のフォロー、ツイート、ハッシュタグ、メンション ボタンを WordPress の投稿やページに追加します。"
-
-# automatic translation
-#: bws_menu/product_list.php:445
-msgid ""
-"Automatically check and update WordPress website core with all installed "
-"plugins and themes to the latest versions."
-msgstr "インストールされているすべてのプラグインとテーマを使用して、WordPress Web サイトのコアを自動的にチェックし、最新バージョンに更新します。"
-
-# automatic translation
-#: bws_menu/product_list.php:455
-msgid ""
-"Powerful user role management plugin for WordPress website. Create, edit, "
-"copy, and delete user roles."
-msgstr "WordPress Web サイト用の強力なユーザー ロール管理プラグイン。ユーザー ロールを作成、編集、コピー、および削除します。"
-
-# automatic translation
-#: bws_menu/product_list.php:465
-msgid ""
-"Display live count of online visitors who are currently browsing your "
-"WordPress website."
-msgstr "現在 WordPress Web サイトを閲覧しているオンライン訪問者の実際の数を表示します。"
-
-# automatic translation
-#: bws_menu/product_list.php:475
-msgid ""
-"Backup and export Zendesk Help Center content automatically to your "
-"WordPress website database."
-msgstr "Zendesk ヘルプ センターのコンテンツを WordPress Web サイト データベースに自動的にバックアップおよびエクスポートします。"
-
-# automatic translation
-#: contact_form.php:39 contact_form.php:48 contact_form.php:841
-#: includes/class-cntctfrm-settings.php:439
+#: contact_form.php:43 contact_form.php:52 contact_form.php:917
+#: includes/class-cntctfrm-settings.php:477
 msgid "Contact Form Settings"
 msgstr "お問い合わせフォームの設定"
 
 # automatic translation
-#: contact_form.php:531 contact_form.php:1665 contact_form.php:1712
-#: includes/class-cntctfrm-settings.php:578
-#: includes/class-cntctfrm-settings.php:676
-#: includes/class-cntctfrm-settings.php:1210
-#: includes/class-cntctfrm-settings.php:1250
-#: includes/class-cntctfrm-settings.php:1494
+#: contact_form.php:53 contact_form.php:2142 contact_form.php:2162
+#: includes/class-cntctfrm-settings.php:30
+msgid "Settings"
+msgstr "設定"
+
+# automatic translation
+#: contact_form.php:76
+msgid "Upgrade to Pro"
+msgstr "プロ仕様にアップグレードする"
+
+# automatic translation
+#: contact_form.php:573 contact_form.php:1876 contact_form.php:1924
+#: includes/class-cntctfrm-settings.php:636
+#: includes/class-cntctfrm-settings.php:734
+#: includes/class-cntctfrm-settings.php:1310
+#: includes/class-cntctfrm-settings.php:1354
+#: includes/class-cntctfrm-settings.php:1616
 msgid "Name"
 msgstr "名前"
 
 # automatic translation
-#: contact_form.php:532 contact_form.php:1672 contact_form.php:1718
-#: includes/class-cntctfrm-settings.php:728
-#: includes/class-cntctfrm-settings.php:1211
-#: includes/class-cntctfrm-settings.php:1251
-#: includes/class-cntctfrm-settings.php:1499
+#: contact_form.php:574 contact_form.php:1883 contact_form.php:1930
+#: includes/class-cntctfrm-settings.php:786
+#: includes/class-cntctfrm-settings.php:1311
+#: includes/class-cntctfrm-settings.php:1355
+#: includes/class-cntctfrm-settings.php:1621
 msgid "Address"
 msgstr "住所"
 
 # automatic translation
-#: contact_form.php:533 includes/class-cntctfrm-settings.php:750
-#: includes/class-cntctfrm-settings.php:1212
-#: includes/class-cntctfrm-settings.php:1252
+#: contact_form.php:575 includes/class-cntctfrm-settings.php:808
+#: includes/class-cntctfrm-settings.php:1312
+#: includes/class-cntctfrm-settings.php:1356
 msgid "Email Address"
 msgstr "電子メールアドレス"
 
 # automatic translation
-#: contact_form.php:534 includes/class-cntctfrm-settings.php:776
-#: includes/class-cntctfrm-settings.php:1213
-#: includes/class-cntctfrm-settings.php:1253
+#: contact_form.php:576 includes/class-cntctfrm-settings.php:834
+#: includes/class-cntctfrm-settings.php:1313
+#: includes/class-cntctfrm-settings.php:1357
 msgid "Phone number"
 msgstr "電話番号"
 
 # automatic translation
-#: contact_form.php:535 contact_form.php:1683 contact_form.php:1727
-#: includes/class-cntctfrm-settings.php:798
-#: includes/class-cntctfrm-settings.php:1214
-#: includes/class-cntctfrm-settings.php:1254
-#: includes/class-cntctfrm-settings.php:1514
+#: contact_form.php:577 contact_form.php:1894 contact_form.php:1939
+#: includes/class-cntctfrm-settings.php:856
+#: includes/class-cntctfrm-settings.php:1314
+#: includes/class-cntctfrm-settings.php:1358
+#: includes/class-cntctfrm-settings.php:1636
 msgid "Subject"
 msgstr "主題"
 
 # automatic translation
-#: contact_form.php:536 contact_form.php:1688 contact_form.php:1731
-#: includes/class-cntctfrm-settings.php:836
-#: includes/class-cntctfrm-settings.php:1215
-#: includes/class-cntctfrm-settings.php:1255
-#: includes/class-cntctfrm-settings.php:1518
+#: contact_form.php:578 contact_form.php:1899 contact_form.php:1943
+#: includes/class-cntctfrm-settings.php:894
+#: includes/class-cntctfrm-settings.php:1315
+#: includes/class-cntctfrm-settings.php:1359
+#: includes/class-cntctfrm-settings.php:1640
 msgid "Message"
 msgstr "メッセージ"
 
 # automatic translation
-#: contact_form.php:537 includes/class-cntctfrm-settings.php:1216
-#: includes/class-cntctfrm-settings.php:1256
-#: includes/class-cntctfrm-settings.php:1523
+#: contact_form.php:579 includes/class-cntctfrm-settings.php:1316
+#: includes/class-cntctfrm-settings.php:1360
+#: includes/class-cntctfrm-settings.php:1645
 msgid "Attachment"
 msgstr "付属品"
 
 # automatic translation
-#: contact_form.php:538
+#: contact_form.php:580
 msgid ""
 "Supported file types: HTML, TXT, CSS, GIF, PNG, JPEG, JPG, TIFF, BMP, AI, "
 "EPS, PS, CSV, RTF, PDF, DOC, DOCX, XLS, XLSX, ZIP, RAR, WAV, MP3, PPT."
 msgstr ""
-"サポートされているファイル形式: "
-"HTML、TXT、CSS、GIF、PNG、JPEG、JPG、TIFF、BMP、AI、EPS、PS、CSV、RTF、PDF、DOC、DOCX、XLS、XL"
-"SX、ZIP、RAR、WAV、MP3、 PPT。"
+"サポートされているファイル形式: HTML、TXT、CSS、GIF、PNG、JPEG、JPG、TIFF、"
+"BMP、AI、EPS、PS、CSV、RTF、PDF、DOC、DOCX、XLS、XLSX、ZIP、RAR、WAV、MP3、 "
+"PPT。"
 
 # automatic translation
-#: contact_form.php:539 includes/class-cntctfrm-settings.php:1218
-#: includes/class-cntctfrm-settings.php:1258
+#: contact_form.php:581 includes/class-cntctfrm-settings.php:1318
+#: includes/class-cntctfrm-settings.php:1362
 msgid "Send me a copy"
 msgstr "コピーを送ってください"
 
 # automatic translation
-#: contact_form.php:540 includes/class-cntctfrm-settings.php:1219
-#: includes/class-cntctfrm-settings.php:1259
+#: contact_form.php:582 includes/class-cntctfrm-settings.php:1319
+#: includes/class-cntctfrm-settings.php:1363
 msgid "I consent to having this site collect my personal data."
 msgstr "このサイトが私の個人データを収集することに同意します。"
 
 # automatic translation
-#: contact_form.php:543
-msgid "Your name is required."
-msgstr "お名前必須"
+#: contact_form.php:583 contact_form.php:2258
+#: includes/class-cntctfrm-settings.php:1320
+#: includes/class-cntctfrm-settings.php:1364
+msgid "Learn more"
+msgstr "もっと詳しく知る"
 
 # automatic translation
-#: contact_form.php:544
+#: contact_form.php:584 includes/class-cntctfrm-settings.php:1321
+#: includes/class-cntctfrm-settings.php:1365
+msgid "Submit"
+msgstr "送信"
+
+# automatic translation
+#: contact_form.php:585
+msgid "Your name is required."
+msgstr "名前は必須です。"
+
+# automatic translation
+#: contact_form.php:586
 msgid "Address is required."
 msgstr "住所が必要です。"
 
 # automatic translation
-#: contact_form.php:545
+#: contact_form.php:587
 msgid "A valid email address is required."
 msgstr "有効なメールアドレスが必要です。"
 
 # automatic translation
-#: contact_form.php:546
+#: contact_form.php:588
 msgid "Phone number is required."
 msgstr "電話番号が必要です。"
 
 # automatic translation
-#: contact_form.php:547
+#: contact_form.php:589
 msgid "Subject is required."
 msgstr "件名は必須です。"
 
 # automatic translation
-#: contact_form.php:548
+#: contact_form.php:590
 msgid "Message text is required."
 msgstr "メッセージ本文は必須です。"
 
 # automatic translation
-#: contact_form.php:549
+#: contact_form.php:591
+msgid "Message length does not meet requirements."
+msgstr "メッセージの長さが要件を満たしていない。"
+
+# automatic translation
+#: contact_form.php:592
 msgid "File format is not valid."
 msgstr "ファイル形式が無効です。"
 
 # automatic translation
-#: contact_form.php:550
+#: contact_form.php:593
 msgid "File upload error."
 msgstr "ファイルのアップロード エラー。"
 
 # automatic translation
-#: contact_form.php:551
+#: contact_form.php:594
 msgid "The file could not be uploaded."
 msgstr "ファイルをアップロードできませんでした。"
 
 # automatic translation
-#: contact_form.php:552
+#: contact_form.php:595
 msgid "This file is too large."
 msgstr "このファイルは大きすぎます。"
 
 # automatic translation
-#: contact_form.php:553
+#: contact_form.php:596
 msgid "Please fill out the CAPTCHA."
 msgstr "CAPTCHA を入力してください。"
 
 # automatic translation
-#: contact_form.php:554
+#: contact_form.php:597
 msgid "Please make corrections below and try again."
 msgstr "以下を修正して、もう一度お試しください。"
 
 # automatic translation
-#: contact_form.php:856
-#, php-format
-msgid ""
-"<strong>Note:</strong> The contact form is not protected from spam and "
-"bots. Use %1$s Captcha by BestWebSoft plugin %3$s or %2$s reCaptcha by "
-"BestWebSoft plugin %3$s to protect your contact form."
-msgstr ""
-"<strong>注:</"
-"strong>お問い合わせフォームは、スパムやボットから保護されていません。お問い合わせフォームを保護するには、BestWebSoft プラグイン "
-"%3$s による %1$s Captcha または BestWebSoft プラグイン %3$s による %2$s reCaptcha "
-"を使用してください。"
+#: contact_form.php:599
+msgid "Thank you for contacting us."
+msgstr "ご連絡いただきありがとうございます。"
 
 # automatic translation
-#: contact_form.php:864
+#: contact_form.php:933
+#, php-format
+msgid ""
+"%1$sNote:%2$s The contact form is not protected from spam and bots. Use %3$s "
+"Captcha by BestWebSoft plugin %5$s or %4$s reCaptcha by BestWebSoft plugin "
+"%5$s to protect your contact form."
+msgstr ""
+"%1$s注意:%2$s コンタクトフォームはスパムやボットから保護されていません。コン"
+"タクトフォームを保護するには、%3$s Captcha by BestWebSoft プラグイン %5$s ま"
+"たは %4$s reCaptcha by BestWebSoft プラグイン %5$s を使用してください。"
+
+# automatic translation
+#: contact_form.php:942
 msgid "NEW_FORM"
 msgstr "NEW_FORM"
 
 # automatic translation
-#: contact_form.php:865
+#: contact_form.php:943
 msgid ""
 "If you want to create multiple contact forms, please install the Contact "
 "Form Multi plugin."
-msgstr "複数のお問い合わせフォームを作成したい場合は、Contact Form Multi プラグインをインストールしてください。"
+msgstr ""
+"複数のお問い合わせフォームを作成したい場合は、Contact Form Multi プラグインを"
+"インストールしてください。"
 
 # automatic translation
-#: contact_form.php:870
+#: contact_form.php:948
 msgid ""
 "Contact Form plugin doesn't support your current version of Contact Form "
 "Multi plugin. Please update Contact Form Multi plugin to version 1.2.6 or "
 "higher."
 msgstr ""
-"Contact Form プラグインは、Contact Form Multi プラグインの現在のバージョンをサポートしていません。 Contact "
-"Form Multi プラグインをバージョン 1.2.6 以降に更新してください。"
+"Contact Form プラグインは、Contact Form Multi プラグインの現在のバージョンを"
+"サポートしていません。 Contact Form Multi プラグインをバージョン 1.2.6 以降に"
+"更新してください。"
 
 # automatic translation
-#: contact_form.php:1009 contact_form.php:1065
-msgid "Please enter only letters at least 3 characters, words seperated by spaces"
+#: contact_form.php:1062
+msgid "Sorry, email message could not be delivered."
+msgstr "申し訳ありませんが、メール メッセージを配信できませんでした。"
+
+# automatic translation
+#: contact_form.php:1100 contact_form.php:1156
+msgid ""
+"Please enter only letters at least 3 characters, words seperated by spaces"
 msgstr "スペースで区切られた 3 文字以上の文字のみを入力してください"
 
 # automatic translation
-#: contact_form.php:1023
+#: contact_form.php:1114
 msgid ""
-"Please enter only letters and numbers at least 3 characters, words "
-"seperated by spaces"
-msgstr "文字と数字のみを 3 文字以上入力してください。単語はスペースで区切って入力してください"
+"Please enter only letters and numbers at least 3 characters, words seperated "
+"by spaces"
+msgstr ""
+"文字と数字のみを 3 文字以上入力してください。単語はスペースで区切って入力して"
+"ください"
 
 # automatic translation
-#: contact_form.php:1051
+#: contact_form.php:1142
 msgid "Please enter only numbers at least 6 characters"
 msgstr "6 文字以上の数字のみを入力してください"
 
+#: contact_form.php:1494
+#, php-format
+msgid "between %1$d and %2$d characters"
+msgstr "%1$dから%2$d文字の間"
+
+#: contact_form.php:1501 includes/class-cntctfrm-settings.php:1954
+#, php-format
+msgid "more than %1$d characters"
+msgstr "%1$d 文字以上"
+
+#: contact_form.php:1507 includes/class-cntctfrm-settings.php:1959
+#, php-format
+msgid "less than %1$d characters"
+msgstr "%1$d文字未満"
+
 # automatic translation
-#: contact_form.php:1621 contact_form.php:1623
+#: contact_form.php:1828 contact_form.php:1830
 msgid "Sent from (ip address)"
 msgstr "送信元 (IP アドレス)"
 
 # automatic translation
-#: contact_form.php:1627 contact_form.php:1629
-#: includes/class-cntctfrm-settings.php:1167
+#: contact_form.php:1835 contact_form.php:1837
+#: includes/class-cntctfrm-settings.php:1262
 msgid "Date/Time"
 msgstr "日付時刻"
 
 # automatic translation
-#: contact_form.php:1633 contact_form.php:1635
-#: includes/class-cntctfrm-settings.php:1168
+#: contact_form.php:1842 contact_form.php:1844
+#: includes/class-cntctfrm-settings.php:1263
 msgid "Sent from (referer)"
 msgstr "送信元 (リファラー)"
 
 # automatic translation
-#: contact_form.php:1639 contact_form.php:1641
-#: includes/class-cntctfrm-settings.php:1169
+#: contact_form.php:1849 contact_form.php:1851
+#: includes/class-cntctfrm-settings.php:1264
 msgid "Using (user agent)"
 msgstr "使用 (ユーザー エージェント)"
 
 # automatic translation
-#: contact_form.php:1651
+#: contact_form.php:1862
 msgid "Contact from"
 msgstr "からのお問い合わせ"
 
 # automatic translation
-#: contact_form.php:1656 contact_form.php:1706
+#: contact_form.php:1867 contact_form.php:1917
 msgid "Site"
 msgstr "サイト"
 
 # automatic translation
-#: contact_form.php:1678 contact_form.php:1723
-#: includes/class-cntctfrm-settings.php:602
+#: contact_form.php:1889 contact_form.php:1935
+#: includes/class-cntctfrm-settings.php:660
 msgid "Email"
-msgstr "Eメール"
+msgstr "メールアドレス"
 
 # automatic translation
-#: contact_form.php:1694 contact_form.php:1736
-#: includes/class-cntctfrm-settings.php:1509
+#: contact_form.php:1905 contact_form.php:1948
+#: includes/class-cntctfrm-settings.php:1631
 msgid "Phone Number"
 msgstr "電話番号"
 
 # automatic translation
-#: contact_form.php:1834
+#: contact_form.php:2057
 msgid ""
 "If you can see this MIME, it means that the MIME type is not supported by "
 "your email client!"
-msgstr "この MIME が表示される場合は、その MIME タイプがメール クライアントでサポートされていないことを意味します。"
+msgstr ""
+"このMIMEが表示される場合は、そのMIMEタイプがメールクライアントでサポートされ"
+"ていないことを意味します！"
 
 # automatic translation
-#: contact_form.php:1957
+#: contact_form.php:2164
+msgid "FAQ"
+msgstr "よくある質問"
+
+# automatic translation
+#: contact_form.php:2165
+msgid "Support"
+msgstr "サポート"
+
+# automatic translation
+#: contact_form.php:2229
 msgid "Are you sure that you want to delete this language data?"
 msgstr "この言語データを削除してもよろしいですか?"
 
 # automatic translation
-#: contact_form.php:1980
+#: contact_form.php:2253
 msgid "Add multiple forms"
 msgstr "複数のフォームを追加"
 
 # automatic translation
-#: contact_form.php:1980
+#: contact_form.php:2253
 msgid ""
 "Install Contact Form Multi plugin to create unlimited number of contact "
 "forms."
-msgstr "Contact Form Multi プラグインをインストールして、無制限の数のコンタクト フォームを作成します。"
+msgstr ""
+"Contact Form Multi プラグインをインストールして、無制限の数のコンタクト "
+"フォームを作成します。"
 
 # automatic translation
-#: contact_form.php:2043
+#: contact_form.php:2262 includes/class-cntctfrm-settings.php:526
+#: includes/class-cntctfrm-settings.php:984
+#: includes/class-cntctfrm-settings.php:1218
+#: includes/class-cntctfrm-settings.php:1544
+msgid "Close"
+msgstr "近い"
+
+# automatic translation
+#: contact_form.php:2329
 msgid "Error"
 msgstr "エラー"
 
 # automatic translation
-#: contact_form.php:2043 contact_form.php:2045
+#: contact_form.php:2329 contact_form.php:2331
 msgid "Illegal language code"
 msgstr "不正な言語コード"
 
 # automatic translation
-#: contact_form.php:2080 contact_form.php:2082
-#: includes/class-cntctfrm-settings.php:1236
-#: includes/class-cntctfrm-settings.php:1238
-#: includes/class-cntctfrm-settings.php:1276
-#: includes/class-cntctfrm-settings.php:1278
-#: includes/class-cntctfrm-settings.php:1312
-#: includes/class-cntctfrm-settings.php:1314
-#: includes/class-cntctfrm-settings.php:1326
-#: includes/class-cntctfrm-settings.php:1328
+#: contact_form.php:2363 contact_form.php:2365
+#: includes/class-cntctfrm-settings.php:1337
+#: includes/class-cntctfrm-settings.php:1339
+#: includes/class-cntctfrm-settings.php:1381
+#: includes/class-cntctfrm-settings.php:1383
+#: includes/class-cntctfrm-settings.php:1421
+#: includes/class-cntctfrm-settings.php:1423
+#: includes/class-cntctfrm-settings.php:1438
+#: includes/class-cntctfrm-settings.php:1440
 msgid "Use shortcode"
 msgstr "ショートコードを使用する"
 
 # automatic translation
-#: contact_form.php:2080 contact_form.php:2082
-#: includes/class-cntctfrm-settings.php:1236
-#: includes/class-cntctfrm-settings.php:1238
-#: includes/class-cntctfrm-settings.php:1276
-#: includes/class-cntctfrm-settings.php:1278
-#: includes/class-cntctfrm-settings.php:1312
-#: includes/class-cntctfrm-settings.php:1314
-#: includes/class-cntctfrm-settings.php:1326
-#: includes/class-cntctfrm-settings.php:1328
+#: contact_form.php:2363 contact_form.php:2365
+#: includes/class-cntctfrm-settings.php:1337
+#: includes/class-cntctfrm-settings.php:1339
+#: includes/class-cntctfrm-settings.php:1381
+#: includes/class-cntctfrm-settings.php:1383
+#: includes/class-cntctfrm-settings.php:1421
+#: includes/class-cntctfrm-settings.php:1423
+#: includes/class-cntctfrm-settings.php:1438
+#: includes/class-cntctfrm-settings.php:1440
 msgid "for this language"
 msgstr "この言語の"
 
 # automatic translation
-#: contact_form.php:2236
+#: contact_form.php:2554
+msgid "Close notice"
+msgstr "お知らせを閉じる"
+
+# automatic translation
+#: contact_form.php:2559
 msgid "allows to store your messages to the database."
 msgstr "メッセージをデータベースに保存できます。"
 
 # automatic translation
-#: contact_form.php:2237
+#: contact_form.php:2560
 msgid "Manage messages that have been sent from your website."
 msgstr "Web サイトから送信されたメッセージを管理します。"
 
 # automatic translation
-#: contact_form.php:2300
+#: contact_form.php:2563
+msgid "Learn More"
+msgstr "もっと詳しく知る"
+
+# automatic translation
+#: contact_form.php:2633
 msgid "Contact form"
 msgstr "お問い合わせフォーム"
 
 # automatic translation
-#: contact_form.php:2313 contact_form.php:2323
+#: contact_form.php:2648 contact_form.php:2660
 msgid "Language"
 msgstr "言語"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:24
-#: includes/class-cntctfrm-settings.php:550
+#: includes/class-cntctfrm-settings.php:31
+#: includes/class-cntctfrm-settings.php:608
 msgid "Additional Settings"
 msgstr "追加の設定"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:25
-#: includes/class-cntctfrm-settings.php:1347
+#: includes/class-cntctfrm-settings.php:32
+#: includes/class-cntctfrm-settings.php:1466
 msgid "Appearance"
 msgstr "外観"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:26
+#: includes/class-cntctfrm-settings.php:33
 msgid "Misc"
 msgstr "その他"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:102
+#: includes/class-cntctfrm-settings.php:34
+msgid "Custom Code"
+msgstr "カスタムコード"
+
+# automatic translation
+#: includes/class-cntctfrm-settings.php:35
+msgid "License Key"
+msgstr "ライセンスキー"
+
+# automatic translation
+#: includes/class-cntctfrm-settings.php:111
 msgid "Please enable JavaScript in your browser."
 msgstr "ブラウザで JavaScript を有効にしてください。"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:104
+#: includes/class-cntctfrm-settings.php:113
 #, php-format
 msgid ""
 "Contact Form plugin requires PHP %s or higher. Please contact your hosting "
 "provider to upgrade PHP version."
 msgstr ""
-"お問い合わせフォーム プラグインには PHP %s 以降が必要です。 PHP のバージョンをアップグレードするには、ホスティング "
-"プロバイダーにお問い合わせください。"
+"お問い合わせフォーム プラグインには PHP %s 以降が必要です。 PHP のバージョン"
+"をアップグレードするには、ホスティング プロバイダーにお問い合わせください。"
+
+#: includes/class-cntctfrm-settings.php:143
+msgid "Sorry, your nonce did not verify."
+msgstr "申し訳ありませんが、nonceは確認できませんでした。"
+
+#: includes/class-cntctfrm-settings.php:211
+msgid "Min / Max symbols in the message cannot be empty."
+msgstr "メッセージ内の最小/最大記号を空にすることはできない。"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:365
+#: includes/class-cntctfrm-settings.php:399
 msgid ""
 "Email 'FROM' field option was changed, which may cause email messages being "
 "moved to the spam folder or email delivery failures."
 msgstr ""
-"電子メールの「FROM」フィールド オプションが変更されたため、電子メール メッセージがスパム "
-"フォルダに移動されたり、電子メールの配信に失敗したりする可能性があります。"
+"電子メールの「FROM」フィールド オプションが変更されたため、電子メール メッ"
+"セージがスパム フォルダに移動されたり、電子メールの配信に失敗したりする可能性"
+"があります。"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:375
+#: includes/class-cntctfrm-settings.php:409
 msgid ""
-"If the 'Redirect to page' option is selected then the URL field should be "
-"in the following format"
-msgstr "[ページにリダイレクト] オプションが選択されている場合、URL フィールドは次の形式である必要があります。"
+"If the 'Redirect to page' option is selected then the URL field should be in "
+"the following format"
+msgstr ""
+"ページへのリダイレクト」オプションが選択されている場合、URLフィールドは以下の"
+"形式でなければなりません。"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:382
+#: includes/class-cntctfrm-settings.php:414
 msgid "Such user does not exist."
 msgstr "そのようなユーザーは存在しません。"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:392
-msgid "Please enter a valid email address in the 'Use this email address' field."
-msgstr "[このメール アドレスを使用] フィールドに有効なメール アドレスを入力してください。"
+#: includes/class-cntctfrm-settings.php:423
+msgid ""
+"Please enter a valid email address in the 'Use this email address' field."
+msgstr ""
+"[このメール アドレスを使用] フィールドに有効なメール アドレスを入力してくださ"
+"い。"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:400
+#: includes/class-cntctfrm-settings.php:431
 msgid "Please enter a valid email address in the 'FROM' field."
 msgstr "[差出人] フィールドに有効な電子メール アドレスを入力してください。"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:419
+#: includes/class-cntctfrm-settings.php:452
 msgid "Settings saved."
 msgstr "保存された設定。"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:421
+#: includes/class-cntctfrm-settings.php:454
 msgid "Settings are not saved."
 msgstr "設定は保存されません。"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:443
+#: includes/class-cntctfrm-settings.php:481
 msgid ""
 "If you leave the fields empty, the messages will be sent to the email "
 "address specified during registration."
-msgstr "フィールドを空のままにすると、メッセージは登録時に指定した電子メール アドレスに送信されます。"
+msgstr ""
+"フィールドを空のままにすると、メッセージは登録時に指定した電子メール アドレス"
+"に送信されます。"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:446
+#: includes/class-cntctfrm-settings.php:484
 msgid "The user's email address"
 msgstr "ユーザーのメールアドレス"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:451
+#: includes/class-cntctfrm-settings.php:489
 msgid "Select a username"
 msgstr "ユーザー名を選択"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:464
+#: includes/class-cntctfrm-settings.php:508
 msgid ""
-"Select a username of the person who should get the messages from the "
-"contact form."
-msgstr "連絡先フォームからメッセージを受信するユーザーのユーザー名を選択します。"
+"Select a username of the person who should get the messages from the contact "
+"form."
+msgstr ""
+"連絡先フォームからメッセージを受信するユーザーのユーザー名を選択します。"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:469
+#: includes/class-cntctfrm-settings.php:513
 msgid "Use this email address"
 msgstr "このメールアドレスを使用してください"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:474
-msgid "Enter multiple email addresses separated by comma for receiving messages."
-msgstr "メッセージを受信するための複数の電子メール アドレスをカンマで区切って入力します。"
+#: includes/class-cntctfrm-settings.php:518
+msgid ""
+"Enter multiple email addresses separated by comma for receiving messages."
+msgstr ""
+"メッセージを受信するための複数の電子メール アドレスをカンマで区切って入力しま"
+"す。"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:487
+#: includes/class-cntctfrm-settings.php:530
 msgid "Add department selectbox to the contact form"
 msgstr "お問い合わせフォームに部門セレクトボックスを追加"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:501
+#: includes/class-cntctfrm-settings.php:543
 msgid "Save emails to the database"
 msgstr "メールをデータベースに保存する"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:512
-#: includes/class-cntctfrm-settings.php:526
-#: includes/class-cntctfrm-settings.php:533
+#: includes/class-cntctfrm-settings.php:556
+#: includes/class-cntctfrm-settings.php:576
+#: includes/class-cntctfrm-settings.php:585
 msgid "Using"
 msgstr "使用する"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:518
-#: includes/class-cntctfrm-settings.php:1034
-#: includes/class-cntctfrm-settings.php:1075
-#: includes/class-cntctfrm-settings.php:1110
+#: includes/class-cntctfrm-settings.php:562
+#: includes/class-cntctfrm-settings.php:1087
+#: includes/class-cntctfrm-settings.php:1142
+#: includes/class-cntctfrm-settings.php:1187
 msgid "Please activate the appropriate option on"
 msgstr "で適切なオプションを有効にしてください"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:521
-#: includes/class-cntctfrm-settings.php:1037
-#: includes/class-cntctfrm-settings.php:1078
-#: includes/class-cntctfrm-settings.php:1113
+#: includes/class-cntctfrm-settings.php:567
+#: includes/class-cntctfrm-settings.php:1092
+#: includes/class-cntctfrm-settings.php:1147
+#: includes/class-cntctfrm-settings.php:1192
 msgid "settings page"
 msgstr "設定ページ"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:534
-#: includes/class-cntctfrm-settings.php:1053
-#: includes/class-cntctfrm-settings.php:1092
-#: includes/class-cntctfrm-settings.php:1125
+#: includes/class-cntctfrm-settings.php:577
+#: includes/class-cntctfrm-settings.php:1104
+#: includes/class-cntctfrm-settings.php:1159
+#: includes/class-cntctfrm-settings.php:1203
+msgid "Activate"
+msgstr "活性化"
+
+# automatic translation
+#: includes/class-cntctfrm-settings.php:586
+#: includes/class-cntctfrm-settings.php:1116
+#: includes/class-cntctfrm-settings.php:1167
+#: includes/class-cntctfrm-settings.php:1210
 msgid "Download"
 msgstr "ダウンロード"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:555
+#: includes/class-cntctfrm-settings.php:613
 msgid "Sending method"
 msgstr "送付方法"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:560
+#: includes/class-cntctfrm-settings.php:618
 msgid "Wp-mail"
 msgstr "WPメール"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:561
-msgid "You can use the Wordpress wp_mail function for mailing"
-msgstr "ワードプレスのwp_mail機能を使ってメール送信できます"
+#: includes/class-cntctfrm-settings.php:619
+msgid "You can use the WordPress wp_mail function for mailing"
+msgstr "WordPressのwp_mail関数を使用することができます。"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:566
+#: includes/class-cntctfrm-settings.php:624
 msgid "Mail"
 msgstr "郵便"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:567
+#: includes/class-cntctfrm-settings.php:625
 msgid "You can use the PHP mail function for mailing"
 msgstr "PHP のメール機能を使ってメールを送信できます"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:573
+#: includes/class-cntctfrm-settings.php:631
 msgid "'FROM' field"
-msgstr "「FROM」フィールド"
+msgstr "'FROM' フィールド"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:589
+#: includes/class-cntctfrm-settings.php:647
 msgid "User name"
 msgstr "ユーザー名"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:591
-msgid "The name of the user who fills the form will be used in the field 'From'."
-msgstr "フォームに入力するユーザーの名前は、[差出人] フィールドで使用されます。"
+#: includes/class-cntctfrm-settings.php:649
+msgid ""
+"The name of the user who fills the form will be used in the field 'From'."
+msgstr ""
+"フォームに入力するユーザーの名前は、[差出人] フィールドで使用されます。"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:613
+#: includes/class-cntctfrm-settings.php:671
 msgid "User email"
 msgstr "ユーザーの電子メール"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:615
+#: includes/class-cntctfrm-settings.php:673
 msgid ""
 "The email address of the user who fills the form will be used in the field "
 "'From'."
-msgstr "フォームに入力するユーザーの電子メール アドレスは、[差出人] フィールドで使用されます。"
+msgstr ""
+"フォームに入力するユーザーの電子メール アドレスは、[差出人] フィールドで使用"
+"されます。"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:624
+#: includes/class-cntctfrm-settings.php:682
 msgid ""
-"If this option is changed, email messages may be moved to the spam folder "
-"or email delivery failures may occur."
-msgstr "このオプションを変更すると、電子メール メッセージが迷惑メール フォルダに移動されたり、電子メールの配信エラーが発生したりする可能性があります。"
+"If this option is changed, email messages may be moved to the spam folder or "
+"email delivery failures may occur."
+msgstr ""
+"このオプションを変更すると、電子メール メッセージが迷惑メール フォルダに移動"
+"されたり、電子メールの配信エラーが発生したりする可能性があります。"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:633
+#: includes/class-cntctfrm-settings.php:691
 msgid "Required symbol"
 msgstr "必須記号"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:643
+#: includes/class-cntctfrm-settings.php:701
 msgid "Fields"
 msgstr "田畑"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:644
-#: includes/class-cntctfrm-settings.php:663
-#: includes/class-cntctfrm-settings.php:679
-#: includes/class-cntctfrm-settings.php:710
-#: includes/class-cntctfrm-settings.php:731
-#: includes/class-cntctfrm-settings.php:753
-#: includes/class-cntctfrm-settings.php:779
-#: includes/class-cntctfrm-settings.php:804
-#: includes/class-cntctfrm-settings.php:842
-#: includes/class-cntctfrm-settings.php:882
-#: includes/class-cntctfrm-settings.php:939
+#: includes/class-cntctfrm-settings.php:702
+#: includes/class-cntctfrm-settings.php:721
+#: includes/class-cntctfrm-settings.php:737
+#: includes/class-cntctfrm-settings.php:768
+#: includes/class-cntctfrm-settings.php:789
+#: includes/class-cntctfrm-settings.php:811
+#: includes/class-cntctfrm-settings.php:837
+#: includes/class-cntctfrm-settings.php:862
+#: includes/class-cntctfrm-settings.php:900
+#: includes/class-cntctfrm-settings.php:940
+#: includes/class-cntctfrm-settings.php:992
 msgid "Used"
 msgstr "使用済み"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:645
-#: includes/class-cntctfrm-settings.php:667
-#: includes/class-cntctfrm-settings.php:683
-#: includes/class-cntctfrm-settings.php:714
-#: includes/class-cntctfrm-settings.php:735
-#: includes/class-cntctfrm-settings.php:757
-#: includes/class-cntctfrm-settings.php:783
-#: includes/class-cntctfrm-settings.php:813
-#: includes/class-cntctfrm-settings.php:851
-#: includes/class-cntctfrm-settings.php:940
+#: includes/class-cntctfrm-settings.php:703
+#: includes/class-cntctfrm-settings.php:725
+#: includes/class-cntctfrm-settings.php:741
+#: includes/class-cntctfrm-settings.php:772
+#: includes/class-cntctfrm-settings.php:793
+#: includes/class-cntctfrm-settings.php:815
+#: includes/class-cntctfrm-settings.php:841
+#: includes/class-cntctfrm-settings.php:871
+#: includes/class-cntctfrm-settings.php:909
+#: includes/class-cntctfrm-settings.php:993
 msgid "Required"
 msgstr "必要"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:648
-#: includes/class-cntctfrm-settings.php:689
-#: includes/class-cntctfrm-settings.php:761
-#: includes/class-cntctfrm-settings.php:820
-#: includes/class-cntctfrm-settings.php:857
-#: includes/class-cntctfrm-settings.php:941
+#: includes/class-cntctfrm-settings.php:706
+#: includes/class-cntctfrm-settings.php:747
+#: includes/class-cntctfrm-settings.php:819
+#: includes/class-cntctfrm-settings.php:878
+#: includes/class-cntctfrm-settings.php:915
+#: includes/class-cntctfrm-settings.php:994
 msgid "Visible"
 msgstr "見える"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:649
-#: includes/class-cntctfrm-settings.php:693
-#: includes/class-cntctfrm-settings.php:765
-#: includes/class-cntctfrm-settings.php:824
-#: includes/class-cntctfrm-settings.php:861
-#: includes/class-cntctfrm-settings.php:942
+#: includes/class-cntctfrm-settings.php:707
+#: includes/class-cntctfrm-settings.php:751
+#: includes/class-cntctfrm-settings.php:823
+#: includes/class-cntctfrm-settings.php:882
+#: includes/class-cntctfrm-settings.php:919
+#: includes/class-cntctfrm-settings.php:995
 msgid "Disabled for editing"
 msgstr "編集不可"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:650
-#: includes/class-cntctfrm-settings.php:720
-#: includes/class-cntctfrm-settings.php:828
-#: includes/class-cntctfrm-settings.php:865
+#: includes/class-cntctfrm-settings.php:708
+#: includes/class-cntctfrm-settings.php:778
+#: includes/class-cntctfrm-settings.php:886
+#: includes/class-cntctfrm-settings.php:923
 msgid "Field's default value"
 msgstr "フィールドのデフォルト値"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:660
+#: includes/class-cntctfrm-settings.php:718
 msgid "Department selectbox"
 msgstr "部門セレクトボックス"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:697
+#: includes/class-cntctfrm-settings.php:755
 msgid "Use User's name as a default value if the user is logged in."
-msgstr "ユーザーがログインしている場合は、ユーザー名をデフォルト値として使用します。"
+msgstr ""
+"ユーザーがログインしている場合は、ユーザー名をデフォルト値として使用します。"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:698
-#: includes/class-cntctfrm-settings.php:770
+#: includes/class-cntctfrm-settings.php:756
+#: includes/class-cntctfrm-settings.php:828
 msgid ""
-"'Visible' and 'Disabled for editing' options will be applied only to "
-"logged-in users."
-msgstr "「表示」オプションと「編集不可」オプションは、ログインしているユーザーにのみ適用されます。"
+"'Visible' and 'Disabled for editing' options will be applied only to logged-"
+"in users."
+msgstr ""
+"「表示」オプションと「編集不可」オプションは、ログインしているユーザーにのみ"
+"適用されます。"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:707
+#: includes/class-cntctfrm-settings.php:765
 msgid "Location selectbox"
 msgstr "ロケーションセレクトボックス"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:769
+#: includes/class-cntctfrm-settings.php:827
 msgid "Use User's email as a default value if the user is logged in."
-msgstr "ユーザーがログインしている場合は、ユーザーの電子メールをデフォルト値として使用します。"
+msgstr ""
+"ユーザーがログインしている場合は、ユーザーの電子メールをデフォルト値として使"
+"用します。"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:791
+#: includes/class-cntctfrm-settings.php:849
 #, php-format
 msgid ""
 "Specify a mask which will be used for the phone validation, where * is a "
 "number. Use only the following symbols: %s"
-msgstr "電話の検証に使用されるマスクを指定します。ここで、* は数字です。次の記号のみを使用してください: %s"
+msgstr ""
+"電話の検証に使用されるマスクを指定します。ここで、* は数字です。次の記号のみ"
+"を使用してください: %s"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:875
+#: includes/class-cntctfrm-settings.php:933
 msgid "Attachment block"
 msgstr "アタッチメントブロック"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:877
+#: includes/class-cntctfrm-settings.php:935
 msgid "Users can attach the following file formats"
 msgstr "ユーザーは次のファイル形式を添付できます"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:900
+#: includes/class-cntctfrm-settings.php:958
 msgid "Multi-attachment"
 msgstr "マルチアタッチメント"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:902
+#: includes/class-cntctfrm-settings.php:960
 msgid "Enable to multiple file selection"
 msgstr "複数のファイル選択を有効にする"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:937
+#: includes/class-cntctfrm-settings.php:990
 msgid "Title"
 msgstr "タイトル"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:938
+#: includes/class-cntctfrm-settings.php:991
 msgid "Field Type"
 msgstr "フィールドタイプ"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:943
+#: includes/class-cntctfrm-settings.php:996
 msgid "Field's default/available value"
 msgstr "フィールドのデフォルト/利用可能な値"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:969
+#: includes/class-cntctfrm-settings.php:1021
 msgid "Create Field"
 msgstr "フィールドを作成"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:974
+#: includes/class-cntctfrm-settings.php:1026
 msgid "Google Analytics Measurement ID"
 msgstr "Google アナリティクス測定 ID"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:979
+#: includes/class-cntctfrm-settings.php:1031
 #, php-format
 msgid ""
-"Enter your %sMeasurement ID%s to track contact form submissions in Google "
-"Analytics."
-msgstr "%s測定 ID%s を入力して、Google アナリティクスでコンタクト フォームの送信を追跡します。"
+"Enter your %1$sMeasurement ID%2$s to track contact form submissions in "
+"Google Analytics."
+msgstr ""
+"%1$s測定ID%2$sを入力して、Googleアナリティクスでコンタクトフォームの送信をト"
+"ラッキングします。"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:980
+#: includes/class-cntctfrm-settings.php:1032
 msgid "Google Analytics version 4 is required."
 msgstr "Google アナリティクス バージョン 4 が必要です。"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:994
+#: includes/class-cntctfrm-settings.php:1045
 msgid "Add to the form"
 msgstr "フォームに追加"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:999
+#: includes/class-cntctfrm-settings.php:1050
 msgid "Tips below the Attachment"
 msgstr "添付ファイルの下のヒント"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1006
+#: includes/class-cntctfrm-settings.php:1057
 msgid "'Send me a copy' block"
 msgstr "「コピーを送ってください」ブロック"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1013
+#: includes/class-cntctfrm-settings.php:1064
 msgid "GDPR Compliance"
 msgstr "GDPR コンプライアンス"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1018
+#: includes/class-cntctfrm-settings.php:1069
 msgid "Link to Privacy Policy Page"
 msgstr "プライバシー ポリシー ページへのリンク"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1046
+#: includes/class-cntctfrm-settings.php:1106
 msgid "Activate for network"
 msgstr "ネットワークの有効化"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1137
+#: includes/class-cntctfrm-settings.php:1222
 msgid "Agreement checkbox"
 msgstr "同意チェックボックス"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1137
+#: includes/class-cntctfrm-settings.php:1222
 msgid "Required checkbox for submitting the form"
 msgstr "フォームを送信するための必須チェックボックス"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1138
+#: includes/class-cntctfrm-settings.php:1223
 msgid "Optional checkbox"
 msgstr "オプションのチェックボックス"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1138
+#: includes/class-cntctfrm-settings.php:1223
 msgid "Optional checkbox, the results of which will be displayed in email"
 msgstr "オプションのチェックボックス。結果は電子メールで表示されます"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1149
+#: includes/class-cntctfrm-settings.php:1234
 msgid "Delete an attachment file from the server after the email is sent"
 msgstr "電子メールの送信後に添付ファイルをサーバーから削除する"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1155
+#: includes/class-cntctfrm-settings.php:1240
 msgid "Email in HTML format sending"
-msgstr "HTML形式のメール送信"
+msgstr "HTML形式の電子メール送信"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1159
+#: includes/class-cntctfrm-settings.php:1244
+msgid "Limit for Message field"
+msgstr "メッセージ欄の制限"
+
+#: includes/class-cntctfrm-settings.php:1246
+msgid "Min / Max symbols in the message"
+msgstr "メッセージ内の最小/最大記号"
+
+#: includes/class-cntctfrm-settings.php:1248
+msgid "min"
+msgstr "分"
+
+#: includes/class-cntctfrm-settings.php:1249
+msgid "max"
+msgstr "最大"
+
+# automatic translation
+#: includes/class-cntctfrm-settings.php:1254
 msgid "Display additional info in the email"
 msgstr "メールに追加情報を表示する"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1166
+#: includes/class-cntctfrm-settings.php:1261
 msgid "Sent from (IP address)"
 msgstr "送信元（IPアドレス）"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1166
+#: includes/class-cntctfrm-settings.php:1261
 msgid "Example: Sent from (IP address): 127.0.0.1"
 msgstr "例：送信元（IPアドレス）：127.0.0.1"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1167
+#: includes/class-cntctfrm-settings.php:1262
 msgid "Example: Date/Time: August 19, 2013 8:50 pm"
 msgstr "例: 日時: 2013 年 8 月 19 日午後 8 時 50 分"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1168
-msgid "Example: Sent from (referer):   https://bestwebsoft.com/contacts/contact-us/"
+#: includes/class-cntctfrm-settings.php:1263
+msgid ""
+"Example: Sent from (referer):   https://bestwebsoft.com/contacts/contact-us/"
 msgstr "例: 送信元 (リファラー): https://bestwebsoft.com/contacts/contact-us/"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1169
+#: includes/class-cntctfrm-settings.php:1264
 msgid ""
 "Example: Using (user agent): Mozilla/5.0 (Windows NT 6.2; WOW64) "
 "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36"
 msgstr ""
-"例: 使用 (ユーザー エージェント): Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 "
-"(Gecko のような KHTML) Chrome/28.0.1500.95 Safari/537.36"
+"例: 使用 (ユーザー エージェント): Mozilla/5.0 (Windows NT 6.2; WOW64) "
+"AppleWebKit/537.36 (Gecko のような KHTML) Chrome/28.0.1500.95 Safari/537.36"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1175
+#: includes/class-cntctfrm-settings.php:1270
 msgid "Language Settings"
 msgstr "言語設定"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1185
+#: includes/class-cntctfrm-settings.php:1283
 msgid "Add a language"
 msgstr "言語を追加"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1189
+#: includes/class-cntctfrm-settings.php:1287
 msgid "Change the names of the contact form fields and error messages"
 msgstr "コンタクト フォーム フィールドの名前とエラー メッセージを変更する"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1195
-#: includes/class-cntctfrm-settings.php:1297
-#: includes/class-cntctfrm-settings.php:1401
+#: includes/class-cntctfrm-settings.php:1293
+#: includes/class-cntctfrm-settings.php:1404
+#: includes/class-cntctfrm-settings.php:1523
 msgid "Default"
 msgstr "デフォルト"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1208
-#: includes/class-cntctfrm-settings.php:1248
+#: includes/class-cntctfrm-settings.php:1308
+#: includes/class-cntctfrm-settings.php:1352
 msgid "click to expand/hide the list"
 msgstr "クリックしてリストを展開/非表示にします"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1217
-#: includes/class-cntctfrm-settings.php:1257
+#: includes/class-cntctfrm-settings.php:1317
+#: includes/class-cntctfrm-settings.php:1361
 msgid "Tips below the Attachment block"
 msgstr "添付ブロックの下のヒント"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1222
-#: includes/class-cntctfrm-settings.php:1262
+#: includes/class-cntctfrm-settings.php:1322
+#: includes/class-cntctfrm-settings.php:1366
 msgid "Error message for the Name field"
 msgstr "名前フィールドのエラー メッセージ"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1223
-#: includes/class-cntctfrm-settings.php:1263
+#: includes/class-cntctfrm-settings.php:1323
+#: includes/class-cntctfrm-settings.php:1367
 msgid "Error message for the Address field"
 msgstr "Address フィールドのエラー メッセージ"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1224
-#: includes/class-cntctfrm-settings.php:1264
+#: includes/class-cntctfrm-settings.php:1324
+#: includes/class-cntctfrm-settings.php:1368
 msgid "Error message for the Email field"
 msgstr "電子メール フィールドのエラー メッセージ"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1225
-#: includes/class-cntctfrm-settings.php:1265
+#: includes/class-cntctfrm-settings.php:1325
+#: includes/class-cntctfrm-settings.php:1369
 msgid "Error message for the Phone field"
 msgstr "電話フィールドのエラー メッセージ"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1226
-#: includes/class-cntctfrm-settings.php:1266
+#: includes/class-cntctfrm-settings.php:1326
+#: includes/class-cntctfrm-settings.php:1370
 msgid "Error message for the Subject field"
 msgstr "件名フィールドのエラー メッセージ"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1227
-#: includes/class-cntctfrm-settings.php:1267
+#: includes/class-cntctfrm-settings.php:1327
+#: includes/class-cntctfrm-settings.php:1371
 msgid "Error message for the Message field"
 msgstr "メッセージ フィールドのエラー メッセージ"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1228
-#: includes/class-cntctfrm-settings.php:1268
+#: includes/class-cntctfrm-settings.php:1328
+#: includes/class-cntctfrm-settings.php:1372
+msgid "Error message for Limit for the Message field"
+msgstr "メッセージフィールドの制限に関するエラーメッセージ"
+
+# automatic translation
+#: includes/class-cntctfrm-settings.php:1329
+#: includes/class-cntctfrm-settings.php:1373
 msgid "Error message about the file type for the Attachment field"
 msgstr "添付ファイル フィールドのファイル タイプに関するエラー メッセージ"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1229
-#: includes/class-cntctfrm-settings.php:1269
-msgid "Error message while uploading a file for the Attachment field to the server"
-msgstr "添付ファイル フィールドのファイルをサーバーにアップロードする際のエラー メッセージ"
+#: includes/class-cntctfrm-settings.php:1330
+#: includes/class-cntctfrm-settings.php:1374
+msgid ""
+"Error message while uploading a file for the Attachment field to the server"
+msgstr ""
+"添付ファイル フィールドのファイルをサーバーにアップロードする際のエラー メッ"
+"セージ"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1230
-#: includes/class-cntctfrm-settings.php:1270
+#: includes/class-cntctfrm-settings.php:1331
+#: includes/class-cntctfrm-settings.php:1375
 msgid "Error message while moving the file for the Attachment field"
 msgstr "添付ファイル フィールドのファイルを移動中のエラー メッセージ"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1231
-#: includes/class-cntctfrm-settings.php:1271
+#: includes/class-cntctfrm-settings.php:1332
+#: includes/class-cntctfrm-settings.php:1376
 msgid "Error message when file size limit for the Attachment field is exceeded"
-msgstr "添付ファイル フィールドのファイル サイズ制限を超えた場合のエラー メッセージ"
+msgstr ""
+"添付ファイル フィールドのファイル サイズ制限を超えた場合のエラー メッセージ"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1232
-#: includes/class-cntctfrm-settings.php:1272
+#: includes/class-cntctfrm-settings.php:1333
+#: includes/class-cntctfrm-settings.php:1377
 msgid "Error message for the Captcha field"
 msgstr "Captcha フィールドのエラー メッセージ"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1233
-#: includes/class-cntctfrm-settings.php:1273
+#: includes/class-cntctfrm-settings.php:1334
+#: includes/class-cntctfrm-settings.php:1378
 msgid "Error message for the whole form"
 msgstr "フォーム全体のエラー メッセージ"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1287
+#: includes/class-cntctfrm-settings.php:1394
 msgid "Use the changed names of the contact form fields in the email"
 msgstr "メールの連絡先フォーム フィールドの変更された名前を使用する"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1293
+#: includes/class-cntctfrm-settings.php:1400
 msgid "Action after email is sent"
 msgstr "メール送信後のアクション"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1295
+#: includes/class-cntctfrm-settings.php:1402
 msgid "Display text"
 msgstr "表示テキスト"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1310
-#: includes/class-cntctfrm-settings.php:1324
+#: includes/class-cntctfrm-settings.php:1419
+#: includes/class-cntctfrm-settings.php:1436
 msgid "Text"
 msgstr "文章"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1336
+#: includes/class-cntctfrm-settings.php:1450
 msgid "Redirect to the page"
 msgstr "ページにリダイレクト"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1338
+#: includes/class-cntctfrm-settings.php:1452
 msgid "Url"
 msgstr "URL"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1355
+#: includes/class-cntctfrm-settings.php:1475
 #, php-format
 msgid ""
-"Please enable JavaScript to change '%s', '%s', '%s', '%s' options and for "
-"fields sorting."
-msgstr "'%s'、'%s'、'%s'、'%s' オプションを変更し、フィールドの並べ替えを行うには、JavaScript を有効にしてください。"
+"Please enable JavaScript to change '%1$s', '%2$s', '%3$s', '%4$s' options "
+"and for fields sorting."
+msgstr ""
+"'%1$s', '%2$s', '%3$s', '%4$s' オプションとフィールドのソートを変更するには、"
+"JavaScriptを有効にしてください。"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1356
-#: includes/class-cntctfrm-settings.php:1373
+#: includes/class-cntctfrm-settings.php:1476
+#: includes/class-cntctfrm-settings.php:1495
 msgid "Form layout"
 msgstr "フォームのレイアウト"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1357
-#: includes/class-cntctfrm-settings.php:1441
+#: includes/class-cntctfrm-settings.php:1477
+#: includes/class-cntctfrm-settings.php:1563
 msgid "Labels position"
 msgstr "ラベルの位置"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1358
-#: includes/class-cntctfrm-settings.php:1459
+#: includes/class-cntctfrm-settings.php:1478
+#: includes/class-cntctfrm-settings.php:1581
 msgid "Labels align"
 msgstr "ラベルを揃える"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1359
-#: includes/class-cntctfrm-settings.php:1385
+#: includes/class-cntctfrm-settings.php:1479
+#: includes/class-cntctfrm-settings.php:1507
 msgid "Submit position"
 msgstr "ポジションを送信"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1360
-#: includes/class-cntctfrm-settings.php:1490
+#: includes/class-cntctfrm-settings.php:1480
+#: includes/class-cntctfrm-settings.php:1612
 msgid "Add tooltips"
 msgstr "ツールチップを追加する"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1361
-#: includes/class-cntctfrm-settings.php:1531
+#: includes/class-cntctfrm-settings.php:1481
+#: includes/class-cntctfrm-settings.php:1653
 msgid "Style options"
 msgstr "スタイル オプション"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1377
+#: includes/class-cntctfrm-settings.php:1499
 msgid "One column"
-msgstr "1列"
+msgstr "1カラム"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1380
+#: includes/class-cntctfrm-settings.php:1502
 msgid "Two columns"
-msgstr "2列"
+msgstr "2カラム"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1389
-#: includes/class-cntctfrm-settings.php:1430
-#: includes/class-cntctfrm-settings.php:1448
-#: includes/class-cntctfrm-settings.php:1463
+#: includes/class-cntctfrm-settings.php:1511
+#: includes/class-cntctfrm-settings.php:1552
+#: includes/class-cntctfrm-settings.php:1570
+#: includes/class-cntctfrm-settings.php:1585
 msgid "Left"
 msgstr "左"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1392
-#: includes/class-cntctfrm-settings.php:1436
-#: includes/class-cntctfrm-settings.php:1451
-#: includes/class-cntctfrm-settings.php:1469
+#: includes/class-cntctfrm-settings.php:1514
+#: includes/class-cntctfrm-settings.php:1558
+#: includes/class-cntctfrm-settings.php:1573
+#: includes/class-cntctfrm-settings.php:1591
 msgid "Right"
 msgstr "右"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1397
+#: includes/class-cntctfrm-settings.php:1519
 msgid "Width"
 msgstr "幅"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1405
+#: includes/class-cntctfrm-settings.php:1527
 msgid "Custom"
 msgstr "カスタム"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1412
+#: includes/class-cntctfrm-settings.php:1534
 msgid "px"
 msgstr "ピクセル"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1426
+#: includes/class-cntctfrm-settings.php:1548
 msgid "Form align"
 msgstr "フォーム整列"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1433
-#: includes/class-cntctfrm-settings.php:1466
+#: includes/class-cntctfrm-settings.php:1555
+#: includes/class-cntctfrm-settings.php:1588
 msgid "Center"
 msgstr "中心"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1445
+#: includes/class-cntctfrm-settings.php:1567
 msgid "Top"
 msgstr "上"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1454
+#: includes/class-cntctfrm-settings.php:1576
 msgid "Bottom"
 msgstr "下"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1474
+#: includes/class-cntctfrm-settings.php:1596
 msgid "Errors output"
 msgstr "エラー出力"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1477
+#: includes/class-cntctfrm-settings.php:1599
 msgid "Display error messages"
 msgstr "エラーメッセージを表示する"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1478
+#: includes/class-cntctfrm-settings.php:1600
 msgid "Color of the input field errors."
 msgstr "入力フィールド エラーの色。"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1479
+#: includes/class-cntctfrm-settings.php:1601
 msgid "Display error messages & color of the input field errors"
 msgstr "エラー メッセージと入力フィールド エラーの色を表示する"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1484
+#: includes/class-cntctfrm-settings.php:1606
 msgid "Add placeholder to the input blocks"
 msgstr "入力ブロックにプレースホルダーを追加する"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1504
+#: includes/class-cntctfrm-settings.php:1626
 msgid "Email address"
 msgstr "電子メールアドレス"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1535
+#: includes/class-cntctfrm-settings.php:1657
 msgid "Text color"
 msgstr "テキストの色"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1540
-#: includes/class-cntctfrm-settings.php:1549
-#: includes/class-cntctfrm-settings.php:1562
-#: includes/class-cntctfrm-settings.php:1570
-#: includes/class-cntctfrm-settings.php:1578
-#: includes/class-cntctfrm-settings.php:1586
-#: includes/class-cntctfrm-settings.php:1599
-#: includes/class-cntctfrm-settings.php:1607
-#: includes/class-cntctfrm-settings.php:1619
-#: includes/class-cntctfrm-settings.php:1636
-#: includes/class-cntctfrm-settings.php:1644
-#: includes/class-cntctfrm-settings.php:1652
+#: includes/class-cntctfrm-settings.php:1662
+#: includes/class-cntctfrm-settings.php:1671
+#: includes/class-cntctfrm-settings.php:1684
+#: includes/class-cntctfrm-settings.php:1692
+#: includes/class-cntctfrm-settings.php:1700
+#: includes/class-cntctfrm-settings.php:1708
+#: includes/class-cntctfrm-settings.php:1721
+#: includes/class-cntctfrm-settings.php:1729
+#: includes/class-cntctfrm-settings.php:1741
+#: includes/class-cntctfrm-settings.php:1758
+#: includes/class-cntctfrm-settings.php:1766
+#: includes/class-cntctfrm-settings.php:1774
 msgid "Select Color"
 msgstr "色を選択"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1543
+#: includes/class-cntctfrm-settings.php:1665
 msgid "Label text color"
 msgstr "ラベルのテキストの色"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1552
+#: includes/class-cntctfrm-settings.php:1674
 msgid "Placeholder color"
 msgstr "プレースホルダーの色"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1557
+#: includes/class-cntctfrm-settings.php:1679
 msgid "Errors color"
 msgstr "エラーの色"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1565
+#: includes/class-cntctfrm-settings.php:1687
 msgid "Error text color"
 msgstr "エラーテキストの色"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1573
+#: includes/class-cntctfrm-settings.php:1695
 msgid "Background color of the input field errors"
 msgstr "入力フィールド エラーの背景色"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1581
+#: includes/class-cntctfrm-settings.php:1703
 msgid "Border color of the input field errors"
 msgstr "入力欄の枠の色エラー"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1589
+#: includes/class-cntctfrm-settings.php:1711
 msgid "Placeholder color of the input field errors"
 msgstr "入力フィールド エラーのプレースホルダーの色"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1594
+#: includes/class-cntctfrm-settings.php:1716
 msgid "Input fields"
 msgstr "入力フィールド"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1602
+#: includes/class-cntctfrm-settings.php:1724
 msgid "Input fields background color"
 msgstr "入力フィールドの背景色"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1610
+#: includes/class-cntctfrm-settings.php:1732
 msgid "Text fields color"
 msgstr "テキスト フィールドの色"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1614
+#: includes/class-cntctfrm-settings.php:1736
 msgid "Border width in px, numbers only"
 msgstr "境界線の幅 (px)、数字のみ"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1622
-#: includes/class-cntctfrm-settings.php:1655
+#: includes/class-cntctfrm-settings.php:1744
+#: includes/class-cntctfrm-settings.php:1777
 msgid "Border color"
 msgstr "ボーダの色"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1627
+#: includes/class-cntctfrm-settings.php:1749
 msgid "Submit button"
 msgstr "送信ボタン"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1631
+#: includes/class-cntctfrm-settings.php:1753
 msgid "Width in px, numbers only"
 msgstr "幅 (px)、数字のみ"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1639
+#: includes/class-cntctfrm-settings.php:1761
 msgid "Button color"
 msgstr "ボタンの色"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1647
+#: includes/class-cntctfrm-settings.php:1769
 msgid "Button text color"
 msgstr "ボタンのテキストの色"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1667
+#: includes/class-cntctfrm-settings.php:1789
 msgid "Contact Form | Preview"
 msgstr "お問い合わせフォーム |プレビュー"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1668
+#: includes/class-cntctfrm-settings.php:1790
 msgid "Drag the necessary field to sort fields."
 msgstr "必要なフィールドをドラッグして、フィールドを並べ替えます。"
 
+#: includes/class-cntctfrm-settings.php:1948
+#, php-format
+msgid "between %1$d, and %2$d characters"
+msgstr "%1$dから%2$d文字の間"
+
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1915
+#: includes/class-cntctfrm-settings.php:2144
 msgid "Contact Form Shortcode"
 msgstr "お問い合わせフォームのショートコード"
 
 # automatic translation
-#: includes/class-cntctfrm-settings.php:1918
+#: includes/class-cntctfrm-settings.php:2148
 msgid "Add Contact Form  to your page or post using the following shortcode:"
-msgstr "次のショートコードを使用して、お問い合わせフォームをページまたは投稿に追加します。"
+msgstr ""
+"以下のショートコードを使って、あなたのページや投稿にコンタクトフォームを追加"
+"してください："
 
 # automatic translation
 #. Plugin Name of the plugin/theme
@@ -3044,3 +1406,1556 @@ msgstr "ベストウェブソフト"
 #. Author URI of the plugin/theme
 msgid "https://bestwebsoft.com/"
 msgstr "https://bestwebsoft.com/"
+
+# automatic translation
+#~ msgid "requires"
+#~ msgstr "必要"
+
+# automatic translation
+#~ msgid ""
+#~ "or higher, that is why it has been deactivated! Please upgrade WordPress "
+#~ "and try again."
+#~ msgstr ""
+#~ "それ以上の場合、それが非アクティブ化された理由です! WordPress をアップグ"
+#~ "レードしてから、もう一度お試しください。"
+
+# automatic translation
+#~ msgid "Back to the WordPress"
+#~ msgstr "ワードプレスに戻る"
+
+# automatic translation
+#~ msgid "Plugins page"
+#~ msgstr "プラグインページ"
+
+# automatic translation
+#~ msgid "Like the plugin?"
+#~ msgstr "プラグインが好きですか？"
+
+# automatic translation
+#, php-format
+#~ msgid "%s reviews"
+#~ msgstr "%s 件のレビュー"
+
+# automatic translation
+#~ msgid "Rate it"
+#~ msgstr "それを評価"
+
+# automatic translation
+#~ msgid "Need help?"
+#~ msgstr "助けが必要？"
+
+# automatic translation
+#~ msgid "Visit Help Center"
+#~ msgstr "ヘルプセンターにアクセス"
+
+# automatic translation
+#~ msgid "Want to support the plugin?"
+#~ msgstr "プラグインをサポートしたいですか？"
+
+# automatic translation
+#~ msgid "Donate"
+#~ msgstr "寄付"
+
+# automatic translation
+#~ msgid "WARNING: Illegal use notification"
+#~ msgstr "警告: 不正使用の通知"
+
+# automatic translation
+#~ msgid ""
+#~ "You can use one license of the Pro plugin for one domain only. Please "
+#~ "check and edit your license or domain if necessary using your personal "
+#~ "Client Area. We strongly recommend you to solve the problem within 24 "
+#~ "hours, otherwise the Pro plugin will be deactivated."
+#~ msgstr ""
+#~ "Pro プラグインの 1 つのライセンスは、1 つのドメインに対してのみ使用できま"
+#~ "す。必要に応じて、個人のクライアント エリアを使用して、ライセンスまたはド"
+#~ "メインを確認して編集してください。 24 時間以内に問題を解決することを強くお"
+#~ "勧めします。そうしないと、Pro プラグインが無効になります。"
+
+# automatic translation
+#~ msgid ""
+#~ "Notice: Your Pro Trial license has expired. To continue using the plugin, "
+#~ "you should buy a Pro license"
+#~ msgstr ""
+#~ "注意: Pro トライアル ライセンスの有効期限が切れています。プラグインを引き"
+#~ "続き使用するには、Pro ライセンスを購入する必要があります"
+
+# automatic translation
+#~ msgid ""
+#~ "Your license has expired. To continue getting top-priority support and "
+#~ "plugin updates, you should extend it."
+#~ msgstr ""
+#~ "ライセンスの有効期限が切れています。最優先のサポートとプラグインの更新を引"
+#~ "き続き取得するには、延長する必要があります。"
+
+# automatic translation
+#, php-format
+#~ msgid "Notice: You are using the Pro Trial license of %s plugin."
+#~ msgstr "注意: %s プラグインのプロ トライアル ライセンスを使用しています。"
+
+# automatic translation
+#~ msgid "Notice: You are using the Pro Trial license of plugin."
+#~ msgstr "注意: プラグインのプロ トライアル ライセンスを使用しています。"
+
+# automatic translation
+#~ msgid "The Pro Trial license will expire on"
+#~ msgstr "プロ トライアル ライセンスの有効期限は次のとおりです。"
+
+# automatic translation
+#~ msgid "It’s time to upgrade your"
+#~ msgstr "アップグレードする時が来ました"
+
+# automatic translation
+#~ msgid "to"
+#~ msgstr "に"
+
+# automatic translation
+#~ msgid "version!"
+#~ msgstr "バージョン！"
+
+# automatic translation
+#~ msgid "Extend standard plugin functionality with new great options."
+#~ msgstr "新しい優れたオプションで標準のプラグイン機能を拡張します。"
+
+# automatic translation
+#, php-format
+#~ msgid ""
+#~ "Your license key for %1$s expires on %2$s and you won't be granted TOP-"
+#~ "PRIORITY SUPPORT or UPDATES."
+#~ msgstr ""
+#~ "%1$s のライセンス キーは %2$s に期限切れになり、最優先のサポートまたは更新"
+#~ "は許可されません。"
+
+# automatic translation
+#~ msgid ""
+#~ "or higher! We do not guarantee that our plugin will work correctly. "
+#~ "Please upgrade to WordPress latest version."
+#~ msgstr ""
+#~ "以上！プラグインが正しく動作することを保証するものではありません。 "
+#~ "WordPress の最新バージョンにアップグレードしてください。"
+
+# automatic translation
+#, php-format
+#~ msgid "Thank you for installing %s plugin!"
+#~ msgstr "%s プラグインをインストールしていただきありがとうございます!"
+
+# automatic translation
+#~ msgid "Let's get started"
+#~ msgstr "始めましょう"
+
+# automatic translation
+#~ msgid "or"
+#~ msgstr "また"
+
+# automatic translation
+#~ msgid "Add New"
+#~ msgstr "新しく追加する"
+
+# automatic translation
+#~ msgid "Thank you for installing plugins by BestWebSoft!"
+#~ msgstr ""
+#~ "BestWebSoft のプラグインをインストールしていただきありがとうございます。"
+
+# automatic translation
+#~ msgid "More Details"
+#~ msgstr "詳細"
+
+# automatic translation
+#~ msgid "Less Details"
+#~ msgstr "詳細を非表示"
+
+# automatic translation
+#~ msgid "Deprecated function(-s) is used on the site here:"
+#~ msgstr "非推奨の関数 (-s) は、次のサイトで使用されています。"
+
+# automatic translation
+#~ msgid ""
+#~ "This function(-s) will be removed over time. Please update the product(-"
+#~ "s)."
+#~ msgstr ""
+#~ "この機能 (-s) は、時間の経過とともに削除されます。製品を更新してください(-"
+#~ "s)。"
+
+# automatic translation
+#, php-format
+#~ msgid "Thank you for choosing %s plugin!"
+#~ msgstr "%s プラグインをお選びいただきありがとうございます!"
+
+# automatic translation
+#~ msgid ""
+#~ "If you have a feature, suggestion or idea you'd like to see in the "
+#~ "plugin, we'd love to hear about it!"
+#~ msgstr ""
+#~ "プラグインに追加してほしい機能、提案、またはアイデアがあれば、ぜひお知らせ"
+#~ "ください。"
+
+# automatic translation
+#~ msgid "Suggest a Feature"
+#~ msgstr "機能を提案する"
+
+# automatic translation
+#~ msgid "Affiliate Program"
+#~ msgstr "アフィリエイトプログラム"
+
+# automatic translation
+#, php-format
+#~ msgid "Get %s"
+#~ msgstr "取得"
+
+# automatic translation
+#~ msgid "from each BestWebSoft plugin and theme sale you refer"
+#~ msgstr "あなたが参照する各BestWebSoftプラグインとテーマの販売から"
+
+# automatic translation
+#~ msgid "Join affiliate program"
+#~ msgstr "アフィリエイト プログラムに参加する"
+
+# automatic translation
+#~ msgid "Promote and sell products"
+#~ msgstr "製品の宣伝と販売"
+
+# automatic translation
+#~ msgid "Get commission!"
+#~ msgstr "コミッションをゲット！"
+
+# automatic translation
+#~ msgid "Start Now"
+#~ msgstr "今すぐ開始"
+
+# automatic translation
+#~ msgid "Notice"
+#~ msgstr "知らせ"
+
+# automatic translation
+#~ msgid "The plugin's settings have been changed."
+#~ msgstr "プラグインの設定が変更されました。"
+
+# automatic translation
+#~ msgid "Save Changes"
+#~ msgstr "変更内容を保存"
+
+# automatic translation
+#~ msgid ""
+#~ "You can always look at premium options by checking the \"Pro Options\" in "
+#~ "the \"Misc\" tab."
+#~ msgstr ""
+#~ "「その他」タブの「プロ オプション」をチェックすると、いつでもプレミアム オ"
+#~ "プションを確認できます。"
+
+# automatic translation
+#~ msgid "Add BWS Shortcode"
+#~ msgstr "BWSショートコードを追加"
+
+# automatic translation
+#~ msgid "Add BWS Plugins Shortcode"
+#~ msgstr "BWS プラグイン ショートコードを追加する"
+
+# automatic translation
+#~ msgid "Add shortcode"
+#~ msgstr "ショートコードを追加"
+
+# automatic translation
+#~ msgid "Add BestWebSoft plugins' shortcodes using this button."
+#~ msgstr ""
+#~ "このボタンを使用して、BestWebSoft プラグインのショートコードを追加します。"
+
+# automatic translation
+#~ msgid "Are you sure you want to restore default settings?"
+#~ msgstr "デフォルト設定を復元してもよろしいですか?"
+
+# automatic translation
+#~ msgid "Yes, restore all settings"
+#~ msgstr "はい、すべての設定を復元します"
+
+# automatic translation
+#~ msgid "No, go back to the settings page"
+#~ msgstr "いいえ、設定ページに戻ります"
+
+# automatic translation
+#~ msgid "Plugin"
+#~ msgstr "プラグイン"
+
+# automatic translation
+#~ msgid "Shortcode settings"
+#~ msgstr "ショートコードの設定"
+
+# automatic translation
+#~ msgid "The shortcode will be inserted"
+#~ msgstr "ショートコードが挿入されます"
+
+# automatic translation
+#~ msgid "For more information:"
+#~ msgstr "詳細については："
+
+# automatic translation
+#~ msgid "Documentation"
+#~ msgstr "ドキュメンテーション"
+
+# automatic translation
+#~ msgid "Video Instructions"
+#~ msgstr "ビデオの説明"
+
+# automatic translation
+#~ msgid "Submit a Request"
+#~ msgstr "リクエストを送信"
+
+# automatic translation
+#~ msgid "Wrong license key"
+#~ msgstr "間違ったライセンス キー"
+
+# automatic translation
+#~ msgid ""
+#~ "Something went wrong. Please try again later. If the error appears again, "
+#~ "please contact us"
+#~ msgstr ""
+#~ "エラーが発生しました。後でもう一度やり直してください。再度エラーが表示され"
+#~ "る場合は、弊社までご連絡ください"
+
+# automatic translation
+#~ msgid "We are sorry for inconvenience."
+#~ msgstr "ご不便をおかけして申し訳ございません。"
+
+# automatic translation
+#~ msgid "Wrong license key."
+#~ msgstr "ライセンスキーが間違っています。"
+
+# automatic translation
+#~ msgid ""
+#~ "This license key is bound to another site. Change it via personal Client "
+#~ "Area."
+#~ msgstr ""
+#~ "このライセンス キーは別のサイトにバインドされています。パーソナル クライア"
+#~ "ント エリアから変更します。"
+
+# automatic translation
+#~ msgid "Log in"
+#~ msgstr "ログイン"
+
+# automatic translation
+#~ msgid ""
+#~ "Unfortunately, you have exceeded the number of available tries per day."
+#~ msgstr "残念ながら、1 日に利用できる試行回数を超えました。"
+
+# automatic translation
+#, php-format
+#~ msgid ""
+#~ "Unfortunately, Your license has expired. To continue getting top-priority "
+#~ "support and plugin updates, you should extend it in your %s"
+#~ msgstr ""
+#~ "残念ながら、ライセンスの有効期限が切れています。最優先のサポートとプラグイ"
+#~ "ンの更新を引き続き取得するには、%s で拡張する必要があります"
+
+# automatic translation
+#~ msgid ""
+#~ "Unfortunately, the Pro licence was already installed to this domain. The "
+#~ "Pro Trial license can be installed only once."
+#~ msgstr ""
+#~ "残念ながら、Pro ライセンスは既にこのドメインにインストールされています。 "
+#~ "Pro Trial ライセンスは 1 回のみインストールできます。"
+
+# automatic translation
+#~ msgid "The license key is valid."
+#~ msgstr "ライセンスキーは有効です。"
+
+# automatic translation
+#~ msgid "Your license will expire on"
+#~ msgstr "ライセンスの有効期限は次のとおりです"
+
+# automatic translation
+#~ msgid "Congratulations! Pro Membership license is activated successfully."
+#~ msgstr ""
+#~ "おめでとう！プロ メンバーシップ ライセンスが正常にアクティブ化されました。"
+
+# automatic translation
+#~ msgid ""
+#~ "Something went wrong. Try again later or upload the plugin manually. We "
+#~ "are sorry for inconvenience."
+#~ msgstr ""
+#~ "エラーが発生しました。後で再試行するか、プラグインを手動でアップロードして"
+#~ "ください。ご不便をおかけして申し訳ございません。"
+
+# automatic translation
+#~ msgid "Please enter your license key."
+#~ msgstr "ライセンスキーを入力してください。"
+
+# automatic translation
+#~ msgid "Not set"
+#~ msgstr "設定されていません"
+
+# automatic translation
+#~ msgid "On"
+#~ msgstr "の上"
+
+# automatic translation
+#~ msgid "Off"
+#~ msgstr "オフ"
+
+# automatic translation
+#~ msgid "N/A"
+#~ msgstr "なし"
+
+# automatic translation
+#~ msgid "Mb"
+#~ msgstr "メガバイト"
+
+# automatic translation
+#~ msgid "Yes"
+#~ msgstr "はい"
+
+# automatic translation
+#~ msgid "No"
+#~ msgstr "いいえ"
+
+# automatic translation
+#~ msgid "WordPress Environment"
+#~ msgstr "WordPress 環境"
+
+# automatic translation
+#~ msgid "Home URL"
+#~ msgstr "ホーム URL"
+
+# automatic translation
+#~ msgid "Website URL"
+#~ msgstr "ウェブサイトのURL"
+
+# automatic translation
+#~ msgid "WP Version"
+#~ msgstr "WP版"
+
+# automatic translation
+#~ msgid "WP Multisite"
+#~ msgstr "WP マルチサイト"
+
+# automatic translation
+#~ msgid "WP Memory Limit"
+#~ msgstr "WP メモリ制限"
+
+# automatic translation
+#~ msgid "Active Theme"
+#~ msgstr "アクティブなテーマ"
+
+# automatic translation
+#, php-format
+#~ msgid "by %s"
+#~ msgstr "%sによる"
+
+# automatic translation
+#~ msgid "Server Environment"
+#~ msgstr "サーバー環境"
+
+# automatic translation
+#~ msgid "Operating System"
+#~ msgstr "オペレーティング·システム"
+
+# automatic translation
+#~ msgid "Server"
+#~ msgstr "サーバ"
+
+# automatic translation
+#~ msgid "PHP Version"
+#~ msgstr "PHP バージョン"
+
+# automatic translation
+#~ msgid "PHP Allow URL fopen"
+#~ msgstr "PHP 許可 URL fopen"
+
+# automatic translation
+#~ msgid "PHP Memory Limit"
+#~ msgstr "PHP メモリ制限"
+
+# automatic translation
+#~ msgid "Memory Usage"
+#~ msgstr "メモリ使用量"
+
+# automatic translation
+#~ msgid "PHP Max Upload Size"
+#~ msgstr "PHP 最大アップロード サイズ"
+
+# automatic translation
+#~ msgid "PHP Max Post Size"
+#~ msgstr "PHP 最大投稿サイズ"
+
+# automatic translation
+#~ msgid "PHP Max Script Execute Time"
+#~ msgstr "PHP スクリプトの最大実行時間"
+
+# automatic translation
+#~ msgid "PHP Exif support"
+#~ msgstr "PHP Exif のサポート"
+
+# automatic translation
+#~ msgid "PHP IPTC support"
+#~ msgstr "PHP IPTC サポート"
+
+# automatic translation
+#~ msgid "PHP XML support"
+#~ msgstr "PHP XML サポート"
+
+# automatic translation
+#~ msgid "Database"
+#~ msgstr "データベース"
+
+# automatic translation
+#~ msgid "WP DB version"
+#~ msgstr "WP DB バージョン"
+
+# automatic translation
+#~ msgid "MySQL version"
+#~ msgstr "MySQL のバージョン"
+
+# automatic translation
+#~ msgid "SQL Mode"
+#~ msgstr "SQL モード"
+
+# automatic translation
+#~ msgid "Active Plugins"
+#~ msgstr "アクティブなプラグイン"
+
+# automatic translation
+#~ msgid "Inactive Plugins"
+#~ msgstr "非アクティブなプラグイン"
+
+# automatic translation
+#~ msgid "Please enter a valid email address."
+#~ msgstr "有効なメールアドレスを入力してください。"
+
+# automatic translation
+#, php-format
+#~ msgid "Email with system info is sent to %s."
+#~ msgstr "システム情報を含む電子メールが %s に送信されます。"
+
+# automatic translation
+#~ msgid "Plugins"
+#~ msgstr "プラグイン"
+
+# automatic translation
+#~ msgid "Themes"
+#~ msgstr "テーマ"
+
+# automatic translation
+#~ msgid "System status"
+#~ msgstr "システムステータス"
+
+# automatic translation
+#~ msgid "Manage purchased licenses & subscriptions"
+#~ msgstr "購入したライセンスとサブスクリプションを管理する"
+
+# automatic translation
+#, php-format
+#~ msgid "Get Access to %s+ Premium Plugins"
+#~ msgstr "%s+ プレミアム プラグインへのアクセスを取得"
+
+# automatic translation
+#~ msgid "Subscribe to Pro Membership"
+#~ msgstr "プロ会員に申し込む"
+
+# automatic translation
+#~ msgid "Check license key"
+#~ msgstr "ライセンスキーの確認"
+
+# automatic translation
+#~ msgid "Enter your license key"
+#~ msgstr "ライセンスキーを入力してください"
+
+# automatic translation
+#~ msgid "Upload Plugin"
+#~ msgstr "アップロードプラグイン"
+
+# automatic translation
+#, php-format
+#~ msgid ""
+#~ "The plugin generated %d characters of <strong>unexpected output</strong> "
+#~ "during activation. If you notice &#8220;headers already sent&#8221; "
+#~ "messages, problems with syndication feeds or other issues, try "
+#~ "deactivating or removing this plugin."
+#~ msgstr ""
+#~ "プラグインは、アクティブ化中に %d 文字の<strong>予期しない出力</strong>を"
+#~ "生成しました。 「headers already sent」メッセージ、シンジケーション フィー"
+#~ "ドの問題、またはその他の問題に気付いた場合は、このプラグインを無効にする"
+#~ "か、削除してみてください。"
+
+# automatic translation
+#~ msgid ""
+#~ "Plugin could not be activated because it triggered a <strong>fatal error</"
+#~ "strong>."
+#~ msgstr ""
+#~ "<strong>致命的なエラーが</strong>発生したため、プラグインをアクティブ化で"
+#~ "きませんでした。"
+
+# automatic translation
+#~ msgid "Plugin <strong>activated</strong>."
+#~ msgstr "プラグインが<strong>有効化されました</strong>。"
+
+# automatic translation
+#~ msgid "Download Pro Plugin"
+#~ msgstr "プロプラグインをダウンロード"
+
+# automatic translation
+#~ msgid "Your Pro plugin is ready"
+#~ msgstr "Pro プラグインの準備ができました"
+
+# automatic translation
+#~ msgid "Your plugin has been zipped, and now is ready to download."
+#~ msgstr "プラグインが圧縮され、ダウンロードする準備が整いました。"
+
+# automatic translation
+#~ msgid "Download Now"
+#~ msgstr "ダウンロード中"
+
+# automatic translation
+#~ msgid "Need help installing the plugin?"
+#~ msgstr "プラグインのインストールにヘルプが必要ですか?"
+
+# automatic translation
+#~ msgid ""
+#~ "How to install WordPress plugin from your admin Dashboard (ZIP archive)"
+#~ msgstr ""
+#~ "管理ダッシュボードから WordPress プラグインをインストールする方法 (ZIP "
+#~ "アーカイブ)"
+
+# automatic translation
+#~ msgid "Get Started"
+#~ msgstr "始めましょう"
+
+# automatic translation
+#~ msgid "Knowledge Base"
+#~ msgstr "知識ベース"
+
+# automatic translation
+#~ msgid "Licenses & Domains"
+#~ msgstr "ライセンスとドメイン"
+
+# automatic translation
+#~ msgid "Client Area"
+#~ msgstr "クライアントエリア"
+
+# automatic translation
+#~ msgid "Return to BestWebSoft Panel"
+#~ msgstr "BestWebSoft パネルに戻る"
+
+# automatic translation
+#~ msgid "All"
+#~ msgstr "全て"
+
+# automatic translation
+#~ msgid "Installed"
+#~ msgstr "インストール済み"
+
+# automatic translation
+#~ msgid "Not Installed"
+#~ msgstr "インストールされていない"
+
+# automatic translation
+#~ msgid "Filter results"
+#~ msgstr "結果のフィルタリング"
+
+# automatic translation
+#~ msgid "Category"
+#~ msgstr "カテゴリー"
+
+# automatic translation
+#~ msgid "Not installed"
+#~ msgstr "インストールされていない"
+
+# automatic translation
+#~ msgid "Renew to get updates"
+#~ msgstr "更新してアップデートを入手する"
+
+# automatic translation
+#, php-format
+#~ msgid "Update to v %s"
+#~ msgstr "v %s に更新"
+
+# automatic translation
+#~ msgid "Get Pro"
+#~ msgstr "プロになる"
+
+# automatic translation
+#~ msgid "Activate this plugin"
+#~ msgstr "このプラグインを有効にする"
+
+# automatic translation
+#~ msgid "Install this plugin"
+#~ msgstr "このプラグインをインストール"
+
+# automatic translation
+#~ msgid "Install Now"
+#~ msgstr "今すぐインストール"
+
+# automatic translation
+#~ msgid "Nothing found. Try another criteria."
+#~ msgstr "何も見つかりません。別の基準を試してください。"
+
+# automatic translation
+#, php-format
+#~ msgid "By %s"
+#~ msgstr "%s で"
+
+# automatic translation
+#~ msgid "Already Installed"
+#~ msgstr "すでにインストールされています"
+
+# automatic translation
+#~ msgid "Browse More WordPress Themes"
+#~ msgstr "他の WordPress テーマを参照する"
+
+# automatic translation
+#~ msgid "Send to support"
+#~ msgstr "サポートに送信"
+
+# automatic translation
+#~ msgid "Send to custom email &#187;"
+#~ msgstr "カスタム メールに送信 &#187;"
+
+# automatic translation
+#~ msgid "Information"
+#~ msgstr "情報"
+
+# automatic translation
+#~ msgid "Inactive"
+#~ msgstr "非活性"
+
+# automatic translation
+#~ msgid "Expired"
+#~ msgstr "期限切れ"
+
+# automatic translation
+#, php-format
+#~ msgid "%s day(-s) left"
+#~ msgstr "残り %s 日 (-s)"
+
+# automatic translation
+#, php-format
+#~ msgid "Expired on %s"
+#~ msgstr "%s に期限切れ"
+
+# automatic translation
+#~ msgid "Renew Now"
+#~ msgstr "今すぐ更新"
+
+# automatic translation
+#~ msgid "Active"
+#~ msgstr "アクティブ"
+
+# automatic translation
+#~ msgid "License"
+#~ msgstr "ライセンス"
+
+# automatic translation
+#~ msgid "Status"
+#~ msgstr "スターテス"
+
+# automatic translation
+#~ msgid "Version"
+#~ msgstr "バージョン"
+
+# automatic translation
+#~ msgid "All plugin settings were restored."
+#~ msgstr "すべてのプラグイン設定が復元されました。"
+
+# automatic translation
+#~ msgid ""
+#~ "The ability to add custom code is available in the Pro version. If the "
+#~ "Pro version is not available please contact us via Help Center"
+#~ msgstr ""
+#~ "カスタム コードを追加する機能は、Pro バージョンで利用できます。 Proバー"
+#~ "ジョンが利用できない場合は、ヘルプセンターからお問い合わせください"
+
+# automatic translation
+#~ msgid ""
+#~ "You do not have sufficient permissions to edit plugins for this site."
+#~ msgstr "このサイトのプラグインを編集するための十分な権限がありません。"
+
+# automatic translation
+#~ msgid "These styles will be added to the header on all pages of your site."
+#~ msgstr ""
+#~ "これらのスタイルは、サイトのすべてのページのヘッダーに追加されます。"
+
+# automatic translation
+#, php-format
+#~ msgid ""
+#~ "This PHP code will be hooked to the %s Action and will be printed on "
+#~ "front end only."
+#~ msgstr ""
+#~ "この PHP コードは %s アクションにフックされ、フロント エンドでのみ出力され"
+#~ "ます。"
+
+# automatic translation
+#~ msgid "These code will be added to the header on all pages of your site."
+#~ msgstr "これらのコードは、サイトのすべてのページのヘッダーに追加されます。"
+
+# automatic translation
+#~ msgid "Browsing"
+#~ msgstr "ブラウジング"
+
+# automatic translation
+#, php-format
+#~ msgid "Activate custom %s code."
+#~ msgstr "カスタム %s コードを有効にします。"
+
+# automatic translation
+#, php-format
+#~ msgid "Learn more about %s"
+#~ msgstr "%s の詳細"
+
+# automatic translation
+#~ msgid "Miscellaneous Settings"
+#~ msgstr "その他の設定"
+
+# automatic translation
+#, php-format
+#~ msgid ""
+#~ "It is prohibited to change %1$s settings on this site in the %2$s network "
+#~ "settings."
+#~ msgstr ""
+#~ "%2$s ネットワーク設定で、このサイトの %1$s 設定を変更することは禁止されて"
+#~ "います。"
+
+# automatic translation
+#, php-format
+#~ msgid ""
+#~ "It is prohibited to view %1$s settings on this site in the %2$s network "
+#~ "settings."
+#~ msgstr ""
+#~ "%2$s ネットワーク設定で、このサイトの %1$s 設定を表示することは禁止されて"
+#~ "います。"
+
+# automatic translation
+#~ msgid "Pro Options"
+#~ msgstr "プロのオプション"
+
+# automatic translation
+#~ msgid "Enable to display plugin Pro options."
+#~ msgstr "プラグインの Pro オプションを表示できるようにします。"
+
+# automatic translation
+#~ msgid "Track Usage"
+#~ msgstr "使用状況の追跡"
+
+# automatic translation
+#~ msgid ""
+#~ "Enable to allow tracking plugin usage anonymously in order to make it "
+#~ "better."
+#~ msgstr ""
+#~ "プラグインの使用状況を匿名で追跡できるように有効にして、改善します。"
+
+# automatic translation
+#~ msgid "Default Settings"
+#~ msgstr "デフォルトの設定"
+
+# automatic translation
+#~ msgid "Restore Settings"
+#~ msgstr "設定の復元"
+
+# automatic translation
+#~ msgid "This will restore plugin settings to defaults."
+#~ msgstr "これにより、プラグイン設定がデフォルトに復元されます。"
+
+# automatic translation
+#~ msgid "Import / Export"
+#~ msgstr "インポート・エクスポート"
+
+# automatic translation
+#, php-format
+#~ msgid ""
+#~ "Enter your license key to activate %s and get premium plugin features."
+#~ msgstr ""
+#~ "ライセンス キーを入力して %s をアクティベートし、プレミアム プラグイン機能"
+#~ "を取得してください。"
+
+# automatic translation
+#~ msgid ""
+#~ "Unfortunately, you have exceeded the number of available tries per day. "
+#~ "Please, upload the plugin manually."
+#~ msgstr ""
+#~ "残念ながら、1 日に利用できる試行回数を超えました。プラグインを手動でアップ"
+#~ "ロードしてください。"
+
+# automatic translation
+#, php-format
+#~ msgid "Start Your Free %s-Day Trial Now"
+#~ msgstr "%s 日間の無料トライアルを今すぐ開始"
+
+# automatic translation
+#~ msgid ""
+#~ "If necessary, you can check if the license key is correct or reenter it "
+#~ "in the field below."
+#~ msgstr ""
+#~ "必要に応じて、ライセンス キーが正しいかどうかを確認するか、下のフィールド"
+#~ "に再入力できます。"
+
+# automatic translation
+#~ msgid "Manage License Settings"
+#~ msgstr "ライセンス設定の管理"
+
+# automatic translation
+#~ msgid "Login to Client Area"
+#~ msgstr "クライアントエリアにログイン"
+
+# automatic translation
+#~ msgid ""
+#~ "Manage active licenses, download BWS products, and view your payment "
+#~ "history using BestWebSoft Client Area."
+#~ msgstr ""
+#~ "BestWebSoft クライアント エリアを使用して、有効なライセンスを管理し、BWS "
+#~ "製品をダウンロードし、支払い履歴を表示します。"
+
+# automatic translation
+#~ msgid "Security check"
+#~ msgstr "セキュリティーチェック"
+
+# automatic translation
+#~ msgid "This license key is bound to another site."
+#~ msgstr "このライセンス キーは別のサイトにバインドされています。"
+
+# automatic translation
+#~ msgid ""
+#~ "This license key is valid, but Your license has expired. If you want to "
+#~ "update our plugin in future, you should extend the license."
+#~ msgstr ""
+#~ "このライセンス キーは有効ですが、ライセンスの有効期限が切れています。今後"
+#~ "プラグインを更新する場合は、ライセンスを延長する必要があります。"
+
+# automatic translation
+#~ msgid "Unfortunately, you have exceeded the number of available tries."
+#~ msgstr "残念ながら、利用可能な試行回数を超えました。"
+
+# automatic translation
+#~ msgid ""
+#~ "Unfortunately, the Pro Trial licence was already installed to this "
+#~ "domain. The Pro Trial license can be installed only once."
+#~ msgstr ""
+#~ "残念ながら、Pro Trial ライセンスはこのドメインに既にインストールされていま"
+#~ "す。 Pro Trial ライセンスは 1 回のみインストールできます。"
+
+# automatic translation
+#~ msgid "The Pro Trial license key is valid."
+#~ msgstr "プロ トライアル ライセンス キーは有効です。"
+
+# automatic translation
+#, php-format
+#~ msgid ""
+#~ "In order to continue using the plugin it is necessary to buy a %s license."
+#~ msgstr ""
+#~ "プラグインを引き続き使用するには、%s ライセンスを購入する必要があります。"
+
+# automatic translation
+#, php-format
+#~ msgid ""
+#~ "Unfortunately, Your license has expired. To continue getting top-priority "
+#~ "support and plugin updates, you should extend it in your %s."
+#~ msgstr ""
+#~ "残念ながら、ライセンスの有効期限が切れています。最優先のサポートとプラグイ"
+#~ "ンの更新を引き続き取得するには、%s で拡張する必要があります。"
+
+# automatic translation
+#~ msgid "Please, enter Your license key"
+#~ msgstr "ライセンスキーを入力してください"
+
+# automatic translation
+#~ msgid "Need Help?"
+#~ msgstr "助けが必要？"
+
+# automatic translation
+#~ msgid "Read the Instruction"
+#~ msgstr "指示を読む"
+
+# automatic translation
+#~ msgid "Watch the Video"
+#~ msgstr "ビデオを見る"
+
+# automatic translation
+#~ msgid "Start Your Free Trial"
+#~ msgstr "無料トライアルを開始する"
+
+# automatic translation
+#~ msgid "Request a Feature"
+#~ msgstr "機能をリクエストする"
+
+# automatic translation
+#, php-format
+#~ msgid "How can we improve %s?"
+#~ msgstr "%s を改善するにはどうすればよいですか?"
+
+# automatic translation
+#~ msgid "We look forward to hear your ideas."
+#~ msgstr "皆様のご意見をお待ちしております。"
+
+# automatic translation
+#~ msgid "Describe your idea"
+#~ msgstr "あなたのアイデアを説明してください"
+
+# automatic translation
+#~ msgid "Send website data and allow to contact me back"
+#~ msgstr "ウェブサイトのデータを送信し、私に連絡することを許可します"
+
+# automatic translation
+#~ msgid "Processing"
+#~ msgstr "処理"
+
+# automatic translation
+#~ msgid "Thank you!"
+#~ msgstr "ありがとう！"
+
+# automatic translation
+#~ msgid "Need help? We are ready to answer your questions."
+#~ msgstr "助けが必要？ご質問にお答えする準備ができています。"
+
+# automatic translation
+#~ msgid "Contact Support"
+#~ msgstr "サポート問い合わせ先"
+
+# automatic translation
+#~ msgid "The plugin is not working"
+#~ msgstr "プラグインが機能していません"
+
+# automatic translation
+#~ msgid "Kindly share what didn't work so we can fix it in future updates..."
+#~ msgstr ""
+#~ "今後のアップデートで修正できるように、機能しなかったものを共有してくださ"
+#~ "い..."
+
+# automatic translation
+#~ msgid "The plugin didn't work as expected"
+#~ msgstr "プラグインが期待どおりに機能しなかった"
+
+# automatic translation
+#~ msgid "What did you expect?"
+#~ msgstr "何を期待していましたか？"
+
+# automatic translation
+#~ msgid "The plugin suddenly stopped working"
+#~ msgstr "プラグインが突然動かなくなった"
+
+# automatic translation
+#~ msgid "The plugin broke my site"
+#~ msgstr "プラグインが私のサイトを壊した"
+
+# automatic translation
+#~ msgid "I couldn't understand how to get it work"
+#~ msgstr "それを機能させる方法を理解できませんでした"
+
+# automatic translation
+#~ msgid "I found a better plugin"
+#~ msgstr "もっと良いプラグインを見つけた"
+
+# automatic translation
+#~ msgid "What's the plugin name?"
+#~ msgstr "プラグイン名は？"
+
+# automatic translation
+#~ msgid ""
+#~ "The plugin is great, but I need specific feature that you don't support"
+#~ msgstr ""
+#~ "プラグインは素晴らしいですが、サポートされていない特定の機能が必要です"
+
+# automatic translation
+#~ msgid "What feature?"
+#~ msgstr "何の機能？"
+
+# automatic translation
+#~ msgid "I no longer need the plugin"
+#~ msgstr "プラグインが不要になりました"
+
+# automatic translation
+#~ msgid "It's a temporary deactivation, I'm just debugging an issue"
+#~ msgstr "これは一時的な非アクティブ化です。問題をデバッグしているだけです"
+
+# automatic translation
+#~ msgid "Other"
+#~ msgstr "他の"
+
+# automatic translation
+#~ msgid "Quick Feedback"
+#~ msgstr "クイックフィードバック"
+
+# automatic translation
+#~ msgid "If you have a moment, please let us know why you are deactivating"
+#~ msgstr "お時間がありましたら、無効にする理由をお知らせください。"
+
+# automatic translation
+#~ msgid "Submit and Deactivate"
+#~ msgstr "送信して非アクティブ化"
+
+# automatic translation
+#~ msgid "Skip and Deactivate"
+#~ msgstr "スキップして非アクティブ化"
+
+# automatic translation
+#~ msgid "Please tell us the reason so we can improve it."
+#~ msgstr "改善できるように理由を教えてください。"
+
+# automatic translation
+#~ msgid "System Status"
+#~ msgstr "システムステータス"
+
+# automatic translation
+#~ msgid ""
+#~ "If necessary, you can check if the license key is correct or reenter it "
+#~ "in the field below. You can find your license key on your personal page - "
+#~ "Client Area - on our website"
+#~ msgstr ""
+#~ "必要に応じて、ライセンス キーが正しいかどうかを確認するか、下のフィールド"
+#~ "に再入力できます。ライセンス キーは、当社の Web サイトの個人ページ (クライ"
+#~ "アント エリア) で見つけることができます。"
+
+# automatic translation
+#~ msgid ""
+#~ "(your username is the email address specified during the purchase). If "
+#~ "necessary, please submit \"Lost your password?\" request."
+#~ msgstr ""
+#~ "(ユーザー名は、購入時に指定したメール アドレスです)。必要に応じて、「パス"
+#~ "ワードをお忘れですか?」と送信してください。リクエスト。"
+
+# automatic translation
+#~ msgid "After that, you can activate it by entering your license key."
+#~ msgstr "その後、ライセンスキーを入力してアクティベートできます。"
+
+# automatic translation
+#~ msgid "License key can be found in the"
+#~ msgstr "ライセンス キーは"
+
+# automatic translation
+#~ msgid "(your username is the email address specified during the purchase)."
+#~ msgstr "(ユーザー名は、購入時に指定したメール アドレスです)。"
+
+# automatic translation
+#~ msgid ""
+#~ "Congratulations! The Pro license of the plugin is activated successfully."
+#~ msgstr ""
+#~ "おめでとう！プラグインの Pro ライセンスが正常にアクティブ化されました。"
+
+# automatic translation
+#~ msgid "Please, go to"
+#~ msgstr "に行ってください"
+
+# automatic translation
+#~ msgid "the setting page"
+#~ msgstr "設定ページ"
+
+# automatic translation
+#~ msgid "Restore all plugin settings to defaults"
+#~ msgstr "すべてのプラグイン設定をデフォルトに戻す"
+
+# automatic translation
+#~ msgid "Restore settings"
+#~ msgstr "設定の復元"
+
+# automatic translation
+#~ msgid ""
+#~ "Congratulations! Pro version of the plugin is  installed and activated "
+#~ "successfully."
+#~ msgstr ""
+#~ "おめでとう！プラグインの Pro バージョンがインストールされ、正常にアクティ"
+#~ "ブ化されました。"
+
+# automatic translation
+#~ msgid "Show Pro features"
+#~ msgstr "プロの機能を表示"
+
+# automatic translation
+#~ msgid "Enter your license key to install and activate"
+#~ msgstr "ライセンス キーを入力して、インストールとアクティブ化を行います"
+
+# automatic translation
+#~ msgid "version of the plugin."
+#~ msgstr "プラグインのバージョン。"
+
+# automatic translation
+#~ msgid "Admin Tools"
+#~ msgstr "管理ツール"
+
+# automatic translation
+#~ msgid "Content"
+#~ msgstr "コンテンツ"
+
+# automatic translation
+#~ msgid "eCommerce"
+#~ msgstr "eコマース"
+
+# automatic translation
+#~ msgid "Marketing"
+#~ msgstr "マーケティング"
+
+# automatic translation
+#~ msgid "Navigation"
+#~ msgstr "ナビゲーション"
+
+# automatic translation
+#~ msgid "Recommended"
+#~ msgstr "おすすめされた"
+
+# automatic translation
+#~ msgid "Security"
+#~ msgstr "安全"
+
+# automatic translation
+#~ msgid "SEO"
+#~ msgstr "これ"
+
+# automatic translation
+#~ msgid "SMM"
+#~ msgstr "SMM"
+
+# automatic translation
+#~ msgid "Give a birth for your bike rental and booking WordPress website."
+#~ msgstr "自転車のレンタルと予約の WordPress ウェブサイトを誕生させましょう。"
+
+# automatic translation
+#~ msgid "Best secure captcha plugin to protect your WordPress forms."
+#~ msgstr ""
+#~ "WordPress フォームを保護するための最高の安全なキャプチャ プラグイン。"
+
+# automatic translation
+#~ msgid "Create your own rental website for car renting and booking."
+#~ msgstr "レンタカーと予約のための独自のレンタル Web サイトを作成します。"
+
+# automatic translation
+#~ msgid ""
+#~ "Add columns with custom content to WordPress website pages, posts, "
+#~ "widgets, etc."
+#~ msgstr ""
+#~ "カスタム コンテンツを含む列を WordPress Web サイト ページ、投稿、ウィ"
+#~ "ジェットなどに追加します。"
+
+# automatic translation
+#~ msgid ""
+#~ "Allow customers to reach you using secure contact form plugin any website "
+#~ "must have."
+#~ msgstr ""
+#~ "Web サイトに必要な安全なコンタクト フォーム プラグインを使用して、顧客があ"
+#~ "なたに連絡できるようにします。"
+
+# automatic translation
+#~ msgid "Add unlimited number of contact forms to WordPress website."
+#~ msgstr "WordPress Web サイトに無制限の数の連絡先フォームを追加します。"
+
+# automatic translation
+#~ msgid "Save and manage Contact Form messages. Never lose important data."
+#~ msgstr ""
+#~ "お問い合わせフォームのメッセージを保存して管理します。重要なデータを失うこ"
+#~ "とはありません。"
+
+# automatic translation
+#~ msgid "Add unlimited custom pages to WordPress admin dashboard."
+#~ msgstr "WordPress 管理ダッシュボードに無制限のカスタム ページを追加します。"
+
+# automatic translation
+#~ msgid ""
+#~ "Add custom post types and taxonomies to WordPress website search results."
+#~ msgstr ""
+#~ "WordPress ウェブサイトの検索結果にカスタム投稿タイプとタクソノミーを追加し"
+#~ "ます。"
+
+# automatic translation
+#~ msgid "Add PayPal and 2CO donate buttons to receive charity payments."
+#~ msgstr ""
+#~ "PayPal と 2CO の寄付ボタンを追加して、チャリティーの支払いを受け取ります。"
+
+# automatic translation
+#~ msgid ""
+#~ "Get latest error log messages to diagnose website problems. Define and "
+#~ "fix issues faster."
+#~ msgstr ""
+#~ "最新のエラー ログ メッセージを取得して、Web サイトの問題を診断します。問題"
+#~ "をより迅速に定義して修正します。"
+
+# automatic translation
+#~ msgid ""
+#~ "Add Facebook Follow, Like, and Share buttons to WordPress posts, pages, "
+#~ "and widgets."
+#~ msgstr ""
+#~ "Facebook のフォロー、いいね、共有ボタンを WordPress の投稿、ページ、ウィ"
+#~ "ジェットに追加します。"
+
+# automatic translation
+#~ msgid ""
+#~ "Add beautiful galleries, albums & images to your WordPress website in a "
+#~ "few clicks."
+#~ msgstr ""
+#~ "数回クリックするだけで、美しいギャラリー、アルバム、画像を WordPress ウェ"
+#~ "ブサイトに追加できます。"
+
+# automatic translation
+#~ msgid ""
+#~ "Stronger security solution which protects your WordPress website from "
+#~ "hacks and unauthorized login attempts."
+#~ msgstr ""
+#~ "WordPress Web サイトをハッキングや不正なログイン試行から保護する、より強力"
+#~ "なセキュリティ ソリューション。"
+
+# automatic translation
+#~ msgid ""
+#~ "Add Adsense ads to WordPress website pages, posts, custom posts, search "
+#~ "results, categories, tags, and widgets."
+#~ msgstr ""
+#~ "Adsense 広告を WordPress Web サイト ページ、投稿、カスタム投稿、検索結果、"
+#~ "カテゴリ、タグ、およびウィジェットに追加します。"
+
+# automatic translation
+#~ msgid ""
+#~ "Add Google Analytics code to WordPress website and track basic stats."
+#~ msgstr ""
+#~ "Google Analytics コードを WordPress Web サイトに追加して、基本的な統計を追"
+#~ "跡します。"
+
+# automatic translation
+#~ msgid "Protect WordPress website forms from spam entries with reCaptcha."
+#~ msgstr ""
+#~ "reCaptcha を使用して、WordPress Web サイトのフォームをスパム エントリから"
+#~ "保護します。"
+
+# automatic translation
+#~ msgid "Add customized Google maps to WordPress posts, pages and widgets."
+#~ msgstr ""
+#~ "カスタマイズした Google マップを WordPress の投稿、ページ、ウィジェットに"
+#~ "追加します。"
+
+# automatic translation
+#~ msgid ""
+#~ "Generate and add XML sitemap to WordPress website. Help search engines "
+#~ "index your blog."
+#~ msgstr ""
+#~ "XML サイトマップを生成して WordPress Web サイトに追加します。検索エンジン"
+#~ "があなたのブログをインデックスに登録できるようにします。"
+
+# automatic translation
+#~ msgid ""
+#~ "Replace external WordPress website links with Google shortlinks and track "
+#~ "click stats."
+#~ msgstr ""
+#~ "外部 WordPress ウェブサイト リンクを Google 短縮リンクに置き換え、クリック"
+#~ "統計を追跡します。"
+
+# automatic translation
+#~ msgid ""
+#~ "Protect WordPress website – allow and deny access for certain IP "
+#~ "addresses, hostnames, etc."
+#~ msgstr ""
+#~ "WordPress ウェブサイトを保護 – 特定の IP アドレス、ホスト名などへのアクセ"
+#~ "スを許可および拒否します。"
+
+# automatic translation
+#~ msgid ""
+#~ "Create your personal job board and listing WordPress website. Search "
+#~ "jobs, submit CV/resumes, choose candidates."
+#~ msgstr ""
+#~ "あなたの個人的な求人掲示板とリスティング WordPress Web サイトを作成しま"
+#~ "す。求人の検索、履歴書の提出、候補者の選択。"
+
+# automatic translation
+#~ msgid ""
+#~ "Protect WordPress website against brute force attacks. Limit rate of "
+#~ "login attempts."
+#~ msgstr ""
+#~ "ブルート フォース攻撃から WordPress Web サイトを保護します。ログイン試行回"
+#~ "数を制限します。"
+
+# automatic translation
+#~ msgid ""
+#~ "Add LinkedIn Share and Follow buttons to WordPress posts, pages and "
+#~ "widgets. 5 plugins included – profile, insider, etc."
+#~ msgstr ""
+#~ "LinkedIn の共有ボタンとフォロー ボタンを WordPress の投稿、ページ、ウィ"
+#~ "ジェットに追加します。 5 つのプラグインが含まれています – プロファイル、イ"
+#~ "ンサイダーなど。"
+
+# automatic translation
+#~ msgid ""
+#~ "Translate WordPress website content to other languages manually. Create "
+#~ "multilingual pages, posts, widgets, menus, etc."
+#~ msgstr ""
+#~ "WordPress Web サイトのコンテンツを他の言語に手動で翻訳します。多言語ペー"
+#~ "ジ、投稿、ウィジェット、メニューなどを作成します。"
+
+# automatic translation
+#~ msgid ""
+#~ "Add customizable pagination to WordPress website. Split long content to "
+#~ "multiple pages for better navigation."
+#~ msgstr ""
+#~ "WordPress Web サイトにカスタマイズ可能なページネーションを追加します。ナビ"
+#~ "ゲーションを改善するために、長いコンテンツを複数のページに分割します。"
+
+# automatic translation
+#~ msgid ""
+#~ "Generate PDF files and print WordPress posts/pages. Customize document "
+#~ "header/footer styles and appearance."
+#~ msgstr ""
+#~ "PDF ファイルを生成し、WordPress の投稿/ページを印刷します。ドキュメントの"
+#~ "ヘッダー/フッターのスタイルと外観をカスタマイズします。"
+
+# automatic translation
+#~ msgid ""
+#~ "Add Pinterest Follow, Pin It buttons and profile widgets (Pin, Board, "
+#~ "Profile) to WordPress posts, pages and widgets."
+#~ msgstr ""
+#~ "Pinterest のフォロー、ピン留めボタン、プロフィール ウィジェット (ピン、"
+#~ "ボード、プロフィール) を WordPress の投稿、ページ、ウィジェットに追加しま"
+#~ "す。"
+
+# automatic translation
+#~ msgid ""
+#~ "Create your personal portfolio WordPress website. Manage and showcase "
+#~ "past projects to get more clients."
+#~ msgstr ""
+#~ "個人のポートフォリオ WordPress Web サイトを作成します。過去のプロジェクト"
+#~ "を管理して紹介し、より多くのクライアントを獲得します。"
+
+# automatic translation
+#~ msgid ""
+#~ "Export WordPress posts to CSV file format easily. Configure data order."
+#~ msgstr ""
+#~ "WordPress の投稿を CSV ファイル形式に簡単にエクスポートします。データの順"
+#~ "序を構成します。"
+
+# automatic translation
+#~ msgid ""
+#~ "Add extra fields to default WordPress user profile. The easiest way to "
+#~ "create and manage additional custom values."
+#~ msgstr ""
+#~ "デフォルトの WordPress ユーザー プロファイルにフィールドを追加します。追加"
+#~ "のカスタム値を作成および管理する最も簡単な方法。"
+
+# automatic translation
+#~ msgid ""
+#~ "Add and display HTML advertisement banner on WordPress website. Customize "
+#~ "bar styles and appearance."
+#~ msgstr ""
+#~ "WordPress ウェブサイトに HTML 広告バナーを追加して表示します。バーのスタイ"
+#~ "ルと外観をカスタマイズします。"
+
+# automatic translation
+#~ msgid ""
+#~ "Add customizable quotes and tips blocks to WordPress posts, pages and "
+#~ "widgets."
+#~ msgstr ""
+#~ "WordPress の投稿、ページ、ウィジェットにカスタマイズ可能な引用文とヒント "
+#~ "ブロックを追加します。"
+
+# automatic translation
+#~ msgid ""
+#~ "Add rating plugin to your WordPress website to receive feedback from your "
+#~ "customers."
+#~ msgstr ""
+#~ "WordPress Web サイトに評価プラグインを追加して、顧客からのフィードバックを"
+#~ "受け取ります。"
+
+# automatic translation
+#~ msgid ""
+#~ "Create your personal real estate WordPress website. Sell, rent and buy "
+#~ "properties. Add, search and browse listings easily."
+#~ msgstr ""
+#~ "個人の不動産 WordPress Web サイトを作成します。不動産の販売、賃貸、購入。"
+#~ "リストを簡単に追加、検索、閲覧できます。"
+
+# automatic translation
+#~ msgid ""
+#~ "Add related, featured, latest, and popular posts to your WordPress "
+#~ "website. Connect your blog readers with a relevant content."
+#~ msgstr ""
+#~ "関連記事、特集記事、最新記事、人気記事を WordPress Web サイトに追加しま"
+#~ "す。ブログの読者を関連するコンテンツにつなげます。"
+
+# automatic translation
+#~ msgid ""
+#~ "Send bulk email messages to WordPress users. Custom templates, advanced "
+#~ "settings and detailed reports."
+#~ msgstr ""
+#~ "WordPress ユーザーに一括メール メッセージを送信します。カスタム テンプレー"
+#~ "ト、詳細設定、詳細レポート。"
+
+# automatic translation
+#~ msgid ""
+#~ "The best responsive slider plugin for your WordPress website. Create "
+#~ "beautifully animated slides just in a few clicks."
+#~ msgstr ""
+#~ "WordPress ウェブサイトに最適なレスポンシブ スライダー プラグイン。数回ク"
+#~ "リックするだけで、美しくアニメーション化されたスライドを作成できます。"
+
+# automatic translation
+#~ msgid ""
+#~ "Configure SMTP server to receive email messages from WordPress to Gmail, "
+#~ "Yahoo, Hotmail and other services."
+#~ msgstr ""
+#~ "WordPress から Gmail、Yahoo、Hotmail およびその他のサービスへの電子メール "
+#~ "メッセージを受信するように SMTP サーバーを構成します。"
+
+# automatic translation
+#~ msgid ""
+#~ "Add social media buttons and widgets to WordPress posts, pages and "
+#~ "widgets. FB, Twitter, Pinterest, LinkedIn."
+#~ msgstr ""
+#~ "ソーシャル メディアのボタンとウィジェットを WordPress の投稿、ページ、ウィ"
+#~ "ジェットに追加します。 FB、ツイッター、ピンタレスト、リンクトイン。"
+
+# automatic translation
+#~ msgid ""
+#~ "Add social media login, registration, and commenting to your WordPress "
+#~ "website."
+#~ msgstr ""
+#~ "ソーシャル メディアのログイン、登録、コメントを WordPress Web サイトに追加"
+#~ "します。"
+
+# automatic translation
+#~ msgid ""
+#~ "Add email newsletter sign up form to WordPress posts, pages and widgets. "
+#~ "Collect data and subscribe your users."
+#~ msgstr ""
+#~ "WordPress の投稿、ページ、ウィジェットにメール ニュースレターのサインアッ"
+#~ "プ フォームを追加します。データを収集し、ユーザーをサブスクライブします。"
+
+# automatic translation
+#~ msgid ""
+#~ "Add testimonials and feedbacks from your customers to WordPress website "
+#~ "posts, pages, and widgets."
+#~ msgstr ""
+#~ "お客様の声やフィードバックを WordPress Web サイトの投稿、ページ、ウィ"
+#~ "ジェットに追加します。"
+
+# automatic translation
+#~ msgid ""
+#~ "Best timesheet plugin for WordPress. Track employee time, streamline "
+#~ "attendance and generate reports."
+#~ msgstr ""
+#~ "WordPress に最適なタイムシート プラグイン。従業員の時間を追跡し、出席を合"
+#~ "理化し、レポートを生成します。"
+
+# automatic translation
+#~ msgid ""
+#~ "Add Twitter Follow, Tweet, Hashtag, and Mention buttons to WordPress "
+#~ "posts and pages."
+#~ msgstr ""
+#~ "Twitter のフォロー、ツイート、ハッシュタグ、メンション ボタンを WordPress "
+#~ "の投稿やページに追加します。"
+
+# automatic translation
+#~ msgid ""
+#~ "Automatically check and update WordPress website core with all installed "
+#~ "plugins and themes to the latest versions."
+#~ msgstr ""
+#~ "インストールされているすべてのプラグインとテーマを使用して、WordPress Web "
+#~ "サイトのコアを自動的にチェックし、最新バージョンに更新します。"
+
+# automatic translation
+#~ msgid ""
+#~ "Powerful user role management plugin for WordPress website. Create, edit, "
+#~ "copy, and delete user roles."
+#~ msgstr ""
+#~ "WordPress Web サイト用の強力なユーザー ロール管理プラグイン。ユーザー ロー"
+#~ "ルを作成、編集、コピー、および削除します。"
+
+# automatic translation
+#~ msgid ""
+#~ "Display live count of online visitors who are currently browsing your "
+#~ "WordPress website."
+#~ msgstr ""
+#~ "現在 WordPress Web サイトを閲覧しているオンライン訪問者の実際の数を表示し"
+#~ "ます。"
+
+# automatic translation
+#~ msgid ""
+#~ "Backup and export Zendesk Help Center content automatically to your "
+#~ "WordPress website database."
+#~ msgstr ""
+#~ "Zendesk ヘルプ センターのコンテンツを WordPress Web サイト データベースに"
+#~ "自動的にバックアップおよびエクスポートします。"
