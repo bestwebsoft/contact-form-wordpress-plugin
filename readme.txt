@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: contact, contact form, feedback form, contact us form, contact button
 Requires at least: 5.6
-Tested up to: 6.5
-Stable tag: 4.3.1
+Tested up to: 6.6
+Stable tag: 4.3.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -238,6 +238,10 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 16. Enable the file multiattachment option to get important files from senders via contact form.
 
 == Changelog ==
+
+= V4.3.2 - 18.09.2024 =
+* Update : All functionality was updated for WordPress 6.6.
+* Update : Notice for settigns check has been added.
 
 = V4.3.1 - 15.07.2024 =
 * Update : All functionality was updated for WordPress 6.5.
@@ -636,6 +640,10 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * NEW : You can use JavaScript for the form validation with highlighting option
 
 == Upgrade Notice ==
+
+= V4.3.2 =
+* Plugin optimization completed.
+* The compatibility with new WordPress version updated.
 
 = V4.3.1 =
 * The compatibility with new WordPress version updated.

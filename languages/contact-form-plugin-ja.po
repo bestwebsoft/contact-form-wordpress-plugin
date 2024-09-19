@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Contact Form by BestWebSoft\n"
-"POT-Creation-Date: 2024-07-15 15:07+0300\n"
-"PO-Revision-Date: 2024-07-15 15:09+0300\n"
+"POT-Creation-Date: 2024-09-18 15:00+0300\n"
+"PO-Revision-Date: 2024-09-18 15:00+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -28,7 +28,7 @@ msgid "Contact Form Settings"
 msgstr "お問い合わせフォームの設定"
 
 # automatic translation
-#: contact_form.php:53 contact_form.php:2142 contact_form.php:2162
+#: contact_form.php:53 contact_form.php:2145 contact_form.php:2165
 #: includes/class-cntctfrm-settings.php:30
 msgid "Settings"
 msgstr "設定"
@@ -39,7 +39,7 @@ msgid "Upgrade to Pro"
 msgstr "プロ仕様にアップグレードする"
 
 # automatic translation
-#: contact_form.php:573 contact_form.php:1876 contact_form.php:1924
+#: contact_form.php:573 contact_form.php:1879 contact_form.php:1927
 #: includes/class-cntctfrm-settings.php:636
 #: includes/class-cntctfrm-settings.php:734
 #: includes/class-cntctfrm-settings.php:1310
@@ -49,7 +49,7 @@ msgid "Name"
 msgstr "名前"
 
 # automatic translation
-#: contact_form.php:574 contact_form.php:1883 contact_form.php:1930
+#: contact_form.php:574 contact_form.php:1886 contact_form.php:1933
 #: includes/class-cntctfrm-settings.php:786
 #: includes/class-cntctfrm-settings.php:1311
 #: includes/class-cntctfrm-settings.php:1355
@@ -72,7 +72,7 @@ msgid "Phone number"
 msgstr "電話番号"
 
 # automatic translation
-#: contact_form.php:577 contact_form.php:1894 contact_form.php:1939
+#: contact_form.php:577 contact_form.php:1897 contact_form.php:1942
 #: includes/class-cntctfrm-settings.php:856
 #: includes/class-cntctfrm-settings.php:1314
 #: includes/class-cntctfrm-settings.php:1358
@@ -81,7 +81,7 @@ msgid "Subject"
 msgstr "主題"
 
 # automatic translation
-#: contact_form.php:578 contact_form.php:1899 contact_form.php:1943
+#: contact_form.php:578 contact_form.php:1902 contact_form.php:1946
 #: includes/class-cntctfrm-settings.php:894
 #: includes/class-cntctfrm-settings.php:1315
 #: includes/class-cntctfrm-settings.php:1359
@@ -119,7 +119,7 @@ msgid "I consent to having this site collect my personal data."
 msgstr "このサイトが私の個人データを収集することに同意します。"
 
 # automatic translation
-#: contact_form.php:583 contact_form.php:2258
+#: contact_form.php:583 contact_form.php:2261
 #: includes/class-cntctfrm-settings.php:1320
 #: includes/class-cntctfrm-settings.php:1364
 msgid "Learn more"
@@ -202,7 +202,7 @@ msgid "Thank you for contacting us."
 msgstr "ご連絡いただきありがとうございます。"
 
 # automatic translation
-#: contact_form.php:933
+#: contact_form.php:936
 #, php-format
 msgid ""
 "%1$sNote:%2$s The contact form is not protected from spam and bots. Use %3$s "
@@ -214,12 +214,12 @@ msgstr ""
 "たは %4$s reCaptcha by BestWebSoft プラグイン %5$s を使用してください。"
 
 # automatic translation
-#: contact_form.php:942
+#: contact_form.php:945
 msgid "NEW_FORM"
 msgstr "NEW_FORM"
 
 # automatic translation
-#: contact_form.php:943
+#: contact_form.php:946
 msgid ""
 "If you want to create multiple contact forms, please install the Contact "
 "Form Multi plugin."
@@ -228,7 +228,7 @@ msgstr ""
 "インストールしてください。"
 
 # automatic translation
-#: contact_form.php:948
+#: contact_form.php:951
 msgid ""
 "Contact Form plugin doesn't support your current version of Contact Form "
 "Multi plugin. Please update Contact Form Multi plugin to version 1.2.6 or "
@@ -239,18 +239,18 @@ msgstr ""
 "更新してください。"
 
 # automatic translation
-#: contact_form.php:1062
+#: contact_form.php:1065
 msgid "Sorry, email message could not be delivered."
 msgstr "申し訳ありませんが、メール メッセージを配信できませんでした。"
 
 # automatic translation
-#: contact_form.php:1100 contact_form.php:1156
+#: contact_form.php:1103 contact_form.php:1159
 msgid ""
 "Please enter only letters at least 3 characters, words seperated by spaces"
 msgstr "スペースで区切られた 3 文字以上の文字のみを入力してください"
 
 # automatic translation
-#: contact_form.php:1114
+#: contact_form.php:1117
 msgid ""
 "Please enter only letters and numbers at least 3 characters, words seperated "
 "by spaces"
@@ -259,72 +259,72 @@ msgstr ""
 "ください"
 
 # automatic translation
-#: contact_form.php:1142
+#: contact_form.php:1145
 msgid "Please enter only numbers at least 6 characters"
 msgstr "6 文字以上の数字のみを入力してください"
 
-#: contact_form.php:1494
+#: contact_form.php:1497
 #, php-format
 msgid "between %1$d and %2$d characters"
 msgstr "%1$dから%2$d文字の間"
 
-#: contact_form.php:1501 includes/class-cntctfrm-settings.php:1954
+#: contact_form.php:1504 includes/class-cntctfrm-settings.php:1954
 #, php-format
 msgid "more than %1$d characters"
 msgstr "%1$d 文字以上"
 
-#: contact_form.php:1507 includes/class-cntctfrm-settings.php:1959
+#: contact_form.php:1510 includes/class-cntctfrm-settings.php:1959
 #, php-format
 msgid "less than %1$d characters"
 msgstr "%1$d文字未満"
 
 # automatic translation
-#: contact_form.php:1828 contact_form.php:1830
+#: contact_form.php:1831 contact_form.php:1833
 msgid "Sent from (ip address)"
 msgstr "送信元 (IP アドレス)"
 
 # automatic translation
-#: contact_form.php:1835 contact_form.php:1837
+#: contact_form.php:1838 contact_form.php:1840
 #: includes/class-cntctfrm-settings.php:1262
 msgid "Date/Time"
 msgstr "日付時刻"
 
 # automatic translation
-#: contact_form.php:1842 contact_form.php:1844
+#: contact_form.php:1845 contact_form.php:1847
 #: includes/class-cntctfrm-settings.php:1263
 msgid "Sent from (referer)"
 msgstr "送信元 (リファラー)"
 
 # automatic translation
-#: contact_form.php:1849 contact_form.php:1851
+#: contact_form.php:1852 contact_form.php:1854
 #: includes/class-cntctfrm-settings.php:1264
 msgid "Using (user agent)"
 msgstr "使用 (ユーザー エージェント)"
 
 # automatic translation
-#: contact_form.php:1862
+#: contact_form.php:1865
 msgid "Contact from"
 msgstr "からのお問い合わせ"
 
 # automatic translation
-#: contact_form.php:1867 contact_form.php:1917
+#: contact_form.php:1870 contact_form.php:1920
 msgid "Site"
 msgstr "サイト"
 
 # automatic translation
-#: contact_form.php:1889 contact_form.php:1935
+#: contact_form.php:1892 contact_form.php:1938
 #: includes/class-cntctfrm-settings.php:660
 msgid "Email"
 msgstr "メールアドレス"
 
 # automatic translation
-#: contact_form.php:1905 contact_form.php:1948
+#: contact_form.php:1908 contact_form.php:1951
 #: includes/class-cntctfrm-settings.php:1631
 msgid "Phone Number"
 msgstr "電話番号"
 
 # automatic translation
-#: contact_form.php:2057
+#: contact_form.php:2060
 msgid ""
 "If you can see this MIME, it means that the MIME type is not supported by "
 "your email client!"
@@ -333,27 +333,27 @@ msgstr ""
 "ていないことを意味します！"
 
 # automatic translation
-#: contact_form.php:2164
+#: contact_form.php:2167
 msgid "FAQ"
 msgstr "よくある質問"
 
 # automatic translation
-#: contact_form.php:2165
+#: contact_form.php:2168
 msgid "Support"
 msgstr "サポート"
 
 # automatic translation
-#: contact_form.php:2229
+#: contact_form.php:2232
 msgid "Are you sure that you want to delete this language data?"
 msgstr "この言語データを削除してもよろしいですか?"
 
 # automatic translation
-#: contact_form.php:2253
+#: contact_form.php:2256
 msgid "Add multiple forms"
 msgstr "複数のフォームを追加"
 
 # automatic translation
-#: contact_form.php:2253
+#: contact_form.php:2256
 msgid ""
 "Install Contact Form Multi plugin to create unlimited number of contact "
 "forms."
@@ -362,7 +362,7 @@ msgstr ""
 "フォームを作成します。"
 
 # automatic translation
-#: contact_form.php:2262 includes/class-cntctfrm-settings.php:526
+#: contact_form.php:2265 includes/class-cntctfrm-settings.php:526
 #: includes/class-cntctfrm-settings.php:984
 #: includes/class-cntctfrm-settings.php:1218
 #: includes/class-cntctfrm-settings.php:1544
@@ -370,17 +370,17 @@ msgid "Close"
 msgstr "近い"
 
 # automatic translation
-#: contact_form.php:2329
+#: contact_form.php:2332
 msgid "Error"
 msgstr "エラー"
 
 # automatic translation
-#: contact_form.php:2329 contact_form.php:2331
+#: contact_form.php:2332 contact_form.php:2334
 msgid "Illegal language code"
 msgstr "不正な言語コード"
 
 # automatic translation
-#: contact_form.php:2363 contact_form.php:2365
+#: contact_form.php:2366 contact_form.php:2368
 #: includes/class-cntctfrm-settings.php:1337
 #: includes/class-cntctfrm-settings.php:1339
 #: includes/class-cntctfrm-settings.php:1381
@@ -393,7 +393,7 @@ msgid "Use shortcode"
 msgstr "ショートコードを使用する"
 
 # automatic translation
-#: contact_form.php:2363 contact_form.php:2365
+#: contact_form.php:2366 contact_form.php:2368
 #: includes/class-cntctfrm-settings.php:1337
 #: includes/class-cntctfrm-settings.php:1339
 #: includes/class-cntctfrm-settings.php:1381
@@ -406,32 +406,44 @@ msgid "for this language"
 msgstr "この言語の"
 
 # automatic translation
-#: contact_form.php:2554
+#: contact_form.php:2511
+msgid "Test your contact form"
+msgstr "コンタクトフォームのテスト"
+
+#: contact_form.php:2511
+msgid ""
+"Ensure your contact form are correctly configured. Check your settings now!"
+msgstr ""
+"コンタクトフォームが正しく設定されているか確認してください。今すぐ設定を確認"
+"してください！"
+
+# automatic translation
+#: contact_form.php:2560
 msgid "Close notice"
 msgstr "お知らせを閉じる"
 
 # automatic translation
-#: contact_form.php:2559
+#: contact_form.php:2565
 msgid "allows to store your messages to the database."
 msgstr "メッセージをデータベースに保存できます。"
 
 # automatic translation
-#: contact_form.php:2560
+#: contact_form.php:2566
 msgid "Manage messages that have been sent from your website."
 msgstr "Web サイトから送信されたメッセージを管理します。"
 
 # automatic translation
-#: contact_form.php:2563
+#: contact_form.php:2569
 msgid "Learn More"
 msgstr "もっと詳しく知る"
 
 # automatic translation
-#: contact_form.php:2633
+#: contact_form.php:2639
 msgid "Contact form"
 msgstr "お問い合わせフォーム"
 
 # automatic translation
-#: contact_form.php:2648 contact_form.php:2660
+#: contact_form.php:2654 contact_form.php:2666
 msgid "Language"
 msgstr "言語"
 

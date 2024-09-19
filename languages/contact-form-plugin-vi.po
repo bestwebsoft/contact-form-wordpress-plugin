@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Contact Form\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-15 14:47+0300\n"
-"PO-Revision-Date: 2024-07-15 14:48+0300\n"
+"POT-Creation-Date: 2024-09-18 15:04+0300\n"
+"PO-Revision-Date: 2024-09-18 15:04+0300\n"
 "Last-Translator: plugin@bestwebsoft.com <plugin@bestwebsoft.com>\n"
 "Language-Team: Localization blog | http://bizover.net <contact@bizover.net>\n"
 "Language: vi\n"
@@ -22,7 +22,7 @@ msgstr ""
 msgid "Contact Form Settings"
 msgstr "Cài đặt hình thức liên lạc"
 
-#: contact_form.php:53 contact_form.php:2142 contact_form.php:2162
+#: contact_form.php:53 contact_form.php:2145 contact_form.php:2165
 #: includes/class-cntctfrm-settings.php:30
 msgid "Settings"
 msgstr "Cài đặt"
@@ -31,7 +31,7 @@ msgstr "Cài đặt"
 msgid "Upgrade to Pro"
 msgstr "Nâng cấp lên Pro"
 
-#: contact_form.php:573 contact_form.php:1876 contact_form.php:1924
+#: contact_form.php:573 contact_form.php:1879 contact_form.php:1927
 #: includes/class-cntctfrm-settings.php:636
 #: includes/class-cntctfrm-settings.php:734
 #: includes/class-cntctfrm-settings.php:1310
@@ -40,7 +40,7 @@ msgstr "Nâng cấp lên Pro"
 msgid "Name"
 msgstr "Tên"
 
-#: contact_form.php:574 contact_form.php:1883 contact_form.php:1930
+#: contact_form.php:574 contact_form.php:1886 contact_form.php:1933
 #: includes/class-cntctfrm-settings.php:786
 #: includes/class-cntctfrm-settings.php:1311
 #: includes/class-cntctfrm-settings.php:1355
@@ -60,7 +60,7 @@ msgstr "Địa chỉ email"
 msgid "Phone number"
 msgstr "Số điện thoại"
 
-#: contact_form.php:577 contact_form.php:1894 contact_form.php:1939
+#: contact_form.php:577 contact_form.php:1897 contact_form.php:1942
 #: includes/class-cntctfrm-settings.php:856
 #: includes/class-cntctfrm-settings.php:1314
 #: includes/class-cntctfrm-settings.php:1358
@@ -68,7 +68,7 @@ msgstr "Số điện thoại"
 msgid "Subject"
 msgstr "Chủ đề"
 
-#: contact_form.php:578 contact_form.php:1899 contact_form.php:1943
+#: contact_form.php:578 contact_form.php:1902 contact_form.php:1946
 #: includes/class-cntctfrm-settings.php:894
 #: includes/class-cntctfrm-settings.php:1315
 #: includes/class-cntctfrm-settings.php:1359
@@ -100,7 +100,7 @@ msgstr "Gửi cho tôi một bản sao"
 msgid "I consent to having this site collect my personal data."
 msgstr "Tôi đồng ý để trang này thu thập dữ liệu cá nhân của tôi."
 
-#: contact_form.php:583 contact_form.php:2258
+#: contact_form.php:583 contact_form.php:2261
 #: includes/class-cntctfrm-settings.php:1320
 #: includes/class-cntctfrm-settings.php:1364
 msgid "Learn more"
@@ -167,7 +167,7 @@ msgstr "Xin vui lòng làm cho chỉnh dưới đây và thử lại."
 msgid "Thank you for contacting us."
 msgstr "Cảm ơn bạn đã liên hệ với chúng tôi."
 
-#: contact_form.php:933
+#: contact_form.php:936
 #, php-format
 msgid ""
 "%1$sNote:%2$s The contact form is not protected from spam and bots. Use %3$s "
@@ -178,11 +178,11 @@ msgstr ""
 "%3$s plugin Captcha của BestWebSoft %5$s hoặc %4$s reCaptcha của plugin "
 "BestWebSoft %5$s để bảo vệ biểu mẫu liên hệ của bạn."
 
-#: contact_form.php:942
+#: contact_form.php:945
 msgid "NEW_FORM"
 msgstr "HÌNH THỨC MỚI"
 
-#: contact_form.php:943
+#: contact_form.php:946
 msgid ""
 "If you want to create multiple contact forms, please install the Contact "
 "Form Multi plugin."
@@ -190,7 +190,7 @@ msgstr ""
 "Nếu bạn muốn tạo nhiều biểu mẫu liên hệ, vui lòng cài đặt plugin Contact "
 "Form Multi."
 
-#: contact_form.php:948
+#: contact_form.php:951
 msgid ""
 "Contact Form plugin doesn't support your current version of Contact Form "
 "Multi plugin. Please update Contact Form Multi plugin to version 1.2.6 or "
@@ -200,17 +200,17 @@ msgstr ""
 "hiện tại của bạn. Vui lòng cập nhật plugin Contact Form Multi lên phiên bản "
 "1.2.6 trở lên."
 
-#: contact_form.php:1062
+#: contact_form.php:1065
 msgid "Sorry, email message could not be delivered."
 msgstr "Xin lỗi, không thể gửi được thư email."
 
-#: contact_form.php:1100 contact_form.php:1156
+#: contact_form.php:1103 contact_form.php:1159
 msgid ""
 "Please enter only letters at least 3 characters, words seperated by spaces"
 msgstr ""
 "Vui lòng chỉ nhập các chữ cái ít nhất 3 ký tự, các từ cách nhau bằng dấu cách"
 
-#: contact_form.php:1114
+#: contact_form.php:1117
 msgid ""
 "Please enter only letters and numbers at least 3 characters, words seperated "
 "by spaces"
@@ -218,63 +218,63 @@ msgstr ""
 "Vui lòng chỉ nhập chữ cái và số ít nhất 3 ký tự, các từ cách nhau bằng dấu "
 "cách"
 
-#: contact_form.php:1142
+#: contact_form.php:1145
 msgid "Please enter only numbers at least 6 characters"
 msgstr "Vui lòng chỉ nhập số ít nhất 6 ký tự"
 
-#: contact_form.php:1494
+#: contact_form.php:1497
 #, php-format
 msgid "between %1$d and %2$d characters"
 msgstr "giữa %1$d và %2$d ký tự"
 
-#: contact_form.php:1501 includes/class-cntctfrm-settings.php:1954
+#: contact_form.php:1504 includes/class-cntctfrm-settings.php:1954
 #, php-format
 msgid "more than %1$d characters"
 msgstr "nhiều hơn %1$d ký tự"
 
-#: contact_form.php:1507 includes/class-cntctfrm-settings.php:1959
+#: contact_form.php:1510 includes/class-cntctfrm-settings.php:1959
 #, php-format
 msgid "less than %1$d characters"
 msgstr "ít hơn %1$d ký tự"
 
-#: contact_form.php:1828 contact_form.php:1830
+#: contact_form.php:1831 contact_form.php:1833
 msgid "Sent from (ip address)"
 msgstr "Gửi từ (địa chỉ ip)"
 
-#: contact_form.php:1835 contact_form.php:1837
+#: contact_form.php:1838 contact_form.php:1840
 #: includes/class-cntctfrm-settings.php:1262
 msgid "Date/Time"
 msgstr "Ngày/thời gian"
 
-#: contact_form.php:1842 contact_form.php:1844
+#: contact_form.php:1845 contact_form.php:1847
 #: includes/class-cntctfrm-settings.php:1263
 msgid "Sent from (referer)"
 msgstr "Gửi từ (referer)"
 
-#: contact_form.php:1849 contact_form.php:1851
+#: contact_form.php:1852 contact_form.php:1854
 #: includes/class-cntctfrm-settings.php:1264
 msgid "Using (user agent)"
 msgstr "Sử dụng (người sử dụng đại lý)"
 
-#: contact_form.php:1862
+#: contact_form.php:1865
 msgid "Contact from"
 msgstr "Liên hệ với từ"
 
-#: contact_form.php:1867 contact_form.php:1917
+#: contact_form.php:1870 contact_form.php:1920
 msgid "Site"
 msgstr "Trang web"
 
-#: contact_form.php:1889 contact_form.php:1935
+#: contact_form.php:1892 contact_form.php:1938
 #: includes/class-cntctfrm-settings.php:660
 msgid "Email"
 msgstr "Thư điện tử"
 
-#: contact_form.php:1905 contact_form.php:1948
+#: contact_form.php:1908 contact_form.php:1951
 #: includes/class-cntctfrm-settings.php:1631
 msgid "Phone Number"
 msgstr "Số điện thoại"
 
-#: contact_form.php:2057
+#: contact_form.php:2060
 msgid ""
 "If you can see this MIME, it means that the MIME type is not supported by "
 "your email client!"
@@ -282,23 +282,23 @@ msgstr ""
 "Nếu bạn có thể thấy MIME này, nó có nghĩa là rằng loại MIME không được hỗ "
 "trợ bởi ứng dụng email của bạn!"
 
-#: contact_form.php:2164
+#: contact_form.php:2167
 msgid "FAQ"
 msgstr "CÂU HỎI THƯỜNG GẶP"
 
-#: contact_form.php:2165
+#: contact_form.php:2168
 msgid "Support"
 msgstr "Hỗ trợ"
 
-#: contact_form.php:2229
+#: contact_form.php:2232
 msgid "Are you sure that you want to delete this language data?"
 msgstr "Bạn có chắc rằng bạn muốn xóa dữ liệu ngôn ngữ này không?"
 
-#: contact_form.php:2253
+#: contact_form.php:2256
 msgid "Add multiple forms"
 msgstr "Thêm nhiều biểu mẫu"
 
-#: contact_form.php:2253
+#: contact_form.php:2256
 msgid ""
 "Install Contact Form Multi plugin to create unlimited number of contact "
 "forms."
@@ -306,22 +306,22 @@ msgstr ""
 "Cài đặt plugin Contact Form Multi để tạo số lượng form liên hệ không giới "
 "hạn."
 
-#: contact_form.php:2262 includes/class-cntctfrm-settings.php:526
+#: contact_form.php:2265 includes/class-cntctfrm-settings.php:526
 #: includes/class-cntctfrm-settings.php:984
 #: includes/class-cntctfrm-settings.php:1218
 #: includes/class-cntctfrm-settings.php:1544
 msgid "Close"
 msgstr "Đóng"
 
-#: contact_form.php:2329
+#: contact_form.php:2332
 msgid "Error"
 msgstr "Lỗi"
 
-#: contact_form.php:2329 contact_form.php:2331
+#: contact_form.php:2332 contact_form.php:2334
 msgid "Illegal language code"
 msgstr "Mã ngôn ngữ bất hợp pháp"
 
-#: contact_form.php:2363 contact_form.php:2365
+#: contact_form.php:2366 contact_form.php:2368
 #: includes/class-cntctfrm-settings.php:1337
 #: includes/class-cntctfrm-settings.php:1339
 #: includes/class-cntctfrm-settings.php:1381
@@ -333,7 +333,7 @@ msgstr "Mã ngôn ngữ bất hợp pháp"
 msgid "Use shortcode"
 msgstr "Sử dụng shortcode"
 
-#: contact_form.php:2363 contact_form.php:2365
+#: contact_form.php:2366 contact_form.php:2368
 #: includes/class-cntctfrm-settings.php:1337
 #: includes/class-cntctfrm-settings.php:1339
 #: includes/class-cntctfrm-settings.php:1381
@@ -345,27 +345,38 @@ msgstr "Sử dụng shortcode"
 msgid "for this language"
 msgstr "cho ngôn ngữ này"
 
-#: contact_form.php:2554
+#: contact_form.php:2511
+msgid "Test your contact form"
+msgstr "Kiểm tra mẫu liên hệ của bạn"
+
+#: contact_form.php:2511
+msgid ""
+"Ensure your contact form are correctly configured. Check your settings now!"
+msgstr ""
+"Đảm bảo biểu mẫu liên hệ của bạn được cấu hình đúng. Kiểm tra cài đặt của "
+"bạn ngay!"
+
+#: contact_form.php:2560
 msgid "Close notice"
 msgstr "Đóng thông báo"
 
-#: contact_form.php:2559
+#: contact_form.php:2565
 msgid "allows to store your messages to the database."
 msgstr "cho phép lưu trữ tin nhắn của bạn vào cơ sở dữ liệu."
 
-#: contact_form.php:2560
+#: contact_form.php:2566
 msgid "Manage messages that have been sent from your website."
 msgstr "Quản lý tin nhắn đã được gửi từ trang web của bạn."
 
-#: contact_form.php:2563
+#: contact_form.php:2569
 msgid "Learn More"
 msgstr "Tìm hiểu thêm"
 
-#: contact_form.php:2633
+#: contact_form.php:2639
 msgid "Contact form"
 msgstr "Mẫu liên hệ"
 
-#: contact_form.php:2648 contact_form.php:2660
+#: contact_form.php:2654 contact_form.php:2666
 msgid "Language"
 msgstr "Ngôn ngữ"
 

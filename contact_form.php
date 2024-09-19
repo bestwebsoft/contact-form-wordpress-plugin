@@ -6,7 +6,7 @@ Description: Simple contact form plugin any WordPress website must have.
 Author: BestWebSoft
 Text Domain: contact-form-plugin
 Domain Path: /languages
-Version: 4.3.1
+Version: 4.3.2
 Author URI: https://bestwebsoft.com/
 License: GPLv2 or later
  */
@@ -922,6 +922,9 @@ if ( ! function_exists( 'cntctfrm_settings_page' ) ) {
 			}
 			if ( empty( $cntctfrm_related_plugins ) ) {
 				cntctfrm_related_plugins();
+			}
+			if ( function_exists( 'bws_plugin_promo_banner' ) ) {
+				echo bws_plugin_promo_banner( $cntctfrm_plugin_info, 'cntctfrm_options', 'contact-form-plugin', 'https://bestwebsoft.com/products/wordpress/plugins/contact-form/?utm_source=wordpress&utm_medium=plugin_banner&utm_campaign=upgrade' );
 			}
 			if ( ! array_key_exists( 'captcha', $cntctfrm_related_plugins ) && ! array_key_exists( 'google-captcha', $cntctfrm_related_plugins ) && ! isset( $cntctfrm_options['hide_captcha_note'] ) ) {
 				?>
@@ -2504,6 +2507,9 @@ if ( ! function_exists( 'cntctfrm_plugin_banner' ) ) {
 
 			if ( 'plugins.php' === $hook_suffix ) {
 				bws_plugin_banner_to_settings( $cntctfrm_plugin_info, 'cntctfrm_options', 'contact-form-plugin', 'admin.php?page=contact_form.php' );
+				if ( function_exists( 'bws_plugin_banner_to_promo' ) ) {
+					bws_plugin_banner_to_promo( $cntctfrm_plugin_info, 'cntctfrm_options', 'contact-form-plugin', 'admin.php?page=contact_form.php', array( __( 'Test your contact form', 'bestwebsoft' ), __( "Ensure your contact form are correctly configured. Check your settings now!", 'bestwebsoft' ) ) );
+				}
 			}
 
 			if ( isset( $_REQUEST['page'] ) && 'contact_form.php' === sanitize_text_field( wp_unslash( $_REQUEST['page'] ) ) ) {

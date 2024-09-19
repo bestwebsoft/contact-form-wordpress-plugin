@@ -2,827 +2,94 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Contact Form\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-15 14:59+0300\n"
-"PO-Revision-Date: 2024-07-15 14:59+0300\n"
+"POT-Creation-Date: 2024-09-18 14:52+0300\n"
+"PO-Revision-Date: 2024-09-18 14:53+0300\n"
 "Last-Translator: bestwebsoft.com <plugins@bestwebsoft.com>\n"
 "Language-Team: bestwebsoft.com <plugin@bestwebsoft.com>\n"
-"Language: da_DA\n"
+"Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%100/10==1 ? 2 : n%10==1 ? 0 : "
-"(n+9)%10>3 ? 2 : 1;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 3.4.3\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html__\n"
 "X-Poedit-Basepath: ..\n"
 "X-Textdomain-Support: yes\n"
 "X-Poedit-SearchPath-0: .\n"
-
-#: bws_menu/bws_functions.php:1261
-msgid "Visit Help Center"
-msgstr ""
-
-#: bws_menu/bws_menu.php:125 bws_menu/class-bws-settings.php:985
-msgid "Wrong license key"
-msgstr ""
-
-#: bws_menu/bws_menu.php:147 bws_menu/class-bws-settings.php:1011
-#: bws_menu/class-bws-settings.php:1088 bws_menu/class-bws-settings.php:1127
-msgid ""
-"Something went wrong. Please try again later. If the error appears again, "
-"please contact us"
-msgstr ""
-
-#: bws_menu/bws_menu.php:147 bws_menu/class-bws-settings.php:1011
-#: bws_menu/class-bws-settings.php:1088 bws_menu/class-bws-settings.php:1127
-msgid "We are sorry for inconvenience."
-msgstr ""
-
-#: bws_menu/bws_menu.php:154 bws_menu/class-bws-settings.php:1017
-#: bws_menu/class-bws-settings.php:1133
-msgid "Wrong license key."
-msgstr ""
-
-#: bws_menu/bws_menu.php:156
-msgid ""
-"This license key is bound to another site. Change it via personal Client "
-"Area."
-msgstr ""
-
-#: bws_menu/bws_menu.php:156
-msgid "Log in"
-msgstr ""
-
-#: bws_menu/bws_menu.php:158
-msgid "Unfortunately, you have exceeded the number of available tries per day."
-msgstr ""
-
-#: bws_menu/bws_menu.php:160
-#, php-format
-msgid ""
-"Unfortunately, Your license has expired. To continue getting top-priority "
-"support and plugin updates, you should extend it in your %s"
-msgstr ""
-
-#: bws_menu/bws_menu.php:162 bws_menu/class-bws-settings.php:1141
-msgid ""
-"Unfortunately, the Pro licence was already installed to this domain. The Pro "
-"Trial license can be installed only once."
-msgstr ""
-
-#: bws_menu/bws_menu.php:168 bws_menu/class-bws-settings.php:1032
-msgid "The license key is valid."
-msgstr ""
-
-#: bws_menu/bws_menu.php:170 bws_menu/class-bws-settings.php:1036
-msgid "Your license will expire on"
-msgstr ""
-
-#: bws_menu/bws_menu.php:173
-msgid "Congratulations! Pro Membership license is activated successfully."
-msgstr ""
-
-#: bws_menu/bws_menu.php:180 bws_menu/class-bws-settings.php:1151
-msgid ""
-"Something went wrong. Try again later or upload the plugin manually. We are "
-"sorry for inconvenience."
-msgstr ""
-
-#: bws_menu/bws_menu.php:191
-msgid "Please enter your license key."
-msgstr ""
-
-#: bws_menu/bws_menu.php:203
-msgid "Not set"
-msgstr ""
-
-#: bws_menu/bws_menu.php:206
-msgid "On"
-msgstr ""
-
-#: bws_menu/bws_menu.php:206
-msgid "Off"
-msgstr ""
-
-#: bws_menu/bws_menu.php:207 bws_menu/bws_menu.php:208
-#: bws_menu/bws_menu.php:209 bws_menu/bws_menu.php:210
-#: bws_menu/bws_menu.php:211 bws_menu/bws_menu.php:212
-#: bws_menu/bws_menu.php:221
-msgid "N/A"
-msgstr ""
-
-#: bws_menu/bws_menu.php:212
-msgid "Mb"
-msgstr ""
-
-#: bws_menu/bws_menu.php:213 bws_menu/bws_menu.php:214
-#: bws_menu/bws_menu.php:215 bws_menu/bws_menu.php:219
-msgid "Yes"
-msgstr ""
-
-#: bws_menu/bws_menu.php:213 bws_menu/bws_menu.php:214
-#: bws_menu/bws_menu.php:215 bws_menu/bws_menu.php:219
-msgid "No"
-msgstr ""
-
-#: bws_menu/bws_menu.php:226
-msgid "WordPress Environment"
-msgstr ""
-
-#: bws_menu/bws_menu.php:228
-msgid "Home URL"
-msgstr ""
-
-#: bws_menu/bws_menu.php:229
-msgid "Website URL"
-msgstr ""
-
-#: bws_menu/bws_menu.php:230
-msgid "WP Version"
-msgstr ""
-
-#: bws_menu/bws_menu.php:231
-msgid "WP Multisite"
-msgstr ""
-
-#: bws_menu/bws_menu.php:232
-msgid "WP Memory Limit"
-msgstr ""
+"X-Poedit-SearchPathExcluded-0: bws_menu\n"
 
 # @ contact_form
-#: bws_menu/bws_menu.php:233
-#, fuzzy
-#| msgid "Activate"
-msgid "Active Theme"
-msgstr "Aktiver"
-
-#: bws_menu/bws_menu.php:233 bws_menu/bws_menu.php:278
-#: bws_menu/bws_menu.php:281
-#, php-format
-msgid "by %s"
-msgstr ""
-
-#: bws_menu/bws_menu.php:237
-msgid "Server Environment"
-msgstr ""
-
-#: bws_menu/bws_menu.php:239
-msgid "Operating System"
-msgstr ""
-
-#: bws_menu/bws_menu.php:240
-msgid "Server"
-msgstr ""
-
-#: bws_menu/bws_menu.php:241
-msgid "PHP Version"
-msgstr ""
-
-#: bws_menu/bws_menu.php:242
-msgid "PHP Allow URL fopen"
-msgstr ""
-
-#: bws_menu/bws_menu.php:243
-msgid "PHP Memory Limit"
-msgstr ""
+#: contact_form.php:43 contact_form.php:52 contact_form.php:917
+#: includes/class-cntctfrm-settings.php:477
+msgid "Contact Form Settings"
+msgstr "Kontakt Form Indstillinger"
 
 # @ contact_form
-#: bws_menu/bws_menu.php:244
-#, fuzzy
-#| msgid "Message"
-msgid "Memory Usage"
-msgstr "Besked:"
+#: contact_form.php:53 contact_form.php:2145 contact_form.php:2165
+#: includes/class-cntctfrm-settings.php:30
+msgid "Settings"
+msgstr "Indstillinger"
 
-#: bws_menu/bws_menu.php:245
-msgid "PHP Max Upload Size"
-msgstr ""
-
-#: bws_menu/bws_menu.php:246
-msgid "PHP Max Post Size"
-msgstr ""
-
-#: bws_menu/bws_menu.php:247
-msgid "PHP Max Script Execute Time"
-msgstr ""
-
-#: bws_menu/bws_menu.php:248
-msgid "PHP Exif support"
-msgstr ""
-
-#: bws_menu/bws_menu.php:249
-msgid "PHP IPTC support"
-msgstr ""
-
-#: bws_menu/bws_menu.php:250
-msgid "PHP XML support"
-msgstr ""
-
-#: bws_menu/bws_menu.php:256
-msgid "Database"
-msgstr ""
-
-#: bws_menu/bws_menu.php:258
-msgid "WP DB version"
-msgstr ""
-
-#: bws_menu/bws_menu.php:259
-msgid "MySQL version"
-msgstr ""
-
-#: bws_menu/bws_menu.php:260
-msgid "SQL Mode"
-msgstr ""
-
-#: bws_menu/bws_menu.php:264
-msgid "Active Plugins"
-msgstr ""
-
-#: bws_menu/bws_menu.php:269
-msgid "Inactive Plugins"
-msgstr ""
-
-# @ contact_form
-#: bws_menu/bws_menu.php:290
-#, fuzzy
-#| msgid "Please enter a valid email address in the 'FROM' field."
-msgid "Please enter a valid email address."
-msgstr "Indsæt en gyldig emailadresse i fra-feltet"
-
-#: bws_menu/bws_menu.php:292
-#, php-format
-msgid "Email with system info is sent to %s."
-msgstr ""
-
-# @ contact_form
-#: bws_menu/bws_menu.php:296 contact_form.php:599
-msgid "Thank you for contacting us."
-msgstr "Tak for din henvendelse."
-
-# @ contact_form
-#: bws_menu/bws_menu.php:320
-msgid "Sorry, email message could not be delivered."
-msgstr "Beklager, e-mailen ikke kunne leveres."
-
-#: bws_menu/bws_menu.php:476
-#, php-format
-msgid ""
-"The plugin generated %d characters of <strong>unexpected output</strong> "
-"during activation. If you notice &#8220;headers already sent&#8221; "
-"messages, problems with syndication feeds or other issues, try deactivating "
-"or removing this plugin."
-msgstr ""
-
-#: bws_menu/bws_menu.php:478
-msgid ""
-"Plugin could not be activated because it triggered a <strong>fatal error</"
-"strong>."
-msgstr ""
-
-# @ contact_form
-#: bws_menu/class-bws-settings.php:194
-#, fuzzy
-#| msgid "Activate"
-msgid "Inactive"
-msgstr "Aktiver"
-
-# @ contact_form
-#: bws_menu/class-bws-settings.php:194
-msgid "Learn More"
-msgstr "Læs mere"
-
-#: bws_menu/class-bws-settings.php:202
-msgid "Expired"
-msgstr ""
-
-#: bws_menu/class-bws-settings.php:205
-#, php-format
-msgid "%s day(-s) left"
-msgstr ""
-
-#: bws_menu/class-bws-settings.php:207
+#: contact_form.php:76
 msgid "Upgrade to Pro"
-msgstr ""
-
-#: bws_menu/class-bws-settings.php:211
-#, php-format
-msgid "Expired on %s"
-msgstr ""
-
-#: bws_menu/class-bws-settings.php:211
-msgid "Renew Now"
-msgstr ""
+msgstr "Opgrader til Pro"
 
 # @ contact_form
-#: bws_menu/class-bws-settings.php:213
-#, fuzzy
-#| msgid "Activate"
-msgid "Active"
-msgstr "Aktiver"
-
-#: bws_menu/class-bws-settings.php:373
-msgid "All plugin settings were restored."
-msgstr "Alle plugin indstillinger blev gendannet."
-
-#: bws_menu/class-bws-settings.php:561
-msgid "These styles will be added to the header on all pages of your site."
-msgstr ""
-
-#: bws_menu/class-bws-settings.php:565
-#, php-format
-msgid ""
-"This PHP code will be hooked to the %s Action and will be printed on front "
-"end only."
-msgstr ""
-
-#: bws_menu/class-bws-settings.php:569
-msgid "These code will be added to the header on all pages of your site."
-msgstr ""
-
-#: bws_menu/class-bws-settings.php:1019 bws_menu/class-bws-settings.php:1135
-msgid "This license key is bound to another site."
-msgstr ""
-
-#: bws_menu/class-bws-settings.php:1021
-msgid ""
-"This license key is valid, but Your license has expired. If you want to "
-"update our plugin in future, you should extend the license."
-msgstr ""
-
-#: bws_menu/class-bws-settings.php:1023
-msgid "Unfortunately, you have exceeded the number of available tries."
-msgstr ""
-
-#: bws_menu/class-bws-settings.php:1025
-msgid ""
-"Unfortunately, the Pro Trial licence was already installed to this domain. "
-"The Pro Trial license can be installed only once."
-msgstr ""
-
-#: bws_menu/class-bws-settings.php:1030
-msgid "The Pro Trial license key is valid."
-msgstr ""
-
-#: bws_menu/class-bws-settings.php:1043
-#, php-format
-msgid ""
-"In order to continue using the plugin it is necessary to buy a %s license."
-msgstr ""
-
-#: bws_menu/class-bws-settings.php:1137
-msgid ""
-"Unfortunately, you have exceeded the number of available tries per day. "
-"Please, upload the plugin manually."
-msgstr ""
-
-#: bws_menu/class-bws-settings.php:1139
-#, php-format
-msgid ""
-"Unfortunately, Your license has expired. To continue getting top-priority "
-"support and plugin updates, you should extend it in your %s."
-msgstr ""
-
-#: bws_menu/class-bws-settings.php:1188
-msgid "Please, enter Your license key"
-msgstr ""
-
-#: bws_menu/deactivation-form.php:26
-msgid "Need help? We are ready to answer your questions."
-msgstr ""
-
-# @ contact_form
-#: bws_menu/deactivation-form.php:26
-#, fuzzy
-#| msgid "Contact form"
-msgid "Contact Support"
-msgstr "Kontaktformular"
-
-#: bws_menu/deactivation-form.php:31
-msgid "The plugin is not working"
-msgstr ""
-
-#: bws_menu/deactivation-form.php:33
-msgid "Kindly share what didn't work so we can fix it in future updates..."
-msgstr ""
-
-#: bws_menu/deactivation-form.php:37
-msgid "The plugin didn't work as expected"
-msgstr ""
-
-#: bws_menu/deactivation-form.php:39
-msgid "What did you expect?"
-msgstr ""
-
-#: bws_menu/deactivation-form.php:43
-msgid "The plugin suddenly stopped working"
-msgstr ""
-
-#: bws_menu/deactivation-form.php:50
-msgid "The plugin broke my site"
-msgstr ""
-
-#: bws_menu/deactivation-form.php:57
-msgid "I couldn't understand how to get it work"
-msgstr ""
-
-#: bws_menu/deactivation-form.php:64
-msgid "I found a better plugin"
-msgstr ""
-
-#: bws_menu/deactivation-form.php:66
-msgid "What's the plugin name?"
-msgstr ""
-
-#: bws_menu/deactivation-form.php:70
-msgid "The plugin is great, but I need specific feature that you don't support"
-msgstr ""
-
-# @ contact_form
-#: bws_menu/deactivation-form.php:72
-#, fuzzy
-#| msgid "What to use?"
-msgid "What feature?"
-msgstr "Hvad skal man bruge?"
-
-#: bws_menu/deactivation-form.php:76
-msgid "I no longer need the plugin"
-msgstr ""
-
-#: bws_menu/deactivation-form.php:82
-msgid "It's a temporary deactivation, I'm just debugging an issue"
-msgstr ""
-
-#: bws_menu/deactivation-form.php:88
-msgid "Other"
-msgstr ""
-
-#: bws_menu/deactivation-form.php:97
-msgid "Quick Feedback"
-msgstr ""
-
-#: bws_menu/deactivation-form.php:99
-msgid "If you have a moment, please let us know why you are deactivating"
-msgstr ""
-
-#: bws_menu/deactivation-form.php:124
-msgid "Send website data and allow to contact me back"
-msgstr ""
-
-#: bws_menu/deactivation-form.php:129
-msgid "Submit and Deactivate"
-msgstr ""
-
-#: bws_menu/deactivation-form.php:130
-msgid "Skip and Deactivate"
-msgstr ""
-
-#: bws_menu/deactivation-form.php:131
-msgid "Processing"
-msgstr ""
-
-#: bws_menu/product_list.php:13
-msgid "Admin Tools"
-msgstr ""
-
-#: bws_menu/product_list.php:14
-msgid "Content"
-msgstr ""
-
-#: bws_menu/product_list.php:15
-msgid "eCommerce"
-msgstr ""
-
-#: bws_menu/product_list.php:16
-msgid "Marketing"
-msgstr ""
-
-#: bws_menu/product_list.php:17
-msgid "Navigation"
-msgstr ""
-
-#: bws_menu/product_list.php:18
-msgid "Recommended"
-msgstr ""
-
-#: bws_menu/product_list.php:19
-msgid "Security"
-msgstr ""
-
-#: bws_menu/product_list.php:20
-msgid "SEO"
-msgstr ""
-
-#: bws_menu/product_list.php:21
-msgid "SMM"
-msgstr ""
-
-#: bws_menu/product_list.php:28
-msgid "Give a birth for your bike rental and booking WordPress website."
-msgstr ""
-
-#: bws_menu/product_list.php:40
-msgid "Best secure captcha plugin to protect your WordPress forms."
-msgstr ""
-
-#: bws_menu/product_list.php:50
-msgid "Create your own rental website for car renting and booking."
-msgstr ""
-
-#: bws_menu/product_list.php:62
-msgid ""
-"Add columns with custom content to WordPress website pages, posts, widgets, "
-"etc."
-msgstr ""
-
-#: bws_menu/product_list.php:69
-msgid ""
-"Allow customers to reach you using secure contact form plugin any website "
-"must have."
-msgstr ""
-
-#: bws_menu/product_list.php:79
-msgid "Add unlimited number of contact forms to WordPress website."
-msgstr ""
-
-#: bws_menu/product_list.php:89
-msgid "Save and manage Contact Form messages. Never lose important data."
-msgstr ""
-
-#: bws_menu/product_list.php:99
-msgid "Add unlimited custom pages to WordPress admin dashboard."
-msgstr ""
-
-#: bws_menu/product_list.php:109
-msgid ""
-"Add custom post types and taxonomies to WordPress website search results."
-msgstr ""
-
-#: bws_menu/product_list.php:119
-msgid "Add PayPal and 2CO donate buttons to receive charity payments."
-msgstr ""
-
-#: bws_menu/product_list.php:126
-msgid ""
-"Get latest error log messages to diagnose website problems. Define and fix "
-"issues faster."
-msgstr ""
-
-#: bws_menu/product_list.php:133
-msgid ""
-"Add Facebook Follow, Like, and Share buttons to WordPress posts, pages, and "
-"widgets."
-msgstr ""
-
-#: bws_menu/product_list.php:143
-msgid ""
-"Add beautiful galleries, albums & images to your WordPress website in a few "
-"clicks."
-msgstr ""
-
-#: bws_menu/product_list.php:153
-msgid ""
-"Stronger security solution which protects your WordPress website from hacks "
-"and unauthorized login attempts."
-msgstr ""
-
-#: bws_menu/product_list.php:163
-msgid ""
-"Add Adsense ads to WordPress website pages, posts, custom posts, search "
-"results, categories, tags, and widgets."
-msgstr ""
-
-#: bws_menu/product_list.php:173
-msgid "Add Google Analytics code to WordPress website and track basic stats."
-msgstr ""
-
-#: bws_menu/product_list.php:183
-msgid "Protect WordPress website forms from spam entries with reCaptcha."
-msgstr ""
-
-#: bws_menu/product_list.php:193
-msgid "Add customized Google maps to WordPress posts, pages and widgets."
-msgstr ""
-
-#: bws_menu/product_list.php:203
-msgid ""
-"Generate and add XML sitemap to WordPress website. Help search engines index "
-"your blog."
-msgstr ""
-
-#: bws_menu/product_list.php:213
-msgid ""
-"Replace external WordPress website links with Google shortlinks and track "
-"click stats."
-msgstr ""
-
-#: bws_menu/product_list.php:220
-msgid "Create Content with GPT."
-msgstr ""
-
-#: bws_menu/product_list.php:231
-msgid ""
-"Protect WordPress website – allow and deny access for certain IP addresses, "
-"hostnames, etc."
-msgstr ""
-
-#: bws_menu/product_list.php:241
-msgid ""
-"Create your personal job board and listing WordPress website. Search jobs, "
-"submit CV/resumes, choose candidates."
-msgstr ""
-
-#: bws_menu/product_list.php:248
-msgid ""
-"Protect WordPress website against brute force attacks. Limit rate of login "
-"attempts."
-msgstr ""
-
-#: bws_menu/product_list.php:258
-msgid ""
-"Add LinkedIn Share and Follow buttons to WordPress posts, pages and widgets. "
-"5 plugins included – profile, insider, etc."
-msgstr ""
-
-#: bws_menu/product_list.php:268
-msgid ""
-"Translate WordPress website content to other languages manually. Create "
-"multilingual pages, posts, widgets, menus, etc."
-msgstr ""
-
-#: bws_menu/product_list.php:278
-msgid ""
-"Add customizable pagination to WordPress website. Split long content to "
-"multiple pages for better navigation."
-msgstr ""
-
-#: bws_menu/product_list.php:288
-msgid ""
-"Generate PDF files and print WordPress posts/pages. Customize document "
-"header/footer styles and appearance."
-msgstr ""
-
-#: bws_menu/product_list.php:298
-msgid ""
-"Add Pinterest Follow, Pin It buttons and profile widgets (Pin, Board, "
-"Profile) to WordPress posts, pages and widgets."
-msgstr ""
-
-#: bws_menu/product_list.php:308
-msgid ""
-"Create your personal portfolio WordPress website. Manage and showcase past "
-"projects to get more clients."
-msgstr ""
-
-#: bws_menu/product_list.php:318
-msgid "Export WordPress posts to CSV file format easily. Configure data order."
-msgstr ""
-
-#: bws_menu/product_list.php:328
-msgid ""
-"Add extra fields to default WordPress user profile. The easiest way to "
-"create and manage additional custom values."
-msgstr ""
-
-#: bws_menu/product_list.php:338
-msgid ""
-"Add and display HTML advertisement banner on WordPress website. Customize "
-"bar styles and appearance."
-msgstr ""
-
-#: bws_menu/product_list.php:348
-msgid ""
-"Add customizable quotes and tips blocks to WordPress posts, pages and "
-"widgets."
-msgstr ""
-
-#: bws_menu/product_list.php:355
-msgid ""
-"Add rating plugin to your WordPress website to receive feedback from your "
-"customers."
-msgstr ""
-
-#: bws_menu/product_list.php:365
-msgid ""
-"Create your personal real estate WordPress website. Sell, rent and buy "
-"properties. Add, search and browse listings easily."
-msgstr ""
-
-#: bws_menu/product_list.php:375
-msgid ""
-"Add related, featured, latest, and popular posts to your WordPress website. "
-"Connect your blog readers with a relevant content."
-msgstr ""
-
-#: bws_menu/product_list.php:382
-msgid ""
-"Send bulk email messages to WordPress users. Custom templates, advanced "
-"settings and detailed reports."
-msgstr ""
-
-#: bws_menu/product_list.php:392
-msgid ""
-"The best responsive slider plugin for your WordPress website. Create "
-"beautifully animated slides just in a few clicks."
-msgstr ""
-
-#: bws_menu/product_list.php:399
-msgid ""
-"Configure SMTP server to receive email messages from WordPress to Gmail, "
-"Yahoo, Hotmail and other services."
-msgstr ""
-
-#: bws_menu/product_list.php:406
-msgid ""
-"Add social media buttons and widgets to WordPress posts, pages and widgets. "
-"FB, Twitter, Pinterest, LinkedIn."
-msgstr ""
-
-#: bws_menu/product_list.php:416
-msgid ""
-"Add social media login, registration, and commenting to your WordPress "
-"website."
-msgstr ""
-
-#: bws_menu/product_list.php:423
-msgid ""
-"Add email newsletter sign up form to WordPress posts, pages and widgets. "
-"Collect data and subscribe your users."
-msgstr ""
-
-#: bws_menu/product_list.php:433
-msgid ""
-"Add testimonials and feedbacks from your customers to WordPress website "
-"posts, pages, and widgets."
-msgstr ""
-
-#: bws_menu/product_list.php:443
-msgid ""
-"Best timesheet plugin for WordPress. Track employee time, streamline "
-"attendance and generate reports."
-msgstr ""
-
-#: bws_menu/product_list.php:453
-msgid ""
-"Add Twitter Follow, Tweet, Hashtag, and Mention buttons to WordPress posts "
-"and pages."
-msgstr ""
-
-#: bws_menu/product_list.php:463
-msgid ""
-"Automatically check and update WordPress website core with all installed "
-"plugins and themes to the latest versions."
-msgstr ""
-
-#: bws_menu/product_list.php:473
-msgid ""
-"Powerful user role management plugin for WordPress website. Create, edit, "
-"copy, and delete user roles."
-msgstr ""
-
-#: bws_menu/product_list.php:483
-msgid ""
-"Display live count of online visitors who are currently browsing your "
-"WordPress website."
-msgstr ""
-
-#: bws_menu/product_list.php:493
-msgid ""
-"Backup and export Zendesk Help Center content automatically to your "
-"WordPress website database."
-msgstr ""
-
-# @ contact_form
-#: contact_form.php:573
+#: contact_form.php:573 contact_form.php:1879 contact_form.php:1927
+#: includes/class-cntctfrm-settings.php:636
+#: includes/class-cntctfrm-settings.php:734
+#: includes/class-cntctfrm-settings.php:1310
+#: includes/class-cntctfrm-settings.php:1354
+#: includes/class-cntctfrm-settings.php:1616
 msgid "Name"
 msgstr "Navn:"
 
 # @ contact_form
-#: contact_form.php:574
+#: contact_form.php:574 contact_form.php:1886 contact_form.php:1933
+#: includes/class-cntctfrm-settings.php:786
+#: includes/class-cntctfrm-settings.php:1311
+#: includes/class-cntctfrm-settings.php:1355
+#: includes/class-cntctfrm-settings.php:1621
 msgid "Address"
 msgstr "Adresse:"
 
 # @ contact_form
-#: contact_form.php:575
+#: contact_form.php:575 includes/class-cntctfrm-settings.php:808
+#: includes/class-cntctfrm-settings.php:1312
+#: includes/class-cntctfrm-settings.php:1356
 msgid "Email Address"
 msgstr "E-mail-adresse:"
 
 # @ contact_form
-#: contact_form.php:576
+#: contact_form.php:576 includes/class-cntctfrm-settings.php:834
+#: includes/class-cntctfrm-settings.php:1313
+#: includes/class-cntctfrm-settings.php:1357
 msgid "Phone number"
 msgstr "Telefon:"
 
 # @ contact_form
-#: contact_form.php:577
+#: contact_form.php:577 contact_form.php:1897 contact_form.php:1942
+#: includes/class-cntctfrm-settings.php:856
+#: includes/class-cntctfrm-settings.php:1314
+#: includes/class-cntctfrm-settings.php:1358
+#: includes/class-cntctfrm-settings.php:1636
 msgid "Subject"
 msgstr "Emne:"
 
 # @ contact_form
-#: contact_form.php:578
+#: contact_form.php:578 contact_form.php:1902 contact_form.php:1946
+#: includes/class-cntctfrm-settings.php:894
+#: includes/class-cntctfrm-settings.php:1315
+#: includes/class-cntctfrm-settings.php:1359
+#: includes/class-cntctfrm-settings.php:1640
 msgid "Message"
 msgstr "Besked:"
 
 # @ contact_form
-#: contact_form.php:579
+#: contact_form.php:579 includes/class-cntctfrm-settings.php:1316
+#: includes/class-cntctfrm-settings.php:1360
+#: includes/class-cntctfrm-settings.php:1645
 msgid "Attachment"
 msgstr "Vedhæft fil:"
 
@@ -836,21 +103,27 @@ msgstr ""
 "EPS, PS, CSV, RTF, PDF, DOC, DOCX, XLS, XLSX, ZIP, RAR, WAV, MP3, PPT."
 
 # @ contact_form
-#: contact_form.php:581
+#: contact_form.php:581 includes/class-cntctfrm-settings.php:1318
+#: includes/class-cntctfrm-settings.php:1362
 msgid "Send me a copy"
 msgstr "Send mig en kopi"
 
-#: contact_form.php:582
+#: contact_form.php:582 includes/class-cntctfrm-settings.php:1319
+#: includes/class-cntctfrm-settings.php:1363
 msgid "I consent to having this site collect my personal data."
 msgstr ""
+"Jeg giver samtykke til, at dette websted indsamler mine personlige data."
 
 # @ contact_form
-#: contact_form.php:583
+#: contact_form.php:583 contact_form.php:2261
+#: includes/class-cntctfrm-settings.php:1320
+#: includes/class-cntctfrm-settings.php:1364
 msgid "Learn more"
 msgstr "Få mere at vide"
 
 # @ contact_form
-#: contact_form.php:584
+#: contact_form.php:584 includes/class-cntctfrm-settings.php:1321
+#: includes/class-cntctfrm-settings.php:1365
 msgid "Submit"
 msgstr "Gennemfør"
 
@@ -886,10 +159,8 @@ msgstr "Besked tekst er påkrævet."
 
 # @ contact_form
 #: contact_form.php:591
-#, fuzzy
-#| msgid "Message text is required."
 msgid "Message length does not meet requirements."
-msgstr "Besked tekst er påkrævet."
+msgstr "Meddelelsens længde opfylder ikke kravene."
 
 # @ contact_form
 #: contact_form.php:592
@@ -921,332 +192,1187 @@ msgstr "Udfyld CAPTCHA."
 msgid "Please make corrections below and try again."
 msgstr "Venligst foretage korrektioner nedenfor, og prøv igen."
 
-#: contact_form.php:1100 contact_form.php:1156
+# @ contact_form
+#: contact_form.php:599
+msgid "Thank you for contacting us."
+msgstr "Tak for din henvendelse."
+
+#: contact_form.php:936
+#, php-format
+msgid ""
+"%1$sNote:%2$s The contact form is not protected from spam and bots. Use %3$s "
+"Captcha by BestWebSoft plugin %5$s or %4$s reCaptcha by BestWebSoft plugin "
+"%5$s to protect your contact form."
+msgstr ""
+"%1$sBemærk:%2$s Kontaktformularen er ikke beskyttet mod spam og bots. Brug "
+"%3$s Captcha by BestWebSoft plugin %5$s eller %4$s reCaptcha by BestWebSoft "
+"plugin %5$s til at beskytte din kontaktformular."
+
+#: contact_form.php:945
+msgid "NEW_FORM"
+msgstr "NEW_FORM"
+
+# @ contact_form
+#: contact_form.php:946
+msgid ""
+"If you want to create multiple contact forms, please install the Contact "
+"Form Multi plugin."
+msgstr ""
+"Hvis du vil oprette flere kontakt formularer, skal du installere kontakt "
+"formular Multi stik."
+
+#: contact_form.php:951
+msgid ""
+"Contact Form plugin doesn't support your current version of Contact Form "
+"Multi plugin. Please update Contact Form Multi plugin to version 1.2.6 or "
+"higher."
+msgstr ""
+"Contact Form-plugin understøtter ikke din nuværende version af Contact Form "
+"Multi-plugin. Opdater venligst Contact Form Multi-plugin til version 1.2.6 "
+"eller højere."
+
+# @ contact_form
+#: contact_form.php:1065
+msgid "Sorry, email message could not be delivered."
+msgstr "Beklager, e-mailen ikke kunne leveres."
+
+#: contact_form.php:1103 contact_form.php:1159
 msgid ""
 "Please enter only letters at least 3 characters, words seperated by spaces"
 msgstr ""
+"Indtast venligst kun bogstaver på mindst 3 tegn, ord adskilt af mellemrum"
 
-#: contact_form.php:1114
+#: contact_form.php:1117
 msgid ""
 "Please enter only letters and numbers at least 3 characters, words seperated "
 "by spaces"
 msgstr ""
+"Indtast venligst kun bogstaver og tal på mindst 3 tegn, ord adskilt af "
+"mellemrum"
 
-#: contact_form.php:1142
+#: contact_form.php:1145
 msgid "Please enter only numbers at least 6 characters"
+msgstr "Indtast venligst kun tal med mindst 6 tegn"
+
+#: contact_form.php:1497
+#, php-format
+msgid "between %1$d and %2$d characters"
+msgstr "mellem %1$d og %2$d tegn"
+
+#: contact_form.php:1504 includes/class-cntctfrm-settings.php:1954
+#, php-format
+msgid "more than %1$d characters"
+msgstr "mere end %1$d tegn"
+
+#: contact_form.php:1510 includes/class-cntctfrm-settings.php:1959
+#, php-format
+msgid "less than %1$d characters"
+msgstr "mindre end %1$d tegn"
+
+# @ contact_form
+#: contact_form.php:1831 contact_form.php:1833
+msgid "Sent from (ip address)"
+msgstr "Sendt fra (ip adresse)"
+
+# @ contact_form
+#: contact_form.php:1838 contact_form.php:1840
+#: includes/class-cntctfrm-settings.php:1262
+msgid "Date/Time"
+msgstr "Dato / Tid"
+
+# @ contact_form
+#: contact_form.php:1845 contact_form.php:1847
+#: includes/class-cntctfrm-settings.php:1263
+msgid "Sent from (referer)"
+msgstr "Sendt fra (referer)"
+
+# @ contact_form
+#: contact_form.php:1852 contact_form.php:1854
+#: includes/class-cntctfrm-settings.php:1264
+msgid "Using (user agent)"
+msgstr "Ved hjælp af (brugeragent)"
+
+# @ contact_form
+#: contact_form.php:1865
+msgid "Contact from"
+msgstr "Kontakt fra formen"
+
+# @ contact_form
+#: contact_form.php:1870 contact_form.php:1920
+msgid "Site"
+msgstr "Hjemmeside"
+
+# @ contact_form
+#: contact_form.php:1892 contact_form.php:1938
+#: includes/class-cntctfrm-settings.php:660
+msgid "Email"
+msgstr "e-mail"
+
+# @ contact_form
+#: contact_form.php:1908 contact_form.php:1951
+#: includes/class-cntctfrm-settings.php:1631
+msgid "Phone Number"
+msgstr "Telefon:"
+
+# @ contact_form
+#: contact_form.php:2060
+msgid ""
+"If you can see this MIME, it means that the MIME type is not supported by "
+"your email client!"
 msgstr ""
+"Hvis du kan se denne MIME, betyder det, at MIME-typen ikke understøttes af "
+"din e-mail-klient!"
+
+# @ contact_form
+#: contact_form.php:2167
+msgid "FAQ"
+msgstr "FAQ"
+
+# @ contact_form
+#: contact_form.php:2168
+msgid "Support"
+msgstr "Support"
+
+# @ contact_form
+#: contact_form.php:2232
+msgid "Are you sure that you want to delete this language data?"
+msgstr "Er du sikker på at du vil slette dette sprogdata?"
+
+# @ contact_form
+#: contact_form.php:2256
+msgid "Add multiple forms"
+msgstr "Tilføje flere formularer"
+
+#: contact_form.php:2256
+msgid ""
+"Install Contact Form Multi plugin to create unlimited number of contact "
+"forms."
+msgstr ""
+"Installere kontakt Form Multi plugin for at skabe ubegrænset antal kontakt "
+"formularer."
+
+#: contact_form.php:2265 includes/class-cntctfrm-settings.php:526
+#: includes/class-cntctfrm-settings.php:984
+#: includes/class-cntctfrm-settings.php:1218
+#: includes/class-cntctfrm-settings.php:1544
+msgid "Close"
+msgstr "Luk"
+
+#: contact_form.php:2332
+msgid "Error"
+msgstr "Fejl"
+
+#: contact_form.php:2332 contact_form.php:2334
+msgid "Illegal language code"
+msgstr "Ulovlig sprogkode"
+
+# @ contact_form
+#: contact_form.php:2366 contact_form.php:2368
+#: includes/class-cntctfrm-settings.php:1337
+#: includes/class-cntctfrm-settings.php:1339
+#: includes/class-cntctfrm-settings.php:1381
+#: includes/class-cntctfrm-settings.php:1383
+#: includes/class-cntctfrm-settings.php:1421
+#: includes/class-cntctfrm-settings.php:1423
+#: includes/class-cntctfrm-settings.php:1438
+#: includes/class-cntctfrm-settings.php:1440
+msgid "Use shortcode"
+msgstr "Brug kortkode"
+
+# @ contact_form
+#: contact_form.php:2366 contact_form.php:2368
+#: includes/class-cntctfrm-settings.php:1337
+#: includes/class-cntctfrm-settings.php:1339
+#: includes/class-cntctfrm-settings.php:1381
+#: includes/class-cntctfrm-settings.php:1383
+#: includes/class-cntctfrm-settings.php:1421
+#: includes/class-cntctfrm-settings.php:1423
+#: includes/class-cntctfrm-settings.php:1438
+#: includes/class-cntctfrm-settings.php:1440
+msgid "for this language"
+msgstr "for dette sprog"
+
+# @ contact_form
+#: contact_form.php:2511
+msgid "Test your contact form"
+msgstr "Test din kontaktformular"
+
+#: contact_form.php:2511
+msgid ""
+"Ensure your contact form are correctly configured. Check your settings now!"
+msgstr ""
+"Sørg for, at din kontaktformular er korrekt konfigureret. Tjek dine "
+"indstillinger nu!"
+
+#: contact_form.php:2560
+msgid "Close notice"
+msgstr "Luk meddelelsen"
+
+# @ contact_form
+#: contact_form.php:2565
+msgid "allows to store your messages to the database."
+msgstr "giver mulighed for at gemme dine meddelelser til databasen."
+
+# @ contact_form
+#: contact_form.php:2566
+msgid "Manage messages that have been sent from your website."
+msgstr "Administrere meddelelser, der er blevet sendt fra dit websted."
+
+# @ contact_form
+#: contact_form.php:2569
+msgid "Learn More"
+msgstr "Læs mere"
+
+# @ contact_form
+#: contact_form.php:2639
+msgid "Contact form"
+msgstr "Kontaktformular"
+
+# @ contact_form
+#: contact_form.php:2654 contact_form.php:2666
+msgid "Language"
+msgstr "Sprog"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:31
+#: includes/class-cntctfrm-settings.php:608
+msgid "Additional Settings"
+msgstr "Yderligere indstillinger"
+
+#: includes/class-cntctfrm-settings.php:32
+#: includes/class-cntctfrm-settings.php:1466
+msgid "Appearance"
+msgstr "Udseende"
+
+#: includes/class-cntctfrm-settings.php:33
+msgid "Misc"
+msgstr "Div"
+
+#: includes/class-cntctfrm-settings.php:34
+msgid "Custom Code"
+msgstr "Brugerdefineret kode"
+
+#: includes/class-cntctfrm-settings.php:35
+msgid "License Key"
+msgstr "Licensnøgle"
+
+#: includes/class-cntctfrm-settings.php:111
+msgid "Please enable JavaScript in your browser."
+msgstr "Aktivér venligst JavaScript i din browser."
+
+#: includes/class-cntctfrm-settings.php:113
+#, php-format
+msgid ""
+"Contact Form plugin requires PHP %s or higher. Please contact your hosting "
+"provider to upgrade PHP version."
+msgstr ""
+"Contact Form-plugin kræver PHP %s eller højere. Kontakt din hostingudbyder "
+"for at opgradere PHP-versionen."
+
+#: includes/class-cntctfrm-settings.php:143
+msgid "Sorry, your nonce did not verify."
+msgstr "Beklager, din auktions annonce blev ikke godkendt."
 
 #: includes/class-cntctfrm-settings.php:211
 msgid "Min / Max symbols in the message cannot be empty."
+msgstr "Min/Maks-symbolerne i meddelelsen må ikke være tomme."
+
+#: includes/class-cntctfrm-settings.php:399
+msgid ""
+"Email 'FROM' field option was changed, which may cause email messages being "
+"moved to the spam folder or email delivery failures."
 msgstr ""
+"E 'Fra' feltet indstilling blev ændret, som kan forårsage e-mail meddelelser "
+"flyttes til spam omslag eller email levering fiaskoerne."
 
 # @ contact_form
-#~ msgid "Contact Form Settings"
-#~ msgstr "Kontakt Form Indstillinger"
+#: includes/class-cntctfrm-settings.php:409
+msgid ""
+"If the 'Redirect to page' option is selected then the URL field should be in "
+"the following format"
+msgstr ""
+"Hvis 'omdirigere til side \"er valgt derefter URL-feltet skal være i "
+"følgende format"
 
 # @ contact_form
-#~ msgid "Settings"
-#~ msgstr "Indstillinger"
-
-#~ msgid "NEW_FORM"
-#~ msgstr "NEW_FORM"
+#: includes/class-cntctfrm-settings.php:414
+msgid "Such user does not exist."
+msgstr "Sådan bruger findes ikke."
 
 # @ contact_form
-#~ msgid ""
-#~ "If you want to create multiple contact forms, please install the Contact "
-#~ "Form Multi plugin."
-#~ msgstr ""
-#~ "Hvis du vil oprette flere kontakt formularer, skal du installere kontakt "
-#~ "formular Multi stik."
+#: includes/class-cntctfrm-settings.php:423
+msgid ""
+"Please enter a valid email address in the 'Use this email address' field."
+msgstr "Angiv en gyldig e-mail-adresse i feltet 'Brug denne e-mail-adresse'."
 
 # @ contact_form
-#~ msgid "Sent from (ip address)"
-#~ msgstr "Sendt fra (ip adresse)"
+#: includes/class-cntctfrm-settings.php:431
+msgid "Please enter a valid email address in the 'FROM' field."
+msgstr "Indtast en gyldig e-mail adresse i \"Fra\" feltet."
 
 # @ contact_form
-#~ msgid "Date/Time"
-#~ msgstr "Dato / Tid"
+#: includes/class-cntctfrm-settings.php:452
+msgid "Settings saved."
+msgstr "Ændringerne blev gemt."
 
 # @ contact_form
-#~ msgid "Sent from (referer)"
-#~ msgstr "Sendt fra (referer)"
+#: includes/class-cntctfrm-settings.php:454
+msgid "Settings are not saved."
+msgstr "Ændringerne er ikke gemt"
 
 # @ contact_form
-#~ msgid "Using (user agent)"
-#~ msgstr "Ved hjælp af (brugeragent)"
+#: includes/class-cntctfrm-settings.php:481
+msgid ""
+"If you leave the fields empty, the messages will be sent to the email "
+"address specified during registration."
+msgstr ""
+"Hvis du lader felterne tomme, sendes meddelelser til den e-mail-adresse "
+"angivet under registreringen."
 
 # @ contact_form
-#~ msgid "Contact from"
-#~ msgstr "Kontakt fra formen"
+#: includes/class-cntctfrm-settings.php:484
+msgid "The user's email address"
+msgstr "Brugerens e-mailadresse"
 
 # @ contact_form
-#~ msgid "Site"
-#~ msgstr "Hjemmeside"
+#: includes/class-cntctfrm-settings.php:489
+msgid "Select a username"
+msgstr "Vælg et brugernavn."
 
 # @ contact_form
-#~ msgid "Email"
-#~ msgstr "e-mail"
+#: includes/class-cntctfrm-settings.php:508
+msgid ""
+"Select a username of the person who should get the messages from the contact "
+"form."
+msgstr ""
+"Vælg et brugernavn på den person, der skal modtage beskeder fra "
+"kontaktformularen."
 
 # @ contact_form
-#~ msgid "Phone Number"
-#~ msgstr "Telefon:"
+#: includes/class-cntctfrm-settings.php:513
+msgid "Use this email address"
+msgstr "Brug denne e-mailadresse"
 
 # @ contact_form
-#~ msgid ""
-#~ "If you can see this MIME, it means that the MIME type is not supported by "
-#~ "your email client!"
-#~ msgstr ""
-#~ "Hvis du kan se denne MIME, betyder det, at MIME-typen ikke understøttes "
-#~ "af din e-mail-klient!"
+#: includes/class-cntctfrm-settings.php:518
+msgid ""
+"Enter multiple email addresses separated by comma for receiving messages."
+msgstr ""
+"Indtast flere e-mailadresser adskilt af komma til modtagelse af beskeder."
 
 # @ contact_form
-#~ msgid "FAQ"
-#~ msgstr "FAQ"
+#: includes/class-cntctfrm-settings.php:530
+msgid "Add department selectbox to the contact form"
+msgstr "Tilføj afdelingsvalgboks til kontaktformularen"
 
 # @ contact_form
-#~ msgid "Support"
-#~ msgstr "Support"
+#: includes/class-cntctfrm-settings.php:543
+msgid "Save emails to the database"
+msgstr "Gem dine emails i databasen"
 
 # @ contact_form
-#~ msgid "Are you sure that you want to delete this language data?"
-#~ msgstr "Er du sikker på at du vil slette dette sprogdata?"
+#: includes/class-cntctfrm-settings.php:556
+#: includes/class-cntctfrm-settings.php:576
+#: includes/class-cntctfrm-settings.php:585
+msgid "Using"
+msgstr "Ved hjælp af"
+
+#: includes/class-cntctfrm-settings.php:562
+#: includes/class-cntctfrm-settings.php:1087
+#: includes/class-cntctfrm-settings.php:1142
+#: includes/class-cntctfrm-settings.php:1187
+msgid "Please activate the appropriate option on"
+msgstr "Aktivér venligst den relevante indstilling på"
 
 # @ contact_form
-#~ msgid "Add multiple forms"
-#~ msgstr "Tilføje flere formularer"
-
-#~ msgid ""
-#~ "Install Contact Form Multi plugin to create unlimited number of contact "
-#~ "forms."
-#~ msgstr ""
-#~ "Installere kontakt Form Multi plugin for at skabe ubegrænset antal "
-#~ "kontakt formularer."
-
-#~ msgid "Close"
-#~ msgstr "Luk"
+#: includes/class-cntctfrm-settings.php:567
+#: includes/class-cntctfrm-settings.php:1092
+#: includes/class-cntctfrm-settings.php:1147
+#: includes/class-cntctfrm-settings.php:1192
+msgid "settings page"
+msgstr "side for indstillinger"
 
 # @ contact_form
-#~ msgid "Use shortcode"
-#~ msgstr "Brug kortkode"
+#: includes/class-cntctfrm-settings.php:577
+#: includes/class-cntctfrm-settings.php:1104
+#: includes/class-cntctfrm-settings.php:1159
+#: includes/class-cntctfrm-settings.php:1203
+msgid "Activate"
+msgstr "Aktiver"
 
 # @ contact_form
-#~ msgid "for this language"
-#~ msgstr "for dette sprog"
+#: includes/class-cntctfrm-settings.php:586
+#: includes/class-cntctfrm-settings.php:1116
+#: includes/class-cntctfrm-settings.php:1167
+#: includes/class-cntctfrm-settings.php:1210
+msgid "Download"
+msgstr "Download"
+
+#: includes/class-cntctfrm-settings.php:613
+msgid "Sending method"
+msgstr "Afsendelsesmetode"
 
 # @ contact_form
-#~ msgid "allows to store your messages to the database."
-#~ msgstr "giver mulighed for at gemme dine meddelelser til databasen."
+#: includes/class-cntctfrm-settings.php:618
+msgid "Wp-mail"
+msgstr "WP-mail"
 
 # @ contact_form
-#~ msgid "Manage messages that have been sent from your website."
-#~ msgstr "Administrere meddelelser, der er blevet sendt fra dit websted."
+#: includes/class-cntctfrm-settings.php:619
+msgid "You can use the WordPress wp_mail function for mailing"
+msgstr "Du kan bruge WordPress' wp_mail-funktion til at sende mails"
 
 # @ contact_form
-#~ msgid "Language"
-#~ msgstr "Sprog"
-
-#~ msgid "Appearance"
-#~ msgstr "Udseende"
-
-#~ msgid ""
-#~ "Email 'FROM' field option was changed, which may cause email messages "
-#~ "being moved to the spam folder or email delivery failures."
-#~ msgstr ""
-#~ "E 'Fra' feltet indstilling blev ændret, som kan forårsage e-mail "
-#~ "meddelelser flyttes til spam omslag eller email levering fiaskoerne."
+#: includes/class-cntctfrm-settings.php:624
+msgid "Mail"
+msgstr "E-post"
 
 # @ contact_form
-#~ msgid ""
-#~ "If the 'Redirect to page' option is selected then the URL field should be "
-#~ "in the following format"
-#~ msgstr ""
-#~ "Hvis 'omdirigere til side \"er valgt derefter URL-feltet skal være i "
-#~ "følgende format"
+#: includes/class-cntctfrm-settings.php:625
+msgid "You can use the PHP mail function for mailing"
+msgstr "Du kan bruge PHP's mail-funktion til at sende mails"
+
+#: includes/class-cntctfrm-settings.php:631
+msgid "'FROM' field"
+msgstr "'Fra' feltet"
 
 # @ contact_form
-#~ msgid "Such user does not exist."
-#~ msgstr "Sådan bruger findes ikke."
+#: includes/class-cntctfrm-settings.php:647
+msgid "User name"
+msgstr "Brugernavn"
 
 # @ contact_form
-#~ msgid ""
-#~ "Please enter a valid email address in the 'Use this email address' field."
-#~ msgstr ""
-#~ "Angiv en gyldig e-mail-adresse i feltet 'Brug denne e-mail-adresse'."
+#: includes/class-cntctfrm-settings.php:649
+msgid ""
+"The name of the user who fills the form will be used in the field 'From'."
+msgstr ""
+"Navnet på den bruger, der udfylder formularen skal bruges i feltet 'Fra'."
 
 # @ contact_form
-#~ msgid "Settings saved."
-#~ msgstr "Ændringerne blev gemt."
+#: includes/class-cntctfrm-settings.php:671
+msgid "User email"
+msgstr "Bruger E-mail"
 
 # @ contact_form
-#~ msgid "Settings are not saved."
-#~ msgstr "Ændringerne er ikke gemt"
+#: includes/class-cntctfrm-settings.php:673
+msgid ""
+"The email address of the user who fills the form will be used in the field "
+"'From'."
+msgstr ""
+"E-mail-adressen på den bruger, der udfylder formularen skal bruges i feltet "
+"'Fra'."
+
+#: includes/class-cntctfrm-settings.php:682
+msgid ""
+"If this option is changed, email messages may be moved to the spam folder or "
+"email delivery failures may occur."
+msgstr ""
+"Hvis denne indstilling ændres, e-mail-beskeder kan blive flyttet til spam-"
+"mappen eller email levering fejl kan opstå."
 
 # @ contact_form
-#~ msgid ""
-#~ "If you leave the fields empty, the messages will be sent to the email "
-#~ "address specified during registration."
-#~ msgstr ""
-#~ "Hvis du lader felterne tomme, sendes meddelelser til den e-mail-adresse "
-#~ "angivet under registreringen."
+#: includes/class-cntctfrm-settings.php:691
+msgid "Required symbol"
+msgstr "Kræves symbol"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:701
+msgid "Fields"
+msgstr "Felter"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:702
+#: includes/class-cntctfrm-settings.php:721
+#: includes/class-cntctfrm-settings.php:737
+#: includes/class-cntctfrm-settings.php:768
+#: includes/class-cntctfrm-settings.php:789
+#: includes/class-cntctfrm-settings.php:811
+#: includes/class-cntctfrm-settings.php:837
+#: includes/class-cntctfrm-settings.php:862
+#: includes/class-cntctfrm-settings.php:900
+#: includes/class-cntctfrm-settings.php:940
+#: includes/class-cntctfrm-settings.php:992
+msgid "Used"
+msgstr "Brugt"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:703
+#: includes/class-cntctfrm-settings.php:725
+#: includes/class-cntctfrm-settings.php:741
+#: includes/class-cntctfrm-settings.php:772
+#: includes/class-cntctfrm-settings.php:793
+#: includes/class-cntctfrm-settings.php:815
+#: includes/class-cntctfrm-settings.php:841
+#: includes/class-cntctfrm-settings.php:871
+#: includes/class-cntctfrm-settings.php:909
+#: includes/class-cntctfrm-settings.php:993
+msgid "Required"
+msgstr "Kræves"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:706
+#: includes/class-cntctfrm-settings.php:747
+#: includes/class-cntctfrm-settings.php:819
+#: includes/class-cntctfrm-settings.php:878
+#: includes/class-cntctfrm-settings.php:915
+#: includes/class-cntctfrm-settings.php:994
+msgid "Visible"
+msgstr "Synlig"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:707
+#: includes/class-cntctfrm-settings.php:751
+#: includes/class-cntctfrm-settings.php:823
+#: includes/class-cntctfrm-settings.php:882
+#: includes/class-cntctfrm-settings.php:919
+#: includes/class-cntctfrm-settings.php:995
+msgid "Disabled for editing"
+msgstr "Handicappede til redigering"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:708
+#: includes/class-cntctfrm-settings.php:778
+#: includes/class-cntctfrm-settings.php:886
+#: includes/class-cntctfrm-settings.php:923
+msgid "Field's default value"
+msgstr "Feltets standardværdi"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:718
+msgid "Department selectbox"
+msgstr "Afdeling selectbox"
+
+#: includes/class-cntctfrm-settings.php:755
+msgid "Use User's name as a default value if the user is logged in."
+msgstr "Brug brugerens navn som standardværdi, hvis brugeren er logget på."
+
+#: includes/class-cntctfrm-settings.php:756
+#: includes/class-cntctfrm-settings.php:828
+msgid ""
+"'Visible' and 'Disabled for editing' options will be applied only to logged-"
+"in users."
+msgstr ""
+"'Synlig' og 'Uarbejdsdygtig nemlig redaktion' indstillinger anvendes kun på "
+"journaliseret-i brugernes."
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:765
+msgid "Location selectbox"
+msgstr "Beliggenhed selectbox"
+
+#: includes/class-cntctfrm-settings.php:827
+msgid "Use User's email as a default value if the user is logged in."
+msgstr ""
+"Brug brugerens e-mail som en standardværdi, hvis brugeren er logget på."
+
+#: includes/class-cntctfrm-settings.php:849
+#, php-format
+msgid ""
+"Specify a mask which will be used for the phone validation, where * is a "
+"number. Use only the following symbols: %s"
+msgstr ""
+"Angiv en maske, som skal bruges til telefonvalidering, hvor * er et tal. "
+"Brug kun følgende symboler: %s"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:933
+msgid "Attachment block"
+msgstr "Vedhæftet fil blok"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:935
+msgid "Users can attach the following file formats"
+msgstr "Brugerne kan vedhæfte følgende filformater"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:958
+msgid "Multi-attachment"
+msgstr "Multi-vedhæftning"
+
+#: includes/class-cntctfrm-settings.php:960
+msgid "Enable to multiple file selection"
+msgstr "Gør det muligt at vælge flere filer"
+
+#: includes/class-cntctfrm-settings.php:990
+msgid "Title"
+msgstr "Titel"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:991
+msgid "Field Type"
+msgstr "Felt type"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:996
+msgid "Field's default/available value"
+msgstr "Feltets standard/tilgængelige værdi"
+
+#: includes/class-cntctfrm-settings.php:1021
+msgid "Create Field"
+msgstr "Opret felt"
+
+#: includes/class-cntctfrm-settings.php:1026
+msgid "Google Analytics Measurement ID"
+msgstr "Google Analytics-målings-ID"
+
+#: includes/class-cntctfrm-settings.php:1031
+#, php-format
+msgid ""
+"Enter your %1$sMeasurement ID%2$s to track contact form submissions in "
+"Google Analytics."
+msgstr ""
+"Indtast dit %1$sMeasurement ID%2$s for at spore indsendelser af "
+"kontaktformularer i Google Analytics."
+
+#: includes/class-cntctfrm-settings.php:1032
+msgid "Google Analytics version 4 is required."
+msgstr "Google Analytics version 4 er påkrævet."
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1045
+msgid "Add to the form"
+msgstr "Føje til formularen"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1050
+msgid "Tips below the Attachment"
+msgstr "Tips nedenfor den vedhæftede fil"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1057
+msgid "'Send me a copy' block"
+msgstr "'Sende mig en afskrift' blok"
+
+#: includes/class-cntctfrm-settings.php:1064
+msgid "GDPR Compliance"
+msgstr "Overholdelse af GDPR"
+
+#: includes/class-cntctfrm-settings.php:1069
+msgid "Link to Privacy Policy Page"
+msgstr "Link til siden om privatlivspolitik"
+
+#: includes/class-cntctfrm-settings.php:1106
+msgid "Activate for network"
+msgstr "Aktiver til netværk"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1222
+msgid "Agreement checkbox"
+msgstr "Aftalen afkrydsningsfeltet"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1222
+msgid "Required checkbox for submitting the form"
+msgstr "Kræves afkrydsningsfeltet til at sende formularen"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1223
+msgid "Optional checkbox"
+msgstr "Valgfri afkrydsningsfeltet"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1223
+msgid "Optional checkbox, the results of which will be displayed in email"
+msgstr "Valgfri afkrydsningsfeltet, hvis resultater vil blive vist i e-mail"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1234
+msgid "Delete an attachment file from the server after the email is sent"
+msgstr "Slette en vedhæftet fil fra serveren, efter at e-mailen sendes"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1240
+msgid "Email in HTML format sending"
+msgstr "E-mail i HTML-format at sende"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1244
+msgid "Limit for Message field"
+msgstr "Grænse for beskedfelt"
+
+#: includes/class-cntctfrm-settings.php:1246
+msgid "Min / Max symbols in the message"
+msgstr "Min/max-symboler i meddelelsen"
+
+#: includes/class-cntctfrm-settings.php:1248
+msgid "min"
+msgstr "min"
+
+#: includes/class-cntctfrm-settings.php:1249
+msgid "max"
+msgstr "max"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1254
+msgid "Display additional info in the email"
+msgstr "Få vist yderligere info i e-mailen"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1261
+msgid "Sent from (IP address)"
+msgstr "Sendt fra (IP-adresse)"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1261
+msgid "Example: Sent from (IP address): 127.0.0.1"
+msgstr "Et eksempel: Sendt fra (IP-adresse): 127.0.0.1"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1262
+msgid "Example: Date/Time: August 19, 2013 8:50 pm"
+msgstr "Et eksempel: Dato/klokkeslæt: 19. august 2013 kl. 20.50"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1263
+msgid ""
+"Example: Sent from (referer):   https://bestwebsoft.com/contacts/contact-us/"
+msgstr ""
+"Eksempel: Sendt fra (referer): https://bestwebsoft.com/contacts/contact-us/"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1264
+msgid ""
+"Example: Using (user agent): Mozilla/5.0 (Windows NT 6.2; WOW64) "
+"AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36"
+msgstr ""
+"Et eksempel: Brug af (brugeragent): Mozilla/5.0 (Windows NT 6.2; WOW64) "
+"AppleWebKit/537.36 (KHTML, som Gecko) Chrome/28.0.1500.95 Safari/537.36"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1270
+msgid "Language Settings"
+msgstr "Sprogindstillinger"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1283
+msgid "Add a language"
+msgstr "Tilføje et sprog"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1287
+msgid "Change the names of the contact form fields and error messages"
+msgstr "Ændre navne på kontaktpersoner formularfelter og fejlmeddelelser"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1293
+#: includes/class-cntctfrm-settings.php:1404
+#: includes/class-cntctfrm-settings.php:1523
+msgid "Default"
+msgstr "Standard"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1308
+#: includes/class-cntctfrm-settings.php:1352
+msgid "click to expand/hide the list"
+msgstr "Klik for at udvide/skjule listen"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1317
+#: includes/class-cntctfrm-settings.php:1361
+msgid "Tips below the Attachment block"
+msgstr "Tips nedenfor den vedhæftede fil blokere"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1322
+#: includes/class-cntctfrm-settings.php:1366
+msgid "Error message for the Name field"
+msgstr "Fejlmeddelelse for feltet navn"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1323
+#: includes/class-cntctfrm-settings.php:1367
+msgid "Error message for the Address field"
+msgstr "Fejlmeddelelse for feltet adresse"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1324
+#: includes/class-cntctfrm-settings.php:1368
+msgid "Error message for the Email field"
+msgstr "Fejlmeddelelse for feltet E-mail"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1325
+#: includes/class-cntctfrm-settings.php:1369
+msgid "Error message for the Phone field"
+msgstr "Fejlmeddelelse for feltet telefon"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1326
+#: includes/class-cntctfrm-settings.php:1370
+msgid "Error message for the Subject field"
+msgstr "Fejlmeddelelse for feltet emne"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1327
+#: includes/class-cntctfrm-settings.php:1371
+msgid "Error message for the Message field"
+msgstr "Fejl besked i feltet besked"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1328
+#: includes/class-cntctfrm-settings.php:1372
+msgid "Error message for Limit for the Message field"
+msgstr "Fejlmeddelelse for Limit for Message-feltet"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1329
+#: includes/class-cntctfrm-settings.php:1373
+msgid "Error message about the file type for the Attachment field"
+msgstr "Fejlmeddelelse om filtypen til feltet vedhæftet fil"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1330
+#: includes/class-cntctfrm-settings.php:1374
+msgid ""
+"Error message while uploading a file for the Attachment field to the server"
+msgstr "Fejlmeddelelse ved upload en fil til feltet vedhæftet fil til serveren"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1331
+#: includes/class-cntctfrm-settings.php:1375
+msgid "Error message while moving the file for the Attachment field"
+msgstr "Fejlmeddelelse mens du flytter filen for feltet vedhæftet fil"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1332
+#: includes/class-cntctfrm-settings.php:1376
+msgid "Error message when file size limit for the Attachment field is exceeded"
+msgstr ""
+"Fejlmeddelelse, når filstørrelse for feltet vedhæftet fil er overskredet"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1333
+#: includes/class-cntctfrm-settings.php:1377
+msgid "Error message for the Captcha field"
+msgstr "Fejlmeddelelse for Captcha feltet"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1334
+#: includes/class-cntctfrm-settings.php:1378
+msgid "Error message for the whole form"
+msgstr "Fejlmeddelelse for hele formularen"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1394
+msgid "Use the changed names of the contact form fields in the email"
+msgstr "Bruge ændret navnene på felterne kontaktformularen i e-mailen"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1400
+msgid "Action after email is sent"
+msgstr "Handling efter at e-mail er sendt"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1402
+msgid "Display text"
+msgstr "Vis tekst"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1419
+#: includes/class-cntctfrm-settings.php:1436
+msgid "Text"
+msgstr "Tekst"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1450
+msgid "Redirect to the page"
+msgstr "Viderstil til side"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1452
+msgid "Url"
+msgstr "Url"
+
+#: includes/class-cntctfrm-settings.php:1475
+#, php-format
+msgid ""
+"Please enable JavaScript to change '%1$s', '%2$s', '%3$s', '%4$s' options "
+"and for fields sorting."
+msgstr ""
+"Aktivér JavaScript for at ændre '%1$s', '%2$s', '%3$s', '%4$s'-"
+"indstillingerne og for at sortere felterne."
+
+#: includes/class-cntctfrm-settings.php:1476
+#: includes/class-cntctfrm-settings.php:1495
+msgid "Form layout"
+msgstr "Formular Layout"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1477
+#: includes/class-cntctfrm-settings.php:1563
+msgid "Labels position"
+msgstr "Position for etiketter"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1478
+#: includes/class-cntctfrm-settings.php:1581
+msgid "Labels align"
+msgstr "Etiketter justeres"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1479
+#: includes/class-cntctfrm-settings.php:1507
+msgid "Submit position"
+msgstr "Indsende position"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1480
+#: includes/class-cntctfrm-settings.php:1612
+msgid "Add tooltips"
+msgstr "Føje værktøjstip"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1481
+#: includes/class-cntctfrm-settings.php:1653
+msgid "Style options"
+msgstr "Indstilling af fremtoning"
+
+#: includes/class-cntctfrm-settings.php:1499
+msgid "One column"
+msgstr "En kolonne"
+
+#: includes/class-cntctfrm-settings.php:1502
+msgid "Two columns"
+msgstr "To kolonner"
+
+#: includes/class-cntctfrm-settings.php:1511
+#: includes/class-cntctfrm-settings.php:1552
+#: includes/class-cntctfrm-settings.php:1570
+#: includes/class-cntctfrm-settings.php:1585
+msgid "Left"
+msgstr "Venstre"
+
+#: includes/class-cntctfrm-settings.php:1514
+#: includes/class-cntctfrm-settings.php:1558
+#: includes/class-cntctfrm-settings.php:1573
+#: includes/class-cntctfrm-settings.php:1591
+msgid "Right"
+msgstr "Højre"
+
+#: includes/class-cntctfrm-settings.php:1519
+msgid "Width"
+msgstr "Bredde"
+
+#: includes/class-cntctfrm-settings.php:1527
+msgid "Custom"
+msgstr "Brugerdefineret"
+
+#: includes/class-cntctfrm-settings.php:1534
+msgid "px"
+msgstr "px"
+
+#: includes/class-cntctfrm-settings.php:1548
+msgid "Form align"
+msgstr "Form align"
+
+#: includes/class-cntctfrm-settings.php:1555
+#: includes/class-cntctfrm-settings.php:1588
+msgid "Center"
+msgstr "Center"
+
+#: includes/class-cntctfrm-settings.php:1567
+msgid "Top"
+msgstr "Top"
+
+#: includes/class-cntctfrm-settings.php:1576
+msgid "Bottom"
+msgstr "Bunden"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1596
+msgid "Errors output"
+msgstr "Fejl output"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1599
+msgid "Display error messages"
+msgstr "Vise fejlmeddelelser"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1600
+msgid "Color of the input field errors."
+msgstr "Farven på input felt fejlene."
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1601
+msgid "Display error messages & color of the input field errors"
+msgstr "Vise fejlmeddelelser & farven på input felt fejlene"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1606
+msgid "Add placeholder to the input blocks"
+msgstr "Tilføje pladsholder til input blokke"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1626
+msgid "Email address"
+msgstr "E-mail-adresse:"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1657
+msgid "Text color"
+msgstr "Tekstfarve"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1662
+#: includes/class-cntctfrm-settings.php:1671
+#: includes/class-cntctfrm-settings.php:1684
+#: includes/class-cntctfrm-settings.php:1692
+#: includes/class-cntctfrm-settings.php:1700
+#: includes/class-cntctfrm-settings.php:1708
+#: includes/class-cntctfrm-settings.php:1721
+#: includes/class-cntctfrm-settings.php:1729
+#: includes/class-cntctfrm-settings.php:1741
+#: includes/class-cntctfrm-settings.php:1758
+#: includes/class-cntctfrm-settings.php:1766
+#: includes/class-cntctfrm-settings.php:1774
+msgid "Select Color"
+msgstr "Vælg farve"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1665
+msgid "Label text color"
+msgstr "Etiket tekstfarve"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1674
+msgid "Placeholder color"
+msgstr "Pladsholder farve"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1679
+msgid "Errors color"
+msgstr "Fejl farve"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1687
+msgid "Error text color"
+msgstr "Fejl tekstfarve"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1695
+msgid "Background color of the input field errors"
+msgstr "Baggrundsfarven af input felt fejl"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1703
+msgid "Border color of the input field errors"
+msgstr "Kantfarven på inputfelt fejl"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1711
+msgid "Placeholder color of the input field errors"
+msgstr "Pladsholder farven på input felt fejlene"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1716
+msgid "Input fields"
+msgstr "Felter"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1724
+msgid "Input fields background color"
+msgstr "Inputfelter baggrundsfarve"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1732
+msgid "Text fields color"
+msgstr "Tekst felter farve"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1736
+msgid "Border width in px, numbers only"
+msgstr "Kantbredde i px, kun tal"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1744
+#: includes/class-cntctfrm-settings.php:1777
+msgid "Border color"
+msgstr "Ramme farve"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1749
+msgid "Submit button"
+msgstr "Send knap"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1753
+msgid "Width in px, numbers only"
+msgstr "Bredde i px, kun tal"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1761
+msgid "Button color"
+msgstr "Knap farve"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1769
+msgid "Button text color"
+msgstr "Knap tekstfarve"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1789
+msgid "Contact Form | Preview"
+msgstr "Kontakt Form | Preview"
+
+#: includes/class-cntctfrm-settings.php:1790
+msgid "Drag the necessary field to sort fields."
+msgstr "Træk feltet nødvendigt hvis du vil sortere felterne."
+
+#: includes/class-cntctfrm-settings.php:1948
+#, php-format
+msgid "between %1$d, and %2$d characters"
+msgstr "mellem %1$d og %2$d tegn"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:2144
+msgid "Contact Form Shortcode"
+msgstr "Kortkode til kontaktformular"
+
+#: includes/class-cntctfrm-settings.php:2148
+msgid "Add Contact Form  to your page or post using the following shortcode:"
+msgstr ""
+"Føj kontaktformularen til din side eller dit indlæg ved hjælp af følgende "
+"kortkode:"
 
 # @ contact_form
 #, fuzzy
-#~ msgid "The user's email address"
-#~ msgstr "Brugerens e-mail-adresse:"
-
-# @ contact_form
-#~ msgid "Select a username"
-#~ msgstr "Vælg et brugernavn."
+#~| msgid "Activate"
+#~ msgid "Active Theme"
+#~ msgstr "Aktiver"
 
 # @ contact_form
 #, fuzzy
-#~ msgid ""
-#~ "Select a username of the person who should get the messages from the "
-#~ "contact form."
-#~ msgstr ""
-#~ "Angiv brugernavnet på den person, der skal få beskeder fra "
-#~ "kontaktpersonformularen."
+#~| msgid "Message"
+#~ msgid "Memory Usage"
+#~ msgstr "Besked:"
 
 # @ contact_form
 #, fuzzy
-#~ msgid "Use this email address"
-#~ msgstr "Brug denne e-mail-adresse:"
+#~| msgid "Please enter a valid email address in the 'FROM' field."
+#~ msgid "Please enter a valid email address."
+#~ msgstr "Indsæt en gyldig emailadresse i fra-feltet"
 
 # @ contact_form
 #, fuzzy
-#~ msgid "Enter the email address for receiving messages"
-#~ msgstr ""
-#~ "Indtast den e-mailadresse du vil have de meddelelser, der sendes til."
+#~| msgid "Activate"
+#~ msgid "Inactive"
+#~ msgstr "Aktiver"
+
+#~ msgid "All plugin settings were restored."
+#~ msgstr "Alle plugin indstillinger blev gendannet."
 
 # @ contact_form
 #, fuzzy
-#~ msgid "Add department selectbox to the contact form"
-#~ msgstr "Tilføje afdeling selectbox til kontakt formularen:"
-
-# @ contact_form
-#~ msgid "Save emails to the database"
-#~ msgstr "Gem dine emails i databasen"
-
-# @ contact_form
-#~ msgid "Using"
-#~ msgstr "Ved hjælp af"
+#~| msgid "Contact form"
+#~ msgid "Contact Support"
+#~ msgstr "Kontaktformular"
 
 # @ contact_form
 #, fuzzy
-#~ msgid "settings page"
-#~ msgstr "Ændringerne blev gemt."
-
-# @ contact_form
-#~ msgid "Download"
-#~ msgstr "Download"
-
-# @ contact_form
-#~ msgid "Wp-mail"
-#~ msgstr "WP-mail"
-
-# @ contact_form
-#, fuzzy
-#~ msgid "You can use the Wordpress wp_mail function for mailing"
-#~ msgstr "Du kan bruge funktionen wp_mail til mailing"
-
-# @ contact_form
-#~ msgid "Mail"
-#~ msgstr "E-post"
-
-# @ contact_form
-#, fuzzy
-#~ msgid "You can use the PHP mail function for mailing"
-#~ msgstr "Du kan bruge funktionen wp_mail til mailing"
-
-#~ msgid "'FROM' field"
-#~ msgstr "'Fra' feltet"
-
-# @ contact_form
-#~ msgid "User name"
-#~ msgstr "Brugernavn"
-
-# @ contact_form
-#~ msgid ""
-#~ "The name of the user who fills the form will be used in the field 'From'."
-#~ msgstr ""
-#~ "Navnet på den bruger, der udfylder formularen skal bruges i feltet 'Fra'."
-
-# @ contact_form
-#~ msgid "User email"
-#~ msgstr "Bruger E-mail"
-
-# @ contact_form
-#~ msgid ""
-#~ "The email address of the user who fills the form will be used in the "
-#~ "field 'From'."
-#~ msgstr ""
-#~ "E-mail-adressen på den bruger, der udfylder formularen skal bruges i "
-#~ "feltet 'Fra'."
-
-#~ msgid ""
-#~ "If this option is changed, email messages may be moved to the spam folder "
-#~ "or email delivery failures may occur."
-#~ msgstr ""
-#~ "Hvis denne indstilling ændres, e-mail-beskeder kan blive flyttet til spam-"
-#~ "mappen eller email levering fejl kan opstå."
-
-# @ contact_form
-#~ msgid "Required symbol"
-#~ msgstr "Kræves symbol"
-
-# @ contact_form
-#~ msgid "Fields"
-#~ msgstr "Felter"
-
-# @ contact_form
-#~ msgid "Used"
-#~ msgstr "Brugt"
-
-# @ contact_form
-#~ msgid "Required"
-#~ msgstr "Kræves"
-
-# @ contact_form
-#~ msgid "Visible"
-#~ msgstr "Synlig"
-
-# @ contact_form
-#~ msgid "Disabled for editing"
-#~ msgstr "Handicappede til redigering"
-
-# @ contact_form
-#~ msgid "Field's default value"
-#~ msgstr "Feltets standardværdi"
-
-# @ contact_form
-#~ msgid "Department selectbox"
-#~ msgstr "Afdeling selectbox"
-
-#~ msgid "Use User's name as a default value if the user is logged in."
-#~ msgstr "Brug brugerens navn som standardværdi, hvis brugeren er logget på."
-
-#~ msgid ""
-#~ "'Visible' and 'Disabled for editing' options will be applied only to "
-#~ "logged-in users."
-#~ msgstr ""
-#~ "'Synlig' og 'Uarbejdsdygtig nemlig redaktion' indstillinger anvendes kun "
-#~ "på journaliseret-i brugernes."
-
-# @ contact_form
-#~ msgid "Location selectbox"
-#~ msgstr "Beliggenhed selectbox"
-
-#~ msgid "Use User's email as a default value if the user is logged in."
-#~ msgstr ""
-#~ "Brug brugerens e-mail som en standardværdi, hvis brugeren er logget på."
-
-# @ contact_form
-#~ msgid "Attachment block"
-#~ msgstr "Vedhæftet fil blok"
-
-# @ contact_form
-#~ msgid "Users can attach the following file formats"
-#~ msgstr "Brugerne kan vedhæfte følgende filformater"
+#~| msgid "What to use?"
+#~ msgid "What feature?"
+#~ msgstr "Hvad skal man bruge?"
 
 # @ contact_form
 #~ msgid "If you upgrade to Pro version all your settings will be saved."
@@ -1254,281 +1380,8 @@ msgstr ""
 #~ "Hvis du opgradere til Pro-version vil alle indstillingerne blive gemt."
 
 # @ contact_form
-#~ msgid "Add to the form"
-#~ msgstr "Føje til formularen"
-
-# @ contact_form
-#~ msgid "Tips below the Attachment"
-#~ msgstr "Tips nedenfor den vedhæftede fil"
-
-# @ contact_form
-#~ msgid "'Send me a copy' block"
-#~ msgstr "'Sende mig en afskrift' blok"
-
-# @ contact_form
-#~ msgid "Agreement checkbox"
-#~ msgstr "Aftalen afkrydsningsfeltet"
-
-# @ contact_form
-#~ msgid "Required checkbox for submitting the form"
-#~ msgstr "Kræves afkrydsningsfeltet til at sende formularen"
-
-# @ contact_form
-#~ msgid "Optional checkbox"
-#~ msgstr "Valgfri afkrydsningsfeltet"
-
-# @ contact_form
-#~ msgid "Optional checkbox, the results of which will be displayed in email"
-#~ msgstr "Valgfri afkrydsningsfeltet, hvis resultater vil blive vist i e-mail"
-
-# @ contact_form
-#~ msgid "Delete an attachment file from the server after the email is sent"
-#~ msgstr "Slette en vedhæftet fil fra serveren, efter at e-mailen sendes"
-
-# @ contact_form
-#~ msgid "Email in HTML format sending"
-#~ msgstr "E-mail i HTML-format at sende"
-
-# @ contact_form
-#~ msgid "Display additional info in the email"
-#~ msgstr "Få vist yderligere info i e-mailen"
-
-# @ contact_form
-#, fuzzy
-#~ msgid "Sent from (IP address)"
-#~ msgstr "Sendt fra (ip adresse)"
-
-# @ contact_form
 #~ msgid "Language settings for the field names in the form"
 #~ msgstr "Sprogindstillingerne for feltnavnene i form"
-
-# @ contact_form
-#~ msgid "Add a language"
-#~ msgstr "Tilføje et sprog"
-
-# @ contact_form
-#~ msgid "Change the names of the contact form fields and error messages"
-#~ msgstr "Ændre navne på kontaktpersoner formularfelter og fejlmeddelelser"
-
-# @ contact_form
-#~ msgid "Default"
-#~ msgstr "Standard"
-
-# @ contact_form
-#~ msgid "click to expand/hide the list"
-#~ msgstr "Klik for at udvide/skjule listen"
-
-# @ contact_form
-#~ msgid "Tips below the Attachment block"
-#~ msgstr "Tips nedenfor den vedhæftede fil blokere"
-
-# @ contact_form
-#~ msgid "Error message for the Name field"
-#~ msgstr "Fejlmeddelelse for feltet navn"
-
-# @ contact_form
-#~ msgid "Error message for the Address field"
-#~ msgstr "Fejlmeddelelse for feltet adresse"
-
-# @ contact_form
-#~ msgid "Error message for the Email field"
-#~ msgstr "Fejlmeddelelse for feltet E-mail"
-
-# @ contact_form
-#~ msgid "Error message for the Phone field"
-#~ msgstr "Fejlmeddelelse for feltet telefon"
-
-# @ contact_form
-#~ msgid "Error message for the Subject field"
-#~ msgstr "Fejlmeddelelse for feltet emne"
-
-# @ contact_form
-#~ msgid "Error message for the Message field"
-#~ msgstr "Fejl besked i feltet besked"
-
-# @ contact_form
-#~ msgid "Error message about the file type for the Attachment field"
-#~ msgstr "Fejlmeddelelse om filtypen til feltet vedhæftet fil"
-
-# @ contact_form
-#~ msgid ""
-#~ "Error message while uploading a file for the Attachment field to the "
-#~ "server"
-#~ msgstr ""
-#~ "Fejlmeddelelse ved upload en fil til feltet vedhæftet fil til serveren"
-
-# @ contact_form
-#~ msgid "Error message while moving the file for the Attachment field"
-#~ msgstr "Fejlmeddelelse mens du flytter filen for feltet vedhæftet fil"
-
-# @ contact_form
-#~ msgid ""
-#~ "Error message when file size limit for the Attachment field is exceeded"
-#~ msgstr ""
-#~ "Fejlmeddelelse, når filstørrelse for feltet vedhæftet fil er overskredet"
-
-# @ contact_form
-#~ msgid "Error message for the Captcha field"
-#~ msgstr "Fejlmeddelelse for Captcha feltet"
-
-# @ contact_form
-#~ msgid "Error message for the whole form"
-#~ msgstr "Fejlmeddelelse for hele formularen"
-
-# @ contact_form
-#~ msgid "Use the changed names of the contact form fields in the email"
-#~ msgstr "Bruge ændret navnene på felterne kontaktformularen i e-mailen"
-
-# @ contact_form
-#~ msgid "Action after email is sent"
-#~ msgstr "Handling efter at e-mail er sendt"
-
-# @ contact_form
-#~ msgid "Display text"
-#~ msgstr "Vis tekst"
-
-# @ contact_form
-#~ msgid "Text"
-#~ msgstr "Tekst"
-
-# @ contact_form
-#~ msgid "Redirect to the page"
-#~ msgstr "Viderstil til side"
-
-# @ contact_form
-#~ msgid "Url"
-#~ msgstr "Url"
-
-#~ msgid "Form layout"
-#~ msgstr "Formular Layout"
-
-# @ contact_form
-#, fuzzy
-#~ msgid "Labels position"
-#~ msgstr "Indsende position"
-
-# @ contact_form
-#~ msgid "Submit position"
-#~ msgstr "Indsende position"
-
-# @ contact_form
-#~ msgid "Add tooltips"
-#~ msgstr "Føje værktøjstip"
-
-# @ contact_form
-#~ msgid "Style options"
-#~ msgstr "Indstilling af fremtoning"
-
-#~ msgid "One column"
-#~ msgstr "En kolonne"
-
-#~ msgid "Two columns"
-#~ msgstr "To kolonner"
-
-#~ msgid "Left"
-#~ msgstr "Venstre"
-
-#~ msgid "Right"
-#~ msgstr "Højre"
-
-# @ contact_form
-#~ msgid "Errors output"
-#~ msgstr "Fejl output"
-
-# @ contact_form
-#~ msgid "Display error messages"
-#~ msgstr "Vise fejlmeddelelser"
-
-# @ contact_form
-#~ msgid "Color of the input field errors."
-#~ msgstr "Farven på input felt fejlene."
-
-# @ contact_form
-#~ msgid "Display error messages & color of the input field errors"
-#~ msgstr "Vise fejlmeddelelser & farven på input felt fejlene"
-
-# @ contact_form
-#~ msgid "Add placeholder to the input blocks"
-#~ msgstr "Tilføje pladsholder til input blokke"
-
-# @ contact_form
-#~ msgid "Email address"
-#~ msgstr "E-mail-adresse:"
-
-# @ contact_form
-#~ msgid "Text color"
-#~ msgstr "Tekstfarve"
-
-# @ contact_form
-#~ msgid "Label text color"
-#~ msgstr "Etiket tekstfarve"
-
-# @ contact_form
-#~ msgid "Placeholder color"
-#~ msgstr "Pladsholder farve"
-
-# @ contact_form
-#~ msgid "Errors color"
-#~ msgstr "Fejl farve"
-
-# @ contact_form
-#~ msgid "Error text color"
-#~ msgstr "Fejl tekstfarve"
-
-# @ contact_form
-#~ msgid "Background color of the input field errors"
-#~ msgstr "Baggrundsfarven af input felt fejl"
-
-# @ contact_form
-#~ msgid "Border color of the input field errors"
-#~ msgstr "Kantfarven på inputfelt fejl"
-
-# @ contact_form
-#~ msgid "Placeholder color of the input field errors"
-#~ msgstr "Pladsholder farven på input felt fejlene"
-
-# @ contact_form
-#~ msgid "Input fields"
-#~ msgstr "Felter"
-
-# @ contact_form
-#~ msgid "Input fields background color"
-#~ msgstr "Inputfelter baggrundsfarve"
-
-# @ contact_form
-#~ msgid "Text fields color"
-#~ msgstr "Tekst felter farve"
-
-# @ contact_form
-#~ msgid "Border width in px, numbers only"
-#~ msgstr "Kantbredde i px, kun tal"
-
-# @ contact_form
-#~ msgid "Border color"
-#~ msgstr "Ramme farve"
-
-# @ contact_form
-#~ msgid "Submit button"
-#~ msgstr "Send knap"
-
-# @ contact_form
-#~ msgid "Width in px, numbers only"
-#~ msgstr "Bredde i px, kun tal"
-
-# @ contact_form
-#~ msgid "Button color"
-#~ msgstr "Knap farve"
-
-# @ contact_form
-#~ msgid "Button text color"
-#~ msgstr "Knap tekstfarve"
-
-# @ contact_form
-#~ msgid "Contact Form | Preview"
-#~ msgstr "Kontakt Form | Preview"
-
-#~ msgid "Drag the necessary field to sort fields."
-#~ msgstr "Træk feltet nødvendigt hvis du vil sortere felterne."
 
 # @ contact_form
 #, fuzzy
@@ -1543,16 +1396,8 @@ msgstr ""
 #~ msgid "Save Changes"
 #~ msgstr "Gem ændringer"
 
-# @ contact_form
-#~ msgid "Contact Form"
-#~ msgstr "Kontaktformular"
-
 #~ msgid "How to Use Step-by-step Instruction"
 #~ msgstr "Hvordan man bruger en trinvis instruktion"
-
-# @ contact_form
-#~ msgid "Additional settings"
-#~ msgstr "Yderligere indstillinger"
 
 # @ contact_form
 #~ msgid "Go PRO"
@@ -1601,36 +1446,6 @@ msgstr ""
 #~ "Du kan bruge %% navn %% til at vise data fra feltet e-mail og %% besked %"
 #~ "% til at vise data fra feltet besked samt %%sITENAME %% for at vise blog "
 #~ "navn."
-
-#~ msgid ""
-#~ "Please enable JavaScript to change '%s', '%s' options and for fields "
-#~ "sorting."
-#~ msgstr ""
-#~ "Venligst JavaScript at ændre '%s', '%s' indstillinger og felter sortering."
-
-# @ contact_form
-#~ msgid "Example: Sent from (IP address):\t127.0.0.1"
-#~ msgstr "Eksempel: Sendt fra (IP adresse): 127.0.0.1"
-
-# @ contact_form
-#~ msgid "Example: Date/Time:\tAugust 19, 2013 8:50 pm"
-#~ msgstr "Eksempel: Dato/tid: 19 August 2013 8:50 pm"
-
-# @ contact_form
-#, fuzzy
-#~ msgid ""
-#~ "Example: Sent from (referer):\thttps://bestwebsoft.com/contacts/contact-"
-#~ "us/"
-#~ msgstr ""
-#~ "Eksempel: Sendt fra (referer): http://bestwebsoft.com/contacts/contact-us/"
-
-# @ contact_form
-#~ msgid ""
-#~ "Example: Using (user agent):\tMozilla/5.0 (Windows NT 6.2; WOW64) "
-#~ "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36"
-#~ msgstr ""
-#~ "Eksempel: Bruger (brugeragent): Mozilla/5.0 (Windows NT 6.2; WOW64) "
-#~ "AppleWebKit/537.36 (KHTML, lige Gecko) Chrome/28.0.1500.95 Safari/537.36"
 
 # @ contact_form
 #~ msgid "Unlock premium options by upgrading to Pro version"

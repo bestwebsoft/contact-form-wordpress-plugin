@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Contact Form\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-15 14:46+0300\n"
-"PO-Revision-Date: 2024-07-15 14:47+0300\n"
+"POT-Creation-Date: 2024-09-18 15:04+0300\n"
+"PO-Revision-Date: 2024-09-18 15:04+0300\n"
 "Last-Translator: plugin@bestwebsoft.com <plugin@bestwebsoft.com>\n"
 "Language-Team: The BestWebSoft Team <plugin@bestwebsoft.com>\n"
 "Language: uk\n"
@@ -25,7 +25,7 @@ msgid "Contact Form Settings"
 msgstr "Налаштування Contact Form"
 
 # @ contact_form
-#: contact_form.php:53 contact_form.php:2142 contact_form.php:2162
+#: contact_form.php:53 contact_form.php:2145 contact_form.php:2165
 #: includes/class-cntctfrm-settings.php:30
 msgid "Settings"
 msgstr "Налаштування"
@@ -35,7 +35,7 @@ msgid "Upgrade to Pro"
 msgstr "Оновитися до Pro"
 
 # @ contact_form
-#: contact_form.php:573 contact_form.php:1876 contact_form.php:1924
+#: contact_form.php:573 contact_form.php:1879 contact_form.php:1927
 #: includes/class-cntctfrm-settings.php:636
 #: includes/class-cntctfrm-settings.php:734
 #: includes/class-cntctfrm-settings.php:1310
@@ -45,7 +45,7 @@ msgid "Name"
 msgstr "Ім'я"
 
 # @ contact_form
-#: contact_form.php:574 contact_form.php:1883 contact_form.php:1930
+#: contact_form.php:574 contact_form.php:1886 contact_form.php:1933
 #: includes/class-cntctfrm-settings.php:786
 #: includes/class-cntctfrm-settings.php:1311
 #: includes/class-cntctfrm-settings.php:1355
@@ -68,7 +68,7 @@ msgid "Phone number"
 msgstr "Номер телефону"
 
 # @ contact_form
-#: contact_form.php:577 contact_form.php:1894 contact_form.php:1939
+#: contact_form.php:577 contact_form.php:1897 contact_form.php:1942
 #: includes/class-cntctfrm-settings.php:856
 #: includes/class-cntctfrm-settings.php:1314
 #: includes/class-cntctfrm-settings.php:1358
@@ -77,7 +77,7 @@ msgid "Subject"
 msgstr "Тема"
 
 # @ contact_form
-#: contact_form.php:578 contact_form.php:1899 contact_form.php:1943
+#: contact_form.php:578 contact_form.php:1902 contact_form.php:1946
 #: includes/class-cntctfrm-settings.php:894
 #: includes/class-cntctfrm-settings.php:1315
 #: includes/class-cntctfrm-settings.php:1359
@@ -114,7 +114,7 @@ msgid "I consent to having this site collect my personal data."
 msgstr "Я дозволяю цьому сайту збирати мої особисті дані."
 
 # @ contact_form
-#: contact_form.php:583 contact_form.php:2258
+#: contact_form.php:583 contact_form.php:2261
 #: includes/class-cntctfrm-settings.php:1320
 #: includes/class-cntctfrm-settings.php:1364
 msgid "Learn more"
@@ -196,7 +196,7 @@ msgstr "Будь ласка, внесіть поправки у виділені
 msgid "Thank you for contacting us."
 msgstr "Дякуємо, що зв'язалися з нами."
 
-#: contact_form.php:933
+#: contact_form.php:936
 #, php-format
 msgid ""
 "%1$sNote:%2$s The contact form is not protected from spam and bots. Use %3$s "
@@ -207,12 +207,12 @@ msgstr ""
 "Використовуйте %3$s плагін Captcha від BestWebSoft %5$s або %4$s плагін "
 "reCaptcha від BestWebSoft %5$s для захисту контактної форми."
 
-#: contact_form.php:942
+#: contact_form.php:945
 msgid "NEW_FORM"
 msgstr "НОВА_ФОРМА"
 
 # @ contact_form
-#: contact_form.php:943
+#: contact_form.php:946
 msgid ""
 "If you want to create multiple contact forms, please install the Contact "
 "Form Multi plugin."
@@ -220,7 +220,7 @@ msgstr ""
 "Якщо ви хочете створити декілька різних контактних форм, будь ласка, "
 "встановіть плагін Contact Form Multi."
 
-#: contact_form.php:948
+#: contact_form.php:951
 msgid ""
 "Contact Form plugin doesn't support your current version of Contact Form "
 "Multi plugin. Please update Contact Form Multi plugin to version 1.2.6 or "
@@ -230,18 +230,18 @@ msgstr ""
 "Будь ласка, оновіть плагін Contact Form Multi до версії 1.2.6 або вище."
 
 # @ contact_form
-#: contact_form.php:1062
+#: contact_form.php:1065
 msgid "Sorry, email message could not be delivered."
 msgstr "Вибачте, ваше повідомлення не може бути доставлено."
 
-#: contact_form.php:1100 contact_form.php:1156
+#: contact_form.php:1103 contact_form.php:1159
 msgid ""
 "Please enter only letters at least 3 characters, words seperated by spaces"
 msgstr ""
 "Будь ласка, вводьте тільки літери довжиною не менше 3 символів, слова "
 "відокремлюйте пробілами"
 
-#: contact_form.php:1114
+#: contact_form.php:1117
 msgid ""
 "Please enter only letters and numbers at least 3 characters, words seperated "
 "by spaces"
@@ -249,72 +249,72 @@ msgstr ""
 "Будь ласка, вводьте тільки букви і цифри, не менше 3 символів, слова "
 "відокремлюйте пробілами"
 
-#: contact_form.php:1142
+#: contact_form.php:1145
 msgid "Please enter only numbers at least 6 characters"
 msgstr "Будь ласка, вводьте тільки цифри довжиною не менше 6 символів"
 
-#: contact_form.php:1494
+#: contact_form.php:1497
 #, php-format
 msgid "between %1$d and %2$d characters"
 msgstr "від %1$d до %2$d символів"
 
-#: contact_form.php:1501 includes/class-cntctfrm-settings.php:1954
+#: contact_form.php:1504 includes/class-cntctfrm-settings.php:1954
 #, php-format
 msgid "more than %1$d characters"
 msgstr "більше %1$d символів"
 
-#: contact_form.php:1507 includes/class-cntctfrm-settings.php:1959
+#: contact_form.php:1510 includes/class-cntctfrm-settings.php:1959
 #, php-format
 msgid "less than %1$d characters"
 msgstr "менше %1$d символів"
 
 # @ contact_form
-#: contact_form.php:1828 contact_form.php:1830
+#: contact_form.php:1831 contact_form.php:1833
 msgid "Sent from (ip address)"
 msgstr "Надіслано від (IP адреса)"
 
 # @ contact_form
-#: contact_form.php:1835 contact_form.php:1837
+#: contact_form.php:1838 contact_form.php:1840
 #: includes/class-cntctfrm-settings.php:1262
 msgid "Date/Time"
 msgstr "Дата/Час"
 
 # @ contact_form
-#: contact_form.php:1842 contact_form.php:1844
+#: contact_form.php:1845 contact_form.php:1847
 #: includes/class-cntctfrm-settings.php:1263
 msgid "Sent from (referer)"
 msgstr "Надіслано від (referer)"
 
 # @ contact_form
-#: contact_form.php:1849 contact_form.php:1851
+#: contact_form.php:1852 contact_form.php:1854
 #: includes/class-cntctfrm-settings.php:1264
 msgid "Using (user agent)"
 msgstr "Використовується (user agent)"
 
 # @ contact_form
-#: contact_form.php:1862
+#: contact_form.php:1865
 msgid "Contact from"
 msgstr "Контакт із"
 
 # @ contact_form
-#: contact_form.php:1867 contact_form.php:1917
+#: contact_form.php:1870 contact_form.php:1920
 msgid "Site"
 msgstr "Сайт"
 
 # @ contact_form
-#: contact_form.php:1889 contact_form.php:1935
+#: contact_form.php:1892 contact_form.php:1938
 #: includes/class-cntctfrm-settings.php:660
 msgid "Email"
 msgstr "Email"
 
 # @ contact_form
-#: contact_form.php:1905 contact_form.php:1948
+#: contact_form.php:1908 contact_form.php:1951
 #: includes/class-cntctfrm-settings.php:1631
 msgid "Phone Number"
 msgstr "Номер телефону"
 
 # @ contact_form
-#: contact_form.php:2057
+#: contact_form.php:2060
 msgid ""
 "If you can see this MIME, it means that the MIME type is not supported by "
 "your email client!"
@@ -323,26 +323,26 @@ msgstr ""
 "поштовим клієнтом!"
 
 # @ contact_form
-#: contact_form.php:2164
+#: contact_form.php:2167
 msgid "FAQ"
 msgstr "FAQ"
 
 # @ contact_form
-#: contact_form.php:2165
+#: contact_form.php:2168
 msgid "Support"
 msgstr "Підтримка"
 
 # @ contact_form
-#: contact_form.php:2229
+#: contact_form.php:2232
 msgid "Are you sure that you want to delete this language data?"
 msgstr "Ви справді хочете видалити дані для цієї мови?"
 
 # @ contact_form
-#: contact_form.php:2253
+#: contact_form.php:2256
 msgid "Add multiple forms"
 msgstr "Додати декілька форм"
 
-#: contact_form.php:2253
+#: contact_form.php:2256
 msgid ""
 "Install Contact Form Multi plugin to create unlimited number of contact "
 "forms."
@@ -350,23 +350,23 @@ msgstr ""
 "Встановити плагін Contact Form Multi, щоб мати можливість створювати "
 "необмежену кількість контактних форм."
 
-#: contact_form.php:2262 includes/class-cntctfrm-settings.php:526
+#: contact_form.php:2265 includes/class-cntctfrm-settings.php:526
 #: includes/class-cntctfrm-settings.php:984
 #: includes/class-cntctfrm-settings.php:1218
 #: includes/class-cntctfrm-settings.php:1544
 msgid "Close"
 msgstr "Закрити"
 
-#: contact_form.php:2329
+#: contact_form.php:2332
 msgid "Error"
 msgstr "Помилка"
 
-#: contact_form.php:2329 contact_form.php:2331
+#: contact_form.php:2332 contact_form.php:2334
 msgid "Illegal language code"
 msgstr "Нелегальний язиковий код"
 
 # @ contact_form
-#: contact_form.php:2363 contact_form.php:2365
+#: contact_form.php:2366 contact_form.php:2368
 #: includes/class-cntctfrm-settings.php:1337
 #: includes/class-cntctfrm-settings.php:1339
 #: includes/class-cntctfrm-settings.php:1381
@@ -379,7 +379,7 @@ msgid "Use shortcode"
 msgstr "Використовуйте шорткод"
 
 # @ contact_form
-#: contact_form.php:2363 contact_form.php:2365
+#: contact_form.php:2366 contact_form.php:2368
 #: includes/class-cntctfrm-settings.php:1337
 #: includes/class-cntctfrm-settings.php:1339
 #: includes/class-cntctfrm-settings.php:1381
@@ -391,32 +391,44 @@ msgstr "Використовуйте шорткод"
 msgid "for this language"
 msgstr "для цієї мови"
 
-#: contact_form.php:2554
+# @ contact_form
+#: contact_form.php:2511
+msgid "Test your contact form"
+msgstr "Протестуйте вашу контактну форму"
+
+#: contact_form.php:2511
+msgid ""
+"Ensure your contact form are correctly configured. Check your settings now!"
+msgstr ""
+"Переконайтеся, що ваша контактна форма налаштована правильно. Перевірте свої "
+"налаштування зараз!"
+
+#: contact_form.php:2560
 msgid "Close notice"
 msgstr "Закрити"
 
 # @ contact_form
-#: contact_form.php:2559
+#: contact_form.php:2565
 msgid "allows to store your messages to the database."
 msgstr "дозволяє зберігати ваші повідомлення у базі даних."
 
 # @ contact_form
-#: contact_form.php:2560
+#: contact_form.php:2566
 msgid "Manage messages that have been sent from your website."
 msgstr "Контролювати повідомлення, які було відправлено з Вашого сайту."
 
 # @ contact_form
-#: contact_form.php:2563
+#: contact_form.php:2569
 msgid "Learn More"
 msgstr "Дізнатись більше"
 
 # @ contact_form
-#: contact_form.php:2633
+#: contact_form.php:2639
 msgid "Contact form"
 msgstr "Контактна форма"
 
 # @ contact_form
-#: contact_form.php:2648 contact_form.php:2660
+#: contact_form.php:2654 contact_form.php:2666
 msgid "Language"
 msgstr "Мова"
 

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Contact Form\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-15 14:49+0300\n"
-"PO-Revision-Date: 2024-07-15 14:51+0300\n"
+"PO-Revision-Date: 2024-09-18 15:06+0300\n"
 "Last-Translator: plugin@bestwebsoft.com <plugin@bestwebsoft.com>\n"
 "Language-Team: kplam <kplam@qq.com>\n"
 "Language: zh_CN\n"
@@ -284,7 +284,7 @@ msgstr "支持"
 
 #: contact_form.php:2229
 msgid "Are you sure that you want to delete this language data?"
-msgstr "您确定要删除此语言数据吗"
+msgstr "您确定要删除这些语言数据吗？"
 
 #: contact_form.php:2253
 msgid "Add multiple forms"
@@ -413,7 +413,7 @@ msgstr ""
 msgid ""
 "If the 'Redirect to page' option is selected then the URL field should be in "
 "the following format"
-msgstr "如果'重定向到页面“选项被选中，那么URL字段应为以下格式。"
+msgstr "如果选择了 \"重定向到页面 \"选项，则 URL 字段的格式如下"
 
 #: includes/class-cntctfrm-settings.php:414
 msgid "Such user does not exist."
@@ -538,7 +538,7 @@ msgstr "用户名"
 #: includes/class-cntctfrm-settings.php:649
 msgid ""
 "The name of the user who fills the form will be used in the field 'From'."
-msgstr "填充表单的用户的名字将被显示为'发件人'"
+msgstr "填写表格的用户名将用于 \"发件人 \"字段。"
 
 #: includes/class-cntctfrm-settings.php:671
 msgid "User email"
@@ -548,7 +548,7 @@ msgstr "用户的电子邮件"
 msgid ""
 "The email address of the user who fills the form will be used in the field "
 "'From'."
-msgstr "填充表单的用户的电子邮箱地址将被显示为'发件人'"
+msgstr "填写表格的用户的电子邮件地址将用于 \"发件人 \"字段。"
 
 #: includes/class-cntctfrm-settings.php:682
 msgid ""

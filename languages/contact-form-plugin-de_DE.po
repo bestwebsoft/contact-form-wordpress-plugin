@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Contact Form by BestWebSoft\n"
 "POT-Creation-Date: 2024-07-15 14:59+0300\n"
-"PO-Revision-Date: 2024-07-15 15:00+0300\n"
+"PO-Revision-Date: 2024-09-18 14:54+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
@@ -615,7 +615,7 @@ msgstr "Einstellungsseite"
 #: includes/class-cntctfrm-settings.php:1159
 #: includes/class-cntctfrm-settings.php:1203
 msgid "Activate"
-msgstr "aktivieren Sie"
+msgstr "Aktivieren Sie"
 
 # automatic translation
 #: includes/class-cntctfrm-settings.php:586
@@ -875,7 +875,7 @@ msgstr "Tipps unter dem Anhang"
 # automatic translation
 #: includes/class-cntctfrm-settings.php:1057
 msgid "'Send me a copy' block"
-msgstr "Block „Senden Sie mir eine Kopie“."
+msgstr "block 'Kopie senden'"
 
 # automatic translation
 #: includes/class-cntctfrm-settings.php:1064

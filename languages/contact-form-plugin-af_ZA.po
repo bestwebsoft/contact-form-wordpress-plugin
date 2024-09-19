@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Contact Form\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-15 14:52+0300\n"
-"PO-Revision-Date: 2024-07-15 14:54+0300\n"
+"POT-Creation-Date: 2024-09-18 14:49+0300\n"
+"PO-Revision-Date: 2024-09-18 14:49+0300\n"
 "Last-Translator: plugin@bestwebsoft.com <plugin@bestwebsoft.com>\n"
 "Language-Team: Aldu <alducornelissen@gmail.com>\n"
 "Language: af\n"
@@ -23,7 +23,7 @@ msgstr ""
 msgid "Contact Form Settings"
 msgstr "Kontak Form Verstellings"
 
-#: contact_form.php:53 contact_form.php:2142 contact_form.php:2162
+#: contact_form.php:53 contact_form.php:2145 contact_form.php:2165
 #: includes/class-cntctfrm-settings.php:30
 msgid "Settings"
 msgstr "Verstellings"
@@ -32,7 +32,7 @@ msgstr "Verstellings"
 msgid "Upgrade to Pro"
 msgstr "Gradeer op na Pro"
 
-#: contact_form.php:573 contact_form.php:1876 contact_form.php:1924
+#: contact_form.php:573 contact_form.php:1879 contact_form.php:1927
 #: includes/class-cntctfrm-settings.php:636
 #: includes/class-cntctfrm-settings.php:734
 #: includes/class-cntctfrm-settings.php:1310
@@ -41,7 +41,7 @@ msgstr "Gradeer op na Pro"
 msgid "Name"
 msgstr "Naam"
 
-#: contact_form.php:574 contact_form.php:1883 contact_form.php:1930
+#: contact_form.php:574 contact_form.php:1886 contact_form.php:1933
 #: includes/class-cntctfrm-settings.php:786
 #: includes/class-cntctfrm-settings.php:1311
 #: includes/class-cntctfrm-settings.php:1355
@@ -61,7 +61,7 @@ msgstr "Epos Adres:"
 msgid "Phone number"
 msgstr "Telefoon nommer:"
 
-#: contact_form.php:577 contact_form.php:1894 contact_form.php:1939
+#: contact_form.php:577 contact_form.php:1897 contact_form.php:1942
 #: includes/class-cntctfrm-settings.php:856
 #: includes/class-cntctfrm-settings.php:1314
 #: includes/class-cntctfrm-settings.php:1358
@@ -69,7 +69,7 @@ msgstr "Telefoon nommer:"
 msgid "Subject"
 msgstr "Onderwerp"
 
-#: contact_form.php:578 contact_form.php:1899 contact_form.php:1943
+#: contact_form.php:578 contact_form.php:1902 contact_form.php:1946
 #: includes/class-cntctfrm-settings.php:894
 #: includes/class-cntctfrm-settings.php:1315
 #: includes/class-cntctfrm-settings.php:1359
@@ -101,7 +101,7 @@ msgstr "Stuur vir my 'n kopie"
 msgid "I consent to having this site collect my personal data."
 msgstr "Ek stem in dat hierdie webwerf my persoonlike data versamel."
 
-#: contact_form.php:583 contact_form.php:2258
+#: contact_form.php:583 contact_form.php:2261
 #: includes/class-cntctfrm-settings.php:1320
 #: includes/class-cntctfrm-settings.php:1364
 msgid "Learn more"
@@ -168,7 +168,7 @@ msgstr "Korregeer asseblief die foute hierdoner en probeer weer."
 msgid "Thank you for contacting us."
 msgstr "Dankie dat jy ons gekontak het."
 
-#: contact_form.php:933
+#: contact_form.php:936
 #, php-format
 msgid ""
 "%1$sNote:%2$s The contact form is not protected from spam and bots. Use %3$s "
@@ -179,11 +179,11 @@ msgstr ""
 "Gebruik %3$s Captcha by BestWebSoft-inprop %5$s of %4$s reCaptcha by "
 "BestWebSoft-inprop %5$s om jou kontakvorm te beskerm."
 
-#: contact_form.php:942
+#: contact_form.php:945
 msgid "NEW_FORM"
 msgstr "NUWE_VORM"
 
-#: contact_form.php:943
+#: contact_form.php:946
 msgid ""
 "If you want to create multiple contact forms, please install the Contact "
 "Form Multi plugin."
@@ -191,7 +191,7 @@ msgstr ""
 "As jy veelvuldige kontakvorms wil skep, installeer asseblief die Kontakvorm "
 "Multi-inprop."
 
-#: contact_form.php:948
+#: contact_form.php:951
 msgid ""
 "Contact Form plugin doesn't support your current version of Contact Form "
 "Multi plugin. Please update Contact Form Multi plugin to version 1.2.6 or "
@@ -201,18 +201,18 @@ msgstr ""
 "inprop nie. Dateer asseblief Kontakvorm Multi-inprop op na weergawe 1.2.6 of "
 "hoër."
 
-#: contact_form.php:1062
+#: contact_form.php:1065
 msgid "Sorry, email message could not be delivered."
 msgstr "Verskoning, die epos kon nie gestuur word nie."
 
-#: contact_form.php:1100 contact_form.php:1156
+#: contact_form.php:1103 contact_form.php:1159
 msgid ""
 "Please enter only letters at least 3 characters, words seperated by spaces"
 msgstr ""
 "Voer asseblief slegs letters van ten minste 3 karakters in, woorde geskei "
 "deur spasies"
 
-#: contact_form.php:1114
+#: contact_form.php:1117
 msgid ""
 "Please enter only letters and numbers at least 3 characters, words seperated "
 "by spaces"
@@ -220,63 +220,63 @@ msgstr ""
 "Voer asseblief slegs letters en syfers in van ten minste 3 karakters, woorde "
 "geskei deur spasies"
 
-#: contact_form.php:1142
+#: contact_form.php:1145
 msgid "Please enter only numbers at least 6 characters"
 msgstr "Voer asseblief slegs syfers van ten minste 6 karakters in"
 
-#: contact_form.php:1494
+#: contact_form.php:1497
 #, php-format
 msgid "between %1$d and %2$d characters"
 msgstr "tussen %1$d en %2$d karakters"
 
-#: contact_form.php:1501 includes/class-cntctfrm-settings.php:1954
+#: contact_form.php:1504 includes/class-cntctfrm-settings.php:1954
 #, php-format
 msgid "more than %1$d characters"
 msgstr "meer as %1$d karakters"
 
-#: contact_form.php:1507 includes/class-cntctfrm-settings.php:1959
+#: contact_form.php:1510 includes/class-cntctfrm-settings.php:1959
 #, php-format
 msgid "less than %1$d characters"
 msgstr "minder as %1$d karakters"
 
-#: contact_form.php:1828 contact_form.php:1830
+#: contact_form.php:1831 contact_form.php:1833
 msgid "Sent from (ip address)"
 msgstr "Gestuur van (IP-Adres)"
 
-#: contact_form.php:1835 contact_form.php:1837
+#: contact_form.php:1838 contact_form.php:1840
 #: includes/class-cntctfrm-settings.php:1262
 msgid "Date/Time"
 msgstr "Datum/Tyd"
 
-#: contact_form.php:1842 contact_form.php:1844
+#: contact_form.php:1845 contact_form.php:1847
 #: includes/class-cntctfrm-settings.php:1263
 msgid "Sent from (referer)"
 msgstr "Gestuur van (referer)"
 
-#: contact_form.php:1849 contact_form.php:1851
+#: contact_form.php:1852 contact_form.php:1854
 #: includes/class-cntctfrm-settings.php:1264
 msgid "Using (user agent)"
 msgstr "Gebruik (user agent)"
 
-#: contact_form.php:1862
+#: contact_form.php:1865
 msgid "Contact from"
 msgstr "Kontak Vorm"
 
-#: contact_form.php:1867 contact_form.php:1917
+#: contact_form.php:1870 contact_form.php:1920
 msgid "Site"
 msgstr "Webtuiste"
 
-#: contact_form.php:1889 contact_form.php:1935
+#: contact_form.php:1892 contact_form.php:1938
 #: includes/class-cntctfrm-settings.php:660
 msgid "Email"
 msgstr "Epos"
 
-#: contact_form.php:1905 contact_form.php:1948
+#: contact_form.php:1908 contact_form.php:1951
 #: includes/class-cntctfrm-settings.php:1631
 msgid "Phone Number"
 msgstr "Telefoon Nommer:"
 
-#: contact_form.php:2057
+#: contact_form.php:2060
 msgid ""
 "If you can see this MIME, it means that the MIME type is not supported by "
 "your email client!"
@@ -284,23 +284,23 @@ msgstr ""
 "As u die MIME kan sie, beteken dit dat die MIME tipe nie ondersteun word "
 "deur u epos klient nie!"
 
-#: contact_form.php:2164
+#: contact_form.php:2167
 msgid "FAQ"
 msgstr "Gereeld Gestelde Vrae (FAQ)"
 
-#: contact_form.php:2165
+#: contact_form.php:2168
 msgid "Support"
 msgstr "Steun"
 
-#: contact_form.php:2229
+#: contact_form.php:2232
 msgid "Are you sure that you want to delete this language data?"
 msgstr "Is u seker dat u die taal data wil verwyder?"
 
-#: contact_form.php:2253
+#: contact_form.php:2256
 msgid "Add multiple forms"
 msgstr "Voeg verskeie vorms by"
 
-#: contact_form.php:2253
+#: contact_form.php:2256
 msgid ""
 "Install Contact Form Multi plugin to create unlimited number of contact "
 "forms."
@@ -308,22 +308,22 @@ msgstr ""
 "Installeer Kontakvorm Multi-inprop om 'n onbeperkte aantal kontakvorms te "
 "skep."
 
-#: contact_form.php:2262 includes/class-cntctfrm-settings.php:526
+#: contact_form.php:2265 includes/class-cntctfrm-settings.php:526
 #: includes/class-cntctfrm-settings.php:984
 #: includes/class-cntctfrm-settings.php:1218
 #: includes/class-cntctfrm-settings.php:1544
 msgid "Close"
 msgstr "Sluit"
 
-#: contact_form.php:2329
+#: contact_form.php:2332
 msgid "Error"
 msgstr "Fout"
 
-#: contact_form.php:2329 contact_form.php:2331
+#: contact_form.php:2332 contact_form.php:2334
 msgid "Illegal language code"
 msgstr "Onwettige taalkode"
 
-#: contact_form.php:2363 contact_form.php:2365
+#: contact_form.php:2366 contact_form.php:2368
 #: includes/class-cntctfrm-settings.php:1337
 #: includes/class-cntctfrm-settings.php:1339
 #: includes/class-cntctfrm-settings.php:1381
@@ -335,7 +335,7 @@ msgstr "Onwettige taalkode"
 msgid "Use shortcode"
 msgstr "Gebruik kortkode"
 
-#: contact_form.php:2363 contact_form.php:2365
+#: contact_form.php:2366 contact_form.php:2368
 #: includes/class-cntctfrm-settings.php:1337
 #: includes/class-cntctfrm-settings.php:1339
 #: includes/class-cntctfrm-settings.php:1381
@@ -347,27 +347,38 @@ msgstr "Gebruik kortkode"
 msgid "for this language"
 msgstr "vir hierdie taal"
 
-#: contact_form.php:2554
+#: contact_form.php:2511
+msgid "Test your contact form"
+msgstr "Toets jou kontakvorm"
+
+#: contact_form.php:2511
+msgid ""
+"Ensure your contact form are correctly configured. Check your settings now!"
+msgstr ""
+"Maak seker dat jou kontakvorm korrek opgestel is. Gaan jou instellings nou "
+"na!"
+
+#: contact_form.php:2560
 msgid "Close notice"
 msgstr "Nou kennisgewing"
 
-#: contact_form.php:2559
+#: contact_form.php:2565
 msgid "allows to store your messages to the database."
 msgstr "laat toe om jou boodskappe op die databasis te stoor."
 
-#: contact_form.php:2560
+#: contact_form.php:2566
 msgid "Manage messages that have been sent from your website."
 msgstr "Bestuur boodskappe wat vanaf jou webwerf gestuur is."
 
-#: contact_form.php:2563
+#: contact_form.php:2569
 msgid "Learn More"
 msgstr "Lees meer"
 
-#: contact_form.php:2633
+#: contact_form.php:2639
 msgid "Contact form"
 msgstr "Kontak Vorm"
 
-#: contact_form.php:2648 contact_form.php:2660
+#: contact_form.php:2654 contact_form.php:2666
 msgid "Language"
 msgstr "Taal"
 

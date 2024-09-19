@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Contact Form\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-15 15:06+0300\n"
-"PO-Revision-Date: 2024-07-15 15:07+0300\n"
+"POT-Creation-Date: 2024-09-18 14:58+0300\n"
+"PO-Revision-Date: 2024-09-18 14:59+0300\n"
 "Last-Translator: Jordan Silaen <jordan.silaen@chameleonjohn.com>\n"
 "Language-Team: ChameleonJohn.com <jordan.silaen@chameleonjohn.com>\n"
 "Language: id_ID\n"
@@ -23,7 +23,7 @@ msgstr ""
 msgid "Contact Form Settings"
 msgstr "Pengaturan Form kontak"
 
-#: contact_form.php:53 contact_form.php:2142 contact_form.php:2162
+#: contact_form.php:53 contact_form.php:2145 contact_form.php:2165
 #: includes/class-cntctfrm-settings.php:30
 msgid "Settings"
 msgstr "pengaturan"
@@ -32,7 +32,7 @@ msgstr "pengaturan"
 msgid "Upgrade to Pro"
 msgstr "Upgrade ke yang lebih baik"
 
-#: contact_form.php:573 contact_form.php:1876 contact_form.php:1924
+#: contact_form.php:573 contact_form.php:1879 contact_form.php:1927
 #: includes/class-cntctfrm-settings.php:636
 #: includes/class-cntctfrm-settings.php:734
 #: includes/class-cntctfrm-settings.php:1310
@@ -41,7 +41,7 @@ msgstr "Upgrade ke yang lebih baik"
 msgid "Name"
 msgstr "Nama"
 
-#: contact_form.php:574 contact_form.php:1883 contact_form.php:1930
+#: contact_form.php:574 contact_form.php:1886 contact_form.php:1933
 #: includes/class-cntctfrm-settings.php:786
 #: includes/class-cntctfrm-settings.php:1311
 #: includes/class-cntctfrm-settings.php:1355
@@ -61,7 +61,7 @@ msgstr "Alamat email"
 msgid "Phone number"
 msgstr "Nomor telepon"
 
-#: contact_form.php:577 contact_form.php:1894 contact_form.php:1939
+#: contact_form.php:577 contact_form.php:1897 contact_form.php:1942
 #: includes/class-cntctfrm-settings.php:856
 #: includes/class-cntctfrm-settings.php:1314
 #: includes/class-cntctfrm-settings.php:1358
@@ -69,7 +69,7 @@ msgstr "Nomor telepon"
 msgid "Subject"
 msgstr "Subyek"
 
-#: contact_form.php:578 contact_form.php:1899 contact_form.php:1943
+#: contact_form.php:578 contact_form.php:1902 contact_form.php:1946
 #: includes/class-cntctfrm-settings.php:894
 #: includes/class-cntctfrm-settings.php:1315
 #: includes/class-cntctfrm-settings.php:1359
@@ -101,7 +101,7 @@ msgstr "Kirimkan saya salinan"
 msgid "I consent to having this site collect my personal data."
 msgstr "Saya menyetujui situs ini mengumpulkan data pribadi saya."
 
-#: contact_form.php:583 contact_form.php:2258
+#: contact_form.php:583 contact_form.php:2261
 #: includes/class-cntctfrm-settings.php:1320
 #: includes/class-cntctfrm-settings.php:1364
 msgid "Learn more"
@@ -142,7 +142,7 @@ msgstr "Panjang pesan tidak memenuhi persyaratan."
 
 #: contact_form.php:592
 msgid "File format is not valid."
-msgstr "format file tidak valid."
+msgstr "Format file tidak valid."
 
 #: contact_form.php:593
 msgid "File upload error."
@@ -150,7 +150,7 @@ msgstr "Berkas kesalahan upload."
 
 #: contact_form.php:594
 msgid "The file could not be uploaded."
-msgstr "file tidak bisa di-upload."
+msgstr "File tidak dapat diunggah."
 
 #: contact_form.php:595
 msgid "This file is too large."
@@ -168,7 +168,7 @@ msgstr "Silakan membuat koreksi di bawah ini dan coba lagi."
 msgid "Thank you for contacting us."
 msgstr "Terima kasih sudah menghubungi kami."
 
-#: contact_form.php:933
+#: contact_form.php:936
 #, php-format
 msgid ""
 "%1$sNote:%2$s The contact form is not protected from spam and bots. Use %3$s "
@@ -179,11 +179,11 @@ msgstr ""
 "Gunakan %3$s Captcha oleh plugin BestWebSoft %5$s atau %4$s reCaptcha oleh "
 "plugin BestWebSoft %5$s untuk melindungi formulir kontak Anda."
 
-#: contact_form.php:942
+#: contact_form.php:945
 msgid "NEW_FORM"
 msgstr "NEW_FORM"
 
-#: contact_form.php:943
+#: contact_form.php:946
 msgid ""
 "If you want to create multiple contact forms, please install the Contact "
 "Form Multi plugin."
@@ -191,7 +191,7 @@ msgstr ""
 "Jika Anda ingin membuat beberapa bentuk kontak, silahkan install plugin "
 "Formulir Kontak multi."
 
-#: contact_form.php:948
+#: contact_form.php:951
 msgid ""
 "Contact Form plugin doesn't support your current version of Contact Form "
 "Multi plugin. Please update Contact Form Multi plugin to version 1.2.6 or "
@@ -201,18 +201,18 @@ msgstr ""
 "saat ini. Harap perbarui plugin Contact Form Multi ke versi 1.2.6 atau yang "
 "lebih tinggi."
 
-#: contact_form.php:1062
+#: contact_form.php:1065
 msgid "Sorry, email message could not be delivered."
 msgstr "Maaf, pesan email tidak dapat disampaikan."
 
-#: contact_form.php:1100 contact_form.php:1156
+#: contact_form.php:1103 contact_form.php:1159
 msgid ""
 "Please enter only letters at least 3 characters, words seperated by spaces"
 msgstr ""
 "Harap masukkan hanya huruf minimal 3 karakter, kata-kata yang dipisahkan "
 "oleh spasi"
 
-#: contact_form.php:1114
+#: contact_form.php:1117
 msgid ""
 "Please enter only letters and numbers at least 3 characters, words seperated "
 "by spaces"
@@ -220,63 +220,63 @@ msgstr ""
 "Harap masukkan hanya huruf dan angka minimal 3 karakter, kata-kata yang "
 "dipisahkan oleh spasi"
 
-#: contact_form.php:1142
+#: contact_form.php:1145
 msgid "Please enter only numbers at least 6 characters"
 msgstr "Harap masukkan hanya angka minimal 6 karakter"
 
-#: contact_form.php:1494
+#: contact_form.php:1497
 #, php-format
 msgid "between %1$d and %2$d characters"
 msgstr "antara karakter %1$d dan %2$d"
 
-#: contact_form.php:1501 includes/class-cntctfrm-settings.php:1954
+#: contact_form.php:1504 includes/class-cntctfrm-settings.php:1954
 #, php-format
 msgid "more than %1$d characters"
 msgstr "lebih dari %1$d karakter"
 
-#: contact_form.php:1507 includes/class-cntctfrm-settings.php:1959
+#: contact_form.php:1510 includes/class-cntctfrm-settings.php:1959
 #, php-format
 msgid "less than %1$d characters"
 msgstr "kurang dari %1$d karakter"
 
-#: contact_form.php:1828 contact_form.php:1830
+#: contact_form.php:1831 contact_form.php:1833
 msgid "Sent from (ip address)"
 msgstr "Dikirim dari (alamat ip)"
 
-#: contact_form.php:1835 contact_form.php:1837
+#: contact_form.php:1838 contact_form.php:1840
 #: includes/class-cntctfrm-settings.php:1262
 msgid "Date/Time"
 msgstr "Tanggal Waktu"
 
-#: contact_form.php:1842 contact_form.php:1844
+#: contact_form.php:1845 contact_form.php:1847
 #: includes/class-cntctfrm-settings.php:1263
 msgid "Sent from (referer)"
 msgstr "Dikirim dari (referer)"
 
-#: contact_form.php:1849 contact_form.php:1851
+#: contact_form.php:1852 contact_form.php:1854
 #: includes/class-cntctfrm-settings.php:1264
 msgid "Using (user agent)"
 msgstr "Menggunakan (agen pengguna)"
 
-#: contact_form.php:1862
+#: contact_form.php:1865
 msgid "Contact from"
-msgstr "kontak dari"
+msgstr "Kontak dari"
 
-#: contact_form.php:1867 contact_form.php:1917
+#: contact_form.php:1870 contact_form.php:1920
 msgid "Site"
 msgstr "situs"
 
-#: contact_form.php:1889 contact_form.php:1935
+#: contact_form.php:1892 contact_form.php:1938
 #: includes/class-cntctfrm-settings.php:660
 msgid "Email"
 msgstr "E-mail"
 
-#: contact_form.php:1905 contact_form.php:1948
+#: contact_form.php:1908 contact_form.php:1951
 #: includes/class-cntctfrm-settings.php:1631
 msgid "Phone Number"
 msgstr "Nomor telepon"
 
-#: contact_form.php:2057
+#: contact_form.php:2060
 msgid ""
 "If you can see this MIME, it means that the MIME type is not supported by "
 "your email client!"
@@ -284,23 +284,23 @@ msgstr ""
 "Jika Anda dapat melihat MIME ini, itu berarti bahwa tipe MIME tidak didukung "
 "oleh klien email Anda!"
 
-#: contact_form.php:2164
+#: contact_form.php:2167
 msgid "FAQ"
 msgstr "FAQ"
 
-#: contact_form.php:2165
+#: contact_form.php:2168
 msgid "Support"
 msgstr "Mendukung"
 
-#: contact_form.php:2229
+#: contact_form.php:2232
 msgid "Are you sure that you want to delete this language data?"
 msgstr "Apakah Anda yakin bahwa Anda ingin menghapus data bahasa ini?"
 
-#: contact_form.php:2253
+#: contact_form.php:2256
 msgid "Add multiple forms"
 msgstr "Menambahkan beberapa formulir"
 
-#: contact_form.php:2253
+#: contact_form.php:2256
 msgid ""
 "Install Contact Form Multi plugin to create unlimited number of contact "
 "forms."
@@ -308,22 +308,22 @@ msgstr ""
 "Instal Form Kontak multi plugin untuk membuat jumlah yang tidak terbatas "
 "formulir kontak."
 
-#: contact_form.php:2262 includes/class-cntctfrm-settings.php:526
+#: contact_form.php:2265 includes/class-cntctfrm-settings.php:526
 #: includes/class-cntctfrm-settings.php:984
 #: includes/class-cntctfrm-settings.php:1218
 #: includes/class-cntctfrm-settings.php:1544
 msgid "Close"
 msgstr "Dekat"
 
-#: contact_form.php:2329
+#: contact_form.php:2332
 msgid "Error"
 msgstr "Kesalahan"
 
-#: contact_form.php:2329 contact_form.php:2331
+#: contact_form.php:2332 contact_form.php:2334
 msgid "Illegal language code"
 msgstr "Kode bahasa ilegal"
 
-#: contact_form.php:2363 contact_form.php:2365
+#: contact_form.php:2366 contact_form.php:2368
 #: includes/class-cntctfrm-settings.php:1337
 #: includes/class-cntctfrm-settings.php:1339
 #: includes/class-cntctfrm-settings.php:1381
@@ -335,7 +335,7 @@ msgstr "Kode bahasa ilegal"
 msgid "Use shortcode"
 msgstr "Gunakan shortcode"
 
-#: contact_form.php:2363 contact_form.php:2365
+#: contact_form.php:2366 contact_form.php:2368
 #: includes/class-cntctfrm-settings.php:1337
 #: includes/class-cntctfrm-settings.php:1339
 #: includes/class-cntctfrm-settings.php:1381
@@ -347,27 +347,38 @@ msgstr "Gunakan shortcode"
 msgid "for this language"
 msgstr "untuk bahasa ini"
 
-#: contact_form.php:2554
+#: contact_form.php:2511
+msgid "Test your contact form"
+msgstr "Menguji formulir kontak Anda"
+
+#: contact_form.php:2511
+msgid ""
+"Ensure your contact form are correctly configured. Check your settings now!"
+msgstr ""
+"Pastikan formulir kontak Anda dikonfigurasi dengan benar. Periksa pengaturan "
+"Anda sekarang!"
+
+#: contact_form.php:2560
 msgid "Close notice"
 msgstr "Tutup pemberitahuan"
 
-#: contact_form.php:2559
+#: contact_form.php:2565
 msgid "allows to store your messages to the database."
 msgstr "memungkinkan untuk menyimpan pesan Anda ke database."
 
-#: contact_form.php:2560
+#: contact_form.php:2566
 msgid "Manage messages that have been sent from your website."
 msgstr "Mengelola pesan yang telah dikirim dari situs web Anda."
 
-#: contact_form.php:2563
+#: contact_form.php:2569
 msgid "Learn More"
 msgstr "Belajarlah lagi"
 
-#: contact_form.php:2633
+#: contact_form.php:2639
 msgid "Contact form"
 msgstr "Formulir kontak"
 
-#: contact_form.php:2648 contact_form.php:2660
+#: contact_form.php:2654 contact_form.php:2666
 msgid "Language"
 msgstr "Bahasa"
 
@@ -562,7 +573,7 @@ msgstr "Nama pengguna yang mengisi form akan digunakan dalam bidang 'Dari'."
 
 #: includes/class-cntctfrm-settings.php:671
 msgid "User email"
-msgstr "email pengguna"
+msgstr "Email"
 
 #: includes/class-cntctfrm-settings.php:673
 msgid ""
@@ -658,7 +669,7 @@ msgstr ""
 
 #: includes/class-cntctfrm-settings.php:765
 msgid "Location selectbox"
-msgstr "lokasi selectbox"
+msgstr "Kotak pilihan lokasi"
 
 #: includes/class-cntctfrm-settings.php:827
 msgid "Use User's email as a default value if the user is logged in."
@@ -675,7 +686,7 @@ msgstr ""
 
 #: includes/class-cntctfrm-settings.php:933
 msgid "Attachment block"
-msgstr "blok lampiran"
+msgstr "Blok lampiran"
 
 #: includes/class-cntctfrm-settings.php:935
 msgid "Users can attach the following file formats"
@@ -748,15 +759,15 @@ msgstr "Aktifkan untuk jaringan"
 
 #: includes/class-cntctfrm-settings.php:1222
 msgid "Agreement checkbox"
-msgstr "kotak centang perjanjian"
+msgstr "Kotak centang Perjanjian"
 
 #: includes/class-cntctfrm-settings.php:1222
 msgid "Required checkbox for submitting the form"
-msgstr "checkbox diperlukan untuk mengirimkan formulir"
+msgstr "Kotak centang yang diperlukan untuk mengirimkan formulir"
 
 #: includes/class-cntctfrm-settings.php:1223
 msgid "Optional checkbox"
-msgstr "kotak centang opsional"
+msgstr "Kotak centang opsional"
 
 #: includes/class-cntctfrm-settings.php:1223
 msgid "Optional checkbox, the results of which will be displayed in email"
@@ -832,7 +843,7 @@ msgstr "Mengubah nama-nama kolom formulir kontak dan pesan kesalahan"
 #: includes/class-cntctfrm-settings.php:1404
 #: includes/class-cntctfrm-settings.php:1523
 msgid "Default"
-msgstr "kegagalan"
+msgstr "Default"
 
 #: includes/class-cntctfrm-settings.php:1308
 #: includes/class-cntctfrm-settings.php:1352
@@ -957,7 +968,7 @@ msgstr "Posisi label"
 #: includes/class-cntctfrm-settings.php:1478
 #: includes/class-cntctfrm-settings.php:1581
 msgid "Labels align"
-msgstr "label menyelaraskan"
+msgstr "Label sejajar"
 
 #: includes/class-cntctfrm-settings.php:1479
 #: includes/class-cntctfrm-settings.php:1507
@@ -980,7 +991,7 @@ msgstr "satu kolom"
 
 #: includes/class-cntctfrm-settings.php:1502
 msgid "Two columns"
-msgstr "dua kolom"
+msgstr "Dua kolom"
 
 #: includes/class-cntctfrm-settings.php:1511
 #: includes/class-cntctfrm-settings.php:1552
@@ -1027,7 +1038,7 @@ msgstr "Bawah"
 
 #: includes/class-cntctfrm-settings.php:1596
 msgid "Errors output"
-msgstr "kesalahan keluaran"
+msgstr "Keluaran kesalahan"
 
 #: includes/class-cntctfrm-settings.php:1599
 msgid "Display error messages"
@@ -1098,7 +1109,7 @@ msgstr "warna placeholder kesalahan field input"
 
 #: includes/class-cntctfrm-settings.php:1716
 msgid "Input fields"
-msgstr "field input"
+msgstr "Bidang masukan"
 
 #: includes/class-cntctfrm-settings.php:1724
 msgid "Input fields background color"
@@ -1110,7 +1121,7 @@ msgstr "Teks ladang warna"
 
 #: includes/class-cntctfrm-settings.php:1736
 msgid "Border width in px, numbers only"
-msgstr "lebar perbatasan di px, angka saja"
+msgstr "Lebar batas dalam px, hanya angka"
 
 #: includes/class-cntctfrm-settings.php:1744
 #: includes/class-cntctfrm-settings.php:1777
