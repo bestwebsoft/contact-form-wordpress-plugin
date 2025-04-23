@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Contact Form\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-18 15:02+0300\n"
-"PO-Revision-Date: 2024-09-18 15:02+0300\n"
+"POT-Creation-Date: 2025-04-23 13:29+0300\n"
+"PO-Revision-Date: 2025-04-23 13:29+0300\n"
 "Last-Translator: plugin@bestwebsoft.com <plugin@bestwebsoft.com>\n"
 "Language-Team: bestwebsoft.com <plugin@bestwebsoft.com>\n"
 "Language: ru_RU\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
-"X-Generator: Poedit 3.4.3\n"
+"X-Generator: Poedit 3.5\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;esc_html__;esc_html_e\n"
 "X-Poedit-Basepath: ..\n"
@@ -21,13 +21,13 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: bws_menu\n"
 
 # @ contact_form
-#: contact_form.php:43 contact_form.php:52 contact_form.php:917
-#: includes/class-cntctfrm-settings.php:477
+#: contact_form.php:43 contact_form.php:52 contact_form.php:924
+#: includes/class-cntctfrm-settings.php:488
 msgid "Contact Form Settings"
 msgstr "Настройки Contact Form"
 
 # @ contact_form
-#: contact_form.php:53 contact_form.php:2145 contact_form.php:2165
+#: contact_form.php:53 contact_form.php:2187 contact_form.php:2207
 #: includes/class-cntctfrm-settings.php:30
 msgid "Settings"
 msgstr "Настройки"
@@ -37,60 +37,60 @@ msgid "Upgrade to Pro"
 msgstr "Обновиться до Pro"
 
 # @ contact_form
-#: contact_form.php:573 contact_form.php:1879 contact_form.php:1927
-#: includes/class-cntctfrm-settings.php:636
-#: includes/class-cntctfrm-settings.php:734
-#: includes/class-cntctfrm-settings.php:1310
-#: includes/class-cntctfrm-settings.php:1354
-#: includes/class-cntctfrm-settings.php:1616
+#: contact_form.php:573 contact_form.php:1908 contact_form.php:1963
+#: includes/class-cntctfrm-settings.php:647
+#: includes/class-cntctfrm-settings.php:747
+#: includes/class-cntctfrm-settings.php:1374
+#: includes/class-cntctfrm-settings.php:1420
+#: includes/class-cntctfrm-settings.php:1684
 msgid "Name"
 msgstr "Имя"
 
 # @ contact_form
-#: contact_form.php:574 contact_form.php:1886 contact_form.php:1933
-#: includes/class-cntctfrm-settings.php:786
-#: includes/class-cntctfrm-settings.php:1311
-#: includes/class-cntctfrm-settings.php:1355
-#: includes/class-cntctfrm-settings.php:1621
+#: contact_form.php:574 contact_form.php:1915 contact_form.php:1969
+#: includes/class-cntctfrm-settings.php:805
+#: includes/class-cntctfrm-settings.php:1375
+#: includes/class-cntctfrm-settings.php:1421
+#: includes/class-cntctfrm-settings.php:1689
 msgid "Address"
 msgstr "Адрес"
 
 # @ contact_form
-#: contact_form.php:575 includes/class-cntctfrm-settings.php:808
-#: includes/class-cntctfrm-settings.php:1312
-#: includes/class-cntctfrm-settings.php:1356
+#: contact_form.php:575 includes/class-cntctfrm-settings.php:832
+#: includes/class-cntctfrm-settings.php:1376
+#: includes/class-cntctfrm-settings.php:1422
 msgid "Email Address"
 msgstr "Email адрес"
 
 # @ contact_form
-#: contact_form.php:576 includes/class-cntctfrm-settings.php:834
-#: includes/class-cntctfrm-settings.php:1313
-#: includes/class-cntctfrm-settings.php:1357
+#: contact_form.php:576 includes/class-cntctfrm-settings.php:858
+#: includes/class-cntctfrm-settings.php:1377
+#: includes/class-cntctfrm-settings.php:1423
 msgid "Phone number"
 msgstr "Телефон"
 
 # @ contact_form
-#: contact_form.php:577 contact_form.php:1897 contact_form.php:1942
-#: includes/class-cntctfrm-settings.php:856
-#: includes/class-cntctfrm-settings.php:1314
-#: includes/class-cntctfrm-settings.php:1358
-#: includes/class-cntctfrm-settings.php:1636
+#: contact_form.php:577 contact_form.php:1926 contact_form.php:1978
+#: includes/class-cntctfrm-settings.php:886
+#: includes/class-cntctfrm-settings.php:1378
+#: includes/class-cntctfrm-settings.php:1424
+#: includes/class-cntctfrm-settings.php:1704
 msgid "Subject"
 msgstr "Тема"
 
 # @ contact_form
-#: contact_form.php:578 contact_form.php:1902 contact_form.php:1946
-#: includes/class-cntctfrm-settings.php:894
-#: includes/class-cntctfrm-settings.php:1315
-#: includes/class-cntctfrm-settings.php:1359
-#: includes/class-cntctfrm-settings.php:1640
+#: contact_form.php:578 contact_form.php:1931 contact_form.php:1982
+#: includes/class-cntctfrm-settings.php:930
+#: includes/class-cntctfrm-settings.php:1379
+#: includes/class-cntctfrm-settings.php:1425
+#: includes/class-cntctfrm-settings.php:1708
 msgid "Message"
 msgstr "Сообщение"
 
 # @ contact_form
-#: contact_form.php:579 includes/class-cntctfrm-settings.php:1316
-#: includes/class-cntctfrm-settings.php:1360
-#: includes/class-cntctfrm-settings.php:1645
+#: contact_form.php:579 includes/class-cntctfrm-settings.php:1380
+#: includes/class-cntctfrm-settings.php:1426
+#: includes/class-cntctfrm-settings.php:1713
 msgid "Attachment"
 msgstr "Прикрепить файл"
 
@@ -103,27 +103,29 @@ msgstr ""
 "Поддерживаемые типы файлов: HTML, TXT, CSS, GIF, PNG, JPEG, JPG, TIFF, BMP, "
 "AI, EPS, PS, CSV, RTF, PDF, DOC, DOCX, XLS, XLSX, ZIP, RAR, WAV, MP3, PPT."
 
-# @ contact_form
-#: contact_form.php:581 includes/class-cntctfrm-settings.php:1318
-#: includes/class-cntctfrm-settings.php:1362
-msgid "Send me a copy"
-msgstr "Отправить мне копию"
+#: contact_form.php:581 contact_form.php:1944 contact_form.php:1993
+#: includes/class-cntctfrm-settings.php:382
+#: includes/class-cntctfrm-settings.php:1017
+#: includes/class-cntctfrm-settings.php:1382
+#: includes/class-cntctfrm-settings.php:1428
+msgid "Dropdown"
+msgstr "Выпадающий список"
 
-#: contact_form.php:582 includes/class-cntctfrm-settings.php:1319
-#: includes/class-cntctfrm-settings.php:1363
+#: contact_form.php:582 includes/class-cntctfrm-settings.php:1384
+#: includes/class-cntctfrm-settings.php:1430
 msgid "I consent to having this site collect my personal data."
 msgstr "Я разрешаю этому сайту собирать мои личные данные."
 
 # @ contact_form
-#: contact_form.php:583 contact_form.php:2261
-#: includes/class-cntctfrm-settings.php:1320
-#: includes/class-cntctfrm-settings.php:1364
+#: contact_form.php:583 contact_form.php:2303
+#: includes/class-cntctfrm-settings.php:1385
+#: includes/class-cntctfrm-settings.php:1431
 msgid "Learn more"
 msgstr "Подробнее"
 
 # @ contact_form
-#: contact_form.php:584 includes/class-cntctfrm-settings.php:1321
-#: includes/class-cntctfrm-settings.php:1365
+#: contact_form.php:584 includes/class-cntctfrm-settings.php:1386
+#: includes/class-cntctfrm-settings.php:1432
 msgid "Submit"
 msgstr "Отправить"
 
@@ -189,16 +191,26 @@ msgstr "Пожалуйста, заполните CAPTCHA."
 
 # @ contact_form
 #: contact_form.php:597
+msgid "This field is required."
+msgstr "Это поле обязательно к заполнению."
+
+# @ contact_form
+#: contact_form.php:598
 msgid "Please make corrections below and try again."
 msgstr ""
 "Пожалуйста, сделайте исправления в отмеченных полях ниже и повторите попытку."
 
 # @ contact_form
-#: contact_form.php:599
+#: contact_form.php:599 includes/class-cntctfrm-settings.php:351
+msgid "Send me copy."
+msgstr "Пришлите мне копию."
+
+# @ contact_form
+#: contact_form.php:601
 msgid "Thank you for contacting us."
 msgstr "Спасибо, что связались с нами."
 
-#: contact_form.php:936
+#: contact_form.php:943
 #, php-format
 msgid ""
 "%1$sNote:%2$s The contact form is not protected from spam and bots. Use %3$s "
@@ -209,12 +221,12 @@ msgstr ""
 "Используйте %3$s Captcha от BestWebSoft plugin %5$s или %4$s reCaptcha от "
 "BestWebSoft plugin %5$s для защиты контактной формы."
 
-#: contact_form.php:945
+#: contact_form.php:952
 msgid "NEW_FORM"
 msgstr "НОВАЯ_ФОРМА"
 
 # @ contact_form
-#: contact_form.php:946
+#: contact_form.php:953
 msgid ""
 "If you want to create multiple contact forms, please install the Contact "
 "Form Multi plugin."
@@ -222,7 +234,7 @@ msgstr ""
 "Если вы хотите создать несколько разных контактных форм, пожалуйста, "
 "установите плагин  Contact Form Multi."
 
-#: contact_form.php:951
+#: contact_form.php:958
 msgid ""
 "Contact Form plugin doesn't support your current version of Contact Form "
 "Multi plugin. Please update Contact Form Multi plugin to version 1.2.6 or "
@@ -233,18 +245,18 @@ msgstr ""
 "выше."
 
 # @ contact_form
-#: contact_form.php:1065
+#: contact_form.php:1073
 msgid "Sorry, email message could not be delivered."
 msgstr "Извините, ваш email не может быть отправлен."
 
-#: contact_form.php:1103 contact_form.php:1159
+#: contact_form.php:1111 contact_form.php:1167
 msgid ""
 "Please enter only letters at least 3 characters, words seperated by spaces"
 msgstr ""
 "Пожалуйста, вводите только буквы не менее 3 символов, слова, разделенные "
 "пробелами"
 
-#: contact_form.php:1117
+#: contact_form.php:1125
 msgid ""
 "Please enter only letters and numbers at least 3 characters, words seperated "
 "by spaces"
@@ -252,72 +264,72 @@ msgstr ""
 "Пожалуйста, вводите только буквы и цифры не менее 3 символов, слова "
 "разделяйте пробелами"
 
-#: contact_form.php:1145
+#: contact_form.php:1153
 msgid "Please enter only numbers at least 6 characters"
 msgstr "Пожалуйста, введите только цифры не менее 6 символов"
 
-#: contact_form.php:1497
+#: contact_form.php:1525
 #, php-format
 msgid "between %1$d and %2$d characters"
 msgstr "между %1$d и %2$d символами"
 
-#: contact_form.php:1504 includes/class-cntctfrm-settings.php:1954
+#: contact_form.php:1532 includes/class-cntctfrm-settings.php:2022
 #, php-format
 msgid "more than %1$d characters"
 msgstr "более %1$d символов"
 
-#: contact_form.php:1510 includes/class-cntctfrm-settings.php:1959
+#: contact_form.php:1538 includes/class-cntctfrm-settings.php:2027
 #, php-format
 msgid "less than %1$d characters"
 msgstr "менее %1$d символов"
 
 # @ contact_form
-#: contact_form.php:1831 contact_form.php:1833
+#: contact_form.php:1860 contact_form.php:1862
 msgid "Sent from (ip address)"
 msgstr "Отправлено от (IP адрес)"
 
 # @ contact_form
-#: contact_form.php:1838 contact_form.php:1840
-#: includes/class-cntctfrm-settings.php:1262
+#: contact_form.php:1867 contact_form.php:1869
+#: includes/class-cntctfrm-settings.php:1326
 msgid "Date/Time"
 msgstr "Дата/Время"
 
 # @ contact_form
-#: contact_form.php:1845 contact_form.php:1847
-#: includes/class-cntctfrm-settings.php:1263
+#: contact_form.php:1874 contact_form.php:1876
+#: includes/class-cntctfrm-settings.php:1327
 msgid "Sent from (referer)"
 msgstr "Отправлено от (referer)"
 
 # @ contact_form
-#: contact_form.php:1852 contact_form.php:1854
-#: includes/class-cntctfrm-settings.php:1264
+#: contact_form.php:1881 contact_form.php:1883
+#: includes/class-cntctfrm-settings.php:1328
 msgid "Using (user agent)"
 msgstr "Используя (user agent)"
 
 # @ contact_form
-#: contact_form.php:1865
+#: contact_form.php:1894
 msgid "Contact from"
 msgstr "Контакт из"
 
 # @ contact_form
-#: contact_form.php:1870 contact_form.php:1920
+#: contact_form.php:1899 contact_form.php:1956
 msgid "Site"
 msgstr "Сайт"
 
 # @ contact_form
-#: contact_form.php:1892 contact_form.php:1938
-#: includes/class-cntctfrm-settings.php:660
+#: contact_form.php:1921 contact_form.php:1974
+#: includes/class-cntctfrm-settings.php:671
 msgid "Email"
 msgstr "Email"
 
 # @ contact_form
-#: contact_form.php:1908 contact_form.php:1951
-#: includes/class-cntctfrm-settings.php:1631
+#: contact_form.php:1937 contact_form.php:1987
+#: includes/class-cntctfrm-settings.php:1699
 msgid "Phone Number"
 msgstr "Телефон"
 
 # @ contact_form
-#: contact_form.php:2060
+#: contact_form.php:2102
 msgid ""
 "If you can see this MIME, it means that the MIME type is not supported by "
 "your email client!"
@@ -326,26 +338,26 @@ msgstr ""
 "MIME тип!"
 
 # @ contact_form
-#: contact_form.php:2167
+#: contact_form.php:2209
 msgid "FAQ"
 msgstr "FAQ"
 
 # @ contact_form
-#: contact_form.php:2168
+#: contact_form.php:2210
 msgid "Support"
 msgstr "Поддержка"
 
 # @ contact_form
-#: contact_form.php:2232
+#: contact_form.php:2274
 msgid "Are you sure that you want to delete this language data?"
 msgstr "Вы действительно хотите удалить данные для этого языка?"
 
 # @ contact_form
-#: contact_form.php:2256
+#: contact_form.php:2298
 msgid "Add multiple forms"
 msgstr "Добавить несколько форм"
 
-#: contact_form.php:2256
+#: contact_form.php:2298
 msgid ""
 "Install Contact Form Multi plugin to create unlimited number of contact "
 "forms."
@@ -353,95 +365,95 @@ msgstr ""
 "Установить плагин Contact Form Multi для создания неограниченного количества "
 "контактных форм."
 
-#: contact_form.php:2265 includes/class-cntctfrm-settings.php:526
-#: includes/class-cntctfrm-settings.php:984
-#: includes/class-cntctfrm-settings.php:1218
-#: includes/class-cntctfrm-settings.php:1544
+#: contact_form.php:2307 includes/class-cntctfrm-settings.php:537
+#: includes/class-cntctfrm-settings.php:1048
+#: includes/class-cntctfrm-settings.php:1282
+#: includes/class-cntctfrm-settings.php:1612
 msgid "Close"
 msgstr "Закрыть"
 
-#: contact_form.php:2332
+#: contact_form.php:2374
 msgid "Error"
 msgstr "Ошибка"
 
-#: contact_form.php:2332 contact_form.php:2334
+#: contact_form.php:2374 contact_form.php:2376
 msgid "Illegal language code"
 msgstr "Нелегальный языковой код"
 
 # @ contact_form
-#: contact_form.php:2366 contact_form.php:2368
-#: includes/class-cntctfrm-settings.php:1337
-#: includes/class-cntctfrm-settings.php:1339
-#: includes/class-cntctfrm-settings.php:1381
-#: includes/class-cntctfrm-settings.php:1383
-#: includes/class-cntctfrm-settings.php:1421
-#: includes/class-cntctfrm-settings.php:1423
-#: includes/class-cntctfrm-settings.php:1438
-#: includes/class-cntctfrm-settings.php:1440
+#: contact_form.php:2408 contact_form.php:2410
+#: includes/class-cntctfrm-settings.php:1403
+#: includes/class-cntctfrm-settings.php:1405
+#: includes/class-cntctfrm-settings.php:1449
+#: includes/class-cntctfrm-settings.php:1451
+#: includes/class-cntctfrm-settings.php:1489
+#: includes/class-cntctfrm-settings.php:1491
+#: includes/class-cntctfrm-settings.php:1506
+#: includes/class-cntctfrm-settings.php:1508
 msgid "Use shortcode"
 msgstr "Используйте шорткод"
 
 # @ contact_form
-#: contact_form.php:2366 contact_form.php:2368
-#: includes/class-cntctfrm-settings.php:1337
-#: includes/class-cntctfrm-settings.php:1339
-#: includes/class-cntctfrm-settings.php:1381
-#: includes/class-cntctfrm-settings.php:1383
-#: includes/class-cntctfrm-settings.php:1421
-#: includes/class-cntctfrm-settings.php:1423
-#: includes/class-cntctfrm-settings.php:1438
-#: includes/class-cntctfrm-settings.php:1440
+#: contact_form.php:2408 contact_form.php:2410
+#: includes/class-cntctfrm-settings.php:1403
+#: includes/class-cntctfrm-settings.php:1405
+#: includes/class-cntctfrm-settings.php:1449
+#: includes/class-cntctfrm-settings.php:1451
+#: includes/class-cntctfrm-settings.php:1489
+#: includes/class-cntctfrm-settings.php:1491
+#: includes/class-cntctfrm-settings.php:1506
+#: includes/class-cntctfrm-settings.php:1508
 msgid "for this language"
 msgstr "для данного языка"
 
 # @ contact_form
-#: contact_form.php:2511
+#: contact_form.php:2553
 msgid "Test your contact form"
 msgstr "Протестируйте свою контактную форму"
 
-#: contact_form.php:2511
+#: contact_form.php:2553
 msgid ""
 "Ensure your contact form are correctly configured. Check your settings now!"
 msgstr ""
 "Убедитесь, что ваша контактная форма правильно настроена. Проверьте свои "
 "настройки прямо сейчас!"
 
-#: contact_form.php:2560
+#: contact_form.php:2602
 msgid "Close notice"
 msgstr "Закрыть"
 
 # @ contact_form
-#: contact_form.php:2565
+#: contact_form.php:2607
 msgid "allows to store your messages to the database."
 msgstr "позволяет хранить ваши сообщения в базе данных."
 
 # @ contact_form
-#: contact_form.php:2566
+#: contact_form.php:2608
 msgid "Manage messages that have been sent from your website."
 msgstr "Управление сообщениями, которые были отправлены с вашего сайта."
 
 # @ contact_form
-#: contact_form.php:2569
+#: contact_form.php:2611
 msgid "Learn More"
 msgstr "Подробнее"
 
 # @ contact_form
-#: contact_form.php:2639
+#: contact_form.php:2681
 msgid "Contact form"
 msgstr "Контактная форма"
 
 # @ contact_form
-#: contact_form.php:2654 contact_form.php:2666
+#: contact_form.php:2696 contact_form.php:2708
 msgid "Language"
 msgstr "Язык"
 
 #: includes/class-cntctfrm-settings.php:31
-#: includes/class-cntctfrm-settings.php:608
+#: includes/class-cntctfrm-settings.php:619
 msgid "Additional Settings"
 msgstr "Дополнительные настройки"
 
 #: includes/class-cntctfrm-settings.php:32
-#: includes/class-cntctfrm-settings.php:1466
+#: includes/class-cntctfrm-settings.php:1534
 msgid "Appearance"
 msgstr "Отображение"
 
@@ -478,7 +490,7 @@ msgstr "Извините, ваш одноразовый код не верифи
 msgid "Min / Max symbols in the message cannot be empty."
 msgstr "Символы Min / Max в сообщении не могут быть пустыми."
 
-#: includes/class-cntctfrm-settings.php:399
+#: includes/class-cntctfrm-settings.php:410
 msgid ""
 "Email 'FROM' field option was changed, which may cause email messages being "
 "moved to the spam folder or email delivery failures."
@@ -487,7 +499,7 @@ msgstr ""
 "что письма будут попадать в спам или не будут доставлены."
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:409
+#: includes/class-cntctfrm-settings.php:420
 msgid ""
 "If the 'Redirect to page' option is selected then the URL field should be in "
 "the following format"
@@ -496,33 +508,33 @@ msgstr ""
 "в следующем формате"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:414
+#: includes/class-cntctfrm-settings.php:425
 msgid "Such user does not exist."
 msgstr "Данный пользователь не найден."
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:423
+#: includes/class-cntctfrm-settings.php:434
 msgid ""
 "Please enter a valid email address in the 'Use this email address' field."
 msgstr "Пожалуйста, введите корректный email в поле 'Использовать этот email'."
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:431
+#: includes/class-cntctfrm-settings.php:442
 msgid "Please enter a valid email address in the 'FROM' field."
 msgstr "Пожалуйста, введите корректный email для поля \"От\"."
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:452
+#: includes/class-cntctfrm-settings.php:463
 msgid "Settings saved."
 msgstr "Настройки сохранены."
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:454
+#: includes/class-cntctfrm-settings.php:465
 msgid "Settings are not saved."
 msgstr "Настройки не сохранены."
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:481
+#: includes/class-cntctfrm-settings.php:492
 msgid ""
 "If you leave the fields empty, the messages will be sent to the email "
 "address specified during registration."
@@ -531,17 +543,17 @@ msgstr ""
 "email, который был указан при регистрации сайта."
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:484
+#: includes/class-cntctfrm-settings.php:495
 msgid "The user's email address"
 msgstr "Email пользователя сайта"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:489
+#: includes/class-cntctfrm-settings.php:500
 msgid "Select a username"
 msgstr "Выберите имя пользователя"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:508
+#: includes/class-cntctfrm-settings.php:519
 msgid ""
 "Select a username of the person who should get the messages from the contact "
 "form."
@@ -550,12 +562,12 @@ msgstr ""
 "формы."
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:513
+#: includes/class-cntctfrm-settings.php:524
 msgid "Use this email address"
 msgstr "Использовать этот email"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:518
+#: includes/class-cntctfrm-settings.php:529
 msgid ""
 "Enter multiple email addresses separated by comma for receiving messages."
 msgstr ""
@@ -563,88 +575,88 @@ msgstr ""
 "сообщений."
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:530
+#: includes/class-cntctfrm-settings.php:541
 msgid "Add department selectbox to the contact form"
 msgstr "Добавить выбор отдела в контактную форму"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:543
+#: includes/class-cntctfrm-settings.php:554
 msgid "Save emails to the database"
 msgstr "Сохранять email в базу данных"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:556
-#: includes/class-cntctfrm-settings.php:576
-#: includes/class-cntctfrm-settings.php:585
+#: includes/class-cntctfrm-settings.php:567
+#: includes/class-cntctfrm-settings.php:587
+#: includes/class-cntctfrm-settings.php:596
 msgid "Using"
 msgstr "Используя"
 
-#: includes/class-cntctfrm-settings.php:562
-#: includes/class-cntctfrm-settings.php:1087
-#: includes/class-cntctfrm-settings.php:1142
-#: includes/class-cntctfrm-settings.php:1187
+#: includes/class-cntctfrm-settings.php:573
+#: includes/class-cntctfrm-settings.php:1151
+#: includes/class-cntctfrm-settings.php:1206
+#: includes/class-cntctfrm-settings.php:1251
 msgid "Please activate the appropriate option on"
 msgstr "Пожалуйста, активируйте соответствующую опцию на странице настроек"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:567
-#: includes/class-cntctfrm-settings.php:1092
-#: includes/class-cntctfrm-settings.php:1147
-#: includes/class-cntctfrm-settings.php:1192
+#: includes/class-cntctfrm-settings.php:578
+#: includes/class-cntctfrm-settings.php:1156
+#: includes/class-cntctfrm-settings.php:1211
+#: includes/class-cntctfrm-settings.php:1256
 msgid "settings page"
 msgstr "страница настройки"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:577
-#: includes/class-cntctfrm-settings.php:1104
-#: includes/class-cntctfrm-settings.php:1159
-#: includes/class-cntctfrm-settings.php:1203
+#: includes/class-cntctfrm-settings.php:588
+#: includes/class-cntctfrm-settings.php:1168
+#: includes/class-cntctfrm-settings.php:1223
+#: includes/class-cntctfrm-settings.php:1267
 msgid "Activate"
 msgstr "Активировать"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:586
-#: includes/class-cntctfrm-settings.php:1116
-#: includes/class-cntctfrm-settings.php:1167
-#: includes/class-cntctfrm-settings.php:1210
+#: includes/class-cntctfrm-settings.php:597
+#: includes/class-cntctfrm-settings.php:1180
+#: includes/class-cntctfrm-settings.php:1231
+#: includes/class-cntctfrm-settings.php:1274
 msgid "Download"
 msgstr "Скачать"
 
-#: includes/class-cntctfrm-settings.php:613
+#: includes/class-cntctfrm-settings.php:624
 msgid "Sending method"
 msgstr "Метод отправки"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:618
+#: includes/class-cntctfrm-settings.php:629
 msgid "Wp-mail"
 msgstr "Wp-mail"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:619
+#: includes/class-cntctfrm-settings.php:630
 msgid "You can use the WordPress wp_mail function for mailing"
 msgstr "Для рассылки можно использовать функцию WordPress wp_mail"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:624
+#: includes/class-cntctfrm-settings.php:635
 msgid "Mail"
 msgstr "Mail"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:625
+#: includes/class-cntctfrm-settings.php:636
 msgid "You can use the PHP mail function for mailing"
 msgstr "Для отправки почты вы можете использовать PHP функцию mail"
 
-#: includes/class-cntctfrm-settings.php:631
+#: includes/class-cntctfrm-settings.php:642
 msgid "'FROM' field"
 msgstr "Поле \"От\""
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:647
+#: includes/class-cntctfrm-settings.php:658
 msgid "User name"
 msgstr "Имя пользователя"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:649
+#: includes/class-cntctfrm-settings.php:660
 msgid ""
 "The name of the user who fills the form will be used in the field 'From'."
 msgstr ""
@@ -652,12 +664,12 @@ msgstr ""
 "заполняет форму."
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:671
+#: includes/class-cntctfrm-settings.php:682
 msgid "User email"
 msgstr "Email пользователя"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:673
+#: includes/class-cntctfrm-settings.php:684
 msgid ""
 "The email address of the user who fills the form will be used in the field "
 "'From'."
@@ -665,7 +677,7 @@ msgstr ""
 "В поле \"От\" в письме будет использоваться email того пользователя, который "
 "заполняет форму."
 
-#: includes/class-cntctfrm-settings.php:682
+#: includes/class-cntctfrm-settings.php:693
 msgid ""
 "If this option is changed, email messages may be moved to the spam folder or "
 "email delivery failures may occur."
@@ -674,85 +686,86 @@ msgstr ""
 "будут попадать в спам или не будут доставлены."
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:691
+#: includes/class-cntctfrm-settings.php:702
 msgid "Required symbol"
 msgstr "Символ, отображающий обязательное поле"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:701
+#: includes/class-cntctfrm-settings.php:712
 msgid "Fields"
 msgstr "Поля"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:702
-#: includes/class-cntctfrm-settings.php:721
-#: includes/class-cntctfrm-settings.php:737
-#: includes/class-cntctfrm-settings.php:768
-#: includes/class-cntctfrm-settings.php:789
-#: includes/class-cntctfrm-settings.php:811
-#: includes/class-cntctfrm-settings.php:837
-#: includes/class-cntctfrm-settings.php:862
-#: includes/class-cntctfrm-settings.php:900
-#: includes/class-cntctfrm-settings.php:940
-#: includes/class-cntctfrm-settings.php:992
+#: includes/class-cntctfrm-settings.php:713
+#: includes/class-cntctfrm-settings.php:735
+#: includes/class-cntctfrm-settings.php:750
+#: includes/class-cntctfrm-settings.php:785
+#: includes/class-cntctfrm-settings.php:808
+#: includes/class-cntctfrm-settings.php:835
+#: includes/class-cntctfrm-settings.php:861
+#: includes/class-cntctfrm-settings.php:892
+#: includes/class-cntctfrm-settings.php:936
+#: includes/class-cntctfrm-settings.php:982
+#: includes/class-cntctfrm-settings.php:1056
 msgid "Used"
 msgstr "Используется"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:703
-#: includes/class-cntctfrm-settings.php:725
-#: includes/class-cntctfrm-settings.php:741
-#: includes/class-cntctfrm-settings.php:772
-#: includes/class-cntctfrm-settings.php:793
-#: includes/class-cntctfrm-settings.php:815
-#: includes/class-cntctfrm-settings.php:841
-#: includes/class-cntctfrm-settings.php:871
-#: includes/class-cntctfrm-settings.php:909
-#: includes/class-cntctfrm-settings.php:993
+#: includes/class-cntctfrm-settings.php:714
+#: includes/class-cntctfrm-settings.php:739
+#: includes/class-cntctfrm-settings.php:754
+#: includes/class-cntctfrm-settings.php:789
+#: includes/class-cntctfrm-settings.php:812
+#: includes/class-cntctfrm-settings.php:839
+#: includes/class-cntctfrm-settings.php:865
+#: includes/class-cntctfrm-settings.php:901
+#: includes/class-cntctfrm-settings.php:945
+#: includes/class-cntctfrm-settings.php:1057
 msgid "Required"
 msgstr "Обязательное"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:706
-#: includes/class-cntctfrm-settings.php:747
-#: includes/class-cntctfrm-settings.php:819
-#: includes/class-cntctfrm-settings.php:878
-#: includes/class-cntctfrm-settings.php:915
-#: includes/class-cntctfrm-settings.php:994
+#: includes/class-cntctfrm-settings.php:716
+#: includes/class-cntctfrm-settings.php:759
+#: includes/class-cntctfrm-settings.php:843
+#: includes/class-cntctfrm-settings.php:908
+#: includes/class-cntctfrm-settings.php:951
+#: includes/class-cntctfrm-settings.php:1058
 msgid "Visible"
 msgstr "Видимое"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:707
-#: includes/class-cntctfrm-settings.php:751
-#: includes/class-cntctfrm-settings.php:823
-#: includes/class-cntctfrm-settings.php:882
-#: includes/class-cntctfrm-settings.php:919
-#: includes/class-cntctfrm-settings.php:995
+#: includes/class-cntctfrm-settings.php:717
+#: includes/class-cntctfrm-settings.php:763
+#: includes/class-cntctfrm-settings.php:847
+#: includes/class-cntctfrm-settings.php:912
+#: includes/class-cntctfrm-settings.php:955
+#: includes/class-cntctfrm-settings.php:1059
 msgid "Disabled for editing"
 msgstr "Нет возможности редактировать"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:708
-#: includes/class-cntctfrm-settings.php:778
-#: includes/class-cntctfrm-settings.php:886
-#: includes/class-cntctfrm-settings.php:923
+#: includes/class-cntctfrm-settings.php:718
+#: includes/class-cntctfrm-settings.php:722
+#: includes/class-cntctfrm-settings.php:795
+#: includes/class-cntctfrm-settings.php:916
+#: includes/class-cntctfrm-settings.php:959
 msgid "Field's default value"
 msgstr "Значение полей по умолчанию"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:718
+#: includes/class-cntctfrm-settings.php:732
 msgid "Department selectbox"
 msgstr "Список отделов"
 
-#: includes/class-cntctfrm-settings.php:755
+#: includes/class-cntctfrm-settings.php:767
 msgid "Use User's name as a default value if the user is logged in."
 msgstr ""
 "Использовать имя Пользователя как значение по умолчанию, если пользователь "
 "залогинен."
 
-#: includes/class-cntctfrm-settings.php:756
-#: includes/class-cntctfrm-settings.php:828
+#: includes/class-cntctfrm-settings.php:768
+#: includes/class-cntctfrm-settings.php:852
 msgid ""
 "'Visible' and 'Disabled for editing' options will be applied only to logged-"
 "in users."
@@ -761,17 +774,17 @@ msgstr ""
 "к залогиненным пользователям."
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:765
+#: includes/class-cntctfrm-settings.php:782
 msgid "Location selectbox"
 msgstr "Список местоположений"
 
-#: includes/class-cntctfrm-settings.php:827
+#: includes/class-cntctfrm-settings.php:851
 msgid "Use User's email as a default value if the user is logged in."
 msgstr ""
 "Использовать Email Пользователя как значение по умолчанию, если пользователь "
 "залогинен."
 
-#: includes/class-cntctfrm-settings.php:849
+#: includes/class-cntctfrm-settings.php:873
 #, php-format
 msgid ""
 "Specify a mask which will be used for the phone validation, where * is a "
@@ -781,46 +794,56 @@ msgstr ""
 "это число. Используйте только следующие символы: %s"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:933
+#: includes/class-cntctfrm-settings.php:975
 msgid "Attachment block"
 msgstr "Прикрепить файл"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:935
+#: includes/class-cntctfrm-settings.php:977
 msgid "Users can attach the following file formats"
 msgstr "Пользователи могут прикрепить файлы таких типов"
 
-#: includes/class-cntctfrm-settings.php:958
+#: includes/class-cntctfrm-settings.php:997
 msgid "Multi-attachment"
 msgstr "Прикрепить несколько файлов"
 
-#: includes/class-cntctfrm-settings.php:960
+#: includes/class-cntctfrm-settings.php:999
 msgid "Enable to multiple file selection"
 msgstr "Включите, чтобы позволить прикреплять несколько файлов"
 
-#: includes/class-cntctfrm-settings.php:990
+#: includes/class-cntctfrm-settings.php:1029
+#: includes/class-cntctfrm-settings.php:1034
+msgid "Value 1"
+msgstr "Значение 1"
+
+#: includes/class-cntctfrm-settings.php:1030
+#: includes/class-cntctfrm-settings.php:1035
+msgid "Value 2"
+msgstr "Значение 2"
+
+#: includes/class-cntctfrm-settings.php:1054
 msgid "Title"
 msgstr "Название"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:991
+#: includes/class-cntctfrm-settings.php:1055
 msgid "Field Type"
 msgstr "Тип поля"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:996
+#: includes/class-cntctfrm-settings.php:1060
 msgid "Field's default/available value"
 msgstr "Значение полей по умолчанию"
 
-#: includes/class-cntctfrm-settings.php:1021
+#: includes/class-cntctfrm-settings.php:1085
 msgid "Create Field"
 msgstr "Создать поле"
 
-#: includes/class-cntctfrm-settings.php:1026
+#: includes/class-cntctfrm-settings.php:1090
 msgid "Google Analytics Measurement ID"
 msgstr "Google Analytics Идентификатор потока данных"
 
-#: includes/class-cntctfrm-settings.php:1031
+#: includes/class-cntctfrm-settings.php:1095
 #, php-format
 msgid ""
 "Enter your %1$sMeasurement ID%2$s to track contact form submissions in "
@@ -829,110 +852,110 @@ msgstr ""
 "Введите %1$sID измерения%2$s для отслеживания отправлений контактных форм в "
 "Google Analytics."
 
-#: includes/class-cntctfrm-settings.php:1032
+#: includes/class-cntctfrm-settings.php:1096
 msgid "Google Analytics version 4 is required."
 msgstr "Требуется Google Analytics версии 4."
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1045
+#: includes/class-cntctfrm-settings.php:1109
 msgid "Add to the form"
 msgstr "Добавить в форму"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1050
+#: includes/class-cntctfrm-settings.php:1114
 msgid "Tips below the Attachment"
 msgstr "Пояснения после блока \"Прикрепить файл\""
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1057
+#: includes/class-cntctfrm-settings.php:1121
 msgid "'Send me a copy' block"
 msgstr "Блок \"Отправить мне копию\""
 
-#: includes/class-cntctfrm-settings.php:1064
+#: includes/class-cntctfrm-settings.php:1128
 msgid "GDPR Compliance"
 msgstr "Согласие с GDPR"
 
-#: includes/class-cntctfrm-settings.php:1069
+#: includes/class-cntctfrm-settings.php:1133
 msgid "Link to Privacy Policy Page"
 msgstr "Ссылка на страницу политики конфиденциальности"
 
-#: includes/class-cntctfrm-settings.php:1106
+#: includes/class-cntctfrm-settings.php:1170
 msgid "Activate for network"
 msgstr "Активировать для сети"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1222
+#: includes/class-cntctfrm-settings.php:1286
 msgid "Agreement checkbox"
 msgstr "Чекбокс согласия с условиями"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1222
+#: includes/class-cntctfrm-settings.php:1286
 msgid "Required checkbox for submitting the form"
 msgstr "Обязательный чекбокс для отправки формы"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1223
+#: includes/class-cntctfrm-settings.php:1287
 msgid "Optional checkbox"
 msgstr "Дополнительный чекбокс"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1223
+#: includes/class-cntctfrm-settings.php:1287
 msgid "Optional checkbox, the results of which will be displayed in email"
 msgstr "Дополнительный чекбокс, результаты которого будут отображены в email"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1234
+#: includes/class-cntctfrm-settings.php:1298
 msgid "Delete an attachment file from the server after the email is sent"
 msgstr "Удалить прикрепленный файл с сервера после отправки email"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1240
+#: includes/class-cntctfrm-settings.php:1304
 msgid "Email in HTML format sending"
 msgstr "Отправка еmail в формате HTML"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1244
+#: includes/class-cntctfrm-settings.php:1308
 msgid "Limit for Message field"
 msgstr "Ограничение для поля \"Сообщение"
 
-#: includes/class-cntctfrm-settings.php:1246
+#: includes/class-cntctfrm-settings.php:1310
 msgid "Min / Max symbols in the message"
 msgstr "Минимальное / максимальное количество символов в сообщении"
 
-#: includes/class-cntctfrm-settings.php:1248
+#: includes/class-cntctfrm-settings.php:1312
 msgid "min"
 msgstr "мин"
 
-#: includes/class-cntctfrm-settings.php:1249
+#: includes/class-cntctfrm-settings.php:1313
 msgid "max"
 msgstr "макс"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1254
+#: includes/class-cntctfrm-settings.php:1318
 msgid "Display additional info in the email"
 msgstr "Отображение дополнительной информации в письме"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1261
+#: includes/class-cntctfrm-settings.php:1325
 msgid "Sent from (IP address)"
 msgstr "Отправлено от (IP адрес)"
 
-#: includes/class-cntctfrm-settings.php:1261
+#: includes/class-cntctfrm-settings.php:1325
 msgid "Example: Sent from (IP address): 127.0.0.1"
 msgstr "Пример: Отправлено от (IP адрес): 127.0.0.1"
 
-#: includes/class-cntctfrm-settings.php:1262
+#: includes/class-cntctfrm-settings.php:1326
 msgid "Example: Date/Time: August 19, 2013 8:50 pm"
 msgstr "Пример: Дата/Время: 19 Августа, 2013 20:50"
 
-#: includes/class-cntctfrm-settings.php:1263
+#: includes/class-cntctfrm-settings.php:1327
 msgid ""
 "Example: Sent from (referer):   https://bestwebsoft.com/contacts/contact-us/"
 msgstr ""
 "Пример: Отправлено от (referer):   https://bestwebsoft.com/contacts/contact-"
 "us/"
 
-#: includes/class-cntctfrm-settings.php:1264
+#: includes/class-cntctfrm-settings.php:1328
 msgid ""
 "Example: Using (user agent): Mozilla/5.0 (Windows NT 6.2; WOW64) "
 "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36"
@@ -941,153 +964,165 @@ msgstr ""
 "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1270
+#: includes/class-cntctfrm-settings.php:1334
 msgid "Language Settings"
 msgstr "Языковые настройки"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1283
+#: includes/class-cntctfrm-settings.php:1347
 msgid "Add a language"
 msgstr "Добавить язык"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1287
+#: includes/class-cntctfrm-settings.php:1351
 msgid "Change the names of the contact form fields and error messages"
 msgstr "Изменить имена полей контактной формы и сообщений об ошибках"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1293
-#: includes/class-cntctfrm-settings.php:1404
-#: includes/class-cntctfrm-settings.php:1523
+#: includes/class-cntctfrm-settings.php:1357
+#: includes/class-cntctfrm-settings.php:1472
+#: includes/class-cntctfrm-settings.php:1591
 msgid "Default"
 msgstr "По умолчанию"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1308
-#: includes/class-cntctfrm-settings.php:1352
+#: includes/class-cntctfrm-settings.php:1372
+#: includes/class-cntctfrm-settings.php:1418
 msgid "click to expand/hide the list"
 msgstr "нажмите чтобы развернуть/свернуть список"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1317
-#: includes/class-cntctfrm-settings.php:1361
+#: includes/class-cntctfrm-settings.php:1381
+#: includes/class-cntctfrm-settings.php:1427
 msgid "Tips below the Attachment block"
 msgstr "Пояснения после блока \"Прикрепить файл\""
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1322
-#: includes/class-cntctfrm-settings.php:1366
+#: includes/class-cntctfrm-settings.php:1383
+#: includes/class-cntctfrm-settings.php:1429
+msgid "Send me a copy"
+msgstr "Отправить мне копию"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1387
+#: includes/class-cntctfrm-settings.php:1433
 msgid "Error message for the Name field"
 msgstr "Сообщение об ошибке для поля Имя"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1323
-#: includes/class-cntctfrm-settings.php:1367
+#: includes/class-cntctfrm-settings.php:1388
+#: includes/class-cntctfrm-settings.php:1434
 msgid "Error message for the Address field"
 msgstr "Сообщение об ошибке для поля Адрес"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1324
-#: includes/class-cntctfrm-settings.php:1368
+#: includes/class-cntctfrm-settings.php:1389
+#: includes/class-cntctfrm-settings.php:1435
 msgid "Error message for the Email field"
 msgstr "Сообщение об ошибке для поля Email"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1325
-#: includes/class-cntctfrm-settings.php:1369
+#: includes/class-cntctfrm-settings.php:1390
+#: includes/class-cntctfrm-settings.php:1436
 msgid "Error message for the Phone field"
 msgstr "Сообщение об ошибке для поля Телефон"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1326
-#: includes/class-cntctfrm-settings.php:1370
+#: includes/class-cntctfrm-settings.php:1391
+#: includes/class-cntctfrm-settings.php:1437
 msgid "Error message for the Subject field"
 msgstr "Сообщение об ошибке для поля Тема"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1327
-#: includes/class-cntctfrm-settings.php:1371
+#: includes/class-cntctfrm-settings.php:1392
+#: includes/class-cntctfrm-settings.php:1438
 msgid "Error message for the Message field"
 msgstr "Сообщение об ошибке для поля Сообщение"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1328
-#: includes/class-cntctfrm-settings.php:1372
+#: includes/class-cntctfrm-settings.php:1393
+#: includes/class-cntctfrm-settings.php:1439
 msgid "Error message for Limit for the Message field"
 msgstr "Сообщение об ошибке для ограничения поля Сообщение"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1329
-#: includes/class-cntctfrm-settings.php:1373
+#: includes/class-cntctfrm-settings.php:1394
+#: includes/class-cntctfrm-settings.php:1440
 msgid "Error message about the file type for the Attachment field"
 msgstr "Сообщение об ошибке о типе файла для поля \"Прикрепить файл\""
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1330
-#: includes/class-cntctfrm-settings.php:1374
+#: includes/class-cntctfrm-settings.php:1395
+#: includes/class-cntctfrm-settings.php:1441
 msgid ""
 "Error message while uploading a file for the Attachment field to the server"
 msgstr ""
 "Сообщение об ошибке при загрузке файла на сервер для поля \"Прикрепить файл\""
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1331
-#: includes/class-cntctfrm-settings.php:1375
+#: includes/class-cntctfrm-settings.php:1396
+#: includes/class-cntctfrm-settings.php:1442
 msgid "Error message while moving the file for the Attachment field"
 msgstr "Сообщение об ошибке при перемещении файла для поля \"Прикрепить файл\""
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1332
-#: includes/class-cntctfrm-settings.php:1376
+#: includes/class-cntctfrm-settings.php:1397
+#: includes/class-cntctfrm-settings.php:1443
 msgid "Error message when file size limit for the Attachment field is exceeded"
 msgstr ""
 "Сообщение об ошибке, когда размер файла превышает размер разрешенного "
 "сервером для поля \"Прикрепить файл\""
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1333
-#: includes/class-cntctfrm-settings.php:1377
+#: includes/class-cntctfrm-settings.php:1398
+#: includes/class-cntctfrm-settings.php:1444
 msgid "Error message for the Captcha field"
 msgstr "Сообщение об ошибке для поля Captcha"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1334
-#: includes/class-cntctfrm-settings.php:1378
+#: includes/class-cntctfrm-settings.php:1399
+#: includes/class-cntctfrm-settings.php:1445
+msgid "Error message for the Dropdown field"
+msgstr "Сообщение об ошибке для поля Dropdown"
+
+# @ contact_form
+#: includes/class-cntctfrm-settings.php:1400
+#: includes/class-cntctfrm-settings.php:1446
 msgid "Error message for the whole form"
 msgstr "Сообщение об ошибке для всей формы"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1394
+#: includes/class-cntctfrm-settings.php:1462
 msgid "Use the changed names of the contact form fields in the email"
 msgstr "Использовать измененные имена полей контактной формы в email"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1400
+#: includes/class-cntctfrm-settings.php:1468
 msgid "Action after email is sent"
 msgstr "Действие после отправки письма"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1402
+#: includes/class-cntctfrm-settings.php:1470
 msgid "Display text"
 msgstr "Отобразить текст"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1419
-#: includes/class-cntctfrm-settings.php:1436
+#: includes/class-cntctfrm-settings.php:1487
+#: includes/class-cntctfrm-settings.php:1504
 msgid "Text"
 msgstr "Текст"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1450
+#: includes/class-cntctfrm-settings.php:1518
 msgid "Redirect to the page"
 msgstr "Перенаправление на страницу"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1452
+#: includes/class-cntctfrm-settings.php:1520
 msgid "Url"
 msgstr "Ссылка"
 
-#: includes/class-cntctfrm-settings.php:1475
+#: includes/class-cntctfrm-settings.php:1543
 #, php-format
 msgid ""
 "Please enable JavaScript to change '%1$s', '%2$s', '%3$s', '%4$s' options "
@@ -1096,242 +1131,242 @@ msgstr ""
 "Включите JavaScript для изменения параметров '%1$s', '%2$s', '%3$s', '%4$s' "
 "и для сортировки полей."
 
-#: includes/class-cntctfrm-settings.php:1476
-#: includes/class-cntctfrm-settings.php:1495
+#: includes/class-cntctfrm-settings.php:1544
+#: includes/class-cntctfrm-settings.php:1563
 msgid "Form layout"
 msgstr "Шаблон формы"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1477
-#: includes/class-cntctfrm-settings.php:1563
+#: includes/class-cntctfrm-settings.php:1545
+#: includes/class-cntctfrm-settings.php:1631
 msgid "Labels position"
 msgstr "Расположение имен полей"
 
-#: includes/class-cntctfrm-settings.php:1478
-#: includes/class-cntctfrm-settings.php:1581
+#: includes/class-cntctfrm-settings.php:1546
+#: includes/class-cntctfrm-settings.php:1649
 msgid "Labels align"
 msgstr "Выравнивание имен полей"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1479
-#: includes/class-cntctfrm-settings.php:1507
+#: includes/class-cntctfrm-settings.php:1547
+#: includes/class-cntctfrm-settings.php:1575
 msgid "Submit position"
 msgstr "Позиция кнопки 'Отправить'"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1480
-#: includes/class-cntctfrm-settings.php:1612
+#: includes/class-cntctfrm-settings.php:1548
+#: includes/class-cntctfrm-settings.php:1680
 msgid "Add tooltips"
 msgstr "Добавить подсказки"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1481
-#: includes/class-cntctfrm-settings.php:1653
+#: includes/class-cntctfrm-settings.php:1549
+#: includes/class-cntctfrm-settings.php:1721
 msgid "Style options"
 msgstr "Настройки стиля"
 
-#: includes/class-cntctfrm-settings.php:1499
+#: includes/class-cntctfrm-settings.php:1567
 msgid "One column"
 msgstr "Одна колонка"
 
-#: includes/class-cntctfrm-settings.php:1502
+#: includes/class-cntctfrm-settings.php:1570
 msgid "Two columns"
 msgstr "Две колонки"
 
-#: includes/class-cntctfrm-settings.php:1511
-#: includes/class-cntctfrm-settings.php:1552
-#: includes/class-cntctfrm-settings.php:1570
-#: includes/class-cntctfrm-settings.php:1585
+#: includes/class-cntctfrm-settings.php:1579
+#: includes/class-cntctfrm-settings.php:1620
+#: includes/class-cntctfrm-settings.php:1638
+#: includes/class-cntctfrm-settings.php:1653
 msgid "Left"
 msgstr "Слева"
 
-#: includes/class-cntctfrm-settings.php:1514
-#: includes/class-cntctfrm-settings.php:1558
-#: includes/class-cntctfrm-settings.php:1573
-#: includes/class-cntctfrm-settings.php:1591
+#: includes/class-cntctfrm-settings.php:1582
+#: includes/class-cntctfrm-settings.php:1626
+#: includes/class-cntctfrm-settings.php:1641
+#: includes/class-cntctfrm-settings.php:1659
 msgid "Right"
 msgstr "Справа"
 
-#: includes/class-cntctfrm-settings.php:1519
+#: includes/class-cntctfrm-settings.php:1587
 msgid "Width"
 msgstr "Ширина"
 
-#: includes/class-cntctfrm-settings.php:1527
+#: includes/class-cntctfrm-settings.php:1595
 msgid "Custom"
 msgstr "Пользовательская"
 
-#: includes/class-cntctfrm-settings.php:1534
+#: includes/class-cntctfrm-settings.php:1602
 msgid "px"
 msgstr "пикс"
 
-#: includes/class-cntctfrm-settings.php:1548
+#: includes/class-cntctfrm-settings.php:1616
 msgid "Form align"
 msgstr "Выравнивание формы"
 
-#: includes/class-cntctfrm-settings.php:1555
-#: includes/class-cntctfrm-settings.php:1588
+#: includes/class-cntctfrm-settings.php:1623
+#: includes/class-cntctfrm-settings.php:1656
 msgid "Center"
 msgstr "По центру"
 
-#: includes/class-cntctfrm-settings.php:1567
+#: includes/class-cntctfrm-settings.php:1635
 msgid "Top"
 msgstr "Сверху"
 
-#: includes/class-cntctfrm-settings.php:1576
+#: includes/class-cntctfrm-settings.php:1644
 msgid "Bottom"
 msgstr "Снизу"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1596
+#: includes/class-cntctfrm-settings.php:1664
 msgid "Errors output"
 msgstr "Отображение ошибок"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1599
+#: includes/class-cntctfrm-settings.php:1667
 msgid "Display error messages"
 msgstr "Отображать сообщения об ошибках"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1600
+#: includes/class-cntctfrm-settings.php:1668
 msgid "Color of the input field errors."
 msgstr "Отображать ошибки цветом для полей ввода."
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1601
+#: includes/class-cntctfrm-settings.php:1669
 msgid "Display error messages & color of the input field errors"
 msgstr "Отображать сообщения об ошибках и цвет полей ввода с ошибками"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1606
+#: includes/class-cntctfrm-settings.php:1674
 msgid "Add placeholder to the input blocks"
 msgstr "Добавить вспомогательный текст в поля ввода"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1626
+#: includes/class-cntctfrm-settings.php:1694
 msgid "Email address"
 msgstr "Email"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1657
+#: includes/class-cntctfrm-settings.php:1725
 msgid "Text color"
 msgstr "Цвет текста"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1662
-#: includes/class-cntctfrm-settings.php:1671
-#: includes/class-cntctfrm-settings.php:1684
-#: includes/class-cntctfrm-settings.php:1692
-#: includes/class-cntctfrm-settings.php:1700
-#: includes/class-cntctfrm-settings.php:1708
-#: includes/class-cntctfrm-settings.php:1721
-#: includes/class-cntctfrm-settings.php:1729
-#: includes/class-cntctfrm-settings.php:1741
-#: includes/class-cntctfrm-settings.php:1758
-#: includes/class-cntctfrm-settings.php:1766
-#: includes/class-cntctfrm-settings.php:1774
+#: includes/class-cntctfrm-settings.php:1730
+#: includes/class-cntctfrm-settings.php:1739
+#: includes/class-cntctfrm-settings.php:1752
+#: includes/class-cntctfrm-settings.php:1760
+#: includes/class-cntctfrm-settings.php:1768
+#: includes/class-cntctfrm-settings.php:1776
+#: includes/class-cntctfrm-settings.php:1789
+#: includes/class-cntctfrm-settings.php:1797
+#: includes/class-cntctfrm-settings.php:1809
+#: includes/class-cntctfrm-settings.php:1826
+#: includes/class-cntctfrm-settings.php:1834
+#: includes/class-cntctfrm-settings.php:1842
 msgid "Select Color"
 msgstr "Выбрать цвет"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1665
+#: includes/class-cntctfrm-settings.php:1733
 msgid "Label text color"
 msgstr "Цвет текста"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1674
+#: includes/class-cntctfrm-settings.php:1742
 msgid "Placeholder color"
 msgstr "Цвет вспомогательного текста"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1679
+#: includes/class-cntctfrm-settings.php:1747
 msgid "Errors color"
 msgstr "Цвет ошибок"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1687
+#: includes/class-cntctfrm-settings.php:1755
 msgid "Error text color"
 msgstr "Цвет текста для ошибок"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1695
+#: includes/class-cntctfrm-settings.php:1763
 msgid "Background color of the input field errors"
 msgstr "Цвет фона для полей ввода с ошибками"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1703
+#: includes/class-cntctfrm-settings.php:1771
 msgid "Border color of the input field errors"
 msgstr "Цвет рамки для полей ввода с ошибками"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1711
+#: includes/class-cntctfrm-settings.php:1779
 msgid "Placeholder color of the input field errors"
 msgstr "Цвет вспомогательного текста для полей ввода с ошибками"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1716
+#: includes/class-cntctfrm-settings.php:1784
 msgid "Input fields"
 msgstr "Поля ввода"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1724
+#: includes/class-cntctfrm-settings.php:1792
 msgid "Input fields background color"
 msgstr "Цвет фона для полей ввода"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1732
+#: includes/class-cntctfrm-settings.php:1800
 msgid "Text fields color"
 msgstr "Цвет текста для полей ввода"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1736
+#: includes/class-cntctfrm-settings.php:1804
 msgid "Border width in px, numbers only"
 msgstr "Ширина рамки в пикселях, только цифры"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1744
-#: includes/class-cntctfrm-settings.php:1777
+#: includes/class-cntctfrm-settings.php:1812
+#: includes/class-cntctfrm-settings.php:1845
 msgid "Border color"
 msgstr "Цвет рамки"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1749
+#: includes/class-cntctfrm-settings.php:1817
 msgid "Submit button"
 msgstr "Кнопка Отправить"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1753
+#: includes/class-cntctfrm-settings.php:1821
 msgid "Width in px, numbers only"
 msgstr "Ширина в пикселях, только цифры"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1761
+#: includes/class-cntctfrm-settings.php:1829
 msgid "Button color"
 msgstr "Цвет кнопки"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1769
+#: includes/class-cntctfrm-settings.php:1837
 msgid "Button text color"
 msgstr "Цвет текста для кнопки"
 
 # @ contact_form
-#: includes/class-cntctfrm-settings.php:1789
+#: includes/class-cntctfrm-settings.php:1857
 msgid "Contact Form | Preview"
 msgstr "Contact Form | Предпросмотр"
 
-#: includes/class-cntctfrm-settings.php:1790
+#: includes/class-cntctfrm-settings.php:1858
 msgid "Drag the necessary field to sort fields."
 msgstr "Перетащите необходимое поле для сортировки полей."
 
-#: includes/class-cntctfrm-settings.php:1948
+#: includes/class-cntctfrm-settings.php:2016
 #, php-format
 msgid "between %1$d, and %2$d characters"
 msgstr "между символами %1$d и %2$d"
 
-#: includes/class-cntctfrm-settings.php:2144
+#: includes/class-cntctfrm-settings.php:2233
 msgid "Contact Form Shortcode"
 msgstr "Шорткод Contact Form"
 
-#: includes/class-cntctfrm-settings.php:2148
+#: includes/class-cntctfrm-settings.php:2237
 msgid "Add Contact Form  to your page or post using the following shortcode:"
 msgstr ""
 "Добавьте Contact Form в свои записи или страницы, используя следующий "

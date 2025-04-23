@@ -6,7 +6,7 @@ Description: Simple contact form plugin any WordPress website must have.
 Author: BestWebSoft
 Text Domain: contact-form-plugin
 Domain Path: /languages
-Version: 4.3.2
+Version: 4.3.3
 Author URI: https://bestwebsoft.com/
 License: GPLv2 or later
  */
@@ -578,7 +578,7 @@ if ( ! function_exists( 'cntctfrm_get_option_defaults' ) ) {
 			'message_label'           => array( 'default' => __( 'Message', 'contact-form-plugin' ) . ':' ),
 			'attachment_label'        => array( 'default' => __( 'Attachment', 'contact-form-plugin' ) . ':' ),
 			'attachment_tooltip'      => array( 'default' => __( 'Supported file types: HTML, TXT, CSS, GIF, PNG, JPEG, JPG, TIFF, BMP, AI, EPS, PS, CSV, RTF, PDF, DOC, DOCX, XLS, XLSX, ZIP, RAR, WAV, MP3, PPT.', 'contact-form-plugin' ) ),
-			'send_copy_label'         => array( 'default' => __( 'Send me a copy', 'contact-form-plugin' ) ),
+			'dropdown_label'          => array( 'default' => __( 'Dropdown', 'contact-form-plugin' ) ),
 			'gdpr_label'              => array( 'default' => __( 'I consent to having this site collect my personal data.', 'contact-form-plugin' ) ),
 			'gdpr_text_button'        => array( 'default' => __( 'Learn more', 'contact-form-plugin' ) ),
 			'submit_label'            => array( 'default' => __( 'Submit', 'contact-form-plugin' ) ),
@@ -594,7 +594,9 @@ if ( ! function_exists( 'cntctfrm_get_option_defaults' ) ) {
 			'attachment_move_error'   => array( 'default' => __( 'The file could not be uploaded.', 'contact-form-plugin' ) ),
 			'attachment_size_error'   => array( 'default' => __( 'This file is too large.', 'contact-form-plugin' ) ),
 			'captcha_error'           => array( 'default' => __( 'Please fill out the CAPTCHA.', 'contact-form-plugin' ) ),
+			'dropdown_error'          => array( 'default' => __( 'This field is required.', 'contact-form-plugin' ) ),
 			'form_error'              => array( 'default' => __( 'Please make corrections below and try again.', 'contact-form-plugin' ) ),
+			'send_copy_label'         => array( 'default' => __( 'Send me copy.', 'contact-form-plugin' ) ),
 			'action_after_send'       => 1,
 			'thank_text'              => array( 'default' => __( 'Thank you for contacting us.', 'contact-form-plugin' ) ),
 			'redirect_url'            => '',
@@ -625,6 +627,10 @@ if ( ! function_exists( 'cntctfrm_get_option_defaults' ) ) {
 				'input_unit'  => '%',
 			),
 			'active_multi_attachment' => 0,
+			'dropdown_value_1'        => '',
+			'dropdown_value_2'        => '',
+			'display_dropdown'        => 0,
+			'required_dropdown'       => 0,
 		);
 		$option_defaults = apply_filters( 'cntctfrm_get_additional_options_default', $option_defaults );
 
@@ -875,6 +881,7 @@ if ( ! function_exists( 'cntctfrm_get_ordered_fields' ) ) {
 			'cntctfrm_contact_subject'    => true,
 			'cntctfrm_contact_message'    => true,
 			'cntctfrm_contact_attachment' => ( 1 === absint( $cntctfrm_options['attachment'] ) ) ? true : false,
+			'cntctfrm_contact_dropdown'   => ( 1 === absint( $cntctfrm_options['display_dropdown'] ) ) ? true : false,
 			'cntctfrm_contact_send_copy'  => ( 1 === absint( $cntctfrm_options['send_copy'] ) ) ? true : false,
 			'cntctfrm_contact_gdpr'       => ( 1 === absint( $cntctfrm_options['gdpr'] ) ) ? true : false,
 			'cntctfrm_subscribe'          => $display_subscriber,
@@ -1047,6 +1054,7 @@ if ( ! function_exists( 'cntctfrm_display_form' ) ) {
 		$subject       = ( isset( $_POST['cntctfrm_contact_subject'] ) && $cntctfrm_form_count === $form_submited ) ? sanitize_text_field( wp_unslash( $_POST['cntctfrm_contact_subject'] ) ) : apply_filters( 'cntctfrm_default_subject_check', $default_value );
 		$message       = ( isset( $_POST['cntctfrm_contact_message'] ) && $cntctfrm_form_count === $form_submited ) ? sanitize_text_field( wp_strip_all_tags( wp_unslash( $_POST['cntctfrm_contact_message'] ) ) ) : apply_filters( 'cntctfrm_default_message_check', $default_value );
 		$phone         = ( isset( $_POST['cntctfrm_contact_phone'] ) && $cntctfrm_form_count === $form_submited ) ? sanitize_text_field( wp_unslash( $_POST['cntctfrm_contact_phone'] ) ) : '';
+		$dropdown      = ( isset( $_POST['cntctfrm_contact_dropdown'] ) && $cntctfrm_form_count === $form_submited ) ? sanitize_text_field( wp_unslash( $_POST['cntctfrm_contact_dropdown'] ) ) : '';
 
 		$send_copy  = ( isset( $_POST['cntctfrm_contact_send_copy'] ) && $cntctfrm_form_count === $form_submited ) ? absint( $_POST['cntctfrm_contact_send_copy'] ) : '';
 		$gdpr       = ( isset( $_POST['cntctfrm_contact_gdpr'] ) && $cntctfrm_form_count === $form_submited ) ? absint( $_POST['cntctfrm_contact_gdpr'] ) : '';
@@ -1291,6 +1299,26 @@ if ( ! function_exists( 'cntctfrm_display_form' ) ) {
 								}
 							}
 							cntctfrm_handle_captcha_filters( 'add_filters', $removed_filters );
+							break;
+						case 'cntctfrm_contact_dropdown':
+							if ( 1 === absint( $cntctfrm_options['display_dropdown'] ) && ( '' !== $cntctfrm_options['dropdown_value_1'] || '' !== $cntctfrm_options['dropdown_value_2'] ) ) {
+								$content .= '<div class="cntctfrm_field_wrap cntctfrm_field_dropdown_wrap">';
+								$content .= '<div class="cntctfrm_label cntctfrm_label_dropdown">
+									<label for="cntctfrm_contact_name' . $form_countid . '">' . $cntctfrm_options['dropdown_label'][ $lang ] . ( 1 === absint( $cntctfrm_options['required_dropdown'] ) ? ' <span class="required">' . $cntctfrm_options['required_symbol'] . '</span></label>' : '</label>' );
+								$content .= '</div>';
+								if ( isset( $cntctfrm_error_message['dropdown_error'] ) && $cntctfrm_form_count === $form_submited ) {
+									$content .= '<div class="cntctfrm_error_text">' . $cntctfrm_error_message['dropdown_error'] . '</div>';
+								}
+								$content .= '<div class="cntctfrm_input cntctfrm_input_dropdown">
+									<select ' . apply_filters( 'cntctfrm_readonly', 'dropdowncontact' ) . ' name="cntctfrm_contact_dropdown" id="cntctfrm_contact_dropdown' . $form_countid . '">';
+								if ( ! empty( $cntctfrm_options['dropdown_value_1'] ) ) {
+									$content .= '<option value="' . esc_html( $cntctfrm_options['dropdown_value_1'] ) . '" ' . selected( $dropdown, $cntctfrm_options['dropdown_value_1'], false ). '>' . esc_html( $cntctfrm_options['dropdown_value_1'] ) . '</option>';
+								}
+								if ( ! empty( $cntctfrm_options['dropdown_value_2'] ) ) {
+									$content .='<option value="' . esc_html( $cntctfrm_options['dropdown_value_2'] ) . '" ' . selected( $dropdown, $cntctfrm_options['dropdown_value_2'], false ). '>' . esc_html( $cntctfrm_options['dropdown_value_2'] ) . '</option>';
+								}
+								$content .='</select></div></div>';
+							}
 							break;
 						default:
 							break;
@@ -1786,6 +1814,7 @@ if ( ! function_exists( 'cntctfrm_send_mail' ) ) {
 		$subject    = isset( $_POST['cntctfrm_contact_subject'] ) ? sanitize_text_field( wp_unslash( $_POST['cntctfrm_contact_subject'] ) ) : '';
 		$message    = isset( $_POST['cntctfrm_contact_message'] ) ? sanitize_textarea_field( wp_strip_all_tags( wp_unslash( $_POST['cntctfrm_contact_message'] ) ) ) : '';
 		$phone      = isset( $_POST['cntctfrm_contact_phone'] ) ? sanitize_text_field( wp_unslash( $_POST['cntctfrm_contact_phone'] ) ) : '';
+		$dropdown   = isset( $_POST['cntctfrm_contact_dropdown'] ) ? sanitize_text_field( wp_unslash( $_POST['cntctfrm_contact_dropdown'] ) ) : '';
 		$user_agent = cntctfrm_clean_input( $_SERVER['HTTP_USER_AGENT'] );
 		if ( isset( $_COOKIE['cntctfrm_send_mail'] ) && true === (bool) $_COOKIE['cntctfrm_send_mail'] ) {
 			return true;
@@ -1909,6 +1938,13 @@ if ( ! function_exists( 'cntctfrm_send_mail' ) ) {
 								$message_text .= '</td><td>' . $phone . '</td></tr>';
 							}
 							break;
+						case 'dropdown':
+							if ( 1 === absint( $cntctfrm_options['display_dropdown'] ) ) {
+								$message_text .= '<tr><td>';
+								$message_text .= ( 1 === absint( $cntctfrm_options['change_label_in_email'] ) ) ? $cntctfrm_options['dropdown_label'][ $lang ] : esc_html__( 'Dropdown', 'contact-form-plugin' );
+								$message_text .= '</td><td>' . $dropdown . '</td></tr>';
+							}
+							break;
 					}
 				}
 				$message_text  = apply_filters( 'cntctfrm_cf_id_message_text', $message_text );
@@ -1950,6 +1986,12 @@ if ( ! function_exists( 'cntctfrm_send_mail' ) ) {
 							if ( 1 === absint( $cntctfrm_options['display_phone_field'] ) ) {
 								$message_text .= ( 1 === absint( $cntctfrm_options['change_label_in_email'] ) ) ? $cntctfrm_options['phone_label'][ $lang ] : esc_html__( 'Phone Number', 'contact-form-plugin' );
 								$message_text .= ': ' . $phone . "\n";
+							}
+							break;
+						case 'dropdown':
+							if ( 1 === absint( $cntctfrm_options['display_dropdown'] ) ) {
+								$message_text .= ( 1 === absint( $cntctfrm_options['change_label_in_email'] ) ) ? $cntctfrm_options['dropdown_label'][ $lang ] : esc_html__( 'Dropdown', 'contact-form-plugin' );
+								$message_text .= ': ' . $dropdown . "\n";
 							}
 							break;
 					}

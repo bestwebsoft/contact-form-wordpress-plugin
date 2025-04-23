@@ -1,87 +1,113 @@
 <a href="https://bestwebsoft.com/products/wordpress/plugins/contact-form/" target=_blank>Contact Form WordPress Plugin</a>
 ========================
 
-<p>Contact form plugin for WordPress website is the best solution to receive messages from customers right to your email address(-es). Download, activate and paste [bestwebsoft_contact_form] shortcode on any page, post or widget to display the form. Customize the form styles and contents easily with the pre-build options.</p>
-<p>Allow your customers to reach you in seconds!</p>
+<p><strong>Contact Form by BestWebSoft</strong> is an advanced form builder for WordPress that makes it easy to create and manage contact forms on your website. Receive messages from visitors directly to your email by using convenient shortcodes to insert contact forms into pages, posts or widgets.</p>
+<p>Looking for a Contact Form 7 alternative? Our plugin offers similar functionality with an even more intuitive interface and additional features.</p>
+<h3>Key Benefits:</h3>
+<ul>
+<li><strong>WP Contact Form</strong>: Create beautiful contact forms for your WordPress site without any coding</li>
+<li><strong>Contact Widget</strong>: Add contact forms to your sidebar or other widget areas</li>
+<li><strong>Shortcode Contact Form</strong>: Insert forms anywhere using simple shortcodes</li>
+<li><strong>Contact Button Style</strong>: Customize your submit button with professional styling options</li>
+<li><strong>Contact Page</strong>: Create dedicated contact pages for better user engagement</li>
+<li><strong>GDPR Compliant</strong>: Built-in data protection features</li>
+<li><strong>Responsive Layout</strong>: Forms adapt to any device and screen size</li>
+<li><strong>Spam Protection</strong>: Protect your forms using CAPTCHA or reCaptcha</li>
+<li><strong>Customizable Fields</strong>: Make any field required or optional</li>
+<li><strong>File Attachments</strong>: Allow users to attach multiple files to their messages</li>
+<li><strong>Similar to Contact Form 7</strong>: Familiar interface for those switching from CF7</li>
+</ul>
+<h3>Why Choose Contact Form by BestWebSoft?</h3>
+<ul>
+<li><strong>Easy Integration</strong>: Simply add [bestwebsoft_contact_form] shortcode to any page or post</li>
+<li><strong>Multiple Forms Support</strong>: Create unlimited forms with different fields and settings</li>
+<li><strong>Advanced Validation</strong>: Ensure data quality with built-in field validation</li>
+<li><strong>Custom Email Templates</strong>: Customize email notifications for both admin and users</li>
+<li><strong>Database Storage</strong>: Option to store all form submissions in your WordPress database</li>
+<li><strong>Multi-language Support</strong>: Translate your forms into any language</li>
+<li><strong>Developer Friendly</strong>: Clean code and extensive documentation for customization</li>
+<li><strong>Regular Updates</strong>: Constant improvements and compatibility updates</li>
+<li><strong>Professional Support</strong>: Get help when you need it from our dedicated support team</li>
+</ul>
+<h3>Perfect For:</h3>
+<ul>
+<li>Contact pages</li>
+<li>Feedback forms</li>
+<li>Support request forms</li>
+<li>Quote request forms</li>
+<li>Newsletter signups</li>
+<li>Job application forms</li>
+<li>Customer surveys</li>
+</ul>
 <p><a href="https://bestwebsoft.com/demo-for-contact-form-pro/?ref=readme" rel="nofollow ugc">View Demo</a></p>
-<p><span class="embed-youtube" style="text-align:center; display: block;"></span></p>
+<p></p>
 <h4>Free Features</h4>
 <ul>
-<li>Add contact form to any post, page or widget using the shortcode</li>
-<li>GDPR Compliant</li>
-<li>Data validation before the submission</li>
-<li>Add a character limit for message text in a form</li>
-<li>Send a copy of the submitted message to the email</li>
-<li>Receive submissions to the default admin or custom email addresses</li>
-<li>Add additional data about the sender to the email notification:
+<li>Powerful WordPress Contact Form Integration &#8211; Add forms to any post, page or widget using simple shortcode</li>
+<li>Complete GDPR Compliance Tools &#8211; Protect user data and maintain privacy standards</li>
+<li>Advanced Data Validation &#8211; Ensure data quality before form submission</li>
+<li>Message Length Control &#8211; Set character limits for message text fields</li>
+<li>Smart Email Copy System &#8211; Send copies of submitted messages to specified email addresses</li>
+<li>Flexible Email Routing &#8211; Receive submissions to default admin or custom email addresses</li>
+<li>Comprehensive Submission Data &#8211; Get detailed sender information in email notifications:
 <ul>
-<li>Sent from (IP address)</li>
-<li>Date/Time</li>
-<li>Sent from (referer)</li>
-<li>Using (user agent)</li>
+<li>Secure IP address tracking</li>
+<li>Precise timestamp data</li>
+<li>Referral source tracking</li>
+<li>Browser/device information</li>
 </ul>
 </li>
-<li>Responsive Layout</li>
-<li>Editable field labels</li>
-<li>Required fields</li>
-<li>Select used/required for the following fields:
-<ul>
-<li>Name</li>
-<li>Address</li>
-<li>Phone number</li>
-</ul>
-</li>
-<li>File attachments
-<ul>
-<li>Multiple file selection</li>
-</ul>
-</li>
-<li>Enable additional pre-build fields</li>
-<li>Enable two column layout</li>
-<li>Change the width for contact form</li>
-<li>Re-order form fields using drag &amp; drop interface</li>
-<li>Translate your form to any language with a simple language customizer</li>
-<li>Protect contact form from spam with <a href="https://bestwebsoft.com/products/wordpress/plugins/captcha/?k=45dcf2a5ccd70a7fc8606f8030730ac7" rel="nofollow ugc">Captcha</a> or <a href="https://bestwebsoft.com/products/wordpress/plugins/google-captcha/?k=159789f556e3a9c58df8f25384903ba5" rel="nofollow ugc">reCaptcha</a></li>
-<li>Add unlimited contact forms using <a href="https://bestwebsoft.com/products/wordpress/plugins/contact-form-multi/?k=34543c152eff369d529e9b4da85985a9" rel="nofollow ugc">Contact Form Multi</a></li>
-<li>Save and manage messages using <a href="https://bestwebsoft.com/products/wordpress/plugins/contact-form-to-db/?k=d7d962591b5be0ce6c27af778b1b36ee" rel="nofollow ugc">Contact Form to DB</a></li>
-<li>Add users who send the submission to the <a href="https://bestwebsoft.com/products/wordpress/plugins/subscriber/?k=2ce0827916414c9c8576110f13560030" rel="nofollow ugc">Subscriber</a> newsletter subscription list</li>
-<li>Limit sending emails from the same user using <a href="https://bestwebsoft.com/products/wordpress/plugins/limit-attempts/?k=129e34c19fc68ae4a15b4fc1b4983081" rel="nofollow ugc">Limit Attempts</a></li>
-<li>Compatible with latest WordPress version</li>
-<li>Incredibly simple settings for fast setup without modifying code</li>
-<li>Detailed step-by-step documentations and videos</li>
-<li>Multilingual and RTL ready</li>
+<li>Modern Responsive Design &#8211; Forms adapt perfectly to all devices and screen sizes</li>
+<li>Custom Field Labels &#8211; Edit and personalize all form field labels</li>
+<li>Required Fields Management &#8211; Make any fields mandatory or optional</li>
+<li>Enhanced Contact Fields &#8211; Configure name, address and phone fields</li>
+<li>Advanced File Handling &#8211; Allow multiple file attachments</li>
+<li>Extended Form Fields &#8211; Enable additional pre-built form elements</li>
+<li>Two-Column Layout Option &#8211; Create professional multi-column forms</li>
+<li>Custom Form Width &#8211; Adjust form width to match your design</li>
+<li>Drag &amp; Drop Field Order &#8211; Easily reorganize form fields</li>
+<li>Multi-Language Support &#8211; Translate forms using the built-in language customizer</li>
+<li>Premium Spam Protection &#8211; Secure forms with <a href="https://bestwebsoft.com/products/wordpress/plugins/captcha/?k=45dcf2a5ccd70a7fc8606f8030730ac7" rel="nofollow ugc">Captcha</a> or <a href="https://bestwebsoft.com/products/wordpress/plugins/google-captcha/?k=159789f556e3a9c58df8f25384903ba5" rel="nofollow ugc">reCaptcha</a></li>
+<li>Unlimited Forms &#8211; Create multiple forms with <a href="https://bestwebsoft.com/products/wordpress/plugins/contact-form-multi/?k=34543c152eff369d529e9b4da85985a9" rel="nofollow ugc">Contact Form Multi</a></li>
+<li>Database Integration &#8211; Save messages with <a href="https://bestwebsoft.com/products/wordpress/plugins/contact-form-to-db/?k=d7d962591b5be0ce6c27af778b1b36ee" rel="nofollow ugc">Contact Form to DB</a></li>
+<li>Newsletter Integration &#8211; Add form users to <a href="https://bestwebsoft.com/products/wordpress/plugins/subscriber/?k=2ce0827916414c9c8576110f13560030" rel="nofollow ugc">Subscriber</a> lists</li>
+<li>Anti-Spam Protection &#8211; Control submission frequency with <a href="https://bestwebsoft.com/products/wordpress/plugins/limit-attempts/?k=129e34c19fc68ae4a15b4fc1b4983081" rel="nofollow ugc">Limit Attempts</a></li>
+<li>WordPress Compatibility &#8211; Works perfectly with latest WordPress version</li>
+<li>Quick Setup &#8211; Simple settings for fast deployment without coding</li>
+<li>Extensive Documentation &#8211; Detailed guides and video tutorials</li>
+<li>Global Support &#8211; Multi-language and RTL ready</li>
 </ul>
 <blockquote>
 <p><strong>Pro Features</strong></p>
 <p>All features from Free version included plus:</p>
 <ul>
-<li>Add contact form custom fields</li>
-<li>Add department selectbox and sort messages by inquiry type</li>
-<li>Add required and optional checkboxes (i.e. Terms and Conditions)</li>
-<li>Automatically populate name and email input fields for logged-in users</li>
-<li>Add &#8220;Reply to&#8221; email address in the message head</li>
-<li>Set default text for subject and message input fields</li>
-<li>Phone number validation</li>
-<li>Show, hide or disable fields:
+<li>Advanced Custom Fields &#8211; Create unlimited custom form fields</li>
+<li>Smart Department Routing &#8211; Add department selection and message sorting</li>
+<li>Enhanced Privacy Options &#8211; Add customizable terms and privacy checkboxes</li>
+<li>Intelligent Auto-Fill &#8211; Pre-populate fields for logged-in users</li>
+<li>Professional Email Headers &#8211; Add &#8220;Reply to&#8221; email address in message headers</li>
+<li>Default Text Options &#8211; Set pre-filled subject and message content</li>
+<li>Phone Validation &#8211; Ensure correct phone number formats</li>
+<li>Complete Field Control &#8211; Show, hide or disable core fields:
 <ul>
-<li>Name</li>
-<li>Email Address</li>
-<li>Subject</li>
-<li>Message</li>
+<li>Name field</li>
+<li>Email field</li>
+<li>Subject field</li>
+<li>Message field</li>
 </ul>
 </li>
-<li>Enable auto response option with editable message</li>
-<li>Add Google Analytics Measurement ID for tracking form submission</li>
-<li>Add custom code via plugin settings page</li>
-<li>Customizable form
+<li>Auto-Response System &#8211; Send customized automatic replies</li>
+<li>Analytics Integration &#8211; Track form submissions with Google Analytics</li>
+<li>Custom Code Integration &#8211; Add custom code through settings panel</li>
+<li>Advanced Form Styling:
 <ul>
-<li>Styles (no programming knowledge required)</li>
-<li>Alignment, labels alignment and position</li>
-<li>Submit button appearance [NEW]</li>
+<li>No-code style customization</li>
+<li>Complete alignment control</li>
+<li>Custom submit button design</li>
 </ul>
 </li>
-<li>Editable tooltips and  placeholders</li>
-<li>Get answer to your support question within one business day (<a href="https://bestwebsoft.com/support-policy/" rel="nofollow ugc">Support Policy</a>)</li>
+<li>Enhanced User Experience &#8211; Customizable tooltips and placeholders</li>
+<li>Priority Support &#8211; Get answers within one business day (<a href="https://bestwebsoft.com/support-policy/" rel="nofollow ugc">Support Policy</a>)</li>
 </ul>
 <p><a href="https://bestwebsoft.com/products/wordpress/plugins/contact-form/?k=4028655c87316c98ae9ac7ca1928067f" rel="nofollow ugc">Upgrade to Pro Now</a></p>
 </blockquote>
