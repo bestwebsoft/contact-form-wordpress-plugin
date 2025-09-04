@@ -2,9 +2,9 @@
 Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: wp contact form, contact widget, shortcode contact form, contact button, contact page
-Requires at least: 5.6
-Tested up to: 6.8
-Stable tag: 4.3.3
+Requires at least: 6.5
+Tested up to: 6.8.2
+Stable tag: 4.3.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -88,6 +88,8 @@ https://www.youtube.com/watch?v=F_piQa0hmkU
 * Quick Setup - Simple settings for fast deployment without coding
 * Extensive Documentation - Detailed guides and video tutorials
 * Global Support - Multi-language and RTL ready
+* Send test email
+* Use Gutenberg block
 
 > **Pro Features**
 >
@@ -108,6 +110,7 @@ https://www.youtube.com/watch?v=F_piQa0hmkU
 > * Auto-Response System - Send customized automatic replies
 > * Analytics Integration - Track form submissions with Google Analytics
 > * Custom Code Integration - Add custom code through settings panel
+> * Use Honeypot field
 > * Advanced Form Styling:
 >     * No-code style customization
 >     * Complete alignment control
@@ -326,6 +329,12 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 16. Enable the file multiattachment option to get important files from senders via contact form.
 
 == Changelog ==
+
+= V4.3.4 - 02.09.2025 =
+* Update : All functionality was updated for WordPress 6.8.2.
+* NEW : Send test email functionality has been added.
+* NEW : The Gutenberg block has been added.
+* PRO : Honeypot field has been added.
 
 = V4.3.3 - 23.04.2025 =
 * Update : All functionality was updated for WordPress 6.8.
@@ -732,6 +741,10 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * NEW : You can use JavaScript for the form validation with highlighting option
 
 == Upgrade Notice ==
+
+= V4.3.4 =
+* The compatibility with new WordPress version updated.
+* New features added.
 
 = V4.3.3 =
 * The compatibility with new WordPress version updated.

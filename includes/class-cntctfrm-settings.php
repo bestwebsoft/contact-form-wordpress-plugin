@@ -466,6 +466,26 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 				}
 			}
 
+			if ( isset( $_POST['cntctfrm_send_test_email'] ) ) {
+				if ( 'user' === $this->options['select_email'] ) {
+					if ( false !== $user = get_user_by( 'login', $this->options['user_email'] ) ) {
+						$to = $user->user_email;
+					}
+				} elseif ( 'custom' === $this->options['select_email'] ) {
+					$to = $this->options['custom_email'];
+				}
+				$subject = 'Test email from Contact Form (from ' . get_bloginfo( 'name' ) . ')';
+				$body = 'This is test email body content';
+				$headers = array( 'Content-Type: text/html; charset=UTF-8' );
+
+				$result = wp_mail( $to, $subject, $body, $headers );
+				if ( true === $result ) {
+					$message = ' ' . esc_html__( 'Test email sent successfully.', 'contact-form-plugin' );
+				} else {
+					$error .= ' ' . esc_html__( 'Test email failed to send.', 'contact-form-plugin' );
+				}
+			}
+
 			return compact( 'message', 'notice', 'error' );
 		}
 
@@ -565,7 +585,7 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 										?>
 										<label><input type="checkbox" name="cntctfrm_save_email_to_db" value="1" <?php checked( $save_emails ); ?> />
 											<span class="bws_info"> <?php esc_html_e( 'Using', 'contact-form-plugin' ); ?>
-												<a href="<?php echo esc_url( self_admin_url( '/admin.php?page=' . $cntctfrm_related_plugins['contact-form-to-db']['settings_page'] ) ); ?>" target="_blank">Contact Form to DB by BestWebSoft</a>
+												<a href="<?php echo esc_url( self_admin_url( '/admin.php?page=' . $cntctfrm_related_plugins['contact-form-to-db']['settings_page'] ) ); ?>" target="_blank">Contact Form to DB</a>
 											</span>
 										</label>
 									<?php } else { ?>
@@ -584,7 +604,7 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 								} else {
 									?>
 									<label><input disabled="disabled" type="checkbox" name="cntctfrm_save_email_to_db" value="1" />
-										<span class="bws_info"><?php esc_html_e( 'Using', 'contact-form-plugin' ); ?> Contact Form to DB by BestWebSoft
+										<span class="bws_info"><?php esc_html_e( 'Using', 'contact-form-plugin' ); ?> Contact Form to DB
 										<?php printf( '<a href="%s" target="_blank">%s Contact Form to DB</a>', esc_url( self_admin_url( 'plugins.php' ) ), esc_html__( 'Activate', 'contact-form-plugin' ) ); ?>
 										</span>
 									</label>
@@ -593,12 +613,16 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 							} else {
 								?>
 								<label><input disabled="disabled" type="checkbox" name="cntctfrm_save_email_to_db" value="1" />
-									<span class="bws_info"><?php esc_html_e( 'Using', 'contact-form-plugin' ); ?> Contact Form to DB by BestWebSoft
+									<span class="bws_info"><?php esc_html_e( 'Using', 'contact-form-plugin' ); ?> Contact Form to DB
 										<?php printf( '<a href="https://bestwebsoft.com/products/wordpress/plugins/contact-form-to-db/?k=b3bfaac63a55128a35e3f6d0a20dd43d&amp;pn=3&amp;v=%s&amp;wp_v=%s"> %s Contact Form to DB</a>', esc_attr( $cntctfrm_plugin_info['Version'] ), esc_attr( $wp_version ), esc_html__( 'Download', 'contact-form-plugin' ) ); ?>
 									</span>
 								</label>
 							<?php } ?>
 						</td>
+					</tr>
+					<tr valign="top">
+						<th scope="row" style="width:200px;"><?php esc_html_e( 'Send test email', 'contact-form-plugin' ); ?></th>
+						<td colspan="2"><input type="submit" class="button button-primary button-large" name="cntctfrm_send_test_email" value="<?php esc_html_e( 'Send', 'contact-form-plugin' ); ?>" /></td>
 					</tr>
 				</table>
 				<?php wp_nonce_field( 'cntctfrm_action', 'cntctfrm_nonce_field' ); ?>
@@ -1522,6 +1546,24 @@ if ( ! class_exists( 'Cntctfrm_Settings_Tabs' ) ) {
 					</td>
 				</tr>
 			</table>
+			<?php if ( ! $this->hide_pro_tabs ) { ?>
+				<div class="bws_pro_version_bloc">
+					<div class="bws_pro_version_table_bloc">
+						<button type="submit" name="bws_hide_premium_options" class="notice-dismiss bws_hide_premium_options" title="<?php esc_html_e( 'Close', 'contact-form-plugin' ); ?>"></button>
+						<div class="bws_table_bg"></div>
+						<table class="form-table bws_pro_version">
+							<tr valign="top">
+								<th><?php esc_html_e( 'Add Honeypot field', 'contact-form-plugin' ); ?></td>
+								<td>
+									<label><input disabled="disabled" type="checkbox" /></label>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<?php $this->bws_pro_block_links(); ?>
+				</div>
+			<?php } ?>
+
 			<?php
 		}
 

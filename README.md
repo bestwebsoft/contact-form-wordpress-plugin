@@ -76,6 +76,8 @@
 <li>Quick Setup &#8211; Simple settings for fast deployment without coding</li>
 <li>Extensive Documentation &#8211; Detailed guides and video tutorials</li>
 <li>Global Support &#8211; Multi-language and RTL ready</li>
+<li>Send test email</li>
+<li>Use Gutenberg block</li>
 </ul>
 <blockquote>
 <p><strong>Pro Features</strong></p>
@@ -99,6 +101,7 @@
 <li>Auto-Response System &#8211; Send customized automatic replies</li>
 <li>Analytics Integration &#8211; Track form submissions with Google Analytics</li>
 <li>Custom Code Integration &#8211; Add custom code through settings panel</li>
+<li>Use Honeypot field</li>
 <li>Advanced Form Styling:
 <ul>
 <li>No-code style customization</li>
